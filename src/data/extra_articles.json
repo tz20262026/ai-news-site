@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "k_49d2cde9f68e",
+    "title": "Claude Double Checker",
+    "summary": "See Claude's 2× usage window live in your macOS menu bar",
+    "body": "See Claude's 2× usage window live in your macOS menu bar",
+    "source": "Product Hunt",
+    "sourceUrl": "https://www.producthunt.com/r/p/1101106?app_id=339",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_38173a32c96e",
+    "title": "Unsloth Studio",
+    "summary": "Open-source web UI to run and train AI models.",
+    "body": "Open-source web UI to run and train AI models.",
+    "source": "Product Hunt",
+    "sourceUrl": "https://www.producthunt.com/r/p/1101264?app_id=339",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_1bd39ec3f368",
+    "title": "ClawMetry Cloud",
+    "summary": "Monitor your OpenClaw agents from anywhere. E2E encrypted.",
+    "body": "Monitor your OpenClaw agents from anywhere. E2E encrypted.",
+    "source": "Product Hunt",
+    "sourceUrl": "https://www.producthunt.com/r/p/1101215?app_id=339",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_7caa29608d4f",
+    "title": "Claude Dispatch",
+    "summary": "Text Claude from your phone using “Dispatch”",
+    "body": "Text Claude from your phone using “Dispatch”",
+    "source": "Product Hunt",
+    "sourceUrl": "https://www.producthunt.com/r/p/1101206?app_id=339",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_3579ca5e3015",
+    "title": "Rebel Audio is a new AI podcasting tool aimed at first-time creators",
+    "summary": "Rebel Audio is a new all-in-one podcasting tool that allows creators to record podcasts, edit, clip content for social, and publish episodes, all without ever leaving the platform.",
+    "body": "Rebel Audio is a new all-in-one podcasting tool that allows creators to record podcasts, edit, clip content for social, and publish episodes, all without ever leaving the platform.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/rebel-audio-is-a-new-ai-podcasting-tool-aimed-at-first-time-creators/",
+    "tags": [
+      "AI",
+      "Apps",
+      "Media & Entertainment",
+      "Startups",
+      "Podcasting"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_4e25d5261dfc",
+    "title": "The Gemini-powered features in Google Workspace that are worth using",
+    "summary": "From summarizing emails, drafting content, organizing data, and tracking meetings, here are all the best Gemini features in Google Workspace.",
+    "body": "From summarizing emails, drafting content, organizing data, and tracking meetings, here are all the best Gemini features in Google Workspace.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/the-gemini-powered-features-in-google-workspace-that-are-worth-using/",
+    "tags": [
+      "AI",
+      "Apps",
+      "evergreens",
+      "gmail",
+      "Google"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_82e35ccaa1f9",
+    "title": "The leaderboard “you can’t game,” funded by the companies it ranks",
+    "summary": "Artificial intelligence models are multiplying fast, and competition is stiff. With so many players crowding the space, which one will be the best — and who decides that? Arena, formerly LM Arena, has",
+    "body": "Artificial intelligence models are multiplying fast, and competition is stiff. With so many players crowding the space, which one will be the best — and who decides that? Arena, formerly LM Arena, has emerged as the de facto public leaderboard for frontier LLMs, influencing funding, launches, and PR cycles. In just seven months, the startup went from a UC Berkeley PhD research […]",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/video/the-leaderboard-you-cant-game-funded-by-the-companies-it-ranks/",
+    "tags": [
+      "Startups",
+      "AI",
+      "Benchmark",
+      "chatbot arena",
+      "Equity Video"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_a9284cd4c888",
+    "title": "This startup wants to make enterprise software look more like a prompt",
+    "summary": "The company has raised $12 million in seed funding to build an AI operating system for enterprise.",
+    "body": "The company has raised $12 million in seed funding to build an AI operating system for enterprise.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt/",
+    "tags": [
+      "AI",
+      "Startups",
+      "enterprise software",
+      "Eragon",
+      "Exclusive"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2768a9dac08f",
+    "title": "Sequen snags $16M to bring TikTok-style personalization tech to any consumer company",
+    "summary": "With its Series A, Sequen is bringing its proprietary AI ranking and personalization technology to large consumer business.",
+    "body": "With its Series A, Sequen is bringing its proprietary AI ranking and personalization technology to large consumer business.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/sequen-snags-16m-to-bring-tiktok-style-personalization-tech-to-any-consumer-company/",
+    "tags": [
+      "AI",
+      "Fundraising",
+      "Startups",
+      "Venture",
+      "personalization"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_19e57dedde2c",
+    "title": "Microsoft hires the team of Sequoia-backed AI collaboration platform, Cove",
+    "summary": "AI collaboration startup Cove is shutting down after its team joined Microsoft, with service ending April 1 and customer data set for deletion.",
+    "body": "AI collaboration startup Cove is shutting down after its team joined Microsoft, with service ending April 1 and customer data set for deletion.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/microsoft-hires-the-team-of-sequioa-backed-ai-collaboration-platform-cove/",
+    "tags": [
+      "AI",
+      "Apps",
+      "Startups",
+      "collaboration",
+      "Microsoft"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_33ce235b4610",
+    "title": "The PhD students who became the judges of the AI industry",
+    "summary": "Artificial intelligence models are multiplying fast, and competition is stiff. With so many players crowding the space, which one will be the best — and who decides that? Arena, formerly LM Arena, has",
+    "body": "Artificial intelligence models are multiplying fast, and competition is stiff. With so many players crowding the space, which one will be the best — and who decides that? Arena, formerly LM Arena, has emerged as the de facto public leaderboard for frontier LLMs, influencing funding, launches, and PR cycles. In just seven months, the startup went from a UC Berkeley PhD research […]",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/podcast/the-phd-students-who-became-the-judges-of-the-ai-industry/",
+    "tags": [
+      "Startups",
+      "AI",
+      "Equity podcast",
+      "Enterprise AI",
+      "chatbot arena"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_4ca4185fcd4e",
+    "title": "Mistral bets on ‘build-your-own AI’ as it takes on OpenAI, Anthropic in the enterprise",
+    "summary": "Mistral Forge lets enterprises train custom AI models from scratch on their own data, challenging rivals that rely on fine-tuning and retrieval-based approaches.",
+    "body": "Mistral Forge lets enterprises train custom AI models from scratch on their own data, challenging rivals that rely on fine-tuning and retrieval-based approaches.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
+    "tags": [
+      "AI",
+      "Enterprise",
+      "ai models",
+      "Exclusive",
+      "LLMs"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_a968ecbfd31d",
+    "title": "Why Garry Tan’s Claude Code setup has gotten so much love, and hate",
+    "summary": "Thousands of people are trying Garry Tan's Claude Code setup, which was shared on GitHub. And everyone has an opinion: even Claude, ChatGPT, and Gemini.",
+    "body": "Thousands of people are trying Garry Tan's Claude Code setup, which was shared on GitHub. And everyone has an opinion: even Claude, ChatGPT, and Gemini.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/",
+    "tags": [
+      "AI",
+      "Startups",
+      "TC",
+      "garry tan",
+      "sxsw 2026"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_ba0ebfd3e0b6",
+    "title": "The Pentagon is developing alternatives to Anthropic, report says",
+    "summary": "After their dramatic falling-out, it doesn't seem as though Anthropic and the Pentagon are getting back together.",
+    "body": "After their dramatic falling-out, it doesn't seem as though Anthropic and the Pentagon are getting back together.",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/17/the-pentagon-is-developing-alternatives-to-anthropic-report-says/",
+    "tags": [
+      "AI",
+      "Government & Policy",
+      "Anthropic",
+      "Elon Musk",
+      "Grok"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_a842f44a1724",
+    "title": "Justice Department Says Anthropic Can’t Be Trusted With Warfighting Systems",
+    "summary": "In response to Anthropic’s lawsuit, the government said it lawfully penalized the company for trying to limit how its Claude AI models could be used by the military.",
+    "body": "In response to Anthropic’s lawsuit, the government said it lawfully penalized the company for trying to limit how its Claude AI models could be used by the military.",
+    "source": "Wired",
+    "sourceUrl": "https://www.wired.com/story/department-of-defense-responds-to-anthropic-lawsuit/",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "Anthropic",
+      "department of defense",
+      "artificial intelligence"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_6c2538795e18",
+    "title": "The Download: The Pentagon’s new AI plans, and next-gen nuclear reactors",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The Pentagon is planning for AI companies to train on classifi",
+    "body": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The Pentagon is planning for AI companies to train on classified data, defense official says  The Pentagon plans to set up secure environments for generative AI companies to train military-specific versions of their…",
+    "source": "Mit Techreview",
+    "sourceUrl": "https://www.technologyreview.com/2026/03/18/1134371/the-download-the-pentagons-new-ai-plans-and-next-gen-nuclear-reactors/",
+    "tags": [
+      "The Download"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_5b546065e656",
+    "title": "What do new nuclear reactors mean for waste?",
+    "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. The way the world cur",
+    "body": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. The way the world currently deals with nuclear waste is as creative as it is varied: Drown it in water pools, encase it in steel, bury…",
+    "source": "Mit Techreview",
+    "sourceUrl": "https://www.technologyreview.com/2026/03/18/1134345/advanced-nuclear-reactors-waste/",
+    "tags": [
+      "Climate change and energy",
+      "App",
+      "MIT Technology Review Explains"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_d45fb380f485",
+    "title": "The Pentagon is planning for AI companies to train on classified data, defense official says",
+    "summary": "The Pentagon is discussing plans to set up secure environments for generative AI companies to train military-specific versions of their models on classified data, MIT Technology Review has learned.  A",
+    "body": "The Pentagon is discussing plans to set up secure environments for generative AI companies to train military-specific versions of their models on classified data, MIT Technology Review has learned.  AI models like Anthropic’s Claude are already used to answer questions in classified settings; applications include analyzing targets in Iran. But allowing models to train on…",
+    "source": "Mit Techreview",
+    "sourceUrl": "https://www.technologyreview.com/2026/03/17/1134351/the-pentagon-is-planning-for-ai-companies-to-train-on-classified-data-defense-official-says/",
+    "tags": [
+      "Artificial intelligence",
+      "App",
+      "artificial intelligence"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_023910ef1196",
+    "title": "Peter faces a new life cycle in Spider-Man: Brand New Day trailer",
+    "summary": "“Sometimes Spider-Man has to do the hard thing, even if it breaks Peter Parker’s heart.”",
+    "body": "“Sometimes Spider-Man has to do the hard thing, even if it breaks Peter Parker’s heart.”",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/culture/2026/03/peter-faces-a-new-life-cycle-in-spider-man-brand-new-day-trailer/",
+    "tags": [
+      "Culture",
+      "entertainment",
+      "film trailers",
+      "marvel studios",
+      "MCU Phase Six"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_1ac9936aae8a",
+    "title": "Apple can delist apps \"with or without cause,\" judge says in loss for Musi app",
+    "summary": "Judge tosses Musi case against Apple, sanctions lawyers for \"mak[ing] up facts.\"",
+    "body": "Judge tosses Musi case against Apple, sanctions lawyers for \"mak[ing] up facts.\"",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/judge-upholds-apple-delisting-of-free-musi-app-that-streams-songs-from-youtube/",
+    "tags": [
+      "Policy",
+      "App Store",
+      "apple",
+      "iphone",
+      "musi youtube"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_c6937260b543",
+    "title": "Arizona indicts prediction market Kalshi for running illegal gambling operation",
+    "summary": "Desert state becomes first to file criminal case against prediction platform.",
+    "body": "Desert state becomes first to file criminal case against prediction platform.",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/arizona-indicts-prediction-market-kalshi-for-running-illegal-gambling-operation/",
+    "tags": [
+      "Policy",
+      "gambling",
+      "Kalshi",
+      "online gambing",
+      "prediction markets"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_961d8e946038",
+    "title": "Mastercard keeps tabs on fraud with new foundation model",
+    "summary": "Mastercard has developed a large tabular model (an LTM as opposed to an LLM) that’s trained on transaction data rather than text or images to help it address security and authenticity issues in digita",
+    "body": "Mastercard has developed a large tabular model (an LTM as opposed to an LLM) that’s trained on transaction data rather than text or images to help it address security and authenticity issues in digital payments. The company has trained a foundation model on billions of card transactions, with the intention of expanding to hundreds of […] \n The post  Mastercard keeps tabs on fraud with new foundati",
+    "source": "Ai News",
+    "sourceUrl": "https://www.artificialintelligence-news.com/news/mastercards-ltm-keeps-tabs-on-fraud-with-a-new-foundation-model/",
+    "tags": [
+      "Finance AI",
+      "How It Works",
+      "ai",
+      "card payments",
+      "fintech"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2886464a3f4c",
+    "title": "For effective AI, insurance needs to get its data house in order",
+    "summary": "A report from Autorek, a provider of AI solutions to the insurance industry has produced a report that describes operational drag in companies’ internal processes that not only affect overall efficien",
+    "body": "A report from Autorek, a provider of AI solutions to the insurance industry has produced a report that describes operational drag in companies’ internal processes that not only affect overall efficiency but cause an impediment to the effective implementation of AI in insurance concerns. Insurance Operations & Financial Transformation 2026 [email wall] draws from a […] \n The post  For effective AI,",
+    "source": "Ai News",
+    "sourceUrl": "https://www.artificialintelligence-news.com/news/for-effective-ai-insurance-needs-a-better-data-layer-and-integration/",
+    "tags": [
+      "AI Business Strategy",
+      "Finance AI",
+      "data layer",
+      "data silos",
+      "insurance"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_c4c5e6cbdcb4",
+    "title": "Mistral Pioneers Sovereign AI in Europe",
+    "summary": "Mistral's sovereign AI stack, investment in data center capacity and open-weight frontier models provide CIOs with an alternative to U.S. proprietary AI models.",
+    "body": "Mistral's sovereign AI stack, investment in data center capacity and open-weight frontier models provide CIOs with an alternative to U.S. proprietary AI models.",
+    "source": "Ai Business",
+    "sourceUrl": "https://aibusiness.com/foundation-models/mistral-pioneers-sovereign-ai-in-europe",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_9fb2a4af0b39",
+    "title": "Nvidia Extends its Reach Into Self-Driving",
+    "summary": "The AI hardware and software vendor targets another tech sector.",
+    "body": "The AI hardware and software vendor targets another tech sector.",
+    "source": "Ai Business",
+    "sourceUrl": "https://aibusiness.com/generative-ai/nvidia-extends-its-reach-into-self-driving",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_f9d23a4fb9b7",
+    "title": "Building Resilience in the Age of AI",
+    "summary": "Governance and resilience are important in the face of increased AI use.",
+    "body": "Governance and resilience are important in the face of increased AI use.",
+    "source": "Ai Business",
+    "sourceUrl": "https://aibusiness.com/data-governance/building-resilience-in-the-age-of-ai",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_c3d9addcb4cb",
+    "title": "NVIDIA AI Open-Sources ‘OpenShell’: A Secure Runtime Environment for Autonomous AI Agents",
+    "summary": "The deployment of autonomous AI agents—systems capable of using tools and executing code—presents a unique security challenge. While standard LLM applications are restricted to text-based interactions",
+    "body": "The deployment of autonomous AI agents—systems capable of using tools and executing code—presents a unique security challenge. While standard LLM applications are restricted to text-based interactions, autonomous agents require access to shell environments, file systems, and network endpoints to perform tasks. This increased capability introduces significant risks, as a model’s ‘black box’ nature ",
+    "source": "Marktechpost",
+    "sourceUrl": "https://www.marktechpost.com/2026/03/18/nvidia-ai-open-sources-openshell-a-secure-runtime-environment-for-autonomous-ai-agents/",
+    "tags": [
+      "Agentic AI",
+      "AI Infrastructure",
+      "AI Shorts",
+      "Artificial Intelligence",
+      "Editors Pick"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_f66ededeff09",
+    "title": "ServiceNow Research Introduces EnterpriseOps-Gym: A High-Fidelity Benchmark Designed to Evaluate Agentic Planning in Realistic Enterprise Settings",
+    "summary": "Large language models (LLMs) are transitioning from conversational to autonomous agents capable of executing complex professional workflows. However, their deployment in enterprise environments remain",
+    "body": "Large language models (LLMs) are transitioning from conversational to autonomous agents capable of executing complex professional workflows. However, their deployment in enterprise environments remains limited by the lack of benchmarks that capture the specific challenges of professional settings: long-horizon planning, persistent state changes, and strict access protocols. To address this, resear",
+    "source": "Marktechpost",
+    "sourceUrl": "https://www.marktechpost.com/2026/03/18/servicenow-research-introduces-enterpriseops-gym-a-high-fidelity-benchmark-designed-to-evaluate-agentic-planning-in-realistic-enterprise-settings/",
+    "tags": [
+      "Agentic AI",
+      "AI Agents",
+      "AI Paper Summary",
+      "AI Shorts",
+      "Applications"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_4e0941bd3ec0",
+    "title": "Unsloth AI Releases Unsloth Studio: A Local No-Code Interface For High-Performance LLM Fine-Tuning With 70% Less VRAM Usage",
+    "summary": "The transition from a raw dataset to a fine-tuned Large Language Model (LLM) traditionally involves significant infrastructure overhead, including CUDA environment management and high VRAM requirement",
+    "body": "The transition from a raw dataset to a fine-tuned Large Language Model (LLM) traditionally involves significant infrastructure overhead, including CUDA environment management and high VRAM requirements. Unsloth AI, known for its high-performance training library, has released Unsloth Studio to address these friction points. The Studio is an open-source, no-code local interface designed to streamli",
+    "source": "Marktechpost",
+    "sourceUrl": "https://www.marktechpost.com/2026/03/17/unsloth-ai-releases-studio-a-local-no-code-interface-for-high-performance-llm-fine-tuning-with-70-less-vram-usage/",
+    "tags": [
+      "Agentic AI",
+      "AI Infrastructure",
+      "AI Shorts",
+      "Applications",
+      "Artificial Intelligence"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_2013a416b421",
+    "title": "GlobalComix raises $13M, acquires INKR, and appoints new CEO to build the infrastructure for global comics distribution",
+    "summary": "The New York digital comics platform is combining its 300,000-title library with INKR’s AI localisation engine, and bringing in new leadership to execute the expansion. The problem with getting manga ",
+    "body": "The New York digital comics platform is combining its 300,000-title library with INKR’s AI localisation engine, and bringing in new leadership to execute the expansion. The problem with getting manga into the hands of readers outside Japan is not demand. Manga is the fastest-growing category in American book publishing; global interest has been building for […] \n This story continues  at The Next ",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/globalcomix-13m-inkr-acquisition",
+    "tags": [
+      "Business",
+      "Insider"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_74ea00b2f5d6",
+    "title": "Homaio raises €3.6M to bring carbon allowance investing to retail",
+    "summary": "The Paris startup opened the EU’s emissions trading market to private investors in 2024. Now it has the backing to expand into energy, electrification, and other markets shaping the industrial transit",
+    "body": "The Paris startup opened the EU’s emissions trading market to private investors in 2024. Now it has the backing to expand into energy, electrification, and other markets shaping the industrial transition. Valentin Lautier says he got the idea for Homaio on the Eurostar. He was reading a Financial Times article about European Union Allowances, the […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/homaio-seed-round-carbon-allowances-energy-transition",
+    "tags": [
+      "Startups and technology",
+      "Sustainability",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2bc26fae761e",
+    "title": "Multiply raises $9.5M to build AI agents that keep B2B ad campaigns from going stale",
+    "summary": "The San Francisco startup emerges from stealth with Mayfield backing and a pitch that treats ad creative as a continuous learning loop, not a quarterly deliverable. Every B2B marketing team knows the ",
+    "body": "The San Francisco startup emerges from stealth with Mayfield backing and a pitch that treats ad creative as a continuous learning loop, not a quarterly deliverable. Every B2B marketing team knows the problem. A campaign launches, the creative is fresh, the targeting feels right, and then, slowly, it starts dying. Audiences tune out. Click rates […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/multiply-ai-b2b-advertising-9-5m-mayfield",
+    "tags": [
+      "Startups and technology",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_83ef0af4f0a5",
+    "title": "Rivia raises €13M to bring agentic AI to clinical trials",
+    "summary": "The Zurich-based startup, which previously raised €3M to unify fragmented trial data, has secured a larger round to build AI agents that actively manage the complex operational layer of running a clin",
+    "body": "The Zurich-based startup, which previously raised €3M to unify fragmented trial data, has secured a larger round to build AI agents that actively manage the complex operational layer of running a clinical trial. Clinical trials are, by almost any measure, one of the most information-intensive processes in modern medicine, and one of the least efficiently […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/rivia-13m-agentic-ai-clinical-trials",
+    "tags": [
+      "Startups and technology",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_3220be0b90e2",
+    "title": "Meta&#8217;s Manus AI agent arrives on your desktop to take on OpenClaw",
+    "summary": "Manus’s new desktop app can read, edit, and act on files and applications directly on a user’s machine. The launch puts Meta’s AI agent ambitions in direct competition with the open-source tool that h",
+    "body": "Manus’s new desktop app can read, edit, and act on files and applications directly on a user’s machine. The launch puts Meta’s AI agent ambitions in direct competition with the open-source tool that has dominated the conversation this week. OpenClaw arrived on the internet last month like a weather system. Within days of its release […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/meta-manus-my-computer-desktop-ai-agent",
+    "tags": [
+      "Meta",
+      "Insider"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_1f59ac400741",
+    "title": "Mastercard buys stablecoin firm BVNK for up to $1.8bn",
+    "summary": "For most of its fifty-year history, Mastercard has been, in essence, a message-passing network. A transaction happens; Mastercard’s rails carry the authorisation signal between issuer and acquirer in ",
+    "body": "For most of its fifty-year history, Mastercard has been, in essence, a message-passing network. A transaction happens; Mastercard’s rails carry the authorisation signal between issuer and acquirer in milliseconds; settlement follows on a separate, slower track. The system is extraordinarily reliable and extraordinarily profitable. It is also, increasingly, a system designed for a world that […] \n ",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/mastercard-bvnk-18bn-stablecoin-acquisition",
+    "tags": [
+      "Finance",
+      "Insider"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_5c596907d053",
+    "title": "Finnish startup Elea &#038; Lili raises €2.5M to replace the plastic",
+    "summary": "Polyacrylate is the synthetic crystal at the heart of every modern disposable nappy, is derived from petroleum, and it does not break down. It persists for centuries, leaching microplastics into soil ",
+    "body": "Polyacrylate is the synthetic crystal at the heart of every modern disposable nappy, is derived from petroleum, and it does not break down. It persists for centuries, leaching microplastics into soil and groundwater as it degrades. The hygiene industry has long regarded it as an engineering necessity: nothing else absorbs as fast, as much, or […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/elea-lili-25m-seed-cellulose",
+    "tags": [
+      "Startups and technology",
+      "Sustainability",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_a3cebd0e1e0f",
+    "title": "Ofiniti raises $6.8M to push its maritime fuel software into global shipping hubs",
+    "summary": "The Oslo-based DNV spinout processed over 25,000 bunker operations in 2025 and claims roughly 40% of Singapore’s digital bunkering market. Verb Ventures leads a growth round that brings total funding ",
+    "body": "The Oslo-based DNV spinout processed over 25,000 bunker operations in 2025 and claims roughly 40% of Singapore’s digital bunkering market. Verb Ventures leads a growth round that brings total funding to $9 million. The paperwork of global shipping is notoriously stubborn. Every fuel delivery to every vessel at every port generates a chain of manual […] \n This story continues  at The Next Web",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/ofiniti-raises-6-8m-to-push-its-maritime-fuel-software-into-global-shipping-hubs",
+    "tags": [
+      "Sustainability",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_d781fc5ae248",
+    "title": "AWS names 12 European AI startups mapping oceans, diagnosing leukaemia, and predicting airstrikes",
+    "summary": "The 2026 AWS Pioneers cohort spans healthcare, climate, and conflict zones, and lands alongside a stark warning that Europe risks losing its best innovators if the regulatory environment doesn’t chang",
+    "body": "The 2026 AWS Pioneers cohort spans healthcare, climate, and conflict zones, and lands alongside a stark warning that Europe risks losing its best innovators if the regulatory environment doesn’t change. Amazon Web Services announced today the second annual cohort of its Pioneers Project: twelve European companies using AI and cloud infrastructure to tackle problems that […] \n This story continues ",
+    "source": "Thenextweb",
+    "sourceUrl": "https://thenextweb.com/news/aws-pioneers-2026-european-ai-startups-cohort",
+    "tags": [
+      "Amazon",
+      "Next Featured"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_99175e9d2e15",
+    "title": "What's a minimal install for Linux? 6 reasons it can come in handy",
+    "summary": "If you've ever installed Linux and noticed the distribution offers a \"minimal\" install, you've probably wondered, \"Why bother?\" Well, there are reasons those tiny options are available.",
+    "body": "If you've ever installed Linux and noticed the distribution offers a \"minimal\" install, you've probably wondered, \"Why bother?\" Well, there are reasons those tiny options are available.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/minimal-installs-linux/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_7610d8e115d6",
+    "title": "Gemini's Personal Intelligence shocked me with everything it knows - here's how to turn it on (or off)",
+    "summary": "I gave Gemini's hyper-personalized mode a test drive and was unsettled by how much it knew about me. However, it was surprisingly useful.",
+    "body": "I gave Gemini's hyper-personalized mode a test drive and was unsettled by how much it knew about me. However, it was surprisingly useful.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/geminis-personal-intelligence-mode-rolling-out-to-all-users/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_5e39394d3ab7",
+    "title": "Best early Amazon Big Spring Sale headphone deals 2026",
+    "summary": "Spring has sprung, and an Amazon Big Spring Sale is on the horizon. Here are the best early headphone deals to shop.",
+    "body": "Spring has sprung, and an Amazon Big Spring Sale is on the horizon. Here are the best early headphone deals to shop.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/best-early-amazon-spring-sale-2026-headphones-deals/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_cde4f7fb4d09",
+    "title": "You can buy Amazon 4K Fire TV Sticks for up to 50% off right now - these models included",
+    "summary": "Grab a Fire TV Stick 4K Plus or better at a major discount ahead of Amazon's Big Spring Sale.",
+    "body": "Grab a Fire TV Stick 4K Plus or better at a major discount ahead of Amazon's Big Spring Sale.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/fire-tv-stick-deals-amazon-big-spring-sale-2026/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_b6af9f672c3a",
+    "title": "Fitbit lets you upload medical records and ask its AI for advice now - but is that safe?",
+    "summary": "It'll even analyze your lab results to deliver personalized recommendations. But here's what you need to know first.",
+    "body": "It'll even analyze your lab results to deliver personalized recommendations. But here's what you need to know first.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/fitbit-medical-google-ai/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_8a9229d956b0",
+    "title": "This one iPhone setting immediately stops all apps from tracking you - turn it off today",
+    "summary": "You can easily prevent apps from tracking your activity and serving up creepy, hyper-targeted ads. Here's how.",
+    "body": "You can easily prevent apps from tracking your activity and serving up creepy, hyper-targeted ads. Here's how.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/how-to-stop-iphone-apps-from-tracking-you/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_e54af6baa3bb",
+    "title": "I expected Samsung's new flagship earbuds to bore me, but I fell in love with them instead",
+    "summary": "A fresh look might be the most interesting thing about the Galaxy Buds 4 Pro, but their audio upgrades are just as impactful.",
+    "body": "A fresh look might be the most interesting thing about the Galaxy Buds 4 Pro, but their audio upgrades are just as impactful.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/samsung-galaxy-buds-4-review/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_81091940f86c",
+    "title": "A headphone maker is offering an audio loophole Apple likely won't be happy about",
+    "summary": "With a single app feature, JBL's latest Live 780NC headphones open up an otherwise closed-off feature for iOS fans.",
+    "body": "With a single app feature, JBL's latest Live 780NC headphones open up an otherwise closed-off feature for iOS fans.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/jbls-live-770-nc-news/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_755e9398aaa7",
+    "title": "This free privacy tool makes it super easy to see which sites are selling your data",
+    "summary": "Data is gold, and some companies go to great lengths to collect it, save it, and sell it. But you can stop it. Here's how.",
+    "body": "Data is gold, and some companies go to great lengths to collect it, save it, and sell it. But you can stop it. Here's how.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/optmeowt-free-privacy-tool-stop-sites-selling-data/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_0d627ebe9783",
+    "title": "Two years later, should you still buy the Sonos Ace? Why my answer is a resounding yes",
+    "summary": "Since launching its first over-ear headphones, Sonos has tackled some of my biggest problems with the original model.",
+    "body": "Since launching its first over-ear headphones, Sonos has tackled some of my biggest problems with the original model.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/sonos-ace-headphones-review-2026/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_965dcfeeb525",
+    "title": "Oupes Mega 1 review: I finally found a portable power station I can store in my truck",
+    "summary": "It's rare that I feature a power station not made by one of the big names, but the Oupes Mega 1 makes the cut, even receiving a ZDNET Lab Award for its efficiency.",
+    "body": "It's rare that I feature a power station not made by one of the big names, but the Oupes Mega 1 makes the cut, even receiving a ZDNET Lab Award for its efficiency.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/oupes-mega-1-review/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_b52a79e96739",
+    "title": "Bluetti AC240 review: One of the most durable power stations I've tested",
+    "summary": "The Bluetti AC240 is water and dust-resistant, allowing it to withstand the worst Mother Nature can throw at it. It also earns a ZDNET Lab Award for its efficiency.",
+    "body": "The Bluetti AC240 is water and dust-resistant, allowing it to withstand the worst Mother Nature can throw at it. It also earns a ZDNET Lab Award for its efficiency.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/bluetti-ac240-review/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_bdc41a180d15",
+    "title": "The best portable power stations of 2026: Expert and lab tested",
+    "summary": "We tested some of the best portable power stations from brands like EcoFlow, Jackery, and more to help you find the best off-grid solutions.",
+    "body": "We tested some of the best portable power stations from brands like EcoFlow, Jackery, and more to help you find the best off-grid solutions.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/best-portable-power-station/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_31ee21339c01",
+    "title": "We tested 10 portable power stations in our lab - these two models were the most efficient",
+    "summary": "ZDNET's latest Lab Awards highlight two portable power stations - one big and one small - for their efficiency. See the data below.",
+    "body": "ZDNET's latest Lab Awards highlight two portable power stations - one big and one small - for their efficiency. See the data below.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/most-efficient-portable-power-stations-lab-tested/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_ce9f433e42f3",
+    "title": "Best early Amazon Spring Sale laptop deals 2026",
+    "summary": "We're tracking the best early laptop deals ahead of Amazon's Spring Sale, including options from Apple, Lenovo, Samsung, and more.",
+    "body": "We're tracking the best early laptop deals ahead of Amazon's Spring Sale, including options from Apple, Lenovo, Samsung, and more.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/best-early-amazon-spring-sale-2026-laptop-deals/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_1ddaf8681048",
+    "title": "Best early Amazon Spring Sale deals under $25",
+    "summary": "Amazon's Big Spring Sale already has plenty of cheap deals on useful tech gadgets. These are our favorites.",
+    "body": "Amazon's Big Spring Sale already has plenty of cheap deals on useful tech gadgets. These are our favorites.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/best-early-amazon-spring-sale-2026-deals-under-25/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_a74ecc2df10e",
+    "title": "The best early Amazon Spring Sale deals: Save on streaming, Apple, Samsung, and more",
+    "summary": "Amazon's Big Spring Sale is back next week. Here are our favorite spring deals on home, tech, and more live early.",
+    "body": "Amazon's Big Spring Sale is back next week. Here are our favorite spring deals on home, tech, and more live early.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/the-best-early-amazon-spring-sale-tech-home-deals/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2de6b16c779c",
+    "title": "Apple just changed the cheap laptop game - and rattled PC makers",
+    "summary": "For years, Apple has refused to compete with the makers of cheap laptops - until now. Here's who wins and who loses now in the wake of its new budget-priced MacBook Neo.",
+    "body": "For years, Apple has refused to compete with the makers of cheap laptops - until now. Here's who wins and who loses now in the wake of its new budget-priced MacBook Neo.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/what-macbook-neo-means-to-the-pc-industry/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_e5ee7750e6ca",
+    "title": "This glorious smart speaker is the HomePod successor Apple fans have been longing for",
+    "summary": "One of the buzzier smart speakers lately is made by Wiim, and features a tasteful design that's rare these days.",
+    "body": "One of the buzzier smart speakers lately is made by Wiim, and features a tasteful design that's rare these days.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/wiim-sound-smart-speaker-review/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_b4c418e0f2dd",
+    "title": "MacBook Neo vs. MacBook Air: How I'm deciding between Apple's entry-level laptops",
+    "summary": "The MacBook Neo and 13-inch Air may look similar at first glance, but key differences emerge on closer inspection. Here's how to choose between them.",
+    "body": "The MacBook Neo and 13-inch Air may look similar at first glance, but key differences emerge on closer inspection. Here's how to choose between them.",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/macbook-neo-vs-macbook-air/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_0bc5978307c3",
+    "title": "Microsoft publishes a workaround for Samsung's C:\\ drive woes",
+    "summary": "Friends and family support techs: get ready for permission changing and batch file creating   Microsoft has published a handy guide for regaining access to a C:\\ drive borked by a Samsung application,",
+    "body": "Friends and family support techs: get ready for permission changing and batch file creating   Microsoft has published a handy guide for regaining access to a C:\\ drive borked by a Samsung application, but it isn't for the faint of heart.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/microsoft_samsung_c_drive_fix_workaround/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_5345053f2e84",
+    "title": "Meatbags vs machines: DeepMind plans hackathon to draw line between human and AI brains",
+    "summary": "What exactly is AGI? Nobody knows, but Google's AI lab is asking for help trying to define it   If a bot actually achieved artificial general intelligence (AGI), how would we even know? Google DeepMin",
+    "body": "What exactly is AGI? Nobody knows, but Google's AI lab is asking for help trying to define it   If a bot actually achieved artificial general intelligence (AGI), how would we even know? Google DeepMind boffins have come up with what they say is an empirical, scientifically grounded framework to measure progress toward AGI, and they're looking for a few good devs to actually flesh it out. …",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/google_deepmind_agi_hackathon/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_ee2d2192c6df",
+    "title": "Systemd 260 kills SysV, tells AI not to misbehave",
+    "summary": "Good luck with that   The latest release of the most widely used Linux init system is here, and between dropping init script support and AI-assisted coding, we feel sure that this release will win it ",
+    "body": "Good luck with that   The latest release of the most widely used Linux init system is here, and between dropping init script support and AI-assisted coding, we feel sure that this release will win it yet more admirers.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/systemd_260/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_628f5eaaa6ba",
+    "title": "Microsoft Copilot boss Mustafa Suleyman to chase superintelligence",
+    "summary": "Jacob Andreou takes reins in latest reshuffle   Microsoft has rearranged the deckchairs on the RMS Copilot, sending Mustafa Suleyman to seek out superintelligence, and putting Jacob Andreou in charge ",
+    "body": "Jacob Andreou takes reins in latest reshuffle   Microsoft has rearranged the deckchairs on the RMS Copilot, sending Mustafa Suleyman to seek out superintelligence, and putting Jacob Andreou in charge of Copilot across consumer and commercial.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/microsoft_suleyman_superintelligence/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_91aa38f72bff",
+    "title": "AI for software developers is in a 'dangerous state'",
+    "summary": "Strong forces tempting humans out of the AI loop, and reducing the experience needed to supervise and review   QCon London   AI is in a dangerous state where it is too useful not to use, but where by ",
+    "body": "Strong forces tempting humans out of the AI loop, and reducing the experience needed to supervise and review   QCon London   AI is in a dangerous state where it is too useful not to use, but where by using it, developers are giving up the experience they need to review what it does, said a speaker at QCon London, a vendor-neutral developer conference underway this week.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/ai_for_software_developers_qcon/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_1664a641bdea",
+    "title": "Microsoft 365 pauses Copilot creep after admins cry foul",
+    "summary": "Automatic deployment of Redmond's assistant halted for now   Microsoft has paused plans to force the Microsoft 365 Copilot app on users, halting automatic installations for an unspecified period.…",
+    "body": "Automatic deployment of Redmond's assistant halted for now   Microsoft has paused plans to force the Microsoft 365 Copilot app on users, halting automatic installations for an unspecified period.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/automatic_deployment_copilot/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2e8e50fd6ea6",
+    "title": "Britain's satellite-watching gap to be plugged with £17.5M eyeball in Cyprus",
+    "summary": "No 1 Space Operations Squadron will get a persistent stare capability   The Ministry of Defence (MoD) plans to spend £17.5 million on a remotely-operated satellite monitoring facility in Cyprus, partl",
+    "body": "No 1 Space Operations Squadron will get a persistent stare capability   The Ministry of Defence (MoD) plans to spend £17.5 million on a remotely-operated satellite monitoring facility in Cyprus, partly to protect the UK's secure communications system Skynet.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/miniastry_of_defence_to_spend/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_35afaa321d4b",
+    "title": "IBM CEO pay pack jumps 51% for 2025 in target smash and grab",
+    "summary": "Median employee increase? 2.1%. And shareholders urged to vote against a request for AI bias reporting   Not all employees are created equally, just ask IBM boss Arvind Krishna, who received a financi",
+    "body": "Median employee increase? 2.1%. And shareholders urged to vote against a request for AI bias reporting   Not all employees are created equally, just ask IBM boss Arvind Krishna, who received a financial package valued at $38 million in calendar 2025 - equivalent to the average collective pay of 765 Big Blue workers.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/ibm_ceo_pay_pack_jumps/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_b457ae794830",
+    "title": "Samsung folds the Galaxy Z TriFold after just a few months",
+    "summary": "Analysts say three-screen smartphone successful as a proof of concept, memory crunch potentially made it unsustainable   Samsung is killing the Galaxy Z TriFold smartphone after just three months on t",
+    "body": "Analysts say three-screen smartphone successful as a proof of concept, memory crunch potentially made it unsustainable   Samsung is killing the Galaxy Z TriFold smartphone after just three months on the market.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/samsung_trifold_axed/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_ed7b3224add4",
+    "title": "Europe's cloud minnows tell Brussels to stop big tech 'sovereignty-washing'",
+    "summary": "24 execs sign open letter demanding control-based definitions and reserved procurement   Execs from 24 European cloud and digital service providers are urging the European Commission to legislate for ",
+    "body": "24 execs sign open letter demanding control-based definitions and reserved procurement   Execs from 24 European cloud and digital service providers are urging the European Commission to legislate for real tech sovereignty – not the illusion of it – in the upcoming Cloud and AI Development Act (CADA).…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/cispe_sovereignty_washing/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_02469ba55b88",
+    "title": "Iran's cyberattack against med tech firm is 'just the beginning'",
+    "summary": "Even without a navy, or air power, 'They'll still have the ability to hack'   Businesses should expect that Iran will conduct more aggressive cyber-ops as the war escalates, according to security anal",
+    "body": "Even without a navy, or air power, 'They'll still have the ability to hack'   Businesses should expect that Iran will conduct more aggressive cyber-ops as the war escalates, according to security analysts.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/irans_cyberattack_against_stryker/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_96cd2cbb7693",
+    "title": "Alibaba Cloud hikes prices by up to 34%, blames hardware costs and AI demand",
+    "summary": "Compute, storage, and SaaS all slugged - even on Alibaba's own silicon   Alibaba Cloud today informed users it will increase prices for many services by up to 34 percent.…",
+    "body": "Compute, storage, and SaaS all slugged - even on Alibaba's own silicon   Alibaba Cloud today informed users it will increase prices for many services by up to 34 percent.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/alibaba_cloud_hikes_prices_by/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_01269cbad5b5",
+    "title": "Water company wasted $200k on bad answers from an AI model – so built its own slop filtering system",
+    "summary": "Rozum orchestrates multiple flaky models and drives them to reasonable conclusions   Tech companies have in recent years developed a reputation for being rapacious rent-seekers, but can also be unwitt",
+    "body": "Rozum orchestrates multiple flaky models and drives them to reasonable conclusions   Tech companies have in recent years developed a reputation for being rapacious rent-seekers, but can also be unwittingly generous because their penchant to prioritize popularity over quality leaves room for others to sell improvements or repairs.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/rozum_ai/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_ff8e8c9e4c6f",
+    "title": "Linux Foundation kicks off effort to shield FOSS maintainers from AI slop bug reports",
+    "summary": "Big Tech donates $12.5 million to get things rolling   Half a dozen Big Tech players have together delivered $12.5 million in grants towards a project that aims to help maintainers of open source proj",
+    "body": "Big Tech donates $12.5 million to get things rolling   Half a dozen Big Tech players have together delivered $12.5 million in grants towards a project that aims to help maintainers of open source projects to cope with AI slop bug reports.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/linux_foundation_ai_slop_defense/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_09057b3b22c1",
+    "title": "Nvidia's on-again off-again H200 sales in China are now on again",
+    "summary": "Beijing appears to have eased its policy of pushing local GPUs   GTC   Nvidia has called on its supply chain partners to begin manufacturing its ageing H200 GPUs to meet demand for chips in China, CEO",
+    "body": "Beijing appears to have eased its policy of pushing local GPUs   GTC   Nvidia has called on its supply chain partners to begin manufacturing its ageing H200 GPUs to meet demand for chips in China, CEO Jensen Huang said Tuesday.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/17/nvidia_h200_china_sales_resume/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_0cc771ab3bc1",
+    "title": "World<s>Coin</s>'s newest pitch: Scan your eyeballs to prove AI agents really represent you",
+    "summary": "Sell your soul to the orb   Sam Altman has cooked up a plan to make his cryptocurrency/identity/eyeball-scanning-orb venture more useful by – you guessed it – adding agentic AI to the mix. Now the tec",
+    "body": "Sell your soul to the orb   Sam Altman has cooked up a plan to make his cryptocurrency/identity/eyeball-scanning-orb venture more useful by – you guessed it – adding agentic AI to the mix. Now the technology behind it will be used to identify the human behind bots.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/17/worldcoin_identity_ai_agents_whatever/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_17e0ef2cab3b",
+    "title": "AWS giveth with its right hand and breaketh with its left",
+    "summary": "Never attribute to malice what can be adequately explained by one very large org chart   Earlier this month, AWS  ended standard support  for PostgreSQL 13 on RDS. Customers who want to stay on a supp",
+    "body": "Never attribute to malice what can be adequately explained by one very large org chart   Earlier this month, AWS  ended standard support  for PostgreSQL 13 on RDS. Customers who want to stay on a supported database — as AWS is actively encouraging them to do — need to upgrade to PostgreSQL 14 or later.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/17/aws_ends_support_postgresql_13_rds/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_6a939393a681",
+    "title": "Mistral boasts code-proofing agent offers champagne performance on a <i>budget bière</i>",
+    "summary": "Formal code verification and testing offer a way around AI blind spots   Your AI may need AI to oversee its work. Gallic AI biz Mistral is leaning into making AI code generation more reliable with Lea",
+    "body": "Formal code verification and testing offer a way around AI blind spots   Your AI may need AI to oversee its work. Gallic AI biz Mistral is leaning into making AI code generation more reliable with Leanstral, a coding agent for proofs constructed using the open source  Lean  programming language.…",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/17/mistral_leanstral_ai_code_verification_tool/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_e142cc2a9b9b",
+    "title": "AI-powered robot learns how to harvest tomatoes more efficiently",
+    "summary": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This",
+    "body": "A new tomato-picking robot is learning to think before it acts. Instead of simply identifying ripe fruit, it predicts how easy each tomato will be to harvest and adjusts its approach accordingly. This smarter strategy boosted success rates to 81%, with the robot even switching angles when needed. The breakthrough could pave the way for farms where robots and humans work side by side.",
+    "source": "Sciencedaily Ai",
+    "sourceUrl": "https://www.sciencedaily.com/releases/2026/03/260317064512.htm",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_cc759cd73172",
+    "title": "Apple reportedly blocks vibe-coding apps from publishing updates",
+    "summary": "Apple is preventing popular vibe-coding apps like Replit and Vibecode from releasing new versions. The company points to existing guidelines, but the move targets potential competition to its own ecos",
+    "body": "Apple is preventing popular vibe-coding apps like Replit and Vibecode from releasing new versions. The company points to existing guidelines, but the move targets potential competition to its own ecosystem. \n The article  Apple reportedly blocks vibe-coding apps from publishing updates  appeared first on  The Decoder .",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/apple-reportedly-blocks-vibe-coding-apps-from-publishing-updates/",
+    "tags": [
+      "AI in practice",
+      "Artificial Intelligence",
+      "AI and coding",
+      "Apple"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_c0cb1c43e47b",
+    "title": "Pentagon plans to let AI companies train models on classified data",
+    "summary": "The US Department of War is working to set up secure environments where AI companies can train their models on classified data. Until now, models were only allowed to read classified data, not learn f",
+    "body": "The US Department of War is working to set up secure environments where AI companies can train their models on classified data. Until now, models were only allowed to read classified data, not learn from it. \n The article  Pentagon plans to let AI companies train models on classified data  appeared first on  The Decoder .",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/pentagon-plans-to-let-ai-companies-train-models-on-classified-data/",
+    "tags": [
+      "AI and society",
+      "Artificial Intelligence",
+      "AI and warfare",
+      "OpenAI",
+      "USA"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_7cc4280aecf0",
+    "title": "Beijing approves Nvidia's H200 chip sales as the company builds a China-ready version of its Groq inference chip",
+    "summary": "Nvidia has received long-awaited approval from Beijing to sell its second-most-powerful AI chip, the H200, to Chinese customers, Reuters reports. The company had halted production of the chip last yea",
+    "body": "Nvidia has received long-awaited approval from Beijing to sell its second-most-powerful AI chip, the H200, to Chinese customers, Reuters reports. The company had halted production of the chip last year due to regulatory hurdles on both sides of the Pacific. \n The article  Beijing approves Nvidia's H200 chip sales as the company builds a China-ready version of its Groq inference chip  appeared firs",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/beijing-approves-nvidias-h200-chip-sales-as-the-company-builds-a-china-ready-version-of-its-groq-inference-chip/",
+    "tags": [
+      "AI and society",
+      "Artificial Intelligence",
+      "China",
+      "Groq",
+      "Nvidia"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_32677bcd55bc",
+    "title": "Midjourney V8 rolls out with 5x faster generation but charges 4x more for its best features",
+    "summary": "Midjourney is rolling out an early version of its new V8 model for community testing. Image generation is reportedly much faster and more detailed, but some features cost four times as much. \n The art",
+    "body": "Midjourney is rolling out an early version of its new V8 model for community testing. Image generation is reportedly much faster and more detailed, but some features cost four times as much. \n The article  Midjourney V8 rolls out with 5x faster generation but charges 4x more for its best features  appeared first on  The Decoder .",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/midjourney-v8-rolls-out-with-5x-faster-generation-but-charges-4x-more-for-its-best-features/",
+    "tags": [
+      "AI in practice",
+      "Artificial Intelligence",
+      "Midjourney"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_3967a953cd56",
+    "title": "OpenAI ships GPT-5.4 mini and nano, faster and more capable but up to 4x pricier",
+    "summary": "OpenAI has released two new compact models—GPT-5.4 mini and nano—built for coding assistants, subagents, and computer control. GPT-5.4 mini nearly matches the full model's performance, but both new mo",
+    "body": "OpenAI has released two new compact models—GPT-5.4 mini and nano—built for coding assistants, subagents, and computer control. GPT-5.4 mini nearly matches the full model's performance, but both new models come with a steep price hike over their predecessors. \n The article  OpenAI ships GPT-5.4 mini and nano, faster and more capable but up to 4x pricier  appeared first on  The Decoder .",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/openai-ships-gpt-5-4-mini-and-nano-faster-and-more-capable-but-up-to-4x-pricier/",
+    "tags": [
+      "AI in practice",
+      "Artificial Intelligence",
+      "GPT-5",
+      "OpenAI"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_5fb2824526b8",
+    "title": "Microsoft restructures AI division to chase superintelligence after Nadella once called AI models a commodity",
+    "summary": "Microsoft is restructuring its AI division to double down on its own AI models, all the way up to superintelligence. That's a notable shift from what the company used to say. \n The article  Microsoft ",
+    "body": "Microsoft is restructuring its AI division to double down on its own AI models, all the way up to superintelligence. That's a notable shift from what the company used to say. \n The article  Microsoft restructures AI division to chase superintelligence after Nadella once called AI models a commodity  appeared first on  The Decoder .",
+    "source": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/microsoft-restructures-ai-division-to-chase-superintelligence-after-nadella-once-called-ai-models-a-commodity/",
+    "tags": [
+      "AI in practice",
+      "Artificial Intelligence",
+      "Microsoft"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_1caac0ca999e",
+    "title": "UiPath Fusion 2026 - how Travelodge is scaling intelligent automation. It starts with the business owner, not the bot",
+    "summary": "Martin Oswald, Head of Operational Transformation at Travelodge, explains how a deliberate, colleague-first approach to Robotic Process Automation (RPA) and intelligent automation has taken the hospit",
+    "body": "Martin Oswald, Head of Operational Transformation at Travelodge, explains how a deliberate, colleague-first approach to Robotic Process Automation (RPA) and intelligent automation has taken the hospitality group from a handful of pilots to hundreds of thousands of automated transactions.",
+    "source": "Diginomica",
+    "sourceUrl": "https://diginomica.com/uipath-fusion-2026-how-travelodge-scaling-intelligent-automation-it-starts-business-owner-not-bot",
+    "tags": [
+      "Agentic AI",
+      "Digital enterprise in the real world",
+      "Use cases"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_5eb8edfc0df2",
+    "title": "Tech disruption as a day job - Lloyds Banking Group CEO Charles Nunn on AI, digital transformation, and why his bank just isn't playing the same game as upstart fintechs",
+    "summary": "The bank had 800 live AI models in play before the generative hype cycle kicked off, says Nunn. Now, here comes agentic to carry on the disruption.",
+    "body": "The bank had 800 live AI models in play before the generative hype cycle kicked off, says Nunn. Now, here comes agentic to carry on the disruption.",
+    "source": "Diginomica",
+    "sourceUrl": "https://diginomica.com/tech-disruption-day-job-lloyds-banking-group-ceo-charles-dunn-ai-digital-transformation-and-why-his",
+    "tags": [
+      "Agentic AI",
+      "Generative AI and LLMs",
+      "Financial services and fintech",
+      "Audio"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_a8ab036fea97",
+    "title": "AI will follow the path of the industries that keep the world running",
+    "summary": "IFS's Kevin Miller predicts that industrial AI is moving from over-promoted bolt-ons to the operating model of essential industries — foundational, dependable, and reliable.",
+    "body": "IFS's Kevin Miller predicts that industrial AI is moving from over-promoted bolt-ons to the operating model of essential industries — foundational, dependable, and reliable.",
+    "source": "Diginomica",
+    "sourceUrl": "https://diginomica.com/ai-will-follow-path-industries-keep-world-running",
+    "tags": [
+      "AI adoption",
+      "Future of work",
+      "Infrastructure",
+      "Audio"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_385f19c7441a",
+    "title": "AI answer engines are changing how software gets discovered. Here’s how G2 is adapting",
+    "summary": "Buyers are using LLMs to support research more and more, leaving review sites like G2 wondering how to adapt. Tim Sanders, G2 Chief Innovation Officer, shares the company’s strategy and his take on Sa",
+    "body": "Buyers are using LLMs to support research more and more, leaving review sites like G2 wondering how to adapt. Tim Sanders, G2 Chief Innovation Officer, shares the company’s strategy and his take on SaaS vs Agentic platforms.",
+    "source": "Diginomica",
+    "sourceUrl": "https://diginomica.com/ai-answer-engines-are-changing-how-software-gets-discovered-heres-how-g2-adapting",
+    "tags": [
+      "Agentic AI",
+      "CRM and customer experience",
+      "Digital and content marketing",
+      "Audio"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_2eb499f8f1f5",
+    "title": "Double Fine’s Kiln pops out of the oven and onto PC, Xbox and PS5 on April 23",
+    "summary": "Double Fine is following up on  Keeper  — one of our  favorite games of 2025  — with  Kiln , a “multiplayer online pottery party brawler.” The game was  showcased  during Xbox’s Developer Direct strea",
+    "body": "Double Fine is following up on  Keeper  — one of our  favorite games of 2025  — with  Kiln , a “multiplayer online pottery party brawler.” The game was  showcased  during Xbox’s Developer Direct stream in January and now it has a release date. It’s coming to Xbox Series X/S, Xbox on PC, Xbox Cloud, PlayStation 5 and Steam on April 23. Xbox  said   Kiln  will be  Handheld Optimized  from the jump. ",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/gaming/xbox/double-fines-kiln-pops-out-of-the-oven-and-onto-pc-xbox-and-ps5-on-april-23-171433966.html?src=rss",
+    "tags": [
+      "Video Games",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_99517eb921f5",
+    "title": "The Spider-Man: Brand New Day trailer is filled with MCU cameos",
+    "summary": "We just got our  first trailer for  Spider-Man: Brand New Day ,  the next big Marvel film. This is the fourth installment led by Tom Holland and follows the multiversal shenanigans of  Spider-Man: No ",
+    "body": "We just got our  first trailer for  Spider-Man: Brand New Day ,  the next big Marvel film. This is the fourth installment led by Tom Holland and follows the multiversal shenanigans of  Spider-Man: No Way Home . \n I'm about to get into some spoilers, for those still working through the MCU catalog.  No Way Home  ended with the entire world forgetting about the existence of Peter Parker, so this new",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/entertainment/tv-movies/the-spider-man-brand-new-day-trailer-is-filled-with-mcu-cameos-170215452.html?src=rss",
+    "tags": [
+      "Movies",
+      "Media",
+      "Celebrities",
+      "Arts & Entertainment",
+      "site|engadget"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_d107b23c4785",
+    "title": "Meta's latest creator push comes with $3,000 bonuses for posting on Facebook",
+    "summary": "Stop me if you've heard this before: Meta has a new program to lure top creator talent to Facebook and it comes with hefty bonus payments. The company is launching a  new initiative  aimed at popular ",
+    "body": "Stop me if you've heard this before: Meta has a new program to lure top creator talent to Facebook and it comes with hefty bonus payments. The company is launching a  new initiative  aimed at popular creators who already have large followings on TikTok, YouTube or Instagram and offering them bonuses up to $3,000 a month just for posting on Facebook. Meta's goal is to draw more top talent to its  C",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/social-media/metas-latest-creator-push-comes-with-3000-bonuses-for-posting-on-facebook-160000283.html?src=rss",
+    "tags": [
+      "Media",
+      "Social & Online Media",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_44a0c301e9cc",
+    "title": "Google expands Search Live globally",
+    "summary": "After rolling out Search Live to all US Google app users  last September , Google is now bringing the feature to every place where it offers its AI Mode chatbot. Search Live, if you need a reminder, a",
+    "body": "After rolling out Search Live to all US Google app users  last September , Google is now bringing the feature to every place where it offers its AI Mode chatbot. Search Live, if you need a reminder, allows you to point your phone's camera at an object or scene and ask questions about what you see in front of you. Google  debuted the tool at I/O 2025  before it began rolling it out to users. With t",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/ai/google-expands-search-live-globally-150000252.html?src=rss",
+    "tags": [
+      "Technology & Electronics",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_84e59958d8e1",
+    "title": "Tech companies are teaming up to combat scammers",
+    "summary": "A coalition of Big Tech companies is working on a more comprehensive solution to combat  online scams . As first reported by  Axios , Google, Microsoft, LinkedIn, Meta, Amazon, OpenAI, Adobe, Levi Str",
+    "body": "A coalition of Big Tech companies is working on a more comprehensive solution to combat  online scams . As first reported by  Axios , Google, Microsoft, LinkedIn, Meta, Amazon, OpenAI, Adobe, Levi Strauss & Co, Target, Pinterest and Match Group announced the signing of the Industry Accord Against Online Scams and Fraud. The new agreement is meant to put up a united industry-wide front against onli",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/cybersecurity/tech-companies-are-teaming-up-to-combat-scammers-144616545.html?src=rss",
+    "tags": [
+      "Financial Fraud Prevention",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_c64f3013d0ff",
+    "title": "It's time for Game Freak to finally give Pokémon some proper voice acting",
+    "summary": "Ever since making the jump to the Nintendo Switch, there's something that's bugged me about practically every modern Pokémon game, a feeling that has only intensified after spending countless hours in",
+    "body": "Ever since making the jump to the Nintendo Switch, there's something that's bugged me about practically every modern Pokémon game, a feeling that has only intensified after spending countless hours in  Pokopia . For titles based in big, open worlds and filled with adorable polygonal characters and lovely music, why is nearly every pokémon still saddled with a call that sounds like a dial-up intern",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/gaming/nintendo/its-time-for-game-freak-to-finally-give-pokemon-some-proper-voice-acting-130000851.html?src=rss",
+    "tags": [
+      "Video Games",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_e31cbab7548a",
+    "title": "BMW's i3 is reborn as a sporty 440 mile range EV sedan",
+    "summary": "After letting us drive a prototype  around in the snow  earlier this month, BMW has fully unveiled its all-new i3 electric vehicle. It's a far cry from the original  funky  hatch  launched  way back i",
+    "body": "After letting us drive a prototype  around in the snow  earlier this month, BMW has fully unveiled its all-new i3 electric vehicle. It's a far cry from the original  funky  hatch  launched  way back in 2013, offering more of everything including power, range and space. It also looks like you'd hope a 3-series EV would: a sporty sedan, minus the polarizing grille on the gas-powered M3.  \n The i3 us",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/transportation/evs/bmws-i3-is-reborn-as-a-sporty-440-mile-range-ev-sedan-124614369.html?src=rss",
+    "tags": [
+      "Autos",
+      "Transportation",
+      "Nature & Environment",
+      "site|engadget",
+      "provider_name|Engadget"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_9e8d75e270fe",
+    "title": "The Defense Department reportedly plans to train AI models on classified military data",
+    "summary": "The Pentagon is making plans to have AI companies train versions of their models specifically for military use on classified information, according to the  MIT Technology Review . If true, it wouldn’t",
+    "body": "The Pentagon is making plans to have AI companies train versions of their models specifically for military use on classified information, according to the  MIT Technology Review . If true, it wouldn’t come as a surprise, seeing as the US is aiming to become an “AI-first\" warfighting force, based on the  statement  [PDF] released by Secretary of Defense Pete Hegseth earlier this year.  The departme",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/ai/the-defense-department-reportedly-plans-to-train-ai-models-on-classified-military-data-120332113.html?src=rss",
+    "tags": [
+      "Politics & Government",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_267c44f9dc17",
+    "title": "How to prepare your phone for trade-in",
+    "summary": "There was once a time in which many people couldn't wait to toss their smartphone aside every two years (and sometimes even more frequently) in order to get the latest model as soon as it hit shelves.",
+    "body": "There was once a time in which many people couldn't wait to toss their smartphone aside every two years (and sometimes even more frequently) in order to get the latest model as soon as it hit shelves. But that world has faded for the most part now as shoppers demand devices that last for years so they can hold on to them for longer. And when the time finally comes to upgrade, many are being more c",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/mobile/smartphones/how-to-prepare-your-phone-for-trade-in-120000724.html?src=rss",
+    "tags": [
+      "Smart Phones",
+      "Technology & Electronics",
+      "Handheld & Connected Devices",
+      "Finance Trading",
+      "site|engadget"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_71be7430eb6a",
+    "title": "Apple Studio Display XDR review: Expensive, but there’s no monitor like it",
+    "summary": "It’s hard for most people to justify spending $3,299 on a monitor, but creative pros will gladly do so if it makes their jobs easier. Apple’s 27-inch 5K  Studio Display XDR  is aimed straight at those",
+    "body": "It’s hard for most people to justify spending $3,299 on a monitor, but creative pros will gladly do so if it makes their jobs easier. Apple’s 27-inch 5K  Studio Display XDR  is aimed straight at those folks and it costs considerably less than the company’s previous high-end monitor, the  6K Pro Display XDR . \n Thanks to the Mini LED IPS panel, the Studio Display XDR has higher brightness and color",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/computing/accessories/apple-studio-display-xdr-review-expensive-but-theres-no-monitor-like-it-120018426.html?src=rss",
+    "tags": [
+      "Technology & Electronics",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_fb909b6ac012",
+    "title": "IO Interactive splits with MindsEye developer and ends Hitman collab",
+    "summary": "MindsEye  developer Build a Rocket Boy (BARB) has gone through serious drama recently including  layoffs and accusations of sabotage . Now, the company is parting ways with its  MindsEye  co-publisher",
+    "body": "MindsEye  developer Build a Rocket Boy (BARB) has gone through serious drama recently including  layoffs and accusations of sabotage . Now, the company is parting ways with its  MindsEye  co-publisher IOI Partners (the company behind  Hitman  publisher IO Interactive) and assuming sole publishing responsibilities going forward. It also means that a planned  MindsEye  and  Hitman  collaboration wil",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/gaming/io-interactive-splits-with-mindseye-developer-and-ends-hitman-collab-110028292.html?src=rss",
+    "tags": [
+      "Video Games",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_3fe0be12a917",
+    "title": "Defense Department says Anthropic poses 'unacceptable risk' to national security",
+    "summary": "The Department of Defense said giving Anthropic continued access to its warfighting infrastructure would “introduce unacceptable risk” to its supply chains in a  court filing submitted  in response to",
+    "body": "The Department of Defense said giving Anthropic continued access to its warfighting infrastructure would “introduce unacceptable risk” to its supply chains in a  court filing submitted  in response to the AI company’s lawsuit. If you’ll recall, Anthropic  sued the government  to challenge the supply chain risk designation it received for refusing to allow its model to be used for mass surveillance",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/ai/defense-department-says-anthropic-poses-unacceptable-risk-to-national-security-094328717.html?src=rss",
+    "tags": [
+      "Politics & Government",
+      "Business",
+      "Government Agencies",
+      "site|engadget",
+      "provider_name|Engadget"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_96da9ee39c94",
+    "title": "Subnautica 2 might finally be entering early access in May",
+    "summary": "Subnautica 2  has weathered the storm and has rescheduled its early access release.  IGN  reported today that the sequel to the underwater survival game will begin early access on PC and Xbox in May, ",
+    "body": "Subnautica 2  has weathered the storm and has rescheduled its early access release.  IGN  reported today that the sequel to the underwater survival game will begin early access on PC and Xbox in May, although a more specific date was not provided.  The news comes a day after a judge  ruled  that former Unknown Worlds Entertainment CEO Ted Gill should be rehired at the game studio. That decision ca",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/gaming/subnautica-2-might-finally-be-entering-early-access-in-may-223747369.html?src=rss",
+    "tags": [
+      "Video Games",
+      "site|engadget",
+      "provider_name|Engadget",
+      "region|US",
+      "language|en-US"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_c0363e827793",
+    "title": "UnreadAI",
+    "summary": "1日100件の未読通知？AIアシスタント「UnreadAI」が全部\"読んどいたよ\"って要約してくれる未来が来た！",
+    "body": "**UnreadAIの3つの特徴**\n- 洪水のように押し寄せるメール、Slack、SNSの未読通知をAIが一括で管理！\n- 重要な情報だけをAIが賢くピックアップし、数秒で読めるダイジェストを自動生成。\n- あなた専用の\"情報執事\"が、本当に見るべき情報だけを厳選してお届け。\n\n**こんな人に向いています**\n複数のプロジェクトを掛け持ちし、Slackやメールの通知が鳴り止まないあなたへ。重要な情報を見逃す恐怖と、すべてをチェックする時間がないジレンマから、このAIアシスタントがあなたを解放します。休暇明けの絶望的な未読数も、もう怖くありません！\n\n**日本での活用可能性**\n現時点では英語コンテンツの要約に強みを発揮しますが、海外の最新情報やグローバルチームとのやり取りが多い方には即戦力となるでしょう。日本語の要約精度は今後のアップデートに期待大ですが、まずは英語のニュースレターやチャットの要約から試す価値は絶大です。",
+    "source": "There's An AI For That",
+    "sourceUrl": "https://theresanaiforthat.com/ai/unreadai/",
+    "tags": [
+      "UnreadAI",
+      "タイパ革命",
+      "情報過多"
+    ],
+    "publishedAt": "2026-03-16"
+  },
+  {
+    "id": "k_9711d0e9932d",
+    "title": "How World ID wants to put a unique human identity on every AI agent",
+    "summary": "【サイバーパンクが現実に】あなたの「眼」がAIの暴走を止める！究極のデジタルID「World ID」爆誕。",
+    "body": "**How World ID wants to put a unique human identity on every AI agentの3つの特徴**\n- 虹彩スキャン（眼の認証）によって、世界に一つだけのユニークなデジタルIDを発行。\n- 開発中のAIエージェントにそのIDを紐付け、「1人の人間が操作している」ことを暗号技術で証明。\n- 悪意のあるAIボット軍団によるスパムやシステムへのサイバー攻撃を未然に防ぐ。\n\n**こんな人に向いています**\n自社サービスをAIボットの攻撃から守りたいセキュリティ担当者や、来るべきAIエージェント時代に備えたい開発者にこそ試してほしい。人間とAIが共存する未来のインターネットで、偽アカウントやシステムへの過剰負荷といった悪夢のような課題に、根本的な解決策を提示する。\n\n**日本での活用可能性**\nWorldcoinは日本国内でも虹彩スキャンの拠点を展開しており、技術的な導入ハードルは低い。Webサービスでの不正アクセス防止から、AIエージェントの本人証明まで、その応用範囲は無限大だ。ただし、生体情報を預けることへのプライバシー懸念や倫理的な議論は、導入前に慎重に検討する必要があるだろう。",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/ai/2026/03/world-id-wants-you-to-put-a-cryptographically-unique-human-identity-behind-your-ai-agents/",
+    "tags": [
+      "AIエージェント",
+      "サイバーセキュリティ",
+      "Web3"
+    ],
+    "publishedAt": "2026-03-17"
+  },
+  {
+    "id": "k_38ba73bfd012",
+    "title": "ProjectNext",
+    "summary": "プロジェクト炎上の悪夢よ、さらば。AIがあなたの最強の右腕になる『ProjectNext』降臨。",
+    "body": "**ProjectNextの3つの特徴**\n- AIが複雑なプロジェクトを瞬時に分解し、最適なタスクとスケジュールを自動で叩き出す！\n- 進捗の遅れやボトルネックをAIが予知！問題が起こる前に先回りして解決策を提案。\n- チームの状況をAIがリアルタイムに分析し、誰にどのタスクを任せるべきか賢くアサイン。\n\n**こんな人に向いています**\n「また計画倒れ…」「進捗どう？が口癖」そんな悩める全プロジェクトマネージャーに朗報です。複数案件を抱え、メンバーのタスク管理に追われ、本来のクリエイティブな仕事に集中できないあなたにこそ、このAIは革命をもたらします。\n\n**日本での活用可能性**\n現時点では日本語対応が限定的な可能性がありますが、その革新性は言語の壁を越えて日本のビジネスを加速させるポテンシャルを秘めています。まずは英語が得意なメンバーがいるチームや、個人のタスク管理でその実力を試し、未来のワークスタイルを先取りするのが賢い一手です。",
+    "source": "There's An AI For That",
+    "sourceUrl": "https://theresanaiforthat.com/ai/projectnext/",
+    "tags": [
+      "プロジェクト管理",
+      "AI革命",
+      "未来の働き方"
+    ],
+    "publishedAt": "2026-03-16"
+  },
+  {
+    "id": "k_dee7686ef172",
+    "title": "German biotech Kupando raises €10M more to take its innate immunity drug into the clinic",
+    "summary": "がん治療の最終兵器か？ドイツ発「眠れる免疫」を叩き起こす新薬が、ついに人間への挑戦を開始！",
+    "body": "**German biotech Kupando raises €10M more to take its innate immunity drug into the clinicの3つの特徴**\n- がん細胞や薬剤耐性菌に対し、生まれつき体に備わる「自然免疫」の力を叩き起こして攻撃させる、全く新しいアプローチの治療薬。\n- これまで主流だった「記憶する免疫（適応免疫）」に頼る治療法とは一線を画し、難治性の固形がんなどへの効果が期待される。\n- 総額38億円超の巨額資金調達を達成し、その有効性と安全性を確かめるための初のヒト臨床試験へと突き進む。\n\n**こんな人に向いています**\n最新の医療技術やヘルスケア分野のブレークスルーを誰よりも早く知りたい、知的好奇心旺盛なビジネスパーソンにこそ読んでほしいニュースです。既存の治療法に限界を感じている医療関係者や、未来のヘルスケアに投資する投資家にとっても、見逃せない巨大な可能性を秘めています。\n\n**日本での活用可能性**\nこの新薬はまだ研究開発の初期段階であり、日本ですぐに利用できるわけではありません。しかし、がんや薬剤耐性菌は日本でも極めて深刻な課題であるため、臨床試験で有効性が証明されれば、将来的に日本の医療を根底から変えるゲームチェンジャーとなり得ます。実用化には数年単位の時間と厳しい国の承認プロセスが必要となるでしょう。",
+    "source": "The Next Web",
+    "sourceUrl": "https://thenextweb.com/news/kupando-series-a-kup101-phase-1b-innate-immunity",
+    "tags": [
+      "がん治療",
+      "免疫療法",
+      "最先端医療"
+    ],
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "k_922eb829dde7",
+    "title": "DOD says Anthropic’s ‘red lines’ make it an ‘unacceptable risk to national security’",
+    "summary": "【速報】最強AI「Claude」開発元、米国防総省と全面対決へ！「倫理」か「国防」か、AI業界を揺るがす大問題が勃発。",
+    "body": "**DOD says Anthropic’s ‘red lines’ make it an ‘unacceptable risk to national security’の3つの特徴**\n- AI界の優等生「Anthropic」が、なんと米国防総省から「国家安全保障上のリスク」と名指しで指摘される異例の事態が発生。\n- 原因はAnthropicの厳格な倫理規定。「戦争利用など、人道に反する場合はAIを停止する可能性がある」という姿勢が問題視された。\n- AIの「倫理」と国家の「安全保障」が真っ向から衝突。テクノロジーが自律的な意思を持つ未来を予感させる大事件だ。\n\n**こんな人に向いています**\n「AIをビジネスに導入したいけど、倫理的なリスクが心配…」そんな風に考えるすべてのビジネスパーソンに必読です。自社のAI利用ポリシーを策定する上での重要な示唆に富んでおり、テクノロジーが社会や国家とどう向き合うべきか、未来のスタンダードを考えるきっかけになります。\n\n**日本での活用可能性**\nこの一件は、日本企業や政府がAIガバナンスを構築する上で最高のケーススタディとなります。単に便利なツールとしてAIを導入するだけでなく、「いかなる状況で利用を制限するか」という倫理的な防衛線をどこに引くべきか。今すぐ自社のポリシーを見直す絶好の機会です。",
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/03/18/dod-says-anthropics-red-lines-make-it-an-unacceptable-risk-to-national-security/",
+    "tags": [
+      "AI倫理",
+      "Anthropic",
+      "安全保障"
+    ],
+    "publishedAt": "2026-03-18"
+  }
+]
