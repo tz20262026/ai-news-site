@@ -43,3 +43,5 @@ jobs:
           git add src/data/extra_articles.json scripts/data/vercel_posted_ids.log
           git diff --cached --quiet && echo "変更なし" || git commit -m "記事追加: $(date '+%Y-%m-%d %H:%M JST')"
           git push
+      - name: Force Vercel Deploy
+        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
