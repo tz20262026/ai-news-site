@@ -1,5 +1,18 @@
 [
   {
+    "id": "v_1bd39ec3f368_1774156357",
+    "title": "どこにいても、あなたのAIは掌の中に。自律エージェント開発の新時代を告げる監視ツール、ClawMetry Cloud。",
+    "summary": "どこにいても、あなたのAIは掌の中に。自律エージェント開発の新時代を告げる監視ツール、ClawMetry Cloud。",
+    "body": "自ら思考し、タスクを遂行する自律型AIエージェント。その開発は、もはや未来の夢物語ではなく、私たちの手の中にある現実だ。",
+    "source": "Product Hunt",
+    "sourceUrl": "https://www.producthunt.com/r/p/1101215?app_id=339",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-03-18",
+    "imagePrompt": ""
+  },
+  {
     "id": "v_38173a32c96e_1774133716",
     "title": "GPUの限界を突破せよ！コーディング不要で誰でもAIモデルを爆速ファインチューニングできる「Unsloth Studio」降臨",
     "summary": "GPUの限界を突破せよ！コーディング不要で誰でもAIモデルを爆速ファインチューニングできる「Unsloth Studio」降臨",
