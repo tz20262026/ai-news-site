@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_a842f44a1724_1774377712",
+    "title": "米国防総省と法廷で激突！自らの「倫理」を貫く異色のAI『Claude』、その思想と実力に迫る。",
+    "summary": "米国防総省と法廷で激突！自らの「倫理」を貫く異色のAI『Claude』、その思想と実力に迫る。",
+    "body": "人工知能が社会のあらゆる領域に浸透する今、その開発思想と倫理観が、かつてないほど鋭く問われています。特に、AIの軍事転用は最も繊細で重大なテーマです。そんな中、自社AIの利用用途に「待った」をかけ、世界最強の組織の一つであるアメリカ国防総省と正面から対立する道を選んだ企業が現れました。その名はAnthropic。彼らが命を懸けて守ろうとするAI「Claude」とは、一体どのような存在なのでしょうか。この前代未聞の衝突は、単なる技術論争ではなく、我々がAIとどう向き合うべきかという根源的な問いを突きつけています。\n\nAnthropicは、OpenAIの元トップ研究者たちが「安全で倫理的なAI」の実現を掲げて設立した、今最も注目されるAI企業の一つです。彼らが開発した大規模言語モデル「Claude」の最大の特徴は、その卓越した性能の根底にある「憲法AI（Constitutional AI）」という独自のトレーニング手法にあります。これは、AIに対して特定の価値観や原則を「憲法」として与え、AIが自らの出力をその憲法に照らし合わせて自己修正していく仕組みです。これにより、有害なコンテンツの生成を抑制し、より中立で安全な応答を導き出すことを目指しています。今回の国防総省との対立は、この「憲法」に反する可能性のある軍事利用、特に戦闘システムへの応用をAnthropicが拒んだことに端を発します。Claudeは、最大で20万トークン（日本語で約10万文字）という驚異的な量の情報を一度に処理できるため、複雑な契約書や研究論文の読解、長大な議事録の要約といったタスクで他の追随を許さない圧倒的な能力を発揮します。\n\nこの倫理観と高性能を両立したClaudeは、様々なビジネスシーンで絶大な効果を発揮します。例えば、法務部門では膨大な量の契約書や判例を瞬時に読み解き、リスクを洗い出すリーガルチェックのアシスタントとして活躍するでしょう。また、金融アナリストや市場調査担当者にとっては、大量のレポートやニュース記事から重要なインサイトを抽出するための強力なリサーチツールとなります。さらに、その安全性と丁寧な対話能力は、カスタマーサポートの品質向上や、企業のコンプライアンス遵守が求められる社内コミュニケーションのガイドライン作成など、人間中心の繊細な領域でも安心して活用できる可能性を秘めています。\n\nClaudeの世界を体験するのは驚くほど簡単です。公式サイトにアクセスし、メールアドレスなどを登録するだけで、すぐに無料版の利用を開始できます。より多くの機能や高速な応答を求めるプロフェッショナル向けには、月額20ドル程度の有料プラン「Claude Pro」も用意されています。開発者であれば、APIを通じて自社のサービスにClaudeの知性を組み込むことも可能です。まずは無料版で、その対話の質と長文読解能力の高さを体感してみてください。\n\nClaudeは単なる高機能なAIアシスタントではありません。それは、技術の進歩がもたらす光と影を深く見つめ、自らの「在り方」を問い続ける哲学的な探求の結晶です。技術の未来と倫理の狭間で生まれたこの異色のAIが、あなたの仕事や思考にどのような化学反応をもたらすのか。その真価を、今すぐあなたの手で確かめてみてください。",
+    "source": "Wired",
+    "sourceUrl": "https://www.wired.com/story/department-of-defense-responds-to-anthropic-lawsuit/",
+    "tags": [
+      "Business",
+      "Business / Artificial Intelligence",
+      "Anthropic",
+      "department of defense",
+      "artificial intelligence"
+    ],
+    "publishedAt": "2026-03-18",
+    "imagePrompt": "A determined tech professional in a sharp business suit stands on a street in Washington D.C., intently reviewing a document on a sleek tablet. In the background, the imposing facade of a government building like the Department of Justice is visible, bathed in the dramatic, low-angle light of late afternoon. The scene conveys a sense of intellectual conflict and high stakes. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_a842f44a1724_1774377712.jpg"
+  },
+  {
     "id": "v_ba0ebfd3e0b6_1774377570",
     "title": "ペンタゴン、Anthropicと決別。独自AI開発で描く「国家安全保障の未来図」とは。",
     "summary": "ペンタゴン、Anthropicと決別。独自AI開発で描く「国家安全保障の未来図」とは。",
