@@ -214,7 +214,7 @@ def main() -> int:
 
     # 記事ID確定
     article_id   = f"v_{tool.get('id', '')[:12]}_{int(time.time())}"
-    published_at = (tool.get("published_at") or "")[:10] or datetime.now().strftime("%Y-%m-%d")
+    published_at = datetime.now().strftime("%Y-%m-%d")
     tags         = tool.get("tags") or ["AI"]
 
     # 画像生成（失敗しても記事は保存される）
