@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.microcms-assets.io",
       },
+      {
+        // GCS（Imagen 3 生成画像）
+        protocol: "https",
+        hostname: "storage.googleapis.com",
+      },
     ],
   },
 };
