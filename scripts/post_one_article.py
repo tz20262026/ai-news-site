@@ -32,7 +32,7 @@ POSTED_LOG          = DATA_DIR / "vercel_posted_ids.log"
 
 GCP_PROJECT  = os.environ.get("GCP_PROJECT", "")
 GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
-MODEL_NAME   = "gemini-1.5-pro-002"
+MODEL_NAME   = "gemini-2.5-pro"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -144,7 +144,7 @@ def main() -> int:
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
             temperature=0.8,
-            max_output_tokens=4096,
+            max_output_tokens=16384,
         ),
     )
     raw_text = response.text.strip()
