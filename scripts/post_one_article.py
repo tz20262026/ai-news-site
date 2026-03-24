@@ -32,7 +32,7 @@ POSTED_LOG          = DATA_DIR / "vercel_posted_ids.log"
 
 GCP_PROJECT  = os.environ.get("GCP_PROJECT", "")
 GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
-MODEL_NAME   = "gemini-2.0-flash-001"
+MODEL_NAME   = "gemini-2.0-flash"
 
 logging.basicConfig(
     level=logging.INFO,
