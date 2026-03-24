@@ -28,7 +28,7 @@ jobs:
           python-version: '3.12'
 
       - name: 依存関係インストール
-        run: pip install google-genai
+        run: pip install google-genai google-cloud-storage
 
       - name: 記事生成
         env:

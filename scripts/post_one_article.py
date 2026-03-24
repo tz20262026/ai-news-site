@@ -2,11 +2,9 @@
 """
 scripts/post_one_article.py
 未掲載のAIツール1件を900〜1000字の日本語記事に生成し、
+Imagen 3 で画像を生成して GCS にアップロードし、
 src/data/extra_articles.json に追加する。
 （デプロイはGitHub pushでVercelが自動実行）
-
-使い方:
-  python scripts/post_one_article.py
 """
 
 import json
@@ -22,7 +20,7 @@ from google import genai
 from google.genai import types
 
 # ---------------------------------------------------------------------------
-# パス設定（ai-news-siteルートからの相対パス）
+# パス設定
 # ---------------------------------------------------------------------------
 BASE_DIR            = Path(__file__).parent.parent
 EXTRA_ARTICLES_PATH = BASE_DIR / "src" / "data" / "extra_articles.json"
@@ -30,9 +28,11 @@ DATA_DIR            = Path(__file__).parent / "data"
 RAW_TOOLS_PATH      = DATA_DIR / "raw_tools.json"
 POSTED_LOG          = DATA_DIR / "vercel_posted_ids.log"
 
-GCP_PROJECT  = os.environ.get("GCP_PROJECT", "")
-GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
-MODEL_NAME   = "gemini-2.5-pro"
+GCP_PROJECT    = os.environ.get("GCP_PROJECT", "")
+GCP_LOCATION   = os.environ.get("GCP_LOCATION", "us-central1")
+MODEL_NAME     = "gemini-2.5-pro"
+IMAGE_MODEL    = "imagen-3.0-generate-001"
+GCS_BUCKET     = f"{GCP_PROJECT}-news-images" if GCP_PROJECT else ""
 
 logging.basicConfig(
     level=logging.INFO,
@@ -110,6 +110,47 @@ def append_posted(tool_id: str) -> None:
     with open(POSTED_LOG, "a", encoding="utf-8") as f:
         f.write(tool_id + "\n")
 
+def generate_and_upload_image(client: genai.Client, image_prompt: str, article_id: str) -> str:
+    """Imagen 3 で画像生成 → GCS にアップロード → 公開URLを返す。失敗時は空文字。"""
+    if not image_prompt or not GCS_BUCKET:
+        return ""
+
+    # 画像生成
+    try:
+        img_response = client.models.generate_images(
+            model=IMAGE_MODEL,
+            prompt=image_prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+                aspect_ratio="16:9",
+            ),
+        )
+        image_bytes = img_response.generated_images[0].image.image_bytes
+        logger.info("画像生成: 成功")
+    except Exception as e:
+        logger.warning(f"画像生成スキップ: {e}")
+        return ""
+
+    # GCS にアップロード
+    try:
+        from google.cloud import storage
+        gcs = storage.Client(project=GCP_PROJECT)
+
+        bucket = gcs.bucket(GCS_BUCKET)
+        if not bucket.exists():
+            bucket = gcs.create_bucket(GCS_BUCKET, location="US")
+            logger.info(f"GCSバケット作成: {GCS_BUCKET}")
+
+        blob = bucket.blob(f"{article_id}.jpg")
+        blob.upload_from_string(image_bytes, content_type="image/jpeg")
+        blob.make_public()
+        url = blob.public_url
+        logger.info(f"画像URL: {url}")
+        return url
+    except Exception as e:
+        logger.warning(f"画像アップロードスキップ: {e}")
+        return ""
+
 def main() -> int:
     if not GCP_PROJECT:
         logger.error("GCP_PROJECT が未設定です。")
@@ -130,8 +171,9 @@ def main() -> int:
     tool = pending[0]
     logger.info(f"対象: {tool['name']}")
 
-    # 記事生成
     client = genai.Client(vertexai=True, project=GCP_PROJECT, location=GCP_LOCATION)
+
+    # 記事テキスト生成
     prompt = ARTICLE_PROMPT.format(
         name=tool.get("name", ""),
         url=tool.get("url", ""),
@@ -150,7 +192,7 @@ def main() -> int:
     raw_text = response.text.strip()
     logger.info(f"生成文字数: {len(raw_text)}字")
 
-    # [キャッチコピー] / [本文] / [画像プロンプト] を抽出
+    # セクション抽出
     def extract_section(label: str, text: str) -> str:
         m = re.search(rf"\[{label}\]\s*\n(.*?)(?=\n\[|\Z)", text, re.DOTALL)
         return m.group(1).strip() if m else ""
@@ -159,7 +201,6 @@ def main() -> int:
     body         = extract_section("本文", raw_text)
     image_prompt = extract_section("画像プロンプト", raw_text)
 
-    # パース失敗時は全文をbodyに
     if not body:
         body = raw_text
 
@@ -171,12 +212,16 @@ def main() -> int:
     logger.info(f"キャッチコピー: {catchcopy[:40]}…" if catchcopy else "キャッチコピー: (なし)")
     logger.info(f"本文文字数: {len(body)}字")
 
-    # extra_articles.json 更新
-    existing = json.loads(EXTRA_ARTICLES_PATH.read_text(encoding="utf-8")) if EXTRA_ARTICLES_PATH.exists() else []
-
+    # 記事ID確定
     article_id   = f"v_{tool.get('id', '')[:12]}_{int(time.time())}"
     published_at = (tool.get("published_at") or "")[:10] or datetime.now().strftime("%Y-%m-%d")
     tags         = tool.get("tags") or ["AI"]
+
+    # 画像生成（失敗しても記事は保存される）
+    image_url = generate_and_upload_image(client, image_prompt, article_id)
+
+    # extra_articles.json 更新
+    existing = json.loads(EXTRA_ARTICLES_PATH.read_text(encoding="utf-8")) if EXTRA_ARTICLES_PATH.exists() else []
 
     new_article = {
         "id":          article_id,
@@ -188,6 +233,7 @@ def main() -> int:
         "tags":        tags[:5],
         "publishedAt": published_at,
         "imagePrompt": image_prompt,
+        "imageUrl":    image_url,
     }
 
     updated = [new_article] + existing
