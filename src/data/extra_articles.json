@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_1ac9936aae8a_1774482800",
+    "title": "アップル帝国の絶対ルール、開発者は「理由なき削除」に抗えないのか？",
+    "summary": "アップル帝国の絶対ルール、開発者は「理由なき削除」に抗えないのか？",
+    "body": "あなたのスマートフォンに並ぶ、お気に入りのアプリたち。もしそれが、ある朝突然、何の説明もなくストアから跡形もなく消え去るとしたら？これは単なる仮定の話ではない。多くのユーザーに愛された無料音楽アプリ「Musi」がApp Storeから削除され、開発元がアップルを訴えた裁判で、開発者たちを震撼させる判決が下されたのだ。これは、巨大プラットフォームの上でビジネスを築く、すべての人々にとって他人事ではない。\n\n今回、司法が示したのは「アップルは理由の有無にかかわらず、アプリをApp Storeから削除できる」という、プラットフォームの絶対的な権力を追認する判断だった。Musiは、YouTube上の音源をバックグラウンド再生できる利便性から絶大な人気を誇っていた。しかし、アップルは同アプリがYouTubeの利用規約に違反している可能性などを理由に、ストアから削除。これに対しMusi側は、アップルが自社の音楽サービス「Apple Music」と競合するアプリを不当に排除していると主張し、法廷闘争に打って出た。しかし、結果はMusi側の完敗。裁判所はアップルの広範な裁量権を認め、それどころか、Musi側の弁護士が「事実をでっち上げた」として制裁を科すという異例の展開となった。この一件は、App Storeというエコシステムがいかにアップルの厳格な管理下にあり、開発者がそのルールに抗うことが極めて困難であるという現実を、残酷なまでに浮き彫りにしたのである。\n\nこの衝撃的な判決は、特にアプリ開発者やスタートアップの経営者にとって、事業戦略の根幹を揺るがす警鐘となる。特定のプラットフォームに収益の全てを依存するビジネスモデルは、常に「理由なき削除」という巨大なリスクを抱えているのだ。この教訓を活かすならば、リスクヘッジは必須だ。アプリだけでなくウェブ版のサービスを並行して強化したり、ユーザーリストを自社で管理し、メールマガジンなどを通じて直接コミュニケーションできるチャネルを確保したりする戦略が、これまで以上に重要になるだろう。プラットフォームという巨人の肩の上で踊るだけでなく、自分だけの確固たる舞台を築く視点が不可欠だ。\n\nMusiは広告モデルを採用した無料アプリとして提供されていたが、今回の削除により、App Storeから新規にダウンロードすることは不可能となった。既存ユーザーは当面利用できる可能性もあるが、アップデートは提供されず、未来は不透明なままだ。無料で始められる手軽さが魅力だったアプリが、プラットフォームの意向一つでその入り口を完全に閉ざされてしまった。この事実は、ビジネスモデルの脆弱性を考える上で重い教訓を与えてくれる。\n\n結局のところ、我々は巨大なプラットフォームが提供する恩恵と、その裏にある絶対的なルールの上で活動しているに過ぎない。今回の判決は、その現実を直視せよと突きつけている。さあ、あなたのビジネス戦略は、この厳しい現実を乗り越える準備ができているだろうか。今こそ、足元を見つめ直す時だ。",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/judge-upholds-apple-delisting-of-free-musi-app-that-streams-songs-from-youtube/",
+    "tags": [
+      "Policy",
+      "App Store",
+      "apple",
+      "iphone",
+      "musi youtube"
+    ],
+    "publishedAt": "2026-03-25",
+    "imagePrompt": "A solitary app developer sitting at a desk in a modern, dimly lit office late at night. The developer, looking worried and deep in thought, stares at a smartphone screen displaying an app rejection notice. The glow from the phone illuminates a face etched with concern. A laptop with lines of code is open beside them, forgotten. The atmosphere is tense and uncertain. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_1ac9936aae8a_1774482800.jpg"
+  },
+  {
     "id": "v_023910ef1196_1774419451",
     "title": "AIが描く、胸をえぐるほどの葛藤。あなたの物語に魂を宿す『Brand New Day』、ついにベールを脱ぐ！",
     "summary": "AIが描く、胸をえぐるほどの葛藤。あなたの物語に魂を宿す『Brand New Day』、ついにベールを脱ぐ！",
