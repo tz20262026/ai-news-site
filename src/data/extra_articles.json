@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_961d8e946038_1774566081",
+    "title": "その決済、AIが見抜く。Mastercardが開発した「取引データ特化型AI」が、あなたのカードを影から守る。",
+    "summary": "その決済、AIが見抜く。Mastercardが開発した「取引データ特化型AI」が、あなたのカードを影から守る。",
+    "body": "日々巧妙化するカード不正利用。オンライン決済が当たり前になった今、その不安は誰にとっても他人事ではありません。この見えない脅威に対し、決済業界の巨人Mastercardが、ついに最終兵器ともいえる新技術を発表しました。それは、あなたの取引データを守るためだけに生まれた、全く新しいAIモデルです。この技術は、私たちのデジタルライフに、かつてないレベルの安心感をもたらす可能性を秘めています。\n\nこの技術の核心は、一般的な言語AIとは一線を画す「大規模表形式モデル（LTM）」という点にあります。ChatGPTが膨大な文章を学習するように、このAIは数十億件に及ぶ匿名のカード取引データそのものを学習します。これにより、金額、場所、時間、頻度といった無数の要素の複雑な関係性の中から、人間や従来のシステムでは見抜けなかった微細な「不正の予兆」を驚異的な精度で捉えるのです。従来の不正検知が、過去の事例に基づく固定的なルールに依存していたのに対し、このAIは常に最新の取引データを学習し続けることで、未知の攻撃パターンにも動的に対応できるのが最大の強みです。いわば、二十四時間三百六十五日、あなたの決済を見守り続ける、自己進化するデジタルな守護神と言えるでしょう。このAIは、取引の文脈を理解し、一見正常に見える取引の中に潜むわずかな違和感を検知する能力に長けています。\n\nこの革新的なAIの恩恵を最も受けるのは、銀行やクレジットカード発行会社といった金融機関です。彼らがこのシステムを導入することで、不正利用による損失を劇的に削減し、より安全な決済環境を顧客に提供できます。結果として、私たち消費者は、気づかぬうちに高度なセキュリティに守られながら、安心して日々の買い物を楽しめるようになります。また、独自の決済サービスを展開するフィンテック企業や大手ECサイトにとっても、顧客の信頼を勝ち取るための強力な武器となるでしょう。顧客データ保護の重要性が叫ばれる現代において、セキュリティレベルの高さはそのまま企業価値に直結します。\n\nこの不正検知モデルは、主に銀行やカード発行会社などの金融機関向けに提供される法人サービスです。そのため、個人ユーザーが直接登録して利用するものではありません。導入を検討する企業は、Mastercardの法人向けソリューション担当窓口へ直接問い合わせる必要があります。具体的な料金体系は、導入規模やカスタマイズに応じて個別に見積もられる形式となるでしょう。\n\n決済の裏側で、AIが静かに、しかし確実に私たちの安全を守っている。この技術がもたらす安心感は、これからのデジタル社会に不可欠なインフラとなるはずです。次にあなたがカードを切る時、その裏側で働く最先端の知性を想像してみてほしい。",
+    "source": "Ai News",
+    "sourceUrl": "https://www.artificialintelligence-news.com/news/mastercards-ltm-keeps-tabs-on-fraud-with-a-new-foundation-model/",
+    "tags": [
+      "Finance AI",
+      "How It Works",
+      "ai",
+      "card payments",
+      "fintech"
+    ],
+    "publishedAt": "2026-03-26",
+    "imagePrompt": "A financial analyst in a modern, sleek bank office, intently studying a tablet screen. The screen displays a sophisticated dashboard with real-time transaction data visualizations, anomaly alerts highlighted in red, and a world map showing payment flows. The analyst's face shows deep concentration, illuminated by the glow from the tablet. In the background, out of focus, are other professionals working at their desks with large monitors. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_961d8e946038_1774566081.jpg"
+  },
+  {
     "id": "v_c6937260b543_1774507784",
     "title": "未来は予測できる？経済からエンタメまで、あらゆる事象の結果を取引する衝撃のプラットフォーム「Kalshi」が世界を揺るがす！",
     "summary": "未来は予測できる？経済からエンタメまで、あらゆる事象の結果を取引する衝撃のプラットフォーム「Kalshi」が世界を揺るがす！",
