@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_9711d0e9932d_1774504307",
+    "title": "偽AIの氾濫に終止符を。World IDが切り拓く、AIエージェントの「人間証明」新時代",
+    "summary": "偽AIの氾濫に終止符を。World IDが切り拓く、AIエージェントの「人間証明」新時代",
+    "body": "AIが自律的に動くエージェントの時代が目前に迫る中、私たちは新たな脅威に直面しています。それは、悪意あるAIエージェントによるシステムの乗っ取りや情報のかく乱です。一体誰が、どのAIを操作しているのか？このデジタル世界の信頼を根底から揺るがす問題に、Worldcoinが驚くべき解決策を提示しました。それが、AIエージェントに唯一無二の人間証明を与える「World ID for AI agents」です。\n\nこの革新的なシステムの核心は、Worldcoinが提供する虹彩認証技術にあります。ユーザーは専用デバイス「Orb」で虹彩をスキャンし、世界に一つだけのデジタル身分証明「World ID」を取得します。今回発表されたのは、この強力な「人間証明」をAIエージェントに直接紐付けるという驚きの発想です。開発者は自身のWorld IDを使い、自らが管理するAIエージェントに「このAIは、実在する一人の人間によって責任を持って運用されています」というデジタル署名を与えることができます。これにより、ウェブサービス側はアクセスしてくる無数のAIの中から、背後に責任ある人間がいる「正規のAI」だけを識別し、優先的に扱うことが可能になります。これは単なるログイン認証とは一線を画し、一人一つしか持てないWorld IDの特性上、一人の攻撃者が何千もの偽AIを生成してサービスを麻痺させる「スウォーム攻撃」を根本から防ぐことができるのです。\n\n具体的な活用シーンは、私たちのデジタルライフのあらゆる場面に広がります。例えばオンラインショッピングでは、限定商品を買い占める不正な購入ボットを排除し、全てのユーザーに公平な機会を提供できます。SNSでは、偽情報を拡散し世論を操作する悪質なボットを一掃し、健全な言論空間を守ることが可能になるでしょう。さらに金融取引の自動化が進むフィンテック業界でも、市場をかく乱する不正な取引AIの活動を抑制し、システムの安定性を高める上で絶大な効果を発揮します。\n\nこの未来的なセキュリティシステムを導入する第一歩は、驚くほどシンプルです。まず、スマートフォンに「World App」をダウンロードし、日本国内にも設置場所が増えている認証デバイス「Orb」で虹彩スキャンを行います。これにより、あなただけのWorld IDが無料で発行されます。開発者は今後提供されるであろう専用のSDKを利用し、このIDを自身のAIエージェントに組み込むことで、人間証明を実装できるようになります。\n\nAIがもたらす利便性の裏側で増大する脅威に対し、World IDは「信頼」という名の盾を提供します。これは、来るべきAIエージェント社会の健全な発展を支える、まさに基盤となる技術です。さあ、あなたも来るべき未来に備え、まずは自身の「人間証明」を手に入れてみませんか？",
+    "source": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/ai/2026/03/world-id-wants-you-to-put-a-cryptographically-unique-human-identity-behind-your-ai-agents/",
+    "tags": [
+      "AI",
+      "Security",
+      "agents",
+      "AI agents",
+      "identity"
+    ],
+    "publishedAt": "2026-03-26",
+    "imagePrompt": "A close-up shot of a software developer's hands typing on a futuristic, transparent keyboard. On the screen, lines of code are visible, integrating a glowing, abstract representation of a digital identity, reminiscent of an iris scan pattern, into an AI agent's architecture. The setting is a sleek, modern office at night, with city lights visible through the window. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_9711d0e9932d_1774504307.jpg"
+  },
+  {
     "id": "v_1ac9936aae8a_1774482800",
     "title": "アップル帝国の絶対ルール、開発者は「理由なき削除」に抗えないのか？",
     "summary": "アップル帝国の絶対ルール、開発者は「理由なき削除」に抗えないのか？",
