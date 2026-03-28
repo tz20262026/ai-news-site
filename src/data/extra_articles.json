@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_f66ededeff09_1774738944",
+    "title": "AIエージェントの”職場適性テスト”がついに登場！ServiceNowが仕掛ける、ビジネスAI革命の試金石。",
+    "summary": "AIエージェントの”職場適性テスト”がついに登場！ServiceNowが仕掛ける、ビジネスAI革命の試金石。",
+    "body": "「自律的に思考し、複雑な業務をこなすAI」— そんな夢物語が、いよいよ現実のビジネスシーンで試される時が来ました。これまで多くのAIエージェントが登場しましたが、実際の企業が抱える複雑で長期的なタスクを任せるには、信頼性の壁が立ちはだかっていました。この大きな課題に終止符を打つべく、エンタープライズ向けソフトウェアの巨人ServiceNowが、画期的なベンチマーク「EnterpriseOps-Gym」を発表。これは、AIがあなたの職場で本当に「使える」人材かどうかを厳しく見極めるための、いわばAI版“業務シミュレーション道場”です。\n\nEnterpriseOps-Gymの真価は、現実の企業運営（エンタープライズオペレーション）を驚くほど忠実に再現している点にあります。従来のAI評価ツールが短絡的な質疑応答の精度を測るに留まっていたのに対し、本作はビジネスの現場で発生する三つの大きな壁をAIに突きつけます。一つ目は「長期計画」。これは、複数の部署をまたぎ、いくつもの承認プロセスを経て完結するような、数時間から数日かかるタスクを遂行する能力です。二つ目は「永続的な状態変化」。データベースのレコードを更新したり、プロジェクトのステータスを変更したりといった、一度実行すると元に戻せない操作を正しく判断できるかを試します。そして三つ目が「厳格なアクセス権限」。役職や所属部署によって閲覧・操作できる情報が制限される、現実世界のセキュリティプロトコルをシミュレートし、AIが権限を遵守できるかを評価します。これはもはやお遊びのテストではありません。AIが企業の神経系にどこまで深く、そして安全に統合できるかを測るための、極めて実践的な試金石なのです。\n\nこのシミュレーション環境が活躍する場面は、IT部門や経営企画室など、企業のデジタルトランスフォーメーションを推進する部署に他なりません。例えば、新しいITヘルプデスクAIを導入する前に、「新入社員のPCセットアップ申請から、資産管理DBへの登録、各種アカウント発行、本人への通知まで」という一連の業務フローをEnterpriseOps-Gym上で実行させ、その完遂能力と正確性を徹底的にテストできます。これにより、導入後のトラブルを未然に防ぎ、AIエージェントへの投資対効果を最大化することが可能になります。もはや、AI導入は“賭け”ではなくなるのです。\n\nEnterpriseOps-Gymは、ServiceNow Researchによる研究成果として公開されており、現時点で特定の料金プランが設定された商用サービスではありません。その核心となるコードはGitHubリポジトリを通じて無償で公開されています。開発者や研究者は、この環境を利用して自らが開発するAIエージェントの性能を試し、現実のビジネス課題に対応できるレベルまでその能力を磨き上げることができます。\n\nAIが単なる情報検索ツールから、責任ある業務を担う「同僚」へと進化するための扉は、このEnterpriseOps-Gymによって開かれました。あなたの会社に本当の意味での“AI社員”が配属される未来は、もうすぐそこまで来ています。この革命の最前線を、今すぐその目で目撃してください。",
+    "source": "Marktechpost",
+    "sourceUrl": "https://www.marktechpost.com/2026/03/18/servicenow-research-introduces-enterpriseops-gym-a-high-fidelity-benchmark-designed-to-evaluate-agentic-planning-in-realistic-enterprise-settings/",
+    "tags": [
+      "Agentic AI",
+      "AI Agents",
+      "AI Paper Summary",
+      "AI Shorts",
+      "Applications"
+    ],
+    "publishedAt": "2026-03-28",
+    "imagePrompt": "A team of diverse software engineers in a modern, brightly lit office, gathered around a large monitor displaying a complex workflow diagram and performance graphs. They are intently discussing the results of an AI agent's performance in a simulated enterprise environment. The screen shows data visualizations of long-horizon planning and state changes. The atmosphere is one of focused innovation and excitement. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_f66ededeff09_1774738944.jpg"
+  },
+  {
     "id": "v_c3d9addcb4cb_1774678401",
     "title": "NVIDIAが放つ、自律AI開発の最終兵器！セキュアな実行環境「OpenShell」で、エージェント開発の新時代を切り拓け。",
     "summary": "NVIDIAが放つ、自律AI開発の最終兵器！セキュアな実行環境「OpenShell」で、エージェント開発の新時代を切り拓け。",
