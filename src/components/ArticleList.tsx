@@ -5,7 +5,70 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Article } from "@/lib/articles";
 import { getArticleImageUrl, getReadTime, getRelativeTime, isNew } from "@/lib/articles";
+import {
+  Zap, Palette, Brain, TrendingUp, Cpu, Scale, Code2, Lightbulb, LayoutGrid,
+} from "lucide-react";
 
+// ── カテゴリー定義 ──────────────────────────────────────────
+const CATEGORIES = [
+  {
+    id: "latest",
+    label: "最新ニュース",
+    icon: Zap,
+    keywords: [], // 全記事対象（最新順）
+  },
+  {
+    id: "generative",
+    label: "画像・動画生成AI",
+    icon: Palette,
+    keywords: ["画像生成", "動画生成", "Midjourney", "Stable Diffusion", "DALL-E", "Imagen", "Sora", "image", "video generation", "generative"],
+  },
+  {
+    id: "llm",
+    label: "LLM・言語モデル",
+    icon: Brain,
+    keywords: ["LLM", "OpenAI", "Anthropic", "Google", "Meta", "Microsoft", "Claude", "GPT", "Gemini", "言語モデル", "ChatGPT", "Mistral", "llm", "model"],
+  },
+  {
+    id: "business",
+    label: "スタートアップ・ビジネス",
+    icon: TrendingUp,
+    keywords: ["Startups", "Business", "startup", "funding", "raises", "ビジネス", "企業", "投資", "スタートアップ"],
+  },
+  {
+    id: "devices",
+    label: "デバイス・ロボット",
+    icon: Cpu,
+    keywords: ["Robot", "Device", "Hardware", "IoT", "ロボット", "デバイス", "ハードウェア", "chip", "Nvidia", "NVIDIA"],
+  },
+  {
+    id: "ethics",
+    label: "エシックス・規制",
+    icon: Scale,
+    keywords: ["Ethics", "Regulation", "Policy", "規制", "倫理", "法律", "安全", "safety", "governance", "法"],
+  },
+  {
+    id: "dev",
+    label: "開発者・プログラミング",
+    icon: Code2,
+    keywords: ["Developer", "Programming", "Code", "API", "開発", "プログラミング", "オープンソース", "GitHub", "SDK", "framework"],
+  },
+  {
+    id: "usecase",
+    label: "活用事例",
+    icon: Lightbulb,
+    keywords: ["生産性", "活用", "Use Case", "productivity", "Applications", "ツール", "tool", "workflow", "automation"],
+  },
+];
+
+// ── タグ表示フィルター（技術的タグを除去）──────────────────
+const SKIP_TAG_PATTERN = /^(site|region|provider_name|category|type)\|/i;
+
+function cleanTags(tags: string[]): string[] {
+  return tags.filter((t) => !SKIP_TAG_PATTERN.test(t));
+}
+
+// ── タグカラー ──────────────────────────────────────────────
 const TAG_COLORS: Record<string, string> = {
   OpenAI:         "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400",
   Anthropic:      "bg-orange-100 text-orange-700 dark:bg-orange-900/40 dark:text-orange-400",
@@ -24,39 +87,35 @@ function tagColor(tag: string) {
   return TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400";
 }
 
-function getTopTags(articles: Article[]): { tag: string; count: number }[] {
-  const count: Record<string, number> = {};
-  articles.forEach((a) => a.tags.forEach((t) => { count[t] = (count[t] || 0) + 1; }));
-  return Object.entries(count)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
-    .map(([tag, count]) => ({ tag, count }));
+// ── カテゴリーマッチ ────────────────────────────────────────
+function matchesCategory(article: Article, categoryId: string): boolean {
+  const cat = CATEGORIES.find((c) => c.id === categoryId);
+  if (!cat || cat.keywords.length === 0) return true; // "latest" = 全件
+  const allText = [article.title, article.summary, ...article.tags].join(" ").toLowerCase();
+  return cat.keywords.some((kw) => allText.includes(kw.toLowerCase()));
 }
 
 export default function ArticleList({ articles }: { articles: Article[] }) {
   const [search, setSearch] = useState("");
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
-
-  const topTags = useMemo(() => getTopTags(articles), [articles]);
+  const [selectedCategory, setSelectedCategory] = useState<string>("latest");
 
   const filtered = useMemo(() => {
     const normalize = (str: string) =>
-      str
-        .toLowerCase()
-        .replace(/[\u3041-\u3096]/g, (ch) =>
-          String.fromCharCode(ch.charCodeAt(0) + 0x60)
-        );
+      str.toLowerCase().replace(/[\u3041-\u3096]/g, (ch) =>
+        String.fromCharCode(ch.charCodeAt(0) + 0x60)
+      );
     const q = normalize(search);
+
     return articles.filter((a) => {
       const matchSearch =
         !search ||
         normalize(a.title).includes(q) ||
         normalize(a.summary).includes(q) ||
         a.tags.some((t) => normalize(t).includes(q));
-      const matchTag = !selectedTag || a.tags.includes(selectedTag);
-      return matchSearch && matchTag;
+      const matchCat = matchesCategory(a, selectedCategory);
+      return matchSearch && matchCat;
     });
-  }, [articles, search, selectedTag]);
+  }, [articles, search, selectedCategory]);
 
   const [featured, ...rest] = filtered;
 
@@ -67,10 +126,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
         <div className="relative">
           <svg
             className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-500 pointer-events-none"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
           </svg>
@@ -84,38 +140,45 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
         </div>
       </div>
 
-      {/* カテゴリフィルター */}
-      <div className="flex flex-wrap gap-2 mb-6">
-        <button
-          onClick={() => setSelectedTag(null)}
-          className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-            !selectedTag
-              ? "bg-blue-600 text-white shadow-sm"
-              : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
-          }`}
-        >
-          すべて ({articles.length})
-        </button>
-        {topTags.map(({ tag, count }) => (
+      {/* カテゴリータブ（横スクロール） */}
+      <div className="overflow-x-auto pb-2 mb-6 -mx-1 px-1">
+        <div className="flex gap-2 w-max">
+          {/* すべて */}
           <button
-            key={tag}
-            onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
-            className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-              selectedTag === tag
+            onClick={() => setSelectedCategory("latest")}
+            className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-full font-medium whitespace-nowrap transition-colors ${
+              selectedCategory === "latest"
                 ? "bg-blue-600 text-white shadow-sm"
                 : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
             }`}
           >
-            {tag} ({count})
+            <LayoutGrid className="w-3.5 h-3.5" />
+            すべて ({articles.length})
           </button>
-        ))}
+
+          {/* 8カテゴリー */}
+          {CATEGORIES.filter((c) => c.id !== "latest").map(({ id, label, icon: Icon }) => (
+            <button
+              key={id}
+              onClick={() => setSelectedCategory(id === selectedCategory ? "latest" : id)}
+              className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-full font-medium whitespace-nowrap transition-colors ${
+                selectedCategory === id
+                  ? "bg-blue-600 text-white shadow-sm"
+                  : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+              }`}
+            >
+              <Icon className="w-3.5 h-3.5" />
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* 検索結果なし */}
       {filtered.length === 0 && (
         <div className="text-center py-16 text-gray-400 dark:text-gray-500">
           <p className="text-4xl mb-3">🔍</p>
-          <p>「{search}」に一致する記事が見つかりませんでした</p>
+          <p>{search ? `「${search}」に一致する記事が見つかりませんでした` : "この カテゴリーの記事はまだありません"}</p>
         </div>
       )}
 
@@ -136,13 +199,9 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
             <div className="absolute bottom-4 left-5 right-5">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded">
-                  注目
-                </span>
+                <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded">注目</span>
                 {isNew(featured.publishedAt) && (
-                  <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse">
-                    NEW
-                  </span>
+                  <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse">NEW</span>
                 )}
                 <span className="text-xs text-white/80">
                   {getRelativeTime(featured.publishedAt)} · {featured.source}
@@ -159,18 +218,13 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             </p>
             <div className="mt-3 flex flex-wrap gap-2 items-center justify-between">
               <div className="flex flex-wrap gap-1.5">
-                {featured.tags.slice(0, 4).map((tag) => (
-                  <span
-                    key={tag}
-                    className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagColor(tag)}`}
-                  >
+                {cleanTags(featured.tags).slice(0, 4).map((tag) => (
+                  <span key={tag} className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagColor(tag)}`}>
                     {tag}
                   </span>
                 ))}
               </div>
-              <span className="text-xs text-gray-400 dark:text-gray-500">
-                {getReadTime(featured.body)}分で読める
-              </span>
+              <span className="text-xs text-gray-400 dark:text-gray-500">{getReadTime(featured.body)}分で読める</span>
             </div>
           </div>
         </Link>
@@ -201,7 +255,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
               <div className="absolute bottom-3 left-4 right-4">
                 <div className="flex flex-wrap gap-1">
-                  {article.tags.slice(0, 2).map((tag) => (
+                  {cleanTags(article.tags).slice(0, 2).map((tag) => (
                     <span
                       key={tag}
                       className="text-xs bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full font-medium border border-white/30"
@@ -214,9 +268,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             </div>
             <div className="p-4">
               <div className="flex items-center justify-between text-xs text-gray-400 dark:text-gray-500 mb-1.5">
-                <span>
-                  {getRelativeTime(article.publishedAt)} · {article.source}
-                </span>
+                <span>{getRelativeTime(article.publishedAt)} · {article.source}</span>
                 <span>{getReadTime(article.body)}分</span>
               </div>
               <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug mb-1.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
