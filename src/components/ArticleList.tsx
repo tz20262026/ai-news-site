@@ -15,29 +15,29 @@ const CATEGORIES = [
     id: "latest",
     label: "最新ニュース",
     icon: Zap,
-    keywords: [], // 全記事対象（最新順）
+    keywords: [],
   },
   {
     id: "generative",
-    label: "画像・動画生成AI",
+    label: "画像・動画生成",
     icon: Palette,
     keywords: ["画像生成", "動画生成", "Midjourney", "Stable Diffusion", "DALL-E", "Imagen", "Sora", "image", "video generation", "generative"],
   },
   {
     id: "llm",
-    label: "LLM・言語モデル",
+    label: "言語モデル/LLM",
     icon: Brain,
     keywords: ["LLM", "OpenAI", "Anthropic", "Google", "Meta", "Microsoft", "Claude", "GPT", "Gemini", "言語モデル", "ChatGPT", "Mistral", "llm", "model"],
   },
   {
     id: "business",
-    label: "スタートアップ・ビジネス",
+    label: "ビジネス・Startup",
     icon: TrendingUp,
     keywords: ["Startups", "Business", "startup", "funding", "raises", "ビジネス", "企業", "投資", "スタートアップ"],
   },
   {
     id: "devices",
-    label: "デバイス・ロボット",
+    label: "デバイス・ロボ",
     icon: Cpu,
     keywords: ["Robot", "Device", "Hardware", "IoT", "ロボット", "デバイス", "ハードウェア", "chip", "Nvidia", "NVIDIA"],
   },
@@ -49,13 +49,13 @@ const CATEGORIES = [
   },
   {
     id: "dev",
-    label: "開発者・プログラミング",
+    label: "開発者/プログラミング",
     icon: Code2,
     keywords: ["Developer", "Programming", "Code", "API", "開発", "プログラミング", "オープンソース", "GitHub", "SDK", "framework"],
   },
   {
     id: "usecase",
-    label: "活用事例",
+    label: "実践・活用事例",
     icon: Lightbulb,
     keywords: ["生産性", "活用", "Use Case", "productivity", "Applications", "ツール", "tool", "workflow", "automation"],
   },
@@ -140,35 +140,35 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
         </div>
       </div>
 
-      {/* カテゴリータブ（横スクロール） */}
-      <div className="overflow-x-auto pb-2 mb-6 -mx-1 px-1">
-        <div className="flex gap-2 w-max">
-          {/* すべて */}
-          <button
-            onClick={() => setSelectedCategory("latest")}
-            className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-full font-medium whitespace-nowrap transition-colors ${
-              selectedCategory === "latest"
-                ? "bg-blue-600 text-white shadow-sm"
-                : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
-            }`}
-          >
-            <LayoutGrid className="w-3.5 h-3.5" />
-            すべて ({articles.length})
-          </button>
+      {/* カテゴリータブ（2段グリッド） */}
+      <div className="mb-6">
+        {/* すべて（全幅） */}
+        <button
+          onClick={() => setSelectedCategory("latest")}
+          className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-medium text-sm mb-2 transition-colors ${
+            selectedCategory === "latest"
+              ? "bg-blue-600 text-white shadow-sm"
+              : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+          }`}
+        >
+          <LayoutGrid className="w-4 h-4" />
+          すべて ({articles.length})
+        </button>
 
-          {/* 8カテゴリー */}
+        {/* 8カテゴリー（4列×2段） */}
+        <div className="grid grid-cols-4 gap-2">
           {CATEGORIES.filter((c) => c.id !== "latest").map(({ id, label, icon: Icon }) => (
             <button
               key={id}
               onClick={() => setSelectedCategory(id === selectedCategory ? "latest" : id)}
-              className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-full font-medium whitespace-nowrap transition-colors ${
+              className={`flex flex-col items-center justify-center gap-1 py-2.5 px-1 rounded-xl font-medium transition-colors ${
                 selectedCategory === id
                   ? "bg-blue-600 text-white shadow-sm"
                   : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
               }`}
             >
-              <Icon className="w-3.5 h-3.5" />
-              {label}
+              <Icon className="w-4 h-4 shrink-0" />
+              <span className="text-[10px] leading-tight text-center">{label}</span>
             </button>
           ))}
         </div>
