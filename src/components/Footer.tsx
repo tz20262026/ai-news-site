@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-500 border-t border-gray-800 mt-16">
@@ -18,6 +20,12 @@ export default function Footer() {
             </svg>
             RSS購読
           </a>
+          <Link
+            href="/tokushoho"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            特定商取引法に基づく表記
+          </Link>
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} AI News Japan
           </p>
