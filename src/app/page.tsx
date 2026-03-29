@@ -43,13 +43,13 @@ export default async function Home() {
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">最新のAIニュース</h1>
         <div className="flex items-center gap-3 mt-1">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            海外メディアから厳選した {articles.length} 件の記事
+            海外から厳選した {articles.length} 件の記事
+            {latestDate && (
+              <span className="ml-2 text-gray-400 dark:text-gray-500">
+                更新：{latestDate.replace(/-/g, "/").replace(/\/0(\d)/g, "/$1")}
+              </span>
+            )}
           </p>
-          {latestDate && (
-            <p className="text-xs text-gray-400 dark:text-gray-500">
-              最終更新: {latestDate}
-            </p>
-          )}
         </div>
       </div>
 
