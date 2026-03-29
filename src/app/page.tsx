@@ -55,28 +55,29 @@ export default async function Home() {
 
       {/* 今日の注目セクション */}
       {todayArticles.length > 0 && (
-        <div className="mb-8 p-4 bg-blue-50 dark:bg-blue-950/30 rounded-2xl border border-blue-100 dark:border-blue-900">
+        <div className="mb-8 p-4 bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 rounded-2xl border border-blue-100/80 dark:border-blue-900/60">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-base">🔥</span>
             <h2 className="text-sm font-bold text-blue-700 dark:text-blue-400">今日の注目記事</h2>
+            <span className="ml-auto text-xs text-blue-500/70 dark:text-blue-600 font-medium">{latestDate}</span>
           </div>
           <div className="flex flex-col gap-2">
             {todayArticles.map((a) => (
               <Link
                 key={a.id}
                 href={`/articles/${a.id}`}
-                className="flex items-center gap-3 bg-white dark:bg-gray-900 rounded-xl p-3 hover:shadow-md transition-all group"
+                className="flex items-center gap-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-xl p-3 hover:shadow-md dark:hover:shadow-gray-900/40 hover:bg-white dark:hover:bg-gray-900 transition-all group"
               >
-                <div className="relative w-14 h-14 rounded-lg overflow-hidden shrink-0">
+                <div className="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 shadow-sm">
                   <Image
                     src={getArticleImageUrl(a)}
                     alt={a.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="56px"
                   />
                 </div>
-                <p className="text-xs font-semibold text-gray-800 dark:text-gray-200 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                <p className="text-xs font-semibold text-gray-800 dark:text-gray-200 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {a.title}
                 </p>
               </Link>

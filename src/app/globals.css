@@ -6,8 +6,19 @@
   --font-sans: var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgb(59 130 246 / 0.25);
+  color: inherit;
 }
 
 /* 画像がふわっと表示されるアニメーション */
@@ -16,6 +27,25 @@ body {
   to   { opacity: 1; }
 }
 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .article-image {
-  animation: fadeIn 0.6s ease-in;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.article-card {
+  animation: slideUp 0.35s ease-out both;
+}
+
+/* 記事本文タイポグラフィ */
+.article-body {
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+.article-body p + p {
+  margin-top: 1.25em;
 }

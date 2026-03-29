@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: Props) {
         ← 記事一覧に戻る
       </Link>
 
-      <article className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+      <article className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
         {/* アイキャッチ画像 */}
         <div className="relative w-full h-52 sm:h-72 overflow-hidden">
           <Image
@@ -101,10 +101,10 @@ export default async function ArticlePage({ params }: Props) {
             priority
             sizes="(max-width: 768px) 100vw, 672px"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
           <div className="absolute bottom-5 left-6 right-6">
             <div className="flex flex-wrap gap-2 mb-2">
-              {article.tags.map((tag) => (
+              {article.tags.slice(0, 5).map((tag) => (
                 <span
                   key={tag}
                   className="text-xs bg-white/20 backdrop-blur-sm text-white px-2.5 py-0.5 rounded-full border border-white/30"
@@ -118,14 +118,14 @@ export default async function ArticlePage({ params }: Props) {
 
         <div className="p-6 sm:p-8">
           {/* メタ情報 */}
-          <div className="flex items-center gap-2 text-xs text-gray-400 mb-3">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-gray-400 dark:text-gray-500 mb-3">
             <span>{getRelativeTime(article.publishedAt)}（{article.publishedAt}）</span>
             <span>·</span>
             <a
               href={article.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-600 transition-colors"
+              className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
             >
               {article.source} ↗
             </a>
@@ -134,17 +134,17 @@ export default async function ArticlePage({ params }: Props) {
           </div>
 
           {/* タイトル */}
-          <h1 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight mb-5">
+          <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white leading-tight mb-5">
             {article.title}
           </h1>
 
           {/* リード文 */}
-          <div className="bg-blue-50 border-l-4 border-blue-400 rounded-r-xl px-5 py-4 mb-7 text-gray-700 leading-relaxed text-sm sm:text-base">
+          <div className="bg-blue-50 dark:bg-blue-950/40 border-l-4 border-blue-400 dark:border-blue-500 rounded-r-xl px-5 py-4 mb-7 text-gray-700 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
             {article.summary}
           </div>
 
           {/* 本文 */}
-          <div className="text-gray-800 leading-loose text-sm sm:text-base whitespace-pre-wrap">
+          <div className="article-body text-gray-800 dark:text-gray-200 text-sm sm:text-base whitespace-pre-wrap">
             {article.body}
           </div>
 
@@ -155,13 +155,13 @@ export default async function ArticlePage({ params }: Props) {
           />
 
           {/* フッター */}
-          <div className="mt-6 pt-6 border-t border-gray-100 flex items-center justify-between">
-            <span className="text-xs text-gray-400">情報元: {article.source}</span>
+          <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700/60 flex items-center justify-between">
+            <span className="text-xs text-gray-400 dark:text-gray-500">情報元: {article.source}</span>
             <a
               href={article.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-blue-600 hover:underline"
+              className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
             >
               原文を読む ↗
             </a>
@@ -172,29 +172,29 @@ export default async function ArticlePage({ params }: Props) {
       {/* 関連記事 */}
       {related.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">関連記事</h2>
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-4">関連記事</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {related.map((r) => (
               <Link
                 key={r.id}
                 href={`/articles/${r.id}`}
-                className="block bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 group"
+                className="block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 hover:-translate-y-0.5 transition-all duration-300 group"
               >
                 <div className="relative w-full h-32 overflow-hidden">
                   <Image
                     src={getArticleImageUrl(r)}
                     alt={r.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, 224px"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
                 </div>
                 <div className="p-3">
-                  <div className="text-xs text-gray-400 mb-1">
+                  <div className="text-xs text-gray-400 dark:text-gray-500 mb-1">
                     {getRelativeTime(r.publishedAt)} · {getReadTime(r.body)}分
                   </div>
-                  <p className="text-xs font-semibold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                  <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                     {r.title}
                   </p>
                 </div>
