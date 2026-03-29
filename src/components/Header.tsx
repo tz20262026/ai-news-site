@@ -11,9 +11,9 @@ export default function Header() {
             News Japan
           </span>
         </Link>
-        <nav className="flex items-center gap-4 text-sm text-gray-400">
-          <Link href="/" className="hover:text-white transition-colors">記事一覧</Link>
-          <Link href="/about" className="hover:text-white transition-colors">About</Link>
+        <nav className="flex items-center gap-1 text-sm text-gray-400">
+          <Link href="/" className="hover:text-white transition-colors px-3 py-2">記事一覧</Link>
+          <Link href="/about" className="hover:text-white transition-colors px-3 py-2">About</Link>
           <DarkModeToggle />
         </nav>
       </div>
