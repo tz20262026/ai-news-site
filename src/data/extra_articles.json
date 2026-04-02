@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_7610d8e115d6_1775109052",
+    "title": "あなたの全てを知るAI、Geminiが覚醒。怖いくらい賢い「個人知能モード」で仕事も日常も劇的に変わる。",
+    "summary": "あなたの全てを知るAI、Geminiが覚醒。怖いくらい賢い「個人知能モード」で仕事も日常も劇的に変わる。",
+    "body": "日々、無限に押し寄せるメール、散在するファイル、そして積み上がるタスク。我々は情報を整理するだけで一日を終えてしまうことさえある。AIチャットに指示を出すにしても、毎回プロジェクトの背景や過去の経緯を説明するのは骨が折れる作業だ。もし、あなたのすべてを記憶し、何も言わなくても次の行動を先読みしてくれる「完璧な相棒」がいたらどうだろうか。そんなSF映画のような未来が、GoogleのGeminiによって現実のものとなった。その名も「個人知能モード」。これは単なる機能追加ではない。AIとの関係性を根底から覆す、革命の始まりなのだ。\n\nこの新機能の核心は、GeminiがあなたのGoogleアカウント内にある個人情報、すなわちGmail、ドキュメント、ドライブ、さらにはGoogleマップといったサービス群と深く連携する点にある。これまでの一問一答式のAIとは次元が違う。例えば「次の大阪出張の予定をまとめて」と一言投げかけるだけで、GeminiはあなたのGmailから航空券の予約確認メールを探し出し、Googleドキュメントにある会議のアジェンダを読み込み、訪問先までの移動ルートをマップで検索して、一つの完璧な旅程を瞬時に作成してくれる。これは、あなたの個人データを「長期記憶」として保持し、文脈を完全に理解した上で応答するからこそ可能な芸当だ。まるで長年連れ添った優秀なアシスタントのように、あなたの仕事の進捗、交友関係、個人的な好みまで把握し、最適なサポートを提供する。もちろん、プライバシーへの配慮も万全だ。これらの個人データがAIモデルの学習に使われることはなく、機能のオン・オフはいつでもユーザー自身がコントロールできる。その気になれば、AIがアクセスしたデータ履歴を確認し、削除することも可能だ。最初は少し不気味に感じるかもしれないその賢さは、一度使えば手放せなくなるほどの利便性を秘めている。\n\nこの強力なパーソナルAIは、あらゆるシーンであなたの能力を拡張する。フリーランスのデザイナーなら、複数のクライアントとの膨大なメールのやり取りの中から「A社のロゴ案件に関する最新のフィードバックだけを要約して」と指示するだけで、情報収集の時間を大幅に削減できるだろう。営業担当者なら、過去の訪問記録や提案書を元に「来週のB社向けプレゼンの構成案を考えて」と壁打ち相手にすることも可能だ。プライベートでは、過去の旅行で使った費用や訪れた場所を記憶しているため、「去年の京都旅行と同じくらいの予算で、この夏楽しめる国内旅行先を提案して」といった、極めて個人的な相談にも応じてくれる。\n\nこの未来的な体験を始めるのに、複雑な手続きは一切不要だ。Gemini Advancedが利用できる「Google One AI Premium」プランに登録すれば、すぐにでも試すことができる。多くの場合、最初の2ヶ月は無料トライアルが提供されているため、リスクなくその真価を確かめられるはずだ。あとはGeminiの設定画面から「拡張機能」を選択し、「Google Workspace」を有効にするだけ。これだけで、あなた専用にカスタマイズされた超知能が起動する。\n\nGeminiの個人知能モードは、単なる生産性向上ツールではない。私たちの記憶や思考を拡張し、より創造的な活動に集中させてくれる、まさに「第二の脳」と呼ぶべき存在だ。さあ、今すぐ設定をオンにして、AIがあなたの最強のパートナーとなる新時代をその手で体感してほしい。",
+    "source": "Zdnet Ai",
+    "sourceUrl": "https://www.zdnet.com/article/geminis-personal-intelligence-mode-rolling-out-to-all-users/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-04-02",
+    "imagePrompt": "A young Japanese professional in a stylish home office, looking thoughtfully at their laptop screen which displays the Gemini AI interface. On the screen, flight details from Gmail and map routes from Google Maps are seamlessly integrated. The person has a slight smile of satisfaction, realizing how easy travel planning has become. The room is filled with warm, natural light. Photorealistic, Cinematic lighting, High resolution",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_7610d8e115d6_1775109052.jpg"
+  },
+  {
     "id": "v_99175e9d2e15_1775087516",
     "title": "そのPC、AI開発には重すぎる？Linux \"最小インストール\" がもたらす爆速開発環境の真実",
     "summary": "そのPC、AI開発には重すぎる？Linux \"最小インストール\" がもたらす爆速開発環境の真実",
