@@ -21,17 +21,32 @@ import marketData from "@/data/ai_market_intelligence.json";
 
 export const revalidate = 3600;
 
+// ── ツール別キーワード（タグとのマッチ用）──────────────────────────────
+const TOOL_ALIASES: Record<string, string[]> = {
+  "claude code":   ["claude", "anthropic", "claude code"],
+  "claude (api)":  ["claude", "anthropic"],
+  "replit agent":  ["replit"],
+  "lovable":       ["lovable"],
+  "manus":         ["manus", "自律エージェント", "autonomous agent"],
+  "midjourney":    ["midjourney", "画像生成", "image generation", "画像"],
+  "midjourney v7": ["midjourney", "画像生成", "image generation", "画像"],
+  "sora (openai)": ["sora", "openai", "動画生成", "video generation"],
+};
+
 // ── 記事タグに関連するツールのAI判定スコア ──────────────────────────────
 function ArticleToolScore({ tags }: { tags: string[] }) {
   const lowerTags = tags.map((t) => t.toLowerCase());
 
-  // タグにマッチするツールを全セグメントから検索
   const matched: { segLabel: string; name: string; rating: number; price: string; newFeature: string }[] = [];
 
   for (const segment of marketData.segments) {
     for (const tool of segment.tools) {
-      const toolNameLower = tool.name.toLowerCase().replace(/\s+v\d.*$/, "");
-      if (lowerTags.some((t) => t.includes(toolNameLower) || toolNameLower.includes(t))) {
+      const toolKey = tool.name.toLowerCase().replace(/\s+v\d.*$/, "");
+      const aliases = TOOL_ALIASES[toolKey] ?? [toolKey];
+      const hits = lowerTags.some((tag) =>
+        aliases.some((alias) => tag.includes(alias) || alias.includes(tag))
+      );
+      if (hits) {
         matched.push({
           segLabel: segment.label,
           name: tool.name,
