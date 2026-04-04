@@ -23,28 +23,32 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
+      - name: GCP認証（post_article.yml と同じ設定を流用）
+        uses: google-github-actions/auth@v2.1.8
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
       - name: Python セットアップ
         uses: actions/setup-python@v5.4.0
         with:
           python-version: '3.12'
 
-      - name: 依存関係インストール
-        run: |
-          pip install --upgrade pip
-          # 標準ライブラリのみ使用のため追加パッケージ不要
+      - name: 依存関係インストール（post_article.yml と同じ）
+        run: pip install google-genai google-cloud-storage
 
       - name: AI市場データ同期スクリプトを実行
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GCP_LOCATION: us-central1
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: python scripts/sync_ai_market.py
 
       - name: 変更をコミット・プッシュ
         run: |
-          git config user.name "AI News Japan Bot"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/ai_market_intelligence.json src/data/extra_articles.json
+          git config user.name "github-actions[bot]"
+          git config user.email "267490088+tz20262026@users.noreply.github.com"
+          git add src/data/ai_market_intelligence.json
           if git diff --cached --quiet && [ "${{ inputs.force_update }}" != "true" ]; then
             echo "変更なし。スキップします。"
           else

@@ -4,15 +4,16 @@ AI Market Intelligence Sync
 =============================
 毎日実行されるスクリプト。以下を行います：
 1. Jina AI Reader で主要AIツールの公式サイトをスクレイピング
-2. Perplexity API で「新着・トレンドAIツール」をグローバル検索
-3. Claude API で各ツールを分析・ランキング付け
+2. Perplexity API または Jina Search で「新着・トレンドAIツール」をグローバル検索
+3. Gemini (Vertex AI) で各ツールを分析・ランキング付け
 4. src/data/ai_market_intelligence.json を更新
 5. 新しい挑戦者ツールを検出した場合、extra_articles.json にアラート記事を追加
 
-必要な環境変数:
-  ANTHROPIC_API_KEY   : Claude API キー
-  PERPLEXITY_API_KEY  : Perplexity Sonar API キー（任意、未設定時はJinaのみ使用）
-  JINA_API_KEY        : Jina AI API キー（任意、未設定時は匿名使用）
+必要な環境変数（post_one_article.py と同じGCP設定を流用）:
+  GCP_PROJECT        : GCPプロジェクトID（既存のSecretを使用）
+  GCP_LOCATION       : Vertex AIリージョン（デフォルト: us-central1）
+  PERPLEXITY_API_KEY : Perplexity Sonar API キー（任意、未設定時はJina Searchを使用）
+  JINA_API_KEY       : Jina AI API キー（任意、未設定時は匿名使用）
 """
 
 import json
@@ -25,6 +26,9 @@ import urllib.parse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from google import genai
+from google.genai import types
+
 # ── 定数 ─────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / "src" / "data"
@@ -32,8 +36,11 @@ MARKET_JSON = DATA_DIR / "ai_market_intelligence.json"
 ARTICLES_JSON = DATA_DIR / "extra_articles.json"
 
 JST = timezone(timedelta(hours=9))
+GCP_PROJECT = os.environ.get("GCP_PROJECT", "")
+GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
+MODEL_NAME = "gemini-2.5-pro"
 
-# 追跡する既知のAIツール（Jina Reader でスクレイピング）
+# 追跡する既知のAIツール
 KNOWN_TOOLS = [
     {"name": "Claude Code", "url": "https://claude.ai/code", "segment": "development"},
     {"name": "Replit Agent", "url": "https://replit.com/ai", "segment": "development"},
@@ -48,8 +55,6 @@ DISCOVERY_QUERIES = [
     "new AI tools release April 2026",
     "trending AI agents 2026",
     "best AI coding assistants 2026",
-    "new AI productivity tools 2026",
-    "AI image generation tools 2026 update",
 ]
 
 
@@ -72,7 +77,6 @@ def http_post_json(url: str, payload: dict, headers: dict | None = None, timeout
 
 # ── Jina AI Reader ──────────────────────────────────────────────────────────
 def jina_read(url: str, jina_api_key: str | None = None) -> str:
-    """Jina Reader API でウェブページを読み取る"""
     reader_url = f"https://r.jina.ai/{url}"
     headers = {"Accept": "text/plain"}
     if jina_api_key:
@@ -80,14 +84,13 @@ def jina_read(url: str, jina_api_key: str | None = None) -> str:
     try:
         print(f"  [Jina] Reading: {url[:60]}...")
         content = http_get(reader_url, headers=headers, timeout=30)
-        return content[:8000]  # 最大8000文字
+        return content[:8000]
     except Exception as e:
         print(f"  [Jina] Error reading {url}: {e}")
         return ""
 
 
 def jina_search(query: str, jina_api_key: str | None = None) -> str:
-    """Jina Search API で検索を実行"""
     search_url = f"https://s.jina.ai/{urllib.parse.quote(query)}"
     headers = {"Accept": "application/json"}
     if jina_api_key:
@@ -103,7 +106,6 @@ def jina_search(query: str, jina_api_key: str | None = None) -> str:
 
 # ── Perplexity Sonar API ──────────────────────────────────────────────────────
 def perplexity_search(query: str, api_key: str) -> str:
-    """Perplexity Sonar API でリアルタイム検索"""
     try:
         print(f"  [Perplexity] Query: {query[:60]}...")
         result = http_post_json(
@@ -111,10 +113,7 @@ def perplexity_search(query: str, api_key: str) -> str:
             payload={
                 "model": "sonar",
                 "messages": [
-                    {
-                        "role": "system",
-                        "content": "You are a research assistant. Provide factual, up-to-date information about AI tools and products.",
-                    },
+                    {"role": "system", "content": "You are a research assistant providing factual, up-to-date information about AI tools."},
                     {"role": "user", "content": query},
                 ],
                 "max_tokens": 1000,
@@ -128,49 +127,39 @@ def perplexity_search(query: str, api_key: str) -> str:
         return ""
 
 
-# ── Claude API ────────────────────────────────────────────────────────────────
-def claude_analyze(prompt: str, api_key: str, model: str = "claude-sonnet-4-6") -> str:
-    """Claude API でテキストを分析"""
+# ── Gemini (Vertex AI) ────────────────────────────────────────────────────────
+def gemini_analyze(prompt: str, gemini_client: genai.Client) -> str:
+    """Gemini で分析を実行（post_one_article.py と同じパターン）"""
     try:
-        result = http_post_json(
-            "https://api.anthropic.com/v1/messages",
-            payload={
-                "model": model,
-                "max_tokens": 4096,
-                "messages": [{"role": "user", "content": prompt}],
-            },
-            headers={
-                "x-api-key": api_key,
-                "anthropic-version": "2023-06-01",
-            },
+        response = gemini_client.models.generate_content(
+            model=MODEL_NAME,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.3,
+                max_output_tokens=4096,
+            ),
         )
-        return result["content"][0]["text"]
+        return response.text or ""
     except Exception as e:
-        print(f"  [Claude] Error: {e}")
+        print(f"  [Gemini] Error: {e}")
         return ""
 
 
 # ── スクレイピング ──────────────────────────────────────────────────────────
 def scrape_tool_pages(jina_api_key: str | None) -> dict[str, str]:
-    """既知のツールページをスクレイピング"""
     print("\n[1] 既知ツールのスクレイピング...")
     results = {}
     for tool in KNOWN_TOOLS:
         content = jina_read(tool["url"], jina_api_key)
         results[tool["name"]] = content
-        time.sleep(1)  # レート制限回避
+        time.sleep(1)
     return results
 
 
-def search_new_tools(
-    perplexity_key: str | None,
-    jina_api_key: str | None,
-) -> list[str]:
-    """新着AIツールを検索"""
+def search_new_tools(perplexity_key: str | None, jina_api_key: str | None) -> list[str]:
     print("\n[2] 新着ツールの発見...")
     search_results = []
-
-    for query in DISCOVERY_QUERIES[:3]:  # コスト削減のため最初の3クエリのみ
+    for query in DISCOVERY_QUERIES:
         if perplexity_key:
             result = perplexity_search(query, perplexity_key)
         else:
@@ -178,31 +167,25 @@ def search_new_tools(
         if result:
             search_results.append(result)
         time.sleep(2)
-
     return search_results
 
 
-# ── Claude 分析 ───────────────────────────────────────────────────────────
+# ── Gemini 分析 ───────────────────────────────────────────────────────────
 def analyze_market(
     tool_contents: dict[str, str],
     search_results: list[str],
     current_data: dict,
-    api_key: str,
+    gemini_client: genai.Client,
 ) -> dict:
-    """Claude で市場を分析し、JSON データを生成"""
-    print("\n[3] Claude による市場分析...")
+    print("\n[3] Gemini による市場分析...")
 
-    # 既知ツールの内容を結合
     tool_context = "\n\n".join(
         f"=== {name} ===\n{content[:2000]}"
         for name, content in tool_contents.items()
         if content
     )
-
-    # 検索結果を結合
     search_context = "\n\n---\n\n".join(search_results[:3]) if search_results else "（検索結果なし）"
 
-    # 現在の既知ツール名リスト
     current_tool_names = []
     for seg in current_data.get("segments", []):
         for tool in seg.get("tools", []):
@@ -249,7 +232,7 @@ def analyze_market(
       "icon": "briefcase",
       "winner": {{"name": "ツール名", "tagline": "今月の最強選択"}},
       "reason": "100字以内の判定理由（日本語）",
-      "tools": [/* 同形式 */]
+      "tools": []
     }},
     {{
       "id": "creative",
@@ -257,7 +240,7 @@ def analyze_market(
       "icon": "palette",
       "winner": {{"name": "ツール名", "tagline": "今月の最強選択"}},
       "reason": "100字以内の判定理由（日本語）",
-      "tools": [/* 同形式 */]
+      "tools": []
     }}
   ],
   "newToolsToday": [
@@ -290,24 +273,21 @@ def analyze_market(
 - 各セグメントのトップツールに badge: "AI's Choice" を設定
 """
 
-    raw = claude_analyze(prompt, api_key)
+    raw = gemini_analyze(prompt, gemini_client)
 
-    # JSON を抽出（前後のテキストを除去）
     try:
         start = raw.find("{")
         end = raw.rfind("}") + 1
         if start >= 0 and end > start:
             return json.loads(raw[start:end])
     except json.JSONDecodeError as e:
-        print(f"  [Claude] JSON parse error: {e}")
+        print(f"  [Gemini] JSON parse error: {e}")
         print(f"  Raw response: {raw[:500]}")
-
     return {}
 
 
 # ── アラート記事の生成 ────────────────────────────────────────────────────
-def generate_alert_article(alert: dict, api_key: str) -> dict | None:
-    """下克上アラートの記事を生成"""
+def generate_alert_article(alert: dict, gemini_client: genai.Client) -> dict | None:
     print(f"\n[4] アラート記事を生成: {alert['newTool']} vs {alert['existingTool']}")
 
     prompt = f"""AIツール市場の最新動向について、以下の情報を元に日本語で記事を作成してください。
@@ -324,7 +304,7 @@ def generate_alert_article(alert: dict, api_key: str) -> dict | None:
 }}
 """
 
-    raw = claude_analyze(prompt, api_key)
+    raw = gemini_analyze(prompt, gemini_client)
     try:
         start = raw.find("{")
         end = raw.rfind("}") + 1
@@ -350,18 +330,25 @@ def generate_alert_article(alert: dict, api_key: str) -> dict | None:
 # ── メイン処理 ────────────────────────────────────────────────────────────
 def main():
     print("=" * 60)
-    print("AI Market Intelligence Sync")
+    print("AI Market Intelligence Sync (Gemini / Vertex AI)")
     print(f"実行時刻: {datetime.now(JST).strftime('%Y/%m/%d %H:%M JST')}")
     print("=" * 60)
 
-    # 環境変数チェック
-    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
-    perplexity_key = os.environ.get("PERPLEXITY_API_KEY")
-    jina_key = os.environ.get("JINA_API_KEY")  # 任意（匿名でも動作）
-
-    if not anthropic_key:
-        print("ERROR: ANTHROPIC_API_KEY が設定されていません")
+    # GCPプロジェクト確認
+    if not GCP_PROJECT:
+        print("ERROR: GCP_PROJECT が設定されていません")
         sys.exit(1)
+
+    perplexity_key = os.environ.get("PERPLEXITY_API_KEY")
+    jina_key = os.environ.get("JINA_API_KEY")
+
+    # Gemini クライアント初期化（post_one_article.py と同じ）
+    gemini_client = genai.Client(
+        vertexai=True,
+        project=GCP_PROJECT,
+        location=GCP_LOCATION,
+    )
+    print(f"✅ Gemini クライアント初期化完了 (project={GCP_PROJECT})")
 
     # 現在のデータを読み込む
     current_data = {}
@@ -375,11 +362,11 @@ def main():
     # 2. 新着ツールを検索
     search_results = search_new_tools(perplexity_key, jina_key)
 
-    # 3. Claude で市場分析
-    analysis = analyze_market(tool_contents, search_results, current_data, anthropic_key)
+    # 3. Gemini で市場分析
+    analysis = analyze_market(tool_contents, search_results, current_data, gemini_client)
 
     if not analysis:
-        print("ERROR: Claude の分析に失敗しました。既存データを保持します。")
+        print("ERROR: Gemini の分析に失敗しました。既存データを保持します。")
         sys.exit(1)
 
     # 4. 出力 JSON を構築
@@ -392,13 +379,12 @@ def main():
         "alerts": analysis.get("alerts", []),
     }
 
-    # ai_market_intelligence.json を更新
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     with open(MARKET_JSON, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"\n✅ {MARKET_JSON} を更新しました")
 
-    # 5. 下克上アラートがある場合は記事を生成して追加
+    # 5. 下克上アラートがある場合は記事を生成
     alerts = output.get("alerts", [])
     if alerts and ARTICLES_JSON.exists():
         print(f"\n⚡ {len(alerts)} 件の下克上アラートを検出。記事を生成します...")
@@ -406,10 +392,9 @@ def main():
             articles = json.load(f)
 
         new_articles_added = 0
-        for alert in alerts[:2]:  # 最大2件まで
-            article = generate_alert_article(alert, anthropic_key)
+        for alert in alerts[:2]:
+            article = generate_alert_article(alert, gemini_client)
             if article:
-                # 重複チェック（同じツール名のアラート記事が今日すでにあるか）
                 today = now_jst.strftime("%Y-%m-%d")
                 already_exists = any(
                     a.get("publishedAt") == today and alert["newTool"] in a.get("title", "")
@@ -419,14 +404,12 @@ def main():
                     articles.append(article)
                     new_articles_added += 1
                     print(f"  ✅ 記事追加: {article['title']}")
-                else:
-                    print(f"  ⏭ スキップ（本日既に記事あり）: {alert['newTool']}")
             time.sleep(2)
 
         if new_articles_added > 0:
             with open(ARTICLES_JSON, "w", encoding="utf-8") as f:
                 json.dump(articles, f, ensure_ascii=False, indent=2)
-            print(f"✅ {ARTICLES_JSON} に {new_articles_added} 件の記事を追加しました")
+            print(f"✅ {new_articles_added} 件の記事を追加しました")
 
     print("\n✅ 完了!")
     print(f"  更新時刻: {now_jst.strftime('%Y/%m/%d %H:%M JST')}")
