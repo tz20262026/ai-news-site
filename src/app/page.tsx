@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ArticleList from "@/components/ArticleList";
+import AIIntelligenceUnit from "@/components/AIIntelligenceUnit";
 import { getArticleImageUrl } from "@/lib/articles";
 
 // microCMS からデータを取得する（ない場合はローカルデータにフォールバック）
@@ -9,12 +10,12 @@ import { getAllArticles, adaptMicroCMSArticle } from "@/lib/microcms";
 import { allArticles as localArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "AI News Japan — 海外AIツール・最新ニュースを日本語で",
+  title: "AI News Japan — AIが自律的に精査した最新AIニュース",
   description:
-    "TechCrunch・VentureBeat・Product Huntなど海外100メディアから最新のAIツール・ニュースを毎日日本語でお届けします。",
+    "AIが自律的に情報を精査し、最新の最適解を提示する次世代メディア。TechCrunch・VentureBeat・Product Huntなど海外100メディアから最新のAIツール・ニュースを毎日日本語でお届けします。",
   openGraph: {
     title: "AI News Japan",
-    description: "海外AIツール・最新ニュースを日本語で毎日お届け",
+    description: "AIが自律的に精査した最新AIニュースを日本語で毎日お届け",
     type: "website",
   },
 };
@@ -52,6 +53,9 @@ export default async function Home() {
           </p>
         </div>
       </div>
+
+      {/* AIによる自律判定ユニット */}
+      <AIIntelligenceUnit />
 
       {/* 今日の注目セクション */}
       {todayArticles.length > 0 && (

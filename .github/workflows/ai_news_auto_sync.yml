@@ -1,0 +1,54 @@
+name: AI市場インテリジェンス 自動同期
+
+on:
+  schedule:
+    # 毎日午前9時（日本時間）= UTC 0:00
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: '強制更新（差分がなくてもコミット）'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: '3.12'
+
+      - name: 依存関係インストール
+        run: |
+          pip install --upgrade pip
+          # 標準ライブラリのみ使用のため追加パッケージ不要
+
+      - name: AI市場データ同期スクリプトを実行
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
+        run: python scripts/sync_ai_market.py
+
+      - name: 変更をコミット・プッシュ
+        run: |
+          git config user.name "AI News Japan Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/ai_market_intelligence.json src/data/extra_articles.json
+          if git diff --cached --quiet && [ "${{ inputs.force_update }}" != "true" ]; then
+            echo "変更なし。スキップします。"
+          else
+            git commit -m "feat: AIによる市場インテリジェンス自動更新 $(date '+%Y-%m-%d %H:%M JST')"
+            git push
+            echo "✅ プッシュ完了。Vercel が自動デプロイを開始します。"
+          fi

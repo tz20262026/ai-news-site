@@ -1,0 +1,98 @@
+{
+  "updatedAt": "2026-04-04T09:00:00+09:00",
+  "aiJudgment": "2026年4月時点のAI市場を自律分析。各ツールの最新アップデート・価格・評判を精査し、用途別の最適解を判定しました。",
+  "segments": [
+    {
+      "id": "development",
+      "label": "開発",
+      "icon": "code",
+      "winner": { "name": "Claude Code", "tagline": "今月の最強選択" },
+      "reason": "コードベース全体を理解した上での自律的な修正・リファクタリングが可能。ターミナルから直接AIとペアプログラミングでき、複数ファイルにまたがる変更も一発で完了。Pro $20/月に含まれコスパ最強。",
+      "tools": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "Pro $20/月",
+          "newFeature": "マルチファイル自律編集・GitHub Actions連携強化",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "コードベース全体理解×自律実行が最強クラス"
+        },
+        {
+          "id": "replit-agent",
+          "name": "Replit Agent",
+          "price": "Core $25/月〜",
+          "newFeature": "ブラウザ完結フルスタック開発・DB統合",
+          "rating": 4,
+          "badge": null,
+          "summary": "環境構築ゼロ、プロトタイプに最速"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "Free〜$25/月",
+          "newFeature": "自然言語→フルアプリ生成・Supabase統合",
+          "rating": 4,
+          "badge": null,
+          "summary": "ノーコード→コードへの最短ルート"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "事務効率化",
+      "icon": "briefcase",
+      "winner": { "name": "Manus", "tagline": "今月の最強選択" },
+      "reason": "ブラウザ操作・ファイル処理・リサーチを人間の代わりに自律実行。「調べておいて」「まとめておいて」を本当にやってくれる唯一のツール。招待制だが入手価値大。",
+      "tools": [
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "招待制（β）",
+          "newFeature": "並列タスク自律実行・ウェブ操作・ファイル生成",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "真の自律AIエージェント、事務作業を丸投げ可能"
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude (API)",
+          "price": "従量課金",
+          "newFeature": "Projects機能・長期記憶・Computer Use",
+          "rating": 4,
+          "badge": null,
+          "summary": "カスタム業務フロー構築に最適"
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "label": "クリエイティブ",
+      "icon": "palette",
+      "winner": { "name": "Midjourney v7", "tagline": "今月の最強選択" },
+      "reason": "v7リリースで画質・プロンプト理解が大幅向上。商用利用可、プロダクション品質の画像生成は依然トップ。$10/月から始められるコスパも圧倒的。",
+      "tools": [
+        {
+          "id": "midjourney",
+          "name": "Midjourney v7",
+          "price": "Basic $10/月〜",
+          "newFeature": "v7: 高精細化・プロンプト理解・参照画像精度向上",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "商用品質画像生成の絶対王者"
+        },
+        {
+          "id": "sora",
+          "name": "Sora (OpenAI)",
+          "price": "Plus $20/月〜",
+          "newFeature": "動画生成・ストーリーボード・音声同期",
+          "rating": 4,
+          "badge": null,
+          "summary": "AIによる動画生成の最高峰"
+        }
+      ]
+    }
+  ],
+  "newToolsToday": [],
+  "alerts": []
+}
