@@ -2,8 +2,8 @@ name: AI市場インテリジェンス 自動同期
 
 on:
   schedule:
-    # 毎日午前9時（日本時間）= UTC 0:00
-    - cron: '0 0 * * *'
+    # 毎日午前9時30分（日本時間）= UTC 0:30（post_article.yml と時刻をずらす）
+    - cron: '30 0 * * *'
   workflow_dispatch:
     inputs:
       force_update:
@@ -53,6 +53,7 @@ jobs:
             echo "変更なし。スキップします。"
           else
             git commit -m "feat: AIによる市場インテリジェンス自動更新 $(date '+%Y-%m-%d %H:%M JST')"
+            git pull --rebase origin master
             git push
             echo "✅ プッシュ完了。Vercel が自動デプロイを開始します。"
           fi
