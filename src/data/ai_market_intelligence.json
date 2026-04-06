@@ -1,40 +1,52 @@
 {
-  "updatedAt": "2026-04-04T09:00:00+09:00",
-  "aiJudgment": "2026年4月時点のAI市場を自律分析。各ツールの最新アップデート・価格・評判を精査し、用途別の最適解を判定しました。",
+  "updatedAt": "2026-04-06T15:22:29.140088+09:00",
+  "aiJudgment": "新規ツールの登場はなく、市場は既存の強力なツールが各分野を牽引する静かな月。水面下では次世代モデルの開発が進んでいると推測される。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
-      "winner": { "name": "Claude Code", "tagline": "今月の最強選択" },
-      "reason": "コードベース全体を理解した上での自律的な修正・リファクタリングが可能。ターミナルから直接AIとペアプログラミングでき、複数ファイルにまたがる変更も一発で完了。Pro $20/月に含まれコスパ最強。",
+      "winner": {
+        "name": "Claude Code",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "最新情報はないものの、コーディング支援における文脈理解能力と精度は依然として最高水準。開発者の生産性を直接的に向上させる点で他を圧倒しているため。",
       "tools": [
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "Pro $20/月",
-          "newFeature": "マルチファイル自律編集・GitHub Actions連携強化",
+          "price": "プランによる",
+          "newFeature": "特筆すべき新機能なし",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "コードベース全体理解×自律実行が最強クラス"
+          "summary": "Anthropic社によるコーディング特化AI。高い精度と文脈理解が特徴。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "Core $25/月〜",
-          "newFeature": "ブラウザ完結フルスタック開発・DB統合",
+          "price": "プランによる",
+          "newFeature": "特筆すべき新機能なし",
           "rating": 4,
           "badge": null,
-          "summary": "環境構築ゼロ、プロトタイプに最速"
+          "summary": "オンラインIDEのReplit上で動作する自律型開発エージェント。"
         },
         {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "Free〜$25/月",
-          "newFeature": "自然言語→フルアプリ生成・Supabase統合",
+          "id": "manus",
+          "name": "Manus",
+          "price": "要問い合わせ",
+          "newFeature": "特筆すべき新機能なし",
           "rating": 4,
           "badge": null,
-          "summary": "ノーコード→コードへの最短ルート"
+          "summary": "AIを活用したソフトウェア開発ライフサイクル管理ツール。"
+        },
+        {
+          "id": "claude-api",
+          "name": "Claude (API)",
+          "price": "従量課金",
+          "newFeature": "特筆すべき新機能なし",
+          "rating": 5,
+          "badge": null,
+          "summary": "高性能な対話AIをアプリに組み込めるAPI。汎用性が非常に高い。"
         }
       ]
     },
@@ -42,26 +54,20 @@
       "id": "productivity",
       "label": "事務効率化",
       "icon": "briefcase",
-      "winner": { "name": "Manus", "tagline": "今月の最強選択" },
-      "reason": "ブラウザ操作・ファイル処理・リサーチを人間の代わりに自律実行。「調べておいて」「まとめておいて」を本当にやってくれる唯一のツール。招待制だが入手価値大。",
+      "winner": {
+        "name": "Lovable",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "ユーザーの声をAIで自動分析し、製品改善に繋げるユニークな価値を提供。競合が少ないニッチ市場で確固たる地位を築いているため選出。",
       "tools": [
         {
-          "id": "manus",
-          "name": "Manus",
-          "price": "招待制（β）",
-          "newFeature": "並列タスク自律実行・ウェブ操作・ファイル生成",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "真の自律AIエージェント、事務作業を丸投げ可能"
-        },
-        {
-          "id": "claude-api",
-          "name": "Claude (API)",
-          "price": "従量課金",
-          "newFeature": "Projects機能・長期記憶・Computer Use",
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "プランによる",
+          "newFeature": "特筆すべき新機能なし",
           "rating": 4,
-          "badge": null,
-          "summary": "カスタム業務フロー構築に最適"
+          "badge": "AI's Choice",
+          "summary": "ユーザーフィードバックをAIが分析し、インサイトを自動抽出。"
         }
       ]
     },
@@ -69,26 +75,29 @@
       "id": "creative",
       "label": "クリエイティブ",
       "icon": "palette",
-      "winner": { "name": "Midjourney v7", "tagline": "今月の最強選択" },
-      "reason": "v7リリースで画質・プロンプト理解が大幅向上。商用利用可、プロダクション品質の画像生成は依然トップ。$10/月から始められるコスパも圧倒的。",
+      "winner": {
+        "name": "Sora (OpenAI)",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "一般公開前だが、テキストから高品質な動画を生成する能力は映像制作の常識を覆す可能性を秘める。市場への期待値が最も高く、今月の話題を独占。",
       "tools": [
         {
-          "id": "midjourney",
-          "name": "Midjourney v7",
-          "price": "Basic $10/月〜",
-          "newFeature": "v7: 高精細化・プロンプト理解・参照画像精度向上",
+          "id": "sora-openai",
+          "name": "Sora (OpenAI)",
+          "price": "未公開",
+          "newFeature": "特筆すべき新機能なし",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "商用品質画像生成の絶対王者"
+          "summary": "テキストから高品質で長尺な動画を生成する革新的なAIモデル。"
         },
         {
-          "id": "sora",
-          "name": "Sora (OpenAI)",
-          "price": "Plus $20/月〜",
-          "newFeature": "動画生成・ストーリーボード・音声同期",
-          "rating": 4,
+          "id": "midjourney-v7",
+          "name": "Midjourney v7",
+          "price": "サブスクリプション",
+          "newFeature": "特筆すべき新機能なし",
+          "rating": 5,
           "badge": null,
-          "summary": "AIによる動画生成の最高峰"
+          "summary": "高品質な画像生成AIの最新版。写実性と芸術的表現力が向上。"
         }
       ]
     }
