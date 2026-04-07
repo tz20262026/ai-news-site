@@ -1,52 +1,43 @@
 {
-  "updatedAt": "2026-04-06T15:22:29.140088+09:00",
-  "aiJudgment": "新規ツールの登場はなく、市場は既存の強力なツールが各分野を牽引する静かな月。水面下では次世代モデルの開発が進んでいると推測される。",
+  "updatedAt": "2026-04-07T15:08:43.413037+09:00",
+  "aiJudgment": "開発分野ではAIエージェント化が加速。クリエイティブ分野は動画生成AIへの期待が最高潮に。市場全体としては大きな動きはなく、嵐の前の静けさか。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Claude Code",
+        "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "最新情報はないものの、コーディング支援における文脈理解能力と精度は依然として最高水準。開発者の生産性を直接的に向上させる点で他を圧倒しているため。",
+      "reason": "開発環境内でコーディングからデバッグまでを自律的に実行。単なる補完ツールを超え、開発者のパートナーとして機能する点で他を圧倒している。",
       "tools": [
+        {
+          "id": "replit-agent",
+          "name": "Replit Agent",
+          "price": "Replitプランに依存",
+          "newFeature": "特記事項なし",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "開発環境内で自律的にタスクをこなすAIエージェント。"
+        },
         {
           "id": "claude-code",
           "name": "Claude Code",
           "price": "プランによる",
-          "newFeature": "特筆すべき新機能なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Anthropic社によるコーディング特化AI。高い精度と文脈理解が特徴。"
-        },
-        {
-          "id": "replit-agent",
-          "name": "Replit Agent",
-          "price": "プランによる",
-          "newFeature": "特筆すべき新機能なし",
+          "newFeature": "特記事項なし",
           "rating": 4,
           "badge": null,
-          "summary": "オンラインIDEのReplit上で動作する自律型開発エージェント。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "要問い合わせ",
-          "newFeature": "特筆すべき新機能なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "AIを活用したソフトウェア開発ライフサイクル管理ツール。"
+          "summary": "Anthropic社によるコーディング特化AIモデル。"
         },
         {
           "id": "claude-api",
           "name": "Claude (API)",
           "price": "従量課金",
-          "newFeature": "特筆すべき新機能なし",
-          "rating": 5,
+          "newFeature": "特記事項なし",
+          "rating": 4,
           "badge": null,
-          "summary": "高性能な対話AIをアプリに組み込めるAPI。汎用性が非常に高い。"
+          "summary": "高性能な対話AIをアプリに組み込めるAPI。"
         }
       ]
     },
@@ -55,21 +46,11 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Lovable",
+        "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "ユーザーの声をAIで自動分析し、製品改善に繋げるユニークな価値を提供。競合が少ないニッチ市場で確固たる地位を築いているため選出。",
-      "tools": [
-        {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "プランによる",
-          "newFeature": "特筆すべき新機能なし",
-          "rating": 4,
-          "badge": "AI's Choice",
-          "summary": "ユーザーフィードバックをAIが分析し、インサイトを自動抽出。"
-        }
-      ]
+      "reason": "今月は本セグメントで特筆すべきツールは観測されなかった。市場は静観の構えであり、既存ツールのアップデート待ちの状況が続いている。",
+      "tools": []
     },
     {
       "id": "creative",
@@ -79,25 +60,25 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "一般公開前だが、テキストから高品質な動画を生成する能力は映像制作の常識を覆す可能性を秘める。市場への期待値が最も高く、今月の話題を独占。",
+      "reason": "テキストから高品質な動画を生成する能力は、映像制作の常識を覆すインパクトを持つ。まだ一般公開前だが、その潜在能力は計り知れない。",
       "tools": [
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
           "price": "未公開",
-          "newFeature": "特筆すべき新機能なし",
+          "newFeature": "一般公開に向け準備中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキストから高品質で長尺な動画を生成する革新的なAIモデル。"
+          "summary": "テキスト指示から高品質で長尺の動画を生成するAI。"
         },
         {
           "id": "midjourney-v7",
           "name": "Midjourney v7",
           "price": "サブスクリプション",
-          "newFeature": "特筆すべき新機能なし",
+          "newFeature": "v7へのアップデート（詳細未定）",
           "rating": 5,
           "badge": null,
-          "summary": "高品質な画像生成AIの最新版。写実性と芸術的表現力が向上。"
+          "summary": "写実的・芸術的な高品質画像を生成する業界のリーダー。"
         }
       ]
     }
