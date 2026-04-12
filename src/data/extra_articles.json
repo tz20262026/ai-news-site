@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_01269cbad5b5_1775970971",
+    "title": "「AIに騙された」は過去の話。複数の頭脳で真実を見抜く、次世代AIオーケストレーター「Rozum」がビジネスの精度を劇的に変える。",
+    "summary": "「AIに騙された」は過去の話。複数の頭脳で真実を見抜く、次世代AIオーケストレーター「Rozum」がビジネスの精度を劇的に変える。",
+    "body": "「AIが生成した情報が、実はとんでもない嘘だった…」そんな冷や汗をかくような経験はないだろうか。ビジネスの重要な意思決定をAIに委ねる時代だからこそ、その回答の信頼性はまさに生命線だ。実際に、ある企業はAIの誤った回答によって多額の損失を被ったと報告されている。この深刻な「AIハルシネーション」問題に終止符を打ち、AI活用の次元を一つ上へと引き上げるべく、全く新しい発想のソリューションが登場した。それが「Rozum」である。\n\nRozumの核心は、単一のAIモデルに依存しない「マルチモデル・オーケストレーション」という革新的なアプローチにある。ご存知の通り、GPT-4、Claude、Geminiといった名だたる大規模言語モデルには、それぞれ得意分野と不得意分野が存在する。Rozumは、与えられたタスクに応じて、これらの複数のモデルを戦略的に組み合わせ、まるで各分野の専門家で構成されたドリームチームのように協調させるのだ。例えば、創造的な文章生成はモデルAに、論理的な分析はモデルBに、事実確認はモデルCに、といった具合に最適な役割を瞬時に割り振る。さらに驚くべきは、各モデルから得られた複数の回答案を、Rozum独自の「スロップフィルター」システムで徹底的に検証・統合する点だ。これにより、矛盾や事実誤認、いわゆる「もっともらしい嘘（スロップ）」を排除し、単一モデルでは到底到達不可能なレベルの精度と信頼性を兼ね備えた、洗練された最終回答だけを導き出す。これはもはや単なるAIの利用ではない。AIを「指揮」し、最高のパフォーマンスを引き出す、まさに知性のオーケストラなのだ。\n\nその真価は、情報の正確性が事業の成否を左右するあらゆる場面で発揮される。例えば、金融アナリストが市場動向レポートを作成する際、複数のAIによる多角的な分析とファクトチェックを経た、極めて信頼性の高いインサイトを得られるだろう。法務部門では、膨大な契約書のレビューにおいて、複数のAIの視点からリスクを洗い出し、人間では起こりうる見落としを限りなくゼロに近づけることができる。あるいは、顧客サポートの最前線で、複雑な問い合わせに対して常に正確で一貫した回答を自動生成するシステムを構築し、顧客満足度を飛躍的に向上させることも可能だ。\n\nRozumは、主にエンタープライズ向けのカスタマイズソリューションとして提供されている。そのため、公式サイトに固定の料金プランは掲載されていない。まずは自社の課題や導入したいシステムの規模を伝え、専門チームに相談することからすべてが始まる。公式サイトの問い合わせフォームから連絡し、詳細なデモをリクエストするのが最初の確実なステップだ。あなたのビジネスに最適化されたAIオーケストラを構築するための、第一歩を踏み出そう。\n\nAIの単一の「脳」に頼る時代は終わった。複数の知性を束ね、常に最高の答えを導き出すRozumこそ、あなたのビジネスを次のステージへと押し上げる最強の原動力となる。さあ、AIに「指揮者」という新たな役割を与える時が来た。",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/18/rozum_ai/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-04-12",
+    "imagePrompt": "A business analyst in a sleek, modern control room, standing before a large holographic interface. Multiple streams of complex data, charts, and text from different sources are visually converging into a single, coherent and refined final report in the center of the screen. The scene is illuminated by the glow of the interface, creating a sense of focus and high-tech intelligence. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_01269cbad5b5_1775970971.jpg"
+  },
+  {
     "id": "v_96cd2cbb7693_1775956680",
     "title": "クラウドの巨人、強気の価格改定！Alibaba Cloudが示すAIインフラの未来とは",
     "summary": "クラウドの巨人、強気の価格改定！Alibaba Cloudが示すAIインフラの未来とは",
