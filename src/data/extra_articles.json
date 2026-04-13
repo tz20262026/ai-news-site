@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_0cc771ab3bc1_1776058419",
+    "title": "AI時代の身分証明は「瞳」が握る。あなたのAIは、本当にあなたですか？",
+    "summary": "AI時代の身分証明は「瞳」が握る。あなたのAIは、本当にあなたですか？",
+    "body": "AIエージェントが私たちの代わりに仕事や買い物を行う未来が、すぐそこまで来ている。しかし、そのAIは本当に「あなた」の意思を代弁しているのだろうか。デジタル上のなりすましや暴走のリスクが現実味を帯びる中、この根源的な問いに究極の答えを提示するプロジェクトが登場した。ChatGPTの生みの親、サム・アルトマン氏が率いる「Worldcoin」が、虹彩スキャンによる本人認証をAIエージェントの世界に導入するという、壮大な構想を発表したのだ。これは、デジタル社会における信頼の形を根底から覆す、革命の狼煙かもしれない。\n\nWorldcoinの核心は、専用デバイス「オーブ」で個人の虹彩をスキャンし、数学的に再現不可能なデジタルID「World ID」を生成する点にある。この技術の真価は、今回発表されたAIエージェントとの連携構想によって飛躍的に高まる。具体的には、AIエージェントがユーザーに代わって重要な金融取引や契約締結といったクリティカルな操作を行う際、World IDによる本人確認を必須とする仕組みだ。これにより、AIの行動が間違いなく本人の指示に基づいていることを、誰もが疑いようのない形で証明できるようになる。パスワードや二要素認証では防ぎきれない高度なサイバー攻撃やなりすましに対し、生体情報という「唯一無二の鍵」で対抗する。これは単なるセキュリティ強化ではない。AIが自律的に活動する社会の信頼性を担保する、全く新しいインフラを構築しようという野心的な試みなのだ。\n\nこの技術が社会に浸透すれば、その活用シーンは無限に広がるだろう。例えば、AIエージェントに株式の自動売買を任せている投資家は、一定額以上の取引を行う際に虹彩認証を求められることで、意図しない大規模な損失を防ぐことができる。また、企業の法務担当AIが他社との間で電子契約を結ぶ際には、World IDがその権限を証明するデジタル印鑑の役割を果たす。これにより、契約プロセスの完全自動化と、それに伴う絶大な信頼性が両立される。フリーランスがAIに営業活動を委任する場面でも、そのAIが本人と紐付いていることが保証されれば、クライアントは安心して交渉のテーブルにつけるだろう。\n\nWorldcoinへの参加は、現在無料で可能だ。公式アプリ「World App」をスマートフォンにダウンロードし、アプリ内で案内される最寄りの「オーブ」設置場所で虹彩をスキャンするだけで、あなたのWorld IDが発行される。日本ではまだオーブの設置場所が限られているが、プロジェクトの拡大と共にアクセスは容易になるだろう。AIエージェントとの連携機能はまだ構想段階だが、この未来の基盤となるIDを今から手に入れておく価値は計り知れない。\n\nデジタルとリアルの境界が溶け合う時代、自らのアイデンティティをどう証明するのか。その答えは、あなたの瞳の中に眠っている。このSFのような現実がもたらす未来の扉を、今すぐその手で開いてみてほしい。",
+    "source": "The Register",
+    "sourceUrl": "https://go.theregister.com/feed/www.theregister.com/2026/03/17/worldcoin_identity_ai_agents_whatever/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-04-13",
+    "imagePrompt": "A Japanese business person in a futuristic minimalist office, intently looking at a transparent glass tablet. The tablet displays a complex digital contract alongside a glowing iris scan authentication interface. Through the large window behind them, the neon-lit cityscape of Tokyo at night is visible. The scene is illuminated with sophisticated, cinematic lighting, creating a high-tech and serious atmosphere. Photorealistic, Cinematic lighting, High resolution",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_0cc771ab3bc1_1776058419.jpg"
+  },
+  {
     "id": "v_09057b3b22c1_1776043198",
     "title": "禁断のチップ、再び。Nvidia H200が中国市場を揺るがす！日本のAI開発競争への影響は？",
     "summary": "禁断のチップ、再び。Nvidia H200が中国市場を揺るがす！日本のAI開発競争への影響は？",
