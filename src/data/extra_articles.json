@@ -1,5 +1,21 @@
 [
   {
+    "id": "v_1caac0ca999e_1776379840",
+    "title": "主役はボットじゃない。現場が生み出す「真のDX」、英国大手ホテルがUiPathで証明した驚異の業務改革とは？",
+    "summary": "主役はボットじゃない。現場が生み出す「真のDX」、英国大手ホテルがUiPathで証明した驚異の業務改革とは？",
+    "body": "「最新の自動化ツールを導入したのに、現場に一向に定着しない…」そんな苦い経験はありませんか。テクノロジー主導の改革が、かえって現場の負担を増やしてしまう皮肉な現実。しかし、その常識を覆し、従業員を主役に据えることで驚異的な成果を上げた企業があります。英国の大手ホテルチェーン、Travelodgeです。彼らが示したのは、自動化の成否を分ける鍵が、高性能なボットではなく、現場の課題を最も深く知る「人」にあるという、シンプルかつ強力な真実でした。\n\nTravelodgeの変革を支えたのは、RPAプラットフォームの巨人、UiPathです。しかし、彼らのアプローチは単なるツール導入ではありませんでした。成功の核心は「従業員第一」という徹底した思想にあります。まず、現場の各部門から「ビジネスオーナー」を選出。彼らに、日々の業務で感じる非効率や課題点を洗い出させ、自動化のアイデアを自由に提案させました。専門的な開発チームは、そのアイデアを実現するためのサポーターに徹したのです。これにより、予約システム間のデータ同期、顧客からの問い合わせへの一次回答、煩雑な財務レポート作成といった、現場が本当に解消したかった無数のタスクが次々と自動化されていきました。これは、AIを搭載したUiPathの「インテリジェントオートメーション」だからこそ可能な、メール文面や請求書といった非構造化データさえも理解し処理する高度な自動化です。テクノロジーが現場に「使われる」のではなく、現場がテクノロジーを「使いこなす」。この主従の逆転こそが、UiPathが他のツールと一線を画す最大の強みであり、Travelodgeを成功に導いた原動力なのです。\n\nこの「現場主導」のアプローチは、ホテル業界にとどまらず、あらゆる業界で絶大な効果を発揮します。例えば、小売業では店舗スタッフが発案した在庫確認や発注プロセスの自動化、製造業ではライン作業員が見つけた品質管理データの自動収集と報告、金融機関では窓口担当者が気づいた顧客情報の入力ミスの自動チェックなど、その可能性は無限大です。特に、経理、人事、総務といったバックオフィス部門が抱える、定型的でありながら細かな判断を要するPC作業は、このアプローチの格好のターゲットとなるでしょう。\n\nUiPathを試すためのハードルは驚くほど低いのが魅力です。個人利用や小規模な学習目的であれば、無料で利用できる「Community Edition」が提供されています。まずは公式サイトからアカウントを登録し、この無料版をダウンロードして、自身のPCで行っている単純作業を自動化してみることから始められます。企業向けの本格導入については、利用規模や機能に応じた柔軟なサブスクリプションプランが用意されており、公式サイトから直接問い合わせることで最適な提案を受けられます。\n\n結論として、TravelodgeとUiPathの事例が示すのは、真のデジタルトランスフォーメーションとは、テクノロジーを押し付けることではなく、現場の情熱と創造性を解放することに他なりません。あなたのチームが日々感じている「小さな不満」こそが、会社全体を動かす巨大なイノベーションの起爆剤になるのです。さあ、今すぐ変革の第一歩を踏み出しましょう。",
+    "source": "Diginomica",
+    "sourceUrl": "https://diginomica.com/uipath-fusion-2026-how-travelodge-scaling-intelligent-automation-it-starts-business-owner-not-bot",
+    "tags": [
+      "Agentic AI",
+      "Digital enterprise in the real world",
+      "Use cases"
+    ],
+    "publishedAt": "2026-04-16",
+    "imagePrompt": "In a bright, modern hotel back office, a female operations manager with a confident smile collaborates with a younger IT specialist. They are looking at a tablet screen displaying a simplified automation workflow diagram. Around them, other colleagues are working diligently but without stress, suggesting a smooth, efficient environment created by automation. The focus is on human collaboration and empowerment, not the technology itself. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_1caac0ca999e_1776379840.jpg"
+  },
+  {
     "id": "v_5fb2824526b8_1776317011",
     "title": "「AIは日用品」発言から一転！マイクロソフトが本気で狙う「超知能」開発、その野望のすべてを暴く。",
     "summary": "「AIは日用品」発言から一転！マイクロソフトが本気で狙う「超知能」開発、その野望のすべてを暴く。",
