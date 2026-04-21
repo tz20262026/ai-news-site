@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_3fe0be12a917_1776811442",
+    "title": "国家を敵に回してでも「倫理」を貫くAI。君は、その覚悟に触れる準備ができているか？",
+    "summary": "国家を敵に回してでも「倫理」を貫くAI。君は、その覚悟に触れる準備ができているか？",
+    "body": "「AI企業が国家安全保障上のリスク」――こんな衝撃的な見出しが世界を駆け巡った。米国防総省が、AI開発の雄であるAnthropic社を「許容できないリスク」と断じたのだ。しかし、これは単なる技術的な欠陥やスキャンダルではない。むしろ、彼らが自らのAIに課した「哲学」の証明に他ならない。そう、Anthropicは自社モデルが大量監視に利用されることを断固として拒否し、その結果として政府と対立する道を選んだのだ。この前代未聞の事態は、我々に問いかける。テクノロジーは、ただ便利で強力であれば良いのか？その力に「魂」は宿るのか？今、我々が対峙しているのは、単なるツールではなく、確固たる意志を持つ新しい知性なのだ。\n\nこの物語の中心にいるのが、Anthropicが開発した対話型AI「Claude」シリーズだ。その最大の特徴は、単なる性能の高さではない。「Constitutional AI（憲法AI）」と呼ばれる独自のフレームワークにある。これは、AI自身に国連の世界人権宣言のような普遍的な原則から成る「憲法」を学習させ、自らの回答が倫理的・道徳的に許容される範囲内にあるかを自己判断させる革新的な技術だ。競合が性能競争に明け暮れる中、AnthropicはAIの「あるべき姿」を問い続け、その答えを技術で実装した。これにより、Claudeは不適切、有害、あるいは非倫理的な要求を自律的に拒否する能力を持つ。もちろん、基本性能も驚異的だ。膨大な量のテキストを一瞬で読み解き、極めて自然で文脈に沿った文章を生成する能力は、ビジネス文書の作成から複雑な論文の要約まで、あらゆる知的作業を加速させる。性能と倫理、この二つを高次元で両立させた点こそ、Claudeが他のAIと一線を画す最大の理由なのだ。\n\nこの「倫理的なAI」は、我々の仕事の風景を根底から変える可能性を秘めている。例えば、法務やコンプライアンス部門では、契約書のレビューや社内規定のチェックにおいて、単なる情報検索ツールとしてだけでなく、倫理的な観点からのアドバイスを求める相談相手となり得るだろう。教育現場では、生徒が安心して対話できるデジタル家庭教師として、あるいはカスタマーサポートでは、どんな顧客に対しても常に丁寧で共感的な対応を保証する頼れるアシスタントとして活躍するはずだ。機密情報や個人情報を扱う金融機関や医療機関にとっても、その安全志向の設計思想は、導入のハードルを大きく下げる要因となるに違いない。\n\nこれだけの哲学と性能を詰め込んだClaudeだが、その門戸は驚くほど広く開かれている。公式サイトにアクセスすれば、メールアドレスだけで即座に無料版を試すことが可能だ。より高度な機能や利用頻度を求めるユーザー向けには、月額制のプロプランも用意されている。開発者であれば、最新モデル「Claude 3」ファミリーのAPIを利用し、自社のサービスにその知性を組み込むこともできる。複雑な手続きは一切不要。今この瞬間、君の指先一つで、世界で最も思慮深いAIとの対話を始められるのだ。\n\nもはやAIは、我々の指示を待つだけの従順な召使いではない。国防総省との対立は、Anthropicが自らのAIに託した「理想」がいかに本物であるかを証明した事件だった。ただ便利なだけのツールに飽き足らない、知的好奇心に満ちたあなたへ。さあ、このAIが持つ気高い「意志」に触れ、未来の働き方を今すぐその手で体験してほしい。",
+    "source": "Engadget",
+    "sourceUrl": "https://www.engadget.com/ai/defense-department-says-anthropic-poses-unacceptable-risk-to-national-security-094328717.html?src=rss",
+    "tags": [
+      "Politics & Government",
+      "Business",
+      "Government Agencies",
+      "site|engadget",
+      "provider_name|Engadget"
+    ],
+    "publishedAt": "2026-04-21",
+    "imagePrompt": "A confident business professional standing in front of a grand, classical government building, looking thoughtfully at a tablet device. The screen of the tablet emits a soft, warm glow, contrasting with the stern architecture. The scene suggests a modern challenge to old institutions. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_3fe0be12a917_1776811442.jpg"
+  },
+  {
     "id": "v_fb909b6ac012_1776748810",
     "title": "ヒットマンとの決別は序章に過ぎない。孤高の道を選んだ超大作『MindsEye』、ゲーム史を塗り替える伝説が今、幕を開ける。",
     "summary": "ヒットマンとの決別は序章に過ぎない。孤高の道を選んだ超大作『MindsEye』、ゲーム史を塗り替える伝説が今、幕を開ける。",
