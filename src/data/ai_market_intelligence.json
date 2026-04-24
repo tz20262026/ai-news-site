@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-04-23T12:55:48.202319+09:00",
-  "aiJudgment": "開発分野ではAIエージェント化が加速。クリエイティブ分野では動画生成AIが市場の注目を独占。全体的に専門特化が進む傾向。",
+  "updatedAt": "2026-04-24T12:59:32.482407+09:00",
+  "aiJudgment": "大きな新規参入はなく、既存の強力なツールが各分野で深化を続けている。特に開発APIと動画生成への期待は依然として高い。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude (API)",
         "tagline": "今月の最強選択"
       },
-      "reason": "開発環境内で自律的にタスクを完遂する能力は、単なるコード生成を超えた次世代の開発支援を実現。生産性を飛躍的に向上させる可能性を秘めているため。",
+      "reason": "特定のタスクに特化したツールも強力だが、APIの汎用性と拡張性は開発の可能性を最も広げるため。安定した性能も高評価。",
       "tools": [
         {
           "id": "claude-code",
@@ -19,25 +19,25 @@
           "newFeature": "情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "コーディングに特化した対話型AI。コード生成やデバッグを支援。"
+          "summary": "Anthropicによるコード生成に特化したAIモデル。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "Replitプランに依存",
           "newFeature": "情報なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "開発環境内で自律的にタスクを遂行するAIエージェント。"
+          "rating": 4,
+          "badge": null,
+          "summary": "Replit環境で動作する自律型ソフトウェア開発エージェント。"
         },
         {
           "id": "claude-api",
           "name": "Claude (API)",
           "price": "従量課金",
           "newFeature": "情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "高性能な大規模言語モデルをアプリに組み込むためのAPI。"
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "高機能な対話AIをアプリに組み込むためのAPI。"
         }
       ]
     },
@@ -49,7 +49,7 @@
         "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月、このカテゴリで評価対象となる有力なツールはありませんでした。市場の動向を注視します。",
+      "reason": "今月、このセグメントで注目すべきツールはデータベースに登録されていません。",
       "tools": []
     },
     {
@@ -60,7 +60,7 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキストから高品質な動画を生成する能力は、映像制作の常識を覆す革新性を持つ。クリエイティブ分野に最も大きなインパクトを与えたため選出。",
+      "reason": "画像生成は成熟期に入る一方、Soraは動画生成の品質を飛躍させ市場の期待を独占。その革新性と将来性を高く評価。",
       "tools": [
         {
           "id": "sora-openai",
@@ -69,7 +69,7 @@
           "newFeature": "情報なし",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキストプロンプトから高品質で写実的な動画を生成するAI。"
+          "summary": "テキストから高品質な動画を生成する革新的なモデル。"
         },
         {
           "id": "midjourney-v7",
@@ -78,7 +78,7 @@
           "newFeature": "情報なし",
           "rating": 5,
           "badge": null,
-          "summary": "最新バージョン。さらに向上した画像品質と表現力を提供。"
+          "summary": "写実的・芸術的な高品質画像を生成する最先端モデル。"
         }
       ]
     }
