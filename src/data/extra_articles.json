@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_0b85f4ddf0ad_1777070782",
+    "title": "声で照明がつくまで3秒。Googleアシスタントの進化は、僕らを満足させられるのか？",
+    "summary": "声で照明がつくまで3秒。Googleアシスタントの進化は、僕らを満足させられるのか？",
+    "body": "「OK、グーグル。電気を点けて」。この一言で部屋が明るくなる未来を夢見たが、応答の「間」に物理スイッチへ手が伸びた経験はないだろうか。そんな我々の小さな不満に応えるように、グーグルは改善の一手を打ってきた。最新AI、Geminiを搭載したアシスタントが、その速度を劇的に向上させたのだ。\n\n今回のアップデートの核心は、応答速度の向上にある。グーグルは、Geminiを統合したアシスタントがスマートホーム操作において最大40%高速化したと発表した。音声コマンドの認識からクラウド処理、デバイスへの指令伝達まで、一連の流れが大幅に短縮されたことを意味する。これまで感じていた、ぎこちない「間」を埋めるための重要な一歩だ。しかし、これは完全な解決策ではない。依然として処理はクラウドを経由するため、物理スイッチのような「瞬時」の反応は実現できていないのが現実だ。40%速くなったとはいえ、体感ではまだ1、2秒の遅延が残る。この「あと一歩」感が、クラウドベースのAIアシスタントが抱える本質的な課題を浮き彫りにしている。ローカル処理を優先する他のシステムと比較したとき、この遅延がユーザー体験にどう影響するかが、今後の大きな焦点となるだろう。\n\nこの高速化の恩恵は、日常生活のあらゆる場面で感じられる。両手が荷物でふさがっている帰宅時、「電気を点けて」の一言が、よりスムーズに部屋を照らす。料理中で手が汚れていても、タイマー設定や音楽再生がストレスなく行えるだろう。特に複数のデバイスを連携させている家庭では、「おやすみ」の一言で全ての照明を消し、エアコンを調整する一連の動作が、より滑らかに実行される。このわずかな時間短縮が、日々の小さなイライラを解消し、スマートホーム体験をより快適なものへと格上げしてくれるはずだ。\n\nこの機能はGoogleアシスタントのアップデートとして提供され、追加料金は一切不要だ。AndroidスマートフォンやGoogle Nestシリーズなど、アシスタント対応デバイスがあれば誰でも利用できる。特別な登録は必要なく、ソフトウェアが自動更新されるのを待つだけ。もし最新機能を試したいなら、スマートフォンのアシスタント設定からGeminiが有効になっているか確認してみよう。\n\n40%の高速化は完璧ではないかもしれない。だが、これはAIが我々の生活に溶け込む過程の一つの通過点だ。この進化を、ぜひあなた自身の声で体験してほしい。未来の「当たり前」は、今日の「あと一歩」から生まれるのだから。",
+    "source": "Gizmodo",
+    "sourceUrl": "https://gizmodo.com/using-gemini-to-turn-on-your-lights-is-now-40-faster-but-its-still-too-slow-2000734994",
+    "tags": [
+      "Gadgets"
+    ],
+    "publishedAt": "2026-04-24",
+    "imagePrompt": "Photorealistic, Cinematic lighting, High resolution, A man in his 30s standing in a modern, dimly lit living room at night. He is looking expectantly towards a ceiling light that is still off. On a side table, a smart speaker's LED lights are glowing, indicating it's listening. The man's expression is a mix of anticipation and slight impatience. The city lights are visible through a large window in the background.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_0b85f4ddf0ad_1777070782.jpg"
+  },
+  {
     "id": "v_2abf62530121_1777008507",
     "title": "未来は賭けの対象か？政府が恐れる「予測市場」の恐るべき精度、その光と影に今すぐ迫れ。",
     "summary": "未来は賭けの対象か？政府が恐れる「予測市場」の恐るべき精度、その光と影に今すぐ迫れ。",
