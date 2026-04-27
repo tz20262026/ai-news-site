@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_c457b21e2640_1777330691",
+    "title": "SFは終わった。AIが操る「空飛ぶタクシー」、今夏、米国の空を駆け巡る！",
+    "summary": "SFは終わった。AIが操る「空飛ぶタクシー」、今夏、米国の空を駆け巡る！",
+    "body": "朝の絶望的な交通渋滞、鳴り響くクラクション、進まない車列。そんな都市生活者の悪夢に、ついに終止符が打たれるかもしれない。かつて未来の象徴として語られた「空飛ぶクルマ」が、AIという強力な翼を得て、いよいよ現実の空へと飛び立とうとしているのだ。これは単なる乗り物の話ではない。我々の移動、そして都市の概念そのものを根底から覆す、壮大な革命の序章なのである。\n\nこの革命を加速させるのが、米連邦航空局（FAA）が打ち出した新たなプログラムだ。これまで、次世代の電動垂直離着陸機、通称eVTOLの開発では他国に先行を許していた米国が、満を持して規制の壁を取り払い、商業運航に向けた最終段階へと舵を切った。この動きの核心にあるのが、高度なAI技術だ。機体の制御はもちろんのこと、無数の機体が飛び交う未来の空で、リアルタイムに最適な飛行ルートを算出し、衝突を回避し、天候の変化に即座に対応する。これはもはや、人間が操縦する航空機という概念を超えた、「空を飛ぶAI」そのものと言えるだろう。Joby AviationやArcher Aviationといった先鋭企業が開発する機体は、静粛性に優れた電動モーターと、AIによる自律飛行システムを組み合わせることで、従来のヘリコプターとは比較にならない安全性と効率性を実現する。単なる移動手段ではなく、都市の神経網のように機能する、知能化された交通インフラの誕生なのだ。\n\nその活用シーンは、想像を絶するほど多岐にわたる。例えば、都心から郊外の空港まで、わずか数十分で移動するビジネスパーソン。週末には、渋滞を横目に、これまで諦めていた遠くの景勝地へ日帰りで訪れる家族。都市の景色を全く新しい視点から楽しむ観光客の姿も当たり前になるだろう。それだけではない。災害発生時には、孤立した地域へ迅速に救援物資や医療品を届ける命のラインとなり、救急医療の現場では、一刻を争う患者を渋滞知らずで病院へ搬送する「空飛ぶ救急車」として活躍するに違いない。我々の生活の質を劇的に向上させる可能性を秘めているのだ。\n\n現時点では、一般ユーザーがアプリで気軽に呼べる段階には至っておらず、具体的な料金体系も未定だ。サービス開始当初は、一部の富裕層や法人向けのプレミアムなサービスとして展開されることが予想される。しかし、技術の成熟と量産化が進めば、将来的には現在のタクシーやライドシェアサービスと変わらない価格帯で利用できる日も遠くないだろう。この夏から米国各地で始まる実証実験や限定的な商業フライトが、その未来に向けた確かな第一歩となる。\n\nもはや、空を見上げる理由は、青空や星空だけではなくなる。AIが切り拓く次世代の交通システムが、すぐそこまで来ているのだ。数年後、当たり前のように空を飛ぶeVTOLを見かけることになるだろう。その未来を、今から楽しみに待とうではないか。",
+    "source": "New Atlas",
+    "sourceUrl": "https://newatlas.com/aircraft/faa-eipp-evtol-acceleration-program/",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-04-27",
+    "imagePrompt": "A futuristic eVTOL air taxi with a sleek, aerodynamic design flying gracefully over the bustling, modern city skyline of Tokyo at sunset. Mount Fuji is faintly visible in the distant background. The city below is filled with glowing lights from traffic and buildings. The perspective is from slightly above and behind the aircraft, showcasing its elegant form and the vast urban landscape. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_c457b21e2640_1777330691.jpg"
+  },
+  {
     "id": "v_a3394d6c1dfb_1777254745",
     "title": "US-sanctioned currency exchange says $15 million heist done by \"unfriendly states\"",
     "summary": "もはやセキュリティ対策は、ウイルススキャンを回すだけの時代ではない。我々が直面しているのは、国境を越え、企業の存亡を揺るがすデジタルな戦争だ。その最前線をリアルタイムで可視化し、敵の正体まで暴き出す驚異のインテリジェンス・プラットフォーム、それが「Grinex」だ。これは単なるツールではない。サイバ…",
