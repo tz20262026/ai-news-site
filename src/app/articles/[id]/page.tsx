@@ -130,14 +130,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = await fetchArticleById(id);
   if (!article) return {};
   const imageUrl = getArticleImageUrl(article);
+  const canonicalUrl = `https://ai-news-site-wheat.vercel.app/articles/${id}`;
   return {
-    title: `${article.title} | AI News Japan`,
+    title: article.title,
     description: article.summary,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: article.title,
       description: article.summary,
       type: "article",
+      url: canonicalUrl,
       publishedTime: article.publishedAt,
+      modifiedTime: article.publishedAt,
       tags: article.tags,
       images: [{ url: imageUrl, width: 800, height: 420, alt: article.title }],
     },
@@ -300,12 +306,35 @@ export default async function ArticlePage({ params }: Props) {
             headline: article.title,
             description: article.summary,
             datePublished: article.publishedAt,
-            publisher: {
+            dateModified: article.publishedAt,
+            url: `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+            image: {
+              "@type": "ImageObject",
+              url: getArticleImageUrl(article),
+              width: 800,
+              height: 420,
+            },
+            author: {
               "@type": "Organization",
               name: "AI News Japan",
               url: "https://ai-news-site-wheat.vercel.app",
             },
-            ...(article.imageUrl ? { image: article.imageUrl } : {}),
+            publisher: {
+              "@type": "Organization",
+              name: "AI News Japan",
+              url: "https://ai-news-site-wheat.vercel.app",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
+                width: 200,
+                height: 200,
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+            },
+            keywords: article.tags.join(", "),
           }),
         }}
       />

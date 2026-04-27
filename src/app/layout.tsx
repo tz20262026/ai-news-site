@@ -14,13 +14,19 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "AI News Japan — 海外AIツール最新情報",
-  description: "海外の最新AIツール・ニュースを日本語でお届けします",
+  title: {
+    default: "AI News Japan — 海外AIツール最新情報",
+    template: "%s | AI News Japan",
+  },
+  description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
   metadataBase: new URL("https://ai-news-site-wheat.vercel.app"),
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app",
+  },
   openGraph: {
     siteName: "AI News Japan",
     title: "AI News Japan — 海外AIツール最新情報",
-    description: "海外の最新AIツール・ニュースを日本語でお届けします",
+    description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
     type: "website",
     locale: "ja_JP",
     url: "https://ai-news-site-wheat.vercel.app",
@@ -29,15 +35,26 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
         width: 1200,
         height: 630,
-        alt: "AI News Japan",
+        alt: "AI News Japan — 海外AIツール最新情報",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI News Japan — 海外AIツール最新情報",
-    description: "海外の最新AIツール・ニュースを日本語でお届けします",
+    description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
     images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -70,6 +87,39 @@ export default function RootLayout({
             </Script>
           </>
         )}
+
+        {/* ─── WebSite + Organization 構造化データ ────────── */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "AI News Japan",
+                url: "https://ai-news-site-wheat.vercel.app",
+                description: "海外の最新AIツール・ニュースを日本語でお届けするニュースサイト",
+                inLanguage: "ja",
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: {
+                    "@type": "EntryPoint",
+                    urlTemplate: "https://ai-news-site-wheat.vercel.app/?q={search_term_string}",
+                  },
+                  "query-input": "required name=search_term_string",
+                },
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "AI News Japan",
+                url: "https://ai-news-site-wheat.vercel.app",
+                logo: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
+                sameAs: [],
+              },
+            ]),
+          }}
+        />
 
         <Header />
         <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">

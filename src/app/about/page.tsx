@@ -4,6 +4,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About | AI News Japan",
   description: "AI News Japan について — 海外AIツール・ニュースを自動収集して日本語でお届けするサービスの紹介",
+  openGraph: {
+    title: "About | AI News Japan",
+    description: "AI News Japan について — 海外AIツール・ニュースを自動収集して日本語でお届けするサービスの紹介",
+    type: "website",
+    url: "https://ai-news-site-wheat.vercel.app/about",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "AI News Japan",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | AI News Japan",
+    description: "AI News Japan について — 海外AIツール・ニュースを自動収集して日本語でお届けするサービスの紹介",
+    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+  },
 };
 
 export default function AboutPage() {
