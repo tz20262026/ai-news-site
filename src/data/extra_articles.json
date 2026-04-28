@@ -1,48 +1,20 @@
 [
   {
-    "id": "v_f0e159ff4911_1777355435",
-    "title": "YouTubeの「AI判定」、あなたに丸投げ？ プラットフォームの責任放棄が生む新たなカオス",
-    "summary": "YouTubeの「AI判定」、あなたに丸投げ？ プラットフォームの責任放棄が生む新たなカオス",
-    "body": "あなたのタイムラインに、どこか奇妙で脈絡のない動画が流れ着いた経験はないだろうか。それは「AIスロップ」と呼ばれる、生成AIによって大量生産された低品質コンテンツの濁流が、ついに私たちの日常にまで押し寄せているサインかもしれない。この深刻化する問題に対し、巨大プラットフォームYouTubeが打ち出した新たな一手は、驚くべきことに、その解決策を私たちユーザー自身の判断に委ねるというものだった。これは一見、民主的でクリーンな環境を目指すための素晴らしい試みに見える。しかし、その内実を深く覗き込むと、プラットフォームが本来負うべき責任を放棄し、無償の労働力としてユーザーを動員する、極めて危険な構造が浮かび上がってくるのだ。この新機能は、私たちのコンテンツ消費体験を根底から揺るがしかねない、重大な転換点となるだろう。\n\nこの新機能の核心は、視聴者が動画に対して「AIによって部分的または完全に生成されたものか」を評価し、報告する仕組みにある。YouTubeは、このユーザーからのフィードバックをAIコンテンツの特定やラベリングに活用するとしている。表向きは、透明性を高め、悪質なコンテンツを淘汰するための協力体制だ。しかし、この「善意の監視網」は、いくつかの点で致命的な欠陥を抱えている。まず、評価の基準が個々のユーザーの主観に委ねられるため、判断がばらつくのは避けられない。AIを創造的な表現ツールとして活用するクリエイターが、無知や悪意によって「低品質AI」の烙印を押され、不当なペナルティを受けるリスクが生まれる。さらに深刻なのは、本来アルゴリズムと専門チームで対処すべきコンテンツモデレーションという重労働を、事実上ユーザーに「アウトソーシング」している点だ。これは、プラットフォームとしての責任を巧妙に回避する一方で、ユーザー間の不信と対立を煽り、コミュニティの分断を加速させる危険な賭けと言えるだろう。\n\nこの機能が本格的に導入されれば、私たちの役割は単なる視聴者から「コンテンツ鑑定士」へと変わる。クリエイターは、自身の作品がAI利用の有無によってどのように評価されるか、常に他者の視線を意識せざるを得なくなるだろう。特に、映像制作、音楽制作、デザインといったクリエイティブな職種では、AIツールを補助的に使うことが一般的になりつつあるため、どこまでが「創造的な利用」で、どこからが「スロップ」なのか、その線引きを巡って新たな混乱が生じることは必至だ。私たち視聴者もまた、動画を楽しむ純粋な体験の裏で、常に真偽を判定する役目を負わされることになる。これは、メディアリテラシーという名の下に、新たな心理的負担を強いられることに他ならない。\n\nこの機能はYouTubeの標準機能として、全ユーザーに無料で提供される。いや、むしろ「無償で我々の労働力を提供する」と言うべきかもしれない。特定の料金プランは存在せず、今後のアップデートを通じて、動画再生ページや設定メニューに、コンテンツを報告・評価するための新しい選択肢が追加されていくだろう。利用開始にあたって特別な登録は不要で、ある日突然、あなたのYouTubeアプリに「鑑定」の義務が舞い込んでくることになるはずだ。これは、プラットフォームを利用する全ての人に関わる、避けられない変化なのだ。\n\n結局のところ、この新機能はAI時代のコンテンツの質を巡る、巨大な社会実験に他ならない。プラットフォームの責任とユーザーの役割、その境界線が今、大きく揺らいでいる。あなたのワンクリックが、未来のクリエイティブと情報の生態系を左右するかもしれない。さあ、この新たな現実に、あなたはどう向き合うだろうか？",
-    "source": "Digital Trends",
-    "sourceUrl": "https://www.digitaltrends.com/movies/youtube-is-outsourcing-its-ai-slop-problem-to-you-and-thats-a-terrible-idea/",
+    "id": "v_ecc0a4ea7bdf_1777345234",
+    "title": "Google AI Releases Auto-Diagnose: An Large Language Model LLM-Based System to Diagnose Integration Test Failures at Scale",
+    "summary": "深夜、鳴り響くアラート。何千行ものログの海に突き落とされ、スタックトレースの森を彷徨い、たった一つのバグを探し求める悪夢のような時間。エンジニアなら誰もが経験したことがあるだろう、あの絶望的なデバッグ作業に、ついに終止符が打たれる。Google AIが投下した最終兵器、その名も「Auto-Diagn…",
+    "body": "深夜、鳴り響くアラート。何千行ものログの海に突き落とされ、スタックトレースの森を彷徨い、たった一つのバグを探し求める悪夢のような時間。エンジニアなら誰もが経験したことがあるだろう、あの絶望的なデバッグ作業に、ついに終止符が打たれる。Google AIが投下した最終兵器、その名も「Auto-Diagnose」。これは単なるツールではない。我々をログ地獄から解放し、開発の常識を根底から覆す、AIという名の革命だ。君が次に統合テストの失敗に頭を抱えるとき、その隣にはもう人間ではなく、超知的なAIアシスタントがいる。想像するだけで胸が熱くならないか？Auto-Diagnoseは、大規模言語モデル（LLM）を駆使し、人間では到底追いきれない膨大なテストログを瞬時に読み解く。単なるキーワード検索ではない。AIがログの文脈を理解し、複数のサービスにまたがる複雑なエラーの因果関係を突き止め、まるで百戦錬磨のシニアエンジニアのように「原因はこれだ」と指し示してくれるのだ。Googleの研究者たちが生み出したこの怪物的なシステムは、我々の働き方を劇的に変えるだろう。例えば、あなたがアジャイル開発チームの一員だとしよう。スプリントの最終日、リリース直前に複数のマイクロサービスが絡む致命的なバグが発生した。誰もがパニックに陥る中、あなたは冷静にAuto-Diagnoseを起動する。AIは数分で原因となっているサービスと問題のコード箇所を特定。チームは即座に修正に取り掛かり、無事に",
+    "source": "Marktechpost",
+    "sourceUrl": "https://www.marktechpost.com/2026/04/17/google-ai-releases-auto-diagnose-an-large-language-model-llm-based-system-to-diagnose-integration-test-failures-at-scale/",
     "tags": [
-      "Entertainment",
-      "Features",
-      "ai",
-      "YouTube"
+      "AI Paper Summary",
+      "AI Shorts",
+      "Applications",
+      "Artificial Intelligence",
+      "Editors Pick"
     ],
-    "publishedAt": "2026-04-28",
-    "imagePrompt": "A young person sitting on a couch in a dimly lit room, anxiously looking at their smartphone. The screen of the phone displays a grid of bizarre, abstract AI-generated video thumbnails. The glow from the screen illuminates their face, showing a mix of confusion and fatigue, as if they are being forced to judge the content. Photorealistic, Cinematic lighting, High resolution.",
-    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_f0e159ff4911_1777355435.jpg"
-  },
-  {
-    "id": "v_6e6f475bf89d_1777339858",
-    "title": "AIが解放した時間、どこで過ごす？ 鉄壁のモバイル要塞が、あなたを大自然の仕事場へ解き放つ。",
-    "summary": "AIが解放した時間、どこで過ごす？ 鉄壁のモバイル要塞が、あなたを大自然の仕事場へ解き放つ。",
-    "body": "AIアシスタントが日常業務をこなし、私たちは時間と場所の制約から解放されつつあります。しかし、その自由を真に謳歌するための「場所」が、まだ追いついていません。都会の喧騒を離れ、最高の集中環境と究極のリフレッシュを両立させる夢のワークスタイルが、今、ひとつの答えにたどり着きました。それは、オーストラリアの荒野で鍛え上げられた、次世代のオフロードキャンピングトレーラーです。単なる移動手段や宿泊場所ではありません。これは、AI時代を生きる私たちのための「移動する創造拠点」なのです。\n\nこのツールの真価は、その圧倒的な堅牢性と機動性にあります。軍用レベルの技術が注ぎ込まれた亜鉛メッキ鋼のシャーシと独立懸架式サスペンションは、AI開発に不可欠な高性能ラップトップや複数のモニター、精密な通信機器といった高価な機材を、まるで揺りかごのように優しく、しかし確実に守り抜きます。どんな悪路もものともせず、インスピレーションを求めて世界の果てまで安全に機材を運べる、まさに「走る金庫」です。さらに驚くべきは、その展開のスピーディーさ。目的地に到着後、わずか30秒で快適な居住空間とワークスペースを構築できます。仕事モードと休息モードを瞬時に切り替えるこの体験は、思考のフローを途切れさせず、創造性を最大限に引き出してくれるでしょう。大容量バッテリーシステムは、AIを駆動させるパワフルなマシンを常時オンラインに保ち、オフグリッド環境でありながら、世界とリアルタイムで接続し続けることを可能にします。\n\n想像してみてください。AIエンジニアが、次の画期的なアルゴリズムの着想を求めて、人里離れた湖畔で開発合宿を行う光景を。都会のノイズから完全に遮断された静寂の中、自然のゆらぎが新たな視点を与えてくれます。また、全国を飛び回る経営者やコンサルタントにとっては、これ以上ない究極のモバイルオフィスとなるでしょう。移動時間を無駄にすることなく、重要なオンライン会議から次期戦略の立案まで、最高の環境で集中して取り組むことができます。これは、仕事と人生の境界線を溶かし、生産性と幸福度を同時に最大化する、未来の働き方の具体的な形なのです。\n\nこの究極のギアは、月額課金制のソフトウェアではありません。あなたのライフスタイルそのものへの、生涯にわたる投資です。製造元であるオーストラリアの公式サイトから正規ディーラーを確認し、あなたのビジョンに合わせたカスタマイズについて問い合わせることから、すべてが始まります。価格は決して安価ではありませんが、それ以上に得られる体験と創造性の価値は計り知れないでしょう。\n\nAIがもたらすのは、単なる業務の効率化ではなく、私たちの生き方そのものを再定義する革命です。この鉄壁の相棒を手に入れ、誰も見たことのない景色の中で、未来を創造する旅へ今すぐ出発してみてはいかがでしょうか。",
-    "source": "New Atlas",
-    "sourceUrl": "https://newatlas.com/camping-trailers/track-tvan-mk6-off-road-camper/",
-    "tags": [
-      "AI"
-    ],
-    "publishedAt": "2026-04-28",
-    "imagePrompt": "A lone developer coding on a laptop next to a rugged, futuristic off-road camping trailer parked in a vast, epic wilderness at sunset. The warm glow from the laptop screen illuminates their face, showing intense focus. The trailer's side panel is open, revealing a high-tech mobile office setup. Photorealistic, Cinematic lighting, High resolution.",
-    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_6e6f475bf89d_1777339858.jpg"
-  },
-  {
-    "id": "v_c457b21e2640_1777330691",
-    "title": "SFは終わった。AIが操る「空飛ぶタクシー」、今夏、米国の空を駆け巡る！",
-    "summary": "SFは終わった。AIが操る「空飛ぶタクシー」、今夏、米国の空を駆け巡る！",
-    "body": "朝の絶望的な交通渋滞、鳴り響くクラクション、進まない車列。そんな都市生活者の悪夢に、ついに終止符が打たれるかもしれない。かつて未来の象徴として語られた「空飛ぶクルマ」が、AIという強力な翼を得て、いよいよ現実の空へと飛び立とうとしているのだ。これは単なる乗り物の話ではない。我々の移動、そして都市の概念そのものを根底から覆す、壮大な革命の序章なのである。\n\nこの革命を加速させるのが、米連邦航空局（FAA）が打ち出した新たなプログラムだ。これまで、次世代の電動垂直離着陸機、通称eVTOLの開発では他国に先行を許していた米国が、満を持して規制の壁を取り払い、商業運航に向けた最終段階へと舵を切った。この動きの核心にあるのが、高度なAI技術だ。機体の制御はもちろんのこと、無数の機体が飛び交う未来の空で、リアルタイムに最適な飛行ルートを算出し、衝突を回避し、天候の変化に即座に対応する。これはもはや、人間が操縦する航空機という概念を超えた、「空を飛ぶAI」そのものと言えるだろう。Joby AviationやArcher Aviationといった先鋭企業が開発する機体は、静粛性に優れた電動モーターと、AIによる自律飛行システムを組み合わせることで、従来のヘリコプターとは比較にならない安全性と効率性を実現する。単なる移動手段ではなく、都市の神経網のように機能する、知能化された交通インフラの誕生なのだ。\n\nその活用シーンは、想像を絶するほど多岐にわたる。例えば、都心から郊外の空港まで、わずか数十分で移動するビジネスパーソン。週末には、渋滞を横目に、これまで諦めていた遠くの景勝地へ日帰りで訪れる家族。都市の景色を全く新しい視点から楽しむ観光客の姿も当たり前になるだろう。それだけではない。災害発生時には、孤立した地域へ迅速に救援物資や医療品を届ける命のラインとなり、救急医療の現場では、一刻を争う患者を渋滞知らずで病院へ搬送する「空飛ぶ救急車」として活躍するに違いない。我々の生活の質を劇的に向上させる可能性を秘めているのだ。\n\n現時点では、一般ユーザーがアプリで気軽に呼べる段階には至っておらず、具体的な料金体系も未定だ。サービス開始当初は、一部の富裕層や法人向けのプレミアムなサービスとして展開されることが予想される。しかし、技術の成熟と量産化が進めば、将来的には現在のタクシーやライドシェアサービスと変わらない価格帯で利用できる日も遠くないだろう。この夏から米国各地で始まる実証実験や限定的な商業フライトが、その未来に向けた確かな第一歩となる。\n\nもはや、空を見上げる理由は、青空や星空だけではなくなる。AIが切り拓く次世代の交通システムが、すぐそこまで来ているのだ。数年後、当たり前のように空を飛ぶeVTOLを見かけることになるだろう。その未来を、今から楽しみに待とうではないか。",
-    "source": "New Atlas",
-    "sourceUrl": "https://newatlas.com/aircraft/faa-eipp-evtol-acceleration-program/",
-    "tags": [
-      "AI"
-    ],
-    "publishedAt": "2026-04-27",
-    "imagePrompt": "A futuristic eVTOL air taxi with a sleek, aerodynamic design flying gracefully over the bustling, modern city skyline of Tokyo at sunset. Mount Fuji is faintly visible in the distant background. The city below is filled with glowing lights from traffic and buildings. The perspective is from slightly above and behind the aircraft, showcasing its elegant form and the vast urban landscape. Photorealistic, Cinematic lighting, High resolution.",
-    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_c457b21e2640_1777330691.jpg"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop"
   },
   {
     "id": "v_a3394d6c1dfb_1777254745",
@@ -58,7 +30,8 @@
       "cyberattack",
       "Grinex"
     ],
-    "publishedAt": "2026-04-17"
+    "publishedAt": "2026-04-17",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "v_bf896d9b2869_1777172432",
@@ -74,7 +47,8 @@
       "Security / Privacy",
       "Security / Security News"
     ],
-    "publishedAt": "2026-04-18"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "v_1ab1264ad6fc_1777086035",
@@ -90,7 +64,8 @@
       "artificial intelligence",
       "Hardware"
     ],
-    "publishedAt": "2026-04-18"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop"
   },
   {
     "id": "v_2b4064f2417f_1776740432",
@@ -106,7 +81,8 @@
       "sora",
       "OpenAI For Science"
     ],
-    "publishedAt": "2026-04-17"
+    "publishedAt": "2026-04-17",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop"
   },
   {
     "id": "v_bcf8911a707f_1776729633",
@@ -122,7 +98,8 @@
       "Tinder",
       "World"
     ],
-    "publishedAt": "2026-04-17"
+    "publishedAt": "2026-04-17",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop"
   },
   {
     "id": "v_81c41bfd13ef_1776722432",
@@ -138,7 +115,8 @@
       "Google",
       "developers"
     ],
-    "publishedAt": "2026-04-18"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "v_bd8a430d3e86_1776654032",
@@ -154,7 +132,8 @@
       "dario amodei",
       "susie wiles"
     ],
-    "publishedAt": "2026-04-18"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "v_64b801fb6aaa_1776556832",
@@ -169,7 +148,8 @@
       "andrew feldman",
       "cerebras systems"
     ],
-    "publishedAt": "2026-04-18"
+    "publishedAt": "2026-04-18",
+    "imageUrl": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop"
   },
   {
     "id": "v_eca187370067_1776481236",
@@ -181,7 +161,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-04-13"
+    "publishedAt": "2026-04-13",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop"
   },
   {
     "id": "v_cb8eb5cd72d7_1776470445",
@@ -193,7 +174,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-04-12"
+    "publishedAt": "2026-04-12",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "v_2a5f008d7ae1_1776135632",
@@ -205,7 +187,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-04-12"
+    "publishedAt": "2026-04-12",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "v_4444b042c986_1775444433",
@@ -221,7 +204,8 @@
       "GPU optimization",
       "Insight Partners"
     ],
-    "publishedAt": "2026-03-30"
+    "publishedAt": "2026-03-30",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "v_965dcfeeb525_1775368519",
@@ -293,7 +277,8 @@
       "digital twins",
       "Mantis Biotech"
     ],
-    "publishedAt": "2026-03-30"
+    "publishedAt": "2026-03-30",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "v_2013a416b421_1774766796",
@@ -338,7 +323,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-24"
+    "publishedAt": "2026-03-24",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "v_f66ededeff09_1774738944",
@@ -660,7 +646,7 @@
     ],
     "publishedAt": "2026-03-18",
     "imagePrompt": "A group of serious-looking military officials in a dimly lit, high-tech command center, staring intently at a large screen displaying lines of code and ethical principles. The screen's glow illuminates their faces, showing expressions of concern and intense debate. The atmosphere is tense, suggesting a critical national security decision. Photorealistic, Cinematic lighting, High resolution.",
-    "imageUrl": ""
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "v_33ce235b4610_1774348414",
@@ -677,7 +663,8 @@
       "chatbot arena"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": "A young tech professional in a modern, stylish coworking space, intently focused on a laptop screen. The screen displays two side-by-side chat interfaces, showcasing different AI-generated responses. The person is thoughtfully stroking their chin, deciding which response is better, embodying the role of a judge. The background is softly blurred, showing other people working. Photorealistic, Cinematic lighting, High resolution."
+    "imagePrompt": "A young tech professional in a modern, stylish coworking space, intently focused on a laptop screen. The screen displays two side-by-side chat interfaces, showcasing different AI-generated responses. The person is thoughtfully stroking their chin, deciding which response is better, embodying the role of a judge. The background is softly blurred, showing other people working. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop"
   },
   {
     "id": "v_19e57dedde2c_1774333033",
@@ -694,7 +681,8 @@
       "Microsoft"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "v_2768a9dac08f_1774329363",
@@ -711,7 +699,8 @@
       "personalization"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "v_a9284cd4c888_1774307101",
@@ -728,7 +717,8 @@
       "Exclusive"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "v_82e35ccaa1f9_1774248803",
@@ -745,7 +735,8 @@
       "Equity Video"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "v_4e25d5261dfc_1774244877",
@@ -762,7 +753,8 @@
       "Google"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "v_3579ca5e3015_1774220211",
@@ -779,7 +771,8 @@
       "Podcasting"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop"
   },
   {
     "id": "v_7caa29608d4f_1774159614",
@@ -792,7 +785,8 @@
       "AI"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "v_1bd39ec3f368_1774156357",
@@ -805,7 +799,8 @@
       "AI"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "v_38173a32c96e_1774133716",
@@ -818,7 +813,8 @@
       "AI"
     ],
     "publishedAt": "2026-03-18",
-    "imagePrompt": ""
+    "imagePrompt": "",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "v_49d2cde9f68e_1774131066",
@@ -830,7 +826,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_38173a32c96e",
@@ -842,7 +839,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1bd39ec3f368",
@@ -854,7 +852,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_7caa29608d4f",
@@ -866,7 +865,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_3579ca5e3015",
@@ -882,7 +882,8 @@
       "Startups",
       "Podcasting"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_4e25d5261dfc",
@@ -898,7 +899,8 @@
       "gmail",
       "Google"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_82e35ccaa1f9",
@@ -914,7 +916,8 @@
       "chatbot arena",
       "Equity Video"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a9284cd4c888",
@@ -930,7 +933,8 @@
       "Eragon",
       "Exclusive"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2768a9dac08f",
@@ -946,7 +950,8 @@
       "Venture",
       "personalization"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_19e57dedde2c",
@@ -962,7 +967,8 @@
       "collaboration",
       "Microsoft"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_33ce235b4610",
@@ -978,7 +984,8 @@
       "Enterprise AI",
       "chatbot arena"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_4ca4185fcd4e",
@@ -994,7 +1001,8 @@
       "Exclusive",
       "LLMs"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a968ecbfd31d",
@@ -1010,7 +1018,8 @@
       "garry tan",
       "sxsw 2026"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_ba0ebfd3e0b6",
@@ -1026,7 +1035,8 @@
       "Elon Musk",
       "Grok"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a842f44a1724",
@@ -1042,7 +1052,8 @@
       "department of defense",
       "artificial intelligence"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_6c2538795e18",
@@ -1054,7 +1065,8 @@
     "tags": [
       "The Download"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5b546065e656",
@@ -1068,7 +1080,8 @@
       "App",
       "MIT Technology Review Explains"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop"
   },
   {
     "id": "k_d45fb380f485",
@@ -1082,7 +1095,8 @@
       "App",
       "artificial intelligence"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_023910ef1196",
@@ -1098,7 +1112,8 @@
       "marvel studios",
       "MCU Phase Six"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1ac9936aae8a",
@@ -1114,7 +1129,8 @@
       "iphone",
       "musi youtube"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c6937260b543",
@@ -1130,7 +1146,8 @@
       "online gambing",
       "prediction markets"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_961d8e946038",
@@ -1146,7 +1163,8 @@
       "card payments",
       "fintech"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2886464a3f4c",
@@ -1162,7 +1180,8 @@
       "data silos",
       "insurance"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c4c5e6cbdcb4",
@@ -1174,7 +1193,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop"
   },
   {
     "id": "k_9fb2a4af0b39",
@@ -1186,7 +1206,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_f9d23a4fb9b7",
@@ -1198,7 +1219,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c3d9addcb4cb",
@@ -1214,7 +1236,8 @@
       "Artificial Intelligence",
       "Editors Pick"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_f66ededeff09",
@@ -1230,7 +1253,8 @@
       "AI Shorts",
       "Applications"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_4e0941bd3ec0",
@@ -1246,7 +1270,8 @@
       "Applications",
       "Artificial Intelligence"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2013a416b421",
@@ -1259,7 +1284,8 @@
       "Business",
       "Insider"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_74ea00b2f5d6",
@@ -1273,7 +1299,8 @@
       "Sustainability",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2bc26fae761e",
@@ -1286,7 +1313,8 @@
       "Startups and technology",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_83ef0af4f0a5",
@@ -1299,7 +1327,8 @@
       "Startups and technology",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_3220be0b90e2",
@@ -1312,7 +1341,8 @@
       "Meta",
       "Insider"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1f59ac400741",
@@ -1325,7 +1355,8 @@
       "Finance",
       "Insider"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5c596907d053",
@@ -1339,7 +1370,8 @@
       "Sustainability",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a3cebd0e1e0f",
@@ -1352,7 +1384,8 @@
       "Sustainability",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_d781fc5ae248",
@@ -1365,7 +1398,8 @@
       "Amazon",
       "Next Featured"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_99175e9d2e15",
@@ -1377,7 +1411,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop"
   },
   {
     "id": "k_7610d8e115d6",
@@ -1389,7 +1424,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5e39394d3ab7",
@@ -1401,7 +1437,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_cde4f7fb4d09",
@@ -1413,7 +1450,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_b6af9f672c3a",
@@ -1425,7 +1463,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_8a9229d956b0",
@@ -1437,7 +1476,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_e54af6baa3bb",
@@ -1449,7 +1489,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_81091940f86c",
@@ -1461,7 +1502,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_755e9398aaa7",
@@ -1473,7 +1515,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop"
   },
   {
     "id": "k_0d627ebe9783",
@@ -1485,7 +1528,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "k_965dcfeeb525",
@@ -1497,7 +1541,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_b52a79e96739",
@@ -1509,7 +1554,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "k_bdc41a180d15",
@@ -1521,7 +1567,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_31ee21339c01",
@@ -1533,7 +1580,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop"
   },
   {
     "id": "k_ce9f433e42f3",
@@ -1545,7 +1593,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1ddaf8681048",
@@ -1557,7 +1606,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a74ecc2df10e",
@@ -1569,7 +1619,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2de6b16c779c",
@@ -1581,7 +1632,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_e5ee7750e6ca",
@@ -1593,7 +1645,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_b4c418e0f2dd",
@@ -1605,7 +1658,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop"
   },
   {
     "id": "k_0bc5978307c3",
@@ -1617,7 +1671,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5345053f2e84",
@@ -1629,7 +1684,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_ee2d2192c6df",
@@ -1641,7 +1697,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "k_628f5eaaa6ba",
@@ -1653,7 +1710,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_91aa38f72bff",
@@ -1665,7 +1723,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1664a641bdea",
@@ -1677,7 +1736,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2e8e50fd6ea6",
@@ -1689,7 +1749,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_35afaa321d4b",
@@ -1701,7 +1762,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_b457ae794830",
@@ -1713,7 +1775,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop"
   },
   {
     "id": "k_ed7b3224add4",
@@ -1725,7 +1788,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_02469ba55b88",
@@ -1737,7 +1801,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "k_96cd2cbb7693",
@@ -1749,7 +1814,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop"
   },
   {
     "id": "k_01269cbad5b5",
@@ -1761,7 +1827,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "k_ff8e8c9e4c6f",
@@ -1773,7 +1840,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop"
   },
   {
     "id": "k_09057b3b22c1",
@@ -1785,7 +1853,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_0cc771ab3bc1",
@@ -1797,7 +1866,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_17e0ef2cab3b",
@@ -1809,7 +1879,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_6a939393a681",
@@ -1821,7 +1892,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_e142cc2a9b9b",
@@ -1833,7 +1905,8 @@
     "tags": [
       "AI"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"
   },
   {
     "id": "k_cc759cd73172",
@@ -1848,7 +1921,8 @@
       "AI and coding",
       "Apple"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c0cb1c43e47b",
@@ -1864,7 +1938,8 @@
       "OpenAI",
       "USA"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_7cc4280aecf0",
@@ -1880,7 +1955,8 @@
       "Groq",
       "Nvidia"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_32677bcd55bc",
@@ -1894,7 +1970,8 @@
       "Artificial Intelligence",
       "Midjourney"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_3967a953cd56",
@@ -1909,7 +1986,8 @@
       "GPT-5",
       "OpenAI"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5fb2824526b8",
@@ -1923,7 +2001,8 @@
       "Artificial Intelligence",
       "Microsoft"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_1caac0ca999e",
@@ -1937,7 +2016,8 @@
       "Digital enterprise in the real world",
       "Use cases"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_5eb8edfc0df2",
@@ -1952,7 +2032,8 @@
       "Financial services and fintech",
       "Audio"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_a8ab036fea97",
@@ -1967,7 +2048,8 @@
       "Infrastructure",
       "Audio"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_385f19c7441a",
@@ -1982,7 +2064,8 @@
       "Digital and content marketing",
       "Audio"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2eb499f8f1f5",
@@ -1998,7 +2081,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_99517eb921f5",
@@ -2014,7 +2098,8 @@
       "Arts & Entertainment",
       "site|engadget"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_d107b23c4785",
@@ -2030,7 +2115,8 @@
       "provider_name|Engadget",
       "region|US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_44a0c301e9cc",
@@ -2046,7 +2132,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_84e59958d8e1",
@@ -2062,7 +2149,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c64f3013d0ff",
@@ -2078,7 +2166,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_e31cbab7548a",
@@ -2094,7 +2183,8 @@
       "site|engadget",
       "provider_name|Engadget"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_9e8d75e270fe",
@@ -2110,7 +2200,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_267c44f9dc17",
@@ -2126,7 +2217,8 @@
       "Finance Trading",
       "site|engadget"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop"
   },
   {
     "id": "k_71be7430eb6a",
@@ -2142,7 +2234,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_fb909b6ac012",
@@ -2158,7 +2251,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_3fe0be12a917",
@@ -2174,7 +2268,8 @@
       "site|engadget",
       "provider_name|Engadget"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop"
   },
   {
     "id": "k_96da9ee39c94",
@@ -2190,7 +2285,8 @@
       "region|US",
       "language|en-US"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_c0363e827793",
@@ -2204,7 +2300,8 @@
       "タイパ革命",
       "情報過多"
     ],
-    "publishedAt": "2026-03-16"
+    "publishedAt": "2026-03-16",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_9711d0e9932d",
@@ -2218,7 +2315,8 @@
       "サイバーセキュリティ",
       "Web3"
     ],
-    "publishedAt": "2026-03-17"
+    "publishedAt": "2026-03-17",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_38ba73bfd012",
@@ -2232,7 +2330,8 @@
       "AI革命",
       "未来の働き方"
     ],
-    "publishedAt": "2026-03-16"
+    "publishedAt": "2026-03-16",
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop"
   },
   {
     "id": "k_dee7686ef172",
@@ -2246,7 +2345,8 @@
       "免疫療法",
       "最先端医療"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop"
   },
   {
     "id": "k_922eb829dde7",
@@ -2260,7 +2360,8 @@
       "Anthropic",
       "安全保障"
     ],
-    "publishedAt": "2026-03-18"
+    "publishedAt": "2026-03-18",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"
   },
   {
     "id": "k_13af43aba669",
@@ -2275,7 +2376,7 @@
       "未来社会"
     ],
     "publishedAt": "2026-03-18",
-    "imageUrl": "/images/articles/k_13af43aba669.png"
+    "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2b4064f2417f",
@@ -2290,7 +2391,7 @@
       "エンタープライズAI"
     ],
     "publishedAt": "2026-04-17",
-    "imageUrl": "/images/articles/k_2b4064f2417f.png"
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop"
   },
   {
     "id": "k_14baf6e74787",
@@ -2304,7 +2405,8 @@
       "情報収集",
       "業務効率化"
     ],
-    "publishedAt": "2026-03-16"
+    "publishedAt": "2026-03-16",
+    "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop"
   },
   {
     "id": "k_2ccfbdb90980",
@@ -2318,7 +2420,8 @@
       "開発効率化",
       "インフラ自動化"
     ],
-    "publishedAt": "2026-03-25"
+    "publishedAt": "2026-03-25",
+    "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop"
   },
   {
     "id": "k_54115d9ab6f8",
@@ -2332,6 +2435,7 @@
       "マッチング革命",
       "人間関係の最適化"
     ],
-    "publishedAt": "2026-04-13"
+    "publishedAt": "2026-04-13",
+    "imageUrl": "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop"
   }
 ]
