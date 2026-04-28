@@ -79,37 +79,7 @@ CATEGORY_IMAGES: dict[str, str] = {
     "Enterprise":    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop",
 }
 
-DEFAULT_IMAGE_POOL = [
-    "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop",
-]
-
-
 def pick_image(article_id: str, tags: list[str]) -> str:
-    """タグ優先でUnsplash画像を返す。マッチしなければIDのハッシュでプールから選ぶ。"""
-    for tag in tags:
-        if tag in CATEGORY_IMAGES:
-            return CATEGORY_IMAGES[tag]
+    """記事IDをシードにPicsum Photosの確定的な画像URLを返す。"""
     seed = article_id or "".join(tags)
-    h = 0
-    for c in seed:
-        h = (31 * h + ord(c)) & 0xFFFFFFFF
-    return DEFAULT_IMAGE_POOL[h % len(DEFAULT_IMAGE_POOL)]
+    return f"https://picsum.photos/seed/{seed}/800/420"
