@@ -36,6 +36,12 @@ jobs:
           GCP_LOCATION: us-central1
         run: python scripts/post_one_article.py
 
+      - name: 英語記事を日本語に翻訳
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+          GCP_LOCATION: us-central1
+        run: python scripts/translate_english_articles.py
+
       - name: GitHubにプッシュ（Vercelが自動デプロイ）
         run: |
           git config user.name "github-actions[bot]"
