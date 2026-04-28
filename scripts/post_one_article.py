@@ -18,6 +18,7 @@ from pathlib import Path
 
 from google import genai
 from google.genai import types
+from image_utils import pick_image
 
 # ---------------------------------------------------------------------------
 # パス設定
@@ -217,8 +218,10 @@ def main() -> int:
     published_at = datetime.now().strftime("%Y-%m-%d")
     tags         = tool.get("tags") or ["AI"]
 
-    # 画像生成（失敗しても記事は保存される）
+    # 画像生成（失敗時はUnsplashフォールバック）
     image_url = generate_and_upload_image(client, image_prompt, article_id)
+    if not image_url:
+        image_url = pick_image(article_id, tags)
 
     # extra_articles.json 更新
     existing = json.loads(EXTRA_ARTICLES_PATH.read_text(encoding="utf-8")) if EXTRA_ARTICLES_PATH.exists() else []

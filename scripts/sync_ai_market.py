@@ -28,6 +28,7 @@ from pathlib import Path
 
 from google import genai
 from google.genai import types
+from image_utils import pick_image
 
 # ── 定数 ─────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
@@ -320,7 +321,10 @@ def generate_alert_article(alert: dict, gemini_client: genai.Client) -> dict | N
                 "sourceUrl": "https://ai-news-site-wheat.vercel.app",
                 "tags": article_data.get("tags", ["AI", "ツール比較"]),
                 "publishedAt": now_jst.strftime("%Y-%m-%d"),
-                "imageUrl": "",
+                "imageUrl": pick_image(
+                    f"alert-{int(now_jst.timestamp())}",
+                    article_data.get("tags", ["AI", "ツール比較"])
+                ),
             }
     except Exception as e:
         print(f"  [Article Gen] Error: {e}")
