@@ -1,43 +1,43 @@
 {
-  "updatedAt": "2026-05-10T13:33:22.217414+09:00",
-  "aiJudgment": "開発系はClaudeの進化が著しい。クリエイティブ系は既存王者が強固。全体的に目新しい動きは少なく、既存ツールの熟成が進む月となった。",
+  "updatedAt": "2026-05-11T13:45:41.163251+09:00",
+  "aiJudgment": "新規参入はなく、市場は既存ツールの深化が進む静かな月。開発では自律エージェント、クリエイティブでは動画生成の潮流がより鮮明になった。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Claude Code",
+        "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claude 3.5 Sonnetの登場により、コーディング性能が飛躍的に向上。速度、精度、文脈理解力で他を圧倒し、開発現場での実用性が最も高いと判断。",
+      "reason": "単なるコード生成に留まらず、開発環境全体を自律的に操作する能力を持つ。開発プロセスの根本的な変革を期待させるポテンシャルが最も高いと評価した。",
       "tools": [
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "Claude 3.5に統合",
-          "newFeature": "Claude 3.5 Sonnet搭載",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Claude 3.5 Sonnet搭載。高いコーディング精度と速度を誇る。"
-        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
-          "newFeature": "新機能情報なし",
+          "price": "プランによる",
+          "newFeature": "情報なし",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "開発環境全体を操作する自律型AIエージェント。高度なタスクを自動化。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "プランによる",
+          "newFeature": "情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "自律的にコーディングタスクを完遂するAIソフトウェアエンジニア。"
+          "summary": "コーディングに特化したAIアシスタント。コード生成やデバッグを支援。"
         },
         {
           "id": "claude-api",
           "name": "Claude (API)",
           "price": "従量課金",
-          "newFeature": "新機能情報なし",
+          "newFeature": "情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "Anthropicの高性能LLMをアプリに組み込むためのAPI。"
+          "summary": "高性能な言語モデルをアプリに組み込むためのAPI。汎用性が高い。"
         }
       ]
     },
@@ -49,7 +49,7 @@
         "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月は事務効率化セグメントで突出したツールやアップデートは観測されず、選定を見送る。",
+      "reason": "今月、このカテゴリで特筆すべきツールは観測されませんでした。市場の動向を注視します。",
       "tools": []
     },
     {
@@ -57,28 +57,28 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "Midjourney v7",
+        "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像生成の品質、一貫性、プロンプト追従性が依然として最高水準。Soraの登場が待たれる中、現時点で最も実用的なクリエイティブツールとして評価。",
+      "reason": "Soraはテキストから高品質な動画を生成し、新たなクリエイティブの地平を切り開いた。市場への期待値と技術的インパクトが最も大きいと判断した。",
       "tools": [
-        {
-          "id": "midjourney-v7",
-          "name": "Midjourney v7",
-          "price": "月額$10〜",
-          "newFeature": "新機能情報なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "高精細で芸術的な画像を生成する、業界をリードする画像生成AI。"
-        },
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
-          "price": "未公開",
-          "newFeature": "新機能情報なし",
+          "price": "未定",
+          "newFeature": "情報なし",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "テキストから高品質でリアルな動画を生成する、革新的なAIモデル。"
+        },
+        {
+          "id": "midjourney-v7",
+          "name": "Midjourney v7",
+          "price": "サブスクリプション",
+          "newFeature": "情報なし",
           "rating": 5,
           "badge": null,
-          "summary": "テキストから高品質で写実的な動画を生成する革新的なAIモデル。"
+          "summary": "高品質な画像を生成するAI。芸術的表現力に定評がある最新バージョン。"
         }
       ]
     }
