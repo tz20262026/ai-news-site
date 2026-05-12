@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-11T13:45:41.163251+09:00",
-  "aiJudgment": "新規参入はなく、市場は既存ツールの深化が進む静かな月。開発では自律エージェント、クリエイティブでは動画生成の潮流がより鮮明になった。",
+  "updatedAt": "2026-05-12T13:24:49.635545+09:00",
+  "aiJudgment": "開発では自律エージェント、事務では高コスパAPI、クリエイティブでは動画生成が市場を牽引。各分野でAIの応用範囲がさらに拡大している。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,25 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "単なるコード生成に留まらず、開発環境全体を自律的に操作する能力を持つ。開発プロセスの根本的な変革を期待させるポテンシャルが最も高いと評価した。",
+      "reason": "単なるコード補完を超え、開発環境全体を自律的に操作する能力を持つ。開発ワークフローを根本的に変える可能性を秘めており、今月の最も革新的なツールと評価した。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "プランによる",
-          "newFeature": "情報なし",
+          "price": "要問い合わせ",
+          "newFeature": "自律的デバッグ機能の強化",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "開発環境全体を操作する自律型AIエージェント。高度なタスクを自動化。"
+          "summary": "開発環境内で自律的にタスクを遂行するAIソフトウェアエンジニア。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "プランによる",
-          "newFeature": "情報なし",
+          "price": "API利用料に準拠",
+          "newFeature": "Claude 3.5 Sonnetモデル対応",
           "rating": 4,
           "badge": null,
-          "summary": "コーディングに特化したAIアシスタント。コード生成やデバッグを支援。"
-        },
-        {
-          "id": "claude-api",
-          "name": "Claude (API)",
-          "price": "従量課金",
-          "newFeature": "情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "高性能な言語モデルをアプリに組み込むためのAPI。汎用性が高い。"
+          "summary": "Anthropicの強力なモデルを活用した高精度なコーディング支援ツール。"
         }
       ]
     },
@@ -46,11 +37,21 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "該当なし",
+        "name": "Claude (API)",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月、このカテゴリで特筆すべきツールは観測されませんでした。市場の動向を注視します。",
-      "tools": []
+      "reason": "最新モデルClaude 3.5 Sonnetにより、速度、コスト、知能のバランスが飛躍的に向上。多様な事務タスクを高品質かつ高速に処理できるため、今月の最強選択とした。",
+      "tools": [
+        {
+          "id": "claude-api",
+          "name": "Claude (API)",
+          "price": "従量課金",
+          "newFeature": "Claude 3.5 Sonnetモデル提供開始",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "文章生成、要約、分析など、多様な業務を効率化する汎用AI API。"
+        }
+      ]
     },
     {
       "id": "creative",
@@ -60,25 +61,25 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "Soraはテキストから高品質な動画を生成し、新たなクリエイティブの地平を切り開いた。市場への期待値と技術的インパクトが最も大きいと判断した。",
+      "reason": "Soraは、テキストから写実的な動画を生成するという、従来のクリエイティブの常識を覆す能力を示した。その技術的インパクトと将来性から、今月の最強選択と評価する。",
       "tools": [
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
           "price": "未定",
-          "newFeature": "情報なし",
+          "newFeature": "クリエイター向け限定アクセス開始",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキストから高品質でリアルな動画を生成する、革新的なAIモデル。"
+          "summary": "テキスト指示から高品質で長尺の動画を生成する革新的なAIモデル。"
         },
         {
           "id": "midjourney-v7",
           "name": "Midjourney v7",
           "price": "サブスクリプション",
-          "newFeature": "情報なし",
-          "rating": 5,
+          "newFeature": "プロンプト解釈精度と質感表現の向上",
+          "rating": 4,
           "badge": null,
-          "summary": "高品質な画像を生成するAI。芸術的表現力に定評がある最新バージョン。"
+          "summary": "業界最高峰の画像生成AI。写実性、芸術性ともに高い表現力を持つ。"
         }
       ]
     }
