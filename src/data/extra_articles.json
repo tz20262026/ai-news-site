@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_df67ac1c3c3f_1778809984",
+    "title": "DevRelの全業務、AIに丸投げ。戦略立案から実行まで、あなたの最強の相棒が爆誕。",
+    "summary": "DevRelの全業務、AIに丸投げ。戦略立案から実行まで、あなたの最強の相棒が爆誕。",
+    "body": "コードを書き、記事を執筆し、イベントを企画し、コミュニティと対話する。そんな超人的な役割を担うデベロッパーリレーションズ、通称「DevRel」担当者の悲鳴が聞こえてきそうだ。多岐にわたるタスクの奔流に飲まれ、本来集中すべき戦略的な思考の時間が奪われていないだろうか。そんな混沌とした日常に、革命の光を灯す存在が現れた。その名も「DevRel Copilot」。これは単なるアシスタントではない。あなたの仕事を根底から変える、AIを搭載した最強の戦略コマンドセンターだ。このツールの心臓部には、Googleが誇る最新AIモデル「Gemini 3.1 Pro」が搭載されており、その能力は他の凡百な生成AIとは一線を画す。特筆すべきは、単に文章を生成するだけでなく、「構造化され、実行可能な戦略」を瞬時にアウトプットする点にある。「来四半期の技術ブログのコンテンツカレンダー案を3パターン作成して」と指令すれば、単なるトピックリストではなく、ターゲット読者、想定される反響、SNSでの拡散戦略まで含んだ具体的なプランが数秒で提示されるのだ。イベント企画、デモ構築、技術ドキュメントの構成案作成まで、これまで数日を要していた戦略立案のプロセスが劇的に短縮される。これは、DevRelのワークフロー全体を俯瞰し、最適化する司令塔の役割を果たす。まさに、あなたの隣に座る超優秀な戦略コンサルタントと言えるだろう。このツールの真価は、スタートアップでたった一人、DevRelの重責を担うあなたにこそ発揮される。戦略の壁打ち相手がいない孤独な戦いに、強力な相棒が加わるのだ。もちろん、大企業の技術広報チームが導入すれば、各メンバーの創造性を最大限に引き出し、より高度な施策にリソースを集中させることが可能になる。DevRel担当者だけでなく、技術的なバックグラウンドを持つコンテンツマーケターやプロダクトマネージャーにとっても、その戦略生成能力は計り知れない武器となるだろう。現在、このツールは開発者による技術ブログでの発表段階にあり、正式な料金体系はまだ公開されていない。しかし、そのポテンシャルは計り知れない。まずはソースとなっている開発者ブログを熟読し、プロジェクトの動向を追いかけることを強く推奨する。GitHubリポジトリをウォッチリストに追加し、未来のDevRelが動き出す瞬間を見逃さないようにしよう。これまで雑務や単純作業に費やしていた時間から解放され、あなたは人間だからこそできる創造的な活動や、コミュニティとの深い関係構築に集中できる時代がやってきた。煩雑なタスクはすべてAIの相棒に任せればいい。さあ、未来のDevRelを誰よりも早く体感しよう。",
+    "source": "Devto Ai",
+    "sourceUrl": "https://dev.to/harishkotra/building-devrel-copilot-a-technical-deep-dive-into-ai-powered-developer-relations-4mg",
+    "tags": [
+      "ai",
+      "programming",
+      "javascript",
+      "dailybuild2026"
+    ],
+    "publishedAt": "2026-05-15",
+    "imagePrompt": "A focused developer relations professional in a modern, sleek office, analyzing a complex strategy dashboard on a large monitor. The dashboard displays graphs, text snippets, and timelines, representing AI-generated DevRel plans. The person is pointing at the screen, discussing with a colleague. The atmosphere is energetic and collaborative. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_df67ac1c3c3f_1778809984.jpg"
+  },
+  {
     "id": "v_c34ec57d38f0_1778799725",
     "title": "そのツール、本当にAI？玉石混交の時代だからこそ、情報を見抜く\"眼\"を養え！",
     "summary": "そのツール、本当にAI？玉石混交の時代だからこそ、情報を見抜く\"眼\"を養え！",
