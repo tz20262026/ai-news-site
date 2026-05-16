@@ -1,5 +1,20 @@
 [
   {
+    "id": "v_3973cf164055_1778972060",
+    "title": "Claude開発元の秘策、ついに公開！非エンジニアでもAIを最強の相棒にする「スキルプレイブック」とは？",
+    "summary": "Claude開発元の秘策、ついに公開！非エンジニアでもAIを最強の相棒にする「スキルプレイブック」とは？",
+    "body": "「生成AIに指示を出しても、毎回結果がバラバラで安定しない」「もっと複雑な仕事を任せたいのに、どう指示すればいいかわからない」。そんな悩みを抱えるビジネスパーソンは多いのではないか。もし、AI開発の最前線を走る企業が、社内でAIの能力を最大限に引き出すために使っている「秘伝の書」が手に入るとしたら？今、まさにその扉が開かれた。Claudeの開発元であるAnthropic社が、AIを使いこなすための内部プレイブックを公開したのだ。\n\n今回公開された「スキルプレイブック」は、特定のツールやソフトウェアではない。それは、AIのポテンシャルを根こそぎ引き出すための「思考法」そのものだ。核心は、AIへの指示、つまりプロンプトを単発の命令で終わらせるのではなく、再利用可能な「スキル」として体系化し、管理するという考え方にある。例えば、「特定の形式でデータを抽出するスキル」や「専門用語を平易な言葉に翻訳するスキル」といったように、タスクを細分化し、それぞれに最適化された指示のテンプレートを構築するのだ。これにより、AIの応答は劇的に安定し、一貫性が生まれる。さらに、これらのスキルを組み合わせることで、これまで一回の指示では不可能だった、多段階にわたる複雑な業務プロセスさえ自動化の視野に入ってくる。これは単なるプロンプトエンジニアリングの延長線上にあるテクニックではない。AIを、まるで優秀な部下のように教育し、あなたの業務に特化した能力を持つパートナーへと育て上げる、全く新しい協業スタイルの幕開けなのだ。\n\nこの手法の真価は、エンジニア以外の専門職が活用することでさらに輝きを増す。実際に、ある会計士はこのプレイブックを参考に、日々の簿記業務の自動化にAIを応用し、業務効率を劇的に改善したという。例えば、経理担当者が、大量の請求書データから必要な情報を抽出し、会計システム用のフォーマットに変換する「スキル」をAIに学習させる。あるいは、マーケターが広告のパフォーマンスデータを分析し、示唆に富んだレポートを自動生成させることも可能だ。専門知識が求められる定型業務こそ、この「スキル」化の恩恵を最も受けられる領域なのだ。\n\n驚くべきことに、この革新的な思考法を学ぶのに、費用は一切かからない。これはAnthropicがブログ記事などで公開している「知恵」であり、誰でも無料でアクセスできる。特定のツールをインストールする必要も、有料プランに登録する必要もないのだ。必要なのは、あなたの探究心と、普段使っているClaudeのような生成AIだけ。まずは公式の情報を読み解き、自身の業務で小さな「スキル」作りから試してみよう。\n\nこのスキルプレイブックは、AIを単なるツールから、思考を拡張する「最強の相棒」へと進化させる鍵だ。AIを「使う」から「育てる」時代へ。さあ、あなたも秘伝の書を手に、AIの真の力を解き放とう。",
+    "source": "Devto Ai",
+    "sourceUrl": "https://dev.to/billkhiz/i-applied-anthropics-internal-skills-playbook-to-my-projects-heres-what-changed-3m4h",
+    "tags": [
+      "ai",
+      "cli"
+    ],
+    "publishedAt": "2026-05-16",
+    "imagePrompt": "A focused accountant in their late 30s, sitting at a modern office desk. On the large monitor, a complex spreadsheet and a code editor with Python script are visible side-by-side. The person is typing a detailed prompt into a large language model's chat interface. The scene conveys a sense of deep concentration and harnessing powerful technology for a specialized, non-tech profession. Photorealistic, Cinematic lighting, High resolution",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_3973cf164055_1778972060.jpg"
+  },
+  {
     "id": "v_6504fc8bc9f8_1778910394",
     "title": "これは単なる決済じゃない、未来の経済インフラだ！AIエージェント決済の覇権を巡る「MPP vs x402」論争に終止符を打つ。",
     "summary": "これは単なる決済じゃない、未来の経済インフラだ！AIエージェント決済の覇権を巡る「MPP vs x402」論争に終止符を打つ。",
