@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_925cb5bdfcea_1778895969",
+    "title": "検索結果に「鮮度」を！AIが情報の時間的価値を学習する「ヒートスコアリング」という新発想",
+    "summary": "検索結果に「鮮度」を！AIが情報の時間的価値を学習する「ヒートスコアリング」という新発想",
+    "body": "「プロジェクト会議」と検索したら、今朝のメモと半年前の議事録が同じように表示される。そんな経験はないだろうか。意味的にはどちらも正しいが、我々が今すぐ必要としているのは、間違いなく最新の情報だ。この情報の「時間的価値」を無視した検索結果の山は、私たちの生産性を静かに蝕んでいる。この根深い課題に、今、一つの鮮烈な答えが提示された。それが「ヒートスコアリング」という、データの時間的価値をAIに学習させる全く新しいアーキテクチャ思想だ。\n\nヒートスコアリングの核心は、情報の「意味的な関連性」に加えて、「時間的な鮮度」という新たな評価軸を導入する点にある。従来のセマンティック検索は、文書の内容が検索クエリにどれだけ近いか、という一点のみで関連性を判断していた。しかし、この新アプローチでは、作成されたばかりの情報や、最近チーム内で頻繁に閲覧されている情報に高い「熱量（ヒート）」を与える。そして、その熱は時間の経過とともに自然に冷めていく、つまりスコアが減衰するように設計されるのだ。これにより、検索結果は常にユーザーの「今」にとって最も価値のある情報が自動的に上位表示されることになる。これは単なる新機能ではない。PostgreSQLのような既存のデータベース上で、ベクトル検索と時間減衰のロジックを組み合わせることで実装可能な、開かれたアーキテクチャなのだ。情報の価値は不変ではないという真理に、ついに技術が追いついた瞬間と言えるだろう。\n\nこの革新的な概念は、あらゆる情報管理の現場を根底から変える力を持つ。例えば、日々更新される社内ナレッジベースでは、最新の仕様書や障害報告が常にトップに表示され、開発者が古い情報に振り回される悲劇は過去のものとなるだろう。プロジェクト管理ツールに導入すれば、現在進行中のタスクに関連する直近の議事録や決定事項がすぐに見つかり、チームの意思決定速度は飛躍的に向上する。さらに、顧客サポートの現場では、最近問い合わせが急増している問題の解決策やFAQが優先的に提示されることで、オペレーターはより迅速かつ的確な対応が可能になる。これは、情報と共に働くすべての現代人にとっての福音なのだ。\n\n驚くべきことに、この未来の検索体験を実装するためのコストは、あなたの知的好奇心だけかもしれない。ヒートスコアリングは特定の企業が提供する高価なサービスではなく、開発者向けブログでその設計思想と実装方法が惜しみなく公開されているオープンな概念だ。PostgreSQLとベクトル検索に関する基本的な知識があれば、誰でもこの画期的なアーキテクチャを自身のシステムに組み込むことを検討できる。必要なのは、既存の検索システムを疑い、より良い体験を追求する情熱だけ。リンク先の記事が、そのための完璧な設計図を提供してくれるはずだ。\n\n情報の価値が時間と共に変化するという、当たり前だが見過ごされてきた視点。ヒートスコアリングは、その真理に光を当てた革命的なアプローチだ。あなたのデータに「賢く忘れる」ことを教え込み、情報の鮮度を取り戻さないか。未来の検索体験は、もうすぐそこまで来ている。",
+    "source": "Devto Ai",
+    "sourceUrl": "https://dev.to/micelclaw/heat-scoring-teaching-your-data-to-forget-gracefully-1093",
+    "tags": [
+      "postgres",
+      "architecture",
+      "ai",
+      "search"
+    ],
+    "publishedAt": "2026-05-16",
+    "imagePrompt": "A team of diverse software developers brainstorming in a modern, sunlit office. They are gathered around a large glass whiteboard, intensely discussing a system architecture diagram. The diagram on the whiteboard visually represents a timeline with data points that fade in color over time, symbolizing the concept of \"heat scoring\" or data decay. One developer is pointing at the diagram, explaining the concept to the others. The atmosphere is collaborative and energetic. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_925cb5bdfcea_1778895969.jpg"
+  },
+  {
     "id": "v_66928eb6e747_1778886051",
     "title": "あなたと山の違いは何か？――10年の問いが導く、AI開発の次なるフロンティア",
     "summary": "あなたと山の違いは何か？――10年の問いが導く、AI開発の次なるフロンティア",
