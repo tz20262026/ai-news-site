@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_6504fc8bc9f8_1778910394",
+    "title": "これは単なる決済じゃない、未来の経済インフラだ！AIエージェント決済の覇権を巡る「MPP vs x402」論争に終止符を打つ。",
+    "summary": "これは単なる決済じゃない、未来の経済インフラだ！AIエージェント決済の覇権を巡る「MPP vs x402」論争に終止符を打つ。",
+    "body": "自律的に思考し行動するAIエージェントが、我々の生活やビジネスの隅々にまで浸透する未来。その到来が目前に迫る中、一つの根源的な問いが浮かび上がっている。「AIエージェントは、一体どうやって支払いを行うのか？」この巨大な経済圏の誕生前夜、決済の巨人Stripeが発表した「MPP」と、巨大テック企業連合が推進する「x402」を巡る議論が、世界中の開発者の間で加熱している。だが、これは本当に覇権争いなのだろうか？今こそ、その核心に迫り、次なる時代の潮流を掴む時だ。\n\nまず、Stripeが打ち出した野心的な一手「MPP（マイクロペイメントプロトコル）」は、主に「AIエージェントからEコマース」への支払いフローを想定している。ユーザーがAIエージェントに買い物を指示した際、事前に承認・チャージしたデジタルウォレットから、エージェントが安全にECサイトで決済を行う仕組みを提供する。これはアプリケーションレイヤーに近く、ユーザー体験に直結する決済の未来像だ。一方、「x402」は、Stripe自身も創設メンバーとして名を連ねる財団が推進する、より低レイヤーのプロトコルである。こちらは「AIエージェントからAPI」への支払いを主眼に置いている。エージェントがタスクを遂行するために、天気情報、翻訳、データ分析など多数の外部APIを呼び出す際、その都度発生するマイクロなコストを支払うための基盤となるのだ。つまり、MPPがユーザーのための「買い物」なら、x402はエージェントが活動するための「インフラ利用料」であり、両者は競合するどころか、全く異なる役割を担う補完関係にある。\n\nこの二つのプロトコルが普及すれば、開発者や事業者の世界は一変する。MPPを使えば、「最適な商品を自動で比較・購入するAIショッピングアシスタント」のようなサービスが当たり前になり、Eコマース事業者は新たな収益源を得られるだろう。一方、x402はAPIを提供する開発者にとっての福音だ。これまでサブスクリプションでしか収益化が難しかったAPIを、１コール単位で課金できるようになる。これにより、ニッチだが強力な機能を持つAPIサービスのマネタイズが加速し、より活発なAPIエコノミーが生まれるだろう。\n\n現時点でMPPもx402も早期アクセス段階にあり、正式な料金は未定だ。これらはオープンな標準を目指しており、各プラットフォームに低コストで組み込まれると期待される。開発者はStripeの公式ドキュメントやx402財団のサイトを注視し、ベータプログラムなどの参加機会を逃さないようにすべきだろう。\n\nMPPとx402は競合ではなく、AIエージェント経済圏を支える両輪だ。この新しい決済スタックを理解し、いち早く自社サービスに組み込む準備を始めた者こそが、次世代の勝者となる。さあ、未来の経済インフラを今すぐ学び始めよう。",
+    "source": "Devto Ai",
+    "sourceUrl": "https://dev.to/nathanielc85523/x402-and-mpp-arent-competitors-theyre-at-different-layers-of-the-agent-payments-stack-49hl",
+    "tags": [
+      "webdev",
+      "ai",
+      "agents",
+      "payments"
+    ],
+    "publishedAt": "2026-05-16",
+    "imagePrompt": "A close-up shot of a developer's hands typing on a glowing keyboard of a laptop in a modern, dimly lit cafe. The screen displays complex lines of code related to a payment API, with subtle visual nodes and connections representing transaction flows. In the background, slightly out of focus, is a smartphone displaying a futuristic shopping interface where multiple items are being compared automatically. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_6504fc8bc9f8_1778910394.jpg"
+  },
+  {
     "id": "v_925cb5bdfcea_1778895969",
     "title": "検索結果に「鮮度」を！AIが情報の時間的価値を学習する「ヒートスコアリング」という新発想",
     "summary": "検索結果に「鮮度」を！AIが情報の時間的価値を学習する「ヒートスコアリング」という新発想",
