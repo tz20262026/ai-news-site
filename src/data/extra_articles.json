@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_7bcdc2bad0b0_1779155947",
+    "title": "もうダッシュボードは不要？AIが自律連携する「対話型プラットフォーム」の衝撃",
+    "summary": "もうダッシュボードは不要？AIが自律連携する「対話型プラットフォーム」の衝撃",
+    "body": "あなたは毎日、いくつの管理画面やダッシュボードを渡り歩いていますか？売上、在庫、顧客対応…それぞれが断片化され、全体像を掴むために多大な労力を費やす。そんな情報サイロ化の悪夢に、今こそ終止符を打つ時が来ました。マイクロソフトがAzure AI Foundry上で提唱する「マルチエージェントAI」は、単なる業務効率化ツールではありません。AI同士がチームを組んで自律的に協調し、複雑なビジネス課題を対話形式で解決する、全く新しい時代の幕開けを告げるものです。\n\nこの革新的なアプローチの心臓部にあるのが「MCPプロトコル」です。これは、複数のAIエージェントが円滑に通信し、連携するための規約であり、いわばAIたちの共通言語。従来の単機能なAIが個人事業主だとすれば、MCPで繋がったAI群は、それぞれが専門性を持つプロフェッショナル集団です。例えば、売上分析エージェント、在庫管理エージェント、市場トレンド予測エージェントが、互いに情報をリアルタイムで交換し、一つの大きな目標に向かって協働します。開発者はAzureの堅牢なインフラとAIサービスを土台に、これらの専門家エージェントを迅速に構築し、連携させることが可能になります。これは単なるチャットボットの進化形ではありません。バックエンドにある複数のデータベースやシステムと直接対話し、自律的に情報を取得・分析・実行する「エージェント型アーキテクチャ」こそが、この技術の真価なのです。\n\nその活用シーンは、あなたのビジネスそのものを変革する力を持っています。想像してみてください。あなたが「来月の新製品キャンペーンの最適な在庫数を予測して」とチャットで指示するだけで、AIチームが売上データ、市場トレンド、SNSの反応を瞬時に分析し、最適な発注数を提案してくれる世界を。これはEコマースだけでなく、金融業界での複合的なリスク分析、製造業でのサプライチェーン最適化など、あらゆる業界で応用可能です。部門ごとにサイロ化した情報を横断的に活用し、人間が数日かけていた分析や意思決定を、わずか数分で完了させるのです。\n\nこの強力なマルチエージェントシステムは、Azure AI Foundryのサービス群の一部として提供されます。料金はAzureの標準的な従量課金制に基づき、使用したリソースに応じて変動するため、スモールスタートも可能です。まずはAzureアカウントを作成し、Azure AI Studioから関連サービスを探索することから始めましょう。詳細なチュートリアルやサンプルコードも公開されており、意欲的な開発者ならすぐにでもその可能性を試すことができます。\n\nもはやAIは、指示を待つだけの単なる道具ではありません。自律的に思考し、連携し、ビジネスを未知の領域へと加速させる強力なパートナーです。情報過多の時代を終わらせ、真のデータ駆動型経営を実現するために、今すぐAzureでマルチエージェントの世界へ飛び込みましょう。",
+    "source": "Medium Ai",
+    "sourceUrl": "https://medium.com/@ajayshakya1295/building-multi-agent-ai-with-mcp-protocol-on-azure-ai-foundry-f6b8c7f4f9dd?source=rss------artificial_intelligence-5",
+    "tags": [
+      "artificial-intelligence",
+      "software-architecture",
+      "ai-agent",
+      "azure"
+    ],
+    "publishedAt": "2026-05-19",
+    "imagePrompt": "A diverse team of business professionals in a modern, glass-walled meeting room, intently discussing a complex data flowchart displayed on a large screen. The flowchart visualizes multiple interconnected nodes, representing AI agents collaborating. The atmosphere is energetic and innovative. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_7bcdc2bad0b0_1779155947.jpg"
+  },
+  {
     "id": "v_f082672a0ad7_1779145776",
     "title": "1462行の嘘を捨てろ！プロダクトの魂を解き放つ、次世代AIエージェント「Agent Paaru」降臨",
     "summary": "1462行の嘘を捨てろ！プロダクトの魂を解き放つ、次世代AIエージェント「Agent Paaru」降臨",
