@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_d60fce5c2de9_1779415202",
+    "title": "その予測、ゼロのせいで外れてない？データに潜む「ゼロの壁」を突破する新常識、2段階ハードルモデルがビジネスを変える！",
+    "summary": "その予測、ゼロのせいで外れてない？データに潜む「ゼロの壁」を突破する新常識、2段階ハードルモデルがビジネスを変える！",
+    "body": "あなたの予測モデルは、なぜか現実とかけ離れた数値を叩き出していないだろうか。特に、顧客の購買金額やサービスの利用時間など、大半が「ゼロ」となるデータを扱う際に、その精度は著しく低下する。これは、たった一つのモデルに「行動するか否か」と「行動した場合の量はどれくらいか」という、性質の異なる二つの問いを無理やり答えさせているからだ。この根深い課題に終止符を打つ、まさにブレークスルーと呼ぶべき分析手法が「2段階ハードルモデル」だ。データサイエンスの世界で今、最も注目されるこのアプローチは、予測の精度を劇的に向上させる鍵を握っている。\n\nこのモデルの核心は、その名の通り「2段階」のアプローチにある。まず第1段階として、対象が行動を起こす「か」、起こさない「か」という最初の「ハードル」を越えるかどうかを予測する。これは「購入／非購入」「利用／非利用」といった二者択一の分類問題だ。このハードルを越えると判断されたデータだけを抽出し、次のステージに進める。そして第2段階では、そのハードルを越えた集団に対してのみ、「では、具体的にいくら購入するのか」「どのくらいの時間利用するのか」という量を予測する回帰モデルを適用するのだ。つまり、「ゼロになるかならないか」を判断するモデルと、「ゼロでない場合の値はいくつか」を予測するモデルを明確に分離するのである。これにより、ゼロという特殊な値に全体の予測が引きずられることなく、それぞれの問いに特化した高精度な答えを導き出すことが可能になる。一つのモデルに二つの仕事をさせる無理をなくし、適材適所で最大のパフォーマンスを引き出す、まさにデータ分析における分業の革命だ。\n\nこの強力な手法は、あらゆるビジネスシーンでその真価を発揮する。例えばEコマース業界では、大多数を占める「何も買わない顧客」と「購入する顧客」を明確に区別し、後者の購買額をより正確に予測することで、顧客生涯価値（LTV）の算出精度が飛躍的に向上する。保険業界であれば、保険金を請求しない大多数の契約者と、請求する少数の契約者を分け、後者の請求額を精密に予測することで、より健全なリスク管理が実現できるだろう。マーケティング担当者にとっても、広告キャンペーンがコンバージョンに繋がる確率と、繋がった場合の売上貢献額を別々に分析することで、ROIの最大化に向けた次の一手が見えてくるはずだ。\n\n驚くべきことに、この革新的な分析手法を始めるために、高価な専用ソフトウェアは一切不要だ。今回紹介する海外メディア「Towards Data Science」の記事では、その理論的背景からPythonを使った具体的な実装コードまでが丁寧に解説されており、無料でアクセスできる。データ分析の標準言語であるPythonと、統計モデリングライブラリさえあれば、あなたのPCが今すぐ最先端の予測分析ステーションに変わるのだ。必要なのは、現状の予測精度に満足しない探究心と、データを新たな視点で切り拓く勇気だけである。\n\nもはや、不確実な予測に頭を悩ませる時代は終わった。「ゼロの壁」を乗り越え、データが語る真実を捉えるための武器は、すでにあなたの手の中にある。さあ、今すぐコードを書き始め、ビジネスの未来をその手で描き出そう。",
+    "source": "Towards Ds",
+    "sourceUrl": "https://towardsdatascience.com/two-stage-hurdle-models-predicting-zero-inflated-outcomes/",
+    "tags": [
+      "Machine Learning",
+      "Data Science",
+      "Editors Pick",
+      "Prediction Model",
+      "Python"
+    ],
+    "publishedAt": "2026-05-22",
+    "imagePrompt": "A data scientist in a modern, minimalist office, intensely focused on a laptop screen. The screen displays complex data visualizations with two distinct graphs: one a binary classification chart representing a \"hurdle,\" and the other a regression curve for positive outcomes. Sunlight streams through a large window, creating a dramatic interplay of light and shadow across the desk. The atmosphere is one of deep concentration and intellectual breakthrough. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_d60fce5c2de9_1779415202.jpg"
+  },
+  {
     "id": "v_34552f047b1f_1779404880",
     "title": "思考停止したあなたへ。AIの「絶対的な従順さ」に潜む、真の恐怖を暴く衝撃の論考。",
     "summary": "思考停止したあなたへ。AIの「絶対的な従順さ」に潜む、真の恐怖を暴く衝撃の論考。",
