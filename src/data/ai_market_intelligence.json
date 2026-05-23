@@ -1,43 +1,43 @@
 {
-  "updatedAt": "2026-05-22T13:45:43.173759+09:00",
-  "aiJudgment": "開発ではエージェント化、クリエイティブでは動画生成が市場を牽引。特にSoraの登場は、今後のコンテンツ制作のあり方を変える転換点となるだろう。",
+  "updatedAt": "2026-05-23T13:26:49.364197+09:00",
+  "aiJudgment": "開発とクリエイティブ分野で既存ツールの進化が続く一方、新規参入は停滞。市場は大手プレイヤーによる寡占化と深化が進む月となった。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "単純なコード生成を超え、開発プロセス全体を自律的に支援するエージェント機能は、今後の開発スタイルを大きく変革する可能性を秘めているため。",
+      "reason": "最新モデルを基盤とした高いコーディング精度と文脈理解能力が、他のツールを凌駕。複雑なタスクにも対応可能で、開発者の生産性を飛躍的に向上させるため。",
       "tools": [
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "プランに依存",
-          "newFeature": "情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "Anthropic社が開発した、コーディングに特化したAIモデル。"
+          "price": "要問い合わせ",
+          "newFeature": "最新モデルによる精度向上",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "Anthropicの最新モデルを活用した高精度コーディング支援AI。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "Replitプランに依存",
-          "newFeature": "情報なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "開発環境内で自律的にタスクをこなすAIソフトウェアエンジニア。"
+          "newFeature": "IDE統合の強化",
+          "rating": 4,
+          "badge": null,
+          "summary": "Replit開発環境に完全統合されたAIプログラミングアシスタント。"
         },
         {
           "id": "claude-api",
           "name": "Claude (API)",
           "price": "従量課金",
-          "newFeature": "情報なし",
+          "newFeature": "安定版APIの提供",
           "rating": 4,
           "badge": null,
-          "summary": "高性能な対話AIをアプリに組み込める開発者向けAPI。"
+          "summary": "高度な対話と言語処理能力をアプリケーションに組み込むためのAPI。"
         }
       ]
     },
@@ -49,7 +49,7 @@
         "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月は事務効率化セグメントにおいて、市場をリードするような革新的なアップデートや新規ツールの登場は観測されなかったため。",
+      "reason": "今月、このセグメントで特筆すべきツールやアップデートは観測されなかったため、選定を見送る。",
       "tools": []
     },
     {
@@ -60,25 +60,25 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキストから高品質な動画を生成する能力は、映像制作の常識を覆すほどのインパクトを持つ。市場の期待感が非常に高く、今月の主役と言える。",
+      "reason": "テキストから高品質な動画を生成する技術は、クリエイティブの常識を覆す革命的なもの。まだ限定公開だが、市場への期待値とインパクトが他を圧倒しているため。",
       "tools": [
-        {
-          "id": "midjourney-v7",
-          "name": "Midjourney v7",
-          "price": "サブスクリプション",
-          "newFeature": "情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "写実的で芸術的な高品質画像を生成するAI。V7でさらに進化。"
-        },
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
-          "price": "未定",
-          "newFeature": "情報なし",
+          "price": "未公開",
+          "newFeature": "限定プレビュー開始",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキスト指示から最長1分の高品質な動画を生成する革新的AI。"
+          "summary": "テキスト指示から高品質で長尺の動画を生成する革新的なAI。"
+        },
+        {
+          "id": "midjourney-v7",
+          "name": "Midjourney v7",
+          "price": "月額$10〜",
+          "newFeature": "v7モデルの一般公開",
+          "rating": 5,
+          "badge": null,
+          "summary": "写実性と芸術性を両立した最高峰の画像生成AIの最新バージョン。"
         }
       ]
     }
