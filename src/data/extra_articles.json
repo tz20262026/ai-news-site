@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_f237273f45e3_1779692632",
+    "title": "AIの「嘘」を見破れ！全ての行動を暗号で証明する、次世代の信頼インフラが爆誕。",
+    "summary": "AIの「嘘」を見破れ！全ての行動を暗号で証明する、次世代の信頼インフラが爆誕。",
+    "body": "自律的に思考し、物理的なインフラさえも管理するAIエージェント。その未来は、もはや空想の産物ではありません。しかし、そのAIの判断は本当に信頼できるのでしょうか？万が一、AIが誤った情報を基にシステムを操作したり、悪意ある攻撃者によって判断を歪められたりしたら、その損害は計り知れません。この、AIが社会インフラに深く関わる時代特有の根源的な不安に、真っ向から終止符を打つ革新的な技術「VIRPプロトコル」が登場しました。これは、AIの「誠実さ」を技術的に担保する、まさに次世代の信頼の礎となる存在です。\n\nVIRPプロトコルの核心は、AIエージェントのあらゆる観測と行動に、暗号技術による「揺るぎない証明」を与える点にあります。具体的には、AIがサーバーやネットワーク機器といった実世界のデバイスから情報を収集する、その瞬間に、強力な暗号アルゴリズム「Ed25519」を用いてデジタル署名を付与します。これはまるで、AIの行動一つひとつに、その場で公証人がタイムスタンプ付きの証印を押していくようなものです。この署名された記録は、後から誰かが改ざんしようとすれば即座に検知できるため、「いつ、どのデバイスが、どの命令によって、何を報告したか」という一連の事実が、完璧な監査証跡として残ります。従来のセキュリティツールが外部からの侵入を防ぐことに主眼を置いていたのに対し、VIRPはAI自身の行動の正当性を内部から証明するという、全く新しいアプローチでAIの信頼性問題を解決します。AIはもはやブラックボックスではなく、全ての行動が検証可能な、透明性の高いパートナーとなるのです。\n\nこの技術が解き放つ可能性は、極めて広範囲にわたります。例えば、大規模データセンターの運用管理者は、AIにサーバーの監視や障害発生時の自動復旧プロセスを安心して任せられるようになります。全ての操作記録が暗号技術で保証されるため、万が一のインシデント発生時も、原因究明を迅速かつ正確に行えるでしょう。また、一分一秒を争う金融取引システムの運用や、膨大なIoTデバイスが連携するスマートファクトリーの管理においても、AIエージェントの動作の信頼性を担保し、コンプライアンス要件を満たすための強力な武器となります。人の命に関わる電力や通信といった重要インフラの領域では、もはや不可欠な技術となるかもしれません。\n\nVIRPは現在、特定の企業が提供する商用サービスではなく、オープンなプロトコルとして開発が進められています。そのため、決まった料金プランは存在しません。この革命的なコンセプトに共感し、未来のAIインフラを共に構築したいと考える情熱的な開発者や研究者は、公開されている技術文書やコミュニティを通じて、誰でもその核心に触れることが可能です。まさに今、新しい信頼の形が、世界中の才能によって形作られているのです。\n\nもはや私たちは、AIの能力を疑う段階から、AIの誠実さをいかにして証明するかという新たなステージへと移行しています。VIRPプロトコルは、その最も有望な答えの一つです。AIに社会を任せる未来を創る、この革命の最前線を、あなた自身の目で確かめてください。",
+    "source": "Hackernoon Ai",
+    "sourceUrl": "https://hackernoon.com/the-protocol-built-to-keep-ai-honest-on-live-infrastructure?source=rss",
+    "tags": [
+      "ai",
+      "virp-protocol",
+      "verified-infrastructure",
+      "ai-infrastructure-trust",
+      "ed25519-signing"
+    ],
+    "publishedAt": "2026-05-25",
+    "imagePrompt": "A data center engineer standing in a dimly lit server room, looking intently at a tablet. The screen of the tablet illuminates the engineer's face, displaying a real-time feed of an AI agent's operational log with glowing cryptographic signature graphics. In the background, rows of server racks with blinking lights stretch into the distance. The atmosphere is one of high-tech security and focused oversight. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_f237273f45e3_1779692632.jpg"
+  },
+  {
     "id": "v_4ae8eea456fc_1779674639",
     "title": "AIの未来は二極化する。万能の創造神か、絶対の賢者か。2026年、あなたが選ぶべき究極の相棒はどっちだ？",
     "summary": "AIの未来は二極化する。万能の創造神か、絶対の賢者か。2026年、あなたが選ぶべき究極の相棒はどっちだ？",
