@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_922300046723_1779760516",
+    "title": "WordPressの常識を破壊せよ。もうコードもダッシュボードも不要、会話するだけでサイトが進化する「Vibe Coding」革命が始まる。",
+    "summary": "WordPressの常識を破壊せよ。もうコードもダッシュボードも不要、会話するだけでサイトが進化する「Vibe Coding」革命が始まる。",
+    "body": "ウェブサイト運営の現場は、常に時間との戦いだ。特に世界中で愛用されるWordPressは、その自由度の高さゆえに、時に私たちを複雑なダッシュボードの迷宮へと誘い込む。ほんの少しボタンの色を変えたいだけなのに、CSSの記述を探し、プラグインの設定画面を彷徨う。そんな非効率な作業に、一体どれだけの情熱が削がれてきただろうか。もし、そのすべてが、まるで優秀なアシスタントに話しかけるだけで完了するとしたら？今、そんな夢のような未来を実現する「Vibe Coding」という名の革命が、静かに、しかし確実にWordPressの世界に訪れようとしている。\n\nこの革命の中核を担うのが、自然言語でウェブサイトを編集できるAIツール「Vibe.co」だ。その真髄は、単なるページビルダーやテンプレート生成AIとは一線を画す、既存サイトとの「対話」にある。あなたは専用のチャット画面に、ごく自然な言葉で指示を出すだけ。「ヘッダーのロゴをもう少し大きくして」「この記事の最後に、関連商品へのリンクを３つ追加してほしい」「全ページのフッターに、新しいプライバシーポリシーへのリンクを設置して」。するとAIがあなたの言葉の意図、つまり「Vibe（雰囲気や感覚）」を正確に読み取り、裏側で必要なコードの変更やデータベースの更新を瞬時に実行するのだ。これは、従来のAIサイトビルダーがゼロからページを構築するのとは全く異なるアプローチだ。既存のWordPressサイトに後から導入し、日々の細かな更新や改善を、まるで専属の開発者と対話するように進められる。これにより、技術的な障壁は完全に取り払われ、誰もが思い描いたアイデアを、遅延なくサイトに反映させることが可能になる。\n\nこの技術の恩恵を受けるシーンは、想像以上に幅広い。例えば、コンテンツ制作に集中したい個人ブロガーは、記事の体裁を整えるための面倒な作業から解放されるだろう。専門知識のない中小企業のウェブ担当者であっても、急なキャンペーンページの告知や、サービス内容の更新を、外部の業者に頼ることなく、自分の手でスピーディに完結できる。さらに、ウェブ制作会社にとっては、クライアントから寄せられる「ここの文字を少しだけ…」といった細かな修正依頼をAIに任せることで、エンジニアやデザイナーはより創造的で本質的な業務にリソースを集中させることが可能になるのだ。\n\nこの未来的な体験への扉は、もうすぐ開かれようとしている。現在「Vibe.co」は正式リリースに向けた準備段階にあり、公式サイトからメールアドレスを登録することで、招待待ちリストに参加できる。具体的な料金プランはまだ公開されていないが、この革新的な技術をいち早く体験できるチャンスを逃す手はないだろう。登録は数分で完了するため、興味を持ったなら、今すぐ行動を起こすべきだ。ウェブサイト運営の新しい時代は、もうすぐそこまで来ている。\n\nもはや、ウェブサイトの管理は「作業」ではなく「対話」になる。Vibe Codingは、私たちとウェブサイトの関係性を根底から変え、誰もが創造性を最大限に発揮できる世界を約束してくれる。この革命の最前線に立つ準備はできただろうか？今すぐ未来への招待状をその手に掴み取ろう。",
+    "source": "Hackernoon Ai",
+    "sourceUrl": "https://hackernoon.com/the-vibe-coding-revolution-is-coming-for-wordpress-and-its-about-time?source=rss",
+    "tags": [
+      "ai",
+      "wordpress",
+      "web-development",
+      "wordpress-site-management",
+      "vibe-coding"
+    ],
+    "publishedAt": "2026-05-26",
+    "imagePrompt": "A freelance graphic designer in her late 20s, working in a cozy, sunlit home office filled with plants. She is smiling with a sense of relief and accomplishment as she looks at her laptop. On the screen, her beautifully designed WordPress portfolio website is displayed, alongside a sleek chat interface where she has just typed \"Align all the project thumbnails perfectly in a three-column grid\". Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_922300046723_1779760516.jpg"
+  },
+  {
     "id": "v_73a121773a07_1779750721",
     "title": "そのAIエージェント、\"丸裸\"で本番投入するつもり？ Rustで築く鉄壁の多層防御アーキテクチャが登場",
     "summary": "そのAIエージェント、\"丸裸\"で本番投入するつもり？ Rustで築く鉄壁の多層防御アーキテクチャが登場",
