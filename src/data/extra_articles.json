@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_b852dff81449_1779847432",
+    "title": "開発者の“あの面倒”を根こそぎ解決。AIアプリのアイデアを即、形にする最強のスターターキット『Eden Stack』",
+    "summary": "開発者の“あの面倒”を根こそぎ解決。AIアプリのアイデアを即、形にする最強のスターターキット『Eden Stack』",
+    "body": "アイデアを形にする情熱はあっても、ユーザー認証や決済システムの構築といった、退屈な繰り返し作業に貴重な時間を奪われていませんか。サービス開発のたびに現れるこの壁に、何度打ちのめされたことでしょう。そんな世界中の開発者が抱える共通の悩みを解決すべく、ある一人の開発者が自身のフラストレーションから生み出した究極のソリューション、それがAIネイティブSaaSのためのスターターキット『Eden Stack』です。もう車輪の再発明に時間を浪費する必要はありません。\n\nこのキットの心臓部は、現代の開発者が求める最新の技術スタックで固められています。TypeScriptを基盤に、フロントエンドはNext.jsとTailwind CSSで美しく、バックエンドはPrismaでデータベースを自在に操作します。しかし、Eden Stackの真価はここから始まります。ユーザー認証、Stripeによるサブスクリプション決済、さらにはAIチャットボットの基盤となるRAG（Retrieval-Augmented Generation）の実装までが、すでに完璧に統合されているのです。これは単なるテンプレートの集合体ではありません。AIを組み込んだSaaSを立ち上げる際の、最も時間のかかる初期設定を完全にスキップできる、まさに“未来への近道”なのです。他のスターターキットが汎用性を目指す中で、Eden StackはAIネイティブなアプリケーション開発に特化。これにより開発者は、アイデアをコードに落とし込むという、最も創造的で本質的な部分にのみ集中できる至高の環境を手に入れられます。\n\n週末に温めていたアイデアを形にしたい個人開発者、あるいはリソースの限られたスタートアップの技術リーダーにとって、これはまさに福音と言えるでしょう。例えば、社内文書を学習させた高機能な顧客対応AIや、特定の専門分野の論文を読み込ませたリサーチ支援ツールなど、これまで構想だけで数週間を要したAIサービスを、驚異的な速さでプロトタイプとして試作できます。インフラ設定で情熱を消耗する日々は、もう終わりです。\n\n料金体系は、用途に応じたプランが用意されています。最新の価格やプランの詳細は公式サイトで確認するのが確実です。利用開始は驚くほど簡単で、公開されているリポジトリからコードを取得し、いくつかの環境変数を設定するだけ。数時間後には、あなたのローカル環境で本格的なAI SaaSの基盤が動き出していることでしょう。\n\n退屈な作業から解放され、創造性だけに集中する。Eden Stackは、あなたのアイデアに力強い翼を授けるための滑走路です。さあ、今すぐコードを手に取り、世界を驚かせるサービス開発の第一歩を踏み出しましょう！",
+    "source": "Hackernoon Ai",
+    "sourceUrl": "https://hackernoon.com/i-built-a-saas-starter-to-scratch-my-own-itch-heres-what-i-learned?source=rss",
+    "tags": [
+      "ai",
+      "chatbots",
+      "typescript",
+      "software-engineering",
+      "rag"
+    ],
+    "publishedAt": "2026-05-27",
+    "imagePrompt": "A male developer in his late 20s, seen from behind, intensely focused on multiple screens in a dimly lit room at night. One screen shows TypeScript code for a chat interface, another displays a complex data dashboard built with Next.js and Tailwind CSS. The glow from the monitors illuminates his face and hands as he types on a mechanical keyboard. A half-empty coffee mug sits on the desk next to a notebook filled with diagrams. The atmosphere is one of deep concentration and creative flow. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_b852dff81449_1779847432.jpg"
+  },
+  {
     "id": "v_5bfd3464c3ce_1779837290",
     "title": "なぜ写真は美しく映るのか？全てのエンジニアが知るべき「デジタルの暗室」の秘密、その全貌が今、明かされる。",
     "summary": "なぜ写真は美しく映るのか？全てのエンジニアが知るべき「デジタルの暗室」の秘密、その全貌が今、明かされる。",
