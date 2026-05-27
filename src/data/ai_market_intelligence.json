@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-26T13:46:05.729269+09:00",
-  "aiJudgment": "新規参入はなく市場は静観ムード。しかし、開発ではエージェント化、クリエイティブでは動画生成と、各分野の進化の方向性はより明確になった。",
+  "updatedAt": "2026-05-27T13:57:16.107215+09:00",
+  "aiJudgment": "開発ではAIエージェント、クリエイティブでは動画生成が市場を牽引。一方で新規参入は観測されず、既存ツールの進化が焦点となっている。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,34 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "自律的にタスクを完遂するエージェント機能が、従来のコード補完ツールとは一線を画す。開発の未来像を提示しており、今月の最注目ツールと評価した。",
+      "reason": "開発環境内で自律的にタスクをこなすエージェント機能は、コーディングの生産性を劇的に向上させる。単なるコード生成を超えた実践的な価値が高い。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "プランによる",
-          "newFeature": "アップデート情報なし",
+          "newFeature": "自律的な開発タスク実行機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "自律的にコーディング、デバッグ、テストを行うAIソフトウェアエンジニア。"
+          "summary": "開発環境内で自律的に動作するAI。コーディングからデバッグまでをサポート。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
           "price": "API利用料",
-          "newFeature": "アップデート情報なし",
+          "newFeature": "Anthropicの最新コーディングモデル",
           "rating": 4,
           "badge": null,
-          "summary": "Anthropic社によるコーディング支援に特化した高性能言語モデル。"
+          "summary": "高度な推論能力を持つ、コーディングに特化したAnthropicの最新AI。"
         },
         {
-          "id": "claude-api-dev",
+          "id": "claude-api",
           "name": "Claude (API)",
           "price": "API利用料",
-          "newFeature": "アップデート情報なし",
+          "newFeature": "継続的なモデル性能の向上",
           "rating": 4,
           "badge": null,
-          "summary": "汎用API。チャットボットやテキスト生成など幅広い開発に利用可能。"
+          "summary": "高い対話性能と汎用性を持つ、Anthropicの基盤モデルAPI。"
         }
       ]
     },
@@ -46,21 +46,11 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude (API)",
+        "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "長文コンテキスト処理能力と自然な文章生成力は、議事録作成や資料要約など、事務作業の自動化・効率化において他の追随を許さない性能を誇る。",
-      "tools": [
-        {
-          "id": "claude-api-prod",
-          "name": "Claude (API)",
-          "price": "API利用料",
-          "newFeature": "アップデート情報なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "長文読解、要約、文章作成に優れ、ビジネス文書作成を強力に支援。"
-        }
-      ]
+      "reason": "今月は事務効率化セグメントで特筆すべきツールやアップデートは観測されなかった。今後の市場動向に期待。",
+      "tools": []
     },
     {
       "id": "creative",
@@ -70,25 +60,25 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキストから高品質な動画を生成する能力は、映像制作の常識を覆す可能性を秘めている。その圧倒的なインパクトと将来性から今月の最強と判断した。",
+      "reason": "テキストから高品質な動画を生成する能力は、映像制作の常識を覆す。クリエイティブ分野におけるパラダイムシフトを予感させる圧倒的な存在感。",
       "tools": [
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
-          "price": "未定",
-          "newFeature": "アップデート情報なし",
+          "price": "未公開",
+          "newFeature": "テキストからの高品質な動画生成",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキストプロンプトから高品質でリアルな動画を生成する革新的モデル。"
+          "summary": "OpenAIが開発した革新的な動画生成AI。テキスト指示で映像を創出。"
         },
         {
           "id": "midjourney-v7",
           "name": "Midjourney v7",
           "price": "サブスクリプション",
-          "newFeature": "アップデート情報なし",
-          "rating": 5,
+          "newFeature": "画質とプロンプト追従性の向上（期待）",
+          "rating": 4,
           "badge": null,
-          "summary": "次世代画像生成AI。更なる品質向上とプロンプト追従性が期待される。"
+          "summary": "高品質な画像生成で知られるMidjourneyの次期バージョン。"
         }
       ]
     }
