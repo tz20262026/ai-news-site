@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_a02d10ab6826_1780010542",
+    "title": "AI開発の混沌よ、さらば！Claudeのコードスキル管理地獄から生まれた、究級の視覚的作業台『uberSKILLS』",
+    "summary": "AI開発の混沌よ、さらば！Claudeのコードスキル管理地獄から生まれた、究級の視覚的作業台『uberSKILLS』",
+    "body": "AI、特にClaudeのような高度な言語モデルを駆使した開発現場で、あなたは悲鳴を上げていませんか。増え続けるコードスニペット、複雑に絡み合うプロンプト、そして混沌を極めるバージョン管理。この終わりのない煩雑さに「もう狂いそうだ！」と感じている開発者は、決して少なくないはずです。そんな開発現場の切実な叫びから、まさに救世主とも呼べる画期的なオープンソースツール「uberSKILLS」が誕生しました。これは単なるツールではありません。AI開発の生産性を根底から覆し、我々の創造性を解放するための、いわば革命の狼煙なのです。\n\nuberSKILLSの核心は、その名の通り「視覚的な作業台（Visual Workbench）」というコンセプトにあります。これまでテキストエディタとターミナルを往復し、無数のファイルとにらめっこしながら行っていたAIの「スキル」管理を、驚くほど直感的でグラフィカルなインターフェースに置き換えてくれます。具体的には、AIに実行させたい個々の機能、例えば「ユーザー情報をデータベースから取得する」「要約を生成する」「コードを修正する」といったスキルを、それぞれ独立した視覚的なブロックとして扱います。これらのブロックを画面上で自由に配置し、ドラッグ＆ドロップで依存関係を線で結びつけるだけで、複雑な処理フローを構築できるのです。もはや、どのコードがどのプロンプトに依存しているのかを必死で記憶したり、ドキュメントを漁ったりする必要はありません。全ての構造が一目瞭然となり、開発プロセスは透明性とスピードを劇的に向上させます。Claudeのコードスキル管理から着想を得ていますが、その設計思想はあらゆるAIエージェント開発に応用可能な汎用性を秘めています。\n\nこのツールの真価が発揮されるのは、まさに最先端のAI開発現場です。複数のスキルを連携させて動作する自律型AIエージェントを開発するチームでは、誰がどのスキルを担当し、全体の進捗がどうなっているのかを視覚的に共有できます。あるいは、企業の業務プロセスにAIを組み込むプロジェクトにおいて、「請求書処理」「顧客問い合わせ対応」「在庫管理」といった各業務をスキルとして定義し、それらを組み合わせて全体の自動化フローを設計する際にも絶大な効果を発揮するでしょう。個人開発者にとっても、過去に作成したスキルを資産として整理し、新しいプロジェクトで簡単に再利用するための強力な武器となります。\n\nuberSKILLSはオープンソースプロジェクトとして開発されており、誰でも無料で利用を開始できるのが最大の魅力です。利用するには、公開されているGitHubリポジトリからソースコードを取得し、自身の開発環境にセットアップする必要があります。ドキュメントも整備されているため、手順に沿って進めれば導入は難しくありません。さらに、開発環境の構築を簡略化するプラットフォーム「Windsurf」を利用すれば、より手軽にこの革新的なツールを試すことも可能です。\n\nAIとの協業が当たり前になった今、私たちの仕事はAIの能力をいかに効率的に引き出し、管理するかにかかっています。uberSKILLSは、その煩雑な管理作業から私たちを解放し、より創造的なタスクに集中させてくれる、まさに待望のツールです。AI開発の未来を、今すぐその手で体験してみてください。",
+    "source": "Hackernoon Ai",
+    "sourceUrl": "https://hackernoon.com/i-built-a-visual-workbench-because-managing-claude-code-skills-was-driving-me-crazy?source=rss",
+    "tags": [
+      "ai",
+      "ai-agent-skills",
+      "claude-code",
+      "codex",
+      "ai-coding-tools"
+    ],
+    "publishedAt": "2026-05-28",
+    "imagePrompt": "A young male software developer in a modern, slightly messy home office at night, illuminated by the glow of a large monitor. He is looking intently at the screen, which displays a complex visual interface with colorful nodes and connecting lines representing the 'uberSKILLS' tool. His expression is a mix of deep concentration and a hint of a breakthrough smile. The background is filled with tech gear, whiteboards with code snippets, and empty coffee mugs, conveying a story of intense but productive work. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_a02d10ab6826_1780010542.jpg"
+  },
+  {
     "id": "v_79da795622eb_1779950644",
     "title": "もう「教える」必要はない。AIが自ら学び始める「MM-Zero」革命",
     "summary": "もう「教える」必要はない。AIが自ら学び始める「MM-Zero」革命",
