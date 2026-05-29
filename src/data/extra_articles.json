@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_078873eb450b_1780019827",
+    "title": "ローカルで完結するMLOps革命。Jupyterの先へ、あなたのPCを本格的な機械学習基盤に変える完全ガイド。",
+    "summary": "ローカルで完結するMLOps革命。Jupyterの先へ、あなたのPCを本格的な機械学習基盤に変える完全ガイド。",
+    "body": "「Jupyterで最高のモデルができた。だが、これをどうやってサービスに組み込むんだ？」多くのデータサイエンティストや開発者が、この「最後の難関」の壁に突き当たっているのではないだろうか。モデル開発の興奮から一転、デプロイ、運用、再学習という泥臭い現実に直面する。そんな悪夢を終わらせるための羅針盤が、今ここに登場した。これは単なるツールではない。あなたのPC上で、実験追跡からCI/CDまで、エンドツーエンドの機械学習プラットフォームをゼロから構築するための完全な設計図であり、実践ガイドなのだ。\n\nこのガイドの真髄は、クラウドの高価なサービスに頼ることなく、手元のローカル環境で本格的なMLOpsのサイクルを再現できる点にある。具体的には、まずMLflowを用いてモデルの実験結果やパラメータを体系的に追跡・管理する方法から始まる。そして、開発したモデルをFastAPIを用いて瞬時にAPI化し、他のサービスから呼び出せるようにする。さらにDockerでアプリケーション全体をコンテナ化することで、環境依存の問題を根絶やしにする。最終的にはGitHub Actionsを駆使して、コードの変更をトリガーにテストからデプロイまでを自動化するCI/CDパイプラインを構築する。これら一連の流れを、断片的な知識の寄せ集めではなく、一つの揺るぎないプラットフォームとして、あなたの手で作り上げる方法論が示されているのだ。これは、巨大な既製プラットフォームをただ使うのとは全く違う、本質的な理解と応用力をもたらす体験だ。\n\nこの知識が真価を発揮する場面は無限に広がる。例えば、自身のモデルをエンジニアにスムーズに引き継ぎたいデータサイエンティスト。あるいは、MLOpsの全体像を体系的に学び、自社プロジェクトの基盤を設計したい機械学習エンジニア。そして、限られた予算と時間の中で、迅速にAI機能を実装したいスタートアップの開発チームにとっては、まさに福音となるだろう。個人開発者が自身のスキルを証明するポートフォリオとして、これ以上なく強力な武器にもなるはずだ。理論だけではない、手を動かして作り上げることで得られる実践知は、あなたの市場価値を劇的に高めるに違いない。\n\n驚くべきことに、この革命的なガイドを手に入れるために、費用は一切かからない。これは著名な学習プラットフォームであるfreeCodeCamp上で公開されており、誰でも完全に無料でアクセスできる。必要なのは、あなたの知的好奇心と、実際に手を動かすためのPC環境、そして学びへの情熱だけだ。メールアドレスの登録すら不要で、提示されたURLにアクセスすれば、その瞬間からあなたのMLOps構築の旅が始まる。この手軽さこそが、最初の一歩をためらわせない最大の魅力と言えるだろう。\n\n机上の空論や断片的なチュートリアルに時間を浪費するのは、もう終わりだ。このガイドは、あなたのアイデアを現実世界で動くサービスへと昇華させるための、最も確実で実践的な道のりを示してくれる。さあ、今すぐあなたの開発環境を、未来を創造する最強の実験場に変えよう。",
+    "source": "Freecodecamp",
+    "sourceUrl": "https://www.freecodecamp.org/news/build-end-to-end-ml-platform-locally-from-experiment-tracking-to-cicd/",
+    "tags": [
+      "Machine Learning",
+      "mlops",
+      "Python",
+      "Devops",
+      "Platform Engineering"
+    ],
+    "publishedAt": "2026-05-29",
+    "imagePrompt": "A developer in a dimly lit home office at night, intensely focused on building a local MLOps platform. Multiple monitors glow, displaying Python code, Docker container logs, and a machine learning experiment tracking dashboard with complex graphs. The focus is on their hands rapidly typing on a mechanical keyboard, with a steaming cup of coffee nearby, capturing a moment of deep concentration and creative problem-solving. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_078873eb450b_1780019827.jpg"
+  },
+  {
     "id": "v_a02d10ab6826_1780010542",
     "title": "AI開発の混沌よ、さらば！Claudeのコードスキル管理地獄から生まれた、究級の視覚的作業台『uberSKILLS』",
     "summary": "AI開発の混沌よ、さらば！Claudeのコードスキル管理地獄から生まれた、究級の視覚的作業台『uberSKILLS』",
