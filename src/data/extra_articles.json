@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_f4f813d3e861_1780037165",
+    "title": "「何が分からないか分からない」を卒業。コードの壁をぶち破る、最強の質問術が、今ここに。",
+    "summary": "「何が分からないか分からない」を卒業。コードの壁をぶち破る、最強の質問術が、今ここに。",
+    "body": "プログラミングという創造の旅は、時として孤独なデバッグの迷宮に迷い込む。画面に表示される冷酷なエラーメッセージ、うんともすんとも言わないプログラム。何時間も一人で悩み続け、貴重な時間が溶けていくあの感覚は、すべての開発者が一度は経験する悪夢だ。誰かに助けを求めたい、しかし「何をどう伝えればいいのか分からない」という、もう一つの巨大な壁が立ちはだかる。この「質問の壁」こそが、あなたの成長を妨げ、プロジェクトを停滞させる真のボトルネックかもしれない。そんな絶望的な状況を根底から覆し、あなたを爆速で問題解決へと導くための羅針盤、それが「How to Ask a Great (Technical) Question」だ。これは単なる心構えを説く精神論ではない。世界中の開発者が集う学びの場、freeCodeCampが提供する、極めて実践的かつ体系化された「質問の技術」そのものである。このガイドが教えるのは、問題を正確に特定するプロセスから始まる。闇雲に「動きません」と叫ぶのではなく、どの部分が、どのような条件下で、どう動かないのかを切り分ける方法を学ぶのだ。次に、回答者がすぐに状況を再現できる「再現可能な最小限のコード例」を作成する技術。あなたの複雑なプロジェクト全体を見せるのではなく、問題の本質だけを抽出したシンプルなコードを提示することで、回答者は瞬時に核心を突くことができる。さらに、あなたが既に試したこと、そして本来期待していた動作と実際の動作の明確な対比を記述する手法も網羅している。これらはすべて、回答者の思考コストを極限まで下げ、最短距離で的確なアドバイスを引き出すための戦略なのだ。もはやこれは「聞き方」というマナーの領域を超え、問題解決のプロセス全体を最適化する高度なエンジニアリングスキルと言えるだろう。この技術は、特定の誰かのためのものではない。プログラミングスクールで課題に取り組む学生がメンターに質問する時、スタートアップの新人エンジニアがSlackで先輩に助けを求める時、あるいは世界中の猛者が集うコミュニティでバグについて議論する時など、コードが関わるすべてのコミュニケーションシーンで絶大な威力を発揮する。業種や職種、開発言語の壁を越え、すべての技術者にとって必須の教養となるだろう。そして驚くべきことに、この開発者人生を変えるほどの価値を持つ知識は、完全に無料で提供されている。面倒なユーザー登録や支払いは一切不要。提示されたURLにアクセスするだけで、今この瞬間から、あなたも「質問のプロ」への道を歩み始めることができるのだ。ブックマークに登録し、質問を投げる前の数分間、この記事を読み返す習慣をつけるだけで、あなたのデバッグ時間は劇的に短縮されるはずだ。質問力は、コードを書く能力と同じくらい、あるいはそれ以上に重要な、現代の技術者にとっての最強の武器である。この究極ガイドを手に、あなたを悩ませるデバッグの迷宮から今すぐ脱出しよう。さあ、今すぐアクセスして、あなたの開発者としての未来を加速させるのだ！",
+    "source": "Freecodecamp",
+    "sourceUrl": "https://www.freecodecamp.org/news/how-to-ask-a-great-technical-question/",
+    "tags": [
+      "questions",
+      "coding",
+      "freeCodeCamp.org",
+      "discord"
+    ],
+    "publishedAt": "2026-05-29",
+    "imagePrompt": "A young software developer sitting at a desk late at night, looking intently at a laptop screen. The screen displays code with a glaring red error message. The developer is thoughtfully typing a question into a chat application on the side. The glow from the monitor illuminates their focused face, showing a mix of concentration and slight frustration. A coffee mug and sticky notes are on the messy desk. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_f4f813d3e861_1780037165.jpg"
+  },
+  {
     "id": "v_078873eb450b_1780019827",
     "title": "ローカルで完結するMLOps革命。Jupyterの先へ、あなたのPCを本格的な機械学習基盤に変える完全ガイド。",
     "summary": "ローカルで完結するMLOps革命。Jupyterの先へ、あなたのPCを本格的な機械学習基盤に変える完全ガイド。",
