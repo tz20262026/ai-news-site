@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_301128ca6085_1780105929",
+    "title": "AIエージェント開発はもう夢じゃない。LangGraphで、あなただけの「旅行プランナー」を自作する時代が来た。",
+    "summary": "AIエージェント開発はもう夢じゃない。LangGraphで、あなただけの「旅行プランナー」を自作する時代が来た。",
+    "body": "既成のAIチャットツールに「もっとこうだったら」と感じたことはないだろうか。指示待ちではなく、自ら考え、試行錯誤し、目的を達成してくれる。そんな理想のAIアシスタントを、今こそ自分の手で生み出す時が来た。これまで専門家だけの領域だと思われていた自律型AIエージェントの開発が、LangGraphという強力なフレームワークの登場によって、驚くほど身近なものになったのだ。これは、単なるツール紹介ではない。あなた自身が、AIの創造主になるための第一歩を踏み出すための招待状だ。\n\nLangGraphの真髄は、AIの「思考プロセス」をグラフ構造で設計できる点にある。従来の直線的な命令実行とは一線を画し、ノード（処理の単位）とエッジ（処理の流れ）を組み合わせることで、複雑な条件分岐や、何度も同じ工程に戻ってやり直す「ループ」を実装できる。これこそが、AIに人間のような試行錯誤をさせるための鍵だ。例えば、旅行プランナーAIを作る場合を考えてみよう。まずユーザーから「予算10万円で3日間の沖縄旅行」という要望を受け取る。AIは航空券検索ツールを使い、次にホテル検索、そしてアクティビティを検索する。もし途中で予算オーバーしたら、LangGraphの設計により、AIは自ら「ホテル検索」のノードに戻り、より安価な選択肢を探し直す。この自己修正能力こそ、LangGraphがもたらす革命なのだ。単に情報を繋ぐだけでなく、AI自身に「反省」と「再計画」を促す、まさにAIの頭脳をプログラミングする体験がここにある。\n\nこの技術の応用範囲は、旅行プランの作成だけに留まらない。例えば、マーケティング担当者なら、競合製品のレビューを自動収集し、センチメント分析を行い、レポートを生成して、改善点まで提案する市場調査エージェントを開発できるだろう。開発者であれば、コードのバグを自動で特定し、修正案を複数提示し、テストまで実行するデバッグ支援エージェントを作り出せるかもしれない。教育分野では、個々の学生の理解度に合わせて学習計画を動的に調整し、最適な教材を提案するパーソナルチューターAIも実現可能だ。あなたの課題意識と創造力次第で、あらゆる業務を自律的にこなす、専用のデジタルな相棒が誕生する。\n\n驚くべきことに、この未来的な体験を始めるためのコストはほとんどかからない。LangGraphはオープンソースのPythonライブラリであり、誰でも無料で利用できる。必要なのは、あなたのコンピュータにPython環境を整えることと、OpenAIや、今回のチュートリアルで使われているqwenのような大規模言語モデルのAPIキーを取得することだけだ。公式ドキュメントや公開されているチュートリアル記事を参考にすれば、今日からでもあなただけのAIエージェント開発プロジェクトを始動させることができる。\n\nLangGraphは、もはやAIを「使う」側から「創る」側へと私たちを誘う、魔法の設計図だ。単調なプロンプトエンジニアリングに別れを告げ、AIに真の知性を吹き込む興奮を体験してほしい。さあ、あなただけの賢い相棒を、その手で創造しようではないか。",
+    "source": "Pub Towards Ai",
+    "sourceUrl": "https://pub.towardsai.net/build-your-first-ai-agent-with-langgraph-a-step-by-step-travel-planner-example-its-easier-than-e7f06a3dd8bd?source=rss----98111c9905da---4",
+    "tags": [
+      "ai-agent",
+      "llm-agent",
+      "ai",
+      "langraph"
+    ],
+    "publishedAt": "2026-05-30",
+    "imagePrompt": "A young developer working late at night in a cozy, modern cafe. His laptop screen glows, displaying complex code and a graphical node-based diagram representing an AI's thought process. Blurred images of travel destinations like Paris and Tokyo are visible on the screen, hinting at the \"travel planner\" agent he is building. The developer has a look of intense focus and creative satisfaction, illuminated by the warm light of the cafe and the cool light of the laptop. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_301128ca6085_1780105929.jpg"
+  },
+  {
     "id": "v_1306af9ec3aa_1780096775",
     "title": "ChatGPTに丸投げは危険！機密文書10万件を処理したエンジニアが下した「LLMを使わない」英断",
     "summary": "ChatGPTに丸投げは危険！機密文書10万件を処理したエンジニアが下した「LLMを使わない」英断",
