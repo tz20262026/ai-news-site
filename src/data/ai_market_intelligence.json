@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-29T13:54:27.992025+09:00",
-  "aiJudgment": "新規参入は観測されず、既存の強力なモデルが各分野で進化を続ける静かな月。開発ではClaude、クリエイティブではSoraが市場の期待を牽引している。",
+  "updatedAt": "2026-05-30T13:35:44.461356+09:00",
+  "aiJudgment": "新規参入はなく、既存の強力なAIが各分野で進化を続ける静かな月。開発はClaude、クリエイティブはSoraが話題を独占。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,34 @@
         "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claude 3ファミリーの強力な基盤を活かし、複雑なコーディングタスクやデバッグにおいて高い精度を発揮。開発者からの評価が急上昇しているため。",
+      "reason": "Claude 3ファミリーの卓越したコーディング性能と論理的思考力が開発者から高く評価されている。汎用性と精度で他を圧倒しているため。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
+          "price": "プラン依存",
           "newFeature": "情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "開発環境Replit上で動作する自律型ソフトウェアエンジニアAI。"
+          "summary": "自律的にコーディングタスクを遂行するAIソフトウェアエンジニア。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "Claude 3利用料に準拠",
+          "price": "API利用料",
           "newFeature": "情報なし",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Anthropic社が開発した、コーディングに特化した高性能AIモデル。"
+          "summary": "Anthropic社の高精度なコーディング支援AIモデル。"
         },
         {
           "id": "claude-api",
           "name": "Claude (API)",
           "price": "API利用料",
           "newFeature": "情報なし",
-          "rating": 4,
+          "rating": 5,
           "badge": null,
-          "summary": "様々なタスクに対応可能なAnthropic社の汎用大規模言語モデルAPI。"
+          "summary": "Anthropic社の高性能AIモデル群。多様なタスクに対応可能。"
         }
       ]
     },
@@ -49,7 +49,7 @@
         "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月は事務効率化セグメントにおいて、市場をリードする決定的なツールやアップデートは観測されなかったため、選出を見送る。",
+      "reason": "今月は事務効率化セグメントにおいて、市場をリードするような革新的なアップデートや新規ツールは観測されなかった。",
       "tools": []
     },
     {
@@ -60,7 +60,7 @@
         "name": "Sora (OpenAI)",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキストから写実的かつ長尺の動画を生成する能力は、クリエイティブの常識を覆すインパクトを持つ。市場の期待値が極めて高く、今月の話題を独占した。",
+      "reason": "テキストから高品質な動画を生成する能力は、クリエイティブの概念を覆すほどの衝撃を与えた。市場の期待を独占しているため。",
       "tools": [
         {
           "id": "midjourney-v7",
@@ -69,16 +69,16 @@
           "newFeature": "情報なし",
           "rating": 5,
           "badge": null,
-          "summary": "高品質な画像生成で知られるMidjourneyの次期バージョン。"
+          "summary": "高品質な画像生成で知られるAI。最新版で表現力がさらに向上。"
         },
         {
           "id": "sora-openai",
           "name": "Sora (OpenAI)",
-          "price": "未公開",
-          "newFeature": "一般公開待機中",
+          "price": "限定アクセス",
+          "newFeature": "情報なし",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "テキストから高品質で長尺な動画を生成するOpenAIの革新的モデル。"
+          "summary": "テキストから高品質な動画を生成するOpenAIの革新的モデル。"
         }
       ]
     }
