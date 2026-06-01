@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_73aa928f1b38_1780357126",
+    "title": "Text-to-SQLはもう古い？否、真の力は「合わせ技」にあり。28テーブルを操る次世代AIエージェント、その設計思想を盗め！",
+    "summary": "Text-to-SQLはもう古い？否、真の力は「合わせ技」にあり。28テーブルを操る次世代AIエージェント、その設計思想を盗め！",
+    "body": "多くのデータドリブンなビジネスが直面する巨大な壁、それは複雑に絡み合ったデータベースと、そこから価値ある情報を引き出すための果てしない労力だ。自然言語で瞬時に答えを得る「Text-to-SQL」に誰もが夢を見たが、現実の本番環境、数十ものテーブルが横たわる前ではあまりに無力だった。しかし、その常識が今、覆される時が来た。これは単なるツール紹介ではない。アフィリエイトマーケティングの最前線で、実際に本番稼働しているAIクエリエージェントの生々しい設計と思想、その全てを解き明かす技術ドキュメントだ。\n\nこのアーキテクチャの核心は、Text-to-SQLとFunction Callingという二つのアプローチの「ハイブリッド」にある。Text-to-SQLが自由形式の質問からSQLを生成する柔軟性を持つ一方で、Function Callingは事前に定義された関数を呼び出すことで、より複雑で定型的なタスクを確実かつ安全に実行する。この両者の長所を組み合わせ、ユーザーの意図に応じて最適な手法を使い分ける司令塔「MCPエージェント」を置くことで、驚異的な応答精度と応用範囲を実現しているのだ。さらに特筆すべきは、AIが生成したSQLをそのまま実行する危険性を排除する「3層ASTセキュリティバリデーター」の存在だ。これはSQL文を抽象構文木のレベルで解析し、不正な操作や意図しないデータ破壊を未然に防ぐ。この鉄壁の防御機構があるからこそ、28ものテーブルが絡み合う本番環境で、18もの自動化ワークフローを安心して稼働させられるのだ。これはもはや、夢物語ではない。現実のビジネスを加速させる、極めて実践的なソリューションである。\n\nこの革命的な手法は、あらゆる業界のデータ専門家にとって福音となるだろう。例えば、ECサイトのデータアナリストが「先月、東京都在住で3回以上購入し、かつ平均購入単価が1万円以上の優良顧客リストを抽出し、マーケティングチームのSlackに通知して」といった、複数のステップを要する複雑な依頼をチャットで投げるだけで、AIエージェントが自律的にタスクを完遂する。あるいは、SaaSプロダクトの開発者が、顧客からの問い合わせ対応の一部として「ユーザーIDXXXの直近1週間のアクティビティログを要約して」といった処理をエージェントに任せることも可能だ。もはや、定型的なデータ抽出やレポート作成のために、エンジニアが都度クエリを書く時代は終わりを告げる。\n\nこの最先端のアーキテクチャを君のものにするのに、費用は一切かからない。必要なのは、君の知的好奇心と、現状を打破しようとする熱意だけだ。この手法を詳細に解説した元記事は、全て無料で公開されている。そこに、全ての設計思想と実装に至るまでの試行錯誤のヒントが凝縮されている。今すぐアクセスし、コードの裏に隠された哲学を読み解いてほしい。\n\nこれは単なる技術記事ではない。データ活用の未来を指し示す羅針盤だ。Text-to-SQLとFunction Callingの融合、その先にある景色を君自身の目で確かめてほしい。さあ、今すぐその設計思想を盗み、君のプロジェクトを次のレベルへと進化させるんだ！",
+    "source": "Pub Towards Ai",
+    "sourceUrl": "https://pub.towardsai.net/how-i-built-a-production-ai-query-engine-on-28-tables-and-why-i-used-both-text-to-sql-and-5794d407d6ab?source=rss----98111c9905da---4",
+    "tags": [
+      "ai-agent",
+      "artificial-intelligence",
+      "software-development",
+      "machine-learning"
+    ],
+    "publishedAt": "2026-06-01",
+    "imagePrompt": "A data engineer in a dimly lit, modern office at night, intently focused on multiple monitors. One screen displays a complex database schema with 28 interconnected tables, another shows lines of SQL code being generated, and a third displays a natural language chat interface. The engineer's face is illuminated by the glow of the screens, showing deep concentration. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_73aa928f1b38_1780357126.jpg"
+  },
+  {
     "id": "v_05734383a77b_1780302351",
     "title": "モデルで終わらせない！3つのAIエージェントが連携し、リアルタイムで不正を狩る「生きた検知システム」を自ら構築せよ。",
     "summary": "モデルで終わらせない！3つのAIエージェントが連携し、リアルタイムで不正を狩る「生きた検知システム」を自ら構築せよ。",
