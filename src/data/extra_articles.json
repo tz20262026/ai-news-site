@@ -1,5 +1,21 @@
 [
   {
+    "id": "v_114d147834b4_1780279998",
+    "title": "GitHub Copilotはもう「相棒」じゃない。「部下」だ。タスクを丸ごと委任する、新次元のコーディング術が始まる。",
+    "summary": "GitHub Copilotはもう「相棒」じゃない。「部下」だ。タスクを丸ごと委任する、新次元のコーディング術が始まる。",
+    "body": "日々の開発業務で、AIコーディングツールに何度も同じようなプロンプトを投げかけては、生成されたコードを修正する作業に追われていませんか。その反復作業は、もはや創造性を奪う新たなルーティンワークになりつつあります。しかし、もしAIを単なる提案者ではなく、自律的にタスクを遂行する有能なパートナーとして「委任」できるとしたらどうでしょう。GitHub Copilotの進化が、まさにその開発スタイルの革命を実現します。これまでの「指示する」関係から「任せる」関係へ。あなたのコーディング体験が、今、根底から覆されようとしています。\n\nこのパラダイムシフトの核となるのが、ターミナル上で動作する「GitHub Copilot CLI」です。従来のエディタ上でコードを補完するCopilotとは一線を画し、これはあなたのコマンドラインに常駐する対話型のAIアシスタントです。例えば、新しいコマンドの使い方を調べるためにブラウザを開く必要はありません。「gh copilot explain」と打ち込み、調べたいコマンドを伝えれば、AIがその場で使い方を丁寧に解説してくれます。さらに強力なのが「gh copilot suggest」です。あなたが「新しいReactコンポーネントの雛形を作って」や「このプロジェクト用のDockerファイルを作成して」と自然言語で依頼するだけで、Copilot CLIは必要なコマンドやスクリプト、さらにはファイル構成まで提案し、実行してくれます。これはもはや単なるコード生成ではありません。タスクの意図を伝え、その遂行を完全にAIに「委任」する新しいワークフローなのです。細かなステップを監視するマイクロマネジメントから解放され、開発者はより大きな設計やアーキテクチャの検討に集中できます。\n\nこの革新的なツールは、あらゆる開発者の生産性を飛躍的に向上させます。特に、複雑なGit操作に不慣れなジュニア開発者が「前のコミットにこの変更を追加して」と日本語で指示したり、インフラエンジニアがTerraformやKubernetesの設定ファイルを対話形式で生成したりする場面で絶大な効果を発揮します。新しいプログラミング言語やフレームワークを学習する際も、定型的なコードの記述をCopilot CLIに任せることで、本質的なロジックの理解に没頭できるでしょう。もうドキュメントとターミナルを往復する日々は終わりです。\n\nGitHub Copilot CLIの利用は驚くほど簡単です。この機能はGitHub Copilotのサブスクリプション（個人向けは月額10ドルから）に含まれているため、追加費用はかかりません。すでにCopilotを利用しているなら、お使いのPCにGitHub CLIをインストールし、コマンド一つでCopilot拡張機能を追加するだけですぐに始められます。まだの方は、この機会にCopilotのサブスクリプションを検討する価値が十分にあります。\n\nGitHub Copilot CLIがもたらすのは、単なる効率化ではありません。それは、開発者の思考を面倒な作業から解放し、より創造的で本質的な領域へとシフトさせる「働き方の革命」です。もうAIに細かく指示を出すのはやめにしましょう。今すぐタスクを「委任」し、未来の開発スタイルをその手で体験してください。",
+    "source": "Pub Towards Ai",
+    "sourceUrl": "https://pub.towardsai.net/i-stopped-prompting-github-copilot-and-started-delegating-to-it-fe2f12a21709?source=rss----98111c9905da---4",
+    "tags": [
+      "generative-ai-tools",
+      "github-copilot-cli",
+      "github-copilot"
+    ],
+    "publishedAt": "2026-06-01",
+    "imagePrompt": "A male developer in a dimly lit home office, focused on his computer monitor which displays a glowing command-line interface. He has a slight smile of satisfaction, watching the AI generate code for him. His hands are relaxed, resting on the desk, not on the keyboard, symbolizing the act of delegating a task to an AI partner. The scene is captured with a shallow depth of field, focusing on the developer's expression and the terminal. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_114d147834b4_1780279998.jpg"
+  },
+  {
     "id": "v_29c2ed6c5f88_1780268781",
     "title": "君のClaudeはまだ眠れる獅子だ。プラグインでその真の力を今こそ解き放て！",
     "summary": "君のClaudeはまだ眠れる獅子だ。プラグインでその真の力を今こそ解き放て！",
