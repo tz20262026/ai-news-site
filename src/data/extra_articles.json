@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_d54020ae9645_1780384653",
+    "title": "もうポリシーコードで消耗しない！Apple発、自然言語をそのまま実行可能コードに変える革命的ツール「Prose2Policy」登場。",
+    "summary": "もうポリシーコードで消耗しない！Apple発、自然言語をそのまま実行可能コードに変える革命的ツール「Prose2Policy」登場。",
+    "body": "システムのセキュリティポリシーやアクセス制御ルールが、自然言語で書かれた仕様書と、実際に動くコードとの間で乖離していく悪夢。多くの開発現場で繰り返されてきたこの課題に、ついに終止符が打たれるかもしれない。あのアップルが、機械学習研究の一環として驚くべきツール「Prose2Policy」、通称「P2P」を公開したのだ。これは、私たちが日常的に使う言葉で書かれたアクセスポリシーを、Open Policy Agent（OPA）で実行可能なRegoコードへと自動的に変換する、まさに魔法のパイプラインだ。もう、仕様変更のたびに手作業でコードを修正し、テストに奔走する日々は過去のものになる。\n\nP2Pの真価は、単なるコード生成に留まらない点にある。これは、ポリシー管理の全工程を網羅する、洗練されたエンドツーエンドのパイプラインとして設計されているのだ。まず、自然言語の文書からポリシーに関する記述を自動で検出し、そこから「誰が」「何を」「どうできるか」といった構成要素を的確に抽出する。次に、抽出した要素が定義済みのスキーマに準拠しているかを検証し、コードの品質を保つための静的解析（リンティング）を実行。そして、これらの厳格なチェックを通過した情報だけが、実行可能なRegoコードへとコンパイルされる。さらに驚くべきは、生成されたコードが意図通りに動作するかを検証するためのテストコードまで自動で生成し、実行してくれることだ。これはもはや単なるツールではない。まるで、仕様書を渡せばコードを書き、テストまで完璧にこなしてくれる超優秀な同僚エンジニアが、いつでも隣にいてくれるかのような体験を提供する。\n\nこの革新的なツールは、特にセキュリティエンジニア、DevOpsエンジニア、そしてSRE（サイト信頼性エンジニア）といった、クラウドネイティブな環境でインフラの信頼性と安全性を担う専門家たちの働き方を根底から変えるだろう。「管理者のみが本番環境のデータベースにアクセスできる」といった平易なルール文書から、数秒後にはKubernetesクラスタで強制力を持つポリシーコードが生み出される光景を想像してみてほしい。ポリシー変更に伴うリードタイムは劇的に短縮され、ビジネスサイドの要求へ即座に応える俊敏性を手に入れることができるのだ。\n\nこれほど強力な機能を持つツールなのだから、高価なライセンス料が必要だと思うかもしれない。しかし驚くべきことに、P2Pはオープンソースプロジェクトとして公開されており、誰でも無償で利用を開始できる。公式のGitHubリポジトリからソースコードを入手し、ドキュメントに従って環境をセットアップするだけ。すぐにでも、この未来的なポリシー管理の世界に足を踏み入れることが可能だ。煩雑な登録手続きも、高額な費用も一切必要ない。\n\nセキュリティポリシーの管理は、もはや人間が手作業でコードを書き続ける領域ではなくなる。P2Pは、開発とセキュリティの間に存在した厚い壁を打ち壊し、誰もが迅速かつ安全にサービスを構築できる新時代を切り拓く。今すぐその手で、未来のポリシー管理を体験しよう。",
+    "source": "Apple Ml",
+    "sourceUrl": "https://machinelearning.apple.com/research/prose2policy",
+    "tags": [
+      "AI"
+    ],
+    "publishedAt": "2026-06-02",
+    "imagePrompt": "A team of diverse DevOps and security engineers collaborating in a modern, sunlit office. On a large dual-monitor display, one screen shows a natural-language policy document, while the other screen displays the automatically generated, highlighted Rego code. The engineers are pointing at the screen, engaged in an energetic discussion, with sticky notes and diagrams on a whiteboard in the background. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_d54020ae9645_1780384653.jpg"
+  },
+  {
     "id": "v_71c5e57ae381_1780366444",
     "title": "NVIDIAが解き放つ、あなたのPCを覚醒させる40億パラメータの頭脳。ローカルAIの新時代が今、始まる。",
     "summary": "NVIDIAが解き放つ、あなたのPCを覚醒させる40億パラメータの頭脳。ローカルAIの新時代が今、始まる。",
