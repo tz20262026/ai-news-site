@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_40e5b5044e8d_1780530574",
+    "title": "そのAIエージェント、本番投入する勇気ある？ AWS発『Strands Evals』で評価の常識を覆せ！",
+    "summary": "そのAIエージェント、本番投入する勇気ある？ AWS発『Strands Evals』で評価の常識を覆せ！",
+    "body": "生成AIで自律型エージェントを開発したものの、その性能をどう客観的に評価すればいいのか頭を悩ませていないだろうか。特に、ユーザーとの複雑な対話を重ねるエージェントの品質保証は、まさに未知の領域だ。そんな開発現場の混沌に終止符を打つべく、アマゾン ウェブ サービス（AWS）が放つ実践的ガイドこそが『Strands Evals』だ。これは単なるツールではない。AIエージェント開発の未来を左右する、評価の新基準そのものである。\n\nStrands Evalsの真価は、単なる正誤判定ツールではない点にある。その核心は、AIエージェントとユーザー間の複数回にわたる対話をシミュレートする「マルチターンシミュレーション機能」だ。これにより、単純な質疑応答では見えない、文脈を理解し一貫した対応ができるかというエージェントの真の実力が暴かれる。さらに驚くべきは、正確性、一貫性、安全性といった本番で必須となる多様な評価基準が「組み込み評価器」として用意されていることだ。もはや、評価シナリオの設計に時間を費やす必要はない。開発者はこの強力なフレームワークに乗るだけで、自社エージェントの弱点を体系的に洗い出し、改善サイクルを高速で回すことが可能になる。これは、勘に頼った従来の評価手法からの完全な脱却だ。\n\n想像してみてほしい。新しい機能を実装したカスタマーサポートAIが、予期せぬ応答で顧客を混乱させる悪夢を。Strands Evalsは、そんな事態を防ぐ最終防衛線となる。ECサイトの推薦エージェントから、専門的な社内アシスタントまで、あらゆるAIエージェント開発の現場で力は発揮される。特に、リリース前のストレステストや機能改修後の性能劣化がないかを確認する継続的な評価プロセスに組み込めば、開発チームは自信を持ってプロダクトを世に送り出せる。\n\nこの革新的な評価フレームワークを試すのに、複雑な手続きや費用は一切不要だ。Strands Evalsはオープンソースとして公開されており、誰でも無料で利用できる。公式ガイドを参考に手元の環境へ導入し、数行のコードを実行するだけで、あなたのAIエージェント評価は新たな次元へと突入するだろう。\n\nもはやAIエージェントの評価は、開発の最終工程にある面倒な作業ではない。プロダクトの価値を最大化するための、最もクリエイティブな活動なのだ。評価を制する者が、AI時代を制す。さあ、Strands Evalsで、あなたのエージェントの真価を世界に証明しよう。",
+    "source": "Aws Ml",
+    "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-for-production-a-practical-guide-to-strands-evals/",
+    "tags": [
+      "Artificial Intelligence",
+      "Best Practices",
+      "Generative AI",
+      "Generative AI*",
+      "Strands Agents"
+    ],
+    "publishedAt": "2026-06-03",
+    "imagePrompt": "A team of software developers in a modern, dimly lit office, intensely focused on a large monitor displaying complex code and performance evaluation graphs for an AI agent. The screen's glow illuminates their serious faces. The graphs show metrics like accuracy, consistency, and safety. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_40e5b5044e8d_1780530574.jpg"
+  },
+  {
     "id": "v_a0ef36c52d42_1780474056",
     "title": "Amazonが放つ最終兵器。AIカスタマイズの壁を壊し、誰もが開発者になる時代へ。",
     "summary": "Amazonが放つ最終兵器。AIカスタマイズの壁を壊し、誰もが開発者になる時代へ。",
