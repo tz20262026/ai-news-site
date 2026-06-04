@@ -1,5 +1,22 @@
 [
   {
+    "id": "v_caaa8a8ad2a2_1780614832",
+    "title": "Amazon Nova 2への進化、待ったなし！旧世代の限界を突破し、AIアプリを覚醒させる完全移行マニュアル",
+    "summary": "Amazon Nova 2への進化、待ったなし！旧世代の限界を突破し、AIアプリを覚醒させる完全移行マニュアル",
+    "body": "進化し続ける生成AIの世界で、あなたのアプリケーションは最新のパワーを手にしていますか？Amazon Bedrockで人気の基盤モデル「Amazon Nova 1」から、待望の次世代版「Nova 2」への移行は、多くの開発者にとって大きな関心事です。APIの変更や新機能への対応に不安を感じる必要はもうありません。この移行ガイドが、あなたのプロジェクトを成功へと導く羅針盤となるでしょう。\n\nこのガイドの核心は、単なる情報提供に留まらない、徹底した実践主義にあります。開発者が最も懸念するモデルの互換性については、Nova 1とNova 2のモデルマッピングが明確に示され、移行後の性能を予測しながら最適なモデルを選択できます。さらに、移行の最大の壁となりうるAPIの変更点も、具体的なコードサンプルと共に丁寧に解説。特に注目すべきは、複数のモデルを統一的に扱える新しい「Converse API」を活用した実装例です。これにより、既存の複雑なコードをシンプルに書き換え、将来的なモデル変更にも柔軟に対応できるモダンなアーキテクチャへと進化させることが可能になります。ガイドは、Nova 2が持つ新たな能力を最大限に引き出すための設定方法や、具体的なユースケースまで踏み込んでおり、あなたのアプリケーションが単に「動く」だけでなく、「より賢く、より強力に」なるための道筋を照らしてくれます。これこそ、AWS公式だからこそ提供できる信頼性の証です。\n\nこのガイドは、BedrockでAIアプリを運用するあらゆる現場で真価を発揮します。例えば、顧客対応チャットボットの応答精度に課題を感じている開発チームは、Nova 2への移行によって、より文脈を理解した自然な対話を実現できます。また、記事やマーケティングコピーを自動生成するサービスを提供している企業なら、表現力を増したNova 2でコンテンツの質を劇的に向上させることが可能です。社内の情報検索や要約ツールの精度を高めたいと考えている情報システム部門にとっても、このガイドは確実なアップグレードを約束する強力な味方となるでしょう。\n\nこの貴重な移行ガイドは、AWS公式ブログで完全に無料で公開されており、特別な登録は一切不要です。今すぐアクセスして、その詳細を確認できます。もちろん、移行先となるAmazon Nova 2モデルの利用には、Amazon Bedrockの標準的な料金、つまり処理したトークン量に基づく従量課金が適用されます。まずはガイドを熟読し、綿密な移行計画を立てることから始めましょう。\n\nAmazon Nova 2への移行は、もはや複雑でリスクの高い作業ではありません。この公式ガイドは、あなたのAIアプリケーションのポテンシャルを最大限に解き放つための、最も確実で最短のルートです。今すぐその全貌を確認し、次世代のAI体験をその手で創り出しましょう。",
+    "source": "Aws Ml",
+    "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/migrate-from-amazon-nova-1-to-amazon-nova-2-on-amazon-bedrock/",
+    "tags": [
+      "Amazon Nova",
+      "Best Practices",
+      "Intermediate (200)",
+      "Technical How-to"
+    ],
+    "publishedAt": "2026-06-04",
+    "imagePrompt": "A focused software developer in a modern, slightly dark office, migrating an AI application. One monitor displays Python code with changes highlighted, another shows the Amazon Bedrock console interface, and a third displays a technical migration guide. The developer's face, illuminated by the screens, shows a mix of concentration and excitement. A cup of coffee sits on the desk. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_caaa8a8ad2a2_1780614832.jpg"
+  },
+  {
     "id": "v_3c40adb42b85_1780557373",
     "title": "工数99%削減は序章に過ぎない。AWSが解き明かす、次世代ビデオコンテンツ生成の全貌",
     "summary": "工数99%削減は序章に過ぎない。AWSが解き明かす、次世代ビデオコンテンツ生成の全貌",
