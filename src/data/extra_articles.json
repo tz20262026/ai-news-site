@@ -1,5 +1,23 @@
 [
   {
+    "id": "v_7b62ff468dbe_1780540134",
+    "title": "「どちらがマシか」から「誰に最適か」へ。AIが導くA/Bテストの未来がここに。",
+    "summary": "「どちらがマシか」から「誰に最適か」へ。AIが導くA/Bテストの未来がここに。",
+    "body": "ウェブサイトのボタンの色を赤にするか、青にするか。そんな改善のために、膨大な時間とコストをかけてA/Bテストを繰り返していませんか？もはや、運任せのテストは時代遅れです。今回紹介するのは、Amazon Bedrockを活用し、AIがユーザー一人ひとりの「文脈」を読み解いて最適な選択肢を提示する、まさに次世代のA/Bテストエンジンを自ら構築する画期的な手法です。あなたのビジネスを、データドリブンからAIドリブンへと進化させる時が来ました。\n\nこの手法の心臓部にあるのは、生成AIサービスであるAmazon Bedrockです。従来のA/Bテストが、全てのユーザーを等しく扱い、無作為にA案とB案を振り分けていたのに対し、このエンジンは全く異なるアプローチを取ります。ユーザーの過去の購買履歴、閲覧ページ、滞在時間、さらには時間帯やデバイスといった膨大な「コンテキスト」をリアルタイムで分析。その上で、Bedrockが「このユーザーには、おそらくA案の方が響くだろう」とインテリジェントに判断し、最適なバリアントを動的に割り当てるのです。この一連の処理は、コンテナ管理サービスのAmazon Elastic Container Service上でスケーラブルに実行され、ユーザーデータは高速なNoSQLデータベースであるAmazon DynamoDBに格納されます。さらに、Model Context Protocolという規約を用いることで、AIモデルとアプリケーション間の連携が驚くほどスムーズになり、より複雑なシナリオにも柔軟に対応できる拡張性を備えています。これは単なるツールではなく、テストの思想そのものを変革するアーキテクチャなのです。\n\nこのAI駆動のテストエンジンが活躍する場面は無限大です。例えば、大規模なECサイト。新規顧客には送料無料をアピールするバナーを、リピーターには限定クーポンを提示するなど、顧客セグメントごとに最適化されたクリエイティブを自動で出し分け、コンバージョン率を最大化できます。また、SaaSプロダクトのオンボーディングにおいても、ユーザーの操作ログを分析し、つまずいているポイントをAIが検知。最適なヘルプコンテンツを適切なタイミングで表示させるといった、極めてパーソナルな体験を提供することが可能になります。もはや、万人に向けた一つの正解を探す時代は終わったのです。\n\nこの強力なエンジンを構築するのに、特別なライセンス費用は必要ありません。料金は、Amazon BedrockやECS、DynamoDBなど、利用したAWSサービスの分だけ支払う従量課金制です。多くのサービスには無料利用枠が用意されているため、小規模なテストから気軽に始めることができます。導入方法は、AWSの公式ブログで公開されている詳細なチュートリアルとソースコードを参照するだけ。今すぐあなたのアカウントで、未来のテスト環境をその手で構築してみてください。\n\nこれは、単なるA/Bテストの効率化ではありません。ユーザー一人ひとりと向き合い、最適な体験を提供するという、マーケティングの理想を技術で実現する試みです。推測に頼るのではなく、データとAIの力で確信を持って改善を進める。その第一歩を、今日踏み出しましょう。",
+    "source": "Aws Ml",
+    "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-a-b-testing-engine-using-amazon-bedrock/",
+    "tags": [
+      "Advanced (300)",
+      "Amazon Bedrock",
+      "Amazon Bedrock Guardrails",
+      "Amazon DynamoDB",
+      "Amazon Elastic Container Service"
+    ],
+    "publishedAt": "2026-06-04",
+    "imagePrompt": "A diverse team of marketing professionals in a modern, sunlit office, intently analyzing a large digital dashboard. The screen displays a complex, dynamic interface of an AI-powered A/B testing engine, with real-time user segmentation graphs and branching user journey visualizations. The team members are engaged in a lively discussion, pointing at specific data points, their faces illuminated by the screen's glow. The scene captures a moment of data-driven discovery and strategic planning. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_7b62ff468dbe_1780540134.jpg"
+  },
+  {
     "id": "v_40e5b5044e8d_1780530574",
     "title": "そのAIエージェント、本番投入する勇気ある？ AWS発『Strands Evals』で評価の常識を覆せ！",
     "summary": "そのAIエージェント、本番投入する勇気ある？ AWS発『Strands Evals』で評価の常識を覆せ！",
