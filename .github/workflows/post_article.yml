@@ -1,10 +1,8 @@
-name: 毎日3記事自動投稿
+name: 毎日1記事自動投稿
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # 日本時間 7:00 (UTC 22:00)
-    - cron: '0 0 * * *'    # 日本時間 9:00 (UTC 0:00)
-    - cron: '0 3 * * *'    # 日本時間 12:00 (UTC 3:00)
+    - cron: '0 0 * * *'    # 日本時間 9:00 (UTC 0:00) に起動、その後ランダム遅延
   workflow_dispatch:        # 手動実行ボタン
 
 jobs:
@@ -29,6 +27,12 @@ jobs:
 
       - name: 依存関係インストール
         run: pip install google-genai google-cloud-storage
+
+      - name: ランダム遅延（9:00〜13:00 JST のどこかで投稿）
+        run: |
+          DELAY=$((RANDOM % 14400))
+          echo "遅延: ${DELAY}秒 ($(echo "$DELAY / 60" | bc)分後に投稿)"
+          sleep $DELAY
 
       - name: 記事生成
         env:
