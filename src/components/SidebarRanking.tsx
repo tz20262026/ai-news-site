@@ -25,7 +25,7 @@ export default function SidebarRanking({ articles }: { articles: Article[] }) {
                 i === 2 ? "bg-orange-300 text-orange-900" :
                 "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
               }`}>{i + 1}</span>
-              <div className="flex gap-2 flex-1 min-w-0">
+              <div className="flex gap-2 flex-1 min-w-0 overflow-hidden">
                 <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0">
                   <Image
                     src={getArticleImageUrl(a)}
@@ -35,7 +35,7 @@ export default function SidebarRanking({ articles }: { articles: Article[] }) {
                     sizes="48px"
                   />
                 </div>
-                <p className="text-xs text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 leading-relaxed transition-colors">
+                <p className="text-xs text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-3 leading-snug transition-colors self-start">
                   {a.title}
                 </p>
               </div>

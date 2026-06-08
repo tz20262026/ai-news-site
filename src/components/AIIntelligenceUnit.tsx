@@ -192,9 +192,9 @@ export default function AIIntelligenceUnit() {
                     <div className="flex items-start gap-2">
                       <span className="text-xs font-bold text-white bg-emerald-600 px-1.5 py-0.5 rounded shrink-0">NEW</span>
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between gap-2">
+                        <div className="flex flex-col gap-0.5">
                           <span className="text-sm font-bold text-gray-900 dark:text-white">{tool.name}</span>
-                          <span className="text-xs text-gray-500 dark:text-gray-400 shrink-0">{tool.price}</span>
+                          <span className="text-xs text-gray-500 dark:text-gray-400 break-words">{tool.price}</span>
                         </div>
                         <p className="text-xs text-gray-600 dark:text-gray-400 mt-0.5 leading-relaxed">{tool.summary}</p>
                         {tool.isChallenging && tool.challengingTool && (
