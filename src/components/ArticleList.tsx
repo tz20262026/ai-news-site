@@ -270,12 +270,12 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
             <div className="absolute bottom-4 left-5 right-5">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded">注目</span>
+              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded shrink-0">注目</span>
                 {isNew(featured.publishedAt) && (
-                  <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse">NEW</span>
+                  <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse shrink-0">NEW</span>
                 )}
-                <span className="text-xs text-white/80">
+                <span className="text-xs text-white/80 min-w-0 truncate">
                   {getRelativeTime(featured.publishedAt)} · {featured.source}
                 </span>
               </div>
@@ -344,9 +344,9 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 </div>
               </div>
               <div className="p-4">
-                <div className="flex items-center justify-between text-xs text-gray-400 dark:text-gray-500 mb-1.5">
-                  <span>{getRelativeTime(article.publishedAt)} · {article.source}</span>
-                  <span>{getReadTime(article.body)}分</span>
+                <div className="flex items-center justify-between text-xs text-gray-400 dark:text-gray-500 mb-1.5 gap-2">
+                  <span className="min-w-0 truncate">{getRelativeTime(article.publishedAt)} · {article.source}</span>
+                  <span className="shrink-0">{getReadTime(article.body)}分</span>
                 </div>
                 <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug mb-1.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                   {article.title}

@@ -208,19 +208,19 @@ export default async function ArticlePage({ params }: Props) {
 
         <div className="p-6 sm:p-8">
           {/* メタ情報 */}
-          <div className="flex flex-wrap items-center gap-2 text-xs text-gray-400 dark:text-gray-500 mb-3">
-            <span>{getRelativeTime(article.publishedAt)}（{article.publishedAt}）</span>
-            <span>·</span>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400 dark:text-gray-500 mb-3">
+            <span className="shrink-0">{getRelativeTime(article.publishedAt)}（{article.publishedAt}）</span>
+            <span className="shrink-0">·</span>
             <a
               href={article.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors shrink-0"
             >
               {article.source} ↗
             </a>
-            <span>·</span>
-            <span>約{getReadTime(article.body)}分で読める</span>
+            <span className="shrink-0">·</span>
+            <span className="shrink-0">約{getReadTime(article.body)}分で読める</span>
           </div>
 
           {/* タイトル */}

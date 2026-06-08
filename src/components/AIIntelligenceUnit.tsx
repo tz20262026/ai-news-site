@@ -85,26 +85,17 @@ export default function AIIntelligenceUnit() {
   const seg = segments[activeTab];
 
   return (
-    <div className="mb-8 rounded-2xl border border-blue-200/60 dark:border-blue-800/50 overflow-hidden shadow-sm">
+    <div className="rounded-2xl border border-blue-200/60 dark:border-blue-800/50 overflow-hidden shadow-sm">
       {/* ヘッダー */}
-      <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="flex items-center gap-1.5 text-sm font-bold">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block" />
-            AIによる自律判定
-          </span>
-          <span className="text-xs text-blue-200/80">
-            {getTimeAgo(data.updatedAt)}更新
-          </span>
+      <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white gap-2">
+        <div className="flex items-center gap-1.5 min-w-0">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block shrink-0" />
+          <span className="text-sm font-bold truncate">AIによる自律判定</span>
+          <span className="text-xs text-blue-200/80 shrink-0">{getTimeAgo(data.updatedAt)}更新</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-blue-200/70 hidden sm:inline">
-            参照サイト {segments.reduce((n, s) => n + s.tools.length, 0)}件
-          </span>
-          <span className="text-xs font-bold bg-white/20 backdrop-blur-sm px-2.5 py-1 rounded-full">
-            AI&apos;s Choice
-          </span>
-        </div>
+        <span className="text-xs font-bold bg-white/20 backdrop-blur-sm px-2.5 py-1 rounded-full shrink-0">
+          AI&apos;s Choice
+        </span>
       </div>
 
       <div className="bg-gradient-to-br from-slate-50 to-blue-50/40 dark:from-gray-900 dark:to-blue-950/20">
