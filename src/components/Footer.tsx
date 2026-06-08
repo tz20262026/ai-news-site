@@ -21,6 +21,12 @@ export default function Footer() {
             RSS購読
           </a>
           <Link
+            href="/privacy"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            プライバシーポリシー
+          </Link>
+          <Link
             href="/tokushoho"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >

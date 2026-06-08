@@ -18,6 +18,7 @@ export async function GET() {
     .join("");
 
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/feed.xsl"?>
 <rss version="2.0">
   <channel>
     <title>AI News Japan</title>
