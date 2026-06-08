@@ -194,12 +194,13 @@ export default async function ArticlePage({ params }: Props) {
           <div className="absolute bottom-5 left-6 right-6">
             <div className="flex flex-wrap gap-2 mb-2">
               {article.tags.slice(0, 5).map((tag) => (
-                <span
+                <Link
                   key={tag}
-                  className="text-xs bg-white/20 backdrop-blur-sm text-white px-2.5 py-0.5 rounded-full border border-white/30"
+                  href={`/tags/${encodeURIComponent(tag)}`}
+                  className="text-xs bg-white/20 backdrop-blur-sm text-white px-2.5 py-0.5 rounded-full border border-white/30 hover:bg-white/35 transition-colors"
                 >
                   {tag}
-                </span>
+                </Link>
               ))}
             </div>
           </div>

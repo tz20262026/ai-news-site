@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Article } from "@/lib/articles";
@@ -148,9 +148,17 @@ function AIComparisonMiniCard() {
   );
 }
 
+const INITIAL_COUNT = 20;
+
 export default function ArticleList({ articles }: { articles: Article[] }) {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("latest");
+  const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
+
+  // フィルター変更時に件数リセット
+  useEffect(() => {
+    setVisibleCount(INITIAL_COUNT);
+  }, [search, selectedCategory]);
 
   const filtered = useMemo(() => {
     const normalize = (str: string) =>
@@ -170,7 +178,8 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
     });
   }, [articles, search, selectedCategory]);
 
-  const [featured, ...rest] = filtered;
+  const visible = filtered.slice(0, visibleCount);
+  const [featured, ...rest] = visible;
 
   return (
     <div>
@@ -282,9 +291,13 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             <div className="mt-3 flex flex-wrap gap-2 items-center justify-between">
               <div className="flex flex-wrap gap-1.5">
                 {cleanTags(featured.tags).slice(0, 4).map((tag) => (
-                  <span key={tag} className={`text-xs px-2 py-0.5 rounded-full font-medium ${tagColor(tag)}`}>
+                  <button
+                    key={tag}
+                    onClick={(e) => { e.preventDefault(); setSearch(tag); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className={`text-xs px-2 py-0.5 rounded-full font-medium cursor-pointer hover:opacity-80 transition-opacity ${tagColor(tag)}`}
+                  >
                     {tag}
-                  </span>
+                  </button>
                 ))}
               </div>
               <span className="text-xs text-gray-400 dark:text-gray-500">{getReadTime(featured.body)}分で読める</span>
@@ -294,7 +307,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
       )}
 
       {/* 記事グリッド */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5" id="article-grid">
         {rest.map((article, i) => (
           <React.Fragment key={article.id}>
             <Link
@@ -319,12 +332,13 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 <div className="absolute bottom-3 left-4 right-4">
                   <div className="flex flex-wrap gap-1">
                     {cleanTags(article.tags).slice(0, 2).map((tag) => (
-                      <span
+                      <button
                         key={tag}
-                        className="text-xs bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full font-medium border border-white/30"
+                        onClick={(e) => { e.preventDefault(); setSearch(tag); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                        className="text-xs bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full font-medium border border-white/30 hover:bg-white/30 transition-colors cursor-pointer"
                       >
                         {tag}
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -347,6 +361,19 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           </React.Fragment>
         ))}
       </div>
+
+      {/* もっと読むボタン */}
+      {filtered.length > visibleCount && (
+        <button
+          onClick={() => setVisibleCount((v) => v + 20)}
+          className="w-full mt-6 py-3.5 rounded-2xl border-2 border-blue-200 dark:border-blue-800 text-sm font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 transition-colors"
+        >
+          さらに20件読む
+          <span className="ml-2 text-xs font-normal text-gray-400 dark:text-gray-500">
+            （残り {filtered.length - visibleCount} 件）
+          </span>
+        </button>
+      )}
     </div>
   );
 }

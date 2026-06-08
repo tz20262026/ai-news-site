@@ -3,9 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleList from "@/components/ArticleList";
 import AIIntelligenceUnit from "@/components/AIIntelligenceUnit";
+import SidebarRanking from "@/components/SidebarRanking";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import AdUnit from "@/components/AdUnit";
 import { getArticleImageUrl } from "@/lib/articles";
 
-// microCMS からデータを取得する（ない場合はローカルデータにフォールバック）
 import { getAllArticles, adaptMicroCMSArticle } from "@/lib/microcms";
 import { allArticles as localArticles } from "@/lib/articles";
 
@@ -26,7 +28,6 @@ export const metadata: Metadata = {
   },
 };
 
-// 毎時キャッシュを再生成（ISR）
 export const revalidate = 3600;
 
 async function fetchArticles() {
@@ -47,7 +48,7 @@ export default async function Home() {
   return (
     <div>
       {/* ヒーローバナー */}
-      <div className="mb-7 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-indigo-950 dark:from-gray-900 dark:via-blue-950 dark:to-indigo-950 border border-blue-900/40 shadow-lg relative">
+      <div className="mb-7 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-indigo-950 border border-blue-900/40 shadow-lg relative">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.06)_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="relative px-5 py-6 sm:px-8 sm:py-8">
           <div className="flex items-center gap-2 mb-3">
@@ -67,17 +68,16 @@ export default async function Home() {
           </h1>
           <p className="text-sm text-blue-200/70 leading-relaxed max-w-lg">
             TechCrunch・VentureBeat など海外100媒体から毎日自動収集。
-            AIが自律的に精査した <strong className="text-white font-semibold">{articles.length}件</strong> の記事をお届け。
+            AIが自律的に精査した{" "}
+            <strong className="text-white font-semibold">{articles.length}件</strong>
+            {" "}の記事をお届け。
           </p>
         </div>
       </div>
 
-      {/* AIによる自律判定ユニット */}
-      <AIIntelligenceUnit />
-
       {/* 今日の注目セクション */}
       {todayArticles.length > 0 && (
-        <div className="mb-8 p-4 bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 rounded-2xl border border-blue-100/80 dark:border-blue-900/60">
+        <div className="mb-7 p-4 bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 rounded-2xl border border-blue-100/80 dark:border-blue-900/60">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-base">🔥</span>
             <h2 className="text-sm font-bold text-blue-700 dark:text-blue-400">今日の注目記事</h2>
@@ -108,7 +108,26 @@ export default async function Home() {
         </div>
       )}
 
-      <ArticleList articles={articles} />
+      {/* スマホ: AI判定ユニット */}
+      <div className="lg:hidden mb-6">
+        <AIIntelligenceUnit />
+      </div>
+
+      {/* 2カラムグリッド（PC: 記事＋サイドバー） */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_288px] gap-6 items-start">
+        {/* メイン: 記事一覧 */}
+        <div>
+          <ArticleList articles={articles} />
+        </div>
+
+        {/* サイドバー（PCのみ sticky） */}
+        <aside className="hidden lg:flex flex-col gap-4 sticky top-[4.5rem] self-start">
+          <AIIntelligenceUnit />
+          <SidebarRanking articles={articles} />
+          <NewsletterSignup />
+          <AdUnit slot="2345678901" />
+        </aside>
+      </div>
     </div>
   );
 }

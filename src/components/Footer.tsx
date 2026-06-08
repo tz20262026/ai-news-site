@@ -8,7 +8,7 @@ export default function Footer() {
           <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded">AI</span>
           <span className="text-white font-semibold">News Japan</span>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 justify-center sm:justify-end">
           <a
             href="/feed.xml"
             target="_blank"
@@ -20,6 +20,18 @@ export default function Footer() {
             </svg>
             RSS購読
           </a>
+          <Link
+            href="/tools"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            AIツール一覧
+          </Link>
+          <Link
+            href="/tags"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            タグ一覧
+          </Link>
           <Link
             href="/privacy"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"

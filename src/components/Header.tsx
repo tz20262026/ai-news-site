@@ -18,6 +18,7 @@ export default function Header() {
           </span>
         </Link>
         <nav className="flex items-center gap-1 text-sm text-gray-400">
+          <Link href="/tools" className="hover:text-white transition-colors px-3 py-2 hidden sm:block">ツール一覧</Link>
           <Link href="/about" className="hover:text-white transition-colors px-3 py-2 hidden sm:block">About</Link>
           <a
             href="/feed.xml"
