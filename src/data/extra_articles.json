@@ -2634,42 +2634,6 @@
     "imageUrl": "https://picsum.photos/seed/v_33ce235b4610_1774348414/800/420"
   },
   {
-    "id": "v_19e57dedde2c_1774333033",
-    "title": "来るべき未来に備えよ！Microsoftがチームごと飲み込んだ天才集団「Cove」、その衝撃のビジョンを徹底解剖。",
-    "summary": "来るべき未来に備えよ！Microsoftがチームごと飲み込んだ天才集団「Cove」、その衝撃のビジョンを徹底解剖。",
-    "body": "あなたのチームは、今日も無数のツールに散らばった情報を探すのに貴重な時間を費やしていないだろうか。チャット、メール、クラウドストレージ、タスク管理。情報がサイロ化し、本当に重要な議論や決定が埋もれていく。この現代の働き方が抱える根深い課題",
-    "source": "TechCrunch",
-    "sourceUrl": "https://techcrunch.com/2026/03/18/microsoft-hires-the-team-of-sequioa-backed-ai-collaboration-platform-cove/",
-    "tags": [
-      "AI",
-      "Apps",
-      "Startups",
-      "collaboration",
-      "Microsoft"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_19e57dedde2c_1774333033/800/420"
-  },
-  {
-    "id": "v_2768a9dac08f_1774329363",
-    "title": "もはや魔法。TikTokの「無限ループ」をあなたのアプリに実装する悪魔的AI、Sequen上陸",
-    "summary": "もはや魔法。TikTokの「無限ループ」をあなたのアプリに実装する悪魔的AI、Sequen上陸",
-    "body": "TikTokやYouTubeショートを開くと、なぜか次々と好みの動画が表示され、気づけば時間が溶けている。多くの人がそんな経験を持つだろう。この「ユーザーを虜にする」魔法の正体は、個人の",
-    "source": "TechCrunch",
-    "sourceUrl": "https://techcrunch.com/2026/03/18/sequen-snags-16m-to-bring-tiktok-style-personalization-tech-to-any-consumer-company/",
-    "tags": [
-      "AI",
-      "Fundraising",
-      "Startups",
-      "Venture",
-      "personalization"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_2768a9dac08f_1774329363/800/420"
-  },
-  {
     "id": "v_a9284cd4c888_1774307101",
     "title": "プロンプトがUIになる日。業務ソフトを「会話」で操るスタートアップの野望",
     "summary": "まるで魔法の呪文のように、プロンプト一つで複数の業務システムを横断操作する革新的なプラットフォームが登場。面倒なデータ抽出やレポート作成が、チャットでの指示だけで完了する未来がすぐそこに。これは単なる自動化ツールではなく、仕事のあり方そのものを変える「業務OS」の誕生です。",
@@ -2686,24 +2650,6 @@
     "publishedAt": "2026-03-18",
     "imagePrompt": "",
     "imageUrl": "https://picsum.photos/seed/v_a9284cd4c888_1774307101/800/420"
-  },
-  {
-    "id": "v_82e35ccaa1f9_1774248803",
-    "title": "あなたの「推しAI」は本当に最強か？真実を暴く『不正不可能な』AI評価戦争、ついに開幕！",
-    "summary": "あなたの「推しAI」は本当に最強か？真実を暴く『不正不可能な』AI評価戦争、ついに開幕！",
-    "body": "百花繚乱、まさに群雄割拠のAI戦国時代。次々と生まれる大規模言語モデルの奔流の中で、私たちは途方に暮れている。「一体、どの",
-    "source": "TechCrunch",
-    "sourceUrl": "https://techcrunch.com/video/the-leaderboard-you-cant-game-funded-by-the-companies-it-ranks/",
-    "tags": [
-      "Startups",
-      "AI",
-      "Benchmark",
-      "chatbot arena",
-      "Equity Video"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_82e35ccaa1f9_1774248803/800/420"
   },
   {
     "id": "v_4e25d5261dfc_1774244877",
@@ -2740,48 +2686,6 @@
     "publishedAt": "2026-03-18",
     "imagePrompt": "",
     "imageUrl": "https://picsum.photos/seed/v_3579ca5e3015_1774220211/800/420"
-  },
-  {
-    "id": "v_7caa29608d4f_1774159614",
-    "title": "思考のスピードを止めない。あなたのスマホに、Claude直通のホットラインを。",
-    "summary": "思考のスピードを止めない。あなたのスマホに、Claude直通のホットラインを。",
-    "body": "素晴らしいアイデアが閃いた瞬間、あるいは難解な課題に直面した時、すぐに思考のパートナーが欲しくなる。しかし、PCを立ち上げ、ブラウザを開き、AIサービスのサイトにログインする…その僅かな手数が、",
-    "source": "Product Hunt",
-    "sourceUrl": "https://www.producthunt.com/r/p/1101206?app_id=339",
-    "tags": [
-      "AI"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_7caa29608d4f_1774159614/800/420"
-  },
-  {
-    "id": "v_1bd39ec3f368_1774156357",
-    "title": "どこにいても、あなたのAIは掌の中に。自律エージェント開発の新時代を告げる監視ツール、ClawMetry Cloud。",
-    "summary": "どこにいても、あなたのAIは掌の中に。自律エージェント開発の新時代を告げる監視ツール、ClawMetry Cloud。",
-    "body": "自ら思考し、タスクを遂行する自律型AIエージェント。その開発は、もはや未来の夢物語ではなく、私たちの手の中にある現実だ。",
-    "source": "Product Hunt",
-    "sourceUrl": "https://www.producthunt.com/r/p/1101215?app_id=339",
-    "tags": [
-      "AI"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_1bd39ec3f368_1774156357/800/420"
-  },
-  {
-    "id": "v_38173a32c96e_1774133716",
-    "title": "GPUの限界を突破せよ！コーディング不要で誰でもAIモデルを爆速ファインチューニングできる「Unsloth Studio」降臨",
-    "summary": "GPUの限界を突破せよ！コーディング不要で誰でもAIモデルを爆速ファインチューニングできる「Unsloth Studio」降臨",
-    "body": "「自分だけの特化型AIを作りたいが、高性能なGPUは高すぎる」「専門的なプログラミング知識が壁となり、一歩を踏み出せない」。そんなAI",
-    "source": "Product Hunt",
-    "sourceUrl": "https://www.producthunt.com/r/p/1101264?app_id=339",
-    "tags": [
-      "AI"
-    ],
-    "publishedAt": "2026-03-18",
-    "imagePrompt": "",
-    "imageUrl": "https://picsum.photos/seed/v_38173a32c96e_1774133716/800/420"
   },
   {
     "id": "v_49d2cde9f68e_1774131066",
