@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-07T14:09:22.405152+09:00",
-  "aiJudgment": "新規参入はなく市場は静観。開発はClaude Code、クリエイティブはMidjourney v7が実用性でリード。Soraの登場が待たれる。",
+  "updatedAt": "2026-06-08T10:00:00.000000+09:00",
+  "aiJudgment": "OpenAI Codexがクラウド型コーディングエージェントとして本格参戦。Claude Codeとの2強対決が激化。Gemini 2.5 Proは推論で頭角を現し、事務効率化市場を席巻しつつある。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,52 @@
         "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "コーディングに特化しており、その精度と文脈理解能力は他の汎用モデルを凌駕する。開発者の生産性を直接的に向上させる点で今月の最強選択と評価。",
+      "reason": "OpenAI Codexが強力なライバルとして台頭したが、Claude Codeは長大なコンテキスト理解・マルチファイル編集・エラー自己修復の総合力で依然リード。Codexはシンプルなタスクに強く、用途によって使い分けが進む。",
       "tools": [
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "API利用料/プラン依存",
-          "newFeature": "より高度なコード生成とデバッグ支援",
+          "price": "API利用料 / Proプラン",
+          "newFeature": "Opus 4.8 / Sonnet 4.6 対応・並列エージェント強化",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Anthropic社によるコーディング特化AI。高い精度と文脈理解が特徴。"
+          "summary": "Anthropic社のCLI型コーディングAI。マルチファイル編集・バグ自己修復・GitHub連携が強力。"
+        },
+        {
+          "id": "codex-openai",
+          "name": "Codex（OpenAI）",
+          "price": "ChatGPT Pro / API利用料",
+          "newFeature": "クラウド型エージェント・GitHub連携・並列タスク実行",
+          "rating": 5,
+          "badge": "急上昇",
+          "summary": "OpenAIのクラウド動作コーディングエージェント。リポジトリ丸ごと理解しPR作成まで自律実行。Claude Codeの最強ライバル。"
+        },
+        {
+          "id": "cursor",
+          "name": "Cursor",
+          "price": "無料プランあり / Pro $20〜",
+          "newFeature": "Max モード（GPT-4o / Claude Sonnet 切替）搭載",
+          "rating": 4,
+          "badge": null,
+          "summary": "VS Code派生のAIエディタ。コード補完・チャット・インライン編集を一体化。国内開発者にも人気急上昇。"
+        },
+        {
+          "id": "github-copilot",
+          "name": "GitHub Copilot",
+          "price": "個人 $10/月〜",
+          "newFeature": "Copilot Workspace でブランチ〜PRを自動生成",
+          "rating": 4,
+          "badge": null,
+          "summary": "GitHubに統合されたAIコーディング支援。IDE補完からコードレビューまで幅広くカバー。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ/プラン依存",
+          "price": "要問い合わせ / プラン依存",
           "newFeature": "自律的なタスク実行能力の向上",
-          "rating": 4,
+          "rating": 3,
           "badge": null,
-          "summary": "開発環境内で自律的にコード修正やタスクを実行するエージェント。"
-        },
-        {
-          "id": "claude-api",
-          "name": "Claude (API)",
-          "price": "API利用料",
-          "newFeature": "最新モデル(Opus/Sonnet)提供",
-          "rating": 4,
-          "badge": null,
-          "summary": "汎用性の高い対話型AI。API経由で様々なアプリに組み込み可能。"
+          "summary": "ブラウザ完結型開発環境で自律的にコード修正・デプロイまで実行するエージェント。"
         }
       ]
     },
@@ -46,19 +64,46 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude (API)",
+        "name": "Gemini 2.5 Pro",
         "tagline": "今月の最強選択"
       },
-      "reason": "長文処理能力と汎用性の高さは事務作業の自動化に絶大な効果を発揮。API連携で既存システムを容易に強化できる点も高評価。",
+      "reason": "100万トークンのコンテキストウィンドウと最高水準の推論力により、大量の書類処理・分析・要約タスクで圧倒的なコスパを発揮。Google Workspaceとのシームレス連携も強み。",
       "tools": [
         {
-          "id": "claude-api-prod",
-          "name": "Claude (API)",
-          "price": "API利用料",
-          "newFeature": "最新モデルによる長文処理能力向上",
+          "id": "gemini-25-pro",
+          "name": "Gemini 2.5 Pro",
+          "price": "Gemini Advanced $19.99/月 / API",
+          "newFeature": "Deep Research・100万トークン対応・Google連携強化",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "長文読解や要約に優れ、議事録作成や資料分析を自動化。"
+          "summary": "Googleの最新フラッグシップモデル。長文処理・推論・Google Workspaceとの統合で事務自動化に最適。"
+        },
+        {
+          "id": "gpt4o",
+          "name": "GPT-4o",
+          "price": "ChatGPT Plus $20/月 / API",
+          "newFeature": "音声・画像・文書をリアルタイムで統合処理",
+          "rating": 5,
+          "badge": null,
+          "summary": "OpenAIのマルチモーダルモデル。テキスト・音声・画像を横断して処理し、幅広い業務を効率化。"
+        },
+        {
+          "id": "claude-api-prod",
+          "name": "Claude 3.5 / 4（API）",
+          "price": "API利用料",
+          "newFeature": "Opus 4.8 で長文理解・倫理判断が大幅向上",
+          "rating": 4,
+          "badge": null,
+          "summary": "長文読解・要約に優れ、議事録作成や資料分析を高精度に自動化。API連携で既存システムへ容易に組込み。"
+        },
+        {
+          "id": "perplexity-pro",
+          "name": "Perplexity Pro",
+          "price": "$20/月",
+          "newFeature": "Deep Research モードでレポート自動生成",
+          "rating": 4,
+          "badge": null,
+          "summary": "リアルタイム検索 × AIで常に最新情報をもとに回答。調査・リサーチ業務の速度を10倍に。"
         }
       ]
     },
@@ -70,29 +115,127 @@
         "name": "Midjourney v7",
         "tagline": "今月の最強選択"
       },
-      "reason": "Soraは期待が高いがまだ一般利用不可。一方、Midjourney v7は既に利用可能で、画像生成の品質と安定性で他の追随を許さない。実用性で今月の最強。",
+      "reason": "Midjourney v7はパーソナライズ機能と一貫性向上で商用利用での信頼性が高い。OpenAI GPT-4oの画像生成（DALL-E 4相当）も急追しており、テキスト組み込み画像ではGPT-4oが逆転する場面も。",
       "tools": [
         {
           "id": "midjourney-v7",
           "name": "Midjourney v7",
-          "price": "サブスクリプション",
-          "newFeature": "プロンプト追従性と一貫性の向上",
+          "price": "Basic $10/月〜",
+          "newFeature": "パーソナライズ機能・一貫性向上・スタイル学習",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高品質な画像生成AIの最新版。よりリアルで芸術的な表現が可能に。"
+          "summary": "高品質画像生成AIの最高峰。プロンプト追従性・芸術性・商用品質で他の追随を許さない。"
+        },
+        {
+          "id": "gpt4o-image",
+          "name": "GPT-4o 画像生成",
+          "price": "ChatGPT Plus $20/月",
+          "newFeature": "テキスト正確描写・多段階編集・リアル合成",
+          "rating": 5,
+          "badge": "急上昇",
+          "summary": "GPT-4oに統合された画像生成機能。テキストの正確な描画と会話で繰り返し編集できる点が革命的。"
         },
         {
           "id": "sora-openai",
-          "name": "Sora (OpenAI)",
-          "price": "未定/限定アクセス",
-          "newFeature": "一般公開に向けた準備中",
+          "name": "Sora（OpenAI）",
+          "price": "ChatGPT Pro $200/月",
+          "newFeature": "最大20秒・1080p動画を生成可能に",
           "rating": 4,
           "badge": null,
-          "summary": "テキストから高品質で長尺の動画を生成する革新的なAIモデル。"
+          "summary": "テキストから高品質な動画を生成。映像制作・広告・SNSコンテンツ制作の自動化に注目。"
+        },
+        {
+          "id": "kling-ai",
+          "name": "Kling AI",
+          "price": "無料プランあり / Pro $8/月〜",
+          "newFeature": "Kling 2.0 で動画品質・動作自然さが大幅向上",
+          "rating": 4,
+          "badge": null,
+          "summary": "中国発の動画生成AI。コスパの高さとリアルな動き表現で急速にシェアを拡大中。"
+        }
+      ]
+    },
+    {
+      "id": "reasoning",
+      "label": "推論・研究",
+      "icon": "brain",
+      "winner": {
+        "name": "o3（OpenAI）",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "数学・コーディング・科学的推論のベンチマークで人間専門家レベルを突破。複雑な問題解決や研究支援では現時点で最高峰の性能を誇る。",
+      "tools": [
+        {
+          "id": "o3-openai",
+          "name": "o3（OpenAI）",
+          "price": "ChatGPT Pro $200/月 / API",
+          "newFeature": "数学・コード・科学推論でSoTA達成",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "OpenAIの最強推論モデル。段階的な思考連鎖で複雑な数学・科学・コーディング問題を解決。"
+        },
+        {
+          "id": "gemini-25-thinking",
+          "name": "Gemini 2.5 Flash Thinking",
+          "price": "無料 / API",
+          "newFeature": "思考過程の可視化・高速推論",
+          "rating": 5,
+          "badge": null,
+          "summary": "Googleの推論特化モデル。o3に匹敵する推論力をフラッシュ速度で提供。コスパ最強クラス。"
+        },
+        {
+          "id": "claude-opus48",
+          "name": "Claude Opus 4.8",
+          "price": "Claude Max / API",
+          "newFeature": "拡張思考モード・倫理的推論・長期記憶",
+          "rating": 4,
+          "badge": null,
+          "summary": "Anthropicの最上位モデル。深い倫理判断と長期的文脈理解が必要な複雑タスクに最適。"
+        },
+        {
+          "id": "grok3",
+          "name": "Grok 3（xAI）",
+          "price": "X Premium+ / API",
+          "newFeature": "DeepSearch でリアルタイムX（旧Twitter）情報を統合",
+          "rating": 4,
+          "badge": null,
+          "summary": "xAI（イーロン・マスク）開発。X上の最新情報をリアルタイムで取り込む独自の強みを持つ。"
         }
       ]
     }
   ],
-  "newToolsToday": [],
-  "alerts": []
+  "newToolsToday": [
+    {
+      "name": "Codex CLI（OpenAI）",
+      "summary": "ターミナルから直接動くOpenAIのコーディングエージェント。Claude Codeと同じコンセプトで、GPT-4o/o3をバックエンドに使用。オープンソースで無料利用可能。",
+      "category": "開発",
+      "price": "OSS（無料）/ API利用料別",
+      "discoveredAt": "2026-06-08T10:00:00.000000+09:00",
+      "isChallenging": true,
+      "challengingTool": "Claude Code"
+    },
+    {
+      "name": "NotebookLM Plus（Google）",
+      "summary": "Googleのノートブック型AIが法人向け強化版を提供。PDF・動画・音声を横断的に理解し、社内ドキュメント管理・分析を自動化。",
+      "category": "事務効率化",
+      "price": "Google One AI Premium / 法人プラン",
+      "discoveredAt": "2026-06-08T10:00:00.000000+09:00",
+      "isChallenging": false,
+      "challengingTool": null
+    }
+  ],
+  "alerts": [
+    {
+      "alertType": "challenge",
+      "newTool": "Codex（OpenAI）",
+      "existingTool": "Claude Code",
+      "message": "OpenAI Codexがクラウド型コーディングエージェントとして正式リリース。GitHub連携・並列タスク実行でClaude Codeに真っ向から挑戦。2強対決が本格化。"
+    },
+    {
+      "alertType": "challenge",
+      "newTool": "Gemini 2.5 Pro",
+      "existingTool": "GPT-4o",
+      "message": "Gemini 2.5 ProがLMSYSベンチマークでGPT-4oを抜き首位に浮上。長文処理・推論の両面でOpenAIを逆転する場面が増加。"
+    }
+  ]
 }
