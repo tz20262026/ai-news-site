@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_77b8afbc1579_1780884886",
+    "title": "忘れっぽいAIは、まるで僕らの脳だ。ADHDの特性から生まれた「記憶の足場」が、AIと人間の未来を書き換える。",
+    "summary": "忘れっぽいAIは、まるで僕らの脳だ。ADHDの特性から生まれた「記憶の足場」が、AIと人間の未来を書き換える。",
+    "body": "人工知能との対話で「あれ、さっきの指示を忘れていないか？」と感じた経験はないだろうか。長文のプロンプトを与えたはずが、なぜか重要な部分を無視して回答を生成してくる。このAIの奇妙な「物忘れ」、実は注意欠陥・多動性障害、いわゆるADHDの脳が情報を処理するプロセスと驚くほど似ているという発見があった。この人間とAIに共通する課題に、ある開発者が真っ向から挑んでいる。彼が構築したのは、単なるツールではない。AIと人間の両方のために、思考と記憶の「足場」を組むという、全く新しい概念だ。\n\nこのプロジェクトの核心は、大規模言語モデルが抱える「コンテキストの忘却」という問題を解決するための「足場（Scaffolding）」という考え方にある。スタンフォード大学が発表した「Lost in the Middle」という研究では、AIは長い文章の冒頭や末尾の指示は比較的覚えているものの、中間部分の指示は見失いがちで、性能が三十パーセント以上も低下することが示されている。まるで集中力が途切れてしまうかのように、AIは文脈の途中で重要な情報を取りこぼしてしまうのだ。このツールは、そうしたAIの弱点を補うために設計された。具体的には、対話の履歴や重要な指示を構造化し、AIが常にタスクの全体像と現在地を把握できるようにサポートする。複雑な命令を小さなステップに分解し、一つずつ着実に実行させることで、指示の抜け漏れを防ぐ。これは、単にプロンプトを工夫するのとは次元が違う。AIの思考プロセスそのものに寄り添い、安定したパフォーマンスを引き出すための補助骨格を提供する、革命的なアプローチなのである。そして何より素晴らしいのは、この試みがオープンソースで公開されていることだ。世界中の開発者がこの思想に共鳴し、改良に参加できる未来が待っている。\n\nこの「記憶の足場」は、あらゆるシーンで私たちの強力なパートナーとなり得る。例えば、フリーランスのライターや研究者が、膨大な資料を読み込ませて長大なレポートを作成する際、重要な論点や引用元をAIが忘れることなく一貫した文章を生成してくれるだろう。プロジェクトマネージャーにとっては、複雑な要件が絡み合う開発タスクを分解し、進捗を管理するための頼れる秘書になる。もちろん、個人の日常においても、学習計画の立案や日々のタスク管理など、注意が散漫になりがちな作業を最後までやり遂げるための強力なサポーターとして活躍するはずだ。\n\nこの画期的なシステムはオープンソースプロジェクトとして開発が進められており、誰でも無料で利用を開始できる。専門的な知識を持つ開発者であれば、公開されているソースコードを手元の環境に導入し、自らのニーズに合わせて自由にカスタマイズすることが可能だ。GitHubなどのプラットフォームでプロジェクトを探し、その思想に触れるところから始めてみよう。セットアップには少し手間がかかるかもしれないが、それ以上に大きな可能性と自由が手に入る。\n\nこのツールは、AIの弱点を人間の特性と重ね合わせ、その両方をテクノロジーで補おうという、深い人間理解から生まれている。それは単なる生産性向上のための道具ではなく、私たちとAIの新しい共生関係を築くための哲学的な試みだ。さあ、あなたもこの知的な冒険に参加し、未来の働き方を自らの手で創造してみてはいかがだろうか。",
+    "source": "Reddit Artificial",
+    "sourceUrl": "https://www.reddit.com/r/artificial/comments/1rwkelg/llms_forget_instructions_the_same_way_adhd_brains/",
+    "tags": [
+      "artificial"
+    ],
+    "publishedAt": "2026-06-08",
+    "imagePrompt": "A creative professional stands in front of a large whiteboard in a modern, sunlit office. One side of the whiteboard is covered in a chaotic mess of colorful sticky notes with scattered ideas. The professional is thoughtfully moving a single sticky note from the chaotic side to the other side, where the notes are being neatly organized into a structured flowchart, representing the process of building a mental 'scaffolding'. The focus is on the hands and the whiteboard, conveying a sense of clarity emerging from chaos. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_77b8afbc1579_1780884886.jpg"
+  },
+  {
     "id": "v_4f4f4f32453f_1780873900",
     "title": "AIの進化に潜む影、その心理的影響を追跡する衝撃のデータベースが、今、我々に警鐘を鳴らす。",
     "summary": "AIの進化に潜む影、その心理的影響を追跡する衝撃のデータベースが、今、我々に警鐘を鳴らす。",
