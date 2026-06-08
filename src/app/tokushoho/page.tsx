@@ -42,7 +42,7 @@ const rows: { label: string; value: React.ReactNode }[] = [
         ただし、サービスに重大な不具合があった場合は、
         <a
           href="mailto:tz77772014@gmail.com"
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 hover:underline break-all"
         >
           tz77772014@gmail.com
         </a>{" "}
@@ -54,7 +54,7 @@ const rows: { label: string; value: React.ReactNode }[] = [
 
 export default function TokushohoPage() {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto px-4 sm:px-0">
       <div className="mb-6">
         <Link
           href="/"
@@ -64,26 +64,26 @@ export default function TokushohoPage() {
         </Link>
       </div>
 
-      <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-8">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-5 sm:p-8">
         <h1 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
           特定商取引法に基づく表記
         </h1>
 
-        <table className="w-full text-sm leading-relaxed">
-          <tbody>
-            {rows.map(({ label, value }) => (
-              <tr
-                key={label}
-                className="border-t border-gray-100 dark:border-gray-800"
-              >
-                <th className="py-3 pr-4 text-left font-medium text-gray-600 dark:text-gray-400 whitespace-nowrap align-top w-36">
-                  {label}
-                </th>
-                <td className="py-3 text-gray-800 dark:text-gray-200">{value}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <dl className="divide-y divide-gray-100 dark:divide-gray-800 text-sm leading-relaxed">
+          {rows.map(({ label, value }) => (
+            <div
+              key={label}
+              className="py-3 flex flex-col sm:flex-row sm:gap-4"
+            >
+              <dt className="font-medium text-gray-600 dark:text-gray-400 sm:w-36 shrink-0 mb-1 sm:mb-0">
+                {label}
+              </dt>
+              <dd className="text-gray-800 dark:text-gray-200 break-words min-w-0">
+                {value}
+              </dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </div>
   );
