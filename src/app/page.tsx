@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "AI News Japan",
     description: "AIが自律的に精査した最新AIニュースを日本語で毎日お届け",
     type: "website",
-    url: "https://ai-news-site.vercel.app",
+    url: "https://ai-news-site-wheat.vercel.app",
   },
   twitter: {
     card: "summary_large_image",

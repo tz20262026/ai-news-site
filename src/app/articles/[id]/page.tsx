@@ -130,7 +130,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = await fetchArticleById(id);
   if (!article) return {};
   const imageUrl = getArticleImageUrl(article);
-  const canonicalUrl = `https://ai-news-site.vercel.app/articles/${id}`;
+  const canonicalUrl = `https://ai-news-site-wheat.vercel.app/articles/${id}`;
   return {
     title: article.title,
     description: article.summary,
@@ -251,7 +251,7 @@ export default async function ArticlePage({ params }: Props) {
           {/* シェアボタン */}
           <ShareButtons
             title={article.title}
-            url={`https://ai-news-site.vercel.app/articles/${article.id}`}
+            url={`https://ai-news-site-wheat.vercel.app/articles/${article.id}`}
           />
 
           {/* フッター */}
@@ -315,7 +315,7 @@ export default async function ArticlePage({ params }: Props) {
             description: article.summary,
             datePublished: article.publishedAt,
             dateModified: article.publishedAt,
-            url: `https://ai-news-site.vercel.app/articles/${article.id}`,
+            url: `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
             image: {
               "@type": "ImageObject",
               url: getArticleImageUrl(article),
@@ -325,12 +325,12 @@ export default async function ArticlePage({ params }: Props) {
             author: {
               "@type": "Organization",
               name: "AI News Japan",
-              url: "https://ai-news-site.vercel.app",
+              url: "https://ai-news-site-wheat.vercel.app",
             },
             publisher: {
               "@type": "Organization",
               name: "AI News Japan",
-              url: "https://ai-news-site.vercel.app",
+              url: "https://ai-news-site-wheat.vercel.app",
               logo: {
                 "@type": "ImageObject",
                 url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
@@ -340,7 +340,7 @@ export default async function ArticlePage({ params }: Props) {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://ai-news-site.vercel.app/articles/${article.id}`,
+              "@id": `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
             },
             keywords: article.tags.join(", "),
           }),
