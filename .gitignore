@@ -40,4 +40,19 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.vercel
+# playwright MCP
+.playwright-mcp/
+
+# ローカルDB
+*.db
+
+# Pythonキャッシュ
+scripts/__pycache__/
+**/__pycache__/
+*.pyc
+
+# ローカル生成画像（GCS管理のため不要）
+public/images/articles/
+
+# ローカルドキュメント
+*.docx
