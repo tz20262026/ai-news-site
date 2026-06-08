@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     template: "%s | AI News Japan",
   },
   description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
-  metadataBase: new URL("https://ai-news-site-wheat.vercel.app"),
+  metadataBase: new URL("https://ai-news-site.vercel.app"),
   alternates: {
-    canonical: "https://ai-news-site-wheat.vercel.app",
+    canonical: "https://ai-news-site.vercel.app",
   },
   openGraph: {
     siteName: "AI News Japan",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
     type: "website",
     locale: "ja_JP",
-    url: "https://ai-news-site-wheat.vercel.app",
+    url: "https://ai-news-site.vercel.app",
     images: [
       {
         url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
@@ -97,14 +97,14 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 name: "AI News Japan",
-                url: "https://ai-news-site-wheat.vercel.app",
+                url: "https://ai-news-site.vercel.app",
                 description: "海外の最新AIツール・ニュースを日本語でお届けするニュースサイト",
                 inLanguage: "ja",
                 potentialAction: {
                   "@type": "SearchAction",
                   target: {
                     "@type": "EntryPoint",
-                    urlTemplate: "https://ai-news-site-wheat.vercel.app/?q={search_term_string}",
+                    urlTemplate: "https://ai-news-site.vercel.app/?q={search_term_string}",
                   },
                   "query-input": "required name=search_term_string",
                 },
@@ -113,7 +113,7 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "AI News Japan",
-                url: "https://ai-news-site-wheat.vercel.app",
+                url: "https://ai-news-site.vercel.app",
                 logo: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
                 sameAs: [],
               },

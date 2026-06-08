@@ -46,16 +46,28 @@ export default async function Home() {
 
   return (
     <div>
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">最新のAIニュース</h1>
-        <div className="flex items-center gap-3 mt-1">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            海外から厳選した {articles.length} 件の記事
+      {/* ヒーローバナー */}
+      <div className="mb-7 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-indigo-950 dark:from-gray-900 dark:via-blue-950 dark:to-indigo-950 border border-blue-900/40 shadow-lg relative">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.06)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        <div className="relative px-5 py-6 sm:px-8 sm:py-8">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="flex items-center gap-1.5 text-xs font-bold text-emerald-400">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
+              毎日自動更新
+            </span>
             {latestDate && (
-              <span className="ml-2 text-gray-400 dark:text-gray-500">
-                更新：{latestDate.replace(/-/g, "/").replace(/\/0(\d)/g, "/$1")}
+              <span className="text-xs text-blue-300/60">
+                最終更新：{latestDate.replace(/-/g, "/").replace(/\/0(\d)/g, "/$1")}
               </span>
             )}
+          </div>
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-white leading-snug mb-2">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">AI</span>
+            {" "}の最前線を、日本語で。
+          </h1>
+          <p className="text-sm text-blue-200/70 leading-relaxed max-w-lg">
+            TechCrunch・VentureBeat など海外100媒体から毎日自動収集。
+            AIが自律的に精査した <strong className="text-white font-semibold">{articles.length}件</strong> の記事をお届け。
           </p>
         </div>
       </div>
