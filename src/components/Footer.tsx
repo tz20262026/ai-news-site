@@ -19,6 +19,12 @@ export default function Footer() {
             RSS購読
           </Link>
           <Link
+            href="/partners"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            パートナー
+          </Link>
+          <Link
             href="/tools"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
