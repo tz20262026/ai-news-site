@@ -108,7 +108,7 @@ function AIComparisonMiniCard() {
   const dateLabel = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
 
   return (
-    <div className="sm:col-span-2 rounded-xl border border-blue-200/60 dark:border-blue-800/40 overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 p-px">
+    <div className="sm:col-span-2 xl:col-span-3 rounded-xl border border-blue-200/60 dark:border-blue-800/40 overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 p-px">
       <div className="rounded-xl bg-white/95 dark:bg-gray-900/95 p-4">
         <div className="flex items-center gap-2 mb-3">
           <span className="flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400">
@@ -307,7 +307,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
       )}
 
       {/* 記事グリッド */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5" id="article-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5" id="article-grid">
         {rest.map((article, i) => (
           <React.Fragment key={article.id}>
             <Link
@@ -321,7 +321,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                   alt={article.title}
                   fill
                   className="object-cover article-image group-hover:scale-[1.04] transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 />
                 {isNew(article.publishedAt) && (
                   <span className="absolute top-2 right-2 text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse z-10">

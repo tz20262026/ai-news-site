@@ -171,7 +171,7 @@ export default function ToolsClient({ segments, updatedAt }: Props) {
   const activeSegment = segments.find((s) => s.id === activeTab) ?? segments[0];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-0">
+    <div className="max-w-5xl mx-auto px-4 sm:px-0">
       {/* ── ナビゲーション ── */}
       <div className="flex items-center gap-3 mb-5 flex-wrap">
         <Link

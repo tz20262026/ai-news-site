@@ -168,7 +168,7 @@ export default function AIIntelligenceUnit() {
                   </div>
                   <span className="text-xs font-medium text-gray-500 dark:text-gray-400 shrink-0">{tool.price}</span>
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{tool.summary}</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">{tool.summary}</p>
                 <div className="flex items-center gap-2 mt-1.5 flex-wrap">
                   <StarRating rating={tool.rating} />
                   <span className="text-xs text-emerald-600 dark:text-emerald-400">

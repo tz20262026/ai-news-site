@@ -65,7 +65,7 @@ export default async function TagPage({ params }: Props) {
   if (articles.length === 0) notFound();
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-0">
+    <div className="max-w-5xl mx-auto px-4 sm:px-0">
       {/* 戻るリンク */}
       <Link
         href="/"

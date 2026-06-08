@@ -60,7 +60,7 @@ export default function TagsPage() {
   const regularTags = tagCounts.filter((t) => t.count < 5);
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-0">
+    <div className="max-w-5xl mx-auto px-4 sm:px-0">
       {/* 戻るリンク */}
       <Link
         href="/"

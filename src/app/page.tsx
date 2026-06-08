@@ -114,7 +114,7 @@ export default async function Home() {
       </div>
 
       {/* 2カラムグリッド（PC: 記事＋サイドバー） */}
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_288px] gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8 items-start">
         {/* メイン: 記事一覧 */}
         <div>
           <ArticleList articles={articles} />

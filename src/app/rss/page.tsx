@@ -20,7 +20,7 @@ export default function RSSPage() {
   const articles = allArticles.slice(0, 10);
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-0">
+    <div className="max-w-3xl mx-auto px-4 sm:px-0">
       <div className="mb-6">
         <Link href="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
           ← 記事一覧に戻る
