@@ -231,7 +231,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
       {filtered.length === 0 && (
         <div className="text-center py-16 text-gray-400 dark:text-gray-500">
           <p className="text-4xl mb-3">🔍</p>
-          <p>{search ? `「${search}」に一致する記事が見つかりませんでした` : "この カテゴリーの記事はまだありません"}</p>
+          <p>{search ? `「${search}」に一致する記事が見つかりませんでした` : "このカテゴリーの記事はまだありません"}</p>
         </div>
       )}
 
