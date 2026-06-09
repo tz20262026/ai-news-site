@@ -15,6 +15,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "uc1EpOPB8-ZZ_x-_mTNsSRgzG9qJlOSV7T7HbxcJ0UI",
+  },
   title: {
     default: "AI News Japan — 海外AIツール最新情報",
     template: "%s | AI News Japan",
