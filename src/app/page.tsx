@@ -129,7 +129,7 @@ export default async function Home() {
           <AdUnit slot="2345678901" />
         </aside>
       </div>
+      <AffiliateSectionAiNews />
     </div>
-    <AffiliateSectionAiNews />
   );
 }
