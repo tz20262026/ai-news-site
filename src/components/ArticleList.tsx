@@ -291,13 +291,14 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             <div className="mt-3 flex flex-wrap gap-2 items-center justify-between">
               <div className="flex flex-wrap gap-1.5">
                 {cleanTags(featured.tags).slice(0, 4).map((tag) => (
-                  <button
+                  <Link
                     key={tag}
-                    onClick={(e) => { e.preventDefault(); setSearch(tag); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    href={`/tags/${encodeURIComponent(tag)}`}
+                    onClick={(e) => e.stopPropagation()}
                     className={`text-xs px-2 py-0.5 rounded-full font-medium cursor-pointer hover:opacity-80 transition-opacity ${tagColor(tag)}`}
                   >
-                    {tag}
-                  </button>
+                    #{tag}
+                  </Link>
                 ))}
               </div>
               <span className="text-xs text-gray-400 dark:text-gray-500">{getReadTime(featured.body)}分で読める</span>
@@ -332,13 +333,14 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 <div className="absolute bottom-3 left-4 right-4">
                   <div className="flex flex-wrap gap-1">
                     {cleanTags(article.tags).slice(0, 2).map((tag) => (
-                      <button
+                      <Link
                         key={tag}
-                        onClick={(e) => { e.preventDefault(); setSearch(tag); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                        href={`/tags/${encodeURIComponent(tag)}`}
+                        onClick={(e) => e.stopPropagation()}
                         className="text-xs bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full font-medium border border-white/30 hover:bg-white/30 transition-colors cursor-pointer"
                       >
-                        {tag}
-                      </button>
+                        #{tag}
+                      </Link>
                     ))}
                   </div>
                 </div>
