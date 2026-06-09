@@ -130,5 +130,6 @@ export default async function Home() {
         </aside>
       </div>
     </div>
+    <AffiliateSectionAiNews />
   );
 }
