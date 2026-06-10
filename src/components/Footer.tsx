@@ -103,6 +103,12 @@ export default function Footer() {
             NotebookLMガイド
           </Link>
           <Link
+            href="/grok-guide"
+            className="text-xs text-gray-300 hover:text-gray-200 transition-colors font-semibold"
+          >
+            Grokガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
