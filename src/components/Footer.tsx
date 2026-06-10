@@ -55,6 +55,12 @@ export default function Footer() {
             画像生成AIガイド
           </Link>
           <Link
+            href="/claude-guide"
+            className="text-xs text-orange-400 hover:text-orange-300 transition-colors font-semibold"
+          >
+            Claudeガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
