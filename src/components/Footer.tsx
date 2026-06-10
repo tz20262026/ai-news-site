@@ -85,6 +85,12 @@ export default function Footer() {
             Perplexityガイド
           </Link>
           <Link
+            href="/chatgpt-prompt-guide"
+            className="text-xs text-green-400 hover:text-green-300 transition-colors font-semibold"
+          >
+            ChatGPTプロンプト集
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
