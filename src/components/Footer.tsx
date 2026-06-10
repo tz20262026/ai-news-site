@@ -115,6 +115,12 @@ export default function Footer() {
             AI音楽生成ガイド
           </Link>
           <Link
+            href="/ai-coding-guide"
+            className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
+          >
+            AIコーディングガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
