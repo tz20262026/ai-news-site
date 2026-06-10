@@ -109,6 +109,12 @@ export default function Footer() {
             Grokガイド
           </Link>
           <Link
+            href="/ai-music-guide"
+            className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-semibold"
+          >
+            AI音楽生成ガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
