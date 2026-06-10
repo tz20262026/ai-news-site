@@ -125,6 +125,7 @@ export default async function Home() {
         <aside className="hidden lg:flex flex-col gap-4 sticky top-[4.5rem] self-start">
           <AIIntelligenceUnit />
           <SidebarRanking articles={articles} />
+          <AffiliateSectionAiNews />
           <NewsletterSignup compact />
           <AdUnit slot="2345678901" />
         </aside>
