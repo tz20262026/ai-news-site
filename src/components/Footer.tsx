@@ -73,6 +73,12 @@ export default function Footer() {
             Geminiガイド
           </Link>
           <Link
+            href="/copilot-guide"
+            className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+          >
+            Copilotガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
