@@ -79,6 +79,12 @@ export default function Footer() {
             Copilotガイド
           </Link>
           <Link
+            href="/perplexity-guide"
+            className="text-xs text-teal-400 hover:text-teal-300 transition-colors font-semibold"
+          >
+            Perplexityガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
