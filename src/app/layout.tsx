@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "AI News Japan — 海外AIツール最新情報",
     template: "%s | AI News Japan",
   },
-  description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
+  description: "海外の最新AIツール・ニュースを日本語でお届け。TechCrunch・VentureBeat・Wiredなど海外100媒体から毎日自動収集。ChatGPT・Gemini・Claude最新情報も網羅。無料で読める。",
   metadataBase: new URL("https://ai-news-site-wheat.vercel.app"),
   alternates: {
     canonical: "https://ai-news-site-wheat.vercel.app",
