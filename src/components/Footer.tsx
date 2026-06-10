@@ -91,6 +91,12 @@ export default function Footer() {
             ChatGPTプロンプト集
           </Link>
           <Link
+            href="/ai-video-guide"
+            className="text-xs text-red-400 hover:text-red-300 transition-colors font-semibold"
+          >
+            動画生成AIガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
