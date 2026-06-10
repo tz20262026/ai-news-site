@@ -8,6 +8,8 @@ on:
 jobs:
   post:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: コードを取得
@@ -52,4 +54,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/extra_articles.json scripts/data/vercel_posted_ids.log
           git diff --cached --quiet && echo "変更なし" || git commit -m "記事追加: $(date '+%Y-%m-%d %H:%M JST')"
+          git pull --rebase origin master
           git push
