@@ -67,6 +67,12 @@ export default function Footer() {
             AI文章生成ガイド
           </Link>
           <Link
+            href="/gemini-guide"
+            className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors font-semibold"
+          >
+            Geminiガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
