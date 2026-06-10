@@ -97,6 +97,12 @@ export default function Footer() {
             動画生成AIガイド
           </Link>
           <Link
+            href="/notebooklm-guide"
+            className="text-xs text-yellow-400 hover:text-yellow-300 transition-colors font-semibold"
+          >
+            NotebookLMガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
