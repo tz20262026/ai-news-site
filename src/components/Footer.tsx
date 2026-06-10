@@ -37,6 +37,12 @@ export default function Footer() {
             無料AIツール15選
           </Link>
           <Link
+            href="/ai-fukugyou"
+            className="text-xs text-green-400 hover:text-green-300 transition-colors font-semibold"
+          >
+            AI副業ガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
