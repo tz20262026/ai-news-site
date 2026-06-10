@@ -31,6 +31,12 @@ export default function Footer() {
             AIツール一覧
           </Link>
           <Link
+            href="/ai-tools-guide"
+            className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors font-semibold"
+          >
+            無料AIツール15選
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
