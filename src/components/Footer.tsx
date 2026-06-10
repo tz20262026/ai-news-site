@@ -127,6 +127,12 @@ export default function Footer() {
             AIプレゼン作成ガイド
           </Link>
           <Link
+            href="/ai-translation-guide"
+            className="text-xs text-cyan-300 hover:text-cyan-200 transition-colors font-semibold"
+          >
+            AI翻訳ツール比較ガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
