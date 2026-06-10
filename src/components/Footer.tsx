@@ -49,6 +49,12 @@ export default function Footer() {
             ChatGPT使い方ガイド
           </Link>
           <Link
+            href="/gazou-ai-guide"
+            className="text-xs text-purple-400 hover:text-purple-300 transition-colors font-semibold"
+          >
+            画像生成AIガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
