@@ -43,6 +43,12 @@ export default function Footer() {
             AI副業ガイド
           </Link>
           <Link
+            href="/chatgpt-guide"
+            className="text-xs text-yellow-400 hover:text-yellow-300 transition-colors font-semibold"
+          >
+            ChatGPT使い方ガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
