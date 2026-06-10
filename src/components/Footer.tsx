@@ -121,6 +121,12 @@ export default function Footer() {
             AIコーディングガイド
           </Link>
           <Link
+            href="/ai-presentation-guide"
+            className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+          >
+            AIプレゼン作成ガイド
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
