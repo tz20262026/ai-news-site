@@ -174,23 +174,36 @@ def main() -> int:
 
     client = genai.Client(vertexai=True, project=GCP_PROJECT, location=GCP_LOCATION)
 
-    # 記事テキスト生成
+    # 記事テキスト生成（最大3回リトライ）
     prompt = ARTICLE_PROMPT.format(
         name=tool.get("name", ""),
         url=tool.get("url", ""),
         description=tool.get("description", "（概要なし）"),
         tags=", ".join(tool.get("tags", [])) or "AI",
     )
-    response = client.models.generate_content(
-        model=MODEL_NAME,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            system_instruction=SYSTEM_INSTRUCTION,
-            temperature=0.8,
-            max_output_tokens=16384,
-        ),
-    )
-    raw_text = response.text.strip()
+    raw_text = ""
+    for attempt in range(3):
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION,
+                    temperature=0.8,
+                    max_output_tokens=16384,
+                ),
+            )
+            raw_text = response.text.strip()
+            break
+        except Exception as e:
+            wait = (attempt + 1) * 30
+            logger.warning(f"記事生成失敗 (試行 {attempt + 1}/3): {e}")
+            if attempt < 2:
+                logger.info(f"{wait}秒後に再試行...")
+                time.sleep(wait)
+            else:
+                logger.error("3回試行しても記事生成に失敗しました。")
+                return 1
     logger.info(f"生成文字数: {len(raw_text)}字")
 
     # セクション抽出
