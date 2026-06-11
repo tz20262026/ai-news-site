@@ -18,6 +18,7 @@ import {
 import ShareButtons from "@/components/ShareButtons";
 import ReadingProgress from "@/components/ReadingProgress";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import ArticleAffiliateBanner from "@/components/ArticleAffiliateBanner";
 import marketData from "@/data/ai_market_intelligence.json";
 
 export const revalidate = 3600;
@@ -249,6 +250,9 @@ export default async function ArticlePage({ params }: Props) {
 
           {/* 関連ツールのAI判定スコア */}
           <ArticleToolScore tags={article.tags} />
+
+          {/* 記事内アフィリエイトバナー */}
+          <ArticleAffiliateBanner tags={article.tags} />
 
           {/* シェアボタン */}
           <ShareButtons
