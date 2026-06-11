@@ -59,7 +59,7 @@ jobs:
           fi
           git commit -m "記事追加: $(date '+%Y-%m-%d %H:%M JST')"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin master && git push && echo "✅ プッシュ成功" && exit 0
+            git pull --rebase --autostash origin master && git push && echo "✅ プッシュ成功" && exit 0
             echo "⚠️ push失敗 (試行 $i/5)、$((i * 15))秒後に再試行..."
             sleep $((i * 15))
           done
