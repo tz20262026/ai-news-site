@@ -115,10 +115,6 @@ export default async function Home() {
         {/* メイン: 記事一覧 */}
         <div>
           <ArticleList articles={articles} />
-          {/* スマホ: AI判定ユニット（記事の下・コンパクト版） */}
-          <div className="lg:hidden mt-6">
-            <AIIntelligenceUnit compact />
-          </div>
         </div>
 
         {/* サイドバー（PCのみ sticky） */}
