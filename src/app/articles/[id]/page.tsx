@@ -19,91 +19,8 @@ import ShareButtons from "@/components/ShareButtons";
 import ReadingProgress from "@/components/ReadingProgress";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ArticleAffiliateBanner from "@/components/ArticleAffiliateBanner";
-import marketData from "@/data/ai_market_intelligence.json";
 
 export const revalidate = 3600;
-
-// ── ツール別キーワード（タグとのマッチ用）──────────────────────────────
-const TOOL_ALIASES: Record<string, string[]> = {
-  "claude code":   ["claude", "anthropic", "claude code"],
-  "claude (api)":  ["claude", "anthropic"],
-  "replit agent":  ["replit"],
-  "lovable":       ["lovable"],
-  "manus":         ["manus", "自律エージェント", "autonomous agent"],
-  "midjourney":    ["midjourney", "画像生成", "image generation", "画像"],
-  "midjourney v7": ["midjourney", "画像生成", "image generation", "画像"],
-  "sora (openai)": ["sora", "openai", "動画生成", "video generation"],
-};
-
-// ── 記事タグに関連するツールのAI判定スコア ──────────────────────────────
-function ArticleToolScore({ tags }: { tags: string[] }) {
-  const lowerTags = tags.map((t) => t.toLowerCase());
-
-  const matched: { segLabel: string; name: string; rating: number; price: string; newFeature: string }[] = [];
-
-  for (const segment of marketData.segments) {
-    for (const tool of segment.tools) {
-      const toolKey = tool.name.toLowerCase().replace(/\s+v\d.*$/, "");
-      const aliases = TOOL_ALIASES[toolKey] ?? [toolKey];
-      const hits = lowerTags.some((tag) =>
-        aliases.some((alias) => tag.includes(alias) || alias.includes(tag))
-      );
-      if (hits) {
-        matched.push({
-          segLabel: segment.label,
-          name: tool.name,
-          rating: tool.rating,
-          price: tool.price,
-          newFeature: tool.newFeature,
-        });
-      }
-    }
-  }
-
-  // マッチがなければ何も表示しない
-  if (matched.length === 0) return null;
-
-  return (
-    <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700/60">
-      <div className="flex items-center gap-2 mb-3">
-        <span className="flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse inline-block" />
-          この記事に関連するツールのAI判定
-        </span>
-      </div>
-      <div className="flex flex-col gap-2">
-        {matched.slice(0, 2).map((tool, i) => (
-          <div
-            key={i}
-            className="flex items-start gap-3 p-3 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40"
-          >
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-xs font-bold text-white bg-blue-600 px-1.5 py-0.5 rounded">
-                  {tool.segLabel}
-                </span>
-                <span className="text-sm font-semibold text-gray-900 dark:text-white">
-                  {tool.name}
-                </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400 ml-auto">
-                  {tool.price}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 mt-1.5">
-                <span className="text-xs tracking-tight">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <span key={s} className={s <= tool.rating ? "text-yellow-400" : "text-gray-300 dark:text-gray-600"}>★</span>
-                  ))}
-                </span>
-                <span className="text-xs text-emerald-600 dark:text-emerald-400">↑ {tool.newFeature}</span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -247,9 +164,6 @@ export default async function ArticlePage({ params }: Props) {
               ) : null
             )}
           </div>
-
-          {/* 関連ツールのAI判定スコア */}
-          <ArticleToolScore tags={article.tags} />
 
           {/* 記事内アフィリエイトバナー */}
           <ArticleAffiliateBanner tags={article.tags} />
