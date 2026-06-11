@@ -4,35 +4,37 @@ import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 export const metadata: Metadata = {
   title:
-    "ChatGPT使い方完全ガイド2026年版【初心者〜上級者・無料プランで使える全機能】",
+    "ChatGPT完全ガイド2026年【始め方・使い方・プロンプト・無料 vs 有料の違い】",
   description:
-    "ChatGPT無料・有料の使い方を完全解説。日本語での質問コツ、プロンプトテクニック、副業・仕事効率化への活用法まで2026年版で網羅。",
+    "ChatGPT 4oの始め方・無料版と有料版（Plus）の違い・ビジネス副業勉強への活用法・プロンプトのコツ・GPTsの使い方を2026年版で完全解説。",
   keywords: [
     "ChatGPT 使い方",
-    "ChatGPT 無料",
-    "ChatGPT 日本語",
+    "ChatGPT 始め方",
+    "ChatGPT 無料 有料 違い",
     "ChatGPT プロンプト",
-    "ChatGPT 副業",
-    "ChatGPT 仕事効率化",
+    "ChatGPT Plus",
     "GPT-4o 使い方",
+    "GPTs 使い方",
+    "ChatGPT 副業",
+    "ChatGPT ビジネス活用",
     "生成AI 初心者",
   ],
   alternates: {
     canonical: "https://ai-news-site-wheat.vercel.app/chatgpt-guide",
   },
   openGraph: {
-    title: "ChatGPT使い方完全ガイド2026年版【初心者〜上級者・無料プランで使える全機能】",
+    title: "ChatGPT完全ガイド2026年【始め方・使い方・プロンプト・無料 vs 有料の違い】",
     description:
-      "ChatGPT無料・有料の使い方を完全解説。日本語での質問コツ、プロンプトテクニック、副業・仕事効率化への活用法まで2026年版で網羅。",
+      "ChatGPT 4oの始め方・無料版と有料版（Plus）の違い・ビジネス副業勉強への活用法・プロンプトのコツ・GPTsの使い方を2026年版で完全解説。",
     type: "article",
     locale: "ja_JP",
     url: "https://ai-news-site-wheat.vercel.app/chatgpt-guide",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChatGPT使い方完全ガイド2026年版",
+    title: "ChatGPT完全ガイド2026年【始め方・使い方・プロンプト・無料 vs 有料】",
     description:
-      "ChatGPT無料・有料の使い方を完全解説。プロンプトテクニック・副業・仕事効率化まで網羅。",
+      "ChatGPT 4oの始め方・無料版と有料版の違い・プロンプトのコツ・GPTsまで徹底解説。",
   },
 };
 
@@ -59,6 +61,7 @@ interface PromptTip {
 
 interface UseCase {
   id: string;
+  category: string;
   title: string;
   description: string;
   promptExample: string;
@@ -67,6 +70,12 @@ interface UseCase {
 interface FAQ {
   question: string;
   answer: string;
+}
+
+interface PlanComparison {
+  feature: string;
+  free: string;
+  plus: string;
 }
 
 const CHATGPT_FEATURES: ChatGPTFeature[] = [
@@ -96,10 +105,10 @@ const CHATGPT_FEATURES: ChatGPTFeature[] = [
   },
   {
     id: "voice-input",
-    name: "音声入力・会話モード",
+    name: "音声入力・高度な音声モード",
     plan: "無料",
     description:
-      "スマートフォンアプリではマイクボタンで音声入力が可能。有料プランの「高度な音声モード」ではリアルタイムの自然な会話ができる。",
+      "スマートフォンアプリではマイクボタンで音声入力が可能。有料プランの「高度な音声モード」ではリアルタイムの自然な会話・感情表現ができる。",
     useCases: ["ハンズフリー質問", "発音練習・英会話", "議事録の文字起こし", "移動中の情報収集"],
   },
   {
@@ -127,112 +136,130 @@ const CHATGPT_FEATURES: ChatGPTFeature[] = [
     useCases: ["最新ニュース調査", "株価・為替の確認", "競合調査", "最新技術トレンドの把握"],
   },
   {
-    id: "api-access",
-    name: "APIアクセス",
+    id: "memory",
+    name: "メモリ機能（会話の記憶）",
     plan: "有料(Plus)",
     description:
-      "OpenAI APIを利用してChatGPTの機能をシステムやアプリに組み込める。従量課金制で自社サービスへのAI機能実装が可能。",
-    useCases: ["自社アプリへのAI組み込み", "業務自動化システム構築", "チャットボット開発", "データ処理パイプライン"],
+      "ユーザーの情報・好み・過去の会話を記憶し、次回以降の会話に活かせる機能。「いつも丁寧語で」「職業はエンジニア」などを一度伝えるだけでよい。",
+    useCases: ["パーソナライズされた回答", "繰り返し入力の削減", "長期プロジェクト管理", "個人設定の継続"],
   },
+];
+
+const PLAN_COMPARISONS: PlanComparison[] = [
+  { feature: "利用料金", free: "無料", plus: "月額$20（約3,000円）" },
+  { feature: "使用モデル", free: "GPT-4o mini（制限あり）", plus: "GPT-4o（高性能版）" },
+  { feature: "1日の利用制限", free: "あり（上限で低性能に切替）", plus: "大幅に緩和" },
+  { feature: "画像生成（DALL-E 3）", free: "不可", plus: "可能（1日制限あり）" },
+  { feature: "ファイルアップロード", free: "制限あり", plus: "PDF・Excel・CSVなど自由に" },
+  { feature: "GPTs（カスタムAI）", free: "利用のみ可", plus: "利用＋作成が可能" },
+  { feature: "Webブラウジング", free: "不可", plus: "リアルタイム検索可能" },
+  { feature: "メモリ機能", free: "限定的", plus: "フル活用可能" },
+  { feature: "高度な音声モード", free: "基本のみ", plus: "感情表現・自然会話" },
+  { feature: "o1モデルアクセス", free: "不可", plus: "推論特化モデルを利用可" },
 ];
 
 const PROMPT_TIPS: PromptTip[] = [
   {
     id: "role-setting",
     tip: "役割（ペルソナ）を設定する",
-    example: '「あなたはプロのSEOライターです。以下の記事タイトルを10個提案してください」',
+    example: "「あなたはプロのSEOライターです。以下の記事タイトルを10個提案してください」",
     effect: "ChatGPTが専門家として回答するため、出力の質・専門度が大幅に向上する",
   },
   {
     id: "specific-instruction",
     tip: "具体的な条件・数字を盛り込む",
-    example: '「300字以内で・箇条書きで・初心者向けに・3つのポイントを」',
+    example: "「300字以内で・箇条書きで・初心者向けに・3つのポイントを」",
     effect: "出力フォーマットが安定し、そのまま使えるアウトプットが得られる",
   },
   {
     id: "few-shot",
     tip: "例を示す（Few-shotプロンプト）",
-    example: '「例：良い件名→『〇〇様へ、お世話になっております』　このスタイルで5件作成して」',
+    example: "「例：良い件名→『〇〇様へ、お世話になっております』　このスタイルで5件作成して」",
     effect: "期待するトーン・スタイルを学習させることで、好みに合った出力になる",
   },
   {
     id: "step-by-step",
     tip: "段階的に指示する（Chain of Thought）",
-    example: '「まず構成を考えて → 次に各段落の要点を書いて → 最後に全文を完成させて」',
+    example: "「まず構成を考えて → 次に各段落の要点を書いて → 最後に全文を完成させて」",
     effect: "複雑なタスクでも精度が上がり、論理的で一貫した回答が得られる",
   },
   {
     id: "output-format",
     tip: "出力形式を明示する",
-    example: '「マークダウン形式で・H2/H3を使って・表を入れて・URLはリンクで出力して」',
+    example: "「マークダウン形式で・H2/H3を使って・表を入れて・URLはリンクで出力して」",
     effect: "コピペ後の編集工数がゼロになり、すぐに使える形で出力される",
   },
   {
     id: "iterative",
     tip: "繰り返し改善する（Iterative Prompting）",
-    example: '「もっとカジュアルなトーンに変えて」「3番目の項目をもっと具体的に」',
+    example: "「もっとカジュアルなトーンに変えて」「3番目の項目をもっと具体的に」",
     effect: "一発完璧を求めず対話を重ねることで最終的に理想に近い出力が得られる",
   },
 ];
 
 const USE_CASES: UseCase[] = [
   {
-    id: "freelance-writing",
+    id: "business",
+    category: "ビジネス",
+    title: "ビジネス文書・メール作成",
+    description:
+      "会議の議事録・週次報告書・提案書・メール返信文の下書きなど、定型業務を自動化。1日1〜2時間の時間削減が見込める。",
+    promptExample:
+      "「以下の箇条書きメモをもとに、上司向けの週次報告メールを作成してください。敬語・簡潔・結論先出しでお願いします。[メモ内容]」",
+  },
+  {
+    id: "study",
+    category: "勉強",
+    title: "資格取得・学習サポート",
+    description:
+      "難しい専門用語を中学生でも分かるレベルで説明させたり、過去問を解説させたり、学習計画を立てさせたりと、個人教師として活用できる。",
+    promptExample:
+      "「宅建の『借地借家法』を初心者向けに図解（テキスト表現）を使いながら解説してください。重要ポイントも箇条書きでまとめてください」",
+  },
+  {
+    id: "fukugyou",
+    category: "副業",
     title: "副業・フリーランスライティング",
     description:
       "記事の構成案作成・下書き生成・タイトル案出しなど、ライティング業務のスピードを5〜10倍に高速化できる。クラウドソーシングでの受注量増加に直結する。",
     promptExample:
-      '「ダイエットをテーマにしたSEO記事（2000字）の構成と各段落の要点を作成してください。読者は30代女性、キーワードは"ダイエット 食事制限なし"です」',
-  },
-  {
-    id: "work-efficiency",
-    title: "仕事効率化・ビジネス文書",
-    description:
-      "会議の議事録作成・メール返信文の下書き・報告書のテンプレート化など、定型業務を自動化して1日1〜2時間の時間削減が可能。",
-    promptExample:
-      '「以下の箇条書きメモをもとに、上司向けの週次報告メールを作成してください。敬語・簡潔・結論先出しでお願いします。[メモ内容]」',
-  },
-  {
-    id: "learning",
-    title: "学習・資格取得サポート",
-    description:
-      "難しい専門用語を中学生でも分かるレベルで説明させたり、過去問を解説させたり、学習計画を立てさせたりと、個人教師として活用できる。",
-    promptExample:
-      '「宅建の「借地借家法」を初心者向けに図解（テキスト表現）を使いながら解説してください。重要ポイントも箇条書きでまとめてください」',
+      "「ダイエットをテーマにしたSEO記事（2000字）の構成と各段落の要点を作成してください。読者は30代女性、キーワードは『ダイエット 食事制限なし』です」",
   },
   {
     id: "programming",
+    category: "開発",
     title: "プログラミング・システム開発",
     description:
       "コードの自動生成だけでなく、エラー解析・コードレビュー・ドキュメント作成も可能。未経験者がPythonスクリプトを作成する用途にも広く使われている。",
     promptExample:
-      '「PythonでExcelファイルを読み込み、A列の重複を削除してB列の合計を出すスクリプトを書いてください。コメントを日本語で入れてください」',
+      "「PythonでExcelファイルを読み込み、A列の重複を削除してB列の合計を出すスクリプトを書いてください。コメントを日本語で入れてください」",
   },
   {
-    id: "content-creation",
-    title: "コンテンツ制作・SNS運用",
+    id: "content",
+    category: "コンテンツ",
+    title: "SNS運用・コンテンツ制作",
     description:
       "X（旧Twitter）・Instagram・YouTubeの投稿文・台本・ハッシュタグ提案まで一括生成。SNSアカウント運用の更新頻度を維持しながら品質を高められる。",
     promptExample:
-      '「ChatGPTの活用術をテーマにしたX投稿を5パターン作成してください。各140字以内・絵文字あり・最後に関連ハッシュタグを3〜5個付けて」',
+      "「ChatGPTの活用術をテーマにしたX投稿を5パターン作成してください。各140字以内・絵文字あり・最後に関連ハッシュタグを3〜5個付けて」",
   },
 ];
 
 const FAQS: FAQ[] = [
   {
-    question: "ChatGPT無料版でできることの制限は何ですか？",
+    question: "ChatGPTの始め方・アカウント登録の手順は？",
     answer:
-      "2026年現在、無料版ではGPT-4o miniが利用可能で、テキスト生成・コード生成・画像入力（テキスト解析）・音声入力が使えます。ただし1日の利用回数に上限があり、ファイルアップロード・DALL-E画像生成・GPTs・Webブラウジング・GPT-4oへの切り替えには有料プラン（ChatGPT Plus、月額$20）が必要です。",
+      "ChatGPTの始め方は簡単です。①chat.openai.comにアクセス ②「Sign up」をクリック ③メールアドレスまたはGoogleアカウントで登録 ④メール認証 ⑤生年月日・名前を入力 ⑥利用規約に同意、以上で完了です。スマートフォンの場合はApp Store・Google PlayでChatGPTアプリをインストールする方法が便利です。登録後すぐに無料で使い始められます。",
   },
   {
-    question: "GPT-4oとGPT-4の違いは何ですか？",
+    question: "ChatGPT無料版と有料版（Plus）の一番の違いは何ですか？",
     answer:
-      "GPT-4oは「omni（全モーダル）」の略で、テキスト・画像・音声をネイティブに処理できる最新モデルです。GPT-4と比べて処理速度が2倍以上速く、コストも大幅に低下しています。日本語理解力も向上しており、2026年現在はGPT-4oが標準モデルとなっています。",
+      "最大の違いはモデル性能と利用制限です。無料版はGPT-4o mini（軽量版）が中心で1日の利用回数に上限があります。有料版（Plus、月額$20）ではGPT-4o（高性能版）を制限少なく使え、DALL-E 3での画像生成・ファイルアップロード分析・Webブラウジング・GPTs作成・メモリ機能・高度な音声モードなどが利用可能になります。毎日多く使うなら有料版への移行がおすすめです。",
   },
   {
-    question: "ChatGPTは日本語で使えますか？精度は高いですか？",
+    question: "GPTsとは何ですか？どうやって使うのですか？",
     answer:
-      "はい、ChatGPTは日本語に完全対応しています。GPT-4oでは自然な敬語・口語・専門用語も正確に理解し、英語と同等レベルの品質で回答します。日本語で質問しても英語で回答される場合は「日本語で答えてください」と追加するだけで解決します。",
+      "GPTs（ジーピーティーズ）はChatGPTをカスタマイズして特定の用途に特化させたAIです。例えば「SEO記事ライター専用GPT」「英語発音コーチ専用GPT」などが公開されています。使い方は：ChatGPTにログイン後、左サイドバーの「GPTを探す」をクリックし、目的に合ったGPTsを検索・選択するだけです。有料プランではGPTsを自分で作成することもでき、独自のシステムプロンプトや知識ファイルを設定できます。",
   },
   {
     question: "仕事でChatGPTを使う場合、情報漏洩のリスクはありますか？",
@@ -240,9 +267,9 @@ const FAQS: FAQ[] = [
       "入力した内容はOpenAIのサーバーに送信されます。デフォルト設定では学習データに使用される場合があるため、顧客情報・社外秘データ・個人情報は入力しないことを推奨します。設定から「チャット履歴とトレーニングをオフ」にすることでデータ学習を無効化できます。企業向けには「ChatGPT Team/Enterprise」プランが非学習・データ保護対応です。",
   },
   {
-    question: "ChatGPTで副業収入を得られますか？具体的な方法は？",
+    question: "ChatGPTで副業収入を得る具体的な方法は？",
     answer:
-      "はい、実際に多くの方が副業に活用しています。主な方法は①ライティング代行（クラウドワークス・ランサーズでの記事作成）②プログラミング代行（Pythonスクリプト・Webサイト制作）③翻訳代行④SNS運用代行⑤プロンプト販売（Noteやマーケットプレイスでの販売）があります。ChatGPTを使ったライティングで月5〜10万円を稼ぐ方も増えています。",
+      "主な方法は5つあります。①ライティング代行（クラウドワークス・ランサーズでの記事作成）②プログラミング代行（Pythonスクリプト・Webサイト制作）③翻訳代行④SNS運用代行⑤プロンプト販売（NoteやマーケットプレイスでのChatGPTプロンプト販売）。ChatGPTを使ったライティングで月5〜10万円を稼ぐ方も増えています。まずはクラウドソーシングサイトに登録してライティングから始めるのがおすすめです。",
   },
 ];
 
@@ -284,22 +311,25 @@ export default function ChatGPTGuidePage() {
               2026年版 最新情報
             </span>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-white leading-tight mb-4">
-              ChatGPT使い方完全ガイド2026年版
+              ChatGPT完全ガイド2026年
               <br />
               <span className="text-cyan-400">
-                【初心者〜上級者・無料プランで使える全機能】
+                【始め方・使い方・プロンプト・無料 vs 有料の違い】
               </span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-              ChatGPT無料・有料の使い方を完全解説。日本語での質問コツ、プロンプトテクニック、副業・仕事効率化への活用法まで徹底網羅。
+              ChatGPT 4oの始め方から無料版と有料版（Plus）の違い、ビジネス・副業・勉強への活用法、プロンプトのコツ、GPTsの使い方まで徹底網羅。
             </p>
             {/* 目次クイックリンク */}
             <div className="flex flex-wrap justify-center gap-2">
               {[
+                { href: "#start", label: "始め方" },
+                { href: "#plan-compare", label: "無料 vs 有料" },
                 { href: "#features", label: "全機能一覧" },
                 { href: "#prompt-tips", label: "プロンプト術" },
                 { href: "#use-cases", label: "活用シーン" },
-                { href: "#faq", label: "よくある質問" },
+                { href: "#gpts", label: "GPTs活用" },
+                { href: "#faq", label: "FAQ" },
               ].map((item) => (
                 <a
                   key={item.href}
@@ -313,8 +343,87 @@ export default function ChatGPTGuidePage() {
           </div>
         </section>
 
+        {/* ── 始め方 ── */}
+        <section id="start" className="py-14 px-4 bg-slate-950">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
+                ChatGPT始め方・登録手順（5分で完了）
+              </h2>
+              <p className="text-gray-400 text-sm">
+                スマホ・PCどちらからでも無料で始められます
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { step: 1, title: "公式サイトにアクセス", desc: "chat.openai.com または App Store / Google Play で「ChatGPT」と検索してアプリをインストール" },
+                { step: 2, title: "Sign up をクリック", desc: "メールアドレスまたはGoogle・Microsoftアカウントで登録。どれも無料です" },
+                { step: 3, title: "メール認証", desc: "登録したメールアドレスに届いた認証コードを入力してアカウントを有効化" },
+                { step: 4, title: "プロフィール設定", desc: "名前・生年月日を入力。個人情報は最小限でOK。詳細設定は後からでも変更可能" },
+                { step: 5, title: "利用規約に同意", desc: "OpenAIの利用規約・プライバシーポリシーを確認して同意をクリック" },
+                { step: 6, title: "すぐに使い始めよう", desc: "テキストボックスに質問を入力するだけでAIとの会話が始まります。難しい設定は不要" },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className="rounded-2xl border border-slate-800 bg-slate-900 p-5"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-8 h-8 rounded-full bg-cyan-500 text-slate-950 flex items-center justify-center font-black text-sm flex-shrink-0">
+                      {item.step}
+                    </span>
+                    <h3 className="font-black text-white text-sm">{item.title}</h3>
+                  </div>
+                  <p className="text-gray-300 text-xs leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 無料 vs 有料 比較 ── */}
+        <section id="plan-compare" className="py-14 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
+                無料版 vs 有料版（Plus）徹底比較
+              </h2>
+              <p className="text-gray-400 text-sm">
+                月額$20の価値があるかどうかを機能一覧で確認
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-800 bg-slate-900 overflow-hidden">
+              {/* ヘッダー */}
+              <div className="grid grid-cols-3 bg-slate-800 px-4 py-3">
+                <div className="text-gray-400 text-xs font-bold">機能</div>
+                <div className="text-center text-emerald-400 text-xs font-bold">無料版</div>
+                <div className="text-center text-amber-400 text-xs font-bold">Plus（月$20）</div>
+              </div>
+              {PLAN_COMPARISONS.map((row, i) => (
+                <div
+                  key={i}
+                  className={`grid grid-cols-3 px-4 py-3 border-t border-slate-800 text-xs ${
+                    i % 2 === 0 ? "bg-slate-900" : "bg-slate-800/30"
+                  }`}
+                >
+                  <div className="text-gray-300 font-bold pr-2">{row.feature}</div>
+                  <div className="text-center text-gray-400 px-1">{row.free}</div>
+                  <div className="text-center text-amber-300 px-1 font-medium">{row.plus}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 rounded-2xl bg-amber-500/10 border border-amber-500/30 p-5">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                <span className="font-black text-amber-400">Plus移行のおすすめタイミング：</span>
+                　無料版で1日の上限に達することが増えてきた・画像生成を試したい・仕事でガッツリ使いたい、という場合にPlus（月額$20）への移行を検討してください。月数千円の投資で業務効率化の恩恵を受けられます。
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 機能一覧 ── */}
-        <section id="features" className="py-14 px-4">
+        <section id="features" className="py-14 px-4 bg-slate-950">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
@@ -361,21 +470,11 @@ export default function ChatGPTGuidePage() {
                 </div>
               ))}
             </div>
-
-            {/* プラン比較メモ */}
-            <div className="mt-8 rounded-2xl bg-slate-900 border border-slate-800 p-5">
-              <p className="text-sm text-gray-300 leading-relaxed">
-                <span className="font-bold text-white">💡 プランの選び方：</span>
-                　テキスト生成・コード生成・音声入力は無料プランで十分です。画像生成・ファイル分析・GPTs・Webブラウジングを使いたい場合は
-                <span className="text-amber-400 font-bold">ChatGPT Plus（月額$20）</span>
-                へのアップグレードを検討してください。
-              </p>
-            </div>
           </div>
         </section>
 
         {/* ── プロンプトのコツ ── */}
-        <section id="prompt-tips" className="py-14 px-4 bg-slate-950">
+        <section id="prompt-tips" className="py-14 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
@@ -425,14 +524,14 @@ export default function ChatGPTGuidePage() {
         </section>
 
         {/* ── 活用シーン ── */}
-        <section id="use-cases" className="py-14 px-4">
+        <section id="use-cases" className="py-14 px-4 bg-slate-950">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 ChatGPT活用シーン5選
               </h2>
               <p className="text-gray-400 text-sm">
-                副業・仕事・学習・プログラミング・コンテンツ制作での実践的な使い方
+                ビジネス・副業・勉強・開発・コンテンツ制作での実践的な使い方
               </p>
             </div>
 
@@ -443,13 +542,16 @@ export default function ChatGPTGuidePage() {
                   className="rounded-2xl border border-slate-800 bg-slate-900 p-5 flex flex-col gap-3"
                 >
                   <div className="flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-slate-800 text-cyan-400 flex items-center justify-center font-black text-xs border border-slate-700 flex-shrink-0">
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 flex-shrink-0">
+                      {uc.category}
+                    </span>
+                    <span className="w-5 h-5 rounded-full bg-slate-800 text-gray-500 flex items-center justify-center font-black text-xs border border-slate-700 flex-shrink-0">
                       {index + 1}
                     </span>
-                    <h3 className="font-black text-white text-sm leading-tight">
-                      {uc.title}
-                    </h3>
                   </div>
+                  <h3 className="font-black text-white text-sm leading-tight">
+                    {uc.title}
+                  </h3>
                   <p className="text-gray-300 text-xs leading-relaxed">
                     {uc.description}
                   </p>
@@ -467,7 +569,47 @@ export default function ChatGPTGuidePage() {
           </div>
         </section>
 
-        {/* ── AI Tools へのCTAリンク ── */}
+        {/* ── GPTs活用 ── */}
+        <section id="gpts" className="py-14 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
+                GPTs（カスタムAI）の使い方
+              </h2>
+              <p className="text-gray-400 text-sm">
+                目的特化のAIを選ぶだけで専門家レベルの回答が得られる
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { name: "SEO Content Optimizer", desc: "SEO記事のキーワード密度・タイトルタグ・メタディスクリプションを最適化。ブログ運営者に人気。" },
+                { name: "Coding Assistant", desc: "コードのデバッグ・リファクタリング・ドキュメント生成に特化。エラー解決が爆速になる。" },
+                { name: "English Language Coach", desc: "英語の文法修正・発音ガイド・TOEIC対策など英語学習に完全特化したGPTs。" },
+                { name: "Image Prompt Generator", desc: "Midjourneyや DALL-E向けの高品質なプロンプトを自動生成。画像生成AI活用に必須。" },
+                { name: "Business Plan Creator", desc: "事業計画書・ビジネスモデル・マーケティング戦略の作成を段階的にサポート。" },
+                { name: "Resume & CV Builder", desc: "職務経歴書・履歴書・カバーレターを業種・経験に合わせて最適な形式で作成。" },
+              ].map((gpt) => (
+                <div
+                  key={gpt.name}
+                  className="rounded-2xl border border-slate-800 bg-slate-900 p-4"
+                >
+                  <h3 className="font-black text-cyan-300 text-sm mb-2">{gpt.name}</h3>
+                  <p className="text-gray-300 text-xs leading-relaxed">{gpt.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 rounded-2xl bg-slate-900 border border-slate-800 p-5">
+              <p className="text-sm text-gray-300 leading-relaxed">
+                <span className="font-black text-white">GPTsの見つけ方：</span>
+                　ChatGPT Plus登録後、左サイドバーの「GPTを探す」または
+                <span className="text-cyan-400 font-bold"> chat.openai.com/gpts </span>
+                にアクセス。カテゴリや検索で目的に合ったGPTsを見つけられます。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 関連ガイドCTA ── */}
         <section className="py-10 px-4 bg-slate-950">
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 p-6 sm:p-8 text-center">
@@ -478,16 +620,24 @@ export default function ChatGPTGuidePage() {
                 ChatGPT以外のAIツールも知りたい方へ
               </h2>
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                Gemini・Claude・Perplexityなど2026年に使えるAIツール15選を目的別に比較。
+                Claude・Gemini・Perplexityなど2026年に使えるAIツールを目的別に比較。
                 <br />
                 無料で使えるツールだけを厳選して解説しています。
               </p>
-              <Link
-                href="/ai-tools-guide"
-                className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-sm px-6 py-3 rounded-xl transition-colors"
-              >
-                無料AIツール完全ガイドを読む →
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/claude-ai-guide"
+                  className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-black text-sm px-6 py-3 rounded-xl transition-colors"
+                >
+                  Claude AIガイドを読む →
+                </Link>
+                <Link
+                  href="/ai-tools-guide"
+                  className="inline-flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-cyan-300 font-black text-sm px-6 py-3 rounded-xl transition-colors border border-slate-600"
+                >
+                  無料AIツール完全ガイド →
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -500,7 +650,7 @@ export default function ChatGPTGuidePage() {
                 よくある質問（FAQ）
               </h2>
               <p className="text-gray-400 text-sm">
-                ChatGPTに関する疑問・不安をまとめて解決
+                ChatGPTの始め方・使い方に関する疑問を解決
               </p>
             </div>
 
