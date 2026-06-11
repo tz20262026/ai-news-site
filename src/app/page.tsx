@@ -110,16 +110,15 @@ export default async function Home() {
         </div>
       )}
 
-      {/* スマホ: AI判定ユニット */}
-      <div className="lg:hidden mb-6">
-        <AIIntelligenceUnit />
-      </div>
-
       {/* 2カラムグリッド（PC: 記事＋サイドバー） */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8 items-start">
         {/* メイン: 記事一覧 */}
         <div>
           <ArticleList articles={articles} />
+          {/* スマホ: AI判定ユニット（記事の下） */}
+          <div className="lg:hidden mt-6">
+            <AIIntelligenceUnit />
+          </div>
         </div>
 
         {/* サイドバー（PCのみ sticky） */}
