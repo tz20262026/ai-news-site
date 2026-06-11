@@ -117,7 +117,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
           ))}
         </div>
 
-        <div className="p-4">
+        <div className={`p-4 ${!compact ? "max-h-[420px] overflow-y-auto ai-unit-scroll" : ""}`}>
           {/* 下克上アラート（compactは非表示、通常は1件のみ） */}
           {!compact && alerts.length > 0 && (
             <div className="mb-3">
