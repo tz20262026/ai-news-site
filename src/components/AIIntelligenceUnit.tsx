@@ -68,7 +68,7 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 // ── メインコンポーネント ───────────────────────────────────────────────
-export default function AIIntelligenceUnit() {
+export default function AIIntelligenceUnit({ compact = false }: { compact?: boolean }) {
   const [activeTab, setActiveTab] = useState(0);
 
   const data = marketData as {
@@ -83,6 +83,7 @@ export default function AIIntelligenceUnit() {
   const newTools = data.newToolsToday ?? [];
   const alerts = data.alerts ?? [];
   const seg = segments[activeTab];
+  const toolLimit = compact ? 2 : seg.tools.length;
 
   return (
     <div className="rounded-2xl border border-blue-200/60 dark:border-blue-800/50 overflow-hidden shadow-sm">
@@ -117,22 +118,20 @@ export default function AIIntelligenceUnit() {
         </div>
 
         <div className="p-4">
-          {/* 下克上アラート */}
-          {alerts.length > 0 && (
-            <div className="mb-3 flex flex-col gap-2">
-              {alerts.map((alert, i) => (
-                <div key={i} className="flex items-start gap-2 p-3 rounded-xl bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800/50">
-                  <span className="text-base shrink-0">⚡</span>
-                  <span className="text-xs text-orange-700 dark:text-orange-300">
-                    <span className="font-bold">下克上の兆し：</span>{alert.message}
-                  </span>
-                </div>
-              ))}
+          {/* 下克上アラート（compactは非表示、通常は1件のみ） */}
+          {!compact && alerts.length > 0 && (
+            <div className="mb-3">
+              <div className="flex items-start gap-2 p-2.5 rounded-xl bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800/50">
+                <span className="text-sm shrink-0">⚡</span>
+                <span className="text-xs text-orange-700 dark:text-orange-300 line-clamp-2">
+                  <span className="font-bold">下克上：</span>{alerts[0].message}
+                </span>
+              </div>
             </div>
           )}
 
           {/* 今月の正解ラベル */}
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-xs font-bold text-white bg-blue-600 px-2 py-0.5 rounded">
               今月の正解
             </span>
@@ -142,77 +141,43 @@ export default function AIIntelligenceUnit() {
           </div>
 
           {/* 判定理由 */}
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed border-l-2 border-blue-400 pl-3">
+          <p className="text-xs text-gray-500 dark:text-gray-400 mb-3 leading-relaxed border-l-2 border-blue-400 pl-3 line-clamp-2">
             {seg.reason}
           </p>
 
           {/* ツール一覧 */}
           <div className="flex flex-col gap-2">
-            {seg.tools.map((tool) => (
+            {seg.tools.slice(0, toolLimit).map((tool) => (
               <div
                 key={tool.id}
-                className={`rounded-lg p-3 ${
+                className={`rounded-lg p-2.5 ${
                   tool.badge === "AI's Choice"
                     ? "bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60"
                     : "bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50"
                 }`}
               >
-                <div className="flex items-start justify-between gap-2 flex-wrap">
-                  <div className="flex items-center gap-1.5 flex-wrap">
-                    <span className="text-sm font-semibold text-gray-900 dark:text-white">{tool.name}</span>
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-1.5 min-w-0">
+                    <span className="text-sm font-semibold text-gray-900 dark:text-white truncate">{tool.name}</span>
                     {tool.badge && (
-                      <span className="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 px-1.5 py-0.5 rounded">
+                      <span className="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/50 px-1.5 py-0.5 rounded shrink-0">
                         {tool.badge}
                       </span>
                     )}
                   </div>
-                  <span className="text-xs font-medium text-gray-500 dark:text-gray-400 shrink-0">{tool.price}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400 shrink-0">{tool.price}</span>
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 line-clamp-2">{tool.summary}</p>
-                <div className="flex items-center gap-2 mt-1.5 flex-wrap">
+                <div className="flex items-center gap-2 mt-1">
                   <StarRating rating={tool.rating} />
-                  <span className="text-xs text-emerald-600 dark:text-emerald-400">
-                    ↑ {tool.newFeature}
-                  </span>
+                  <span className="text-xs text-emerald-600 dark:text-emerald-400 truncate">↑ {tool.newFeature}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* 今日発見した新着ツール */}
-          {newTools.length > 0 && (
-            <div className="mt-4">
-              <p className="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1 mb-2">
-                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse inline-block" />
-                AIが今日見つけた注目の新着ツール
-              </p>
-              <div className="flex flex-col gap-2">
-                {newTools.map((tool, i) => (
-                  <div key={i} className="rounded-xl p-3 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50">
-                    <div className="flex items-start gap-2">
-                      <span className="text-xs font-bold text-white bg-emerald-600 px-1.5 py-0.5 rounded shrink-0">NEW</span>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex flex-col gap-0.5">
-                          <span className="text-sm font-bold text-gray-900 dark:text-white">{tool.name}</span>
-                          <span className="text-xs text-gray-500 dark:text-gray-400 break-words">{tool.price}</span>
-                        </div>
-                        <p className="text-xs text-gray-600 dark:text-gray-400 mt-0.5 leading-relaxed">{tool.summary}</p>
-                        {tool.isChallenging && tool.challengingTool && (
-                          <p className="text-xs font-semibold text-orange-600 dark:text-orange-400 mt-1">
-                            ⚡ {tool.challengingTool}を超える可能性あり
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
           {/* フッター */}
-          <p className="text-[10px] text-gray-400 dark:text-gray-600 mt-4 text-right">
-            最終分析: {formatDate(data.updatedAt)} · 人間が選んだ古い情報ではなく、AIが自律的に精査した最適解
+          <p className="text-[10px] text-gray-400 dark:text-gray-600 mt-3 text-right">
+            最終分析: {formatDate(data.updatedAt)}
           </p>
         </div>
       </div>
