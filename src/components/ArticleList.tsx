@@ -8,8 +8,6 @@ import { getArticleImageUrl, getReadTime, getRelativeTime, isNew } from "@/lib/a
 import {
   Zap, Palette, Brain, TrendingUp, Cpu, Scale, Code2, Lightbulb, LayoutGrid,
 } from "lucide-react";
-import marketData from "@/data/ai_market_intelligence.json";
-
 // ── カテゴリー定義 ──────────────────────────────────────────
 const CATEGORIES = [
   {
@@ -97,57 +95,6 @@ function matchesCategory(article: Article, categoryId: string): boolean {
 }
 
 // ── インフィード比較ミニカード ──────────────────────────────────────
-function AIComparisonMiniCard() {
-  const winners = marketData.segments.map((s) => ({
-    label: s.label,
-    name: s.winner.name,
-    badge: s.tools.find((t) => t.badge === "AI's Choice"),
-  }));
-  const updatedAt = marketData.updatedAt;
-  const date = new Date(updatedAt);
-  const dateLabel = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
-
-  return (
-    <div className="sm:col-span-2 xl:col-span-3 rounded-xl border border-blue-200/60 dark:border-blue-800/40 overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 p-px">
-      <div className="rounded-xl bg-white/95 dark:bg-gray-900/95 p-4">
-        <div className="flex items-center gap-2 mb-3">
-          <span className="flex items-center gap-1 text-xs font-bold text-blue-600 dark:text-blue-400">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse inline-block" />
-            AIによる最新ツール判定
-          </span>
-          <span className="text-xs text-gray-400 dark:text-gray-500">{dateLabel}</span>
-          <span className="ml-auto text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 px-2 py-0.5 rounded-full">
-            今月の正解セット
-          </span>
-        </div>
-        <div className="flex gap-2 flex-wrap">
-          {winners.map((w) => (
-            <div
-              key={w.label}
-              className="flex-1 min-w-[140px] bg-blue-50/80 dark:bg-blue-950/30 rounded-lg p-2.5 border border-blue-100 dark:border-blue-900/50"
-            >
-              <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 block mb-0.5">
-                {w.label}
-              </span>
-              <span className="text-sm font-semibold text-gray-900 dark:text-white block">
-                {w.name}
-              </span>
-              {w.badge && (
-                <span className="text-[10px] text-gray-500 dark:text-gray-400 mt-0.5 block line-clamp-1">
-                  {w.badge.newFeature}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-        <p className="text-xs text-gray-400 dark:text-gray-500 mt-3">
-          人間が選んだ古い情報ではなく、AIが自律的に精査した最新の最適解
-        </p>
-      </div>
-    </div>
-  );
-}
-
 const INITIAL_COUNT = 20;
 
 export default function ArticleList({ articles }: { articles: Article[] }) {
@@ -358,8 +305,6 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 </p>
               </div>
             </Link>
-            {/* 6件ごとにインフィード比較カードを挿入 */}
-            {(i + 1) % 6 === 0 && <AIComparisonMiniCard />}
           </React.Fragment>
         ))}
       </div>
