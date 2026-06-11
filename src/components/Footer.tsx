@@ -133,6 +133,24 @@ export default function Footer() {
             AI翻訳ツール比較ガイド
           </Link>
           <Link
+            href="/midjourney-guide"
+            className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-semibold"
+          >
+            Midjourneyガイド
+          </Link>
+          <Link
+            href="/ai-agent-guide"
+            className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
+          >
+            AIエージェントガイド
+          </Link>
+          <Link
+            href="/ai-image-comparison"
+            className="text-xs text-amber-400 hover:text-amber-300 transition-colors font-semibold"
+          >
+            AI画像生成比較
+          </Link>
+          <Link
             href="/tags"
             className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
           >
