@@ -71,6 +71,36 @@ const items = [
     cta: "最安プランを見る →",
     color: "#d97706",
   },
+  {
+    href: "https://px.a8.net/svt/ejp?a8mat=45A0UT+9CDXKI+5R1M+5YJRM",
+    badge: "💻 AI副業・フリーランス",
+    badgeColor: "#7c3aed",
+    title: "フリーランスボード",
+    tagline: "AIエンジニア・フリーランス案件を探すなら",
+    desc: "AI活用エンジニア向けフリーランス案件多数。ChatGPT・LLM開発などのAI系案件も豊富。新規無料会員登録で30,000円報酬。",
+    cta: "無料で案件を探す →",
+    color: "#7c3aed",
+  },
+  {
+    href: "https://px.a8.net/svt/ejp?a8mat=4B1R5T+4Q9ZSI+4NIK+5YJRM",
+    badge: "🖥️ AIサーバー・VPS",
+    badgeColor: "#0f766e",
+    title: "ABLENET VPS",
+    tagline: "格安・高品質VPS ｜ AIアプリ・自動化に最適",
+    desc: "AIチャットボットや自動化スクリプトのホスティングに。高コスパVPSで自前のAI環境を構築しよう。最高16,000円報酬。",
+    cta: "VPSプランを確認する →",
+    color: "#0f766e",
+  },
+  {
+    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+GGEBOY+4LJQ+614CY",
+    badge: "🎬 AI動画・副業スクール",
+    badgeColor: "#be185d",
+    title: "クリエイターズジャパン",
+    tagline: "最短1ヶ月で動画編集スキルを習得",
+    desc: "AIツールを活用した動画編集スキルが身につくスクール。副業・フリーランス転職を目指す方に。現役プロが徹底指導。",
+    cta: "無料説明会に申し込む →",
+    color: "#be185d",
+  },
 ];
 
 export default function AffiliateSectionAiNews() {
