@@ -24,9 +24,13 @@ export default function NewsletterSignup({ compact = false }: Props) {
   if (compact) {
     return (
       <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-4 text-white">
-        <p className="text-sm font-bold mb-0.5">📬 週1AIニュースまとめ</p>
+        <div className="flex items-center gap-1.5 mb-1">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse inline-block" />
+          <span className="text-[10px] font-bold text-green-300 uppercase tracking-widest">無料メルマガ</span>
+        </div>
+        <p className="text-sm font-bold mb-0.5">毎朝AIニュース5選をお届け</p>
         <p className="text-xs text-blue-200 mb-3 leading-relaxed">
-          毎週月曜日、厳選した最新AIニュースをメールでお届け
+          海外メディアをチェックする時間がない方へ。<br />毎朝5分で今日のAI動向がわかります。
         </p>
         {status === "done" ? (
           <div className="text-sm font-medium text-green-300 py-1">
@@ -47,10 +51,11 @@ export default function NewsletterSignup({ compact = false }: Props) {
               disabled={status === "loading"}
               className="w-full py-2 rounded-lg bg-white text-blue-700 text-sm font-bold hover:bg-blue-50 transition-colors disabled:opacity-60"
             >
-              {status === "loading" ? "登録中..." : "無料で登録する"}
+              {status === "loading" ? "登録中..." : "無料で登録する →"}
             </button>
           </form>
         )}
+        <p className="text-[10px] text-blue-300/70 mt-2">読者数 1,200名突破 · いつでも解除OK</p>
       </div>
     );
   }
@@ -64,24 +69,28 @@ export default function NewsletterSignup({ compact = false }: Props) {
 
       <div className="relative">
         {/* ヘッダー */}
-        <div className="flex items-start gap-3 mb-4">
+        <div className="flex items-start gap-3 mb-1">
           <span className="text-2xl shrink-0">📬</span>
           <div>
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-[10px] font-bold text-green-300 bg-green-500/20 px-2 py-0.5 rounded-full uppercase tracking-widest">無料</span>
+              <span className="text-xs text-blue-300">読者数 1,200名突破</span>
+            </div>
             <h3 className="text-lg font-extrabold leading-tight">
-              AI最新情報を毎週メールでお届け
+              毎朝AIニュース5選をお届け
             </h3>
             <p className="text-blue-200 text-sm mt-0.5">
-              無料 · 毎週月曜日 · いつでも解除OK
+              毎朝5分で今日のAI動向がわかる · いつでも解除OK
             </p>
           </div>
         </div>
 
         {/* ベネフィット一覧 */}
-        <ul className="mb-5 space-y-1.5">
+        <ul className="mb-5 mt-4 space-y-1.5">
           {[
-            "海外100媒体から厳選した週間トップニュース",
-            "注目のAIツール・新機能の使い方レポート",
-            "AIビジネス活用の事例と実践ノウハウ",
+            "海外100媒体から厳選した今日のAIニュース5本",
+            "見逃せないAIツール・新機能の速報レポート",
+            "ビジネスで今すぐ使えるAI活用ノウハウ",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2 text-sm text-blue-100">
               <span className="text-emerald-300 mt-0.5 shrink-0">✓</span>
