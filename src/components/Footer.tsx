@@ -1,176 +1,108 @@
 import Link from "next/link";
 
+const GUIDE_LINKS = [
+  { href: "/chatgpt-guide", label: "ChatGPT使い方" },
+  { href: "/claude-guide", label: "Claude" },
+  { href: "/gemini-guide", label: "Gemini" },
+  { href: "/grok-guide", label: "Grok" },
+  { href: "/perplexity-guide", label: "Perplexity" },
+  { href: "/copilot-guide", label: "Copilot" },
+  { href: "/midjourney-guide", label: "Midjourney" },
+  { href: "/stable-diffusion-guide", label: "Stable Diffusion" },
+  { href: "/ai-video-guide", label: "動画生成AI" },
+  { href: "/ai-music-guide", label: "AI音楽生成" },
+  { href: "/ai-coding-guide", label: "AIコーディング" },
+  { href: "/ai-writing-guide", label: "AI文章作成" },
+];
+
+const TOOL_LINKS = [
+  { href: "/ai-tools-guide", label: "無料AIツール15選" },
+  { href: "/ai-tools-comparison", label: "AIツール比較" },
+  { href: "/ai-image-comparison", label: "AI画像生成比較" },
+  { href: "/tools", label: "ツール一覧" },
+  { href: "/ai-fukugyou", label: "AI副業ガイド" },
+  { href: "/chatgpt-prompt-guide", label: "プロンプト集" },
+  { href: "/ai-agent-guide", label: "AIエージェント" },
+  { href: "/notebooklm-guide", label: "NotebookLM" },
+];
+
+const SITE_LINKS = [
+  { href: "/about", label: "About" },
+  { href: "/tags", label: "タグ一覧" },
+  { href: "/partners", label: "パートナー" },
+  { href: "/rss", label: "RSS購読" },
+  { href: "/privacy", label: "プライバシーポリシー" },
+  { href: "/tokushoho", label: "特定商取引法" },
+];
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-500 border-t border-gray-800 mt-16">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-        <div className="flex items-center gap-2">
+    <footer className="bg-gray-950 text-gray-400 border-t border-gray-800 mt-16">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 py-10">
+        {/* ロゴ */}
+        <div className="flex items-center gap-2 mb-8">
           <span className="text-xs font-bold bg-blue-500 text-white px-2 py-0.5 rounded">AI</span>
-          <span className="text-white font-semibold">News Japan</span>
+          <span className="text-white font-bold text-lg">News Japan</span>
         </div>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 justify-center sm:justify-end">
-          <Link
-            href="/rss"
-            className="flex items-center gap-1.5 text-xs text-orange-400 hover:text-orange-300 transition-colors"
-          >
-            <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current">
-              <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z" />
-            </svg>
-            RSS購読
-          </Link>
-          <Link
-            href="/partners"
-            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            パートナー
-          </Link>
-          <Link
-            href="/tools"
-            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            AIツール一覧
-          </Link>
-          <Link
-            href="/ai-tools-guide"
-            className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors font-semibold"
-          >
-            無料AIツール15選
-          </Link>
-          <Link
-            href="/ai-fukugyou"
-            className="text-xs text-green-400 hover:text-green-300 transition-colors font-semibold"
-          >
-            AI副業ガイド
-          </Link>
-          <Link
-            href="/chatgpt-guide"
-            className="text-xs text-yellow-400 hover:text-yellow-300 transition-colors font-semibold"
-          >
-            ChatGPT使い方ガイド
-          </Link>
-          <Link
-            href="/gazou-ai-guide"
-            className="text-xs text-purple-400 hover:text-purple-300 transition-colors font-semibold"
-          >
-            画像生成AIガイド
-          </Link>
-          <Link
-            href="/claude-guide"
-            className="text-xs text-orange-400 hover:text-orange-300 transition-colors font-semibold"
-          >
-            Claudeガイド
-          </Link>
-          <Link
-            href="/ai-writing-guide"
-            className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-          >
-            AI文章生成ガイド
-          </Link>
-          <Link
-            href="/gemini-guide"
-            className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors font-semibold"
-          >
-            Geminiガイド
-          </Link>
-          <Link
-            href="/copilot-guide"
-            className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-          >
-            Copilotガイド
-          </Link>
-          <Link
-            href="/perplexity-guide"
-            className="text-xs text-teal-400 hover:text-teal-300 transition-colors font-semibold"
-          >
-            Perplexityガイド
-          </Link>
-          <Link
-            href="/chatgpt-prompt-guide"
-            className="text-xs text-green-400 hover:text-green-300 transition-colors font-semibold"
-          >
-            ChatGPTプロンプト集
-          </Link>
-          <Link
-            href="/ai-video-guide"
-            className="text-xs text-red-400 hover:text-red-300 transition-colors font-semibold"
-          >
-            動画生成AIガイド
-          </Link>
-          <Link
-            href="/notebooklm-guide"
-            className="text-xs text-yellow-400 hover:text-yellow-300 transition-colors font-semibold"
-          >
-            NotebookLMガイド
-          </Link>
-          <Link
-            href="/grok-guide"
-            className="text-xs text-gray-300 hover:text-gray-200 transition-colors font-semibold"
-          >
-            Grokガイド
-          </Link>
-          <Link
-            href="/ai-music-guide"
-            className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-semibold"
-          >
-            AI音楽生成ガイド
-          </Link>
-          <Link
-            href="/ai-coding-guide"
-            className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
-          >
-            AIコーディングガイド
-          </Link>
-          <Link
-            href="/ai-presentation-guide"
-            className="text-xs text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-          >
-            AIプレゼン作成ガイド
-          </Link>
-          <Link
-            href="/ai-translation-guide"
-            className="text-xs text-cyan-300 hover:text-cyan-200 transition-colors font-semibold"
-          >
-            AI翻訳ツール比較ガイド
-          </Link>
-          <Link
-            href="/midjourney-guide"
-            className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-semibold"
-          >
-            Midjourneyガイド
-          </Link>
-          <Link
-            href="/ai-agent-guide"
-            className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-semibold"
-          >
-            AIエージェントガイド
-          </Link>
-          <Link
-            href="/ai-image-comparison"
-            className="text-xs text-amber-400 hover:text-amber-300 transition-colors font-semibold"
-          >
-            AI画像生成比較
-          </Link>
-          <Link
-            href="/tags"
-            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            タグ一覧
-          </Link>
-          <Link
-            href="/privacy"
-            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            プライバシーポリシー
-          </Link>
-          <Link
-            href="/tokushoho"
-            className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
-          >
-            特定商取引法に基づく表記
-          </Link>
-          <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} AI News Japan
-          </p>
+
+        {/* 3カラムリンク */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+          {/* ガイド */}
+          <div>
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">AIガイド</p>
+            <ul className="space-y-2.5">
+              {GUIDE_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* ツール・サービス */}
+          <div>
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">ツール・サービス</p>
+            <ul className="space-y-2.5">
+              {TOOL_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* サイト情報 */}
+          <div>
+            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">サイト情報</p>
+            <ul className="space-y-2.5">
+              {SITE_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* コピーライト */}
+        <div className="pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-600">
+          <p>© {new Date().getFullYear()} AI News Japan. All rights reserved.</p>
+          <p>海外100媒体から毎日自動収集・日本語でお届け</p>
         </div>
       </div>
     </footer>
