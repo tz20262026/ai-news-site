@@ -167,23 +167,23 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           </span>
         </button>
 
-        {/* 8カテゴリー（4列×2段） */}
-        <div className="grid grid-cols-4 gap-2">
+        {/* 8カテゴリー（スマホ2列・PC4列） */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {CATEGORIES.filter((c) => c.id !== "latest").map(({ id, label, icon: Icon }) => {
             const catCount = articles.filter((a) => matchesCategory(a, id)).length;
             return (
               <button
                 key={id}
                 onClick={() => setSelectedCategory(id === selectedCategory ? "latest" : id)}
-                className={`flex flex-col items-center justify-center gap-1 py-2.5 px-1 rounded-xl font-medium transition-colors ${
+                className={`flex items-center justify-center gap-2 py-3 px-2 rounded-xl font-medium transition-colors ${
                   selectedCategory === id
                     ? "bg-blue-600 text-white shadow-sm"
                     : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
                 }`}
               >
                 <Icon className="w-4 h-4 shrink-0" />
-                <span className="text-[10px] leading-tight text-center">{label}</span>
-                <span className={`text-[9px] font-bold px-1 rounded-full ${selectedCategory === id ? "bg-white/20 text-white" : "text-gray-400 dark:text-gray-500"}`}>
+                <span className="text-xs leading-tight text-center">{label}</span>
+                <span className={`text-[10px] font-bold px-1.5 rounded-full shrink-0 ${selectedCategory === id ? "bg-white/20 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400"}`}>
                   {catCount}
                 </span>
               </button>
