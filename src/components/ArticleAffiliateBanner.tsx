@@ -1,9 +1,9 @@
-// 記事ページ内アフィリエイトバナー（タグ連動・2カード表示）
+// 記事ページ内アフィリエイトバナー（タグ連動・2カード表示・多様化）
 
 const ALL_ITEMS = [
   {
     key: "english",
-    tags: ["英語", "海外", "openai", "google", "anthropic", "chatgpt", "claude", "ai", "llm", "海外メディア"],
+    tags: ["英語", "海外メディア", "英語学習", "techcrunch", "venturebeat", "wired", "海外ニュース"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS7+1L5MUQ+40GA+61C2P",
     badge: "🌍 英語でAI情報を収集",
     badgeColor: "#2563eb",
@@ -15,7 +15,7 @@ const ALL_ITEMS = [
   },
   {
     key: "nordvpn",
-    tags: ["セキュリティ", "プライバシー", "vpn", "ハッキング", "データ", "情報漏洩", "chatgpt", "ai"],
+    tags: ["セキュリティ", "プライバシー", "vpn", "ハッキング", "データ漏洩", "情報漏洩", "サイバー"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G7GTMA+3YFI+674EQ",
     badge: "🛡️ セキュリティ最強",
     badgeColor: "#4f46e5",
@@ -27,7 +27,7 @@ const ALL_ITEMS = [
   },
   {
     key: "expressvpn",
-    tags: ["セキュリティ", "vpn", "海外", "制限", "アクセス", "プライバシー"],
+    tags: ["vpn", "海外サービス", "アクセス制限", "地域制限", "プロキシ"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G6VE0I+5JSS+5YRHE",
     badge: "⚡ 高速接続",
     badgeColor: "#0891b2",
@@ -39,7 +39,7 @@ const ALL_ITEMS = [
   },
   {
     key: "xserver",
-    tags: ["ブログ", "seo", "メディア", "wordpress", "サーバー", "webサイト", "コンテンツ"],
+    tags: ["ブログ", "seo", "メディア", "wordpress", "サーバー", "webサイト", "コンテンツ", "ウェブサイト"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B3G6D+E0VLRM+CO4+61C2Q",
     badge: "🏆 シェアNo.1",
     badgeColor: "#f97316",
@@ -63,7 +63,7 @@ const ALL_ITEMS = [
   },
   {
     key: "millen",
-    tags: ["vpn", "格安", "初心者", "節約", "コスパ"],
+    tags: ["vpn", "格安", "節約", "コスパ", "月額"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G53376+3JTE+HV7V6",
     badge: "💡 コスパ重視",
     badgeColor: "#d97706",
@@ -73,7 +73,53 @@ const ALL_ITEMS = [
     cta: "最安プランを見る →",
     color: "#d97706",
   },
+  {
+    key: "freelance",
+    tags: ["フリーランス", "副業", "リモートワーク", "在宅", "案件", "エンジニア", "クラウドソーシング", "独立"],
+    href: "https://px.a8.net/svt/ejp?a8mat=45A0UT+9CDXKI+5R1M+5YJRM",
+    badge: "💼 案件獲得",
+    badgeColor: "#7c3aed",
+    title: "フリーランスボード",
+    tagline: "フリーランス案件No.1｜AIエンジニア案件多数",
+    desc: "AIスキルを活かしてフリーランス転身。AI・機械学習系案件が豊富で単価も高い。無料登録で案件を即チェック。",
+    cta: "無料で案件を見る →",
+    color: "#7c3aed",
+  },
+  {
+    key: "ablenet",
+    tags: ["vps", "クラウド", "サーバー", "インフラ", "hosting", "aws", "azure", "gcp", "開発"],
+    href: "https://px.a8.net/svt/ejp?a8mat=4B1R5T+4Q9ZSI+4NIK+5YJRM",
+    badge: "🖥️ VPS最安クラス",
+    badgeColor: "#0f766e",
+    title: "ABLENET VPS",
+    tagline: "格安VPS｜AIアプリ・APIサーバー構築に",
+    desc: "自作AIツールやAPIサーバーを立ち上げるなら。月額218円〜の格安プランで本格的なクラウド環境を構築できる。",
+    cta: "プランを確認する →",
+    color: "#0f766e",
+  },
+  {
+    key: "creators",
+    tags: ["動画", "youtube", "クリエイター", "映像", "編集", "コンテンツ", "配信", "vtuber", "ライブ"],
+    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+GGEBOY+4LJQ+614CY",
+    badge: "🎬 クリエイター向け",
+    badgeColor: "#dc2626",
+    title: "クリエイターズジャパン",
+    tagline: "動画クリエイター養成｜AIで動画制作を加速",
+    desc: "AI動画生成ツールを使いこなしてYouTubeで稼ぐ。プロのクリエイターから動画編集・収益化ノウハウを学べる。",
+    cta: "無料説明会に参加する →",
+    color: "#dc2626",
+  },
 ];
+
+// タグ文字列からシードを生成（同じタグ → 常に同じ組み合わせ）
+function tagsToSeed(tags: string[]): number {
+  const str = tags.join(",").toLowerCase();
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
 
 function pickItems(tags: string[]) {
   const lowerTags = tags.map((t) => t.toLowerCase());
@@ -85,17 +131,28 @@ function pickItems(tags: string[]) {
     ).length,
   }));
 
-  scored.sort((a, b) => b.score - a.score);
+  // スコア降順でソート。同スコアの場合はシードで順番を変える
+  const seed = tagsToSeed(tags);
+  scored.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    // 同スコアの場合: シードでシャッフル的に決定
+    const ai = ALL_ITEMS.findIndex((x) => x.key === a.key);
+    const bi = ALL_ITEMS.findIndex((x) => x.key === b.key);
+    return ((ai + seed) % ALL_ITEMS.length) - ((bi + seed) % ALL_ITEMS.length);
+  });
 
-  // スコアが高い順に2件。同スコアなら先頭から
-  const top = scored.slice(0, 2);
+  const top2 = scored.slice(0, 2);
 
-  // スコア0のものしかない場合はデフォルト（英会話＋NordVPN）
-  if (top.every((i) => i.score === 0)) {
-    return [ALL_ITEMS[0], ALL_ITEMS[1]];
+  // 全スコア0 → シードで毎回異なる2件を選ぶ
+  if (top2.every((i) => i.score === 0)) {
+    const idx1 = seed % ALL_ITEMS.length;
+    const idx2 = (seed + 3) % ALL_ITEMS.length;
+    return idx1 !== idx2
+      ? [ALL_ITEMS[idx1], ALL_ITEMS[idx2]]
+      : [ALL_ITEMS[idx1], ALL_ITEMS[(idx1 + 1) % ALL_ITEMS.length]];
   }
 
-  return top;
+  return top2;
 }
 
 type Props = { tags: string[] };
