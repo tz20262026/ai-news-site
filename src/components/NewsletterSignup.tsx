@@ -15,10 +15,33 @@ export default function NewsletterSignup({ compact = false }: Props) {
     e.preventDefault();
     if (!email) return;
     setStatus("loading");
-    // TODO: 実際のメール登録APIに置き換える
-    await new Promise((r) => setTimeout(r, 700));
-    setStatus("done");
-    setEmail("");
+    try {
+      const formData = new FormData();
+      formData.append("email", email);
+      formData.append("_subject", "AIニュース メルマガ登録");
+      formData.append("_template", "table");
+      formData.append("_captcha", "false");
+      formData.append("_replyto", email);
+      const response = await fetch("https://formsubmit.co/ajax/tz77772014@gmail.com", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: formData,
+      });
+      const result: unknown = await response.json();
+      if (
+        result !== null &&
+        typeof result === "object" &&
+        "success" in result &&
+        (result as Record<string, unknown>).success === "true"
+      ) {
+        setStatus("done");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   if (compact) {
@@ -53,6 +76,9 @@ export default function NewsletterSignup({ compact = false }: Props) {
             >
               {status === "loading" ? "登録中..." : "無料で登録する →"}
             </button>
+            {status === "error" && (
+              <p className="text-xs text-red-300">送信に失敗しました。再度お試しください。</p>
+            )}
           </form>
         )}
         <p className="text-[10px] text-blue-300/70 mt-2">読者数 1,200名突破 · いつでも解除OK</p>
@@ -109,23 +135,28 @@ export default function NewsletterSignup({ compact = false }: Props) {
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="email"
-              required
-              placeholder="your@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 px-4 py-2.5 rounded-xl text-sm text-gray-900 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-white/50 transition"
-            />
-            <button
-              type="submit"
-              disabled={status === "loading"}
-              className="shrink-0 px-5 py-2.5 rounded-xl bg-white text-blue-700 text-sm font-extrabold hover:bg-blue-50 active:scale-95 transition-all disabled:opacity-60 shadow-sm"
-            >
-              {status === "loading" ? "登録中..." : "無料登録"}
-            </button>
-          </form>
+          <>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+              <input
+                type="email"
+                required
+                placeholder="your@email.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 px-4 py-2.5 rounded-xl text-sm text-gray-900 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-white/50 transition"
+              />
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="shrink-0 px-5 py-2.5 rounded-xl bg-white text-blue-700 text-sm font-extrabold hover:bg-blue-50 active:scale-95 transition-all disabled:opacity-60 shadow-sm"
+              >
+                {status === "loading" ? "登録中..." : "無料登録"}
+              </button>
+            </form>
+            {status === "error" && (
+              <p className="mt-2 text-xs text-red-300">送信に失敗しました。再度お試しください。</p>
+            )}
+          </>
         )}
 
         {/* 注記 */}
