@@ -74,6 +74,20 @@ export default async function Home() {
             <strong className="text-white font-semibold">{articles.length}件</strong>
             {" "}の記事をお届け。
           </p>
+          <div className="flex flex-wrap gap-3 mt-4">
+            <Link
+              href="/ai-tools-guide"
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-xl transition-colors shadow-sm"
+            >
+              🔧 無料AIツール15選
+            </Link>
+            <Link
+              href="/ai-fukugyou"
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-300 hover:text-white border border-blue-600/60 hover:border-blue-400 px-4 py-2 rounded-xl transition-colors"
+            >
+              💼 AI副業ガイド
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -115,6 +129,10 @@ export default async function Home() {
         {/* メイン: 記事一覧 */}
         <div>
           <ArticleList articles={articles} />
+          {/* スマホ用ニュースレター（PC非表示） */}
+          <div className="mt-8 lg:hidden">
+            <NewsletterSignup />
+          </div>
         </div>
 
         {/* サイドバー（PCのみ sticky） */}

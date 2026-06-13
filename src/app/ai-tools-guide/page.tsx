@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 export const metadata: Metadata = {
   title: "2026年版 無料で使えるAIツール完全ガイド【最新15選】| AI News Japan",
@@ -10,6 +11,24 @@ export const metadata: Metadata = {
     description: "ChatGPT・Gemini・Claudeなど無料で使えるAIツール15選を用途別に徹底解説",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-tools-guide",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "2026年版 無料AIツール完全ガイド",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "2026年版 無料AIツール完全ガイド【15選】",
+    description: "ChatGPT・Gemini・Claudeなど無料で使えるAIツール15選を用途別に徹底解説",
+    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+  },
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-tools-guide",
   },
 };
 
@@ -276,6 +295,9 @@ export default function AIToolsGuidePage() {
           最新AI記事をチェック →
         </Link>
       </section>
+
+      {/* アフィリエイト */}
+      <AffiliateSectionAiNews />
     </div>
   );
 }

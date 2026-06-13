@@ -149,7 +149,7 @@ export default function PrivacyPage() {
           プライバシーポリシー
         </h1>
         <p className="text-xs text-gray-400 dark:text-gray-500 mb-8">
-          制定日：2024年1月1日　最終更新：2026年6月8日
+          制定日：2024年1月1日　最終更新：2026年6月14日
         </p>
 
         <div className="space-y-8 text-sm leading-relaxed text-gray-700 dark:text-gray-300">

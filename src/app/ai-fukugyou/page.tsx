@@ -11,6 +11,24 @@ export const metadata: Metadata = {
     description: "ChatGPT・Claude・Midjourneyを活用した副業方法を完全解説。実績者の収益化ロードマップ付き。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-fukugyou",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "AIで副業する方法 2026年版",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AIで副業する方法 2026年版｜月収10万円の実績ある7つの方法",
+    description: "ChatGPT・Claude・Midjourneyを活用した副業方法を完全解説。実績者の収益化ロードマップ付き。",
+    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+  },
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-fukugyou",
   },
 };
 
@@ -67,7 +85,7 @@ const AI_JOBS = [
 ];
 
 const FAQ = [
-  { q: "AIを使った副業は本当に稼げますか？", a: "はい、AIツールを活用した副業は2024年〜2026年にかけて急成長しています。特にAIライティング・画像生成・動画編集は需要が高く、月10〜20万円を達成している事例が増えています。ただしAIが作ったコンテンツの品質管理・編集スキルが重要で、AIまかせでは品質が落ちることに注意が必要です。" },
+  { q: "AIを使った副業は本当に稼げますか？", a: "はい、AIツールを活用した副業は2025年〜2026年にかけて急成長しています。特にAIライティング・画像生成・動画編集は需要が高く、月10〜20万円を達成している事例が増えています。ただしAIが作ったコンテンツの品質管理・編集スキルが重要で、AIまかせでは品質が落ちることに注意が必要です。" },
   { q: "AI副業に必要な初期費用はいくらですか？", a: "最低限の初期費用は月2,000〜5,000円程度です。ChatGPT Pro（月3,000円）またはClaude Pro（月3,000円）があれば多くのAI副業を始められます。Midjourneyは月10ドル（約1,500円）から。ブログを開設する場合はサーバー代（月1,000円〜）が追加で必要です。" },
   { q: "AIを使った副業でどのくらい稼げますか？", a: "AI副業の収益はジャンルによって大きく異なります。AIライティングは月5〜15万円、AIコンサルは月10〜50万円が現実的な目安です。最初の3ヶ月は月1〜3万円程度で、6〜12ヶ月かけて月10万円以上を目指すのが一般的なロードマップです。" },
   { q: "AIライターはAIが書いた文章をそのまま提出してもいいですか？", a: "依頼先によって異なりますが、多くのクライアントはAI生成文章の確認・修正を求めます。AIの出力をそのまま提出するのは品質・正確性の観点からリスクがあります。AIを「下書き作成アシスタント」として使い、自分で必ず確認・編集するのがプロとしての在り方です。" },
@@ -76,7 +94,7 @@ const FAQ = [
 
 export default function AiFukugyouPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-950 -mx-4 sm:-mx-8 -my-8 px-4 sm:px-8 py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -173,6 +191,6 @@ export default function AiFukugyouPage() {
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />
       </div>
-    </main>
+    </div>
   );
 }

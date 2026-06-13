@@ -191,7 +191,7 @@ export default function AboutPage() {
             name: "AI News Japan",
             url: "https://ai-news-site-wheat.vercel.app",
             description: "海外100媒体以上から最新AIニュースをAIが自律的に収集・精査し、日本語でお届けするメディア",
-            foundingDate: "2024",
+            foundingDate: "2026",
             contactPoint: {
               "@type": "ContactPoint",
               email: "tz77772014@gmail.com",
