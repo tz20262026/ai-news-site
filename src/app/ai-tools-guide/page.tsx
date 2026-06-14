@@ -221,12 +221,12 @@ export default function AIToolsGuidePage() {
           2026年版 無料で使える<br className="sm:hidden" />
           <span className="text-cyan-400">AIツール完全ガイド</span>【15選】
         </h1>
-        <p className="text-slate-400 text-base max-w-2xl mx-auto">
+        <p className="text-slate-300 text-base max-w-2xl mx-auto">
           ChatGPT・Gemini・Claude・画像生成AI・動画生成AIなど、今すぐ無料で試せるAIツールを用途別に厳選。2026年最新情報でお届けします。
         </p>
         <div className="flex flex-wrap justify-center gap-2 text-xs">
           {["テキスト生成", "画像生成", "動画生成", "コーディング", "音楽・音声"].map(tag => (
-            <span key={tag} className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">{tag}</span>
+            <span key={tag} className="px-3 py-1 rounded-full bg-slate-700 text-slate-200 border border-slate-600">{tag}</span>
           ))}
         </div>
       </section>
@@ -236,7 +236,7 @@ export default function AIToolsGuidePage() {
         <h2 className="text-xl font-black text-white">無料AIツール15選（2026年最新）</h2>
         <div className="grid gap-5">
           {TOOLS.map((tool, i) => (
-            <div key={tool.name} className="bg-slate-800/60 border border-slate-700 rounded-2xl p-5 hover:border-slate-500 transition-all">
+            <div key={tool.name} className="bg-slate-800 border border-slate-600 rounded-2xl p-5 hover:border-slate-400 transition-all">
               <div className="flex items-start gap-4 flex-wrap">
                 <div className="flex items-center gap-3 flex-1 min-w-0">
                   <span className="text-3xl flex-shrink-0">{tool.icon}</span>
@@ -261,10 +261,10 @@ export default function AIToolsGuidePage() {
                   試してみる →
                 </a>
               </div>
-              <p className="text-slate-400 text-sm mt-3 leading-relaxed">{tool.desc}</p>
+              <p className="text-slate-200 text-sm mt-3 leading-relaxed">{tool.desc}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {tool.useCases.map(uc => (
-                  <span key={uc} className="text-xs px-2 py-0.5 rounded bg-slate-900 text-slate-400">{uc}</span>
+                  <span key={uc} className="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-200">{uc}</span>
                 ))}
               </div>
             </div>
@@ -277,18 +277,18 @@ export default function AIToolsGuidePage() {
         <h2 className="text-xl font-black text-white">よくある質問</h2>
         <div className="space-y-3">
           {FAQ.map(({ q, a }) => (
-            <div key={q} className="bg-slate-800/40 border border-slate-700 rounded-xl p-5">
+            <div key={q} className="bg-slate-800 border border-slate-600 rounded-xl p-5">
               <p className="font-bold text-white text-sm mb-2">Q. {q}</p>
-              <p className="text-slate-400 text-sm leading-relaxed">A. {a}</p>
+              <p className="text-slate-200 text-sm leading-relaxed">A. {a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* 関連リンク */}
-      <section className="bg-slate-800/40 border border-slate-700 rounded-2xl p-6 space-y-3">
+      <section className="bg-slate-800 border border-slate-600 rounded-2xl p-6 space-y-3">
         <h2 className="font-black text-white">最新AIニュースをもっと読む</h2>
-        <p className="text-slate-400 text-sm">AIツールの最新アップデート・新サービス情報を毎日お届けしています。</p>
+        <p className="text-slate-200 text-sm">AIツールの最新アップデート・新サービス情報を毎日お届けしています。</p>
         <Link href="/"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:opacity-90"
           style={{ background: "rgba(6,182,212,0.15)", color: "#22d3ee", border: "1px solid rgba(6,182,212,0.3)" }}>
