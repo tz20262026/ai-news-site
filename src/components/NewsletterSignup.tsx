@@ -1,49 +1,9 @@
-"use client";
-
-import { useState } from "react";
-
 type Props = {
   /** サイドバーの場合はコンパクト表示 */
   compact?: boolean;
 };
 
 export default function NewsletterSignup({ compact = false }: Props) {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setStatus("loading");
-    try {
-      const formData = new FormData();
-      formData.append("email", email);
-      formData.append("_subject", "AIニュース メルマガ登録");
-      formData.append("_template", "table");
-      formData.append("_captcha", "false");
-      formData.append("_replyto", email);
-      const response = await fetch("https://formsubmit.co/ajax/tz77772014@gmail.com", {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
-      const result: unknown = await response.json();
-      if (
-        result !== null &&
-        typeof result === "object" &&
-        "success" in result &&
-        (result as Record<string, unknown>).success === "true"
-      ) {
-        setStatus("done");
-        setEmail("");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
-  };
-
   if (compact) {
     return (
       <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-4 text-white">
@@ -55,32 +15,29 @@ export default function NewsletterSignup({ compact = false }: Props) {
         <p className="text-xs text-blue-200 mb-3 leading-relaxed">
           海外メディアをチェックする時間がない方へ。<br />毎朝5分で今日のAI動向がわかります。
         </p>
-        {status === "done" ? (
-          <div className="text-sm font-medium text-green-300 py-1">
-            ✅ 登録ありがとうございます！
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-            <input
-              type="email"
-              required
-              placeholder="your@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 rounded-lg text-sm text-gray-900 placeholder-gray-400 bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transition"
-            />
-            <button
-              type="submit"
-              disabled={status === "loading"}
-              className="w-full py-2 rounded-lg bg-white text-blue-700 text-sm font-bold hover:bg-blue-50 transition-colors disabled:opacity-60"
-            >
-              {status === "loading" ? "登録中..." : "無料で登録する →"}
-            </button>
-            {status === "error" && (
-              <p className="text-xs text-red-300">送信に失敗しました。再度お試しください。</p>
-            )}
-          </form>
-        )}
+        <form
+          action="https://formsubmit.co/tz77772014@gmail.com"
+          method="POST"
+          className="flex flex-col gap-2"
+        >
+          <input type="hidden" name="_subject" value="AIニュース メルマガ登録" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://ai-news-site-wheat.vercel.app/?thanks=1" />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="your@email.com"
+            className="w-full px-3 py-2 rounded-lg text-sm text-gray-900 placeholder-gray-400 bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transition"
+          />
+          <button
+            type="submit"
+            className="w-full py-2 rounded-lg bg-white text-blue-700 text-sm font-bold hover:bg-blue-50 transition-colors"
+          >
+            無料で登録する →
+          </button>
+        </form>
         <p className="text-[10px] text-blue-300/70 mt-2">読者数 1,200名突破 · いつでも解除OK</p>
       </div>
     );
@@ -126,38 +83,29 @@ export default function NewsletterSignup({ compact = false }: Props) {
         </ul>
 
         {/* フォーム */}
-        {status === "done" ? (
-          <div className="flex items-center gap-3 bg-white/10 rounded-xl px-4 py-3">
-            <span className="text-emerald-300 text-xl">✅</span>
-            <div>
-              <p className="font-bold text-sm">登録ありがとうございます！</p>
-              <p className="text-blue-200 text-xs mt-0.5">来週月曜日から配信開始です</p>
-            </div>
-          </div>
-        ) : (
-          <>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
-              <input
-                type="email"
-                required
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-2.5 rounded-xl text-sm text-gray-900 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-white/50 transition"
-              />
-              <button
-                type="submit"
-                disabled={status === "loading"}
-                className="shrink-0 px-5 py-2.5 rounded-xl bg-white text-blue-700 text-sm font-extrabold hover:bg-blue-50 active:scale-95 transition-all disabled:opacity-60 shadow-sm"
-              >
-                {status === "loading" ? "登録中..." : "無料登録"}
-              </button>
-            </form>
-            {status === "error" && (
-              <p className="mt-2 text-xs text-red-300">送信に失敗しました。再度お試しください。</p>
-            )}
-          </>
-        )}
+        <form
+          action="https://formsubmit.co/tz77772014@gmail.com"
+          method="POST"
+          className="flex flex-col sm:flex-row gap-2"
+        >
+          <input type="hidden" name="_subject" value="AIニュース メルマガ登録" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://ai-news-site-wheat.vercel.app/?thanks=1" />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="your@email.com"
+            className="flex-1 px-4 py-2.5 rounded-xl text-sm text-gray-900 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-white/50 transition"
+          />
+          <button
+            type="submit"
+            className="shrink-0 px-5 py-2.5 rounded-xl bg-white text-blue-700 text-sm font-extrabold hover:bg-blue-50 active:scale-95 transition-all shadow-sm"
+          >
+            無料登録
+          </button>
+        </form>
 
         {/* 注記 */}
         <p className="mt-3 text-xs text-blue-300/80 text-center">
