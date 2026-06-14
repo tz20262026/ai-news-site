@@ -37,7 +37,12 @@ const TOOLS = [
     name: "ChatGPT（OpenAI）",
     category: "テキスト生成・会話",
     free: "GPT-4o mini 無料",
-    color: "#10b981",
+    /* カテゴリーバッジ用の明るい背景・テキスト色 */
+    badgeBg: "bg-emerald-700",
+    badgeText: "text-emerald-100",
+    accentText: "text-emerald-300",
+    btnBg: "bg-emerald-700",
+    btnText: "text-emerald-100",
     icon: "🤖",
     desc: "世界最多ユーザーのAIチャット。文章作成・翻訳・コード生成・アイデア出しまで何でもこなす万能AI。GPT-4o miniが無料で使える。",
     url: "https://chat.openai.com",
@@ -47,7 +52,11 @@ const TOOLS = [
     name: "Gemini（Google）",
     category: "テキスト生成・マルチモーダル",
     free: "Gemini 1.5 Flash 無料",
-    color: "#4f46e5",
+    badgeBg: "bg-indigo-700",
+    badgeText: "text-indigo-100",
+    accentText: "text-indigo-300",
+    btnBg: "bg-indigo-700",
+    btnText: "text-indigo-100",
     icon: "💎",
     desc: "Googleが開発したマルチモーダルAI。Gmail・Docs・Sheetsとの連携が強力。Googleアカウントがあればすぐ使える。",
     url: "https://gemini.google.com",
@@ -57,7 +66,11 @@ const TOOLS = [
     name: "Claude（Anthropic）",
     category: "長文処理・文章品質",
     free: "Claude 3.5 Haiku 無料",
-    color: "#d97706",
+    badgeBg: "bg-amber-700",
+    badgeText: "text-amber-100",
+    accentText: "text-amber-300",
+    btnBg: "bg-amber-700",
+    btnText: "text-amber-100",
     icon: "🧠",
     desc: "長い文章の要約・分析に最も優れたAI。安全性重視の設計で、長いドキュメント処理やコード品質向上に定評がある。",
     url: "https://claude.ai",
@@ -67,7 +80,11 @@ const TOOLS = [
     name: "Perplexity AI",
     category: "AI検索・リサーチ",
     free: "基本機能無料",
-    color: "#0891b2",
+    badgeBg: "bg-cyan-700",
+    badgeText: "text-cyan-100",
+    accentText: "text-cyan-300",
+    btnBg: "bg-cyan-700",
+    btnText: "text-cyan-100",
     icon: "🔍",
     desc: "検索エンジンとAIを融合した次世代リサーチツール。回答にソースURLが表示されるため、情報の信頼性を確認しながら調査できる。",
     url: "https://perplexity.ai",
@@ -77,7 +94,11 @@ const TOOLS = [
     name: "Copilot（Microsoft）",
     category: "Office統合AI",
     free: "Web版無料",
-    color: "#0078d4",
+    badgeBg: "bg-blue-700",
+    badgeText: "text-blue-100",
+    accentText: "text-blue-300",
+    btnBg: "bg-blue-700",
+    btnText: "text-blue-100",
     icon: "🪟",
     desc: "BingとChatGPTを組み合わせたMicrosoftのAI。EdgeブラウザやWindows 11に内蔵。DALL-E 3で画像生成も無料でできる。",
     url: "https://copilot.microsoft.com",
@@ -87,7 +108,11 @@ const TOOLS = [
     name: "Stable Diffusion（オンライン版）",
     category: "AI画像生成",
     free: "クレジット制の無料枠あり",
-    color: "#7c3aed",
+    badgeBg: "bg-violet-700",
+    badgeText: "text-violet-100",
+    accentText: "text-violet-300",
+    btnBg: "bg-violet-700",
+    btnText: "text-violet-100",
     icon: "🎨",
     desc: "オープンソースの画像生成AI。Stability AIが提供するオンライン版は無料クレジットで利用可能。ローカル実行すれば完全無料。",
     url: "https://stability.ai",
@@ -97,7 +122,11 @@ const TOOLS = [
     name: "Midjourney",
     category: "高品質AI画像生成",
     free: "限定無料トライアル",
-    color: "#ec4899",
+    badgeBg: "bg-pink-700",
+    badgeText: "text-pink-100",
+    accentText: "text-pink-300",
+    btnBg: "bg-pink-700",
+    btnText: "text-pink-100",
     icon: "🖼️",
     desc: "最高品質の画像を生成できるAI。アーティスト・デザイナーに人気。Discord経由で使用。プロ品質のビジュアル制作に最適。",
     url: "https://midjourney.com",
@@ -107,7 +136,12 @@ const TOOLS = [
     name: "GitHub Copilot",
     category: "AIコーディング支援",
     free: "月2,000補完まで無料",
-    color: "#374151",
+    /* 元の色が #374151（ほぼ黒）なのでスレート系の明るい色に変更 */
+    badgeBg: "bg-slate-600",
+    badgeText: "text-slate-100",
+    accentText: "text-slate-200",
+    btnBg: "bg-slate-600",
+    btnText: "text-slate-100",
     icon: "💻",
     desc: "GitHubとOpenAIが共同開発のコーディングAI。VS CodeやJetBrainsに統合。コードの自動補完・バグ修正・テスト生成が劇的に速くなる。",
     url: "https://github.com/features/copilot",
@@ -117,7 +151,11 @@ const TOOLS = [
     name: "ElevenLabs",
     category: "AI音声合成",
     free: "月10,000文字無料",
-    color: "#f59e0b",
+    badgeBg: "bg-yellow-700",
+    badgeText: "text-yellow-100",
+    accentText: "text-yellow-200",
+    btnBg: "bg-yellow-700",
+    btnText: "text-yellow-100",
     icon: "🎙️",
     desc: "最もリアルな音声合成AI。クリエイター向けに月1万文字無料。日本語対応。YouTube・ポッドキャスト・有声コンテンツ制作に。",
     url: "https://elevenlabs.io",
@@ -127,7 +165,11 @@ const TOOLS = [
     name: "Runway",
     category: "AI動画生成",
     free: "125クレジット無料",
-    color: "#ef4444",
+    badgeBg: "bg-red-700",
+    badgeText: "text-red-100",
+    accentText: "text-red-300",
+    btnBg: "bg-red-700",
+    btnText: "text-red-100",
     icon: "🎬",
     desc: "テキストや画像から動画を生成するAI。SNS・広告・映像制作に革命をもたらしている。初回125クレジット無料で試せる。",
     url: "https://runwayml.com",
@@ -137,7 +179,11 @@ const TOOLS = [
     name: "Kling AI",
     category: "AI動画生成",
     free: "無料プランあり",
-    color: "#8b5cf6",
+    badgeBg: "bg-purple-700",
+    badgeText: "text-purple-100",
+    accentText: "text-purple-300",
+    btnBg: "bg-purple-700",
+    btnText: "text-purple-100",
     icon: "🎥",
     desc: "中国Kuaishouが開発した高品質動画生成AI。Soraに匹敵するクオリティを無料でも体験可能。日本語対応。",
     url: "https://klingai.com",
@@ -147,7 +193,11 @@ const TOOLS = [
     name: "NotebookLM（Google）",
     category: "AIドキュメント解析",
     free: "完全無料",
-    color: "#059669",
+    badgeBg: "bg-green-700",
+    badgeText: "text-green-100",
+    accentText: "text-green-300",
+    btnBg: "bg-green-700",
+    btnText: "text-green-100",
     icon: "📓",
     desc: "PDFや文書をアップロードしてAIと対話できるGoogleの無料ツール。論文・報告書・契約書の要約・Q&Aに革命的に便利。",
     url: "https://notebooklm.google.com",
@@ -157,7 +207,11 @@ const TOOLS = [
     name: "Suno",
     category: "AI音楽生成",
     free: "1日50クレジット無料",
-    color: "#f97316",
+    badgeBg: "bg-orange-700",
+    badgeText: "text-orange-100",
+    accentText: "text-orange-300",
+    btnBg: "bg-orange-700",
+    btnText: "text-orange-100",
     icon: "🎵",
     desc: "テキストから楽曲を自動生成するAI。BGM制作・コンテンツBGM・プロトタイプ制作に使える。毎日50クレジット無料付与。",
     url: "https://suno.ai",
@@ -167,7 +221,11 @@ const TOOLS = [
     name: "Gamma",
     category: "AIプレゼン生成",
     free: "400クレジット無料",
-    color: "#6366f1",
+    badgeBg: "bg-indigo-600",
+    badgeText: "text-indigo-100",
+    accentText: "text-indigo-200",
+    btnBg: "bg-indigo-600",
+    btnText: "text-indigo-100",
     icon: "📊",
     desc: "テキストを入力するだけで美しいプレゼン・資料を自動生成。デザインセンス不要でプロ品質のスライドが5分で完成。",
     url: "https://gamma.app",
@@ -177,7 +235,11 @@ const TOOLS = [
     name: "Dify",
     category: "AI開発プラットフォーム",
     free: "基本機能無料（オープンソース）",
-    color: "#0ea5e9",
+    badgeBg: "bg-sky-700",
+    badgeText: "text-sky-100",
+    accentText: "text-sky-300",
+    btnBg: "bg-sky-700",
+    btnText: "text-sky-100",
     icon: "⚡",
     desc: "ノーコードでAIアプリを作れるプラットフォーム。ChatGPT・ClaudeなどのAIをフローで組み合わせてカスタムアプリを構築できる。",
     url: "https://dify.ai",
@@ -214,19 +276,20 @@ export default function AIToolsGuidePage() {
 
       {/* ヘッダー */}
       <section className="text-center space-y-4 pt-4">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold border border-cyan-500/30 bg-cyan-500/8 text-cyan-400">
+        {/* バッジ: 不透過背景・明るいテキストに修正 */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold border border-cyan-400 bg-cyan-800 text-cyan-100">
           🤖 完全無料AIツール
         </div>
         <h1 className="text-3xl sm:text-4xl font-black text-white leading-tight">
           2026年版 無料で使える<br className="sm:hidden" />
           <span className="text-cyan-400">AIツール完全ガイド</span>【15選】
         </h1>
-        <p className="text-slate-300 text-base max-w-2xl mx-auto">
+        <p className="text-slate-200 text-base max-w-2xl mx-auto">
           ChatGPT・Gemini・Claude・画像生成AI・動画生成AIなど、今すぐ無料で試せるAIツールを用途別に厳選。2026年最新情報でお届けします。
         </p>
         <div className="flex flex-wrap justify-center gap-2 text-xs">
           {["テキスト生成", "画像生成", "動画生成", "コーディング", "音楽・音声"].map(tag => (
-            <span key={tag} className="px-3 py-1 rounded-full bg-slate-700 text-slate-200 border border-slate-600">{tag}</span>
+            <span key={tag} className="px-3 py-1 rounded-full bg-slate-600 text-white border border-slate-400 font-semibold">{tag}</span>
           ))}
         </div>
       </section>
@@ -236,7 +299,7 @@ export default function AIToolsGuidePage() {
         <h2 className="text-xl font-black text-white">無料AIツール15選（2026年最新）</h2>
         <div className="grid gap-5">
           {TOOLS.map((tool, i) => (
-            <div key={tool.name} className="bg-slate-800 border border-slate-600 rounded-2xl p-5 hover:border-slate-400 transition-all">
+            <div key={tool.name} className="bg-slate-800 border border-slate-500 rounded-2xl p-5 hover:border-slate-300 transition-all">
               <div className="flex items-start gap-4 flex-wrap">
                 <div className="flex items-center gap-3 flex-1 min-w-0">
                   <span className="text-3xl flex-shrink-0">{tool.icon}</span>
@@ -245,26 +308,27 @@ export default function AIToolsGuidePage() {
                       <span className="text-white font-black text-base">
                         {i + 1}. {tool.name}
                       </span>
-                      <span className="text-xs px-2 py-0.5 rounded-full"
-                        style={{ background: `${tool.color}20`, color: tool.color, border: `1px solid ${tool.color}30` }}>
+                      {/* カテゴリーバッジ: 不透過背景・明るいテキストに修正 */}
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-semibold ${tool.badgeBg} ${tool.badgeText}`}>
                         {tool.category}
                       </span>
                     </div>
-                    <div className="text-xs mt-0.5 font-semibold" style={{ color: tool.color }}>
+                    {/* 無料表示: 暗色ツール（GitHub Copilot等）対策で明るい色に固定 */}
+                    <div className={`text-xs mt-0.5 font-semibold ${tool.accentText}`}>
                       ✅ {tool.free}
                     </div>
                   </div>
                 </div>
+                {/* 「試してみる」ボタン: 不透過背景・明るいテキストに修正 */}
                 <a href={tool.url} target="_blank" rel="noopener noreferrer"
-                  className="text-xs font-bold px-3 py-1.5 rounded-lg transition-all hover:opacity-80 flex-shrink-0"
-                  style={{ background: `${tool.color}18`, color: tool.color, border: `1px solid ${tool.color}30` }}>
+                  className={`text-xs font-bold px-3 py-1.5 rounded-lg transition-all hover:opacity-80 flex-shrink-0 border border-white/20 ${tool.btnBg} ${tool.btnText}`}>
                   試してみる →
                 </a>
               </div>
-              <p className="text-slate-200 text-sm mt-3 leading-relaxed">{tool.desc}</p>
+              <p className="text-slate-100 text-sm mt-3 leading-relaxed">{tool.desc}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {tool.useCases.map(uc => (
-                  <span key={uc} className="text-xs px-2 py-0.5 rounded bg-slate-700 text-slate-200">{uc}</span>
+                  <span key={uc} className="text-xs px-2 py-0.5 rounded bg-slate-600 text-white font-medium">{uc}</span>
                 ))}
               </div>
             </div>
@@ -277,21 +341,21 @@ export default function AIToolsGuidePage() {
         <h2 className="text-xl font-black text-white">よくある質問</h2>
         <div className="space-y-3">
           {FAQ.map(({ q, a }) => (
-            <div key={q} className="bg-slate-800 border border-slate-600 rounded-xl p-5">
+            <div key={q} className="bg-slate-800 border border-slate-500 rounded-xl p-5">
               <p className="font-bold text-white text-sm mb-2">Q. {q}</p>
-              <p className="text-slate-200 text-sm leading-relaxed">A. {a}</p>
+              <p className="text-slate-100 text-sm leading-relaxed">A. {a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* 関連リンク */}
-      <section className="bg-slate-800 border border-slate-600 rounded-2xl p-6 space-y-3">
+      <section className="bg-slate-800 border border-slate-500 rounded-2xl p-6 space-y-3">
         <h2 className="font-black text-white">最新AIニュースをもっと読む</h2>
-        <p className="text-slate-200 text-sm">AIツールの最新アップデート・新サービス情報を毎日お届けしています。</p>
+        <p className="text-slate-100 text-sm">AIツールの最新アップデート・新サービス情報を毎日お届けしています。</p>
+        {/* ボタン: 不透過背景・明るいテキストに修正 */}
         <Link href="/"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:opacity-90"
-          style={{ background: "rgba(6,182,212,0.15)", color: "#22d3ee", border: "1px solid rgba(6,182,212,0.3)" }}>
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:opacity-90 bg-cyan-700 text-white border border-cyan-500">
           最新AI記事をチェック →
         </Link>
       </section>
