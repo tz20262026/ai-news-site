@@ -91,6 +91,40 @@ export default async function Home() {
         </div>
       </div>
 
+      {/* ガイドセクション */}
+      <div className="mb-7 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <Link
+          href="/ai-beginner-guide"
+          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-blue-950/60 to-blue-900/30 border border-blue-800/60 hover:border-blue-500 transition-all group"
+        >
+          <span className="text-2xl flex-shrink-0">🚀</span>
+          <div>
+            <p className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">AI初心者完全ガイド</p>
+            <p className="text-xs text-blue-300/70 mt-0.5">ChatGPT・Gemini・Claude入門</p>
+          </div>
+        </Link>
+        <Link
+          href="/chatgpt-guide"
+          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-950/60 to-emerald-900/30 border border-emerald-800/60 hover:border-emerald-500 transition-all group"
+        >
+          <span className="text-2xl flex-shrink-0">🤖</span>
+          <div>
+            <p className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">ChatGPT使い方ガイド</p>
+            <p className="text-xs text-emerald-300/70 mt-0.5">プロンプト・業務活用・無料vs有料</p>
+          </div>
+        </Link>
+        <Link
+          href="/ai-business-guide"
+          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-violet-950/60 to-violet-900/30 border border-violet-800/60 hover:border-violet-500 transition-all group"
+        >
+          <span className="text-2xl flex-shrink-0">💼</span>
+          <div>
+            <p className="text-sm font-bold text-white group-hover:text-violet-300 transition-colors">AI業務活用ガイド</p>
+            <p className="text-xs text-violet-300/70 mt-0.5">部署別事例・導入ステップ・ROI</p>
+          </div>
+        </Link>
+      </div>
+
       {/* 今日の注目セクション */}
       {todayArticles.length > 0 && (
         <div className="mb-7 p-4 bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 rounded-2xl border border-blue-100/80 dark:border-blue-900/60">
