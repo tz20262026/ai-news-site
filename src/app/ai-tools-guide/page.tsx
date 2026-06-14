@@ -257,6 +257,7 @@ const FAQ = [
 
 export default function AIToolsGuidePage() {
   return (
+    <div className="bg-slate-950 min-h-screen -mt-0">
     <div className="max-w-4xl mx-auto py-8 px-4 space-y-12">
       {/* FAQ JSON-LD */}
       <script
@@ -362,6 +363,7 @@ export default function AIToolsGuidePage() {
 
       {/* アフィリエイト */}
       <AffiliateSectionAiNews />
+    </div>
     </div>
   );
 }
