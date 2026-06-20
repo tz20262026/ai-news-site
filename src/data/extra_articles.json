@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_f75a5a17e7d6_1781926577",
+    "title": "あなたのAIは本当に「正しい」のか？トップエンジニアが密かに学ぶ、評価とアライメントの核心に迫る一冊。",
+    "summary": "あなたのAIは本当に「正しい」のか？トップエンジニアが密かに学ぶ、評価とアライメントの核心に迫る一冊。",
+    "body": "AIモデルの精度が日々驚異的な進化を遂げる今、開発の最前線では新たな壁が立ちはだかっている。「このAIの判断は、本当に信頼できるのか？」という根源的な問いだ。単なる正解率の追求だけでは、もはやビジネスの成功も社会からの信頼も勝ち取れない。そんな時代に、AIの「質」を本質から問い直し、人間の意図とAIの挙動を一致させるための羅針盤となる一冊が、ついに姿を現した。\n\n本書「Evaluation and Alignment: The Seminal Papers」が光を当てるのは、モデル設計の華やかさの陰に隠れがちな「評価（Evaluation）」と「アライメント（Alignment）」という、極めて重要かつ難解な領域だ。本書は単なる技術書ではない。この分野を切り拓いた独創的な論文（Seminal Papers）を厳選し、専門家Hanchung Lee氏が歴史的文脈と現代的意義を深く解説する。評価とは、もはや精度を測ることではない。モデルに潜むバイアス、公平性、解釈可能性、そして堅牢性までを多角的に検証する、AIの品質保証の根幹だ。一方のアライメントは、AIが開発者の意図や人間の価値観に沿って動作するよう調整する技術であり、特に生成AIの時代において、その重要性は極めて高い。本書は、これらのテーマに関する断片的な知識を繋ぎ合わせ、体系的な理解へと昇華させる。難解な論文も、専門家のナビゲートで核心をスムーズに掴むことができ、表面的なテクニックではなく、AI開発の根幹を支える思想を学ぶための知的投資となるだろう。\n\nこの知の宝庫は、AIに携わるプロフェッショナルの武器となる。機械学習エンジニアは、モデルの信頼性を客観データで証明し、ビジネスサイドへの説明責任を果たす論理武装ができるだろう。プロダクトマネージャーにとっては、AIプロダクトの潜在リスクを予見し、倫理的課題に先手を打つための必須知識だ。開発チームに的確な評価基準を示し、プロジェクトを正しい方向へ導く指針となる。AI分野の研究者や学生にとっても、この領域の基礎を築いた重要論文を効率的に学び、自身の研究を高いレベルへ引き上げる最高の教材となるだろう。\n\n知の最前線へのアクセスは、出版元であるManning社の公式サイトから可能だ。すぐに読み始めたいデジタル派には電子書籍版が、じっくり学びたい読者には印刷版が用意されている。価格は公式サイトで確認が必要だが、Manning社は頻繁にプロモーションを行っており、期間限定の割引コードが提供されている可能性もあるため、購入前のチェックを推奨する。公式サイトで書籍を選び、アカウントを作成して決済するだけで、あなたの知的好奇心は満たされ始める。\n\nもはや、AIは作って終わりではない。その挙動に責任を持ち、社会と調和させることこそ、これからの開発者に求められる真のスキルだ。「Evaluation and Alignment」は、単なるモデル開発者から、AIの未来を左右するアーキテクトへと進化するための決定版の一冊だ。知識への投資が、あなたの市場価値を劇的に高めるだろう。さあ、AI開発の新たな地平をその手で切り拓こう。",
+    "source": "Reddit Ml",
+    "sourceUrl": "https://www.reddit.com/r/MachineLearning/comments/1rx4j4s/evaluation_and_alignment_the_seminal_papers_new/",
+    "tags": [
+      "MachineLearning"
+    ],
+    "publishedAt": "2026-06-20",
+    "imagePrompt": "A focused female AI product manager in her early 30s, sitting at a sunlit window seat in a modern, minimalist cafe. She is intently studying a thick technical book titled \"Evaluation and Alignment\" laid open next to her laptop, which displays complex data visualizations. With a pen in hand, she jots down notes in a Moleskine notebook, a thoughtful expression on her face. A half-finished latte sits on the table. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://storage.googleapis.com/spreadsheet-bot-489912-news-images/v_f75a5a17e7d6_1781926577.jpg"
+  },
+  {
     "id": "v_f7fa14c173fa_1781839975",
     "title": "AIのブラックボックスに終止符を。PyTorchで実現する「解釈可能」な次世代ニューラルネットワーク、三重対角固有値モデルが登場！",
     "summary": "AIのブラックボックスに終止符を。PyTorchで実現する「解釈可能」な次世代ニューラルネットワーク、三重対角固有値モデルが登場！",
