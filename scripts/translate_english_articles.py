@@ -18,8 +18,9 @@ from google.genai import types
 BASE_DIR = Path(__file__).parent.parent
 EXTRA_ARTICLES_PATH = BASE_DIR / "src" / "data" / "extra_articles.json"
 
-GCP_PROJECT  = "spreadsheet-bot-489912"
-GCP_LOCATION = "us-central1"
+import os
+GCP_PROJECT  = os.environ.get("GCP_PROJECT", "spreadsheet-bot-489912")
+GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
 MODEL_NAME   = "gemini-2.5-pro"
 
 def is_japanese(text: str) -> bool:

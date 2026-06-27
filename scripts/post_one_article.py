@@ -152,6 +152,97 @@ def generate_and_upload_image(client: genai.Client, image_prompt: str, article_i
         logger.warning(f"画像アップロードスキップ: {e}")
         return ""
 
+AI_NEWS_PROMPT = """\
+今日の日付は{today}です。
+最新のAIトレンド・注目ニュース・業界動向の中から1つトピックを自由に選び、
+以下のフォーマットで記事を作成してください。
+
+## 出力フォーマット
+
+[キャッチコピー]
+日本人読者が「気になる！」と思う魅力的な一文タイトル。
+
+[本文]
+合計800〜1200文字の解説文。箇条書き・見出し不可。流れるような文章で。
+
+[画像プロンプト]
+記事の内容・シーンを具体的に反映した英語の画像生成プロンプト。
+必ず「Photorealistic, Cinematic lighting, High resolution」を含めること。
+
+---
+出力はすべて日本語のみ（画像プロンプトの英語部分を除く）。余計な前置き不要。
+"""
+
+AI_NEWS_TAGS = ["最新ニュース", "AI", "テクノロジー"]
+
+def generate_ai_news_article(client: genai.Client) -> int:
+    """ツール在庫が空の場合にAIニュース記事を自由生成するフォールバック。"""
+    today = datetime.now().strftime("%Y年%-m月%-d日")
+    prompt = AI_NEWS_PROMPT.format(today=today)
+
+    raw_text = ""
+    for attempt in range(3):
+        try:
+            response = client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION,
+                    temperature=0.9,
+                    max_output_tokens=16384,
+                ),
+            )
+            raw_text = response.text.strip()
+            break
+        except Exception as e:
+            wait = (attempt + 1) * 30
+            logger.warning(f"AIニュース生成失敗 (試行 {attempt + 1}/3): {e}")
+            if attempt < 2:
+                time.sleep(wait)
+            else:
+                logger.error("3回試行しても失敗しました。")
+                return 1
+
+    def extract_section(label: str, text: str) -> str:
+        m = re.search(rf"\[{label}\]\s*\n(.*?)(?=\n\[|\Z)", text, re.DOTALL)
+        return m.group(1).strip() if m else ""
+
+    catchcopy    = extract_section("キャッチコピー", raw_text)
+    body         = extract_section("本文", raw_text)
+    image_prompt = extract_section("画像プロンプト", raw_text)
+    if not body:
+        body = raw_text
+
+    title   = catchcopy if catchcopy else "今日のAIニュース"
+    summary = catchcopy[:150] + "…" if len(catchcopy) > 150 else catchcopy
+
+    article_id   = f"news_{int(time.time())}"
+    published_at = datetime.now().strftime("%Y-%m-%d")
+
+    image_url = generate_and_upload_image(client, image_prompt, article_id)
+    if not image_url:
+        image_url = pick_image(article_id, AI_NEWS_TAGS)
+
+    existing = json.loads(EXTRA_ARTICLES_PATH.read_text(encoding="utf-8")) if EXTRA_ARTICLES_PATH.exists() else []
+    new_article = {
+        "id":          article_id,
+        "title":       title,
+        "summary":     summary,
+        "body":        body,
+        "source":      "AI News Japan",
+        "sourceUrl":   "",
+        "tags":        AI_NEWS_TAGS,
+        "publishedAt": published_at,
+        "imagePrompt": image_prompt,
+        "imageUrl":    image_url,
+    }
+
+    updated = [new_article] + existing
+    EXTRA_ARTICLES_PATH.write_text(json.dumps(updated, ensure_ascii=False, indent=2), encoding="utf-8")
+    logger.info(f"AIニュース記事追加完了: {title[:40]} (合計{len(updated)}件)")
+    return 0
+
+
 def main() -> int:
     if not GCP_PROJECT:
         logger.error("GCP_PROJECT が未設定です。")
@@ -165,14 +256,14 @@ def main() -> int:
     posted = load_posted()
     pending = [t for t in tools if t.get("id") not in posted and t.get("name")]
 
+    client = genai.Client(vertexai=True, project=GCP_PROJECT, location=GCP_LOCATION)
+
     if not pending:
-        logger.info("未掲載のツールがありません。")
-        return 0
+        logger.info("未掲載のツールがありません。AIニュース生成モードで記事を作成します。")
+        return generate_ai_news_article(client)
 
     tool = pending[0]
     logger.info(f"対象: {tool['name']}")
-
-    client = genai.Client(vertexai=True, project=GCP_PROJECT, location=GCP_LOCATION)
 
     # 記事テキスト生成（最大3回リトライ）
     prompt = ARTICLE_PROMPT.format(
