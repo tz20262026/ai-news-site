@@ -147,8 +147,23 @@ def gemini_analyze(prompt: str, gemini_client: genai.Client, json_mode: bool = F
         return ""
 
 
+def _fix_json_string(s: str) -> str:
+    """Gemini が生成する不正JSONを修正（trailing comma・欠落カンマ）"""
+    # trailing commas を除去:  [1, 2,] → [1, 2]
+    s = re.sub(r",(\s*[}\]])", r"\1", s)
+    # 欠落カンマを補完: "value"\n  "key": → "value",\n  "key":
+    s = re.sub(
+        r'("(?:[^"\\]|\\.)*"|\d+(?:\.\d+)?(?:[eE][+-]?\d+)?|true|false|null|\}|\])'
+        r'([ \t]*\n[ \t]+)'
+        r'("(?:[^"\\]|\\.)*"\s*:)',
+        r'\1,\2\3',
+        s,
+    )
+    return s
+
+
 def extract_json(raw: str) -> dict:
-    """マークダウン除去・trailing comma修正・欠落カンマ修正を行って JSON をパース"""
+    """マークダウン除去・JSON修正を行ってパース"""
     cleaned = raw.strip()
     # ```json...``` / ``` ブロックを除去
     m = re.search(r"```(?:json)?\s*([\s\S]*?)```", cleaned)
@@ -159,8 +174,8 @@ def extract_json(raw: str) -> dict:
     end = cleaned.rfind("}") + 1
     if start >= 0 and end > start:
         cleaned = cleaned[start:end]
-    # trailing commas を除去  例: [1, 2,] → [1, 2]
-    cleaned = re.sub(r",(\s*[}\]])", r"\1", cleaned)
+    # JSON修正（trailing comma・欠落カンマ）
+    cleaned = _fix_json_string(cleaned)
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError as e:
