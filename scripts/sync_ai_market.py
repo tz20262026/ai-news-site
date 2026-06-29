@@ -18,6 +18,7 @@ AI Market Intelligence Sync
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -147,25 +148,24 @@ def gemini_analyze(prompt: str, gemini_client: genai.Client, json_mode: bool = F
 
 
 def extract_json(raw: str) -> dict:
-    """マークダウンブロックを除去してJSONをパース"""
-    # ```json...``` ブロックを除去
+    """マークダウン除去・trailing comma修正・欠落カンマ修正を行って JSON をパース"""
     cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = cleaned.split("```", 2)[-1] if cleaned.count("```") >= 2 else cleaned
-        if cleaned.startswith("json"):
-            cleaned = cleaned[4:]
-        end = cleaned.rfind("```")
-        if end >= 0:
-            cleaned = cleaned[:end]
-        cleaned = cleaned.strip()
+    # ```json...``` / ``` ブロックを除去
+    m = re.search(r"```(?:json)?\s*([\s\S]*?)```", cleaned)
+    if m:
+        cleaned = m.group(1).strip()
+    # { から } の範囲だけ抽出
+    start = cleaned.find("{")
+    end = cleaned.rfind("}") + 1
+    if start >= 0 and end > start:
+        cleaned = cleaned[start:end]
+    # trailing commas を除去  例: [1, 2,] → [1, 2]
+    cleaned = re.sub(r",(\s*[}\]])", r"\1", cleaned)
     try:
         return json.loads(cleaned)
-    except json.JSONDecodeError:
-        start = cleaned.find("{")
-        end = cleaned.rfind("}") + 1
-        if start >= 0 and end > start:
-            return json.loads(cleaned[start:end])
-    return {}
+    except json.JSONDecodeError as e:
+        print(f"  [JSON] cleanup 後もパース失敗: {e}")
+        return {}
 
 
 # ── スクレイピング ──────────────────────────────────────────────────────────
@@ -297,15 +297,19 @@ def analyze_market(
 - 各セグメントのトップツールに badge: "AI's Choice" を設定
 """
 
-    raw = gemini_analyze(prompt, gemini_client, json_mode=True)
-
-    try:
+    for attempt in range(3):
+        if attempt > 0:
+            print(f"  [Gemini] 再試行 {attempt}/2 ...")
+            time.sleep(5)
+        raw = gemini_analyze(prompt, gemini_client, json_mode=True)
+        if not raw:
+            continue
         result = extract_json(raw)
-        if result:
+        if result and result.get("segments"):
             return result
-    except json.JSONDecodeError as e:
-        print(f"  [Gemini] JSON parse error: {e}")
-        print(f"  Raw response: {raw[:500]}")
+        print(f"  [Gemini] 試行{attempt + 1}: segments が取得できませんでした")
+
+    print("  [Gemini] 3回試行しても有効なJSONが得られませんでした")
     return {}
 
 
