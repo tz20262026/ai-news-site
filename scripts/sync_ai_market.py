@@ -31,6 +31,12 @@ from google import genai
 from google.genai import types
 from image_utils import pick_image
 
+try:
+    from json_repair import repair_json as _repair_json
+    _HAS_JSON_REPAIR = True
+except ImportError:
+    _HAS_JSON_REPAIR = False
+
 # ── 定数 ─────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / "src" / "data"
@@ -174,7 +180,25 @@ def extract_json(raw: str) -> dict:
     end = cleaned.rfind("}") + 1
     if start >= 0 and end > start:
         cleaned = cleaned[start:end]
-    # JSON修正（trailing comma・欠落カンマ）
+
+    # まず素の json.loads を試す
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        pass
+
+    # json_repair ライブラリで修復（インストール済みの場合）
+    if _HAS_JSON_REPAIR:
+        try:
+            repaired = _repair_json(cleaned)
+            result = json.loads(repaired)
+            if result:
+                print("  [JSON] json_repair で修復成功")
+                return result
+        except Exception:
+            pass
+
+    # フォールバック: 手動regex修正
     cleaned = _fix_json_string(cleaned)
     try:
         return json.loads(cleaned)

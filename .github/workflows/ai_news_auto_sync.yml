@@ -36,7 +36,7 @@ jobs:
           python-version: '3.12'
 
       - name: 依存関係インストール（post_article.yml と同じ）
-        run: pip install google-genai google-cloud-storage
+        run: pip install google-genai google-cloud-storage json-repair
 
       - name: AI市場データ同期スクリプトを実行
         env:
