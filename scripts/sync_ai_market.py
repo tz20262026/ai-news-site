@@ -129,21 +129,43 @@ def perplexity_search(query: str, api_key: str) -> str:
 
 
 # ── Gemini (Vertex AI) ────────────────────────────────────────────────────────
-def gemini_analyze(prompt: str, gemini_client: genai.Client) -> str:
+def gemini_analyze(prompt: str, gemini_client: genai.Client, json_mode: bool = False) -> str:
     """Gemini で分析を実行（post_one_article.py と同じパターン）"""
     try:
+        config_kwargs: dict = {"temperature": 0.3, "max_output_tokens": 4096}
+        if json_mode:
+            config_kwargs["response_mime_type"] = "application/json"
         response = gemini_client.models.generate_content(
             model=MODEL_NAME,
             contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.3,
-                max_output_tokens=4096,
-            ),
+            config=types.GenerateContentConfig(**config_kwargs),
         )
         return response.text or ""
     except Exception as e:
         print(f"  [Gemini] Error: {e}")
         return ""
+
+
+def extract_json(raw: str) -> dict:
+    """マークダウンブロックを除去してJSONをパース"""
+    # ```json...``` ブロックを除去
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = cleaned.split("```", 2)[-1] if cleaned.count("```") >= 2 else cleaned
+        if cleaned.startswith("json"):
+            cleaned = cleaned[4:]
+        end = cleaned.rfind("```")
+        if end >= 0:
+            cleaned = cleaned[:end]
+        cleaned = cleaned.strip()
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        start = cleaned.find("{")
+        end = cleaned.rfind("}") + 1
+        if start >= 0 and end > start:
+            return json.loads(cleaned[start:end])
+    return {}
 
 
 # ── スクレイピング ──────────────────────────────────────────────────────────
@@ -194,6 +216,7 @@ def analyze_market(
 
     prompt = f"""あなたはAIツール市場のエキスパートアナリストです。
 以下の最新情報を分析し、指定されたJSON形式でレポートを生成してください。
+【重要】純粋なJSONのみ出力。```json などのマークダウンは絶対禁止。コメント禁止。
 
 ## 公式サイトから取得した最新情報:
 {tool_context}
@@ -274,13 +297,12 @@ def analyze_market(
 - 各セグメントのトップツールに badge: "AI's Choice" を設定
 """
 
-    raw = gemini_analyze(prompt, gemini_client)
+    raw = gemini_analyze(prompt, gemini_client, json_mode=True)
 
     try:
-        start = raw.find("{")
-        end = raw.rfind("}") + 1
-        if start >= 0 and end > start:
-            return json.loads(raw[start:end])
+        result = extract_json(raw)
+        if result:
+            return result
     except json.JSONDecodeError as e:
         print(f"  [Gemini] JSON parse error: {e}")
         print(f"  Raw response: {raw[:500]}")
@@ -305,12 +327,10 @@ def generate_alert_article(alert: dict, gemini_client: genai.Client) -> dict | N
 }}
 """
 
-    raw = gemini_analyze(prompt, gemini_client)
+    raw = gemini_analyze(prompt, gemini_client, json_mode=True)
     try:
-        start = raw.find("{")
-        end = raw.rfind("}") + 1
-        if start >= 0 and end > start:
-            article_data = json.loads(raw[start:end])
+        article_data = extract_json(raw)
+        if article_data:
             now_jst = datetime.now(JST)
             return {
                 "id": f"alert-{int(now_jst.timestamp())}",
@@ -370,8 +390,8 @@ def main():
     analysis = analyze_market(tool_contents, search_results, current_data, gemini_client)
 
     if not analysis:
-        print("ERROR: Gemini の分析に失敗しました。既存データを保持します。")
-        sys.exit(1)
+        print("⚠️ Gemini の分析に失敗しました。既存データを保持して正常終了します。")
+        sys.exit(0)
 
     # 4. 出力 JSON を構築
     now_jst = datetime.now(JST)
