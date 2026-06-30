@@ -102,7 +102,7 @@ export default function RootLayout({
           </>
         )}
 
-        {/* ─── WebSite + Organization 構造化データ ────────── */}
+        {/* ─── WebSite + NewsMediaOrganization 構造化データ ────────── */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -110,10 +110,12 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
+                "@id": "https://ai-news-site-wheat.vercel.app/#website",
                 name: "AI News Japan",
                 url: "https://ai-news-site-wheat.vercel.app",
                 description: "海外の最新AIツール・ニュースを日本語でお届けするニュースサイト",
                 inLanguage: "ja",
+                publisher: { "@id": "https://ai-news-site-wheat.vercel.app/#organization" },
                 potentialAction: {
                   "@type": "SearchAction",
                   target: {
@@ -125,10 +127,16 @@ export default function RootLayout({
               },
               {
                 "@context": "https://schema.org",
-                "@type": "Organization",
+                "@type": "NewsMediaOrganization",
+                "@id": "https://ai-news-site-wheat.vercel.app/#organization",
                 name: "AI News Japan",
                 url: "https://ai-news-site-wheat.vercel.app",
-                logo: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
+                },
+                description: "TechCrunch・VentureBeat・Wiredなど海外100媒体から最新AIニュースを日本語でお届け",
+                publishingPrinciples: "https://ai-news-site-wheat.vercel.app/about",
                 sameAs: [],
               },
             ]),
