@@ -3,7 +3,7 @@ import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 export const metadata: Metadata = {
-  title: "2026年版 無料で使えるAIツール完全ガイド【最新15選】| AI News Japan",
+  title: "2026年版 無料で使えるAIツール完全ガイド【最新15選】",
   description: "ChatGPT・Gemini・Claude・Perplexityなど2026年に無料で使えるAIツールを厳選15個紹介。テキスト生成・画像生成・コーディング支援・翻訳・音声合成の用途別に解説。",
   keywords: ["AIツール 無料", "ChatGPT 使い方", "AI ツール 2026", "生成AI おすすめ", "無料AI"],
   openGraph: {

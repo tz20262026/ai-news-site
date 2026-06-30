@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "パートナーサイト | AI News Japan",
+  title: "パートナーサイト",
   description: "AI News Japan のパートナーサイト一覧。映画・農業・AI教育・美容テックなど多彩なメディアと連携しています。",
   openGraph: {
     title: "パートナーサイト | AI News Japan",

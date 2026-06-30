@@ -3,7 +3,7 @@ import ToolsClient from "./ToolsClient";
 import marketData from "@/data/ai_market_intelligence.json";
 
 export const metadata: Metadata = {
-  title: "AIツール比較・おすすめ一覧 | AI News Japan",
+  title: "AIツール比較・おすすめ一覧",
   description:
     "AIが自律的に精査したカテゴリー別ベストAIツール一覧。開発・事務効率化・クリエイティブ・推論の4分野で最適ツールを比較。",
   openGraph: {

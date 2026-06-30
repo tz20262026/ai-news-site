@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | AI News Japan",
+  title: "プライバシーポリシー",
   description: "AI News Japan のプライバシーポリシーです。個人情報の取り扱い・Cookieの使用・アクセス解析について説明します。",
 };
 

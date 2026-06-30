@@ -3,7 +3,7 @@ import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 export const metadata: Metadata = {
-  title: "AI初心者完全ガイド2026【ChatGPT・Gemini・Claude使い方】| AI News Japan",
+  title: "AI初心者完全ガイド2026【ChatGPT・Gemini・Claude使い方】",
   description:
     "AI初心者向け完全ガイド。ChatGPT・Gemini・Claudeを10ステップで使いこなす方法を丁寧に解説。登録方法から実践活用まで、ゼロから始めるAI入門の決定版。",
   keywords: [

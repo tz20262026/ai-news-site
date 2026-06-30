@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About | AI News Japan — 運営情報・編集方針",
+  title: "About — 運営情報・編集方針",
   description:
     "AI News Japan の運営者情報・編集方針・AIによる情報精査プロセスをご紹介します。Kコンサルタント運営・毎日自動更新のAIニュースメディア。",
   openGraph: {

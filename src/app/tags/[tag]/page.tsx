@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
   const canonicalUrl = `https://ai-news-site-wheat.vercel.app/tags/${tag}`;
   return {
-    title: `#${decoded} の記事一覧 | AI News Japan`,
+    title: `#${decoded} の記事一覧`,
     description: `「${decoded}」に関するAIニュース記事を${articles.length}件掲載しています。TechCrunch・VentureBeatなど海外メディアから厳選した最新情報をお届け。`,
     alternates: { canonical: canonicalUrl },
     openGraph: {

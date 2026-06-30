@@ -3,7 +3,7 @@ import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 export const metadata: Metadata = {
-  title: "AIビジネス活用完全ガイド2026【業種別・部署別事例集】| AI News Japan",
+  title: "AIビジネス活用完全ガイド2026【業種別・部署別事例集】",
   description:
     "ビジネスでAIを活用する具体的な方法を業種別・部署別に解説。営業・マーケ・経理・人事・開発でのAI活用事例、導入ステップ、コスト削減シミュレーションを網羅。",
   keywords: [

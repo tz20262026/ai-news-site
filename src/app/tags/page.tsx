@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { allArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "タグ一覧 | AI News Japan",
+  title: "タグ一覧",
   description: "AI News Japan のすべての記事タグを一覧表示しています。気になるテーマのタグをクリックして関連記事を探してみましょう。",
   openGraph: {
     title: "タグ一覧 | AI News Japan",

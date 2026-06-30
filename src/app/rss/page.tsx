@@ -4,7 +4,7 @@ import Image from "next/image";
 import { allArticles, getArticleImageUrl, getRelativeTime } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "RSS購読 | AI News Japan",
+  title: "RSS購読",
   description: "AI News Japan のRSSフィードを購読して、最新AIニュースを自動受信しましょう。",
 };
 
