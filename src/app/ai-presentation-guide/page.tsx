@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "AIプレゼン・資料作成ツール完全ガイド2026年版【Gamma・Beautiful.ai・Canva AI・PowerPoint Copilot比較】",
   description:
     "AIプレゼン資料作成ツール2026年版完全ガイド。Gamma・Beautiful.ai・Canva AI・PowerPoint Copilotの特徴・無料枠・使い方を初心者向けに徹底比較解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-presentation-guide",
+  },
   openGraph: {
     title: "AIプレゼン資料作成ツール完全ガイド2026年版【Gamma・Beautiful.ai比較】",
     description: "Gamma・Beautiful.ai・Canva AIなど最新AIプレゼン作成ツールを比較解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-presentation-guide",
   },
   twitter: {
     card: "summary_large_image",

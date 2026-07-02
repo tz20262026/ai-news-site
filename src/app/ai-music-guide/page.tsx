@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "AI音楽生成完全ガイド2026年版【Suno・Udio・Stable Audio・無料で曲を作る方法を解説】",
   description:
     "AI音楽生成ツール2026年版完全ガイド。Suno AI・Udio・Stable Audio・MusicGen・Beatoven.aiの特徴・無料枠・使い方・著作権を初心者向けに徹底比較解説。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-music-guide",
+  },
   openGraph: {
     title: "AI音楽生成完全ガイド2026年版【Suno・Udio・Stable Audio比較】",
     description: "Suno AI・Udio・Stable Audioなど最新AI音楽生成ツールを比較解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-music-guide",
   },
   twitter: {
     card: "summary_large_image",

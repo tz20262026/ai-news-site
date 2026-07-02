@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "AI検索エンジン比較2026年版【Perplexity・ChatGPT Search・Google AI・Grok】完全ガイド",
   description:
     "AI検索エンジン2026年完全比較ガイド。Perplexity AI・ChatGPT Search・Google AI Overview・Bing Copilot・Grokの精度・無料制限・違い・使い方を詳しく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-search-guide",
+  },
   openGraph: {
     title: "AI検索エンジン比較2026年版【Perplexity・ChatGPT Search・Google AI比較】",
     description: "Perplexity・ChatGPT Search・Google AI・Grokの精度・無料制限・違いを完全比較。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-search-guide",
   },
   twitter: {
     card: "summary_large_image",

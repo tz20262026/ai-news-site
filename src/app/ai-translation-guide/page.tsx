@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "AI翻訳ツール比較2026年版【DeepL・ChatGPT・Google翻訳・精度・無料・使い方完全ガイド】",
   description:
     "AI翻訳ツール2026年完全比較ガイド。DeepL・ChatGPT・Google翻訳・DeepL Pro・精度比較・無料制限・ビジネス用途・使い方を詳しく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-translation-guide",
+  },
   openGraph: {
     title: "AI翻訳ツール比較2026年版【DeepL・ChatGPT・Google翻訳比較】",
     description: "DeepL・ChatGPT・Google翻訳の精度・無料制限・ビジネス用途を完全比較。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-translation-guide",
   },
   twitter: {
     card: "summary_large_image",

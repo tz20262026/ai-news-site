@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "ChatGPTプロンプト集2026年版【コピペで使える例文50選・仕事・副業・学習に活用】",
   description:
     "ChatGPTプロンプト集2026年版。コピペで使えるビジネス・副業・学習・創作に役立つプロンプト例文50選を厳選。プロンプトの書き方のコツ・テンプレートも解説。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/chatgpt-prompt-guide",
+  },
   openGraph: {
     title: "ChatGPTプロンプト集2026年版【コピペで使える例文50選】",
     description: "コピペで使えるChatGPTプロンプト50選。ビジネス・副業・学習に活用。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/chatgpt-prompt-guide",
   },
   twitter: {
     card: "summary_large_image",

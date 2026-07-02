@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "AIコーディングツール完全ガイド2026年版【GitHub Copilot・Cursor・Claude Code比較・使い方】",
   description:
     "AIコーディングツール2026年版完全ガイド。GitHub Copilot・Cursor・Claude Code・Codeium・WindsurfのAIコード補完・自動生成・リファクタリング機能を比較解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-coding-guide",
+  },
   openGraph: {
     title: "AIコーディングツール完全ガイド2026年版【GitHub Copilot・Cursor・Claude Code比較】",
     description: "GitHub Copilot・Cursor・Claude Codeなど最新AIコーディングツールを比較解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-coding-guide",
   },
   twitter: {
     card: "summary_large_image",

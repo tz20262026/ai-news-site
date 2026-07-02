@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "Claude（クロード）完全ガイド2026年版【使い方・ChatGPTとの違い・無料プランで使える機能】",
   description:
     "Claude（クロード）の使い方を2026年版で完全解説。ChatGPTとの違い・無料プランの制限・Claude 3.5/4の機能・ビジネス活用・コーディング・文章生成を徹底ガイド。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/claude-guide",
+  },
   openGraph: {
     title: "Claude完全ガイド2026年版【使い方・ChatGPTとの違い】",
     description: "Claude（クロード）の使い方・機能・ChatGPTとの比較を徹底解説。無料プランで使える全機能ガイド。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/claude-guide",
   },
   twitter: {
     card: "summary_large_image",

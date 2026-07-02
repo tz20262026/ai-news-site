@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "Microsoft Copilot（コパイロット）完全ガイド2026年版【使い方・無料機能・ChatGPTとの違い】",
   description:
     "Microsoft Copilotの使い方を2026年版で完全解説。無料プランで使える機能・Windows/Edge/Microsoft 365との連携・ChatGPTとの違いをわかりやすく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/copilot-guide",
+  },
   openGraph: {
     title: "Microsoft Copilot完全ガイド2026年版【使い方・無料・ChatGPTとの違い】",
     description: "Copilotの使い方・無料機能・Windows/Edge連携・ChatGPTとの違いを解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/copilot-guide",
   },
   twitter: {
     card: "summary_large_image",

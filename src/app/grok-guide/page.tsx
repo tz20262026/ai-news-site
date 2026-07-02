@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "Grok（グロック）完全ガイド2026年版【xAI・使い方・ChatGPTとの違い・X（Twitter）連携】",
   description:
     "xAIが開発したGrokの使い方を2026年版で完全解説。ChatGPT・Claude・Geminiとの比較・X（Twitter）連携でリアルタイムデータを活用する方法を詳しく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/grok-guide",
+  },
   openGraph: {
     title: "Grok（グロック）完全ガイド2026年版【xAI・ChatGPTとの違い】",
     description: "Grokの使い方・ChatGPTとの比較・X連携を解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/grok-guide",
   },
   twitter: {
     card: "summary_large_image",

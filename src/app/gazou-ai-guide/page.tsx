@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "画像生成AI おすすめ7選2026年版【無料・日本語対応・副業に使える】",
   description:
     "画像生成AIのおすすめを2026年版で徹底比較。Midjourney・DALL-E・Stable Diffusionなど無料・有料サービスの特徴・使い方・副業活用法を完全解説。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/gazou-ai-guide",
+  },
   openGraph: {
     title: "画像生成AI おすすめ7選2026年版【無料・日本語対応】",
     description: "Midjourney・DALL-E・Stable Diffusionを徹底比較。無料から始められる画像生成AIガイド。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/gazou-ai-guide",
   },
   twitter: {
     card: "summary_large_image",

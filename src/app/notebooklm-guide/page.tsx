@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "Google NotebookLM 使い方完全ガイド2026年版【無料・日本語対応・PDF要約・勉強・仕事活用】",
   description:
     "Google NotebookLMの使い方を2026年版で完全解説。無料でPDF・論文・記事を要約・質問応答・音声ポッドキャスト生成ができるAIノートの活用方法を詳しく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/notebooklm-guide",
+  },
   openGraph: {
     title: "Google NotebookLM 使い方完全ガイド2026年版",
     description: "NotebookLMでPDF要約・勉強・仕事を効率化する方法を解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/notebooklm-guide",
   },
   twitter: {
     card: "summary_large_image",

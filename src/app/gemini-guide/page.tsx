@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "Gemini（ジェミニ）完全ガイド2026年版【使い方・ChatGPT・Claudeとの比較・無料機能】",
   description:
     "Google Gemini（ジェミニ）の使い方を2026年版で完全解説。Gemini 1.5/2.0の機能・ChatGPT・Claudeとの違い・無料プランでできること・Google Workspaceとの連携を徹底ガイド。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/gemini-guide",
+  },
   openGraph: {
     title: "Gemini完全ガイド2026年版【使い方・ChatGPTとの比較】",
     description: "Google Geminiの使い方・機能・ChatGPT/Claudeとの比較を2026年版で徹底解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/gemini-guide",
   },
   twitter: {
     card: "summary_large_image",

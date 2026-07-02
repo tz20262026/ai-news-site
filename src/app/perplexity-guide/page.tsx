@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "Perplexity AI（パープレキシティ）完全ガイド2026年版【使い方・無料機能・ChatGPTとの違い】",
   description:
     "Perplexity AIの使い方を2026年版で完全解説。無料で使えるAI検索エンジンの機能・ChatGPT・Claudeとの違い・有料プランの価値をわかりやすく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/perplexity-guide",
+  },
   openGraph: {
     title: "Perplexity AI完全ガイド2026年版【使い方・無料・ChatGPTとの違い】",
     description: "Perplexity AIの使い方・無料機能・ChatGPTとの違いを解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/perplexity-guide",
   },
   twitter: {
     card: "summary_large_image",

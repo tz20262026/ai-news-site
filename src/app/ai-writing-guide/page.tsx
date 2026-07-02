@@ -5,11 +5,15 @@ export const metadata: Metadata = {
   title: "AI文章生成完全ガイド2026年版【ChatGPT・Claude・Geminiで記事を自動作成する方法】",
   description:
     "AI文章生成（AIライティング）の方法を2026年版で完全解説。ChatGPT・Claude・Geminiを使ったブログ記事・コピーライティング・メール作成の手順をステップバイステップで紹介。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-writing-guide",
+  },
   openGraph: {
     title: "AI文章生成完全ガイド2026年版【自動記事作成の方法】",
     description: "ChatGPT・Claude・GeminiでブログSEO記事・コピー・メールを自動生成する方法を完全解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-writing-guide",
   },
   twitter: {
     card: "summary_large_image",

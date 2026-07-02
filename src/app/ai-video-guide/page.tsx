@@ -6,11 +6,15 @@ export const metadata: Metadata = {
   title: "動画生成AI完全ガイド2026年版【Sora・RunwayML・Pika・無料ツール比較・使い方】",
   description:
     "動画生成AIの使い方を2026年版で完全解説。OpenAI Sora・RunwayML・Pika・Kling・HailGenなど最新ツール比較・無料で使える方法・ビジネス活用まで詳しく解説します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/ai-video-guide",
+  },
   openGraph: {
     title: "動画生成AI完全ガイド2026年版【Sora・RunwayML・Pika比較】",
     description: "Sora・RunwayML・Pika・Klingなど動画生成AIを徹底比較。無料で使える方法も解説。",
     type: "article",
     locale: "ja_JP",
+    url: "https://ai-news-site-wheat.vercel.app/ai-video-guide",
   },
   twitter: {
     card: "summary_large_image",
