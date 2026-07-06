@@ -233,6 +233,31 @@ export default async function ArticlePage({ params }: Props) {
         <NewsletterSignup />
       </div>
 
+      {/* JSON-LD 構造化データ（パンくずリスト・SEO） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "ホーム",
+                item: "https://ai-news-site-wheat.vercel.app",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: article.title,
+                item: `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* JSON-LD 構造化データ（SEO） */}
       <script
         type="application/ld+json"
