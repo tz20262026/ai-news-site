@@ -7,8 +7,12 @@ import {
   getReadTime,
   getRelativeTime,
   getRelatedArticles,
+  getPrimaryDisplayTag,
+  parseArticleBody,
+  splitBoldSegments,
   allArticles as localArticles,
   type Article,
+  type BodyBlock,
 } from "@/lib/articles";
 import {
   getAllArticles,
@@ -88,16 +92,38 @@ export default async function ArticlePage({ params }: Props) {
 
   const allArticles = await fetchAllArticles();
   const related = getRelatedArticles(article, allArticles);
+  const primaryTag = getPrimaryDisplayTag(article.tags);
+  const bodyBlocks = parseArticleBody(article.body);
+  const headings = bodyBlocks.filter(
+    (b): b is Extract<BodyBlock, { type: "heading" }> => b.type === "heading"
+  );
+  const canonicalUrl = `https://ai-news-site-wheat.vercel.app/articles/${article.id}`;
 
   return (
     <div className="max-w-2xl mx-auto">
       <ReadingProgress />
-      <Link
-        href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 transition-colors mb-6"
-      >
-        ← 記事一覧に戻る
-      </Link>
+
+      {/* パンくずリスト（SEO・回遊性向上） */}
+      <nav aria-label="パンくずリスト" className="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-gray-500 dark:text-gray-400">
+        <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors shrink-0">
+          ホーム
+        </Link>
+        {primaryTag && (
+          <>
+            <span className="text-gray-300 dark:text-gray-600 shrink-0">/</span>
+            <Link
+              href={`/tags/${encodeURIComponent(primaryTag)}`}
+              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors shrink-0"
+            >
+              {primaryTag}
+            </Link>
+          </>
+        )}
+        <span className="text-gray-300 dark:text-gray-600 shrink-0">/</span>
+        <span className="text-gray-400 dark:text-gray-500 truncate max-w-[60vw] sm:max-w-xs" title={article.title}>
+          {article.title}
+        </span>
+      </nav>
 
       <article className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
         {/* アイキャッチ画像 */}
@@ -153,16 +179,56 @@ export default async function ArticlePage({ params }: Props) {
             {article.summary}
           </div>
 
+          {/* 目次（見出しが2つ以上ある長文記事のみ表示） */}
+          {headings.length >= 2 && (
+            <nav aria-label="目次" className="mb-7 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 px-5 py-4">
+              <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-2.5 flex items-center gap-1.5">
+                <span>📑</span> 目次
+              </p>
+              <ol className="space-y-1.5">
+                {headings.map((h, i) => (
+                  <li key={h.id} className="text-sm">
+                    <a
+                      href={`#${h.id}`}
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      {i + 1}. {h.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
           {/* 本文 */}
           <div className="article-body text-gray-800 dark:text-gray-200 text-sm sm:text-base leading-[1.9] space-y-5">
-            {article.body.split(/\n\n+/).map((para, i) =>
-              para.trim() ? (
+            {bodyBlocks.map((block, i) =>
+              block.type === "heading" ? (
+                <h2
+                  key={i}
+                  id={block.id}
+                  className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white pt-2 scroll-mt-24"
+                >
+                  {block.text}
+                </h2>
+              ) : (
                 <p key={i}>
-                  {para.trim().split(/\n/).map((line, j, arr) => (
-                    <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
+                  {block.lines.map((line, j, arr) => (
+                    <span key={j}>
+                      {splitBoldSegments(line).map((seg, k) =>
+                        seg.bold ? (
+                          <strong key={k} className="font-bold text-gray-900 dark:text-white">
+                            {seg.text}
+                          </strong>
+                        ) : (
+                          <span key={k}>{seg.text}</span>
+                        )
+                      )}
+                      {j < arr.length - 1 && <br />}
+                    </span>
                   ))}
                 </p>
-              ) : null
+              )
             )}
           </div>
 
@@ -175,7 +241,7 @@ export default async function ArticlePage({ params }: Props) {
           {/* シェアボタン */}
           <ShareButtons
             title={article.title}
-            url={`https://ai-news-site-wheat.vercel.app/articles/${article.id}`}
+            url={canonicalUrl}
           />
 
           {/* フッター */}
@@ -193,37 +259,47 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </article>
 
-      {/* 関連記事 */}
+      {/* 関連記事（こちらもおすすめ・回遊率アップ用） */}
       {related.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-4">関連記事</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {related.map((r) => (
-              <Link
-                key={r.id}
-                href={`/articles/${r.id}`}
-                className="block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 hover:-translate-y-0.5 transition-all duration-300 group"
-              >
-                <div className="relative w-full h-32 overflow-hidden">
-                  <Image
-                    src={getArticleImageUrl(r)}
-                    alt={r.title}
-                    fill
-                    className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, 224px"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
-                </div>
-                <div className="p-3">
-                  <div className="text-xs text-gray-400 dark:text-gray-500 mb-1">
-                    {getRelativeTime(r.publishedAt)} · {getReadTime(r.body)}分
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-1.5">
+            <span>🔥</span> こちらもおすすめ
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+            {related.map((r) => {
+              const relTag = getPrimaryDisplayTag(r.tags);
+              return (
+                <Link
+                  key={r.id}
+                  href={`/articles/${r.id}`}
+                  className="block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 hover:-translate-y-0.5 transition-all duration-300 group"
+                >
+                  <div className="relative w-full h-24 sm:h-32 overflow-hidden">
+                    <Image
+                      src={getArticleImageUrl(r)}
+                      alt={`${r.title}のサムネイル画像`}
+                      fill
+                      className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 224px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                    {relTag && (
+                      <span className="absolute top-1.5 left-1.5 text-[10px] bg-white/90 dark:bg-gray-900/90 text-blue-600 dark:text-blue-400 px-1.5 py-0.5 rounded-full font-medium">
+                        #{relTag}
+                      </span>
+                    )}
                   </div>
-                  <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
-                    {r.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
+                  <div className="p-2.5 sm:p-3">
+                    <div className="text-[10px] sm:text-xs text-gray-400 dark:text-gray-500 mb-1">
+                      {getRelativeTime(r.publishedAt)} · {getReadTime(r.body)}分
+                    </div>
+                    <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                      {r.title}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
@@ -247,11 +323,21 @@ export default async function ArticlePage({ params }: Props) {
                 name: "ホーム",
                 item: "https://ai-news-site-wheat.vercel.app",
               },
+              ...(primaryTag
+                ? [
+                    {
+                      "@type": "ListItem",
+                      position: 2,
+                      name: primaryTag,
+                      item: `https://ai-news-site-wheat.vercel.app/tags/${encodeURIComponent(primaryTag)}`,
+                    },
+                  ]
+                : []),
               {
                 "@type": "ListItem",
-                position: 2,
+                position: primaryTag ? 3 : 2,
                 name: article.title,
-                item: `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+                item: canonicalUrl,
               },
             ],
           }),
@@ -269,7 +355,7 @@ export default async function ArticlePage({ params }: Props) {
             description: article.summary,
             datePublished: article.publishedAt,
             dateModified: article.publishedAt,
-            url: `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+            url: canonicalUrl,
             image: {
               "@type": "ImageObject",
               url: getArticleImageUrl(article),
@@ -294,7 +380,7 @@ export default async function ArticlePage({ params }: Props) {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://ai-news-site-wheat.vercel.app/articles/${article.id}`,
+              "@id": canonicalUrl,
             },
             keywords: article.tags.join(", "),
           }),

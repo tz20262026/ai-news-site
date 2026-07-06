@@ -34,11 +34,112 @@ export function isNew(dateStr: string): boolean {
   return diffMs < 1000 * 60 * 60 * 24 * 3;
 }
 
-/** タグが一致する関連記事を最大3件返す */
-export function getRelatedArticles(article: Article, all: Article[]): Article[] {
-  return all
-    .filter((a) => a.id !== article.id && a.tags.some((t) => article.tags.includes(t)))
-    .slice(0, 3);
+/**
+ * 関連記事を返す（滞在時間・回遊率アップ用）。
+ * 1. タグの一致数が多い記事を優先し、一致数が同じ場合は新着順
+ * 2. タグ一致だけでは件数が足りない場合、新着記事で不足分を補完する
+ */
+export function getRelatedArticles(article: Article, all: Article[], limit = 6): Article[] {
+  const candidates = all.filter((a) => a.id !== article.id);
+
+  const scored = candidates
+    .map((a) => ({
+      article: a,
+      score: a.tags.filter((t) => article.tags.includes(t)).length,
+    }))
+    .filter((c) => c.score > 0)
+    .sort((x, y) => {
+      if (y.score !== x.score) return y.score - x.score;
+      return x.article.publishedAt < y.article.publishedAt ? 1 : -1;
+    });
+
+  const related: Article[] = scored.slice(0, limit).map((c) => c.article);
+
+  if (related.length < limit) {
+    const usedIds = new Set([article.id, ...related.map((a) => a.id)]);
+    const fillers = candidates
+      .filter((a) => !usedIds.has(a.id))
+      .sort((x, y) => (x.publishedAt < y.publishedAt ? 1 : -1));
+    for (const filler of fillers) {
+      if (related.length >= limit) break;
+      related.push(filler);
+    }
+  }
+
+  return related;
+}
+
+/** 内部管理用のタグ（"site|xxx" 等）を除いた表示用タグ一覧を返す */
+const TECHNICAL_TAG_PATTERN = /^(site|region|provider_name|category|type)\|/i;
+
+export function filterDisplayTags(tags: string[]): string[] {
+  return tags.filter((t) => !TECHNICAL_TAG_PATTERN.test(t));
+}
+
+/** パンくずリスト表示用の代表タグ（カテゴリ相当）を1つ返す */
+export function getPrimaryDisplayTag(tags: string[]): string | undefined {
+  return filterDisplayTags(tags)[0];
+}
+
+/** 本文の1ブロック（見出し or 段落）を表す型 */
+export type BodyBlock =
+  | { type: "heading"; id: string; text: string }
+  | { type: "paragraph"; lines: string[] };
+
+/**
+ * 本文テキストを見出し・段落のブロックに分解する。
+ * 段落全体が `**太字**` のみで構成されている場合は見出し（目次対象）として扱う。
+ */
+export function parseArticleBody(body: string): BodyBlock[] {
+  const paragraphs = body.split(/\n\n+/);
+  const blocks: BodyBlock[] = [];
+  let headingCount = 0;
+
+  for (const para of paragraphs) {
+    const trimmed = para.trim();
+    if (!trimmed) continue;
+
+    const headingMatch = trimmed.match(/^\*\*(.+?)\*\*$/);
+    if (headingMatch && !trimmed.includes("\n")) {
+      headingCount += 1;
+      blocks.push({ type: "heading", id: `section-${headingCount}`, text: headingMatch[1] });
+    } else {
+      blocks.push({ type: "paragraph", lines: trimmed.split(/\n/) });
+    }
+  }
+
+  return blocks;
+}
+
+/** 本文中の見出しブロックのみを抽出する（目次表示用） */
+export function getBodyHeadings(body: string): { id: string; text: string }[] {
+  return parseArticleBody(body)
+    .filter((b): b is Extract<BodyBlock, { type: "heading" }> => b.type === "heading")
+    .map(({ id, text }) => ({ id, text }));
+}
+
+/** テキスト内のセグメント（太字かどうか）を表す型 */
+export type TextSegment = { text: string; bold: boolean };
+
+/** 行内の `**太字**` 記法を検出し、テキストセグメントに分割する（軽量Markdown処理） */
+export function splitBoldSegments(line: string): TextSegment[] {
+  const segments: TextSegment[] = [];
+  const regex = /\*\*(.+?)\*\*/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(line)) !== null) {
+    if (match.index > lastIndex) {
+      segments.push({ text: line.slice(lastIndex, match.index), bold: false });
+    }
+    segments.push({ text: match[1], bold: true });
+    lastIndex = regex.lastIndex;
+  }
+  if (lastIndex < line.length) {
+    segments.push({ text: line.slice(lastIndex), bold: false });
+  }
+
+  return segments;
 }
 
 export type Article = {
