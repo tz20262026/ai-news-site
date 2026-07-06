@@ -37,7 +37,7 @@ const SITE_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-400 border-t border-gray-800 mt-16">
+    <footer className="bg-gray-950 text-gray-300 border-t border-gray-800 mt-16">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 py-10">
         {/* ロゴ */}
         <div className="flex items-center gap-2 mb-8">
@@ -55,7 +55,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block py-0.5"
                   >
                     {label}
                   </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block py-0.5"
                   >
                     {label}
                   </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors block py-0.5"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block py-0.5"
                   >
                     {label}
                   </Link>

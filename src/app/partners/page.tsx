@@ -85,6 +85,60 @@ const PARTNERS = [
     badge: "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300",
     btnGradient: "from-purple-500 to-fuchsia-500",
   },
+  {
+    name: "暴露仙人",
+    tagline: "AIが本性を毒舌で暴露する占いサイト",
+    url: "https://fortune-site-neon.vercel.app/",
+    description:
+      "名前・生年月日・悩みを入力するとAIが毒舌で本性を暴露。電話占いサービスの徹底比較・ランキングも掲載する100ページ超の総合占いメディア。",
+    genre: "🔮 占い・エンタメ",
+    stats: [
+      { label: "収録ページ", value: "103ページ" },
+      { label: "診断項目", value: "5つの質問" },
+      { label: "料金", value: "完全無料" },
+    ],
+    gradient: "from-violet-500 to-purple-700",
+    softBg: "from-violet-50 to-purple-50/60 dark:from-violet-950/25 dark:to-purple-950/15",
+    border: "border-violet-200 dark:border-violet-800/50",
+    badge: "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
+    btnGradient: "from-violet-500 to-purple-700",
+  },
+  {
+    name: "副業タイプ診断AI",
+    tagline: "AIがあなたに合う副業を3分で診断",
+    url: "https://fukugyou-shindan-eosin.vercel.app/",
+    description:
+      "6問のステップ式診断にGemini AIが回答し、あなたに合う副業TOP3・月収シミュレーター・30日ロードマップを提示。30本以上の副業別ガイドも収録。",
+    genre: "💼 副業診断",
+    stats: [
+      { label: "診断時間", value: "3分" },
+      { label: "副業ガイド", value: "30本以上" },
+      { label: "料金", value: "完全無料" },
+    ],
+    gradient: "from-emerald-500 to-teal-600",
+    softBg: "from-emerald-50 to-teal-50/60 dark:from-emerald-950/25 dark:to-teal-950/15",
+    border: "border-emerald-200 dark:border-emerald-800/50",
+    badge: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
+    btnGradient: "from-emerald-500 to-teal-600",
+  },
+  {
+    name: "YouTubeコンサルティング情報サイト",
+    tagline: "AIキーワード分析でチャンネルを伸ばす",
+    url: "https://youtubecons.vercel.app/",
+    description:
+      "YouTube成長戦略ガイドとAIキーワード分析ツールを無料提供。登録者を伸ばしたいクリエイター向けの実践的なノウハウを発信。",
+    genre: "📹 YouTube戦略",
+    stats: [
+      { label: "分析ツール", value: "無料" },
+      { label: "対象", value: "クリエイター" },
+      { label: "更新", value: "随時" },
+    ],
+    gradient: "from-red-500 to-rose-600",
+    softBg: "from-red-50 to-rose-50/60 dark:from-red-950/25 dark:to-rose-950/15",
+    border: "border-red-200 dark:border-red-800/50",
+    badge: "bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300",
+    btnGradient: "from-red-500 to-rose-600",
+  },
 ];
 
 export default function PartnersPage() {
