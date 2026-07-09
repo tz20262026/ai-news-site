@@ -8,6 +8,7 @@ import {
   getRelativeTime,
   type Article,
 } from "@/lib/articles";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 type Props = { params: Promise<{ tag: string }> };
 
@@ -152,6 +153,11 @@ export default async function TagPage({ params }: Props) {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* メール登録導線 */}
+      <div className="mt-8 max-w-md mx-auto">
+        <NewsletterSignup compact />
       </div>
 
       {/* JSON-LD 構造化データ */}
