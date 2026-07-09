@@ -101,6 +101,16 @@ const items = [
     cta: "無料説明会に申し込む →",
     color: "#be185d",
   },
+  {
+    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+GHL6WI+4K3S+5YJRM",
+    badge: "💻 未経験からエンジニアへ",
+    badgeColor: "#059669",
+    title: "SkillHacks",
+    tagline: "質問し放題のオンラインプログラミングスクール",
+    desc: "AIを使いこなすにはコードが読めると強い。買い切り・質問し放題で挫折しにくいオンラインプログラミングスクール。",
+    cta: "コース詳細を見る →",
+    color: "#059669",
+  },
 ];
 
 export default function AffiliateSectionAiNews() {

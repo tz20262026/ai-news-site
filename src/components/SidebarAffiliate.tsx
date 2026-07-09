@@ -25,6 +25,14 @@ const items = [
     cta: "10日間無料 →",
     color: "#f97316",
   },
+  {
+    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+GHL6WI+4K3S+5YJRM",
+    emoji: "💻",
+    title: "SkillHacks",
+    tagline: "質問し放題のプログラミングスクール",
+    cta: "コース詳細 →",
+    color: "#059669",
+  },
 ];
 
 export default function SidebarAffiliate() {
