@@ -55,7 +55,13 @@ jobs:
             echo "変更なし。スキップします。"
           else
             git commit -m "feat: AIによる市場インテリジェンス自動更新 $(date '+%Y-%m-%d %H:%M JST')"
-            git pull --rebase origin master
-            git push
-            echo "✅ プッシュ完了。Vercel が自動デプロイを開始します。"
+            # スクリプトが残した未ステージ変更・未追跡ファイルを掃除しないと rebase が失敗する
+            git checkout -- . 2>/dev/null || true
+            git clean -fd 2>/dev/null || true
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin master && git push && echo "✅ プッシュ完了。Vercel が自動デプロイを開始します。" && exit 0
+              sleep $((i * 15))
+            done
+            echo "❌ 5回リトライしても push できませんでした"
+            exit 1
           fi
