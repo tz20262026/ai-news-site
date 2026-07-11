@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 // ── 型定義 ────────────────────────────────────────────────
 interface Tool {
@@ -249,6 +250,11 @@ export default function ToolsClient({ segments, updatedAt }: Props) {
           </div>
         </div>
       )}
+
+      {/* ── アフィリエイトセクション ── */}
+      <div className="mt-10 -mx-4 sm:mx-0">
+        <AffiliateSectionAiNews />
+      </div>
 
       {/* ── フッターリンク ── */}
       <div className="mt-10 text-center">
