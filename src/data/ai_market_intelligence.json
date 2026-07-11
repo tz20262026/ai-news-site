@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-10T21:54:44.860993+09:00",
-  "aiJudgment": "AIによる最新市場分析",
+  "updatedAt": "2026-07-11T12:53:05.888664+09:00",
+  "aiJudgment": "開発AI市場はClaude 3.5 Sonnetの登場で競争が激化。速度と性能がGPT-4oを脅かし、新たな標準となりつつある。",
   "segments": [
     {
       "id": "development",
@@ -10,52 +10,52 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "最新モデルClaude 3.5 Sonnetが登場。GPT-4oを上回るベンチマークと、新機能「Artifacts」による対話型開発環境が評価され、開発体験を革新する可能性を秘めているため。",
+      "reason": "GPT-4oを凌駕する速度とコーディング性能を誇る。特にArtifacts機能は開発ワークフローを革新する可能性を秘めており、今月の開発セグメントで最も注目すべきツールと判断。",
       "tools": [
         {
-          "id": "claude-3.5-sonnet",
+          "id": "claude-3-5-sonnet",
           "name": "Claude 3.5 Sonnet",
-          "price": "API経由",
-          "newFeature": "新機能Artifactsでコード実行プレビュー",
+          "price": "API: $3/M入力トークン, Web: 無料/Proプランあり",
+          "newFeature": "新モデル登場、Artifacts機能追加",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "速度と性能でGPT-4oを凌駕する最新モデル。"
-        },
-        {
-          "id": "github-copilot",
-          "name": "GitHub Copilot",
-          "price": "$10/月〜",
-          "newFeature": "Copilot Workspaceのプレビュー開始",
-          "rating": 4,
-          "badge": null,
-          "summary": "IDEに統合されたコーディング支援のデファクトスタンダード。"
+          "summary": "速度と知能を両立した最新モデル。Artifacts機能で開発体験を向上。"
         },
         {
           "id": "gpt-4o",
           "name": "GPT-4o",
-          "price": "無料 / API",
-          "newFeature": "マルチモーダル機能の強化",
+          "price": "API: $5/M入力トークン, ChatGPT Plus",
+          "newFeature": "マルチモーダル対応と高速応答",
           "rating": 4,
           "badge": null,
-          "summary": "高速応答と高い汎用性を持つOpenAIのフラッグシップ。"
+          "summary": "テキスト、音声、画像を統合的に扱うOpenAIの最新フラッグシップモデル。"
+        },
+        {
+          "id": "github-copilot",
+          "name": "GitHub Copilot",
+          "price": "月額$10から",
+          "newFeature": "安定した機能改善とIDE連携強化",
+          "rating": 4,
+          "badge": null,
+          "summary": "IDEに統合されたコーディングアシスタント。開発者の生産性を飛躍的に向上。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "無料〜",
-          "newFeature": "Claude 3.5 Sonnetを統合",
+          "price": "無料/Proプランあり",
+          "newFeature": "GPT-4o, Claude 3.5 Sonnet対応",
           "rating": 4,
           "badge": null,
-          "summary": "AIネイティブな開発体験を提供する高機能コードエディタ。"
+          "summary": "AIネイティブなコードエディタ。最新モデルを統合し、高度な開発支援を提供。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "プレビュー",
-          "newFeature": "自律的なタスク実行能力の向上",
+          "price": "Replitプランに内包",
+          "newFeature": "自律的なタスク実行機能の強化",
           "rating": 3,
           "badge": null,
-          "summary": "完全な開発タスクを自律的にこなすことを目指すAIエージェント。"
+          "summary": "Replit環境で動作する自律型AIエージェント。コーディングタスクを自動化。"
         }
       ]
     },
@@ -67,27 +67,19 @@
         "name": "GPT-4o",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト、音声、画像をシームレスに扱えるマルチモーダル性能と高速応答性が、議事録作成から資料分析まで幅広い事務作業に革命をもたらす。最も汎用性が高く、実用的な選択肢であるため。",
-      "tools": [
-        {
-          "id": "gpt-4o-prod",
-          "name": "GPT-4o",
-          "price": "無料 / Plus $20/月",
-          "newFeature": "リアルタイム音声対話機能の段階的展開",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "音声・画像も理解する超高速なマルチモーダルAI。"
-        },
-        {
-          "id": "claude-3.5-sonnet-prod",
-          "name": "Claude 3.5 Sonnet",
-          "price": "無料 / Pro $20/月",
-          "newFeature": "新機能Artifactsでデータ可視化",
-          "rating": 5,
-          "badge": null,
-          "summary": "高速かつ高精度なテキスト生成・分析で業務を効率化。"
-        }
-      ]
+      "reason": "マルチモーダル機能と高速応答により、文書作成、要約、翻訳など多様な事務作業を効率化。API連携で業務システムへの組み込みも容易なため、汎用性が極めて高い。",
+      "tools": []
+    },
+    {
+      "id": "creative",
+      "label": "クリエイティブ",
+      "icon": "palette",
+      "winner": {
+        "name": "Midjourney",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "最新バージョンv6でプロンプトの忠実性と画質がさらに向上。一貫したキャラクター生成機能も強化され、商用レベルのクリエイティブ制作において依然としてトップを走る。",
+      "tools": []
     }
   ],
   "newToolsToday": [],
