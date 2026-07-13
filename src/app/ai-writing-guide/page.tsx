@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
 
 export const metadata: Metadata = {
   title: "AI文章生成完全ガイド2026年版【ChatGPT・Claude・Geminiで記事を自動作成する方法】",
@@ -215,6 +216,8 @@ export default function AiWritingGuidePage() {
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />
+        {/* もしもアフィリエイト枠（2026-07-13追加） */}
+        <MoshimoSectionAiNews />
       </div>
     </main>
   );

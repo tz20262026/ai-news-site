@@ -1,4 +1,5 @@
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
 import SidebarAffiliate from "@/components/SidebarAffiliate";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -179,6 +180,8 @@ export default async function Home() {
         </aside>
       </div>
       <AffiliateSectionAiNews />
+      {/* もしもアフィリエイト枠（2026-07-13追加） */}
+      <MoshimoSectionAiNews />
     </div>
   );
 }
