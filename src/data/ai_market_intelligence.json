@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-12T13:07:55.511273+09:00",
-  "aiJudgment": "AIによる最新市場分析",
+  "updatedAt": "2026-07-13T13:10:01.560026+09:00",
+  "aiJudgment": "Claude 3.5 Sonnetの登場で開発系AIの競争が激化。速度と性能でGPT-4oに迫り、市場の勢力図を塗り替える可能性を秘めている。",
   "segments": [
     {
       "id": "development",
@@ -10,54 +10,95 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "最新モデルClaude 3.5 Sonnetは、GPT-4oに匹敵する性能をより高速かつ低コストで実現。特にコーディングタスクでの評価が高く、開発現場での実用性が一気に高まったため。",
+      "reason": "最新モデルとして速度とコーディング性能でGPT-4oを凌駕する場面も多い。複雑なタスクの理解と生成能力が高く、開発効率を飛躍的に向上させるポテンシャルを持つため選出。",
       "tools": [
         {
           "id": "claude-3-5-sonnet",
           "name": "Claude 3.5 Sonnet",
-          "price": "API従量課金 (無料枠あり)",
-          "newFeature": "高速性と高度なコーディング能力を両立",
+          "price": "API: $3/M入力, $15/M出力, Web: Proプラン月額$20",
+          "newFeature": "最新モデル。速度と性能が大幅向上。",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "速度と性能を両立した最新モデル。コーディングタスクでGPT-4oを凌ぐ性能を発揮。"
+          "summary": "速度と知能のバランスに優れた最新モデル。コーディング能力が高い。"
         },
         {
           "id": "gpt-4o",
           "name": "GPT-4o",
-          "price": "API従量課金 (無料枠あり)",
-          "newFeature": "音声・画像を含むマルチモーダル対応強化",
+          "price": "API: $5/M入力, $15/M出力, Web: 無料版あり, Plus月額$20",
+          "newFeature": "高速応答とマルチモーダル対応。",
           "rating": 5,
           "badge": null,
-          "summary": "OpenAIの最新フラッグシップモデル。汎用性が高く、多様な開発タスクに対応可能。"
+          "summary": "OpenAIの最新フラッグシップモデル。音声や画像も扱える万能型。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "月額$10〜",
-          "newFeature": "IDE連携強化とコンテキスト理解向上",
-          "rating": 5,
+          "price": "個人: 月額$10, Business: 月額$19",
+          "newFeature": "GPT-4oベースの機能強化。",
+          "rating": 4,
           "badge": null,
-          "summary": "コード補完の定番。開発者の生産性を飛躍的に向上させるAIペアプログラマー。"
+          "summary": "エディタ統合型の定番AIペアプログラマ。コード補完が強力。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "月額$20〜",
-          "newFeature": "AIとの対話によるコードベース編集機能",
+          "price": "無料版あり, Pro: 月額$20",
+          "newFeature": "GPT-4o, Claude 3.5 Sonnet対応。",
           "rating": 4,
           "badge": null,
-          "summary": "AIファーストのコードエディタ。コードベース全体を理解し、大規模な変更を支援。"
+          "summary": "AI機能を第一に設計されたコードエディタ。対話しながら開発可能。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "Replitプランに内包",
-          "newFeature": "自律的なデバッグと機能実装の試み",
-          "rating": 4,
+          "price": "Replit Coreプランに含まれる (月額$20)",
+          "newFeature": "自律的なタスク実行機能。",
+          "rating": 3,
           "badge": null,
-          "summary": "Replit環境で動作するAIエージェント。タスクを与えると自律的に開発を進める。"
+          "summary": "Replit環境で動作する自律型AI開発エージェント。"
         }
       ]
+    },
+    {
+      "id": "productivity",
+      "label": "事務効率化",
+      "icon": "briefcase",
+      "winner": {
+        "name": "GPT-4o",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "テキストだけでなく音声や画像も扱えるマルチモーダル性能が強み。議事録作成から資料分析まで、多様な事務作業をシームレスに支援できるため、総合的な生産性向上に最も貢献する。",
+      "tools": [
+        {
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "price": "API: $5/M入力, $15/M出力, Web: 無料版あり, Plus月額$20",
+          "newFeature": "高速応答とマルチモーダル対応。",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "OpenAIの最新フラッグシップモデル。音声や画像も扱える万能型。"
+        },
+        {
+          "id": "claude-3-5-sonnet",
+          "name": "Claude 3.5 Sonnet",
+          "price": "API: $3/M入力, $15/M出力, Web: Proプラン月額$20",
+          "newFeature": "最新モデル。速度と性能が大幅向上。",
+          "rating": 5,
+          "badge": null,
+          "summary": "速度と知能のバランスに優れた最新モデル。長文読解や要約が得意。"
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "label": "クリエイティブ",
+      "icon": "palette",
+      "winner": {
+        "name": "該当なし",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "今月はクリエイティブ分野で特筆すべき新規ツールや大型アップデートが観測されなかったため、選出は見送る。既存ツールは安定しているが、市場を揺るがす動きはなし。",
+      "tools": []
     }
   ],
   "newToolsToday": [],
