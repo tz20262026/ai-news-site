@@ -2,6 +2,17 @@
 
 const items = [
   {
+    // 2026-07-13追加・成果報酬6,000円(新規有料課金)・確定率100%
+    href: "https://px.a8.net/svt/ejp?a8mat=4B7QWS+6ZUDO2+5T8S+5YJRM",
+    badge: "🧾 AI副業の確定申告に",
+    badgeColor: "#0d9488",
+    title: "タックスナップ",
+    tagline: "知識不要で丸投げできる確定申告アプリ",
+    desc: "AI副業・フリーランスの収入が年20万円を超えたら確定申告が必要。レシートを撮るだけで帳簿づけから解放される。",
+    cta: "アプリを無料で試す →",
+    color: "#0d9488",
+  },
+  {
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS7+1L5MUQ+40GA+61C2P",
     badge: "🌍 英語でAI情報を収集",
     badgeColor: "#2563eb",

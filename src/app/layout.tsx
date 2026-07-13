@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import MobileStickyCTA from "@/components/MobileStickyCTA";
 import { Analytics } from "@vercel/analytics/next";
 
 const notoSansJP = Noto_Sans_JP({
@@ -149,6 +150,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <BackToTop />
+        <MobileStickyCTA />
         <Analytics />
       <Script src="https://gc.zgo.at/count.js" data-goatcounter="https://ainewssite.goatcounter.com/count" strategy="afterInteractive" />
 </body>

@@ -110,6 +110,18 @@ const ALL_ITEMS = [
     color: "#dc2626",
   },
   {
+    key: "taxnap",
+    tags: ["副業", "フリーランス", "確定申告", "税金", "個人事業", "収益化", "マネタイズ", "在宅", "独立"],
+    href: "https://px.a8.net/svt/ejp?a8mat=4B7QWS+6ZUDO2+5T8S+5YJRM",
+    badge: "🧾 確定申告を丸投げ",
+    badgeColor: "#0d9488",
+    title: "タックスナップ",
+    tagline: "知識不要の確定申告アプリ｜AI副業の税務に",
+    desc: "AI副業・フリーランスの収入が年20万円を超えたら確定申告が必要。レシートを撮るだけで帳簿づけを丸投げできる。",
+    cta: "アプリを無料で試す →",
+    color: "#0d9488",
+  },
+  {
     key: "skillhacks",
     tags: ["プログラミング", "エンジニア", "python", "開発", "コーディング", "学習", "スキル", "転職", "未経験", "llm", "機械学習"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+GHL6WI+4K3S+5YJRM",
