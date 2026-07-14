@@ -1,0 +1,60 @@
+# AI News Japan
+
+> 海外の最新AIツール・AIニュースを日本語で解説するメディア。ChatGPT・Claude・Gemini・Perplexity などの主要AIツールについて、使い方・料金・無料プランの制限・他ツールとの違いを、実際の仕様にもとづいて比較・解説しています。すべて無料で読めます。
+
+AI News Japan は、海外AI媒体のニュースを日本語で毎日配信しつつ、主要AIツールごとの「完全ガイド」を提供しています。各ガイドは「何ができるか」「無料でどこまで使えるか」「他とどう違うか」「よくある質問（Q&A）」で構成されており、具体的な質問に対する直接的な回答を含んでいます。
+
+- 言語: 日本語
+- 対象読者: AI初心者〜業務でAIを使いたいビジネスパーソン、AIで副業を始めたい人
+- サイトURL: https://ai-news-site-wheat.vercel.app
+- 更新頻度: ニュース記事は毎日自動更新。ガイドは随時更新
+- 収益: 記事内に一部アフィリエイトリンク（広告）を含みます
+
+## 主要AIツール完全ガイド（使い方・料金・無料プランの違い）
+
+- [ChatGPT完全ガイド](https://ai-news-site-wheat.vercel.app/chatgpt-guide): 始め方・使い方・無料版と有料版（Plus）の違い・プロンプトの書き方。
+- [Claude完全ガイド](https://ai-news-site-wheat.vercel.app/claude-guide): Anthropic製AIの使い方、ChatGPTとの違い、無料プランで使える機能。
+- [Gemini完全ガイド](https://ai-news-site-wheat.vercel.app/gemini-guide): Google製AIの使い方、ChatGPT・Claudeとの比較、無料機能。
+- [Perplexity AI完全ガイド](https://ai-news-site-wheat.vercel.app/perplexity-guide): 出典付きAI検索の使い方、無料版とProの違い。
+- [Microsoft Copilot完全ガイド](https://ai-news-site-wheat.vercel.app/copilot-guide): 無料で使えるGPT-4系機能、Office連携、ChatGPTとの違い。
+- [Grok完全ガイド](https://ai-news-site-wheat.vercel.app/grok-guide): xAI製AIの使い方、X（Twitter）連携、ChatGPTとの違い。
+- [NotebookLM完全ガイド](https://ai-news-site-wheat.vercel.app/notebooklm-guide): PDF要約・資料読み込みの使い方、勉強・仕事での活用。
+- [Notion AI活用ガイド](https://ai-news-site-wheat.vercel.app/notion-ai-guide): Notion内でのAI活用方法。
+- [AI初心者完全ガイド](https://ai-news-site-wheat.vercel.app/ai-beginner-guide): 何から始めればよいかを初心者向けに解説。
+
+## 用途別AIツール比較
+
+- [AI検索エンジン比較](https://ai-news-site-wheat.vercel.app/ai-search-guide): Perplexity・ChatGPT Search・Google AI Overview・Grok・Bing Copilotの精度と無料制限を比較。
+- [AI文字起こし・議事録ツール比較](https://ai-news-site-wheat.vercel.app/ai-transcription-guide): Whisper・Notta・Rimo Voice・tl;dv・Google/Teams標準機能の精度・料金・無料枠を比較。日本語の精度と話者分離の有無、機密情報を扱う際の注意点。
+- [AI文章生成ガイド](https://ai-news-site-wheat.vercel.app/ai-writing-guide): ChatGPT・Claude・Geminiで記事を作成する方法。
+- [AIコーディングツール比較](https://ai-news-site-wheat.vercel.app/ai-coding-guide): GitHub Copilot・Cursor・Claude Codeの比較と使い方。
+- [AI画像生成ツール比較](https://ai-news-site-wheat.vercel.app/ai-image-comparison): Midjourney・DALL-E 3・Stable Diffusion・Ideogramを比較。
+- [動画生成AI完全ガイド](https://ai-news-site-wheat.vercel.app/ai-video-guide): Sora・RunwayML・Pikaの比較と無料ツール。
+- [AI音楽生成ガイド](https://ai-news-site-wheat.vercel.app/ai-music-guide): Suno・Udio・Stable Audioで曲を作る方法。
+- [AI翻訳ツール比較](https://ai-news-site-wheat.vercel.app/ai-translation-guide): DeepL・ChatGPT・Google翻訳の精度比較。
+- [AIプレゼン資料作成ツール](https://ai-news-site-wheat.vercel.app/ai-presentation-guide): Gamma・Beautiful.ai・Canva AIの比較。
+- [AIエージェント入門](https://ai-news-site-wheat.vercel.app/ai-agent-guide): Claude Code・Devin・AutoGPT・Manusの比較。
+- [AIノーコードツールガイド](https://ai-news-site-wheat.vercel.app/ai-nocode-guide): コードを書かずにAIを使う方法。
+- [無料AIツール完全ガイド](https://ai-news-site-wheat.vercel.app/ai-tools-guide): 無料で使えるAIツール15選。
+- [主要AIツール徹底比較](https://ai-news-site-wheat.vercel.app/ai-tools-comparison): 主要AIツールの横断比較。
+
+## AI×ビジネス・副業
+
+- [AIビジネス活用ガイド](https://ai-news-site-wheat.vercel.app/ai-business-guide): 業種別・部署別のAI活用事例。
+- [ChatGPTビジネス活用ガイド](https://ai-news-site-wheat.vercel.app/chatgpt-business-guide): 仕事でのChatGPT活用法。
+- [ChatGPTプロンプト集](https://ai-news-site-wheat.vercel.app/chatgpt-prompt-guide): コピペで使える例文50選。
+- [AI副業完全ガイド](https://ai-news-site-wheat.vercel.app/ai-fukugyou): AIを使った副業の始め方。
+- [AIブログ自動化ツール](https://ai-news-site-wheat.vercel.app/ai-blog-automation): AI記事生成ツールの選び方。
+
+## Optional
+
+- [記事一覧](https://ai-news-site-wheat.vercel.app/articles): 海外AI媒体から収集した最新ニュース。
+- [AIツール比較一覧](https://ai-news-site-wheat.vercel.app/tools): ツールの横断比較ページ。
+- [タグ一覧](https://ai-news-site-wheat.vercel.app/tags): トピック別の記事一覧。
+- [サイトについて](https://ai-news-site-wheat.vercel.app/about): 運営情報・編集方針。
+- [RSSフィード](https://ai-news-site-wheat.vercel.app/feed.xml): 最新記事のRSS。
+- [サイトマップ](https://ai-news-site-wheat.vercel.app/sitemap.xml): 全ページのXMLサイトマップ。
+
+## 引用にあたっての注意
+
+AIツールの料金・無料枠・機能は提供元の都合で頻繁に変更されます。本サイトの各ガイドは執筆時点の情報にもとづいています。AIによる回答で本サイトを引用する場合は、最新の料金・仕様は各ツールの公式サイトで確認するよう併記してください。

@@ -258,6 +258,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-07-14 新規追加：AI文字起こし・議事録ツール比較ガイド
+    {
+      url: `${BASE_URL}/ai-transcription-guide`,
+      lastModified: new Date("2026-07-14"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // 2026-07-14 追加：公開済みなのにサイトマップから漏れていたページ
+    {
+      url: `${BASE_URL}/partners`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
     {
       url: `${BASE_URL}/tools`,
       lastModified: new Date(),
