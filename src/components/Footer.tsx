@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SisterSites from "./SisterSites";
 
 const GUIDE_LINKS = [
   { href: "/chatgpt-guide", label: "ChatGPT使い方" },
@@ -99,6 +100,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* 姉妹サイト（相互リンク） */}
+        <SisterSites />
 
         {/* コピーライト */}
         <div className="pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-600">
