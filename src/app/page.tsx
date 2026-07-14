@@ -54,6 +54,24 @@ export default async function Home() {
     <div>
       {/* ヒーローバナー */}
       <div className="mb-7 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-indigo-950 border border-blue-900/40 shadow-lg relative">
+        {/* 背景動画（音声なし・自動再生・ループ）。
+            動きを減らす設定の人には再生せずポスター画像を見せる（globals.css で制御） */}
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <video
+            className="hero-video absolute inset-0 h-full w-full object-cover scale-105 blur-[2px]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-poster.jpg"
+          >
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
+          {/* 見出しと本文の可読性を確保するためのオーバーレイ（左と下を濃くする） */}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-blue-950/75 to-indigo-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 to-transparent" />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.06)_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="relative px-5 py-6 sm:px-8 sm:py-8">
           <div className="flex items-center gap-2 mb-3">
@@ -71,7 +89,7 @@ export default async function Home() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">AI</span>
             {" "}の最前線を、日本語で。
           </h1>
-          <p className="text-sm text-blue-200/70 leading-relaxed max-w-lg">
+          <p className="text-sm text-blue-100/90 leading-relaxed max-w-lg drop-shadow">
             TechCrunch・VentureBeat など海外100媒体から毎日自動収集。
             AIが自律的に精査した{" "}
             <strong className="text-white font-semibold">{articles.length}件</strong>
