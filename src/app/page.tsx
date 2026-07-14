@@ -54,26 +54,26 @@ export default async function Home() {
     <div>
       {/* ヒーローバナー */}
       <div className="mb-7 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-950 to-indigo-950 border border-blue-900/40 shadow-lg relative">
-        {/* 背景動画（音声なし・自動再生・ループ）。
-            動きを減らす設定の人には再生せずポスター画像を見せる（globals.css で制御） */}
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.06)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        {/* 動画（スマホ）：文字と重ならないよう、見出しの上に独立したブロックとして置く。
+            PCでは下の右カラムに表示するため、ここでは非表示にする。 */}
+        <div className="sm:hidden relative">
           <video
-            className="hero-video absolute inset-0 h-full w-full object-cover scale-105 blur-[2px]"
+            className="hero-video block w-full h-auto"
             autoPlay
             muted
             loop
             playsInline
             preload="metadata"
             poster="/hero-poster.jpg"
+            aria-hidden="true"
           >
             <source src="/hero.mp4" type="video/mp4" />
           </video>
-          {/* 見出しと本文の可読性を確保するためのオーバーレイ（左と下を濃くする） */}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-blue-950/75 to-indigo-950/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 to-transparent" />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.06)_1px,transparent_1px)] bg-[size:40px_40px]" />
-        <div className="relative px-5 py-6 sm:px-8 sm:py-8">
+        <div className="relative px-5 py-6 sm:px-8 sm:py-8 sm:flex sm:items-center sm:gap-8">
+          {/* 左：テキスト */}
+          <div className="sm:flex-1 sm:min-w-0">
           <div className="flex items-center gap-2 mb-3">
             <span className="flex items-center gap-1.5 text-xs font-bold text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
@@ -108,6 +108,25 @@ export default async function Home() {
             >
               💼 AI副業ガイド
             </Link>
+          </div>
+          </div>
+
+          {/* 右：動画（PCのみ）。文字と重ならないよう独立したカラムに置く */}
+          <div className="hidden sm:block sm:w-64 md:w-80 lg:w-96 sm:flex-shrink-0">
+            <div className="relative rounded-xl overflow-hidden border border-blue-800/40 shadow-lg">
+              <video
+                className="hero-video block w-full h-auto"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/hero-poster.jpg"
+                aria-hidden="true"
+              >
+                <source src="/hero.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </div>
