@@ -21,6 +21,7 @@ const TOOL_LINKS = [
   { href: "/ai-image-comparison", label: "AI画像生成比較" },
   { href: "/tools", label: "ツール一覧" },
   { href: "/ai-fukugyou", label: "AI副業ガイド" },
+  { href: "/ai-blog-automation", label: "AIブログ自動化ツール" },
   { href: "/chatgpt-prompt-guide", label: "プロンプト集" },
   { href: "/ai-agent-guide", label: "AIエージェント" },
   { href: "/notebooklm-guide", label: "NotebookLM" },

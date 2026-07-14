@@ -50,6 +50,17 @@ const items: MoshimoItem[] = [
     color: "#3b82f6",
   },
   {
+    // 2026-07-14 第3弾・成果報酬24,000円（導入相談・契約）
+    href: "https://af.moshimo.com/af/c/click?a_id=5692071&p_id=7616&pc_id=22006&pl_id=95102",
+    badge: "🧾 見積業務をAIで効率化",
+    badgeColor: "#06b6d4",
+    title: "見積太郎２",
+    tagline: "AI補助付きの見積相談スレッド管理ツール",
+    desc: "見積のやり取りをスレッドで一元管理し、AIが作成を補助するツール。メールと表計算ソフトに散らばりがちな見積業務をまとめたい事業者向け。まずは導入相談から。",
+    cta: "導入相談をしてみる →",
+    color: "#06b6d4",
+  },
+  {
     // 成果報酬23,000円
     href: "https://af.moshimo.com/af/c/click?a_id=5692076&p_id=7521&pc_id=21723&pl_id=94320",
     badge: "🏪 AI検索時代の店舗集客",
@@ -72,6 +83,17 @@ const items: MoshimoItem[] = [
     color: "#ef4444",
   },
   {
+    // 2026-07-14 第3弾・成果報酬 最大10,000円（会員登録）
+    href: "https://af.moshimo.com/af/c/click?a_id=5692030&p_id=16&pc_id=16&pl_id=58539",
+    badge: "🌱 低コストで始めるサーバー",
+    badgeColor: "#ec4899",
+    title: "ロリポップ！レンタルサーバー",
+    tagline: "月額わずかな費用から使える定番レンタルサーバー",
+    desc: "AIツールの検証ログや使い方メモを発信する場を、まず低コストで持ちたい人向け。WordPressの簡単インストールに対応した老舗のレンタルサーバー。",
+    cta: "プランを見てみる →",
+    color: "#ec4899",
+  },
+  {
     // 成果報酬10,000円
     href: "https://af.moshimo.com/af/c/click?a_id=5692062&p_id=2402&pc_id=5229&pl_id=31546",
     badge: "💻 AI時代のコーディング学習",
@@ -81,6 +103,17 @@ const items: MoshimoItem[] = [
     desc: "ChatGPTやCopilotを使いこなすにも、コードの基礎があると理解の深さが違う。動画教材で自分のペースで学べるオンラインスクール。",
     cta: "講座の内容を見る →",
     color: "#7c3aed",
+  },
+  {
+    // 2026-07-14 第3弾・成果報酬9,000円
+    href: "https://af.moshimo.com/af/c/click?a_id=5692083&p_id=7342&pc_id=21096&pl_id=93097",
+    badge: "🏢 オフィス業務をAIで効率化",
+    badgeColor: "#8b5cf6",
+    title: "DoraVerse",
+    tagline: "BtoB向けSaaS｜オフィス業務を効率化するAIツール",
+    desc: "社内の定型業務をAIで効率化するBtoB向けSaaS。「AIを業務に入れたいが、どこから手をつけるか」を考えている企業の担当者向けのサービスです。",
+    cta: "サービス詳細を見る →",
+    color: "#8b5cf6",
   },
   {
     // 成果報酬8,000円
@@ -126,10 +159,30 @@ const items: MoshimoItem[] = [
     cta: "コース一覧を見る →",
     color: "#14b8a6",
   },
+  {
+    // 2026-07-14 第3弾・成果報酬5,000円
+    href: "https://af.moshimo.com/af/c/click?a_id=5692029&p_id=110&pc_id=110&pl_id=2537",
+    badge: "🌐 ドメインとまとめて",
+    badgeColor: "#64748b",
+    title: "お名前.com レンタルサーバー",
+    tagline: "ドメイン登録数国内トップクラスの事業者が運営",
+    desc: "独自ドメインとレンタルサーバーを同じ事業者でまとめたい人向け。AI関連の情報発信サイトや検証用サイトの開設先として。",
+    cta: "サーバー詳細を見る →",
+    color: "#64748b",
+  },
 ];
 
-/** もしもアフィリエイト広告セクション（Propsなし） */
-export default function MoshimoSectionAiNews() {
+/** このセクションのProps */
+type MoshimoSectionAiNewsProps = {
+  /** 通常グリッドに表示する件数の上限（未指定なら全件表示。注目案件は常に表示） */
+  limit?: number;
+};
+
+/** もしもアフィリエイト広告セクション */
+export default function MoshimoSectionAiNews({ limit }: MoshimoSectionAiNewsProps) {
+  /** limit 指定時は上位のみ表示（成果報酬の高い順に並んでいる） */
+  const shownItems = typeof limit === "number" ? items.slice(0, limit) : items;
+
   return (
     <section className="py-14 bg-slate-950 border-t border-slate-800">
       <div className="max-w-5xl mx-auto px-4">
@@ -178,7 +231,7 @@ export default function MoshimoSectionAiNews() {
         </a>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {items.map((item) => (
+          {shownItems.map((item) => (
             <a
               key={item.title}
               href={item.href}
@@ -208,6 +261,17 @@ export default function MoshimoSectionAiNews() {
             </a>
           ))}
         </div>
+        {/* 件数を絞っているページでは、全件を掲載しているガイドページへ誘導する */}
+        {shownItems.length < items.length && (
+          <p className="text-center mt-6">
+            <a
+              href="/ai-coding-guide"
+              className="inline-flex items-center text-sm font-bold text-amber-300 hover:text-amber-200 underline underline-offset-4"
+            >
+              AI活用に役立つサービスをすべて見る →
+            </a>
+          </p>
+        )}
         <p className="text-center text-xs text-slate-300 mt-6">※ 本セクションはPR・広告（もしもアフィリエイト）を含みます</p>
       </div>
     </section>

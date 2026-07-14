@@ -181,7 +181,8 @@ export default async function Home() {
       </div>
       <AffiliateSectionAiNews />
       {/* もしもアフィリエイト枠（2026-07-13追加） */}
-      <MoshimoSectionAiNews />
+      {/* トップは注目案件＋上位6件に絞る。全13件はガイドページ側で表示 */}
+      <MoshimoSectionAiNews limit={6} />
     </div>
   );
 }
