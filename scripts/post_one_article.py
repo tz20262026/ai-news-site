@@ -106,6 +106,29 @@ SOURCE_NAMES = {
 def source_name(s: str) -> str:
     return SOURCE_NAMES.get(s.lower(), s.replace("_", " ").title())
 
+SITE_HOST    = "ai-news-site-wheat.vercel.app"
+INDEXNOW_KEY = "0d8d0a412e14437e5fbbdf8d91df2179"
+
+def ping_indexnow(article_id: str) -> None:
+    """新記事URLをIndexNow（Bing等の検索エンジン）へ通知する。失敗しても処理は継続。"""
+    try:
+        import urllib.request
+        payload = json.dumps({
+            "host": SITE_HOST,
+            "key": INDEXNOW_KEY,
+            "keyLocation": f"https://{SITE_HOST}/{INDEXNOW_KEY}.txt",
+            "urlList": [f"https://{SITE_HOST}/articles/{article_id}"],
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            "https://api.indexnow.org/indexnow",
+            data=payload,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as res:
+            logger.info(f"IndexNow通知: HTTP {res.status}")
+    except Exception as e:
+        logger.warning(f"IndexNow通知スキップ: {e}")
+
 def load_posted() -> set:
     if not POSTED_LOG.exists():
         return set()
@@ -246,6 +269,7 @@ def generate_ai_news_article(client: genai.Client) -> int:
     updated = [new_article] + existing
     EXTRA_ARTICLES_PATH.write_text(json.dumps(updated, ensure_ascii=False, indent=2), encoding="utf-8")
     logger.info(f"AIニュース記事追加完了: {title[:40]} (合計{len(updated)}件)")
+    ping_indexnow(article_id)
     return 0
 
 
@@ -354,6 +378,7 @@ def main() -> int:
     logger.info(f"extra_articles.json 更新: 合計{len(updated)}件")
 
     append_posted(tool.get("id", ""))
+    ping_indexnow(article_id)
     logger.info(f"完了: {tool['name']}")
     return 0
 
