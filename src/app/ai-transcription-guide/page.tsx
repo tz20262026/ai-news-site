@@ -244,7 +244,7 @@ export default function AiTranscriptionGuidePage() {
             <br className="hidden sm:block" />
             会議の議事録を自動化する手順と注意点までまとめました。
           </p>
-          <p className="text-gray-400 text-xs mt-3">公開日：2026年7月14日</p>
+          <p className="text-gray-300 text-xs mt-3">公開日：2026年7月14日</p>
         </div>
 
         {/* 結論を先に置く（AI検索に引用されやすい形） */}
@@ -337,7 +337,7 @@ export default function AiTranscriptionGuidePage() {
               </div>
             ))}
           </div>
-          <p className="text-gray-400 text-xs mt-4 leading-relaxed">
+          <p className="text-gray-300 text-xs mt-4 leading-relaxed">
             ※料金・無料枠は提供元の都合で変更されます。契約前に各ツールの公式サイトで最新の内容を確認してください。
           </p>
         </section>

@@ -1,5 +1,6 @@
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
+import VcSectionAiNews from "@/components/VcSectionAiNews";
 import SidebarAffiliate from "@/components/SidebarAffiliate";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -183,6 +184,8 @@ export default async function Home() {
       {/* もしもアフィリエイト枠（2026-07-13追加） */}
       {/* トップは注目案件＋上位6件に絞る。全13件はガイドページ側で表示 */}
       <MoshimoSectionAiNews limit={6} />
+      {/* バリューコマース枠（2026-07-14追加）。もしも／A8とは独立した別セクション */}
+      <VcSectionAiNews limit={6} />
     </div>
   );
 }
