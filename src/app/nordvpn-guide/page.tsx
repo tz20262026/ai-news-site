@@ -162,6 +162,21 @@ export default function NordVpnGuidePage() {
           </p>
         </section>
 
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-white mb-5 border-l-4 border-blue-500 pl-3">
+            💡 他のVPNと比較する時のチェックポイント
+          </h2>
+          <p className="text-gray-300 text-sm leading-[1.9] mb-4">
+            VPN選びで失敗しないためには、料金の安さだけでなく「同時接続台数」「ノーログ方針の監査有無」「専用アプリの使いやすさ」の3点を必ず確認しましょう。
+            NordVPNはこの3点すべてで高水準にまとまっており、AIツールをPC・スマホ・タブレットで併用する人ほど恩恵を感じやすい構成になっています。
+          </p>
+          <p className="text-gray-300 text-sm leading-[1.9]">
+            特に社外秘の資料や顧客情報をAIに読み込ませる機会が多い人は、通信経路の暗号化を「使う時だけオン」にするのではなく、
+            端末起動時から自動接続する設定にしておくのがおすすめです。うっかり切り忘れて無防備なWi-Fiで作業してしまうリスクを、
+            最初から仕組みでゼロにできます。
+          </p>
+        </section>
+
         {/* バナー + CTA */}
         <section className="mb-12 bg-gradient-to-r from-blue-900/30 to-gray-900 border border-blue-500/30 rounded-2xl p-6 text-center">
           <h2 className="text-xl font-bold text-white mb-3">

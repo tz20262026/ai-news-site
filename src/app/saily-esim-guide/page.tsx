@@ -160,6 +160,23 @@ export default function SailyEsimGuidePage() {
           </p>
         </section>
 
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-white mb-5 border-l-4 border-emerald-500 pl-3">
+            💰 プラン選びで失敗しないコツ
+          </h2>
+          <p className="text-gray-300 text-sm leading-[1.9] mb-4">
+            eSIMのプラン選びで一番多い失敗は「データ量を少なく見積もりすぎること」です。
+            地図アプリでのナビ、AI翻訳との会話、SNSへの写真アップロードを1日通して使うと、
+            想像より通信量がかさみます。特に海外テックイベントでは会場Wi-Fiが不安定なことも多く、
+            自前回線に頼る時間が長くなりがちなので、少し余裕を持ったデータ量を選んでおくと安心です。
+          </p>
+          <p className="text-gray-300 text-sm leading-[1.9]">
+            もし現地で予想より早くデータを使い切っても、Sailyはアプリからワンタップで追加チャージができます。
+            「余ったらもったいない」ではなく「足りなくなったらすぐ足せる」という発想で、
+            まずは標準的な容量から試してみるのが失敗しない選び方です。
+          </p>
+        </section>
+
         {/* バナー + CTA */}
         <section className="mb-12 bg-gradient-to-r from-emerald-900/30 to-gray-900 border border-emerald-500/30 rounded-2xl p-6 text-center">
           <h2 className="text-xl font-bold text-white mb-3">

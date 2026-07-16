@@ -163,6 +163,23 @@ export default function SuikaVpnGuidePage() {
           </div>
         </section>
 
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-white mb-5 border-l-4 border-green-500 pl-3">
+            🧳 こんな人に特におすすめ
+          </h2>
+          <p className="text-gray-300 text-sm leading-[1.9] mb-4">
+            海外赴任が決まったばかりの人、これから留学に出発する学生、単身赴任で家族が離れて暮らすことになった人など、
+            「日本の日常をそのまま持って行きたい」というニーズは年々増えています。
+            特に子どものいる家庭では、日本の教育番組やアニメを現地でも見せてあげたいという相談も多く、
+            スイカVPNのように設定が日本語で完結するサービスは家族全員で使いやすいのが強みです。
+          </p>
+          <p className="text-gray-300 text-sm leading-[1.9]">
+            また、単身赴任で日本の家族と離れて暮らす人にとって、実家と同じ番組をリアルタイムで見られることは、
+            想像以上に心の支えになります。ニュース・天気予報・地元のローカル番組まで日本と同じ感覚で楽しめるのは、
+            日本の動画視聴に特化したスイカVPNならではのメリットです。
+          </p>
+        </section>
+
         {/* バナー + CTA */}
         <section className="mb-12 bg-gradient-to-r from-green-900/30 to-gray-900 border border-green-500/30 rounded-2xl p-6 text-center">
           <h2 className="text-xl font-bold text-white mb-3">
