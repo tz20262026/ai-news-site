@@ -1,61 +1,61 @@
 {
-  "updatedAt": "2026-07-15T12:45:46.943547+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場でLLM競争が激化。開発ではAIネイティブ環境、他分野では最新LLMの活用が鍵。",
+  "updatedAt": "2026-07-16T12:48:10.936369+09:00",
+  "aiJudgment": "開発セグメントではClaude 3.5 SonnetとGPT-4oの競争が激化。他分野は静観ムードで、市場の関心はコード生成AIに集中している。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Cursor",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "AIファーストの設計思想により、コードの生成、編集、デバッグの全工程で開発者体験を革新。単なる補完ツールを超えた、次世代の統合開発環境として高く評価。",
+      "reason": "圧倒的な処理速度とコーディング性能が評価された。GPT-4oとの競争を制し、多くの開発現場で採用が進んでいるため、今月の勝者と判断した。",
       "tools": [
         {
-          "id": "cursor",
-          "name": "Cursor",
-          "price": "無料〜, Pro $20/月",
-          "newFeature": "新情報なし",
+          "id": "claude-3.5-sonnet",
+          "name": "Claude 3.5 Sonnet",
+          "price": "API経由, Pro: $20/mo",
+          "newFeature": "速度と知能が大幅向上",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "AI機能を第一に設計されたコードエディタ。リファクタリングやデバッグが高速。"
+          "summary": "高速かつ高精度な最新モデル。特にコーディング性能に優れる。"
         },
         {
-          "id": "claude-3-5-sonnet-dev",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API利用料, Claude Pro $20/月",
-          "newFeature": "優れたコーディング能力を持つ新モデル",
+          "id": "gpt-4o",
+          "name": "GPT-4o",
+          "price": "API経由, Plus: $20/mo",
+          "newFeature": "音声・画像対応の高速化",
           "rating": 5,
           "badge": null,
-          "summary": "高速かつ高精度な最新モデル。特にコーディングと複雑なタスクに強みを発揮。"
+          "summary": "テキスト、音声、画像を統合した高速マルチモーダルAIモデル。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "個人$10/月, Business $19/月",
-          "newFeature": "新情報なし",
+          "price": "$10/mo~",
+          "newFeature": "安定稼働中",
           "rating": 4,
           "badge": null,
-          "summary": "IDEに統合されたAIペアプログラマー。コード補完や生成を強力に支援。"
+          "summary": "エディタ内でコード補完や生成を行うAIペアプログラマー。"
         },
         {
-          "id": "gpt-4o-dev",
-          "name": "GPT-4o",
-          "price": "API利用料, ChatGPT Plus $20/月",
-          "newFeature": "新情報なし",
+          "id": "cursor",
+          "name": "Cursor",
+          "price": "Freemium, Pro: $20/mo",
+          "newFeature": "安定稼働中",
           "rating": 4,
           "badge": null,
-          "summary": "マルチモーダル対応の汎用モデル。多様なプログラミングタスクに対応可能。"
+          "summary": "AIネイティブのコードエディタ。コード生成や編集を高速化。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "Replit Coreプランに含まれる",
-          "newFeature": "新情報なし",
-          "rating": 4,
+          "price": "Replit Core plan",
+          "newFeature": "ベータ版提供中",
+          "rating": 3,
           "badge": null,
-          "summary": "Replit環境で動作する自律型開発エージェント。タスクを自動で遂行。"
+          "summary": "Replit環境で自律的にタスクを完遂するAIエージェント。"
         }
       ]
     },
@@ -64,60 +64,22 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude 3.5 Sonnet",
+        "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "最新モデルとして速度と精度を両立。長文読解やデータ分析能力に優れ、ビジネス文書作成から複雑なタスクまで幅広く対応できるため、事務効率化の即戦力となる。",
-      "tools": [
-        {
-          "id": "claude-3-5-sonnet-prod",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API利用料, Claude Pro $20/月",
-          "newFeature": "速度とインテリジェンスが大幅向上",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "高速かつ高精度な最新モデル。特に文書作成、要約、分析タスクに強み。"
-        },
-        {
-          "id": "gpt-4o-prod",
-          "name": "GPT-4o",
-          "price": "API利用料, ChatGPT Plus $20/月",
-          "newFeature": "マルチモーダル対応と高速応答",
-          "rating": 4,
-          "badge": null,
-          "summary": "テキスト、音声、画像を統合的に扱う高速モデル。対話的な利用シーンで強力。"
-        }
-      ]
+      "reason": "今月、事務効率化セグメントで特筆すべきツールは観測されなかったため、選定は見送りとなりました。",
+      "tools": []
     },
     {
       "id": "creative",
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "GPT-4o",
+        "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト、音声、画像を統合的に扱えるマルチモーダル性能が、クリエイティブな発想を刺激。多様な入力から新たなアイデアを生み出す能力は、他の追随を許さない。",
-      "tools": [
-        {
-          "id": "gpt-4o-creative",
-          "name": "GPT-4o",
-          "price": "API利用料, ChatGPT Plus $20/月",
-          "newFeature": "画像や音声入力からの着想が可能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "画像や音声入力からインスピレーションを得られる。多様なアイデア出しに強い。"
-        },
-        {
-          "id": "claude-3-5-sonnet-creative",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API利用料, Claude Pro $20/月",
-          "newFeature": "洗練された自然な文章生成能力",
-          "rating": 4,
-          "badge": null,
-          "summary": "洗練された文章生成能力を持つ。小説や脚本、マーケティングコピー作成に活用。"
-        }
-      ]
+      "reason": "今月、クリエイティブセグメントで市場をリードするほどの革新的なツールは登場しませんでした。",
+      "tools": []
     }
   ],
   "newToolsToday": [],
