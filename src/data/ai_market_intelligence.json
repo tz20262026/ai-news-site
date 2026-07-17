@@ -66,7 +66,37 @@
       "winner": {
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
-      }
+      },
+      "reason": "長文の要約・資料作成・メール文面のドラフト作成まで、日本語の自然さと文脈理解の精度で他モデルを一歩リード。",
+      "tools": [
+        {
+          "id": "claude-3-5-sonnet-productivity",
+          "name": "Claude 3.5 Sonnet",
+          "price": "Free, Pro: $20/月",
+          "newFeature": "Artifactsで資料下書きをその場でプレビュー",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "要約・文書作成・メール添削まで幅広くこなす万能アシスタント。"
+        },
+        {
+          "id": "notion-ai",
+          "name": "Notion AI",
+          "price": "Notion Plus: 月$10〜",
+          "newFeature": "会議メモからタスクを自動抽出",
+          "rating": 4,
+          "badge": null,
+          "summary": "プロジェクト管理とAI分析が統合されたオールインワンツール。"
+        },
+        {
+          "id": "google-notebooklm",
+          "name": "Google NotebookLM",
+          "price": "無料、Plus: 月$19.99",
+          "newFeature": "音声概要（Audio Overview）機能",
+          "rating": 4,
+          "badge": null,
+          "summary": "資料を丸ごと学習させて質問に答えてもらえる専属AIアナリスト。"
+        }
+      ]
     }
   ],
   "newToolsToday": [],

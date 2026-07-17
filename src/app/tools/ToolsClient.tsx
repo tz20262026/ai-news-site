@@ -5,7 +5,8 @@ import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 
 // ── 型定義 ────────────────────────────────────────────────
-interface Tool {
+// ページ側（page.tsx）でも正規化処理に使うため export する
+export interface Tool {
   id: string;
   name: string;
   price: string;
@@ -15,12 +16,12 @@ interface Tool {
   summary: string;
 }
 
-interface Winner {
+export interface Winner {
   name: string;
   tagline: string;
 }
 
-interface Segment {
+export interface Segment {
   id: string;
   label: string;
   icon: string;

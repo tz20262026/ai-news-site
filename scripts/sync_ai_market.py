@@ -139,7 +139,7 @@ def perplexity_search(query: str, api_key: str) -> str:
 def gemini_analyze(prompt: str, gemini_client: genai.Client, json_mode: bool = False) -> str:
     """Gemini で分析を実行（post_one_article.py と同じパターン）"""
     try:
-        config_kwargs: dict = {"temperature": 0.3, "max_output_tokens": 4096}
+        config_kwargs: dict = {"temperature": 0.3, "max_output_tokens": 8192}
         if json_mode:
             config_kwargs["response_mime_type"] = "application/json"
         response = gemini_client.models.generate_content(
@@ -344,12 +344,33 @@ def analyze_market(
         if not raw:
             continue
         result = extract_json(raw)
-        if result and result.get("segments"):
+        if result and _validate_segments(result.get("segments")):
             return result
-        print(f"  [Gemini] 試行{attempt + 1}: segments が取得できませんでした")
+        print(f"  [Gemini] 試行{attempt + 1}: segments が不正・欠損しています（トークン上限で出力が途中で切れた可能性）")
 
     print("  [Gemini] 3回試行しても有効なJSONが得られませんでした")
     return {}
+
+
+def _validate_segments(segments) -> bool:
+    """各segmentが必須フィールド（reason・tools）を全て備えているか検証する。
+    Geminiの出力トークン上限などで途中で切れると reason/tools が欠落することがあり、
+    そのまま書き込むと /tools ページのビルドが壊れるため、不完全なら全体を無効とみなす。"""
+    if not isinstance(segments, list) or not segments:
+        return False
+    for seg in segments:
+        if not isinstance(seg, dict):
+            return False
+        if not isinstance(seg.get("id"), str) or not isinstance(seg.get("label"), str):
+            return False
+        winner = seg.get("winner")
+        if not isinstance(winner, dict) or not isinstance(winner.get("name"), str):
+            return False
+        if not isinstance(seg.get("reason"), str):
+            return False
+        if not isinstance(seg.get("tools"), list):
+            return False
+    return True
 
 
 # ── アラート記事の生成 ────────────────────────────────────────────────────
