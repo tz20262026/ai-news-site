@@ -14,7 +14,7 @@ type Props = { params: Promise<{ tag: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
+  const decoded = decodeURIComponent(tag).normalize("NFC");
   const articles = allArticles.filter((a) =>
     a.tags.some((t) => t.toLowerCase() === decoded.toLowerCase())
   );
@@ -44,12 +44,15 @@ function isUnsafeForStaticPath(tag: string): boolean {
 }
 
 export async function generateStaticParams() {
+  // Next.js が generateStaticParams の値を自動でURLエンコードしてルートを生成するため、
+  // ここで encodeURIComponent すると二重エンコードになり、スペースや日本語を含む
+  // タグページが軒並み404になるバグの原因だった（生の文字列を返すのが正しい）。
   const tags = new Set<string>();
   allArticles.forEach((a) =>
     a.tags.forEach((t) => {
       // ファイルシステム非対応の文字を含むタグは静的生成をスキップ（動的にフォールバック）
       if (!isUnsafeForStaticPath(t)) {
-        tags.add(encodeURIComponent(t));
+        tags.add(t);
       }
     })
   );
@@ -58,7 +61,7 @@ export async function generateStaticParams() {
 
 export default async function TagPage({ params }: Props) {
   const { tag } = await params;
-  const decoded = decodeURIComponent(tag);
+  const decoded = decodeURIComponent(tag).normalize("NFC");
   const articles: Article[] = allArticles.filter((a) =>
     a.tags.some((t) => t.toLowerCase() === decoded.toLowerCase())
   );

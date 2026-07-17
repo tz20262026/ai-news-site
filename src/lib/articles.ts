@@ -1656,9 +1656,21 @@ Google Workspace BusinessプランおよびEducationプランで利用可能。`
 
 // kaigaimeパイプラインから自動追加された記事と結合
 const extraArticles: Article[] = extraArticlesData as Article[];
-export const allArticles: Article[] = [...extraArticles, ...articles].sort(
-  (a, b) => b.publishedAt.localeCompare(a.publishedAt)
-);
+
+// タグ文字列のUnicode正規化のばらつき（NFC/NFD混在）により、
+// 見た目は同じタグなのに /tags/[tag] が404になるバグを防ぐため、
+// 全記事のタグをNFCに統一する
+function normalizeTags(list: Article[]): Article[] {
+  return list.map((a) => ({
+    ...a,
+    tags: (a.tags ?? []).map((t) => t.normalize("NFC")),
+  }));
+}
+
+export const allArticles: Article[] = normalizeTags([
+  ...extraArticles,
+  ...articles,
+]).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 export function getArticleById(id: string): Article | undefined {
   return allArticles.find((a) => a.id === id);
