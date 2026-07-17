@@ -40,7 +40,7 @@ export default function SidebarAffiliate() {
     <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-4">
       <div className="flex items-center gap-2 mb-3">
         <span className="text-sm font-bold text-gray-900 dark:text-white">💡 おすすめサービス</span>
-        <span className="ml-auto text-[10px] font-semibold text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">PR</span>
+        <span className="ml-auto text-[10px] font-semibold text-gray-500 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">PR</span>
       </div>
       <div className="flex flex-col gap-2">
         {items.map((item) => (
@@ -54,7 +54,7 @@ export default function SidebarAffiliate() {
             <span className="text-xl shrink-0">{item.emoji}</span>
             <div className="flex-1 min-w-0">
               <p className="text-xs font-bold text-gray-900 dark:text-white leading-tight truncate">{item.title}</p>
-              <p className="text-[10px] text-gray-500 dark:text-gray-400 truncate">{item.tagline}</p>
+              <p className="text-[10px] text-gray-500 dark:text-gray-300 truncate">{item.tagline}</p>
             </div>
             <span
               className="text-[10px] font-bold shrink-0 whitespace-nowrap"
@@ -65,7 +65,7 @@ export default function SidebarAffiliate() {
           </a>
         ))}
       </div>
-      <p className="text-[9px] text-gray-400 dark:text-gray-600 mt-2 text-right">※ PR・広告を含みます</p>
+      <p className="text-[9px] text-gray-500 dark:text-gray-300 mt-2 text-right">※ PR・広告を含みます</p>
     </div>
   );
 }

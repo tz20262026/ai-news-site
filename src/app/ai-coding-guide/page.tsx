@@ -135,7 +135,7 @@ export default function AiCodingGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【Copilot・Cursor・Claude Code徹底比較】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             最新AIコーディングツールの特徴・無料枠・使い方を<br />
             初心者から上級者向けに完全比較解説します。
           </p>
@@ -155,15 +155,15 @@ export default function AiCodingGuidePage() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3 text-xs">
                   <div className="bg-gray-800 rounded px-2.5 py-1.5">
-                    <span className="text-gray-400">🆓 無料プラン：</span>
+                    <span className="text-gray-300">🆓 無料プラン：</span>
                     <span className="text-gray-200">{tool.freePlan}</span>
                   </div>
                   <div className="bg-gray-800 rounded px-2.5 py-1.5">
-                    <span className="text-gray-400">🧠 AI：</span>
+                    <span className="text-gray-300">🧠 AI：</span>
                     <span className="text-gray-200">{tool.model}</span>
                   </div>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed mb-3">{tool.best}</p>
+                <p className="text-gray-300 text-xs leading-relaxed mb-3">{tool.best}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {tool.features.map((f, fi) => (
                     <span key={fi} className="text-xs bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 px-2 py-0.5 rounded-full">{f}</span>
@@ -200,7 +200,7 @@ export default function AiCodingGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

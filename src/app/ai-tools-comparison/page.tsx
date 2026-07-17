@@ -309,44 +309,44 @@ export default function AIToolsComparisonPage() {
                     {AI_TOOLS.map((tool) => (
                       <th key={tool.id} className="px-4 py-3 text-center">
                         <div className={`font-black text-base ${tool.color}`}>{tool.name}</div>
-                        <div className="text-gray-400 text-xs font-normal">{tool.maker}</div>
+                        <div className="text-gray-300 text-xs font-normal">{tool.maker}</div>
                       </th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-slate-800 bg-slate-950">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">無料プラン</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">無料プラン</td>
                     {AI_TOOLS.map((tool) => (
                       <td key={tool.id} className="px-4 py-3 text-center text-gray-300 text-xs">{tool.freePlan}</td>
                     ))}
                   </tr>
                   <tr className="border-b border-slate-800 bg-slate-900">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">有料プラン</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">有料プラン</td>
                     {AI_TOOLS.map((tool) => (
                       <td key={tool.id} className="px-4 py-3 text-center text-gray-300 text-xs">{tool.paidPlan}</td>
                     ))}
                   </tr>
                   <tr className="border-b border-slate-800 bg-slate-950">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">得意分野</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">得意分野</td>
                     {AI_TOOLS.map((tool) => (
                       <td key={tool.id} className="px-4 py-3 text-center text-gray-300 text-xs">{tool.specialty}</td>
                     ))}
                   </tr>
                   <tr className="border-b border-slate-800 bg-slate-900">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">日本語対応</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">日本語対応</td>
                     {AI_TOOLS.map((tool) => (
-                      <td key={tool.id} className={`px-4 py-3 text-center text-xs font-bold ${tool.japanese === "◎ 優秀" ? "text-emerald-400" : tool.japanese === "○ 良好" ? "text-cyan-400" : "text-gray-400"}`}>{tool.japanese}</td>
+                      <td key={tool.id} className={`px-4 py-3 text-center text-xs font-bold ${tool.japanese === "◎ 優秀" ? "text-emerald-400" : tool.japanese === "○ 良好" ? "text-cyan-400" : "text-gray-300"}`}>{tool.japanese}</td>
                     ))}
                   </tr>
                   <tr className="border-b border-slate-800 bg-slate-950">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">ファイル処理</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">ファイル処理</td>
                     {AI_TOOLS.map((tool) => (
                       <td key={tool.id} className={`px-4 py-3 text-center text-xs font-bold ${tool.fileUpload.startsWith("◎") ? "text-emerald-400" : tool.fileUpload.startsWith("○") ? "text-cyan-400" : tool.fileUpload.startsWith("△") ? "text-amber-400" : "text-red-400"}`}>{tool.fileUpload}</td>
                     ))}
                   </tr>
                   <tr className="bg-slate-900">
-                    <td className="px-4 py-3 text-gray-400 font-bold text-xs">最大コンテキスト</td>
+                    <td className="px-4 py-3 text-gray-300 font-bold text-xs">最大コンテキスト</td>
                     {AI_TOOLS.map((tool) => (
                       <td key={tool.id} className="px-4 py-3 text-center text-gray-300 text-xs">{tool.maxContext}</td>
                     ))}
@@ -364,10 +364,10 @@ export default function AIToolsComparisonPage() {
                 >
                   <div>
                     <h3 className={`font-black text-lg ${tool.color}`}>{tool.name}</h3>
-                    <p className="text-gray-400 text-xs">{tool.maker}</p>
+                    <p className="text-gray-300 text-xs">{tool.maker}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 font-bold mb-1.5">こんな用途に最適</p>
+                    <p className="text-xs text-gray-300 font-bold mb-1.5">こんな用途に最適</p>
                     <div className="flex flex-wrap gap-1.5">
                       {tool.bestFor.map((b) => (
                         <span key={b} className="text-xs px-2.5 py-1 rounded-full bg-slate-800 text-gray-300 border border-slate-700">
@@ -410,7 +410,7 @@ export default function AIToolsComparisonPage() {
                       <p className="text-white font-black text-sm">{rec.first}</p>
                     </div>
                     <div className="flex-1 rounded-xl bg-slate-800 border border-slate-700 px-3 py-2.5">
-                      <p className="text-xs text-gray-400 font-bold mb-0.5">2位</p>
+                      <p className="text-xs text-gray-300 font-bold mb-0.5">2位</p>
                       <p className="text-gray-300 font-bold text-sm">{rec.second}</p>
                     </div>
                   </div>

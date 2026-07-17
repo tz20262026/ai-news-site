@@ -58,7 +58,7 @@ export default function TokushohoPage() {
       <div className="mb-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
         >
           ← 記事一覧に戻る
         </Link>
@@ -75,7 +75,7 @@ export default function TokushohoPage() {
               key={label}
               className="py-3 flex flex-col sm:flex-row sm:gap-4"
             >
-              <dt className="font-medium text-gray-600 dark:text-gray-400 sm:w-36 shrink-0 mb-1 sm:mb-0">
+              <dt className="font-medium text-gray-600 dark:text-gray-300 sm:w-36 shrink-0 mb-1 sm:mb-0">
                 {label}
               </dt>
               <dd className="text-gray-800 dark:text-gray-200 break-words min-w-0">

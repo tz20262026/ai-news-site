@@ -33,7 +33,7 @@ export default function AboutPage() {
       <div className="mb-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
         >
           ← 記事一覧に戻る
         </Link>
@@ -73,7 +73,7 @@ export default function AboutPage() {
             ].map((stat) => (
               <div key={stat.label} className="text-center bg-blue-50 dark:bg-blue-950/30 rounded-xl py-3">
                 <p className="text-xl font-black text-blue-600 dark:text-blue-400">{stat.num}</p>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{stat.label}</p>
+                <p className="text-xs text-gray-500 dark:text-gray-300 mt-0.5">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -95,12 +95,12 @@ export default function AboutPage() {
                 <span className="text-xs font-black text-white bg-blue-600 px-2 py-1 rounded-lg shrink-0 mt-0.5">{item.step}</span>
                 <div>
                   <p className="text-sm font-bold text-gray-900 dark:text-white">{item.title}</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5 leading-relaxed">{item.desc}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-300 mt-0.5 leading-relaxed">{item.desc}</p>
                 </div>
               </li>
             ))}
           </ol>
-          <p className="text-xs text-gray-400 dark:text-gray-500 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+          <p className="text-xs text-gray-500 dark:text-gray-300 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
             ※ 掲載内容はAIによる自動翻訳・要約です。詳細は各記事の「原文を読む」リンクでご確認ください。
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
             ].map((media) => (
               <span
                 key={media}
-                className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full"
+                className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full"
               >
                 {media}
               </span>
@@ -160,7 +160,7 @@ export default function AboutPage() {
               { label: "対応時間", value: "平日 10:00〜18:00（土日祝除く）" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col sm:flex-row sm:gap-4">
-                <dt className="text-gray-500 dark:text-gray-400 sm:w-28 shrink-0 font-medium">{label}</dt>
+                <dt className="text-gray-500 dark:text-gray-300 sm:w-28 shrink-0 font-medium">{label}</dt>
                 <dd className="text-gray-800 dark:text-gray-200">
                   {label === "お問い合わせ" ? (
                     <a href={`mailto:${value}`} className="text-blue-600 dark:text-blue-400 hover:underline">{value}</a>

@@ -128,7 +128,7 @@ export default function NotebooklmGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【無料・PDF要約・音声ポッドキャスト生成】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             PDF・論文・動画を読み込んで質問・要約・音声で学べる<br />
             Google NotebookLMの使い方を2026年版で完全解説。
           </p>
@@ -151,10 +151,10 @@ export default function NotebooklmGuidePage() {
                     </span>
                   )}
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed mb-3">{f.desc}</p>
+                <p className="text-gray-300 text-xs leading-relaxed mb-3">{f.desc}</p>
                 <div className="bg-yellow-900/20 border border-yellow-700/30 rounded px-2.5 py-2">
                   <span className="text-yellow-400 text-xs font-bold block mb-0.5">💡 活用例</span>
-                  <span className="text-gray-400 text-xs">{f.usecase}</span>
+                  <span className="text-gray-300 text-xs">{f.usecase}</span>
                 </div>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function NotebooklmGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

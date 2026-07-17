@@ -56,7 +56,7 @@ export default function ArticleGuideLinks({ tags }: Props) {
 
   return (
     <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700/60">
-      <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-3 flex items-center gap-1.5">
+      <p className="text-xs font-bold text-gray-500 dark:text-gray-300 mb-3 flex items-center gap-1.5">
         <span>📚</span> この記事に関連するガイド
       </p>
       <div className="flex flex-col gap-2">
@@ -70,7 +70,7 @@ export default function ArticleGuideLinks({ tags }: Props) {
             <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               {guide.label}
             </span>
-            <span className="ml-auto text-xs text-gray-400 dark:text-gray-500 group-hover:text-blue-500 transition-colors">→</span>
+            <span className="ml-auto text-xs text-gray-500 dark:text-gray-300 group-hover:text-blue-500 transition-colors">→</span>
           </a>
         ))}
       </div>

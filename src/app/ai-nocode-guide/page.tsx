@@ -356,7 +356,7 @@ export default function AINocodeGuidePage() {
                         <h3 className={`font-black text-base ${tool.color}`}>
                           {tool.name}
                         </h3>
-                        <span className="text-xs text-gray-400">{tool.category}</span>
+                        <span className="text-xs text-gray-300">{tool.category}</span>
                       </div>
                     </div>
                     <span
@@ -369,18 +369,18 @@ export default function AINocodeGuidePage() {
                   {/* 料金 */}
                   <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2.5 grid grid-cols-2 gap-2">
                     <div>
-                      <p className="text-xs text-gray-400 mb-0.5">無料プラン</p>
+                      <p className="text-xs text-gray-300 mb-0.5">無料プラン</p>
                       <p className="text-xs text-emerald-400 font-bold">{tool.freePlan}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-gray-400 mb-0.5">有料プラン</p>
+                      <p className="text-xs text-gray-300 mb-0.5">有料プラン</p>
                       <p className="text-xs text-amber-400 font-bold">{tool.paidPlan}</p>
                     </div>
                   </div>
 
                   {/* こんな人に最適 */}
                   <div>
-                    <p className="text-xs text-gray-400 font-bold mb-1.5">こんな用途に最適</p>
+                    <p className="text-xs text-gray-300 font-bold mb-1.5">こんな用途に最適</p>
                     <p className="text-gray-300 text-sm font-bold">{tool.bestFor}</p>
                   </div>
 
@@ -402,7 +402,7 @@ export default function AINocodeGuidePage() {
 
                   {/* 日本語サポート */}
                   <div className="flex items-center gap-1.5">
-                    <span className={`text-xs font-bold ${tool.japaneseSupport ? "text-emerald-400" : "text-gray-500"}`}>
+                    <span className={`text-xs font-bold ${tool.japaneseSupport ? "text-emerald-400" : "text-gray-300"}`}>
                       {tool.japaneseSupport ? "✓ 日本語UI対応" : "△ 日本語UI一部のみ"}
                     </span>
                   </div>
@@ -443,7 +443,7 @@ export default function AINocodeGuidePage() {
                       <span className="text-xs font-bold text-violet-400 bg-violet-500/10 border border-violet-500/30 px-2.5 py-1 rounded-full">
                         {path.tool}
                       </span>
-                      <span className="text-xs text-gray-400">
+                      <span className="text-xs text-gray-300">
                         目安：{path.time}
                       </span>
                     </div>

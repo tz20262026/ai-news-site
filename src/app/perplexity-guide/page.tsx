@@ -178,7 +178,7 @@ export default function PerplexityGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【使い方・無料機能・ChatGPTとの違い】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             AIが出典付きで答えるAI検索エンジン「Perplexity AI」の<br />
             使い方・無料機能・ChatGPTとの違いを2026年版で解説。
           </p>
@@ -197,7 +197,7 @@ export default function PerplexityGuidePage() {
                   <h3 className="text-white font-black text-sm">{f.title}</h3>
                   <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${planStyle[f.plan]}`}>{f.plan}</span>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed">{f.desc}</p>
+                <p className="text-gray-300 text-xs leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -216,7 +216,7 @@ export default function PerplexityGuidePage() {
                   <h3 className="text-white font-bold text-sm">{u.title}</h3>
                 </div>
                 <p className="text-xs text-teal-400 bg-teal-500/10 rounded p-2 mb-2 leading-relaxed">例: {u.example}</p>
-                <p className="text-gray-400 text-xs leading-relaxed">{u.tip}</p>
+                <p className="text-gray-300 text-xs leading-relaxed">{u.tip}</p>
               </div>
             ))}
           </div>
@@ -277,7 +277,7 @@ export default function PerplexityGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

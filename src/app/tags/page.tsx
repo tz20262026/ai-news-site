@@ -55,7 +55,7 @@ function getBadgeClass(count: number, max: number): string {
   if (ratio >= 0.7) return "bg-blue-600 text-white";
   if (ratio >= 0.5) return "bg-blue-500/90 text-white";
   if (ratio >= 0.3) return "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400";
-  return "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400";
+  return "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300";
 }
 
 export default function TagsPage() {
@@ -73,7 +73,7 @@ export default function TagsPage() {
       {/* 戻るリンク */}
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 transition-colors mb-6"
+        className="inline-flex items-center gap-1 text-sm text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-6"
       >
         ← 記事一覧に戻る
       </Link>
@@ -83,7 +83,7 @@ export default function TagsPage() {
         <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">
           タグ一覧
         </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
+        <p className="text-sm text-gray-500 dark:text-gray-300">
           {totalTags}個のタグ ·{" "}
           <span className="font-semibold text-gray-700 dark:text-gray-300">{totalArticles}件</span>
           の記事を掲載中
@@ -97,7 +97,7 @@ export default function TagsPage() {
             <h2 className="text-sm font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
               人気タグ
             </h2>
-            <span className="text-xs text-gray-400">（5件以上）</span>
+            <span className="text-xs text-gray-500 dark:text-gray-300">（5件以上）</span>
           </div>
           <div className="p-5 bg-gradient-to-br from-blue-50/70 to-indigo-50/40 dark:from-blue-950/30 dark:to-indigo-950/20 rounded-2xl border border-blue-100/80 dark:border-blue-900/60">
             <div className="flex flex-wrap gap-3">
@@ -126,7 +126,7 @@ export default function TagsPage() {
           <h2 className="text-sm font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
             すべてのタグ
           </h2>
-          <span className="text-xs text-gray-400">（{totalTags}件）</span>
+          <span className="text-xs text-gray-500 dark:text-gray-300">（{totalTags}件）</span>
         </div>
         <div className="flex flex-wrap gap-2">
           {tagCounts.map(({ tag, count }) => (
@@ -144,7 +144,7 @@ export default function TagsPage() {
 
       {/* 記事数が少ないタグの補足 */}
       {regularTags.length > 0 && (
-        <p className="mt-6 text-xs text-gray-400 dark:text-gray-600 text-center">
+        <p className="mt-6 text-xs text-gray-500 dark:text-gray-300 text-center">
           記事数の少ないタグも含むすべての{totalTags}タグを表示しています
         </p>
       )}

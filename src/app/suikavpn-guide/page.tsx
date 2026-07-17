@@ -71,11 +71,11 @@ export default function SuikaVpnGuidePage() {
           <h1 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
             スイカVPN活用ガイド
             <br />
-            <span className="text-xl text-gray-400 font-bold">
+            <span className="text-xl text-gray-300 font-bold">
               【海外から日本の動画サイト（VOD）を見る方法】
             </span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             公開日：2026年7月13日｜筆者：AI News Japan 編集部
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function SuikaVpnGuidePage() {
             height={675}
             className="rounded-xl border border-gray-700 w-full h-auto"
           />
-          <p className="text-gray-400 text-sm leading-[1.9] mt-4">
+          <p className="text-gray-300 text-sm leading-[1.9] mt-4">
             スイカVPNに接続すると、あなたの通信は<strong className="text-white">日本国内のサーバーを経由</strong>してインターネットに出ていきます。
             動画サイト側からは日本からのアクセスに見えるため、地域制限が外れて通常どおり再生できるようになります。
             通信は暗号化されるので、現地のフリーWi-Fiから接続する際のセキュリティ対策にもなり、一石二鳥です。
@@ -208,7 +208,7 @@ export default function SuikaVpnGuidePage() {
           >
             スイカVPNの料金プランを見る →
           </a>
-          <p className="text-xs text-gray-500 mt-3">※ 本セクションはPR・広告を含みます</p>
+          <p className="text-xs text-gray-300 mt-3">※ 本セクションはPR・広告を含みます</p>
         </section>
 
         <section className="mb-12">
@@ -219,7 +219,7 @@ export default function SuikaVpnGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">A. {faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">A. {faq.a}</p>
               </div>
             ))}
           </div>

@@ -300,7 +300,7 @@ export default function AiAgentGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 AIエージェントの基本概念
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 まず知っておくべき4つのキーワード
               </p>
             </div>
@@ -330,7 +330,7 @@ export default function AiAgentGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 主要AIエージェントツール5選
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 2026年現在注目の5ツールを特徴・価格・おすすめユーザーで比較
               </p>
             </div>
@@ -386,11 +386,11 @@ export default function AiAgentGuidePage() {
 
                       <div className="flex flex-wrap gap-3 mt-1">
                         <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                          <span className="text-xs text-gray-400 font-bold">料金：</span>
+                          <span className="text-xs text-gray-300 font-bold">料金：</span>
                           <span className="text-xs text-amber-300">{tool.price}</span>
                         </div>
                         <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                          <span className="text-xs text-gray-400 font-bold">おすすめ：</span>
+                          <span className="text-xs text-gray-300 font-bold">おすすめ：</span>
                           <span className="text-xs text-cyan-300">{tool.bestFor}</span>
                         </div>
                       </div>
@@ -409,7 +409,7 @@ export default function AiAgentGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 AIエージェント活用シーン5選
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ビジネス・個人・開発現場での実践的な活用事例
               </p>
             </div>
@@ -473,7 +473,7 @@ export default function AiAgentGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 AIエージェントに関する疑問をまとめて解決
               </p>
             </div>

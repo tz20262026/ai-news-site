@@ -318,7 +318,7 @@ export default function StableDiffusionGuidePage() {
                 <div key={item.label} className="rounded-2xl bg-slate-900 border border-slate-800 p-5 text-center">
                   <div className="text-3xl mb-2">{item.icon}</div>
                   <p className="font-black text-white text-base mb-1">{item.label}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -332,7 +332,7 @@ export default function StableDiffusionGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 AUTOMATIC1111 インストール手順
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Windows環境での標準的なセットアップ手順を6ステップで解説
               </p>
             </div>
@@ -388,7 +388,7 @@ export default function StableDiffusionGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 おすすめモデル比較2026年版
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Civitaiで人気の厳選5モデル。用途に合わせて選ぼう
               </p>
             </div>
@@ -443,7 +443,7 @@ export default function StableDiffusionGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 用途別プロンプト実践集
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ポジティブ・ネガティブプロンプトのセットでそのままコピペ可能
               </p>
             </div>
@@ -493,7 +493,7 @@ export default function StableDiffusionGuidePage() {
                       <span className="text-white font-bold text-xs">{item.param}</span>
                       <span className="text-orange-300 text-xs font-bold">{item.value}</span>
                     </div>
-                    <p className="text-gray-400 text-xs">{item.desc}</p>
+                    <p className="text-gray-300 text-xs">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -533,7 +533,7 @@ export default function StableDiffusionGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Stable Diffusionに関する疑問をまとめて解決
               </p>
             </div>

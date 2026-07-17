@@ -22,7 +22,7 @@ export default function RSSPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-0">
       <div className="mb-6">
-        <Link href="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+        <Link href="/" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
           ← 記事一覧に戻る
         </Link>
       </div>
@@ -63,7 +63,7 @@ export default function RSSPage() {
             </a>
           ))}
         </div>
-        <p className="text-xs text-gray-400 dark:text-gray-500 mt-3 leading-relaxed">
+        <p className="text-xs text-gray-500 dark:text-gray-300 mt-3 leading-relaxed">
           上のボタンをタップするとRSSリーダーに自動登録されます。<br />
           別のアプリをお使いの場合はフィードURLをコピーして登録してください。
         </p>
@@ -92,7 +92,7 @@ export default function RSSPage() {
                 <p className="text-sm font-medium text-gray-800 dark:text-gray-200 line-clamp-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {a.title}
                 </p>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+                <p className="text-xs text-gray-500 dark:text-gray-300 mt-0.5">
                   {getRelativeTime(a.publishedAt)} · {a.source}
                 </p>
               </div>

@@ -147,7 +147,7 @@ export default function PartnersPage() {
       {/* 戻るリンク */}
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors mb-6"
+        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors mb-6"
       >
         ← 記事一覧に戻る
       </Link>
@@ -160,7 +160,7 @@ export default function PartnersPage() {
         <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-3">
           パートナーサイト
         </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xl">
+        <p className="text-sm text-gray-500 dark:text-gray-300 leading-relaxed max-w-xl">
           AI News Japan と連携するパートナーサイトをご紹介します。
           映画・農業・AI教育・美容テックなど、多彩な分野のメディアと協力しています。
         </p>
@@ -189,7 +189,7 @@ export default function PartnersPage() {
               <h2 className="text-xl font-extrabold text-gray-900 dark:text-white mb-0.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {p.name}
               </h2>
-              <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">
+              <p className="text-xs font-medium text-gray-500 dark:text-gray-300 mb-3">
                 {p.tagline}
               </p>
 
@@ -202,7 +202,7 @@ export default function PartnersPage() {
               <div className="flex gap-3 mb-5 flex-wrap">
                 {p.stats.map((s) => (
                   <div key={s.label} className="flex flex-col">
-                    <span className="text-[10px] text-gray-400 dark:text-gray-500">{s.label}</span>
+                    <span className="text-[10px] text-gray-500 dark:text-gray-300">{s.label}</span>
                     <span className="text-xs font-bold text-gray-700 dark:text-gray-300">{s.value}</span>
                   </div>
                 ))}
@@ -210,7 +210,7 @@ export default function PartnersPage() {
 
               {/* URLとボタン */}
               <div className="flex items-center justify-between gap-3">
-                <span className="text-[11px] text-gray-400 dark:text-gray-500 font-mono truncate">
+                <span className="text-[11px] text-gray-500 dark:text-gray-300 font-mono truncate">
                   {p.url.replace("https://", "").replace(/\/$/, "")}
                 </span>
                 <span className={`shrink-0 text-xs font-bold px-4 py-1.5 rounded-lg bg-gradient-to-r ${p.btnGradient} text-white shadow-sm group-hover:shadow-md transition-shadow`}>
@@ -228,7 +228,7 @@ export default function PartnersPage() {
         <p className="text-sm font-bold text-gray-800 dark:text-gray-200 mb-1">
           パートナーシップのご相談
         </p>
-        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-3">
+        <p className="text-xs text-gray-500 dark:text-gray-300 leading-relaxed mb-3">
           AI・テクノロジー関連サイトを運営されている方、お気軽にご連絡ください。
         </p>
         <a

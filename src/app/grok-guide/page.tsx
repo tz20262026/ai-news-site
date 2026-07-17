@@ -98,9 +98,9 @@ export default function GrokGuidePage() {
             Grok（グロック）<br />
             <span className="text-gray-300">完全ガイド2026年版</span>
             <br />
-            <span className="text-xl text-gray-400 font-bold">【xAI・使い方・ChatGPTとの違い・X連携】</span>
+            <span className="text-xl text-gray-300 font-bold">【xAI・使い方・ChatGPTとの違い・X連携】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Elon MuskのxAIが開発したGrokの使い方・<br />
             ChatGPTとの比較・X連携機能を2026年版で解説。
           </p>
@@ -124,7 +124,7 @@ export default function GrokGuidePage() {
               <tbody>
                 {COMPARE_ROWS.map((row, i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-gray-900" : "bg-gray-900/50"}>
-                    <td className="p-2.5 text-gray-400 border border-gray-700 font-semibold">{row.feature}</td>
+                    <td className="p-2.5 text-gray-300 border border-gray-700 font-semibold">{row.feature}</td>
                     <td className="p-2.5 text-center text-gray-200 border border-gray-700">{row.grok}</td>
                     <td className="p-2.5 text-center text-gray-300 border border-gray-700">{row.chatgpt}</td>
                     <td className="p-2.5 text-center text-gray-300 border border-gray-700">{row.claude}</td>
@@ -161,7 +161,7 @@ export default function GrokGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

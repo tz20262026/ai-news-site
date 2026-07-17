@@ -164,7 +164,7 @@ const winnerStyle: Record<CompareItem["winner"], string> = {
   "gemini": "text-blue-300 font-bold",
   "chatgpt": "text-green-300 font-bold",
   "claude": "text-orange-300 font-bold",
-  "tie": "text-gray-400",
+  "tie": "text-gray-300",
 };
 
 export default function GeminiGuidePage() {
@@ -188,7 +188,7 @@ export default function GeminiGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【使い方・ChatGPT・Claudeとの比較】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Google が開発する AI「Gemini（ジェミニ）」の使い方・特徴・<br />
             ChatGPT/Claudeとの違いを2026年版で完全解説します。
           </p>
@@ -230,16 +230,16 @@ export default function GeminiGuidePage() {
             </div>
             {COMPARISONS.map((c, i) => (
               <div key={i} className={`grid grid-cols-4 p-3 text-xs border-t border-gray-700/50 gap-1 ${i % 2 === 0 ? "bg-gray-900" : "bg-gray-800/30"}`}>
-                <div className="text-gray-400 font-bold">{c.aspect}</div>
-                <div className={c.winner === "gemini" ? "text-blue-300 font-bold" : "text-gray-400"}>
+                <div className="text-gray-300 font-bold">{c.aspect}</div>
+                <div className={c.winner === "gemini" ? "text-blue-300 font-bold" : "text-gray-300"}>
                   {c.winner === "gemini" && <span className="text-blue-400">✓ </span>}
                   {c.gemini}
                 </div>
-                <div className={c.winner === "chatgpt" ? "text-green-300 font-bold" : "text-gray-400"}>
+                <div className={c.winner === "chatgpt" ? "text-green-300 font-bold" : "text-gray-300"}>
                   {c.winner === "chatgpt" && <span className="text-green-400">✓ </span>}
                   {c.chatgpt}
                 </div>
-                <div className={c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-400"}>
+                <div className={c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-300"}>
                   {c.winner === "claude" && <span className="text-orange-400">✓ </span>}
                   {c.claude}
                 </div>
@@ -276,7 +276,7 @@ export default function GeminiGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

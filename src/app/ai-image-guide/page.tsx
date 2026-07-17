@@ -323,7 +323,7 @@ export default function AiImageGuidePage() {
                   <div key={item.label} className="bg-slate-800 rounded-xl p-4 text-center">
                     <div className="text-2xl mb-2">{item.icon}</div>
                     <p className="text-white font-bold text-xs mb-1">{item.label}</p>
-                    <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+                    <p className="text-gray-300 text-xs leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -338,7 +338,7 @@ export default function AiImageGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 主要AI画像生成ツール徹底比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 品質・価格・使いやすさ・商用利用で選ぶ
               </p>
             </div>
@@ -353,7 +353,7 @@ export default function AiImageGuidePage() {
                     <span className="text-2xl">{tool.icon}</span>
                     <div>
                       <h3 className="text-white font-black text-base">{tool.name}</h3>
-                      <p className="text-gray-500 text-xs">{tool.maker}</p>
+                      <p className="text-gray-300 text-xs">{tool.maker}</p>
                     </div>
                     {tool.free && (
                       <span className="text-xs font-bold bg-green-500/20 text-green-300 border border-green-500/30 px-2.5 py-1 rounded-full">
@@ -378,18 +378,18 @@ export default function AiImageGuidePage() {
 
                   <div className="flex items-center gap-1 mb-3">
                     <span className="text-yellow-400 text-sm">{tool.quality}</span>
-                    <span className="text-gray-500 text-xs ml-1">/ 画質クオリティ</span>
+                    <span className="text-gray-300 text-xs ml-1">/ 画質クオリティ</span>
                   </div>
 
                   <p className="text-gray-300 text-sm leading-relaxed mb-3">{tool.desc}</p>
 
                   <div className="flex flex-wrap gap-3 text-xs">
                     <div className="bg-slate-800 rounded-lg px-3 py-2">
-                      <span className="text-gray-500 block mb-0.5">💴 料金</span>
+                      <span className="text-gray-300 block mb-0.5">💴 料金</span>
                       <span className="text-gray-200">{tool.price}</span>
                     </div>
                     <div className="bg-slate-800 rounded-lg px-3 py-2">
-                      <span className="text-gray-500 block mb-0.5">🇯🇵 日本語</span>
+                      <span className="text-gray-300 block mb-0.5">🇯🇵 日本語</span>
                       <span className="text-gray-200">{tool.japaneseOk ? "対応" : "一部対応"}</span>
                     </div>
                   </div>
@@ -414,7 +414,7 @@ export default function AiImageGuidePage() {
                 >
                   <div className="text-white font-bold">{tool.name}</div>
                   <div className="text-center">
-                    <span className={tool.free ? "text-green-400" : "text-gray-500"}>
+                    <span className={tool.free ? "text-green-400" : "text-gray-300"}>
                       {tool.free ? "○" : "×"}
                     </span>
                   </div>
@@ -424,7 +424,7 @@ export default function AiImageGuidePage() {
                     </span>
                   </div>
                   <div className="text-center hidden sm:block">
-                    <span className={tool.beginnerFriendly ? "text-green-400" : "text-gray-500"}>
+                    <span className={tool.beginnerFriendly ? "text-green-400" : "text-gray-300"}>
                       {tool.beginnerFriendly ? "○" : "△"}
                     </span>
                   </div>
@@ -441,7 +441,7 @@ export default function AiImageGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 プロンプトの書き方・コツ
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 4つの要素を組み合わせて高品質な画像を生成しよう
               </p>
             </div>
@@ -481,7 +481,7 @@ export default function AiImageGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 AI画像生成の活用事例6選
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 個人・ビジネスで使える実践的な活用法
               </p>
             </div>
@@ -540,7 +540,7 @@ export default function AiImageGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">AI画像生成の疑問をまとめて解決</p>
+              <p className="text-gray-300 text-sm">AI画像生成の疑問をまとめて解決</p>
             </div>
 
             <div className="flex flex-col gap-4">

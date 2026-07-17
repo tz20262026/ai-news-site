@@ -70,7 +70,7 @@ export default async function TagPage({ params }: Props) {
       {/* 戻るリンク */}
       <Link
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 transition-colors mb-6"
+        className="inline-flex items-center gap-1 text-sm text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-6"
       >
         ← 記事一覧に戻る
       </Link>
@@ -86,7 +86,7 @@ export default async function TagPage({ params }: Props) {
             {articles.length}件
           </span>
         </div>
-        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
           「{decoded}」に関する最新AIニュース
         </p>
       </div>
@@ -145,7 +145,7 @@ export default async function TagPage({ params }: Props) {
               </p>
 
               {/* メタ情報 */}
-              <div className="flex items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500">
+              <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-300">
                 <span>{getRelativeTime(article.publishedAt)}</span>
                 <span>·</span>
                 <span>{article.source}</span>

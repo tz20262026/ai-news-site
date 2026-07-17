@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
 
         {/* PC ナビ */}
-        <nav className="hidden sm:flex items-center gap-1 text-sm text-gray-400">
+        <nav className="hidden sm:flex items-center gap-1 text-sm text-gray-300">
           {NAV_LINKS.map(({ href, label }) => (
             <Link key={href} href={href} className="hover:text-white transition-colors px-3 py-2">
               {label}
@@ -53,7 +53,7 @@ export default function Header() {
           <DarkModeToggle />
           <button
             onClick={() => setMenuOpen((v) => !v)}
-            className="p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
+            className="p-2 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
             aria-label="メニューを開く"
           >
             {menuOpen ? (

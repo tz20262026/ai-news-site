@@ -206,12 +206,12 @@ export default function AiSideJobPage() {
         }}
       />
       <div className="relative z-10 max-w-4xl mx-auto px-4 pt-24 pb-20">
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+        <nav className="flex items-center gap-2 text-sm text-gray-300 mb-8">
           <Link href="/" className="hover:text-gray-300 transition-colors">トップ</Link>
           <span>/</span>
           <Link href="/ai-fukugyou" className="hover:text-gray-300 transition-colors">AI副業</Link>
           <span>/</span>
-          <span className="text-gray-400">AIを使った副業5選</span>
+          <span className="text-gray-300">AIを使った副業5選</span>
         </nav>
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-sm font-semibold text-cyan-400 mb-6">
@@ -227,7 +227,7 @@ export default function AiSideJobPage() {
               【2026年版・初心者でも月10万円可能】
             </span>
           </h1>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-300 text-base leading-relaxed mb-4">
             ChatGPT・Claude・Midjourney等のAIツールが普及した2026年、AI活用スキルは最強の副業武器です。本記事では初心者でも始めやすいAI副業を5つ厳選し、収益化までの具体的なステップを公開します。
           </p>
           <div className="flex items-center gap-4 text-sm text-gray-600">
@@ -241,11 +241,11 @@ export default function AiSideJobPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-white/[0.06]">
-                  <th className="text-left px-4 py-3 text-gray-400 font-bold">副業</th>
-                  <th className="text-left px-4 py-3 text-gray-400 font-bold">月収目安</th>
-                  <th className="text-left px-4 py-3 text-gray-400 font-bold hidden sm:table-cell">初期費用</th>
-                  <th className="text-left px-4 py-3 text-gray-400 font-bold hidden sm:table-cell">週の時間</th>
-                  <th className="text-left px-4 py-3 text-gray-400 font-bold">難易度</th>
+                  <th className="text-left px-4 py-3 text-gray-300 font-bold">副業</th>
+                  <th className="text-left px-4 py-3 text-gray-300 font-bold">月収目安</th>
+                  <th className="text-left px-4 py-3 text-gray-300 font-bold hidden sm:table-cell">初期費用</th>
+                  <th className="text-left px-4 py-3 text-gray-300 font-bold hidden sm:table-cell">週の時間</th>
+                  <th className="text-left px-4 py-3 text-gray-300 font-bold">難易度</th>
                 </tr>
               </thead>
               <tbody>
@@ -253,8 +253,8 @@ export default function AiSideJobPage() {
                   <tr key={i} className="border-t border-white/5 hover:bg-white/[0.02] transition-colors">
                     <td className="px-4 py-3 font-bold text-white">{row.job}</td>
                     <td className="px-4 py-3 text-cyan-400 font-bold">{row.income}</td>
-                    <td className="px-4 py-3 text-gray-400 hidden sm:table-cell">{row.initial}</td>
-                    <td className="px-4 py-3 text-gray-400 hidden sm:table-cell">{row.time}</td>
+                    <td className="px-4 py-3 text-gray-300 hidden sm:table-cell">{row.initial}</td>
+                    <td className="px-4 py-3 text-gray-300 hidden sm:table-cell">{row.time}</td>
                     <td className="px-4 py-3 text-yellow-400">{row.difficulty}</td>
                   </tr>
                 ))}
@@ -275,15 +275,15 @@ export default function AiSideJobPage() {
                     <h3 className="text-xl font-black text-white mb-1">{job.emoji} {job.name}</h3>
                     <div className="flex items-center gap-3 flex-wrap">
                       <span className="text-xs font-bold" style={{ color: job.color }}>💰 {job.income}</span>
-                      <span className="text-xs text-gray-500">⏱ {job.timeRequired}</span>
-                      <span className="text-xs text-gray-500">難易度：{job.difficulty}</span>
+                      <span className="text-xs text-gray-300">⏱ {job.timeRequired}</span>
+                      <span className="text-xs text-gray-300">難易度：{job.difficulty}</span>
                     </div>
                   </div>
                 </div>
                 <div className="px-6 py-5 space-y-5">
-                  <p className="text-gray-400 text-sm leading-relaxed">{job.desc}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">{job.desc}</p>
                   <div>
-                    <p className="text-xs text-gray-500 mb-2 font-bold">主要AIツール</p>
+                    <p className="text-xs text-gray-300 mb-2 font-bold">主要AIツール</p>
                     <div className="flex flex-wrap gap-2">
                       {job.tools.map((tool) => (
                         <span key={tool} className="text-xs px-2 py-1 rounded-full font-bold" style={{ color: job.color, background: `${job.color}15`, border: `1px solid ${job.color}30` }}>{tool}</span>
@@ -291,7 +291,7 @@ export default function AiSideJobPage() {
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 mb-3 font-bold">始め方ステップ</p>
+                    <p className="text-xs text-gray-300 mb-3 font-bold">始め方ステップ</p>
                     <ol className="space-y-2">
                       {job.startSteps.map((step, i) => (
                         <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
@@ -303,7 +303,7 @@ export default function AiSideJobPage() {
                   </div>
                   <div className="rounded-lg p-4" style={{ background: `${job.color}08`, border: `1px solid ${job.color}25` }}>
                     <p className="text-xs font-bold mb-1" style={{ color: job.color }}>📌 実例</p>
-                    <p className="text-xs text-gray-400 leading-relaxed">{job.realCase}</p>
+                    <p className="text-xs text-gray-300 leading-relaxed">{job.realCase}</p>
                   </div>
                 </div>
               </div>
@@ -316,13 +316,13 @@ export default function AiSideJobPage() {
             {FAQ.map((item, i) => (
               <div key={i} className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
                 <p className="font-bold text-white mb-2">Q. {item.q}</p>
-                <p className="text-sm text-gray-400 leading-relaxed">A. {item.a}</p>
+                <p className="text-sm text-gray-300 leading-relaxed">A. {item.a}</p>
               </div>
             ))}
           </div>
         </section>
         <div className="rounded-2xl p-8 text-center mb-10" style={{ background: "linear-gradient(135deg, rgba(6,182,212,0.12), rgba(139,92,246,0.12))", border: "1px solid rgba(6,182,212,0.25)" }}>
-          <p className="text-gray-400 text-sm mb-2">AI副業に必須のAIツール比較も読んでみよう</p>
+          <p className="text-gray-300 text-sm mb-2">AI副業に必須のAIツール比較も読んでみよう</p>
           <h2 className="text-2xl font-black text-white mb-4">ChatGPT・Claude・Gemini どれを使うべきか？</h2>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/ai-tools-comparison" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-black text-base text-[#0d1117] bg-cyan-400 hover:bg-cyan-300 transition-all hover:-translate-y-0.5 shadow-lg">

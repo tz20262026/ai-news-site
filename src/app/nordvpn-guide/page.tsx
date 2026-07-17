@@ -71,11 +71,11 @@ export default function NordVpnGuidePage() {
           <h1 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
             NordVPN活用ガイド
             <br />
-            <span className="text-xl text-gray-400 font-bold">
+            <span className="text-xl text-gray-300 font-bold">
               【AIツール利用者のセキュリティ対策・使い方・料金】
             </span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             公開日：2026年7月13日｜筆者：AI News Japan 編集部
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function NordVpnGuidePage() {
             height={675}
             className="rounded-xl border border-gray-700 w-full h-auto"
           />
-          <p className="text-gray-400 text-sm leading-[1.9] mt-4">
+          <p className="text-gray-300 text-sm leading-[1.9] mt-4">
             VPNは、あなたの端末とインターネットの間に<strong className="text-white">暗号化されたトンネル</strong>を作る技術です。
             トンネルの中を通る通信は第三者から中身が見えないため、同じWi-Fiにつないだ悪意ある誰かがいても、
             AIツールへ送信したプロンプトやログイン情報を盗み見ることはできません。
@@ -205,7 +205,7 @@ export default function NordVpnGuidePage() {
           >
             NordVPNを30日間返金保証で試す →
           </a>
-          <p className="text-xs text-gray-500 mt-3">※ 本セクションはPR・広告を含みます</p>
+          <p className="text-xs text-gray-300 mt-3">※ 本セクションはPR・広告を含みます</p>
         </section>
 
         <section className="mb-12">
@@ -216,7 +216,7 @@ export default function NordVpnGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">A. {faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">A. {faq.a}</p>
               </div>
             ))}
           </div>

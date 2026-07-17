@@ -384,7 +384,7 @@ export default function AiImageGenerationGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 主要AI画像生成ツール徹底比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 品質・価格・商用利用・日本語対応の観点で選ぶ
               </p>
             </div>
@@ -407,7 +407,7 @@ export default function AiImageGenerationGuidePage() {
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-1">
                         <h3 className={`font-black text-lg ${tool.accentColor}`}>{tool.name}</h3>
-                        <span className="text-xs text-gray-500">{tool.developer}</span>
+                        <span className="text-xs text-gray-300">{tool.developer}</span>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <span
@@ -445,7 +445,7 @@ export default function AiImageGenerationGuidePage() {
                         ★
                       </span>
                     ))}
-                    <span className="text-xs text-gray-500 ml-1">画質・クオリティ</span>
+                    <span className="text-xs text-gray-300 ml-1">画質・クオリティ</span>
                   </div>
 
                   <p className="text-gray-300 text-sm leading-relaxed mb-4">{tool.description}</p>
@@ -480,7 +480,7 @@ export default function AiImageGenerationGuidePage() {
                     <span className="text-gray-300 text-xs">{tool.bestFor}</span>
                   </div>
 
-                  <p className="text-xs text-gray-500 mt-2">{tool.priceDetail}</p>
+                  <p className="text-xs text-gray-300 mt-2">{tool.priceDetail}</p>
                 </div>
               ))}
             </div>
@@ -494,7 +494,7 @@ export default function AiImageGenerationGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 プロンプトの書き方・コツ
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 同じアイデアでも書き方次第で出力品質が劇的に変わる
               </p>
             </div>
@@ -541,7 +541,7 @@ export default function AiImageGenerationGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 商用利用の可否まとめ
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ビジネス・副業で使う前に必ず確認
               </p>
             </div>
@@ -579,13 +579,13 @@ export default function AiImageGenerationGuidePage() {
                       {row.status}
                     </span>
                   </div>
-                  <div className="text-center text-gray-400">{row.plan}</div>
-                  <div className="text-center text-gray-500 hidden sm:block">{row.note}</div>
+                  <div className="text-center text-gray-300">{row.plan}</div>
+                  <div className="text-center text-gray-300 hidden sm:block">{row.note}</div>
                 </div>
               ))}
             </div>
 
-            <p className="mt-4 text-xs text-gray-500 leading-relaxed">
+            <p className="mt-4 text-xs text-gray-300 leading-relaxed">
               ※各ツールの利用規約は随時更新されます。商用利用前に必ず公式サイトの最新規約を確認してください。
             </p>
           </div>
@@ -598,7 +598,7 @@ export default function AiImageGenerationGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 ビジネス・副業での活用法
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 AI画像生成を収益につなげる4つの方法
               </p>
             </div>
@@ -670,7 +670,7 @@ export default function AiImageGenerationGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 AI画像生成の疑問をまとめて解決
               </p>
             </div>

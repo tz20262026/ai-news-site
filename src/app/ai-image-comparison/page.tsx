@@ -342,7 +342,7 @@ export default function AiImageComparisonPage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 4大AI画像生成ツール詳細解説
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 各ツールの特徴・強み・弱み・料金を詳しく比較
               </p>
             </div>
@@ -362,11 +362,11 @@ export default function AiImageComparisonPage() {
                         <p className="text-xs text-amber-400 font-semibold">{tool.tagline}</p>
                         <div className="flex gap-2 mt-1">
                           <div>
-                            <p className="text-xs text-gray-500">品質</p>
+                            <p className="text-xs text-gray-300">品質</p>
                             <StarRating score={tool.quality} />
                           </div>
                           <div>
-                            <p className="text-xs text-gray-500">易しさ</p>
+                            <p className="text-xs text-gray-300">易しさ</p>
                             <StarRating score={tool.ease} />
                           </div>
                         </div>
@@ -406,15 +406,15 @@ export default function AiImageComparisonPage() {
 
                       <div className="flex flex-wrap gap-3 mt-1">
                         <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                          <span className="text-xs text-gray-400 font-bold">料金：</span>
+                          <span className="text-xs text-gray-300 font-bold">料金：</span>
                           <span className="text-xs text-amber-300">{tool.price}</span>
                         </div>
                         <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                          <span className="text-xs text-gray-400 font-bold">無料：</span>
+                          <span className="text-xs text-gray-300 font-bold">無料：</span>
                           <span className="text-xs text-emerald-300">{tool.freeOption}</span>
                         </div>
                         <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                          <span className="text-xs text-gray-400 font-bold">おすすめ：</span>
+                          <span className="text-xs text-gray-300 font-bold">おすすめ：</span>
                           <span className="text-xs text-cyan-300">{tool.bestFor}</span>
                         </div>
                       </div>
@@ -433,7 +433,7 @@ export default function AiImageComparisonPage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 4ツール一覧比較表
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 主要項目で4ツールを横並び比較
               </p>
             </div>
@@ -442,7 +442,7 @@ export default function AiImageComparisonPage() {
               <table className="w-full min-w-[600px] border-collapse">
                 <thead>
                   <tr className="border-b border-slate-800">
-                    <th className="text-left py-3 px-4 text-xs font-bold text-gray-400">項目</th>
+                    <th className="text-left py-3 px-4 text-xs font-bold text-gray-300">項目</th>
                     <th className="text-center py-3 px-3 text-xs font-bold text-violet-400">Midjourney</th>
                     <th className="text-center py-3 px-3 text-xs font-bold text-cyan-400">DALL-E 3</th>
                     <th className="text-center py-3 px-3 text-xs font-bold text-amber-400">Stable Diffusion</th>
@@ -475,7 +475,7 @@ export default function AiImageComparisonPage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 用途別おすすめAI画像生成ツール
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 目的別に最適な1ツールを厳選
               </p>
             </div>
@@ -493,7 +493,7 @@ export default function AiImageComparisonPage() {
                   key={index}
                   className="rounded-2xl border border-slate-800 bg-slate-900 p-5 flex flex-col gap-2"
                 >
-                  <p className="text-xs text-gray-400 font-bold">目的</p>
+                  <p className="text-xs text-gray-300 font-bold">目的</p>
                   <p className="text-white font-black text-sm">{item.goal}</p>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
@@ -539,7 +539,7 @@ export default function AiImageComparisonPage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 AI画像生成ツールに関する疑問をまとめて解決
               </p>
             </div>

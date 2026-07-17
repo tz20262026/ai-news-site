@@ -320,7 +320,7 @@ export default function MidjourneyGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Midjourney主要機能一覧
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 基本操作から上級機能まで使えるすべてを解説
               </p>
             </div>
@@ -366,7 +366,7 @@ export default function MidjourneyGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 プロンプト6大構成要素
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 この6要素を組み合わせるだけでプロ品質の画像が生成できる
               </p>
             </div>
@@ -426,7 +426,7 @@ export default function MidjourneyGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 料金プラン比較2026年版
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 月額・年額割引あり。用途に合わせてプランを選ぼう
               </p>
             </div>
@@ -440,8 +440,8 @@ export default function MidjourneyGuidePage() {
                   <div className="text-center">
                     <p className="font-black text-white text-lg">{plan.name}</p>
                     <p className="text-2xl font-black text-violet-400 mt-1">{plan.price}</p>
-                    <p className="text-xs text-gray-400 mt-1">高速生成 {plan.fastHours}</p>
-                    <p className="text-xs text-gray-400">同時生成 {plan.concurrent}</p>
+                    <p className="text-xs text-gray-300 mt-1">高速生成 {plan.fastHours}</p>
+                    <p className="text-xs text-gray-300">同時生成 {plan.concurrent}</p>
                   </div>
                   <ul className="flex flex-col gap-1.5 mt-auto">
                     {plan.features.map((f, i) => (
@@ -496,7 +496,7 @@ export default function MidjourneyGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Midjourneyに関する疑問をまとめて解決
               </p>
             </div>

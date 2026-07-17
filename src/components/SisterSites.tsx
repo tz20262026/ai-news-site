@@ -33,7 +33,7 @@ export default function SisterSites() {
     <section className="mb-8 pt-8 border-t border-gray-800" aria-labelledby="sister-sites-heading">
       <h2
         id="sister-sites-heading"
-        className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4"
+        className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-4"
       >
         姉妹サイト
       </h2>

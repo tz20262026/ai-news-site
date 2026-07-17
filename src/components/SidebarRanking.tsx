@@ -10,7 +10,7 @@ export default function SidebarRanking({ articles }: { articles: Article[] }) {
     <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-4">
       <div className="flex items-center gap-2 mb-3">
         <span className="text-sm font-bold text-gray-900 dark:text-white">🔥 注目記事</span>
-        <span className="text-xs text-gray-400 dark:text-gray-500 ml-auto">最新5件</span>
+        <span className="text-xs text-gray-500 dark:text-gray-300 ml-auto">最新5件</span>
       </div>
       <ol className="flex flex-col gap-3">
         {top5.map((a, i) => (
@@ -23,7 +23,7 @@ export default function SidebarRanking({ articles }: { articles: Article[] }) {
                 i === 0 ? "bg-yellow-400 text-yellow-900" :
                 i === 1 ? "bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-200" :
                 i === 2 ? "bg-orange-300 text-orange-900" :
-                "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                "bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-300"
               }`}>{i + 1}</span>
               <div className="flex gap-2 flex-1 min-w-0 overflow-hidden">
                 <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0">

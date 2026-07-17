@@ -126,7 +126,7 @@ export default function ChatGptPromptGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【コピペで使える例文・仕事・副業・学習に活用】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             コピペですぐ使えるChatGPTプロンプト例文を<br />
             ビジネス・副業・学習の用途別にまとめました。
           </p>
@@ -184,7 +184,7 @@ export default function ChatGptPromptGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

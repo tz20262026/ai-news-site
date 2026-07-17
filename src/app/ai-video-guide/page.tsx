@@ -152,7 +152,7 @@ export default function AiVideoGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【Sora・RunwayML・Pika・無料ツール比較】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             最新の動画生成AIツールを徹底比較。<br />
             無料で使える方法からビジネス活用まで2026年版で解説。
           </p>
@@ -170,7 +170,7 @@ export default function AiVideoGuidePage() {
                   <span className="text-2xl">{tool.icon}</span>
                   <div>
                     <h3 className="text-white font-black text-sm">{tool.name}</h3>
-                    <p className="text-gray-500 text-xs">{tool.maker}</p>
+                    <p className="text-gray-300 text-xs">{tool.maker}</p>
                   </div>
                   <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${qualityStyle[tool.quality]}`}>
                     品質：{tool.quality}
@@ -183,15 +183,15 @@ export default function AiVideoGuidePage() {
                 </div>
                 <div className="grid grid-cols-2 gap-2 mb-3">
                   <div className="bg-gray-800 rounded px-2.5 py-1.5 text-xs">
-                    <span className="text-gray-400 block mb-0.5">⏱ 最大長さ</span>
+                    <span className="text-gray-300 block mb-0.5">⏱ 最大長さ</span>
                     <span className="text-gray-200">{tool.maxLen}</span>
                   </div>
                   <div className="bg-gray-800 rounded px-2.5 py-1.5 text-xs">
-                    <span className="text-gray-400 block mb-0.5">🎯 おすすめ用途</span>
+                    <span className="text-gray-300 block mb-0.5">🎯 おすすめ用途</span>
                     <span className="text-gray-200">{tool.best}</span>
                   </div>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed">{tool.desc}</p>
+                <p className="text-gray-300 text-xs leading-relaxed">{tool.desc}</p>
               </div>
             ))}
           </div>
@@ -223,7 +223,7 @@ export default function AiVideoGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

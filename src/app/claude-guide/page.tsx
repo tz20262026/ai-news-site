@@ -179,7 +179,7 @@ export default function ClaudeGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【使い方・ChatGPTとの違い・無料機能】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Anthropicが開発するAI「Claude（クロード）」の使い方・特徴・<br />
             ChatGPTとの違いを2026年版で完全解説します。
           </p>
@@ -220,12 +220,12 @@ export default function ClaudeGuidePage() {
             </div>
             {COMPARISONS.map((c, i) => (
               <div key={i} className={`grid grid-cols-3 p-3 text-xs border-t border-gray-700/50 ${i % 2 === 0 ? "bg-gray-900" : "bg-gray-800/30"}`}>
-                <div className="text-gray-400 font-bold pr-2">{c.aspect}</div>
-                <div className={`pr-2 ${c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-400"}`}>
+                <div className="text-gray-300 font-bold pr-2">{c.aspect}</div>
+                <div className={`pr-2 ${c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-300"}`}>
                   {c.winner === "claude" && <span className="text-orange-400">✓ </span>}
                   {c.claude}
                 </div>
-                <div className={`${c.winner === "chatgpt" ? "text-green-300 font-bold" : "text-gray-400"}`}>
+                <div className={`${c.winner === "chatgpt" ? "text-green-300 font-bold" : "text-gray-300"}`}>
                   {c.winner === "chatgpt" && <span className="text-green-400">✓ </span>}
                   {c.chatgpt}
                 </div>
@@ -260,7 +260,7 @@ export default function ClaudeGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

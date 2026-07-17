@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
           {/* ガイド */}
           <div>
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">AIガイド</p>
+            <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">AIガイド</p>
             <ul className="space-y-2.5">
               {GUIDE_LINKS.map(({ href, label }) => (
                 <li key={href}>
@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* ツール・サービス */}
           <div>
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">ツール・サービス</p>
+            <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">ツール・サービス</p>
             <ul className="space-y-2.5">
               {TOOL_LINKS.map(({ href, label }) => (
                 <li key={href}>
@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* サイト情報 */}
           <div>
-            <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">サイト情報</p>
+            <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">サイト情報</p>
             <ul className="space-y-2.5">
               {SITE_LINKS.map(({ href, label }) => (
                 <li key={href}>

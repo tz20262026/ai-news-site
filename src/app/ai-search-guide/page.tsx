@@ -152,7 +152,7 @@ export default function AiSearchGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【Perplexity・ChatGPT Search・Google AI・Grok比較】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Perplexity AI・ChatGPT Search・Google AI Overview・Grok・Bing Copilotの<br />
             精度・無料制限・使い分けを2026年版で完全比較します。
           </p>
@@ -182,7 +182,7 @@ export default function AiSearchGuidePage() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                   <div className="bg-gray-800 rounded px-2.5 py-1.5">
-                    <span className="text-gray-400">💪 強み：</span>
+                    <span className="text-gray-300">💪 強み：</span>
                     <span className="text-gray-200">{tool.strength}</span>
                   </div>
                   <div className="bg-green-900/10 border border-green-700/20 rounded px-2.5 py-1.5">
@@ -229,7 +229,7 @@ export default function AiSearchGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

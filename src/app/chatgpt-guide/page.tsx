@@ -350,7 +350,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 ChatGPT始め方・登録手順（5分で完了）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 スマホ・PCどちらからでも無料で始められます
               </p>
             </div>
@@ -387,7 +387,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 無料版 vs 有料版（Plus）徹底比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 月額$20の価値があるかどうかを機能一覧で確認
               </p>
             </div>
@@ -395,7 +395,7 @@ export default function ChatGPTGuidePage() {
             <div className="rounded-2xl border border-slate-800 bg-slate-900 overflow-hidden">
               {/* ヘッダー */}
               <div className="grid grid-cols-3 bg-slate-800 px-4 py-3">
-                <div className="text-gray-400 text-xs font-bold">機能</div>
+                <div className="text-gray-300 text-xs font-bold">機能</div>
                 <div className="text-center text-emerald-400 text-xs font-bold">無料版</div>
                 <div className="text-center text-amber-400 text-xs font-bold">Plus（月$20）</div>
               </div>
@@ -407,7 +407,7 @@ export default function ChatGPTGuidePage() {
                   }`}
                 >
                   <div className="text-gray-300 font-bold pr-2">{row.feature}</div>
-                  <div className="text-center text-gray-400 px-1">{row.free}</div>
+                  <div className="text-center text-gray-300 px-1">{row.free}</div>
                   <div className="text-center text-amber-300 px-1 font-medium">{row.plus}</div>
                 </div>
               ))}
@@ -429,7 +429,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 ChatGPT主要機能一覧
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 無料・有料(Plus)で使える機能を完全網羅
               </p>
             </div>
@@ -461,7 +461,7 @@ export default function ChatGPTGuidePage() {
                     {feature.useCases.map((uc) => (
                       <span
                         key={uc}
-                        className="text-xs px-2.5 py-1 rounded-full bg-slate-800 text-gray-400 border border-slate-700"
+                        className="text-xs px-2.5 py-1 rounded-full bg-slate-800 text-gray-300 border border-slate-700"
                       >
                         {uc}
                       </span>
@@ -480,7 +480,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 プロンプト6大テクニック
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 同じ質問でも「聞き方」次第で出力品質が劇的に変わる
               </p>
             </div>
@@ -530,7 +530,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 ChatGPT活用シーン5選
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ビジネス・副業・勉強・開発・コンテンツ制作での実践的な使い方
               </p>
             </div>
@@ -545,7 +545,7 @@ export default function ChatGPTGuidePage() {
                     <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 flex-shrink-0">
                       {uc.category}
                     </span>
-                    <span className="w-5 h-5 rounded-full bg-slate-800 text-gray-500 flex items-center justify-center font-black text-xs border border-slate-700 flex-shrink-0">
+                    <span className="w-5 h-5 rounded-full bg-slate-800 text-gray-300 flex items-center justify-center font-black text-xs border border-slate-700 flex-shrink-0">
                       {index + 1}
                     </span>
                   </div>
@@ -559,7 +559,7 @@ export default function ChatGPTGuidePage() {
                     <p className="text-xs text-amber-400 font-bold mb-1">
                       プロンプト例
                     </p>
-                    <p className="text-gray-400 text-xs leading-relaxed">
+                    <p className="text-gray-300 text-xs leading-relaxed">
                       {uc.promptExample}
                     </p>
                   </div>
@@ -576,7 +576,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 GPTs（カスタムAI）の使い方
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 目的特化のAIを選ぶだけで専門家レベルの回答が得られる
               </p>
             </div>
@@ -649,7 +649,7 @@ export default function ChatGPTGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ChatGPTの始め方・使い方に関する疑問を解決
               </p>
             </div>

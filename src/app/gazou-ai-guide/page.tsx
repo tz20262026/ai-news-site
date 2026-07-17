@@ -190,7 +190,7 @@ export default function GazouAiGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【無料・日本語対応・副業に使える】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             Midjourney・DALL-E・Stable Diffusionなど主要な画像生成AIを<br />
             品質・価格・日本語対応・副業活用の観点で徹底比較します。
           </p>
@@ -231,7 +231,7 @@ export default function GazouAiGuidePage() {
                     <p className="text-green-400 text-xs font-bold mb-1">✅ メリット</p>
                     <ul className="space-y-0.5">
                       {tool.pros.map((p, i) => (
-                        <li key={i} className="text-gray-400 text-xs">・{p}</li>
+                        <li key={i} className="text-gray-300 text-xs">・{p}</li>
                       ))}
                     </ul>
                   </div>
@@ -239,7 +239,7 @@ export default function GazouAiGuidePage() {
                     <p className="text-red-400 text-xs font-bold mb-1">❌ デメリット</p>
                     <ul className="space-y-0.5">
                       {tool.cons.map((c, i) => (
-                        <li key={i} className="text-gray-400 text-xs">・{c}</li>
+                        <li key={i} className="text-gray-300 text-xs">・{c}</li>
                       ))}
                     </ul>
                   </div>
@@ -278,7 +278,7 @@ export default function GazouAiGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

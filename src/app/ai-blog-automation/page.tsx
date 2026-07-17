@@ -129,7 +129,7 @@ export default function AiBlogAutomationPage() {
           <Link href="/" className="hover:text-white transition-colors">
             ホーム
           </Link>
-          <span className="mx-2 text-gray-500">/</span>
+          <span className="mx-2 text-gray-300">/</span>
           <span className="text-gray-300">AIブログ自動化ツールの選び方</span>
         </nav>
 
@@ -274,7 +274,7 @@ export default function AiBlogAutomationPage() {
             >
               AIブログくんの詳細を見る →
             </a>
-            <p className="text-xs text-gray-400 mt-3">※ 広告リンクです。料金・機能は公式サイトで最新情報をご確認ください</p>
+            <p className="text-xs text-gray-300 mt-3">※ 広告リンクです。料金・機能は公式サイトで最新情報をご確認ください</p>
           </div>
         </section>
 
@@ -353,7 +353,7 @@ export default function AiBlogAutomationPage() {
               </a>
             </div>
           </div>
-          <p className="text-xs text-gray-400 mt-4">※ 本セクションのリンクは広告リンクです</p>
+          <p className="text-xs text-gray-300 mt-4">※ 本セクションのリンクは広告リンクです</p>
         </section>
 
         {/* 運用の型 */}
@@ -431,7 +431,7 @@ export default function AiBlogAutomationPage() {
             >
               AIブログくんを試してみる →
             </a>
-            <p className="text-xs text-gray-400 mt-3">※ PR・広告リンクを含みます</p>
+            <p className="text-xs text-gray-300 mt-3">※ PR・広告リンクを含みます</p>
           </div>
         </section>
 

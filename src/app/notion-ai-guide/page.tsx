@@ -338,7 +338,7 @@ export default function NotionAiGuidePage() {
                 <div key={item.label} className="rounded-2xl bg-slate-900 border border-slate-800 p-5 text-center">
                   <div className="text-3xl mb-2">{item.icon}</div>
                   <p className="font-black text-white text-base mb-1">{item.label}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -352,7 +352,7 @@ export default function NotionAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Notion AI 全機能一覧
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 コンテンツ作成から情報管理まで、あらゆる業務をカバーする6大機能
               </p>
             </div>
@@ -383,7 +383,7 @@ export default function NotionAiGuidePage() {
                       <span className="text-gray-300 text-xs">{feature.useCase}</span>
                     </div>
                     <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                      <p className="text-xs text-gray-400 font-bold mb-0.5">活用例</p>
+                      <p className="text-xs text-gray-300 font-bold mb-0.5">活用例</p>
                       <p className="text-gray-300 text-xs leading-relaxed">{feature.example}</p>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ export default function NotionAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 用途別活用シナリオ
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 ビジネス・学習・コンテンツ作成の3領域で実践的な活用法を紹介
               </p>
             </div>
@@ -441,7 +441,7 @@ export default function NotionAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Notion 料金プラン比較2026年版
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Notion AI利用には有料プラン＋AIアドオンが必要（Enterprise除く）
               </p>
             </div>
@@ -464,10 +464,10 @@ export default function NotionAiGuidePage() {
                   <div className="text-center">
                     <p className="font-black text-white text-lg">{plan.name}</p>
                     <p className="text-2xl font-black text-sky-400 mt-1">{plan.price}</p>
-                    <p className="text-xs text-gray-400 mt-1">年払い時の月額</p>
+                    <p className="text-xs text-gray-300 mt-1">年払い時の月額</p>
                   </div>
                   <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2 text-center">
-                    <p className="text-xs font-bold text-gray-400 mb-0.5">Notion AI</p>
+                    <p className="text-xs font-bold text-gray-300 mb-0.5">Notion AI</p>
                     <p className={`text-xs font-bold ${plan.aiIncluded ? "text-emerald-400" : "text-amber-400"}`}>
                       {plan.aiAddon}
                     </p>
@@ -527,7 +527,7 @@ export default function NotionAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Notion AIに関する疑問をまとめて解決
               </p>
             </div>

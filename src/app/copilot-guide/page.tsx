@@ -139,7 +139,7 @@ export default function CopilotGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【使い方・無料機能・ChatGPTとの違い】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             WindowsやEdgeに統合されたMicrosoft Copilotの<br />
             使い方・無料機能・ChatGPTとの違いを2026年版で解説。
           </p>
@@ -158,7 +158,7 @@ export default function CopilotGuidePage() {
                   <h3 className="text-white font-black text-sm">{f.title}</h3>
                   <span className="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2 py-0.5 rounded-full">{f.platform}</span>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed">{f.desc}</p>
+                <p className="text-gray-300 text-xs leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ export default function CopilotGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

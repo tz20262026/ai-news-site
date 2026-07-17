@@ -138,7 +138,7 @@ export default function PrivacyPage() {
       <div className="mb-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
         >
           ← 記事一覧に戻る
         </Link>
@@ -148,7 +148,7 @@ export default function PrivacyPage() {
         <h1 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
           プライバシーポリシー
         </h1>
-        <p className="text-xs text-gray-400 dark:text-gray-500 mb-8">
+        <p className="text-xs text-gray-500 dark:text-gray-300 mb-8">
           制定日：2024年1月1日　最終更新：2026年6月14日
         </p>
 

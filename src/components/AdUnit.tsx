@@ -22,7 +22,7 @@ export default function AdUnit({ slot }: { slot: string }) {
 
   if (!clientId) {
     return (
-      <div className="rounded-xl border border-dashed border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 flex items-center justify-center h-20 text-xs text-gray-300 dark:text-gray-600">
+      <div className="rounded-xl border border-dashed border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 flex items-center justify-center h-20 text-xs text-gray-300 dark:text-gray-300">
         広告スペース
       </div>
     );

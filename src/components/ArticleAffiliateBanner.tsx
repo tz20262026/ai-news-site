@@ -187,10 +187,10 @@ export default function ArticleAffiliateBanner({ tags }: Props) {
   return (
     <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700/60">
       <div className="flex items-center gap-2 mb-4">
-        <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
+        <span className="text-xs font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
           PR / 広告
         </span>
-        <span className="text-xs text-gray-400 dark:text-gray-500">この記事に関連するおすすめサービス</span>
+        <span className="text-xs text-gray-500 dark:text-gray-300">この記事に関連するおすすめサービス</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -216,9 +216,9 @@ export default function ArticleAffiliateBanner({ tags }: Props) {
             </div>
             <div>
               <p className="font-bold text-gray-900 dark:text-white text-sm leading-tight">{item.title}</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.tagline}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-300 mt-0.5">{item.tagline}</p>
             </div>
-            <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed flex-1">{item.desc}</p>
+            <p className="text-xs text-gray-500 dark:text-gray-300 leading-relaxed flex-1">{item.desc}</p>
             <span
               className="inline-flex items-center text-xs font-bold py-1.5 px-3 rounded-lg transition-all group-hover:opacity-80 mt-auto"
               style={{
@@ -232,7 +232,7 @@ export default function ArticleAffiliateBanner({ tags }: Props) {
           </a>
         ))}
       </div>
-      <p className="text-xs text-gray-400 dark:text-gray-600 mt-2">※ 本コンテンツはPR・広告を含みます</p>
+      <p className="text-xs text-gray-500 dark:text-gray-300 mt-2">※ 本コンテンツはPR・広告を含みます</p>
     </div>
   );
 }

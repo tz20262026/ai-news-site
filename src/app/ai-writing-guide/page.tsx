@@ -148,7 +148,7 @@ export default function AiWritingGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【ChatGPT・Claude・Geminiで記事を自動作成】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             ChatGPT・Claude・Geminiを使ったAI文章生成の方法を<br />
             ブログ記事・コピー・メール・SNS投稿などユースケース別に完全解説。
           </p>
@@ -173,7 +173,7 @@ export default function AiWritingGuidePage() {
                 </div>
                 <ul className="space-y-1">
                   {u.tips.map((tip, j) => (
-                    <li key={j} className="text-gray-400 text-xs flex gap-2">
+                    <li key={j} className="text-gray-300 text-xs flex gap-2">
                       <span className="text-blue-400 flex-shrink-0">✓</span>{tip}
                     </li>
                   ))}
@@ -208,7 +208,7 @@ export default function AiWritingGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

@@ -59,7 +59,7 @@ function StarRating({ rating }: { rating: number }) {
   return (
     <span className="text-xs tracking-tight" aria-label={`${rating}点/5点`}>
       {[1, 2, 3, 4, 5].map((i) => (
-        <span key={i} className={i <= rating ? "text-yellow-400" : "text-gray-300 dark:text-gray-600"}>
+        <span key={i} className={i <= rating ? "text-yellow-400" : "text-gray-300 dark:text-gray-300"}>
           ★
         </span>
       ))}
@@ -109,7 +109,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
               className={`flex-1 min-w-[4.5rem] py-2.5 px-1 text-xs font-bold whitespace-nowrap transition-colors ${
                 activeTab === i
                   ? "bg-white dark:bg-gray-900 text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400"
-                  : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
+                  : "text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-300"
               }`}
             >
               {s.label}
@@ -141,7 +141,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
           </div>
 
           {/* 判定理由 */}
-          <p className="text-xs text-gray-500 dark:text-gray-400 mb-3 leading-relaxed border-l-2 border-blue-400 pl-3 line-clamp-2">
+          <p className="text-xs text-gray-500 dark:text-gray-300 mb-3 leading-relaxed border-l-2 border-blue-400 pl-3 line-clamp-2">
             {seg.reason}
           </p>
 
@@ -165,7 +165,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
                       </span>
                     )}
                   </div>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 shrink-0">{tool.price}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-300 shrink-0">{tool.price}</span>
                 </div>
                 <div className="flex items-center gap-2 mt-1">
                   <StarRating rating={tool.rating} />
@@ -176,7 +176,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
           </div>
 
           {/* フッター */}
-          <p className="text-[10px] text-gray-400 dark:text-gray-600 mt-3 text-right">
+          <p className="text-[10px] text-gray-500 dark:text-gray-300 mt-3 text-right">
             最終分析: {formatDate(data.updatedAt)}
           </p>
         </div>

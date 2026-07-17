@@ -104,13 +104,13 @@ export default async function ArticlePage({ params }: Props) {
       <ReadingProgress />
 
       {/* パンくずリスト（SEO・回遊性向上） */}
-      <nav aria-label="パンくずリスト" className="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-gray-500 dark:text-gray-400">
+      <nav aria-label="パンくずリスト" className="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-gray-500 dark:text-gray-300">
         <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors shrink-0">
           ホーム
         </Link>
         {primaryTag && (
           <>
-            <span className="text-gray-300 dark:text-gray-600 shrink-0">/</span>
+            <span className="text-gray-300 dark:text-gray-300 shrink-0">/</span>
             <Link
               href={`/tags/${encodeURIComponent(primaryTag)}`}
               className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors shrink-0"
@@ -119,8 +119,8 @@ export default async function ArticlePage({ params }: Props) {
             </Link>
           </>
         )}
-        <span className="text-gray-300 dark:text-gray-600 shrink-0">/</span>
-        <span className="text-gray-400 dark:text-gray-500 truncate max-w-[60vw] sm:max-w-xs" title={article.title}>
+        <span className="text-gray-300 dark:text-gray-300 shrink-0">/</span>
+        <span className="text-gray-500 dark:text-gray-300 truncate max-w-[60vw] sm:max-w-xs" title={article.title}>
           {article.title}
         </span>
       </nav>
@@ -154,7 +154,7 @@ export default async function ArticlePage({ params }: Props) {
 
         <div className="p-6 sm:p-8">
           {/* メタ情報 */}
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400 dark:text-gray-500 mb-3">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500 dark:text-gray-300 mb-3">
             <span className="shrink-0">{getRelativeTime(article.publishedAt)}（{article.publishedAt}）</span>
             <span className="shrink-0">·</span>
             <a
@@ -182,7 +182,7 @@ export default async function ArticlePage({ params }: Props) {
           {/* 目次（見出しが2つ以上ある長文記事のみ表示） */}
           {headings.length >= 2 && (
             <nav aria-label="目次" className="mb-7 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 px-5 py-4">
-              <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-2.5 flex items-center gap-1.5">
+              <p className="text-xs font-bold text-gray-500 dark:text-gray-300 mb-2.5 flex items-center gap-1.5">
                 <span>📑</span> 目次
               </p>
               <ol className="space-y-1.5">
@@ -246,7 +246,7 @@ export default async function ArticlePage({ params }: Props) {
 
           {/* フッター */}
           <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700/60 flex items-center justify-between">
-            <span className="text-xs text-gray-400 dark:text-gray-500">情報元: {article.source}</span>
+            <span className="text-xs text-gray-500 dark:text-gray-300">情報元: {article.source}</span>
             <a
               href={article.sourceUrl}
               target="_blank"
@@ -290,7 +290,7 @@ export default async function ArticlePage({ params }: Props) {
                     )}
                   </div>
                   <div className="p-2.5 sm:p-3">
-                    <div className="text-[10px] sm:text-xs text-gray-400 dark:text-gray-500 mb-1">
+                    <div className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-300 mb-1">
                       {getRelativeTime(r.publishedAt)} · {getReadTime(r.body)}分
                     </div>
                     <p className="text-xs font-semibold text-gray-900 dark:text-gray-100 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
@@ -390,7 +390,7 @@ export default async function ArticlePage({ params }: Props) {
       <div className="mt-6 text-center">
         <Link
           href="/"
-          className="inline-block text-sm text-gray-500 hover:text-blue-600 transition-colors"
+          className="inline-block text-sm text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           ← 記事一覧に戻る
         </Link>

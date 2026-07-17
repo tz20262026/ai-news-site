@@ -72,11 +72,11 @@ export default function ExpressVpnGuidePage() {
           <h1 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
             ExpressVPN完全ガイド
             <br />
-            <span className="text-xl text-gray-400 font-bold">
+            <span className="text-xl text-gray-300 font-bold">
               【W杯2026を海外から日本版DAZNで見る方法・速度・料金】
             </span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             公開日：2026年7月13日｜筆者：AI News Japan 編集部
           </p>
         </div>
@@ -109,7 +109,7 @@ export default function ExpressVpnGuidePage() {
             height={675}
             className="rounded-xl border border-gray-700 w-full h-auto"
           />
-          <p className="text-gray-400 text-sm leading-[1.9] mt-4">
+          <p className="text-gray-300 text-sm leading-[1.9] mt-4">
             仕組みはシンプルです。海外からのアクセスは通常、現地のIPアドレス（インターネット上の住所）として扱われるため、
             日本版DAZNは再生をブロックします。そこでExpressVPNのアプリで<strong className="text-white">日本のサーバー</strong>を選んで接続すると、
             通信が暗号化されたうえで日本のIPアドレスに切り替わり、日本国内からのアクセスとして認識されます。
@@ -204,7 +204,7 @@ export default function ExpressVpnGuidePage() {
           >
             ExpressVPNを30日間返金保証で試す →
           </a>
-          <p className="text-xs text-gray-500 mt-3">※ 本セクションはPR・広告を含みます</p>
+          <p className="text-xs text-gray-300 mt-3">※ 本セクションはPR・広告を含みます</p>
         </section>
 
         {/* FAQ */}
@@ -216,7 +216,7 @@ export default function ExpressVpnGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">A. {faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">A. {faq.a}</p>
               </div>
             ))}
           </div>

@@ -140,7 +140,7 @@ export default function AiPresentationGuidePage() {
             <br />
             <span className="text-xl text-gray-300 font-bold">【Gamma・Beautiful.ai・Canva AI・Copilot比較】</span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             最新AIプレゼン作成ツールの特徴・無料枠・日本語対応・<br />
             用途を初心者向けに2026年版で完全比較します。
           </p>
@@ -161,15 +161,15 @@ export default function AiPresentationGuidePage() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3 text-xs">
                   <div className="bg-gray-800 rounded px-2.5 py-1.5">
-                    <span className="text-gray-400">🆓 無料プラン：</span>
+                    <span className="text-gray-300">🆓 無料プラン：</span>
                     <span className="text-gray-200">{tool.freePlan}</span>
                   </div>
                   <div className="bg-gray-800 rounded px-2.5 py-1.5">
-                    <span className="text-gray-400">🎯 用途：</span>
+                    <span className="text-gray-300">🎯 用途：</span>
                     <span className="text-gray-200">{tool.useCase}</span>
                   </div>
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed">{tool.best}</p>
+                <p className="text-gray-300 text-xs leading-relaxed">{tool.best}</p>
               </div>
             ))}
           </div>
@@ -201,7 +201,7 @@ export default function AiPresentationGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

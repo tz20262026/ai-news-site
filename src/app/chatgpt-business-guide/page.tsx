@@ -362,7 +362,7 @@ export default function ChatGPTBusinessGuidePage() {
                     <p className="text-emerald-400 font-bold text-sm mt-1">
                       {plan.price}
                     </p>
-                    <p className="text-gray-400 text-xs mt-1">{plan.target}</p>
+                    <p className="text-gray-300 text-xs mt-1">{plan.target}</p>
                   </div>
                   <ul className="flex flex-col gap-1.5 mt-auto">
                     {plan.features.map((f) => (

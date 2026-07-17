@@ -83,7 +83,7 @@ const TAG_COLORS: Record<string, string> = {
 };
 
 function tagColor(tag: string) {
-  return TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400";
+  return TAG_COLORS[tag] ?? "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300";
 }
 
 // ── カテゴリーマッチ ────────────────────────────────────────
@@ -134,7 +134,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
       <div className="mb-4">
         <div className="relative">
           <svg
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-500 pointer-events-none"
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 dark:text-gray-300 pointer-events-none"
             fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
@@ -157,7 +157,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-medium text-sm mb-2 transition-colors ${
             selectedCategory === "latest"
               ? "bg-blue-600 text-white shadow-sm"
-              : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+              : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
           }`}
         >
           <LayoutGrid className="w-4 h-4" />
@@ -178,12 +178,12 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 className={`flex items-center justify-center gap-2 py-3 px-2 rounded-xl font-medium transition-colors ${
                   selectedCategory === id
                     ? "bg-blue-600 text-white shadow-sm"
-                    : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                 }`}
               >
                 <Icon className="w-4 h-4 shrink-0" />
                 <span className="text-xs leading-tight text-center">{label}</span>
-                <span className={`text-[10px] font-bold px-1.5 rounded-full shrink-0 ${selectedCategory === id ? "bg-white/20 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400"}`}>
+                <span className={`text-[10px] font-bold px-1.5 rounded-full shrink-0 ${selectedCategory === id ? "bg-white/20 text-white" : "bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-300"}`}>
                   {catCount}
                 </span>
               </button>
@@ -194,7 +194,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
 
       {/* 検索結果なし */}
       {filtered.length === 0 && (
-        <div className="text-center py-16 text-gray-400 dark:text-gray-500">
+        <div className="text-center py-16 text-gray-500 dark:text-gray-300">
           <p className="text-4xl mb-3">🔍</p>
           <p>{search ? `「${search}」に一致する記事が見つかりませんでした` : "このカテゴリーの記事はまだありません"}</p>
         </div>
@@ -232,7 +232,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             </div>
           </div>
           <div className="p-5">
-            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm line-clamp-2">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm line-clamp-2">
               {featured.summary}
             </p>
             <div className="mt-3 flex flex-wrap gap-2 items-center justify-between">
@@ -248,7 +248,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                   </Link>
                 ))}
               </div>
-              <span className="text-xs text-gray-400 dark:text-gray-500">{getReadTime(featured.body)}分で読める</span>
+              <span className="text-xs text-gray-500 dark:text-gray-300">{getReadTime(featured.body)}分で読める</span>
             </div>
           </div>
         </Link>
@@ -293,14 +293,14 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 </div>
               </div>
               <div className="p-4">
-                <div className="flex items-center justify-between text-xs text-gray-400 dark:text-gray-500 mb-1.5 gap-2">
+                <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-300 mb-1.5 gap-2">
                   <span className="min-w-0 truncate">{getRelativeTime(article.publishedAt)} · {article.source}</span>
                   <span className="shrink-0">{getReadTime(article.body)}分</span>
                 </div>
                 <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug mb-1.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                   {article.title}
                 </h2>
-                <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2">
+                <p className="text-xs text-gray-500 dark:text-gray-300 leading-relaxed line-clamp-2">
                   {article.summary}
                 </p>
               </div>
@@ -316,7 +316,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           className="w-full mt-6 py-3.5 rounded-2xl border-2 border-blue-200 dark:border-blue-800 text-sm font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 transition-colors"
         >
           さらに20件読む
-          <span className="ml-2 text-xs font-normal text-gray-400 dark:text-gray-500">
+          <span className="ml-2 text-xs font-normal text-gray-500 dark:text-gray-300">
             （残り {filtered.length - visibleCount} 件）
           </span>
         </button>

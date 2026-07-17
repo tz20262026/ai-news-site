@@ -320,7 +320,7 @@ export default function CanvaAiGuidePage() {
                 <div key={item.label} className="rounded-2xl bg-slate-900 border border-slate-800 p-5 text-center">
                   <div className="text-3xl mb-2">{item.icon}</div>
                   <p className="font-black text-white text-base mb-1">{item.label}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-300 text-xs leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -334,7 +334,7 @@ export default function CanvaAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Magic Studio 全機能解説
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 テキスト生成から画像編集まで、Canvaの6大AI機能を徹底解説
               </p>
             </div>
@@ -398,7 +398,7 @@ export default function CanvaAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 用途別デザイン活用シナリオ
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 SNS・プレゼン・マーケティング・動画の4領域で実践的な使い方を解説
               </p>
             </div>
@@ -415,7 +415,7 @@ export default function CanvaAiGuidePage() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                      <p className="text-xs font-bold text-gray-400 mb-0.5">使用テンプレート</p>
+                      <p className="text-xs font-bold text-gray-300 mb-0.5">使用テンプレート</p>
                       <p className="text-gray-300 text-xs">{useCase.template}</p>
                     </div>
                     <div>
@@ -456,7 +456,7 @@ export default function CanvaAiGuidePage() {
                   </div>
                 ))}
               </div>
-              <p className="text-gray-400 text-xs leading-relaxed mt-4">
+              <p className="text-gray-300 text-xs leading-relaxed mt-4">
                 このワークフローで1セットの投稿コンテンツを最短15分で作成可能。週間分をまとめて作れば、毎日の投稿作業が大幅に効率化されます。
               </p>
             </div>
@@ -470,7 +470,7 @@ export default function CanvaAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Canva料金プラン比較2026年版
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 個人・チームの用途に合わせて最適なプランを選ぼう
               </p>
             </div>
@@ -493,9 +493,9 @@ export default function CanvaAiGuidePage() {
                   <div className="text-center">
                     <p className="font-black text-white text-xl">{plan.name}</p>
                     <p className="text-2xl font-black text-pink-400 mt-1">{plan.price}</p>
-                    <p className="text-xs text-gray-400 mt-1">年払い時の月額</p>
+                    <p className="text-xs text-gray-300 mt-1">年払い時の月額</p>
                     <div className="mt-2 rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                      <p className="text-xs font-bold text-gray-400 mb-0.5">AIクレジット</p>
+                      <p className="text-xs font-bold text-gray-300 mb-0.5">AIクレジット</p>
                       <p className="text-xs font-bold text-pink-300">{plan.aiCredits}</p>
                     </div>
                   </div>
@@ -554,7 +554,7 @@ export default function CanvaAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Canva AIに関する疑問をまとめて解決
               </p>
             </div>

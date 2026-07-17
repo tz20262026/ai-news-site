@@ -303,7 +303,7 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Claude（クロード）とは何か
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Anthropicが開発した安全性重視の生成AI
               </p>
             </div>
@@ -358,7 +358,7 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Claude モデルシリーズ比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Claude 4・Claude 3.5 それぞれの特徴と使い分け
               </p>
             </div>
@@ -372,7 +372,7 @@ export default function ClaudeAiGuidePage() {
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <h3 className="font-black text-white text-sm">{model.name}</h3>
-                      <p className="text-gray-500 text-xs">{model.tier}</p>
+                      <p className="text-gray-300 text-xs">{model.tier}</p>
                     </div>
                     <span className={`text-xs font-bold px-2.5 py-1 rounded-full flex-shrink-0 ${badgeColors[model.badge]}`}>
                       {model.badge}
@@ -380,12 +380,12 @@ export default function ClaudeAiGuidePage() {
                   </div>
 
                   <div className="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2">
-                    <p className="text-xs text-gray-500 mb-0.5">コンテキストウィンドウ</p>
+                    <p className="text-xs text-gray-300 mb-0.5">コンテキストウィンドウ</p>
                     <p className="text-orange-300 text-xs font-bold">{model.contextWindow}</p>
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <p className="text-xs text-gray-500 font-bold">得意なこと</p>
+                    <p className="text-xs text-gray-300 font-bold">得意なこと</p>
                     {model.strengths.map((s) => (
                       <p key={s} className="text-gray-300 text-xs flex gap-1.5">
                         <span className="text-orange-400 flex-shrink-0">+</span>
@@ -411,14 +411,14 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 無料版 vs Pro（月$20）徹底比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 有料プランへのアップグレードが必要か判断する
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-800 bg-slate-900 overflow-hidden">
               <div className="grid grid-cols-3 bg-slate-800 px-4 py-3">
-                <div className="text-gray-400 text-xs font-bold">機能</div>
+                <div className="text-gray-300 text-xs font-bold">機能</div>
                 <div className="text-center text-emerald-400 text-xs font-bold">無料版</div>
                 <div className="text-center text-orange-400 text-xs font-bold">Pro（月$20）</div>
               </div>
@@ -430,7 +430,7 @@ export default function ClaudeAiGuidePage() {
                   }`}
                 >
                   <div className="text-gray-300 font-bold pr-2">{row.feature}</div>
-                  <div className="text-center text-gray-400 px-1">{row.free}</div>
+                  <div className="text-center text-gray-300 px-1">{row.free}</div>
                   <div className="text-center text-orange-300 px-1 font-medium">{row.pro}</div>
                 </div>
               ))}
@@ -452,14 +452,14 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Claude vs ChatGPT 徹底比較
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 8項目で比較。どちらを選ぶべきかを判断する
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-800 bg-slate-900 overflow-hidden">
               <div className="grid grid-cols-3 bg-slate-800 px-4 py-3">
-                <div className="text-gray-400 text-xs font-bold">比較項目</div>
+                <div className="text-gray-300 text-xs font-bold">比較項目</div>
                 <div className="text-center text-orange-400 text-xs font-bold">Claude</div>
                 <div className="text-center text-cyan-400 text-xs font-bold">ChatGPT</div>
               </div>
@@ -470,12 +470,12 @@ export default function ClaudeAiGuidePage() {
                     i % 2 === 0 ? "bg-slate-900" : "bg-slate-800/30"
                   }`}
                 >
-                  <div className="text-gray-400 font-bold pr-2">{c.aspect}</div>
-                  <div className={`pr-2 ${c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-400"}`}>
+                  <div className="text-gray-300 font-bold pr-2">{c.aspect}</div>
+                  <div className={`pr-2 ${c.winner === "claude" ? "text-orange-300 font-bold" : "text-gray-300"}`}>
                     {c.winner === "claude" && <span className="text-orange-400">✓ </span>}
                     {c.claude}
                   </div>
-                  <div className={`${c.winner === "chatgpt" ? "text-cyan-300 font-bold" : "text-gray-400"}`}>
+                  <div className={`${c.winner === "chatgpt" ? "text-cyan-300 font-bold" : "text-gray-300"}`}>
                     {c.winner === "chatgpt" && <span className="text-cyan-400">✓ </span>}
                     {c.chatgpt}
                   </div>
@@ -499,7 +499,7 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 Claude活用シーン4選
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Claudeが特に力を発揮する実践的な使い方
               </p>
             </div>
@@ -565,7 +565,7 @@ export default function ClaudeAiGuidePage() {
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
                 よくある質問（FAQ）
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Claude AIに関する疑問をまとめて解決
               </p>
             </div>

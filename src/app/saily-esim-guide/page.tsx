@@ -71,11 +71,11 @@ export default function SailyEsimGuidePage() {
           <h1 className="text-3xl sm:text-4xl font-black mb-4 leading-tight">
             Saily eSIM活用ガイド
             <br />
-            <span className="text-xl text-gray-400 font-bold">
+            <span className="text-xl text-gray-300 font-bold">
               【海外テックイベント・出張の通信手段はこれ1つ】
             </span>
           </h1>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             公開日：2026年7月13日｜筆者：AI News Japan 編集部
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function SailyEsimGuidePage() {
             height={675}
             className="rounded-xl border border-gray-700 w-full h-auto"
           />
-          <p className="text-gray-400 text-sm leading-[1.9] mt-4">
+          <p className="text-gray-300 text-sm leading-[1.9] mt-4">
             手順は図の通り3ステップだけ。<strong className="text-white">① アプリをダウンロード → ② 渡航先の国とデータ量を選んで購入 → ③ 現地到着後に有効化</strong>。
             すべて日本にいるうちに準備できるので、「現地に着いたのにネットが繋がらなくて詰む」という
             海外あるあるの最悪パターンを最初から回避できます。データを使い切ってもアプリから即チャージ可能です。
@@ -205,7 +205,7 @@ export default function SailyEsimGuidePage() {
           >
             Sailyで渡航先のプランを確認する →
           </a>
-          <p className="text-xs text-gray-500 mt-3">※ 本セクションはPR・広告を含みます</p>
+          <p className="text-xs text-gray-300 mt-3">※ 本セクションはPR・広告を含みます</p>
         </section>
 
         <section className="mb-12">
@@ -216,7 +216,7 @@ export default function SailyEsimGuidePage() {
             {FAQS.map((faq, i) => (
               <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-4">
                 <p className="text-white font-bold text-sm mb-2">Q. {faq.q}</p>
-                <p className="text-gray-400 text-sm leading-relaxed">A. {faq.a}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">A. {faq.a}</p>
               </div>
             ))}
           </div>

@@ -44,7 +44,7 @@ function StarRating({ rating, max = 5 }: { rating: number; max?: number }) {
           className={
             i < rating
               ? "text-yellow-400 text-sm"
-              : "text-gray-300 dark:text-gray-600 text-sm"
+              : "text-gray-300 dark:text-gray-300 text-sm"
           }
         >
           ★
@@ -132,13 +132,13 @@ function ToolCard({ tool, isWinner }: { tool: Tool; isWinner: boolean }) {
         <StarRating rating={tool.rating} />
       </div>
 
-      <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 leading-relaxed">
+      <p className="text-xs text-gray-600 dark:text-gray-300 mb-2 leading-relaxed">
         {tool.summary}
       </p>
 
       <div className="flex flex-col gap-1">
         <div className="flex items-center gap-1.5">
-          <span className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide w-14 shrink-0">
+          <span className="text-[10px] font-semibold text-gray-500 dark:text-gray-300 uppercase tracking-wide w-14 shrink-0">
             価格
           </span>
           <span className="text-xs text-gray-700 dark:text-gray-300">
@@ -146,7 +146,7 @@ function ToolCard({ tool, isWinner }: { tool: Tool; isWinner: boolean }) {
           </span>
         </div>
         <div className="flex items-start gap-1.5">
-          <span className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide w-14 shrink-0 pt-0.5">
+          <span className="text-[10px] font-semibold text-gray-500 dark:text-gray-300 uppercase tracking-wide w-14 shrink-0 pt-0.5">
             新機能
           </span>
           <span className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -177,14 +177,14 @@ export default function ToolsClient({ segments, updatedAt }: Props) {
       <div className="flex items-center gap-3 mb-5 flex-wrap">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
         >
           ← 記事一覧に戻る
         </Link>
-        <span className="text-gray-300 dark:text-gray-700">|</span>
+        <span className="text-gray-300 dark:text-gray-300">|</span>
         <Link
           href="/tags"
-          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
+          className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
         >
           タグ一覧
         </Link>
@@ -200,7 +200,7 @@ export default function ToolsClient({ segments, updatedAt }: Props) {
             AIツール比較・おすすめ一覧
           </h1>
         </div>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600 dark:text-gray-300">
           AIが自律的に精査したカテゴリー別ベストツール。最終更新: {formattedDate}
         </p>
       </div>
@@ -214,7 +214,7 @@ export default function ToolsClient({ segments, updatedAt }: Props) {
             className={
               activeTab === seg.id
                 ? "shrink-0 text-xs font-bold px-4 py-2 rounded-full transition-colors bg-blue-600 text-white"
-                : "shrink-0 text-xs font-bold px-4 py-2 rounded-full transition-colors bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+                : "shrink-0 text-xs font-bold px-4 py-2 rounded-full transition-colors bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
             }
           >
             {seg.label}
