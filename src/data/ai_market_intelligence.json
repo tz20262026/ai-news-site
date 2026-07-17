@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-16T12:48:10.936369+09:00",
-  "aiJudgment": "開発セグメントではClaude 3.5 SonnetとGPT-4oの競争が激化。他分野は静観ムードで、市場の関心はコード生成AIに集中している。",
+  "updatedAt": "2026-07-17T12:48:33.994827+09:00",
+  "aiJudgment": "AIによる最新市場分析",
   "segments": [
     {
       "id": "development",
@@ -10,52 +10,52 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な処理速度とコーディング性能が評価された。GPT-4oとの競争を制し、多くの開発現場で採用が進んでいるため、今月の勝者と判断した。",
+      "reason": "GPT-4oを凌駕する速度とベンチマークを達成。新機能Artifactsにより、コード生成からプレビューまでの開発体験が飛躍的に向上したため。",
       "tools": [
         {
-          "id": "claude-3.5-sonnet",
+          "id": "claude-3-5-sonnet",
           "name": "Claude 3.5 Sonnet",
-          "price": "API経由, Pro: $20/mo",
-          "newFeature": "速度と知能が大幅向上",
+          "price": "Free, Pro: $20/月",
+          "newFeature": "速度2倍、Artifacts機能搭載",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速かつ高精度な最新モデル。特にコーディング性能に優れる。"
+          "summary": "Anthropicの最新最速モデル。コード生成や解釈に優れる。"
         },
         {
           "id": "gpt-4o",
           "name": "GPT-4o",
-          "price": "API経由, Plus: $20/mo",
-          "newFeature": "音声・画像対応の高速化",
-          "rating": 5,
+          "price": "Free (制限あり), Plus: $20/月",
+          "newFeature": "高速応答、マルチモーダル対応強化",
+          "rating": 4,
           "badge": null,
-          "summary": "テキスト、音声、画像を統合した高速マルチモーダルAIモデル。"
+          "summary": "OpenAIのフラッグシップモデル。高速で多機能な対話AI。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "$10/mo~",
-          "newFeature": "安定稼働中",
+          "price": "Individual: $10/月",
+          "newFeature": "GPT-4o統合、ターミナル連携強化",
           "rating": 4,
           "badge": null,
-          "summary": "エディタ内でコード補完や生成を行うAIペアプログラマー。"
+          "summary": "開発者のためのAIペアプログラマー。コーディングを高速化。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "Freemium, Pro: $20/mo",
-          "newFeature": "安定稼働中",
+          "price": "Free, Pro: $20/月",
+          "newFeature": "GPT-4o対応、コマンドK機能の改善",
           "rating": 4,
           "badge": null,
-          "summary": "AIネイティブのコードエディタ。コード生成や編集を高速化。"
+          "summary": "AI機能を第一に設計されたコードエディタ。対話しながら開発。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "Replit Core plan",
-          "newFeature": "ベータ版提供中",
+          "price": "Replit Coreプランに含まれる",
+          "newFeature": "自律的なデバッグと機能実装",
           "rating": 3,
           "badge": null,
-          "summary": "Replit環境で自律的にタスクを完遂するAIエージェント。"
+          "summary": "Replit環境で動作する自律型AI開発エージェント。"
         }
       ]
     },
@@ -64,22 +64,9 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "該当なし",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
-      },
-      "reason": "今月、事務効率化セグメントで特筆すべきツールは観測されなかったため、選定は見送りとなりました。",
-      "tools": []
-    },
-    {
-      "id": "creative",
-      "label": "クリエイティブ",
-      "icon": "palette",
-      "winner": {
-        "name": "該当なし",
-        "tagline": "今月の最強選択"
-      },
-      "reason": "今月、クリエイティブセグメントで市場をリードするほどの革新的なツールは登場しませんでした。",
-      "tools": []
+      }
     }
   ],
   "newToolsToday": [],
