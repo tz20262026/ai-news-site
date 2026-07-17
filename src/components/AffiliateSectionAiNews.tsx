@@ -2,6 +2,17 @@
 
 const items = [
   {
+    // 2026-07-17追加・成果報酬7,200円・BtoB向けAI業務効率化SaaS
+    href: "https://px.a8.net/svt/ejp?a8mat=4B82L5+B0IPO2+5UU0+5YJRM",
+    badge: "🤖 AI業務効率化SaaS",
+    badgeColor: "#9333ea",
+    title: "Doraverse",
+    tagline: "オフィス業務を劇的に効率化するBtoB向けAIツール",
+    desc: "資料作成・データ整理などの定型業務をAIで自動化。個人開発だけでなく企業のAI導入事例としても注目のSaaS。",
+    cta: "無料で試してみる →",
+    color: "#9333ea",
+  },
+  {
     // 2026-07-13追加・成果報酬6,000円(新規有料課金)・確定率100%
     href: "https://px.a8.net/svt/ejp?a8mat=4B7QWS+6ZUDO2+5T8S+5YJRM",
     badge: "🧾 AI副業の確定申告に",
