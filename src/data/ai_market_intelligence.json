@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-17T12:48:33.994827+09:00",
-  "aiJudgment": "AIによる最新市場分析",
+  "updatedAt": "2026-07-18T12:42:21.659964+09:00",
+  "aiJudgment": "開発分野でClaude 3.5 SonnetがGPT-4oに挑戦状を叩きつけ競争が激化。生産性ツールは既存ワークフローへの統合深化が続く。",
   "segments": [
     {
       "id": "development",
@@ -10,52 +10,52 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "GPT-4oを凌駕する速度とベンチマークを達成。新機能Artifactsにより、コード生成からプレビューまでの開発体験が飛躍的に向上したため。",
+      "reason": "前モデルから速度と性能が大幅向上。特にコーディング能力でGPT-4oを凌駕するベンチマーク結果を示し、新機能「Artifacts」による開発体験の革新性が評価された。",
       "tools": [
         {
-          "id": "claude-3-5-sonnet",
+          "id": "claude-3.5-sonnet",
           "name": "Claude 3.5 Sonnet",
-          "price": "Free, Pro: $20/月",
-          "newFeature": "速度2倍、Artifacts機能搭載",
+          "price": "APIは従量課金, Proプラン: $20/月",
+          "newFeature": "新機能「Artifacts」でコード実行・プレビュー",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Anthropicの最新最速モデル。コード生成や解釈に優れる。"
+          "summary": "Anthropicの最新高速モデル。コーディングと視覚タスクで高い性能を発揮。"
         },
         {
           "id": "gpt-4o",
           "name": "GPT-4o",
-          "price": "Free (制限あり), Plus: $20/月",
-          "newFeature": "高速応答、マルチモーダル対応強化",
-          "rating": 4,
+          "price": "APIは従量課金, Plusプラン: $20/月",
+          "newFeature": "マルチモーダル対応、高速応答",
+          "rating": 5,
           "badge": null,
-          "summary": "OpenAIのフラッグシップモデル。高速で多機能な対話AI。"
+          "summary": "OpenAIの最新モデル。テキスト、音声、画像を統合的に理解・生成する。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "Individual: $10/月",
-          "newFeature": "GPT-4o統合、ターミナル連携強化",
-          "rating": 4,
+          "price": "個人: $10/月, Business: $19/ユーザー/月",
+          "newFeature": "新機能情報なし",
+          "rating": 5,
           "badge": null,
-          "summary": "開発者のためのAIペアプログラマー。コーディングを高速化。"
+          "summary": "コーディングを高速化するAIペアプログラマー。エディタ内でコード補完を行う。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "Free, Pro: $20/月",
-          "newFeature": "GPT-4o対応、コマンドK機能の改善",
+          "price": "無料プランあり, Pro: $20/月",
+          "newFeature": "新機能情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "AI機能を第一に設計されたコードエディタ。対話しながら開発。"
+          "summary": "AI機能を第一に設計されたコードエディタ。コードの生成、編集、デバッグを支援。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "Replit Coreプランに含まれる",
-          "newFeature": "自律的なデバッグと機能実装",
-          "rating": 3,
+          "newFeature": "新機能情報なし",
+          "rating": 4,
           "badge": null,
-          "summary": "Replit環境で動作する自律型AI開発エージェント。"
+          "summary": "開発ライフサイクル全体を支援する自律型AIエージェント。タスクを自動実行。"
         }
       ]
     },
@@ -64,39 +64,41 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude 3.5 Sonnet",
+        "name": "Notion AI",
         "tagline": "今月の最強選択"
       },
-      "reason": "長文の要約・資料作成・メール文面のドラフト作成まで、日本語の自然さと文脈理解の精度で他モデルを一歩リード。",
+      "reason": "既存のドキュメント管理ワークフローにシームレスに統合。文章作成からタスク管理まで、幅広い事務作業をAIで加速させる汎用性の高さが魅力。",
       "tools": [
-        {
-          "id": "claude-3-5-sonnet-productivity",
-          "name": "Claude 3.5 Sonnet",
-          "price": "Free, Pro: $20/月",
-          "newFeature": "Artifactsで資料下書きをその場でプレビュー",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "要約・文書作成・メール添削まで幅広くこなす万能アシスタント。"
-        },
         {
           "id": "notion-ai",
           "name": "Notion AI",
-          "price": "Notion Plus: 月$10〜",
-          "newFeature": "会議メモからタスクを自動抽出",
+          "price": "$8/ユーザー/月 (年払い)",
+          "newFeature": "新機能情報なし",
           "rating": 4,
-          "badge": null,
-          "summary": "プロジェクト管理とAI分析が統合されたオールインワンツール。"
+          "badge": "AI's Choice",
+          "summary": "Notionに統合されたAIアシスタント。文章作成、要約、アイデア出しを効率化。"
         },
         {
           "id": "google-notebooklm",
           "name": "Google NotebookLM",
-          "price": "無料、Plus: 月$19.99",
-          "newFeature": "音声概要（Audio Overview）機能",
+          "price": "無料",
+          "newFeature": "新機能情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "資料を丸ごと学習させて質問に答えてもらえる専属AIアナリスト。"
+          "summary": "指定した情報源に基づいて回答するAIリサーチアシスタント。情報の正確性が高い。"
         }
       ]
+    },
+    {
+      "id": "creative",
+      "label": "クリエイティブ",
+      "icon": "palette",
+      "winner": {
+        "name": "該当なし",
+        "tagline": "今月の最強選択"
+      },
+      "reason": "今月の分析対象に、クリエイティブ分野で特筆すべきツールは含まれていませんでした。",
+      "tools": []
     }
   ],
   "newToolsToday": [],
