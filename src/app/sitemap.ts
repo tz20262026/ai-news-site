@@ -265,6 +265,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-07-19 新規追加：生成AI資格・AI検定 比較ガイド
+    {
+      url: `${BASE_URL}/ai-shikaku-guide`,
+      lastModified: new Date("2026-07-19"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // 2026-07-14 追加：公開済みなのにサイトマップから漏れていたページ
     {
       url: `${BASE_URL}/partners`,

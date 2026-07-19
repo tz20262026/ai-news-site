@@ -173,6 +173,13 @@ export default function AiFukugyouPage() {
             style={{ background: "linear-gradient(135deg, #06b6d4, #3b82f6)" }}>
             無料AIツール15選を見る →
           </Link>
+          <p className="text-slate-400 text-sm pt-1">
+            スキルの証明を作りたい人は{" "}
+            <Link href="/ai-shikaku-guide" className="text-cyan-300 hover:underline font-bold">
+              生成AI資格・AI検定ガイド
+            </Link>
+            {" "}もあわせてどうぞ。
+          </p>
         </section>
 
         {/* FAQ */}
