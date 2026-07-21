@@ -2,6 +2,17 @@
 
 const items = [
   {
+    // 2026-07-22追加・成果報酬5,000円(新規有料プラン購入)・非エンジニア向けAIエージェント開発講座
+    href: "https://px.a8.net/svt/ejp?a8mat=4B82L5+APSWS2+5VRC+5YJRM",
+    badge: "🚀 AIエージェント開発",
+    badgeColor: "#dc2626",
+    title: "AI Agent Camp",
+    tagline: "環境構築不要！非エンジニアでもAIエージェント開発を即実践",
+    desc: "プログラミング未経験でもAIエージェントを作れる実践講座。話題のAIエージェント開発スキルを最短で習得したい人に。",
+    cta: "講座の詳細を見る →",
+    color: "#dc2626",
+  },
+  {
     // 2026-07-17追加・成果報酬7,200円・BtoB向けAI業務効率化SaaS
     href: "https://px.a8.net/svt/ejp?a8mat=4B82L5+B0IPO2+5UU0+5YJRM",
     badge: "🤖 AI業務効率化SaaS",
