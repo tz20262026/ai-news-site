@@ -337,7 +337,7 @@ export default function AiSideJobPage() {
           {[
             { href: "/chatgpt-guide", label: "ChatGPT完全ガイド", emoji: "💬" },
             { href: "/claude-guide", label: "Claude活用ガイド", emoji: "🤖" },
-            { href: "/ai-writing-guide", label: "AIライティング入門", emoji: "✍️" },
+            { href: "/ai-job-loss-guide", label: "AI失業対策ガイド", emoji: "⚠️" },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="rounded-xl border border-white/10 bg-white/[0.02] p-4 hover:border-white/20 transition-all text-center">
               <p className="text-xl mb-1">{link.emoji}</p>
