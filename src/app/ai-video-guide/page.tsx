@@ -214,6 +214,17 @@ export default function AiVideoGuidePage() {
           </Link>
         </section>
 
+        {/* 内部リンク：Sora 2 個別ガイドへ */}
+        <section className="mb-12">
+          <p className="text-gray-300 text-sm leading-relaxed">
+            表内のSora 2について、料金プランや日本語プロンプトのコツ、商用利用の注意点をさらに詳しく知りたい方は
+            <Link href="/sora-guide" className="text-blue-300 hover:underline">
+              Sora 2使い方完全ガイド
+            </Link>
+            もあわせてご覧ください。
+          </p>
+        </section>
+
         {/* FAQ */}
         <section className="mb-12">
           <h2 className="text-xl font-bold text-white mb-5 border-l-4 border-red-500 pl-3">

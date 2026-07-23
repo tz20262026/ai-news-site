@@ -278,6 +278,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-07-23 新規追加：Sora 2 使い方完全ガイド
+    {
+      url: `${BASE_URL}/sora-guide`,
+      lastModified: new Date("2026-07-23"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // 2026-07-23 新規追加：ChatGPT Atlas 使い方完全ガイド
+    {
+      url: `${BASE_URL}/chatgpt-atlas-guide`,
+      lastModified: new Date("2026-07-23"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // 2026-07-14 追加：公開済みなのにサイトマップから漏れていたページ
     {
       url: `${BASE_URL}/partners`,

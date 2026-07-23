@@ -99,6 +99,18 @@ export default async function ArticlePage({ params }: Props) {
   );
   const canonicalUrl = `https://ai-news-site-wheat.vercel.app/articles/${article.id}`;
 
+  // 見出し＋直後の段落からFAQPage用のQ&Aを自動生成する（生成AIに引用されやすいFAQ構造をニュース記事にも付与）
+  const faqItems = bodyBlocks
+    .map((block, i) => {
+      if (block.type !== "heading") return null;
+      const next = bodyBlocks[i + 1];
+      if (!next || next.type !== "paragraph") return null;
+      const answer = next.lines.join("").slice(0, 200);
+      if (!answer) return null;
+      return { question: block.text, answer };
+    })
+    .filter((x): x is { question: string; answer: string } => x !== null);
+
   return (
     <div className="max-w-2xl mx-auto">
       <ReadingProgress />
@@ -386,6 +398,27 @@ export default async function ArticlePage({ params }: Props) {
           }),
         }}
       />
+
+      {/* JSON-LD 構造化データ（FAQPage・生成AIの引用対策） */}
+      {faqItems.length >= 2 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqItems.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
 
       <div className="mt-6 text-center">
         <Link

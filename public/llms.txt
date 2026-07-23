@@ -37,6 +37,15 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [AIノーコードツールガイド](https://ai-news-site-wheat.vercel.app/ai-nocode-guide): コードを書かずにAIを使う方法。
 - [無料AIツール完全ガイド](https://ai-news-site-wheat.vercel.app/ai-tools-guide): 無料で使えるAIツール15選。
 - [主要AIツール徹底比較](https://ai-news-site-wheat.vercel.app/ai-tools-comparison): 主要AIツールの横断比較。
+- [Sora 2完全ガイド](https://ai-news-site-wheat.vercel.app/sora-guide): OpenAIの動画生成AIの使い方・料金・無料枠。
+- [ChatGPT Atlas完全ガイド](https://ai-news-site-wheat.vercel.app/chatgpt-atlas-guide): OpenAI製ブラウザの使い方と機能。
+- [Midjourney完全ガイド](https://ai-news-site-wheat.vercel.app/midjourney-guide): 画像生成AIの使い方・料金・無料プランの有無。
+- [Stable Diffusion完全ガイド](https://ai-news-site-wheat.vercel.app/stable-diffusion-guide): オープンソース画像生成AIの導入・使い方。
+- [Canva AI活用ガイド](https://ai-news-site-wheat.vercel.app/canva-ai-guide): Canva内のAI機能（Magic Studio等）の使い方。
+- [ExpressVPN完全ガイド](https://ai-news-site-wheat.vercel.app/expressvpn-guide): 海外VPNの使い方・料金・選び方。
+- [NordVPN完全ガイド](https://ai-news-site-wheat.vercel.app/nordvpn-guide): 海外VPNの使い方・料金・選び方。
+- [Saily eSIM完全ガイド](https://ai-news-site-wheat.vercel.app/saily-esim-guide): 海外旅行向けeSIMの使い方・料金。
+- [スイカVPN完全ガイド](https://ai-news-site-wheat.vercel.app/suikavpn-guide): 日本向けVPNサービスの使い方・料金。
 
 ## AI×ビジネス・副業
 
@@ -45,6 +54,11 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [ChatGPTプロンプト集](https://ai-news-site-wheat.vercel.app/chatgpt-prompt-guide): コピペで使える例文50選。
 - [AI副業完全ガイド](https://ai-news-site-wheat.vercel.app/ai-fukugyou): AIを使った副業の始め方。
 - [AIブログ自動化ツール](https://ai-news-site-wheat.vercel.app/ai-blog-automation): AI記事生成ツールの選び方。
+- [AI英語学習ガイド](https://ai-news-site-wheat.vercel.app/ai-english-guide): AIを使った英語学習法・おすすめツール。
+- [AI Excel活用ガイド](https://ai-news-site-wheat.vercel.app/ai-excel-guide): ExcelでのAI機能・自動化の使い方。
+- [AIによる仕事への影響ガイド](https://ai-news-site-wheat.vercel.app/ai-job-loss-guide): AIで仕事はなくなるのか・今後の対策。
+- [AI資格・検定ガイド](https://ai-news-site-wheat.vercel.app/ai-shikaku-guide): AI関連資格の種類と取得方法。
+- [AIで始める副業](https://ai-news-site-wheat.vercel.app/ai-side-job): AIツールを使った副業の具体例。
 
 ## Optional
 

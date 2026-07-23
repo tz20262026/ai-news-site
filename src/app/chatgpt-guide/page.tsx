@@ -642,6 +642,19 @@ export default function ChatGPTGuidePage() {
           </div>
         </section>
 
+        {/* ── 内部リンク：ChatGPT Atlasガイドへ ── */}
+        <section className="py-6 px-4">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gray-300 text-sm leading-relaxed">
+              ChatGPTをブラウザに統合した新機能「ChatGPT Atlas」の使い方は
+              <Link href="/chatgpt-atlas-guide" className="text-cyan-300 hover:underline">
+                ChatGPT Atlas使い方完全ガイド
+              </Link>
+              で詳しく解説しています。
+            </p>
+          </div>
+        </section>
+
         {/* ── FAQ ── */}
         <section id="faq" className="py-14 px-4">
           <div className="max-w-3xl mx-auto">
