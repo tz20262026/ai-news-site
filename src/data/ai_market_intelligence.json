@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-22T12:58:36.317740+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場で開発分野の競争が激化。各社モデルの高性能化と特定用途への最適化が進む。",
+  "updatedAt": "2026-07-23T12:55:39.270993+09:00",
+  "aiJudgment": "Claude 3.5 Sonnetが速度と性能で市場を席巻。GPT-4oの牙城に迫り、開発から事務まで全領域で覇権争いが激化している。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "GPT-4oに匹敵する性能をより高速・低コストで実現。特にコード生成や解釈能力の高さが評価され、開発現場での即戦力として期待が高まっているため。",
+      "reason": "速度、コスト、性能のバランスが非常に優れている。特に新機能「Artifacts」は、コード生成とプレビューをシームレスに繋ぎ、開発体験を革新する可能性を秘めているため。",
       "tools": [
         {
-          "id": "claude-3-5-sonnet",
+          "id": "claude-3.5-sonnet-dev",
           "name": "Claude 3.5 Sonnet",
-          "price": "API, Claude Pro",
+          "price": "Free tier, Pro: $20/month",
           "newFeature": "新機能「Artifacts」で対話型開発",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速・高精度な最新モデル。特にコーディングと視覚的推論タスクに優れる。"
+          "summary": "高速かつ高精度なコーディング能力。複雑なタスクやデバッグに強み。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "個人$10/月〜",
+          "price": "$10/month",
           "newFeature": "Copilot Workspaceのプレビュー開始",
           "rating": 4,
           "badge": null,
-          "summary": "コーディングの生産性を劇的に向上させる、言わずと知れたAIペアプログラマー。"
+          "summary": "IDEに統合されたAIペアプログラマー。コード補完や生成を高速化。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "基本無料, Pro $20/月",
-          "newFeature": "GPT-4o, Sonnet 3.5に両対応",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "最新モデルへの対応と機能改善",
           "rating": 4,
           "badge": null,
-          "summary": "AI機能を第一に設計されたコードエディタ。対話形式でのコード編集が強力。"
+          "summary": "AI機能を第一に設計されたコードエディタ。リファクタリングが強力。"
         },
         {
           "id": "gpt-4o-dev",
           "name": "GPT-4o",
-          "price": "API, ChatGPT Plus",
-          "newFeature": "音声・画像を含むマルチモーダル対応",
-          "rating": 5,
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "音声・画像入力に対応したマルチモーダル",
+          "rating": 4,
           "badge": null,
-          "summary": "テキスト、音声、画像を統合的に扱うOpenAIのフラッグシップモデル。"
+          "summary": "多機能で汎用性が高い。コーディングからドキュメント作成まで対応。"
         }
       ]
     },
@@ -55,46 +55,46 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Notion AI",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "既存のドキュメントやデータベースとシームレスに連携し、情報整理からコンテンツ生成までを一気通貫で支援。日々の業務に最も密着した形でAIの恩恵を受けられるため。",
+      "reason": "GPT-4oに匹敵する性能をより高速に提供。長い文書や複雑な指示の理解力が高く、ビジネスシーンでの要約、分析、資料作成といったコア業務の効率化に最も貢献するため。",
       "tools": [
         {
-          "id": "notion-ai",
-          "name": "Notion AI",
-          "price": "$8/ユーザー/月 (追加)",
-          "newFeature": "Q&A機能の強化、DB連携改善",
+          "id": "claude-3.5-sonnet-prod",
+          "name": "Claude 3.5 Sonnet",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "従来モデル比2倍の高速処理",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Notion内で利用できるAIアシスタント。議事録の要約や文章作成を効率化。"
-        },
-        {
-          "id": "google-notebooklm",
-          "name": "Google NotebookLM",
-          "price": "無料",
-          "newFeature": "Gemini 1.5 Proを搭載",
-          "rating": 4,
-          "badge": null,
-          "summary": "情報源を限定して質問応答できるAIノート。リサーチや学習に特化。"
-        },
-        {
-          "id": "claude-3-5-sonnet-prod",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API, Claude Pro",
-          "newFeature": "長文読解と要約能力が向上",
-          "rating": 5,
-          "badge": null,
-          "summary": "ビジネス文書の高速な要約や分析に強み。コストパフォーマンスに優れる。"
+          "summary": "長文読解、要約、データ分析に強い。ビジネス文書作成にも最適。"
         },
         {
           "id": "gpt-4o-prod",
           "name": "GPT-4o",
-          "price": "API, ChatGPT Plus",
-          "newFeature": "高速応答とコスト削減を実現",
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "無料ユーザーへの機能解放拡大",
           "rating": 4,
           "badge": null,
-          "summary": "汎用性が非常に高く、メール作成からデータ分析の補助まで幅広く対応可能。"
+          "summary": "あらゆる事務作業に対応する万能アシスタント。API連携も豊富。"
+        },
+        {
+          "id": "notion-ai",
+          "name": "Notion AI",
+          "price": "$8/user/month (add-on)",
+          "newFeature": "Q&A機能の精度向上",
+          "rating": 4,
+          "badge": null,
+          "summary": "Notion内で直接使えるAI。議事録要約や文章作成を効率化。"
+        },
+        {
+          "id": "google-notebooklm",
+          "name": "Google NotebookLM",
+          "price": "Free (in Labs)",
+          "newFeature": "対応ソース形式の拡充",
+          "rating": 4,
+          "badge": null,
+          "summary": "自分の資料を元に回答するAI。リサーチや学習の効率を大幅に向上。"
         }
       ]
     },
@@ -103,28 +103,28 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "GPT-4o",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト生成だけでなく、画像生成や音声対話など多様なクリエイティブタスクに単一のモデルで対応可能。アイデアの着想から具現化までをシームレスに支援する総合力が魅力。",
+      "reason": "クリエイティブライティングにおけるニュアンスの表現力、自然な対話能力で他をリード。洗練された文章や人間味のあるコンテンツ作成において、その能力が際立っているため。",
       "tools": [
+        {
+          "id": "claude-3.5-sonnet-creative",
+          "name": "Claude 3.5 Sonnet",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "ユーモアやニュアンスの理解向上",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "自然で人間らしい文章生成が得意。脚本や小説などの創作活動を支援。"
+        },
         {
           "id": "gpt-4o-creative",
           "name": "GPT-4o",
-          "price": "API, ChatGPT Plus",
-          "newFeature": "DALL-E 3連携による画像生成",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "文章、画像、音声など多様なメディアを扱えるクリエイティブの万能選手。"
-        },
-        {
-          "id": "claude-3-5-sonnet-creative",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API, Claude Pro",
-          "newFeature": "自然で人間らしい文章生成能力",
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "マルチモーダルによる表現の多様化",
           "rating": 4,
           "badge": null,
-          "summary": "コピーライティングや脚本執筆など、テキストベースの創作活動で高い性能を発揮。"
+          "summary": "アイデア出しからコンテンツ生成まで幅広く対応。多様なスタイルを表現。"
         }
       ]
     }
