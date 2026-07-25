@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-24T12:55:34.923193+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場が市場に衝撃を与え、特に開発分野で勢力図を塗り替える可能性。各社、特定領域への特化と汎用性の両軸で競争が激化。",
+  "updatedAt": "2026-07-25T12:50:16.467998+09:00",
+  "aiJudgment": "Claude 3.5 Sonnetの登場で開発分野の競争が激化。GPT-4oは速度と汎用性で優位を保ち、市場は二大モデルを中心に動いている。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "最新モデルClaude 3.5 Sonnetが登場。従来の開発支援AIを凌駕するコーディング性能と速度を誇り、コスト効率も高い。開発体験を根本から変えるポテンシャルを持つため、今月の最強と判断。",
+      "reason": "コーディングタスクでGPT-4oを上回るベンチマークを示し、高速な応答とArtifacts機能を両立。開発効率を飛躍的に向上させるポテンシャルが最も高いと評価。",
       "tools": [
         {
           "id": "claude-3-5-sonnet-dev",
           "name": "Claude 3.5 Sonnet",
-          "price": "API経由の従量課金",
-          "newFeature": "コーディング性能が大幅向上",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "Artifacts機能による対話型開発",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速かつ高精度な最新モデル。特にコーディングタスクで強力な性能を発揮。"
+          "summary": "最新モデル。コーディング性能が大幅向上し、対話的な開発体験を提供。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "月額$10〜",
-          "newFeature": "新情報なし",
+          "price": "Individual: $10/month",
+          "newFeature": "コンテキスト理解の継続的改善",
           "rating": 4,
           "badge": null,
-          "summary": "IDEに深く統合されたコード補完ツール。開発者の標準装備となりつつある。"
+          "summary": "IDEに統合されたコーディング支援の定番。コード補完や生成に強み。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "Freeプランあり、Proは月額$20",
-          "newFeature": "新情報なし",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "GPT-4o/Claude 3.5 Sonnet対応",
           "rating": 4,
           "badge": null,
-          "summary": "AI機能をネイティブに統合したコードエディタ。AIとの対話的な開発を実現。"
+          "summary": "AIファーストのコードエディタ。リポジトリ全体を理解したコーディングが可能。"
         },
         {
           "id": "gpt-4o-dev",
           "name": "GPT-4o",
-          "price": "API経由の従量課金",
-          "newFeature": "マルチモーダル対応",
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "高速応答とマルチモーダル対応",
           "rating": 4,
           "badge": null,
-          "summary": "高速でマルチモーダルな高性能モデル。汎用性が高く、開発支援にも活用可能。"
+          "summary": "OpenAIの最新フラッグシップモデル。高速で多様な開発タスクに対応。"
         }
       ]
     },
@@ -55,46 +55,46 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Notion AI",
+        "name": "GPT-4o",
         "tagline": "今月の最強選択"
       },
-      "reason": "既存のワークフローを破壊せず、シームレスにAIの力を取り込めるNotion AIが強力。議事録要約や文章作成支援など、日々の業務に即座に役立つ機能が豊富で、導入効果を実感しやすい。",
+      "reason": "高速な応答性能とマルチモーダル能力により、テキスト生成、要約、データ分析など幅広い事務作業を効率化。API経由での連携も容易で、既存の業務フローに組み込みやすい。",
       "tools": [
+        {
+          "id": "gpt-4o-prod",
+          "name": "GPT-4o",
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "音声・画像入力による直感的操作",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "高速・高性能なマルチモーダルAI。議事録作成からデータ分析まで幅広く対応。"
+        },
         {
           "id": "notion-ai",
           "name": "Notion AI",
-          "price": "月額$8〜 (Notionプランに追加)",
-          "newFeature": "新情報なし",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Notionに統合されたAIアシスタント。ドキュメント作成や整理を自動化。"
+          "price": "$8/user/month (add-on)",
+          "newFeature": "Q&A機能の精度向上",
+          "rating": 4,
+          "badge": null,
+          "summary": "Notionに統合されたAIアシスタント。ドキュメント作成や整理を効率化。"
         },
         {
           "id": "claude-3-5-sonnet-prod",
           "name": "Claude 3.5 Sonnet",
-          "price": "API経由の従量課金",
-          "newFeature": "長文読解・要約性能が向上",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "長文読解と要約能力の強化",
           "rating": 4,
           "badge": null,
-          "summary": "長い議事録や資料の要約が得意。ビジネス文書の作成や校正にも強力。"
+          "summary": "長文の扱いに長けた最新モデル。リサーチやレポート作成に強力な助っ人。"
         },
         {
           "id": "google-notebooklm",
           "name": "Google NotebookLM",
-          "price": "無料",
-          "newFeature": "新情報なし",
-          "rating": 4,
+          "price": "Free",
+          "newFeature": "対応ソース種類の拡充",
+          "rating": 3,
           "badge": null,
-          "summary": "アップロードした資料に基づき回答を生成。リサーチや学習に特化したAI。"
-        },
-        {
-          "id": "gpt-4o-prod",
-          "name": "GPT-4o",
-          "price": "API経由の従量課金",
-          "newFeature": "高速応答とマルチモーダル",
-          "rating": 4,
-          "badge": null,
-          "summary": "高速な応答で汎用的なタスクをこなす。メール作成やアイデア出しに便利。"
+          "summary": "Google Driveの資料を基に回答生成。リサーチや学習に特化したツール。"
         }
       ]
     },
@@ -103,28 +103,28 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "GPT-4o",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト生成能力に加え、音声や画像も扱えるマルチモーダル性が創造の幅を広げる。多様な入力からインスピレーションを得られるため、アイデア出しや企画立案といった上流の創造活動で最強の相棒となる。",
+      "reason": "ニュアンスの表現や自然な文章生成に優れ、創造的な執筆活動で高い評価を得ている。特に小説や脚本、マーケティングコピーなどの分野で人間の感性に近い出力を期待できる。",
       "tools": [
-        {
-          "id": "gpt-4o-creative",
-          "name": "GPT-4o",
-          "price": "API経由の従量課金",
-          "newFeature": "音声対話、画像認識機能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "マルチモーダル対応で創造性の幅を広げる。アイデア出しや企画の壁打ちに最適。"
-        },
         {
           "id": "claude-3-5-sonnet-creative",
           "name": "Claude 3.5 Sonnet",
-          "price": "API経由の従量課金",
-          "newFeature": "自然で洗練された文章生成",
+          "price": "Free tier, Pro: $20/month",
+          "newFeature": "より自然でニュアンス豊かな文章生成",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "人間らしい自然な文章生成が魅力。小説やコピーライティングに最適。"
+        },
+        {
+          "id": "gpt-4o-creative",
+          "name": "GPT-4o",
+          "price": "Free tier, Plus: $20/month",
+          "newFeature": "DALL-E 3連携による画像生成",
           "rating": 4,
           "badge": null,
-          "summary": "人間味のある自然な文章生成が得意。ブログ記事やコピーライティングに活用。"
+          "summary": "テキストと画像を組み合わせた多様なクリエイティブワークを高速に実現。"
         }
       ]
     }
