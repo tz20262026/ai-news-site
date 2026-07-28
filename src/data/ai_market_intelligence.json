@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-27T13:23:42.799558+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場で、特に開発分野の競争が激化。GPT-4oの万能性も健在で、両巨頭が市場を牽引する構図がより鮮明になった。",
+  "updatedAt": "2026-07-28T12:47:57.511698+09:00",
+  "aiJudgment": "Claude 3.5 SonnetとGPT-4oの二強体制が鮮明に。各セグメントで熾烈な首位争いが続く。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "新機能「Artifacts」により、コード生成からプレビュー、修正までをシームレスに実現。開発サイクルを劇的に高速化するポテンシャルを秘めており、今月最も注目すべきツール。",
+      "reason": "最新ベンチマークで優れたコーディング能力と速度を示し、最先端の性能を求める開発者にとって今月の最強選択となった。",
       "tools": [
         {
-          "id": "claude-3-5-sonnet",
+          "id": "tool-01",
           "name": "Claude 3.5 Sonnet",
-          "price": "API利用, Claude Pro ($20/月)",
-          "newFeature": "新機能「Artifacts」でコード実行・プレビュー",
+          "price": "Free / $20/mo",
+          "newFeature": "Artifacts機能によるUI生成",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速かつ高精度な最新モデル。特にコーディング能力が向上。"
+          "summary": "最新モデル。コード生成とUIプレビュー機能が強力。"
         },
         {
-          "id": "gpt-4o",
+          "id": "tool-02",
           "name": "GPT-4o",
-          "price": "API利用, ChatGPT Plus ($20/月)",
-          "newFeature": "マルチモーダル対応強化",
+          "price": "Free / $20/mo",
+          "newFeature": "音声・画像対応のマルチモーダル",
           "rating": 5,
           "badge": null,
-          "summary": "テキスト、音声、画像を統合的に扱うOpenAIのフラッグシップモデル。"
+          "summary": "高速・高精度なマルチモーダルAI。汎用性が非常に高い。"
         },
         {
-          "id": "github-copilot",
+          "id": "tool-03",
           "name": "GitHub Copilot",
-          "price": "個人$10/月, Business $19/月",
-          "newFeature": "新情報なし",
+          "price": "$10/mo~",
+          "newFeature": "IDEへの深い統合とコンテキスト理解",
           "rating": 4,
           "badge": null,
-          "summary": "コード補完と生成に特化した、開発者のためのAIペアプログラマー。"
+          "summary": "IDEに完全統合されたコーディング支援の定番ツール。"
         },
         {
-          "id": "cursor",
+          "id": "tool-04",
           "name": "Cursor",
-          "price": "無料〜$40/月",
-          "newFeature": "新情報なし",
+          "price": "Free / $20/mo~",
+          "newFeature": "AIネイティブなコードエディタ",
           "rating": 4,
           "badge": null,
-          "summary": "AI機能をネイティブに統合した、次世代のコードエディタ。"
+          "summary": "AI機能を前提に設計された先進的なコードエディタ。"
         }
       ]
     },
@@ -58,43 +58,43 @@
         "name": "GPT-4o",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な応答速度と、テキスト・音声・画像をシームレスに扱えるマルチモーダル性能が強み。日常的なメール作成から議事録要約まで、あらゆる事務作業を高速化する万能ツール。",
+      "reason": "GPT-4oのマルチモーダル機能と広範な連携能力は、多様な事務タスクを効率化する上で最も汎用性が高く、今月の最強選択と判断。",
       "tools": [
         {
-          "id": "gpt-4o-prod",
+          "id": "tool-05",
           "name": "GPT-4o",
-          "price": "API利用, ChatGPT Plus ($20/月)",
-          "newFeature": "高速応答と無料版での利用拡大",
+          "price": "Free / $20/mo",
+          "newFeature": "音声・画像対応のマルチモーダル",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速な応答性能とマルチモーダル機能で、あらゆる事務作業を効率化。"
+          "summary": "高速・高精度なマルチモーダルAI。汎用性が非常に高い。"
         },
         {
-          "id": "claude-3-5-sonnet-prod",
+          "id": "tool-06",
           "name": "Claude 3.5 Sonnet",
-          "price": "API利用, Claude Pro ($20/月)",
-          "newFeature": "Opusに匹敵する知能を2倍の速度で提供",
+          "price": "Free / $20/mo",
+          "newFeature": "高速な文書処理と要約",
           "rating": 5,
           "badge": null,
-          "summary": "高速かつインテリジェント。長文読解や複雑な指示の理解に優れる。"
+          "summary": "長文読解や文書作成に強み。ビジネス利用に最適。"
         },
         {
-          "id": "notion-ai",
+          "id": "tool-07",
           "name": "Notion AI",
-          "price": "$8/月 (Notionプランに追加)",
-          "newFeature": "新情報なし",
+          "price": "$8/user/mo~",
+          "newFeature": "データベースとの連携強化",
           "rating": 4,
           "badge": null,
-          "summary": "ドキュメント作成やタスク管理をNotion内で直接サポートするAI。"
+          "summary": "ドキュメント管理と一体化したAI。議事録作成に便利。"
         },
         {
-          "id": "google-notebooklm",
+          "id": "tool-08",
           "name": "Google NotebookLM",
-          "price": "無料",
-          "newFeature": "新情報なし",
+          "price": "Free",
+          "newFeature": "Google Drive連携による資料学習",
           "rating": 4,
           "badge": null,
-          "summary": "自分の資料を元に質疑応答や要約を行う、リサーチ特化型AI。"
+          "summary": "自分の資料を基に回答を生成するリサーチ特化AI。"
         }
       ]
     },
@@ -106,25 +106,25 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "GPT-4oに匹敵する性能を持ちながら、より自然で洗練された文章生成能力に定評がある。特にニュアンスの表現やユーモアの理解に長けており、クリエイティブな執筆作業で強力な相棒となる。",
+      "reason": "Claude 3.5 Sonnetのニュアンス豊かで自然な文章生成能力は高く評価されており、クリエイティブライティングやコピー作成に最適。",
       "tools": [
         {
-          "id": "claude-3-5-sonnet-creative",
+          "id": "tool-09",
           "name": "Claude 3.5 Sonnet",
-          "price": "API利用, Claude Pro ($20/月)",
-          "newFeature": "ニュアンスやユーモアの理解度が向上",
+          "price": "Free / $20/mo",
+          "newFeature": "より自然で人間らしい文章生成",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "洗練された文章生成能力が特徴。コピーライティングや脚本執筆に最適。"
+          "summary": "自然な文章生成に定評。クリエイティブな執筆に最適。"
         },
         {
-          "id": "gpt-4o-creative",
+          "id": "tool-10",
           "name": "GPT-4o",
-          "price": "API利用, ChatGPT Plus ($20/月)",
-          "newFeature": "音声対話での感情表現が豊かに",
-          "rating": 5,
+          "price": "Free / $20/mo",
+          "newFeature": "画像生成やアイデア出しも可能",
+          "rating": 4,
           "badge": null,
-          "summary": "自然な対話能力とマルチモーダル入力で、新たなアイデア創出を支援。"
+          "summary": "テキストから画像まで、多様なクリエイティブ作業を支援。"
         }
       ]
     }
