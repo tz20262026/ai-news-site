@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日のAI用語1日1語 | AI News Japan</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-bg: #0b1220;
+    --color-bg2: #0f1b34;
+    --color-blue: #60a5fa;
+    --color-indigo: #818cf8;
+    --color-text: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; background: transparent; }
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: var(--color-text);
+    display: flex;
+  }
+  .widget {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 18px 12px;
+    background: linear-gradient(160deg, var(--color-bg), var(--color-bg2));
+    border: 1px solid rgba(129, 140, 248, 0.35);
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  }
+  .widget__eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .widget__date { color: rgba(229,231,235,0.5); font-size: 10px; letter-spacing: 0.05em; font-weight: 400; }
+  .widget__term {
+    font-weight: 900;
+    color: #fff;
+    font-size: clamp(18px, 5.6vw, 22px);
+    line-height: 1.3;
+    margin: 10px 0 4px;
+  }
+  .widget__en {
+    font-size: 12px;
+    color: var(--color-indigo);
+    margin: 0 0 6px;
+    font-weight: 500;
+  }
+  .widget__def {
+    font-size: 12px;
+    line-height: 1.7;
+    color: rgba(229,231,235,0.85);
+    margin: 0 0 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .widget__cta {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #3b82f6, var(--color-indigo));
+    color: #fff;
+    font-weight: 700;
+  }
+  .widget__footer { margin-top: 10px; text-align: right; }
+  .widget__footer a {
+    font-size: 10px;
+    color: rgba(229,231,235,0.5);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+  .widget__footer a:hover { color: var(--color-blue); }
+</style>
+</head>
+<body>
+  <div class="widget">
+    <div>
+      <div class="widget__eyebrow">
+        <span>今日のAI用語</span>
+        <span class="widget__date" id="w-date"></span>
+      </div>
+      <p class="widget__term" id="w-term"></p>
+      <p class="widget__en" id="w-en"></p>
+      <p class="widget__def" id="w-def"></p>
+    </div>
+    <div>
+      <a class="widget__cta" id="w-cta" href="https://ai-news-site-wheat.vercel.app/ai-beginner-guide" target="_blank" rel="noopener">AI用語をもっと学ぶ →</a>
+      <p class="widget__footer"><a href="https://ai-news-site-wheat.vercel.app/" target="_blank" rel="noopener">AI News Japan 提供</a></p>
+    </div>
+  </div>
+
+<script>
+  /* [用語, 英語表記, 解説] 24選 */
+  var TERMS = [
+    ["大規模言語モデル(LLM)", "Large Language Model", "膨大なテキストデータを学習し、人間のような文章の生成・理解ができるAIモデル。ChatGPTやClaudeの中核技術。"],
+    ["プロンプトエンジニアリング", "Prompt Engineering", "AIから望む回答を引き出すために、指示文（プロンプト）を工夫して設計する技術。書き方次第で回答精度が大きく変わる。"],
+    ["ハルシネーション", "Hallucination", "AIが事実に基づかない情報を、あたかも真実のように生成してしまう現象。生成AIを使う際は必ず裏取りが必要。"],
+    ["RAG(検索拡張生成)", "Retrieval-Augmented Generation", "AIが回答前に外部データベースやWebを検索し、その情報をもとに回答を生成する仕組み。最新情報や社内資料への対応に使われる。"],
+    ["ファインチューニング", "Fine-tuning", "汎用のAIモデルを、特定の業務やジャンルに特化させるために追加学習させること。専門用語や社内トーンへの対応に使われる。"],
+    ["トークン", "Token", "AIが文章を処理する際の最小単位。日本語は1文字前後で1トークンになることが多く、料金や上限の計算基準になる。"],
+    ["AIエージェント", "AI Agent", "指示を受けて自律的に計画・判断・実行までを行うAI。単なる質問応答ではなく、タスクを最後までやり遂げる点が特徴。"],
+    ["マルチモーダルAI", "Multimodal AI", "テキストだけでなく、画像・音声・動画など複数の種類の情報を同時に理解・生成できるAI。GeminiやGPT-4oが代表例。"],
+    ["RLHF", "Reinforcement Learning from Human Feedback", "人間の評価をフィードバックとしてAIの回答を改善していく学習手法。より自然で安全な応答を実現するために使われる。"],
+    ["拡散モデル", "Diffusion Model", "ノイズから徐々に画像を生成していく仕組み。Midjourneyや Stable Diffusion など画像生成AIの中心技術。"],
+    ["ゼロショット学習", "Zero-shot Learning", "事前の追加学習や例示なしに、初めて見るタスクをこなせるAIの能力。汎用性の高さを示す指標のひとつ。"],
+    ["コンテキストウィンドウ", "Context Window", "AIが一度に読み込んで処理できる文章量の上限。長いほど長文の資料や会話履歴をまとめて扱える。"],
+    ["エンベディング", "Embedding", "文章や画像の意味を数値のベクトルに変換する技術。検索・分類・レコメンドなど幅広い用途で使われる。"],
+    ["推論(インファレンス)", "Inference", "学習済みのAIモデルが、新しい入力に対して実際に回答を生成する処理そのものを指す言葉。"],
+    ["GPU", "Graphics Processing Unit", "大量の並列計算を高速で行える演算装置。AIの学習・推論の両方で欠かせないハードウェア。"],
+    ["API", "Application Programming Interface", "プログラム同士が情報をやり取りするための窓口。ChatGPTなどのAI機能を自社サービスに組み込む際に使われる。"],
+    ["オープンソースモデル", "Open-source Model", "モデルの構造や重みが公開されており、誰でも改変・商用利用できるAIモデル。Llamaなどが代表例。"],
+    ["シンギュラリティ", "Singularity", "AIが人間の知能を超え、技術発展が人間の予測を超えるスピードで進む転換点を指す未来予測の概念。"],
+    ["AIエージェント連携(MCP)", "Model Context Protocol", "AIが外部ツールやデータソースと安全に連携するための共通規格。ファイル操作やAPI呼び出しを標準化する仕組み。"],
+    ["量子化", "Quantization", "AIモデルの精度を保ちつつデータサイズを軽くする技術。スマホなど非力な端末でもAIを動かせるようにする。"],
+    ["蒸留(ディスティレーション)", "Distillation", "大きなAIモデルの知識を、より軽量なモデルに引き継がせる技術。処理速度とコストの削減に役立つ。"],
+    ["AIアライメント", "AI Alignment", "AIの目的や行動を、人間の価値観や意図に一致させるための研究・設計分野。安全性の議論で重要視される。"],
+    ["合成データ", "Synthetic Data", "AIが人工的に生成した学習用データ。実データが不足・機密性が高い場面での学習に活用される。"],
+    ["ディープフェイク", "Deepfake", "AIによって作られた、本物と見分けがつきにくい偽の画像・音声・動画。悪用リスクが指摘され、対策技術も進んでいる。"]
+  ];
+
+  function dayIndex(len) {
+    var now = new Date();
+    var utcMidnight = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    var days = Math.floor(utcMidnight / 86400000);
+    return ((days % len) + len) % len;
+  }
+
+  var t = TERMS[dayIndex(TERMS.length)];
+  document.getElementById("w-term").textContent = t[0];
+  document.getElementById("w-en").textContent = t[1];
+  document.getElementById("w-def").textContent = t[2];
+
+  var now = new Date();
+  document.getElementById("w-date").textContent =
+    now.getFullYear() + "." + (now.getMonth() + 1) + "." + now.getDate();
+</script>
+</body>
+</html>

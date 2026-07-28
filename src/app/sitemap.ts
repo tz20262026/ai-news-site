@@ -317,6 +317,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.6,
     },
+    // 2026-07-28 新規追加：AI用語1日1語 無料埋め込みウィジェット
+    {
+      url: `${BASE_URL}/widget`,
+      lastModified: new Date("2026-07-28"),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
     ...articleUrls,
   ];
 }

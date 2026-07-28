@@ -33,6 +33,7 @@ const SITE_LINKS = [
   { href: "/tags", label: "タグ一覧" },
   { href: "/partners", label: "パートナー" },
   { href: "/rss", label: "RSS購読" },
+  { href: "/widget", label: "🎁 無料ウィジェット配布中" },
   { href: "/privacy", label: "プライバシーポリシー" },
   { href: "/tokushoho", label: "特定商取引法" },
 ];
