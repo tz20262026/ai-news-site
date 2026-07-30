@@ -23,32 +23,23 @@ type MoshimoItem = {
   color: string;
 };
 
-/** 最上位で大きく見せる注目案件（1件のみ・成果報酬が最も高い） */
+/** 最上位で大きく見せる注目案件（1件のみ・成果報酬が最も高い）
+ * 2026-07-29: 旧featured「AIブログくんGOLD」がリンク切れ確認のため、
+ * 通常グリッド1位だった「スタアカ」に差し替え(link_health_check.jsのconfirmedBrokenで検出) */
 const featured: MoshimoItem = {
-  // 2026-07-14追加・成果報酬 最大198,000円（本セクション最高単価）
-  href: "https://af.moshimo.com/af/c/click?a_id=5692070&p_id=7624&pc_id=22031&pl_id=95181",
-  badge: "🥇 注目のAI自動ブログ",
-  badgeColor: "#eab308",
-  title: "AIブログくんGOLD",
-  tagline: "キーワードを入れるだけでAIが記事を書いて自動投稿",
-  desc: "テーマを登録しておくと、AIが記事の構成・本文・画像まで生成してWordPressへ自動投稿するサービス。記事更新の手が回らないメディア運営者や、AIでの発信を仕組み化したい方向けの有料プラン。",
-  cta: "AIブログくんGOLDを見る →",
-  color: "#eab308",
+  // 成果報酬30,000円
+  href: "https://af.moshimo.com/af/c/click?a_id=5692052&p_id=3953&pc_id=9863&pl_id=54912",
+  badge: "📊 データサイエンスを学ぶ",
+  badgeColor: "#3b82f6",
+  title: "スタアカ（スタビジアカデミー）",
+  tagline: "データサイエンス・機械学習が学べるオンライン講座",
+  desc: "AIの中身を理解したい人向け。統計・Python・機械学習をロードマップ形式で学べるオンラインスクール。生成AIを「使う側」から「作る側」に回りたい方に。",
+  cta: "講座ラインナップを見る →",
+  color: "#3b82f6",
 };
 
 /** 通常グリッドに並べる案件（成果報酬の高い順） */
 const items: MoshimoItem[] = [
-  {
-    // 2026-07-14追加・成果報酬30,000円
-    href: "https://af.moshimo.com/af/c/click?a_id=5692052&p_id=3953&pc_id=9863&pl_id=54912",
-    badge: "📊 データサイエンスを学ぶ",
-    badgeColor: "#3b82f6",
-    title: "スタアカ（スタビジアカデミー）",
-    tagline: "データサイエンス・機械学習が学べるオンライン講座",
-    desc: "AIの中身を理解したい人向け。統計・Python・機械学習をロードマップ形式で学べるオンラインスクール。生成AIを「使う側」から「作る側」に回りたい方に。",
-    cta: "講座ラインナップを見る →",
-    color: "#3b82f6",
-  },
   {
     // 2026-07-14 第3弾・成果報酬24,000円（導入相談・契約）
     href: "https://af.moshimo.com/af/c/click?a_id=5692071&p_id=7616&pc_id=22006&pl_id=95102",

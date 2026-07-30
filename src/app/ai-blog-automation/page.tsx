@@ -265,17 +265,6 @@ export default function AiBlogAutomationPage() {
             それでも「ゼロから書く」と「直すだけ」では、必要な体力がまったく違います。
             記事本数を増やす土台づくりに向いています。
           </p>
-          <div className="text-center">
-            <a
-              href="https://af.moshimo.com/af/c/click?a_id=5692070&p_id=7624&pc_id=22031&pl_id=95181"
-              rel="nofollow sponsored noopener"
-              target="_blank"
-              className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
-            >
-              AIブログくんの詳細を見る →
-            </a>
-            <p className="text-xs text-gray-300 mt-3">※ 広告リンクです。料金・機能は公式サイトで最新情報をご確認ください</p>
-          </div>
         </section>
 
         {/* 向き不向き */}
@@ -414,25 +403,6 @@ export default function AiBlogAutomationPage() {
             この形が2026年時点でもっとも現実的な、AIブログ運営のかたちです。
           </p>
 
-          <div className="bg-gradient-to-r from-blue-900/40 to-gray-900 border border-blue-500/30 rounded-2xl p-6 text-center">
-            <h3 className="text-lg font-bold text-white mb-3">
-              まず1本、AIに書かせてみる
-            </h3>
-            <p className="text-gray-300 text-sm mb-5 leading-relaxed">
-              判断材料は、自分の得意ジャンルで実際に生成させた記事1本です。
-              <br />
-              読んでみて「これなら直せる」と思えるかどうかで決めてください。
-            </p>
-            <a
-              href="https://af.moshimo.com/af/c/click?a_id=5692070&p_id=7624&pc_id=22031&pl_id=95181"
-              rel="nofollow sponsored noopener"
-              target="_blank"
-              className="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
-            >
-              AIブログくんを試してみる →
-            </a>
-            <p className="text-xs text-gray-300 mt-3">※ PR・広告リンクを含みます</p>
-          </div>
         </section>
 
         {/* 関連記事（内部リンク） */}
