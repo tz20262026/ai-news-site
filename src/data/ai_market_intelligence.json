@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-30T12:42:39.887829+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場で開発分野の競争が激化。GPT-4oとの性能競争が市場全体を牽引し、ユーザーは選択肢の恩恵を受ける状況。",
+  "updatedAt": "2026-07-31T13:02:04.799908+09:00",
+  "aiJudgment": "Claude 3.5 Sonnetの登場で市場が活性化。特に開発分野での優位性が際立ち、GPT-4oとの競争が激化している。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claude 3.5 Sonnetはコーディングベンチマークで卓越した性能と速度を示し、新機能「Artifacts」も搭載。開発者にとって今最も強力な選択肢と言える。",
+      "reason": "新機能「Artifacts」により、生成コードを即座にプレビュー・編集できる対話型開発体験を実現。開発効率を新たな次元に引き上げる可能性を秘めている。",
       "tools": [
         {
-          "id": "claude-3-5-sonnet",
+          "id": "claude-3.5-sonnet-dev",
           "name": "Claude 3.5 Sonnet",
-          "price": "無料〜 (API/Proプラン)",
-          "newFeature": "新機能「Artifacts」でコード実行・プレビュー",
+          "price": "無料〜 (APIは従量課金)",
+          "newFeature": "Artifacts機能による対話型コーディング",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "速度と性能を両立した最新モデル。開発タスクに非常に強力。"
+          "summary": "高速でコスト効率に優れた新モデル。特にコード生成能力が向上。"
         },
         {
-          "id": "gpt-4o",
+          "id": "gpt-4o-dev",
           "name": "GPT-4o",
-          "price": "無料〜 (ChatGPT/API)",
-          "newFeature": "マルチモーダル対応、高速応答",
+          "price": "無料〜 (APIは従量課金)",
+          "newFeature": "高速化とマルチモーダル対応",
           "rating": 5,
           "badge": null,
-          "summary": "OpenAIの最新フラッグシップモデル。高速で多機能。"
+          "summary": "高速かつマルチモーダルな汎用モデル。コード生成やデバッグに強力。"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "$10/月〜",
-          "newFeature": "IDEとの深い統合、文脈理解",
-          "rating": 4,
+          "price": "月額$10〜",
+          "newFeature": "安定した機能提供",
+          "rating": 5,
           "badge": null,
-          "summary": "IDEに統合されたコーディング支援の定番ツール。"
+          "summary": "コード補完のデファクトスタンダード。開発速度を劇的に向上させる。"
         },
         {
           "id": "cursor",
           "name": "Cursor",
-          "price": "無料〜 (Proプランあり)",
-          "newFeature": "AIネイティブなコードエディタ",
+          "price": "無料〜",
+          "newFeature": "最新情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "AI機能を深く統合したVS Codeベースのコードエディタ。"
+          "summary": "AI機能を統合したコードエディタ。ペアプログラミングのような体験。"
         }
       ]
     },
@@ -55,46 +55,46 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Notion AI",
+        "name": "GPT-4o",
         "tagline": "今月の最強選択"
       },
-      "reason": "既存のドキュメントやDBとシームレスに連携し、文章作成や要約を同一プラットフォーム内で完結可能。業務フローを分断せず、生産性を直接的に向上させる。",
+      "reason": "圧倒的な応答速度とマルチモーダル対応により、テキスト、音声、画像を横断したシームレスな作業が可能。日常的な事務作業のあらゆる場面で活躍する。",
       "tools": [
+        {
+          "id": "gpt-4o-prod",
+          "name": "GPT-4o",
+          "price": "無料〜",
+          "newFeature": "リアルタイム音声・画像認識",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "高速応答とマルチモーダル対応で、あらゆる事務作業を効率化する万能アシスタント。"
+        },
+        {
+          "id": "claude-3.5-sonnet-prod",
+          "name": "Claude 3.5 Sonnet",
+          "price": "無料〜",
+          "newFeature": "GPT-4oを上回るベンチマークスコア",
+          "rating": 5,
+          "badge": null,
+          "summary": "GPT-4oに匹敵する性能を低コストで実現。長文読解や要約に優れる。"
+        },
         {
           "id": "notion-ai",
           "name": "Notion AI",
-          "price": "$8/月〜 (Notionに追加)",
-          "newFeature": "Q&A機能の強化、データベース連携",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Notionに統合されたAIアシスタント。文書作成や要約に便利。"
-        },
-        {
-          "id": "claude-3-5-sonnet-prod",
-          "name": "Claude 3.5 Sonnet",
-          "price": "無料〜 (API/Proプラン)",
-          "newFeature": "長い文脈の読解と高速な要約",
-          "rating": 5,
+          "price": "月額$8〜 (Notionに追加)",
+          "newFeature": "最新情報なし",
+          "rating": 4,
           "badge": null,
-          "summary": "長文資料の読解や要約に優れ、ビジネス文書作成に強い。"
+          "summary": "ドキュメント作成、要約、翻訳などをNotion内でシームレスに実行。"
         },
         {
           "id": "google-notebooklm",
           "name": "Google NotebookLM",
           "price": "無料",
-          "newFeature": "ソースに基づいた回答生成",
+          "newFeature": "最新情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "Google Driveの資料を基に質問応答や要約を行うAIノート。"
-        },
-        {
-          "id": "gpt-4o-prod",
-          "name": "GPT-4o",
-          "price": "無料〜 (ChatGPT/API)",
-          "newFeature": "音声対話、高速な文章生成",
-          "rating": 4,
-          "badge": null,
-          "summary": "汎用性が非常に高く、あらゆる事務作業をサポートする万能AI。"
+          "summary": "自身の資料を基に質問応答や要約を行う、パーソナルな調査アシスタント。"
         }
       ]
     },
@@ -103,28 +103,28 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "GPT-4o",
+        "name": "Claude 3.5 Sonnet",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト、画像、音声の垣根を越えたマルチモーダルな発想力と、多様なスタイルでの文章生成能力が、クリエイティブな作業のブレインストーミングや下書きに最適。",
+      "reason": "より自然で洗練された文章生成能力に定評があり、クリエイティブライティングやアイデアの壁打ちにおいて、人間らしいニュアンスを捉えた質の高い出力を提供する。",
       "tools": [
+        {
+          "id": "claude-3.5-sonnet-creative",
+          "name": "Claude 3.5 Sonnet",
+          "price": "無料〜",
+          "newFeature": "より自然で人間らしい文章生成",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "自然で人間らしい文章生成に定評。ニュアンスの表現や洗練された文章作成に強い。"
+        },
         {
           "id": "gpt-4o-creative",
           "name": "GPT-4o",
-          "price": "無料〜 (ChatGPT/API)",
-          "newFeature": "表現力豊かな文章と対話生成",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "アイデア出しからコピーライティングまで、多彩な創造性を発揮。"
-        },
-        {
-          "id": "claude-3-5-sonnet-creative",
-          "name": "Claude 3.5 Sonnet",
-          "price": "無料〜 (API/Proプラン)",
-          "newFeature": "自然で洗練された文章生成",
+          "price": "無料〜",
+          "newFeature": "最新情報なし",
           "rating": 4,
           "badge": null,
-          "summary": "ニュアンスを捉えた文章生成が得意。小説や脚本執筆にも。"
+          "summary": "多様なアイデア出しや文章生成が得意。対話を通じて創造性を刺激する。"
         }
       ]
     }
