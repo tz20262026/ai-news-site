@@ -50,8 +50,19 @@ const items = [
     title: "ExpressVPN",
     tagline: "高速VPN ｜ 海外AI・テックサービス制限突破",
     desc: "ChatGPTや海外AIツールへの制限なしアクセス。業界最速の接続速度で大容量AIファイル転送もストレスなし。",
-    cta: "30日間返金保証で試す →",
+    cta: "公式サイトで詳細を見る →",
     color: "#0891b2",
+  },
+  {
+    // 2026-08-01追加・成果報酬15,000円・リモートワーク特化VPN
+    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G4HQOI+50C8+15QP81",
+    badge: "🏢 リモートワーク特化",
+    badgeColor: "#7c3aed",
+    title: "だれリモVPN",
+    tagline: "社内ネットワークに置くだけで安全リモートアクセス",
+    desc: "AI開発・業務でオフィスの社内システムに外出先から安全にアクセスしたいなら。設定不要・置くだけで社内ネットワーク環境をそのまま再現。",
+    cta: "資料請求してみる →",
+    color: "#7c3aed",
   },
   {
     href: "https://px.a8.net/svt/ejp?a8mat=4B3G6D+E0VLRM+CO4+61C2Q",

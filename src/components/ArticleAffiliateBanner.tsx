@@ -34,7 +34,7 @@ const ALL_ITEMS = [
     title: "ExpressVPN",
     tagline: "高速VPN｜海外AI・テックサービス制限突破",
     desc: "ChatGPTや海外AIツールへの制限なしアクセス。業界最速の接続速度で大容量AIファイル転送もストレスなし。",
-    cta: "30日間返金保証で試す →",
+    cta: "公式サイトで詳細を見る →",
     color: "#0891b2",
   },
   {

@@ -7,7 +7,7 @@ import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 export const metadata: Metadata = {
   title: "ExpressVPN完全ガイド2026【W杯を海外から日本版DAZNで見る方法・速度・料金】",
   description:
-    "ExpressVPNの使い方を2026年版で解説。FIFAワールドカップ2026を海外から日本版DAZNで視聴する手順・業界最速の通信速度・料金・30日間返金保証まで、海外AIツール愛用者の視点でレビューします。",
+    "ExpressVPNの使い方を2026年版で解説。FIFAワールドカップ2026を海外から日本版DAZNで視聴する手順・業界最速の通信速度・料金まで、海外AIツール愛用者の視点でレビューします。",
   alternates: {
     canonical: "https://ai-news-site-wheat.vercel.app/expressvpn-guide",
   },
@@ -37,7 +37,7 @@ const FAQS = [
   },
   {
     q: "契約に不安があります。お試しはできますか？",
-    a: "ExpressVPNには30日間の返金保証があります。実際にW杯の試合を数試合見てみて、速度や使い勝手に満足できなければ期間内に解約すれば全額返金されます。実質1ヶ月間の無料トライアルとして使えるので、W杯期間だけ試したい人にも向いています。",
+    a: "契約前に公式サイトでプラン内容や特典条件を確認しておくと安心です。キャンペーン時期によって条件が変わる場合があるため、最新の詳細は必ず公式サイトでご確認ください。",
   },
   {
     q: "VPNの利用は合法ですか？",
@@ -126,7 +126,7 @@ export default function ExpressVpnGuidePage() {
             <li className="bg-gray-900 border border-gray-700 rounded-xl p-4">
               <strong className="text-white">STEP 1｜ExpressVPNに登録する</strong>
               <br />
-              公式サイトでプランを選んで登録。30日間の返金保証があるので、W杯期間だけのお試しでもリスクはありません。
+              公式サイトでプランを選んで登録。特典条件はキャンペーン時期によって変わる場合があるため、最新情報は公式サイトでご確認ください。
             </li>
             <li className="bg-gray-900 border border-gray-700 rounded-xl p-4">
               <strong className="text-white">STEP 2｜アプリをインストール</strong>
@@ -182,7 +182,7 @@ export default function ExpressVpnGuidePage() {
           <p className="text-gray-300 text-sm mb-4 leading-relaxed">
             決勝トーナメントはやり直しがききません。
             <br />
-            30日間返金保証つきなので、まず試合に間に合わせるのが正解です。
+            まずは公式サイトでプラン内容を確認して、試合に間に合わせるのが正解です。
           </p>
           <div className="flex justify-center mb-4">
             <a href="https://px.a8.net/svt/ejp?a8mat=4B5RS6+G6VE0I+5JSS+5YZ75" rel="nofollow sponsored noopener" target="_blank">
@@ -202,7 +202,7 @@ export default function ExpressVpnGuidePage() {
             target="_blank"
             className="inline-block bg-red-600 hover:bg-red-500 text-white font-bold px-8 py-3 rounded-xl transition-colors text-sm"
           >
-            ExpressVPNを30日間返金保証で試す →
+            ExpressVPN公式サイトで詳細を見る →
           </a>
           <p className="text-xs text-gray-300 mt-3">※ 本セクションはPR・広告を含みます</p>
         </section>
