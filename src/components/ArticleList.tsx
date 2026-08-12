@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import type { Article } from "@/lib/articles";
 import { getArticleImageUrl, getReadTime, getRelativeTime, isNew } from "@/lib/articles";
 import {
@@ -207,13 +206,14 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           className="article-card block bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden mb-6 hover:shadow-xl dark:hover:shadow-gray-900/50 transition-all duration-300 group"
         >
           <div className="relative w-full h-56 sm:h-72 overflow-hidden">
-            <Image
+            {/* Vercel画像最適化の無料枠上限のため next/image ではなく素の img を使用（402回避） */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={getArticleImageUrl(featured)}
               alt={featured.title}
-              fill
-              priority
-              className="object-cover article-image group-hover:scale-[1.03] transition-transform duration-500"
-              sizes="(max-width: 768px) 100vw, 672px"
+              loading="eager"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover article-image group-hover:scale-[1.03] transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
             <div className="absolute bottom-4 left-5 right-5">
@@ -264,12 +264,13 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
               style={{ animationDelay: `${i * 40}ms` }}
             >
               <div className="relative w-full h-40 overflow-hidden">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={getArticleImageUrl(article)}
                   alt={article.title}
-                  fill
-                  className="object-cover article-image group-hover:scale-[1.04] transition-transform duration-500"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover article-image group-hover:scale-[1.04] transition-transform duration-500"
                 />
                 {isNew(article.publishedAt) && (
                   <span className="absolute top-2 right-2 text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded animate-pulse z-10">

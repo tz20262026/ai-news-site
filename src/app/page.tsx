@@ -5,7 +5,6 @@ import AtSectionAiNews from "@/components/AtSectionAiNews";
 import SidebarAffiliate from "@/components/SidebarAffiliate";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import ArticleList from "@/components/ArticleList";
 import AIIntelligenceUnit from "@/components/AIIntelligenceUnit";
 import SidebarRanking from "@/components/SidebarRanking";
@@ -181,12 +180,13 @@ export default async function Home() {
                 className="flex items-center gap-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-xl p-3 hover:shadow-md dark:hover:shadow-gray-900/40 hover:bg-white dark:hover:bg-gray-900 transition-all group"
               >
                 <div className="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 shadow-sm">
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={getArticleImageUrl(a)}
                     alt={a.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="56px"
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-xs font-semibold text-gray-800 dark:text-gray-200 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">

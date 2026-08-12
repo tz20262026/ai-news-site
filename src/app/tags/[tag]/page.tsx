@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import {
@@ -114,12 +113,13 @@ export default async function TagPage({ params }: Props) {
           >
             {/* サムネイル画像 */}
             <div className="relative w-full h-40 overflow-hidden">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={getArticleImageUrl(article)}
                 alt={article.title}
-                fill
-                className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
-                sizes="(max-width: 768px) 100vw, 320px"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             </div>

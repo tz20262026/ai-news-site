@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import {
@@ -140,13 +139,13 @@ export default async function ArticlePage({ params }: Props) {
       <article className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
         {/* アイキャッチ画像 */}
         <div className="relative w-full h-52 sm:h-72 overflow-hidden">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={getArticleImageUrl(article)}
             alt={article.title}
-            fill
-            className="object-cover"
-            priority
-            sizes="(max-width: 768px) 100vw, 672px"
+            loading="eager"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
           <div className="absolute bottom-5 left-6 right-6">
@@ -287,12 +286,13 @@ export default async function ArticlePage({ params }: Props) {
                   className="block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg dark:hover:shadow-gray-900/50 hover:-translate-y-0.5 transition-all duration-300 group"
                 >
                   <div className="relative w-full h-24 sm:h-32 overflow-hidden">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={getArticleImageUrl(r)}
                       alt={`${r.title}のサムネイル画像`}
-                      fill
-                      className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 224px"
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
                     {relTag && (

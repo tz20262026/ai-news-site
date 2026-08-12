@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Article } from "@/lib/articles";
 import { getArticleImageUrl } from "@/lib/articles";
 
@@ -27,12 +26,13 @@ export default function SidebarRanking({ articles }: { articles: Article[] }) {
               }`}>{i + 1}</span>
               <div className="flex gap-2 flex-1 min-w-0 overflow-hidden">
                 <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0">
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={getArticleImageUrl(a)}
                     alt={a.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="48px"
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <p className="text-xs text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-3 leading-snug transition-colors self-start">
