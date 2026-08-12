@@ -9,6 +9,7 @@ const GUIDE_LINKS = [
   { href: "/perplexity-guide", label: "Perplexity" },
   { href: "/copilot-guide", label: "Copilot" },
   { href: "/midjourney-guide", label: "Midjourney" },
+  { href: "/nano-banana-guide", label: "Nano Banana Pro" },
   { href: "/stable-diffusion-guide", label: "Stable Diffusion" },
   { href: "/ai-video-guide", label: "動画生成AI" },
   { href: "/ai-music-guide", label: "AI音楽生成" },

@@ -324,6 +324,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    // 2026-08-13 新規追加：Nano Banana Pro（Gemini 3 Pro Image）使い方ガイド
+    {
+      url: `${BASE_URL}/nano-banana-guide`,
+      lastModified: new Date("2026-08-13"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...articleUrls,
   ];
 }

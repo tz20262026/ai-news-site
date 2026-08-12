@@ -7,6 +7,7 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["claude", "anthropic"], guide: { href: "/claude-guide", label: "Claude完全ガイド", emoji: "🧠" } },
   { keywords: ["gemini", "google ai", "bard"], guide: { href: "/gemini-guide", label: "Gemini完全ガイド", emoji: "✨" } },
   { keywords: ["midjourney", "画像生成", "image generation", "dalle", "flux"], guide: { href: "/midjourney-guide", label: "Midjourney完全ガイド", emoji: "🎨" } },
+  { keywords: ["nano banana", "ナノバナナ", "gemini 3 pro image"], guide: { href: "/nano-banana-guide", label: "Nano Banana Pro使い方ガイド", emoji: "🍌" } },
   { keywords: ["stable diffusion", "stablediffusion"], guide: { href: "/stable-diffusion-guide", label: "Stable Diffusionガイド", emoji: "🖼️" } },
   { keywords: ["動画生成", "video generation", "sora", "runway", "kling"], guide: { href: "/ai-video-guide", label: "AI動画生成ガイド", emoji: "🎬" } },
   { keywords: ["perplexity"], guide: { href: "/perplexity-guide", label: "Perplexityガイド", emoji: "🔍" } },

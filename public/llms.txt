@@ -42,6 +42,7 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [Midjourney完全ガイド](https://ai-news-site-wheat.vercel.app/midjourney-guide): 画像生成AIの使い方・料金・無料プランの有無。
 - [Stable Diffusion完全ガイド](https://ai-news-site-wheat.vercel.app/stable-diffusion-guide): オープンソース画像生成AIの導入・使い方。
 - [Canva AI活用ガイド](https://ai-news-site-wheat.vercel.app/canva-ai-guide): Canva内のAI機能（Magic Studio等）の使い方。
+- [Nano Banana Pro完全ガイド](https://ai-news-site-wheat.vercel.app/nano-banana-guide): Google製画像生成AI（Gemini 3 Pro Image）の使い方・無料枠・商用利用の注意点。
 - [ExpressVPN完全ガイド](https://ai-news-site-wheat.vercel.app/expressvpn-guide): 海外VPNの使い方・料金・選び方。
 - [NordVPN完全ガイド](https://ai-news-site-wheat.vercel.app/nordvpn-guide): 海外VPNの使い方・料金・選び方。
 - [Saily eSIM完全ガイド](https://ai-news-site-wheat.vercel.app/saily-esim-guide): 海外旅行向けeSIMの使い方・料金。
