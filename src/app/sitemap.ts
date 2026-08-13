@@ -331,6 +331,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-08-14 新規追加：AIツール診断（インタラクティブ診断コンテンツ）
+    {
+      url: `${BASE_URL}/ai-tool-diagnosis`,
+      lastModified: new Date("2026-08-14"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...articleUrls,
   ];
 }

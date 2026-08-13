@@ -7,6 +7,7 @@ import DarkModeToggle from "./DarkModeToggle";
 const NAV_LINKS = [
   { href: "/tags", label: "タグ" },
   { href: "/tools", label: "ツール一覧" },
+  { href: "/ai-tool-diagnosis", label: "AIツール診断" },
   { href: "/ai-tools-guide", label: "無料AIツール" },
   { href: "/ai-beginner-guide", label: "初心者ガイド" },
   { href: "/ai-business-guide", label: "ビジネス活用" },
