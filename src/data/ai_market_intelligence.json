@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-08-12T12:05:16.113412+09:00",
-  "aiJudgment": "Claude 3.5 Sonnetの登場で勢力図が変化。GPT-4oも依然強力で、両者の競争が市場全体の進化を加速させている。",
+  "updatedAt": "2026-08-13T12:09:57.997224+09:00",
+  "aiJudgment": "開発市場ではReplit Agent等の自動構築ツールが登場し競争が激化。Claudeは全方位で製品群を強化。クリエイティブではMidjourneyが王座を維持。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Claude 3.5 Sonnet",
+        "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "前モデルからコーディング性能が大幅に向上。複雑なタスク処理や文脈理解に優れ、開発効率を飛躍させる。コストパフォーマンスの高さも評価。",
+      "reason": "「Claude Code」等、開発者向け製品群を体系化。APIやエコシステムも強化し、開発プラットフォームとしての地位を確立しつつあるため。",
       "tools": [
         {
-          "id": "claude-3.5-sonnet-dev",
-          "name": "Claude 3.5 Sonnet",
-          "price": "API利用料",
-          "newFeature": "新情報なし",
+          "id": "claude-dev",
+          "name": "Claude",
+          "price": "Free & Paid",
+          "newFeature": "Claude Code等、製品群を整備",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速性とコスト効率に優れる最新モデル。特にコーディング性能が向上。"
+          "summary": "対話、コーディング、分析など万能なAIアシスタント"
+        },
+        {
+          "id": "replit-agent",
+          "name": "Replit Agent",
+          "price": "要問い合わせ",
+          "newFeature": "チャットによるアプリ自動構築",
+          "rating": 4,
+          "badge": null,
+          "summary": "アイデアを伝えるだけでアプリを構築するAIエージェント"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "Free & Paid",
+          "newFeature": "アイデアの記述から製品を自動生成",
+          "rating": 4,
+          "badge": null,
+          "summary": "アイデアから本格的なソフトウェアをエンドツーエンドで構築"
         },
         {
           "id": "github-copilot",
           "name": "GitHub Copilot",
-          "price": "個人$10/月, 法人$19/月",
-          "newFeature": "新情報なし",
+          "price": "Paid",
+          "newFeature": "最新モデル連携の強化",
           "rating": 5,
           "badge": null,
-          "summary": "コード補完のデファクトスタンダード。開発者の生産性を劇的に向上させる。"
-        },
-        {
-          "id": "cursor",
-          "name": "Cursor",
-          "price": "無料〜, Pro $20/月",
-          "newFeature": "新情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "AIネイティブなコードエディタ。GPT-4o等最新モデルを統合。"
-        },
-        {
-          "id": "gpt-4o-dev",
-          "name": "GPT-4o",
-          "price": "API利用料",
-          "newFeature": "新情報なし",
-          "rating": 5,
-          "badge": null,
-          "summary": "高速・高精度なマルチモーダルモデル。API経由で多様な開発に活用可能。"
+          "summary": "コーディングを加速するAIペアプログラマーのデファクト"
         }
       ]
     },
@@ -55,46 +55,37 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "GPT-4o",
+        "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "テキスト、音声、画像を統合した高速な対話が可能。議事録作成からデータ分析まで、幅広い事務タスクを直感的に処理できる万能性が魅力。",
+      "reason": "Microsoft 365連携や@Claude機能で既存業務フローに深く統合。幅広い事務作業を高度に自動化できるため。",
       "tools": [
         {
-          "id": "gpt-4o-prod",
-          "name": "GPT-4o",
-          "price": "ChatGPT Plus $20/月",
-          "newFeature": "新情報なし",
+          "id": "claude-prod",
+          "name": "Claude",
+          "price": "Free & Paid",
+          "newFeature": "Microsoft 365連携、@Claude機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高速応答とマルチモーダル対応で、あらゆる事務作業を効率化する万能アシスタント。"
+          "summary": "文書作成、要約、分析を支援する汎用アシスタント"
         },
         {
-          "id": "claude-3.5-sonnet-prod",
-          "name": "Claude 3.5 Sonnet",
-          "price": "Claude Pro $20/月",
-          "newFeature": "新情報なし",
-          "rating": 5,
+          "id": "manus-prod",
+          "name": "Manus",
+          "price": "Free & Paid",
+          "newFeature": "スライド作成、Web構築など多機能",
+          "rating": 4,
           "badge": null,
-          "summary": "高速かつ高精度なテキスト生成・要約能力。特に長文読解に強みを発揮。"
+          "summary": "スライド作成からWebサイト構築までこなす多機能AI"
         },
         {
           "id": "notion-ai",
           "name": "Notion AI",
-          "price": "$8/月 (Notion Plusに追加)",
-          "newFeature": "新情報なし",
+          "price": "Paid Add-on",
+          "newFeature": "データベース機能との連携強化",
           "rating": 4,
           "badge": null,
-          "summary": "ドキュメント管理ツールNotionに統合。文章作成や要約をシームレスに支援。"
-        },
-        {
-          "id": "google-notebooklm",
-          "name": "Google NotebookLM",
-          "price": "無料",
-          "newFeature": "新情報なし",
-          "rating": 4,
-          "badge": null,
-          "summary": "Googleドキュメント等をソースに、情報整理や質疑応答を行うAIノート。"
+          "summary": "ドキュメント作成や要約をNotion内でシームレスに実行"
         }
       ]
     },
@@ -103,32 +94,106 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "Claude 3.5 Sonnet",
+        "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "ユーモアやニュアンスの理解力が高く、より自然で創造的な文章を生成。Artifacts機能により、生成物を即座に編集・改善できる点も評価。",
+      "reason": "「最も美しいAIモデル」を追求し、高品質な画像生成で市場をリード。専門特化型として圧倒的なクオリティを維持しているため。",
       "tools": [
         {
-          "id": "claude-3.5-sonnet-creative",
-          "name": "Claude 3.5 Sonnet",
-          "price": "Claude Pro $20/月",
-          "newFeature": "新情報なし",
+          "id": "midjourney",
+          "name": "Midjourney",
+          "price": "Paid",
+          "newFeature": "より美しいモデルの継続的投入",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "自然で人間らしい文章生成に定評。脚本や小説、キャッチコピー作成で強みを発揮。"
+          "summary": "世界で最も美しいAIモデルを謳う画像生成AIのパイオニア"
         },
         {
-          "id": "gpt-4o-creative",
-          "name": "GPT-4o",
-          "price": "ChatGPT Plus $20/月",
-          "newFeature": "新情報なし",
-          "rating": 5,
+          "id": "manus-creative",
+          "name": "Manus",
+          "price": "Free & Paid",
+          "newFeature": "画像・音楽生成機能を内包",
+          "rating": 4,
           "badge": null,
-          "summary": "画像生成(DALL-E 3)も統合。アイデア出しからビジュアル作成まで一気通貫。"
+          "summary": "デザイン、画像、音楽生成も可能な統合クリエイティブAI"
+        },
+        {
+          "id": "sora",
+          "name": "Sora",
+          "price": "未定",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 3,
+          "badge": null,
+          "summary": "OpenAI開発の高品質動画生成AI（現在アクセス不可）"
         }
       ]
     }
   ],
-  "newToolsToday": [],
-  "alerts": []
+  "newToolsToday": [
+    {
+      "name": "Replit Agent",
+      "summary": "チャットでアイデアを伝えるだけで、本番環境で動作するアプリを構築してくれるAIコーディングエージェント。",
+      "category": "development",
+      "price": "要問い合わせ",
+      "discoveredAt": "2024-07-23T09:00:00.000Z",
+      "isChallenging": true,
+      "challengingTool": "GitHub Copilot"
+    },
+    {
+      "name": "Lovable",
+      "summary": "新しい製品や社内ツールなど、アイデアを言葉で説明するだけで、本番グレードのソフトウェアをエンドツーエンドで構築・管理。",
+      "category": "development",
+      "price": "Free & Paid",
+      "discoveredAt": "2024-07-23T09:00:00.000Z",
+      "isChallenging": true,
+      "challengingTool": "Replit Agent"
+    },
+    {
+      "name": "Manus",
+      "summary": "スライド作成、Webサイト構築、デザイン、音楽生成までこなす多機能AI。ChatGPTやLovableとの比較も提示。",
+      "category": "productivity",
+      "price": "Free & Paid",
+      "discoveredAt": "2024-07-23T09:00:00.000Z",
+      "isChallenging": true,
+      "challengingTool": "Lovable"
+    },
+    {
+      "name": "Midjourney",
+      "summary": "「最も美しいAIモデル」を標榜する、世界的に有名な高品質画像生成AI。Discord上で利用する。",
+      "category": "creative",
+      "price": "Paid",
+      "discoveredAt": "2024-07-23T09:00:00.000Z",
+      "isChallenging": false,
+      "challengingTool": null
+    },
+    {
+      "name": "Sora",
+      "summary": "OpenAIが開発したテキストから高品質な動画を生成するAIモデル。現在、公式サイトがアクセス不能状態。",
+      "category": "creative",
+      "price": "未定",
+      "discoveredAt": "2024-07-23T09:00:00.000Z",
+      "isChallenging": false,
+      "challengingTool": null
+    }
+  ],
+  "alerts": [
+    {
+      "alertType": "challenger",
+      "newTool": "Replit Agent",
+      "existingTool": "GitHub Copilot",
+      "message": "下克上の兆し：Replit Agentがコーディング支援からアプリ自動構築へと市場の前提を覆す可能性。"
+    },
+    {
+      "alertType": "challenger",
+      "newTool": "Lovable",
+      "existingTool": "Replit Agent",
+      "message": "下克上の兆し：Lovableが同様のアプリビルダーReplit Agentに対し、より包括的なビジネス構築機能で差別化を図る。"
+    },
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：Manusが多機能性でLovableなどの特化型ビルダーのユーザーを取り込む可能性。"
+    }
+  ]
 }
