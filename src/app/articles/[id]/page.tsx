@@ -385,9 +385,9 @@ export default async function ArticlePage({ params }: Props) {
               url: "https://ai-news-site-wheat.vercel.app",
               logo: {
                 "@type": "ImageObject",
-                url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
-                width: 200,
-                height: 200,
+                url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
+                width: 1200,
+                height: 630,
               },
             },
             mainEntityOfPage: {

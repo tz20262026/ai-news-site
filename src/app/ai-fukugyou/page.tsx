@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app/ai-fukugyou",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AIで副業する方法 2026年版",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIで副業する方法 2026年版｜月収10万円の実績ある7つの方法",
     description: "ChatGPT・Claude・Midjourneyを活用した副業方法を完全解説。実績者の収益化ロードマップ付き。",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
   alternates: {
     canonical: "https://ai-news-site-wheat.vercel.app/ai-fukugyou",

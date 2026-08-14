@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app/ai-tool-diagnosis",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AIツール診断",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "AIツール診断【7つの質問であなたに最適なAIがわかる】",
     description:
       "ChatGPT・Claude・Gemini・Perplexity・GitHub Copilotの中から最適なAIツールを無料診断。約1分・登録不要。",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
 };
 

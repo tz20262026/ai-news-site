@@ -24,11 +24,20 @@ export const metadata: Metadata = {
     description: "AIが自律的に精査した最新AIニュースを日本語で毎日お届け",
     type: "website",
     url: "https://ai-news-site-wheat.vercel.app",
+    images: [
+      {
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "AI News Japan",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI News Japan",
     description: "AIが自律的に精査した最新AIニュースを日本語で毎日お届け",
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
 };
 
@@ -131,7 +140,17 @@ export default async function Home() {
       </div>
 
       {/* ガイドセクション */}
-      <div className="mb-7 grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="mb-7 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <Link
+          href="/ai-tool-diagnosis"
+          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-rose-950/60 to-rose-900/30 border border-rose-800/60 hover:border-rose-500 transition-all group"
+        >
+          <span className="text-2xl flex-shrink-0">🎯</span>
+          <div>
+            <p className="text-sm font-bold text-white group-hover:text-rose-300 transition-colors">AIツール診断</p>
+            <p className="text-xs text-rose-300/70 mt-0.5">7つの質問で最適な1本がわかる</p>
+          </div>
+        </Link>
         <Link
           href="/ai-beginner-guide"
           className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-blue-950/60 to-blue-900/30 border border-blue-800/60 hover:border-blue-500 transition-all group"

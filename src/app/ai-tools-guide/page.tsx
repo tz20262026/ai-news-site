@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app/ai-tools-guide",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "2026年版 無料AIツール完全ガイド",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "2026年版 無料AIツール完全ガイド【15選】",
     description: "ChatGPT・Gemini・Claudeなど無料で使えるAIツール15選を用途別に徹底解説",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
   alternates: {
     canonical: "https://ai-news-site-wheat.vercel.app/ai-tools-guide",

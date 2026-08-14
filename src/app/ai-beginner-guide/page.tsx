@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app/ai-beginner-guide",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AI初心者完全ガイド2026",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description:
       "ChatGPT・Gemini・Claudeを10ステップで使いこなす方法を丁寧に解説。",
     images: [
-      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+      "https://ai-news-site-wheat.vercel.app/opengraph-image",
     ],
   },
   alternates: {

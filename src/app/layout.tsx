@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AI News Japan — 海外AIツール最新情報",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI News Japan — 海外AIツール最新情報",
     description: "海外の最新AIツール・ニュースを日本語でお届けします。TechCrunch・VentureBeatなど海外100媒体から毎日自動更新。",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
   robots: {
     index: true,
@@ -134,7 +134,9 @@ export default function RootLayout({
                 url: "https://ai-news-site-wheat.vercel.app",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=200&q=80&fit=crop",
+                  url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
+                  width: 1200,
+                  height: 630,
                 },
                 description: "TechCrunch・VentureBeat・Wiredなど海外100媒体から最新AIニュースを日本語でお届け",
                 publishingPrinciples: "https://ai-news-site-wheat.vercel.app/about",

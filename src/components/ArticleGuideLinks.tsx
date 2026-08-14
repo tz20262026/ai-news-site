@@ -32,6 +32,8 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["画像", "image", "ai画像"], guide: { href: "/ai-image-generation-guide", label: "AI画像生成ガイド", emoji: "🖼️" } },
 ];
 
+const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
+
 function pickGuides(tags: string[]): Guide[] {
   const lowerTags = tags.map((t) => t.toLowerCase());
   const seen = new Set<string>();
@@ -55,8 +57,10 @@ function pickGuides(tags: string[]): Guide[] {
 type Props = { tags: string[] };
 
 export default function ArticleGuideLinks({ tags }: Props) {
-  const guides = pickGuides(tags);
-  if (guides.length === 0) return null;
+  const matched = pickGuides(tags);
+  const guides = matched.some((g) => g.href === DIAGNOSIS_GUIDE.href)
+    ? matched
+    : [...matched, DIAGNOSIS_GUIDE];
 
   return (
     <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700/60">

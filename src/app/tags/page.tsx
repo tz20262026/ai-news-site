@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://ai-news-site-wheat.vercel.app/tags",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "タグ一覧 | AI News Japan",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "タグ一覧 | AI News Japan",
     description: "AI News Japan のすべての記事タグを一覧表示",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
 };
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/widget`,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop",
+        url: "https://ai-news-site-wheat.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AI用語1日1語ウィジェット",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "【無料】AI用語1日1語ウィジェット｜AI News Japan",
     description: "生成AI・LLM関連の用語が毎日自動で切り替わる無料ウィジェット。コピペ1行で設置できます。",
-    images: ["https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop"],
+    images: ["https://ai-news-site-wheat.vercel.app/opengraph-image"],
   },
 };
 
