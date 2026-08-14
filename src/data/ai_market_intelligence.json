@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-08-13T12:09:57.997224+09:00",
-  "aiJudgment": "開発市場ではReplit Agent等の自動構築ツールが登場し競争が激化。Claudeは全方位で製品群を強化。クリエイティブではMidjourneyが王座を維持。",
+  "updatedAt": "2026-08-14T12:08:25.935704+09:00",
+  "aiJudgment": "開発ツール市場はエージェント化と多機能化が加速し競争が激化。Manusが競合比較を公開するなど、覇権争いが表面化している。各セグメントの勝者は未来への布石を着々と打っている。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Claude",
+        "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "「Claude Code」等、開発者向け製品群を体系化。APIやエコシステムも強化し、開発プラットフォームとしての地位を確立しつつあるため。",
+      "reason": "Replit Agentは「チャットで本番用アプリを構築」という明確な価値提案で開発体験を革新する。専門性と効率性で他を圧倒し、非専門家でも開発が可能になる点で今月の最強選択と評価。",
       "tools": [
-        {
-          "id": "claude-dev",
-          "name": "Claude",
-          "price": "Free & Paid",
-          "newFeature": "Claude Code等、製品群を整備",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "対話、コーディング、分析など万能なAIアシスタント"
-        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
-          "newFeature": "チャットによるアプリ自動構築",
+          "price": "要問合せ",
+          "newFeature": "チャットを通じたアプリ自動構築",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "チャットでアイデアを伝えると、本番環境で使えるアプリを自動で構築してくれるAIエンジニアリングチーム。"
+        },
+        {
+          "id": "claude-dev",
+          "name": "Claude",
+          "price": "Pricing",
+          "newFeature": "新モデルOpus, Sonnet, Haiku等発表",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアを伝えるだけでアプリを構築するAIエージェント"
+          "summary": "Anthropic社の高性能AI。新モデル群により、コーディング能力が大幅に向上し、開発支援ツールとして存在感を増す。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "Free & Paid",
-          "newFeature": "アイデアの記述から製品を自動生成",
+          "price": "Pricing",
+          "newFeature": "エンドツーエンドのインフラ自動管理",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアから本格的なソフトウェアをエンドツーエンドで構築"
+          "summary": "自然言語からインフラまで含めたフルスタックのソフトウェアをリアルタイムで構築・デプロイするAI。"
         },
         {
-          "id": "github-copilot",
-          "name": "GitHub Copilot",
-          "price": "Paid",
-          "newFeature": "最新モデル連携の強化",
-          "rating": 5,
+          "id": "manus-dev",
+          "name": "Manus",
+          "price": "Pricing",
+          "newFeature": "独立企業として再始動、競合比較公開",
+          "rating": 3,
           "badge": null,
-          "summary": "コーディングを加速するAIペアプログラマーのデファクト"
+          "summary": "Webサイト構築から多機能ツールまで提供。ReplitやLovableとの比較ページを公開し、競争姿勢を明確化。"
         }
       ]
     },
@@ -58,34 +58,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365連携や@Claude機能で既存業務フローに深く統合。幅広い事務作業を高度に自動化できるため。",
+      "reason": "Microsoft 365やSlackとの連携機能を発表し、既存の業務フローへのシームレスな統合を強化。開発だけでなく、日常的な事務作業の効率化においても高いポテンシャルを示したため。",
       "tools": [
         {
           "id": "claude-prod",
           "name": "Claude",
-          "price": "Free & Paid",
-          "newFeature": "Microsoft 365連携、@Claude機能",
+          "price": "Pricing",
+          "newFeature": "Microsoft 365, Slack連携機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "文書作成、要約、分析を支援する汎用アシスタント"
+          "summary": "Microsoft 365やSlackと連携し、日常業務にAIを統合。文書作成や要約、分析を効率化する。"
         },
         {
           "id": "manus-prod",
           "name": "Manus",
-          "price": "Free & Paid",
-          "newFeature": "スライド作成、Web構築など多機能",
-          "rating": 4,
+          "price": "Pricing",
+          "newFeature": "AIスライド作成、メール連携機能",
+          "rating": 3,
           "badge": null,
-          "summary": "スライド作成からWebサイト構築までこなす多機能AI"
-        },
-        {
-          "id": "notion-ai",
-          "name": "Notion AI",
-          "price": "Paid Add-on",
-          "newFeature": "データベース機能との連携強化",
-          "rating": 4,
-          "badge": null,
-          "summary": "ドキュメント作成や要約をNotion内でシームレスに実行"
+          "summary": "スライド作成、メール（Mail Manus）、Slack連携など、事務作業を効率化する機能を複数提供。"
         }
       ]
     },
@@ -97,103 +88,51 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "「最も美しいAIモデル」を追求し、高品質な画像生成で市場をリード。専門特化型として圧倒的なクオリティを維持しているため。",
+      "reason": "圧倒的な画質と芸術性で画像生成AIの頂点に君臨。想像力や美をテーマにした新プロジェクトの予告は、クリエイターからの絶大な期待を集めており、他者の追随を許さないため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "Paid",
-          "newFeature": "より美しいモデルの継続的投入",
+          "price": "要問合せ",
+          "newFeature": "新プロジェクトを複数テーマで準備中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う画像生成AIのパイオニア"
+          "summary": "「世界で最も美しいAIモデル」を謳う画像生成AI。人間の想像力を増幅させることをミッションとしている。"
         },
         {
           "id": "manus-creative",
           "name": "Manus",
-          "price": "Free & Paid",
-          "newFeature": "画像・音楽生成機能を内包",
-          "rating": 4,
+          "price": "Pricing",
+          "newFeature": "AIデザイン、画像・音楽生成機能",
+          "rating": 3,
           "badge": null,
-          "summary": "デザイン、画像、音楽生成も可能な統合クリエイティブAI"
+          "summary": "デザイン、画像、音楽など多彩なクリエイティブ生成機能を統合。一つのプラットフォームで多岐にわたる制作が可能。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "未定",
-          "newFeature": "公式サイトアクセス不可",
-          "rating": 3,
+          "newFeature": "公式サイトアクセス不可（エラー表示）",
+          "rating": 1,
           "badge": null,
-          "summary": "OpenAI開発の高品質動画生成AI（現在アクセス不可）"
+          "summary": "OpenAI開発の動画生成AI。期待は高いが、現在公式サイトがアクセス不能な状態にあり、情報が途絶えている。"
         }
       ]
     }
   ],
-  "newToolsToday": [
-    {
-      "name": "Replit Agent",
-      "summary": "チャットでアイデアを伝えるだけで、本番環境で動作するアプリを構築してくれるAIコーディングエージェント。",
-      "category": "development",
-      "price": "要問い合わせ",
-      "discoveredAt": "2024-07-23T09:00:00.000Z",
-      "isChallenging": true,
-      "challengingTool": "GitHub Copilot"
-    },
-    {
-      "name": "Lovable",
-      "summary": "新しい製品や社内ツールなど、アイデアを言葉で説明するだけで、本番グレードのソフトウェアをエンドツーエンドで構築・管理。",
-      "category": "development",
-      "price": "Free & Paid",
-      "discoveredAt": "2024-07-23T09:00:00.000Z",
-      "isChallenging": true,
-      "challengingTool": "Replit Agent"
-    },
-    {
-      "name": "Manus",
-      "summary": "スライド作成、Webサイト構築、デザイン、音楽生成までこなす多機能AI。ChatGPTやLovableとの比較も提示。",
-      "category": "productivity",
-      "price": "Free & Paid",
-      "discoveredAt": "2024-07-23T09:00:00.000Z",
-      "isChallenging": true,
-      "challengingTool": "Lovable"
-    },
-    {
-      "name": "Midjourney",
-      "summary": "「最も美しいAIモデル」を標榜する、世界的に有名な高品質画像生成AI。Discord上で利用する。",
-      "category": "creative",
-      "price": "Paid",
-      "discoveredAt": "2024-07-23T09:00:00.000Z",
-      "isChallenging": false,
-      "challengingTool": null
-    },
-    {
-      "name": "Sora",
-      "summary": "OpenAIが開発したテキストから高品質な動画を生成するAIモデル。現在、公式サイトがアクセス不能状態。",
-      "category": "creative",
-      "price": "未定",
-      "discoveredAt": "2024-07-23T09:00:00.000Z",
-      "isChallenging": false,
-      "challengingTool": null
-    }
-  ],
+  "newToolsToday": [],
   "alerts": [
     {
       "alertType": "challenger",
-      "newTool": "Replit Agent",
-      "existingTool": "GitHub Copilot",
-      "message": "下克上の兆し：Replit Agentがコーディング支援からアプリ自動構築へと市場の前提を覆す可能性。"
-    },
-    {
-      "alertType": "challenger",
-      "newTool": "Lovable",
+      "newTool": "Manus",
       "existingTool": "Replit Agent",
-      "message": "下克上の兆し：Lovableが同様のアプリビルダーReplit Agentに対し、より包括的なビジネス構築機能で差別化を図る。"
+      "message": "下克上の兆し：Manusが公式サイトでReplit Agentとの比較を公開。開発ツール市場での競争激化。"
     },
     {
       "alertType": "challenger",
       "newTool": "Manus",
       "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusが多機能性でLovableなどの特化型ビルダーのユーザーを取り込む可能性。"
+      "message": "下克上の兆し：多機能AIのManusがLovableとの比較ページを設置。アプリビルダー市場の勢力図に変化か。"
     }
   ]
 }
