@@ -338,6 +338,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-08-17 修正：2026-07-20公開済みだがサイトマップから漏れていたページを追加
+    {
+      url: `${BASE_URL}/ai-english-guide`,
+      lastModified: new Date("2026-07-20"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/ai-excel-guide`,
+      lastModified: new Date("2026-07-20"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...articleUrls,
   ];
 }

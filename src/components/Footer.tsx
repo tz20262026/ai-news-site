@@ -15,6 +15,8 @@ const GUIDE_LINKS = [
   { href: "/ai-music-guide", label: "AI音楽生成" },
   { href: "/ai-coding-guide", label: "AIコーディング" },
   { href: "/ai-writing-guide", label: "AI文章作成" },
+  { href: "/ai-english-guide", label: "AI英会話アプリ比較" },
+  { href: "/ai-excel-guide", label: "Excel×AI活用" },
 ];
 
 const TOOL_LINKS = [

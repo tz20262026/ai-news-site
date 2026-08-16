@@ -30,6 +30,8 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["プロンプト", "prompt", "プロンプトエンジニアリング"], guide: { href: "/chatgpt-prompt-guide", label: "プロンプトガイド", emoji: "💡" } },
   { keywords: ["エージェント", "agent", "自律", "autonomous"], guide: { href: "/ai-agent-guide", label: "AIエージェントガイド", emoji: "🤖" } },
   { keywords: ["画像", "image", "ai画像"], guide: { href: "/ai-image-generation-guide", label: "AI画像生成ガイド", emoji: "🖼️" } },
+  { keywords: ["英語", "英会話", "english", "speak", "elsa", "duolingo"], guide: { href: "/ai-english-guide", label: "AI英会話アプリ比較ガイド", emoji: "🗣️" } },
+  { keywords: ["excel", "エクセル", "スプレッドシート", "spreadsheet"], guide: { href: "/ai-excel-guide", label: "Excel×AI活用ガイド", emoji: "📊" } },
 ];
 
 const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
