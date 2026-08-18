@@ -2,6 +2,7 @@ import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
 import VcSectionAiNews from "@/components/VcSectionAiNews";
 import AtSectionAiNews from "@/components/AtSectionAiNews";
+import RakutenAiNewsPicks from "@/components/RakutenAiNewsPicks";
 import SidebarAffiliate from "@/components/SidebarAffiliate";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -250,6 +251,8 @@ export default async function Home() {
       <VcSectionAiNews limit={6} />
       {/* アクセストレード枠（2026-07-14追加）。他ASPとは独立した別セクション */}
       <AtSectionAiNews />
+      {/* 楽天アフィリエイト枠（2026-08-19追加）。A8/もしも/VC/ATとは独立した5つ目の収益源 */}
+      <RakutenAiNewsPicks />
     </div>
   );
 }
