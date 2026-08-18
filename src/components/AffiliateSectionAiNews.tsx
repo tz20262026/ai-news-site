@@ -144,6 +144,50 @@ const items = [
     cta: "コース詳細を見る →",
     color: "#059669",
   },
+  {
+    // 2026-08-19追加・成果報酬60,000円・即時提携
+    href: "https://px.a8.net/svt/ejp?a8mat=4BA9H7+8Y3M4Y+3VAG+5YRHE",
+    badge: "📈 SNS運用自動化",
+    badgeColor: "#0ea5e9",
+    title: "SocialDog",
+    tagline: "無料で使えるSNSアカウント管理ツール",
+    desc: "X(Twitter)・Instagram等の予約投稿・フォロワー分析・自動フォローをAIが効率化。SNS発信を副業にしたい方の必須ツール。",
+    cta: "無料で使ってみる →",
+    color: "#0ea5e9",
+  },
+  {
+    // 2026-08-19追加・成果報酬45,000円・即時提携
+    href: "https://px.a8.net/svt/ejp?a8mat=4BA9H7+8YP1QQ+5L4K+5Z6WY",
+    badge: "📄 AI翻訳・要約",
+    badgeColor: "#7c3aed",
+    title: "Languise",
+    tagline: "特許・論文・技術資料をレイアウトそのまま翻訳",
+    desc: "海外の最新AI論文や技術資料をレイアウト崩れなく翻訳・要約・解説。一次情報を素早くキャッチしたい研究者・エンジニア向け。",
+    cta: "無料トライアルを試す →",
+    color: "#7c3aed",
+  },
+  {
+    // 2026-08-19追加・成果報酬17,088円・即時提携
+    href: "https://px.a8.net/svt/ejp?a8mat=4BA9H7+8P642A+5UMS+5YZ75",
+    badge: "🖼️ AIスライド生成",
+    badgeColor: "#f59e0b",
+    title: "イルシル",
+    tagline: "AIが数分で資料・スライドを自動生成",
+    desc: "企画書やプレゼン資料の叩き台をAIが自動作成。デザインセンス不要でクオリティの高いスライドが完成する業務効率化ツール。",
+    cta: "無料で資料作成を試す →",
+    color: "#f59e0b",
+  },
+  {
+    // 2026-08-19追加・成果報酬12,000円・即時提携
+    href: "https://px.a8.net/svt/ejp?a8mat=4BA9H7+8ZAHCI+47GS+HVFKY",
+    badge: "🎓 AIキャリア支援",
+    badgeColor: "#dc2626",
+    title: "Neuro Dive",
+    tagline: "AI・データサイエンスが学べる就労移行支援",
+    desc: "AIスキルを身につけて就職・転職を目指す方向けの就労移行支援サービス。未経験からAI人材へのキャリアチェンジをサポート。",
+    cta: "無料相談してみる →",
+    color: "#dc2626",
+  },
 ];
 
 export default function AffiliateSectionAiNews() {
