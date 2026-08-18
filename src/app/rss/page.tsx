@@ -6,6 +6,9 @@ import { allArticles, getArticleImageUrl, getRelativeTime } from "@/lib/articles
 export const metadata: Metadata = {
   title: "RSS購読",
   description: "AI News Japan のRSSフィードを購読して、最新AIニュースを自動受信しましょう。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/rss",
+  },
 };
 
 const FEED_URL = "https://ai-news-site-wheat.vercel.app/feed.xml";

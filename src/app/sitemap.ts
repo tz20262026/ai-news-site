@@ -351,6 +351,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-08-18 SEO監査で発見：公開済みなのにサイトマップから漏れていたページ
+    {
+      url: `${BASE_URL}/rss`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
     ...articleUrls,
   ];
 }

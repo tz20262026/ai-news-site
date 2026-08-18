@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description: "AI News Japan のプライバシーポリシーです。個人情報の取り扱い・Cookieの使用・アクセス解析について説明します。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/privacy",
+  },
 };
 
 const sections = [

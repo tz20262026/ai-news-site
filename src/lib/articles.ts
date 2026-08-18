@@ -152,6 +152,14 @@ export type Article = {
   tags: string[];
   publishedAt: string;
   imageUrl?: string;
+  /**
+   * 事前計算済みの読了時間（分）。一覧系コンポーネント（ArticleList等）へ
+   * 本文全文(body)を渡さずに済ませるための軽量化用フィールド。
+   * 未指定の場合は body から都度計算する（記事詳細ページ等）。
+   * 2026-08-18 SEO監査：ホームページのHTMLが2.2MBに肥大化していた原因が
+   * 「一覧表示に不要な body 全文を451記事分クライアントへ渡していたこと」と判明したため追加。
+   */
+  readTime?: number;
 };
 
 export const articles: Article[] = [

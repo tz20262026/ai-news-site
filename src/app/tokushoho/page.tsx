@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "特定商取引法に基づく表記",
   description: "AI News Japan の特定商取引法に基づく表記ページです。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/tokushoho",
+  },
 };
 
 const rows: { label: string; value: React.ReactNode }[] = [

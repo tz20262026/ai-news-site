@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "パートナーサイト",
   description: "AI News Japan のパートナーサイト一覧。映画・農業・AI教育・美容テックなど多彩なメディアと連携しています。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/partners",
+  },
   openGraph: {
     title: "パートナーサイト | AI News Japan",
     description: "AI News Japan のパートナーサイト一覧。",

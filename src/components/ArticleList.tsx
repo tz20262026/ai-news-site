@@ -248,7 +248,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                   </Link>
                 ))}
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-300">{getReadTime(featured.body)}分で読める</span>
+              <span className="text-xs text-gray-500 dark:text-gray-300">{featured.readTime ?? getReadTime(featured.body)}分で読める</span>
             </div>
           </div>
         </Link>
@@ -296,7 +296,7 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
               <div className="p-4">
                 <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-300 mb-1.5 gap-2">
                   <span className="min-w-0 truncate">{getRelativeTime(article.publishedAt)} · {article.source}</span>
-                  <span className="shrink-0">{getReadTime(article.body)}分</span>
+                  <span className="shrink-0">{article.readTime ?? getReadTime(article.body)}分</span>
                 </div>
                 <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug mb-1.5 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                   {article.title}

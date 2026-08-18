@@ -10,7 +10,7 @@ import AIIntelligenceUnit from "@/components/AIIntelligenceUnit";
 import SidebarRanking from "@/components/SidebarRanking";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import AdUnit from "@/components/AdUnit";
-import { getArticleImageUrl } from "@/lib/articles";
+import { getArticleImageUrl, getReadTime } from "@/lib/articles";
 
 import { getAllArticles, adaptMicroCMSArticle } from "@/lib/microcms";
 import { allArticles as localArticles } from "@/lib/articles";
@@ -54,7 +54,12 @@ async function fetchArticles() {
 }
 
 export default async function Home() {
-  const articles = await fetchArticles();
+  const rawArticles = await fetchArticles();
+  // 2026-08-18 SEO監査で発見：一覧表示には不要な body（記事本文全文）を
+  // 451記事分そのままクライアントに渡していたため、ホームページのHTMLが
+  // 約2.2MBまで肥大化していた（Core Web Vitals・クロール負荷に悪影響）。
+  // 読了時間だけ事前計算し、body は空にしてから渡すことでペイロードを大幅削減する。
+  const articles = rawArticles.map((a) => ({ ...a, body: "", readTime: getReadTime(a.body) }));
   const latestDate = articles.map((a) => a.publishedAt).sort().at(-1) ?? "";
   const todayArticles = articles.filter((a) => a.publishedAt === latestDate).slice(0, 3);
 

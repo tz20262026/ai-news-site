@@ -5,6 +5,9 @@ import { allArticles } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "タグ一覧",
   description: "AI News Japan のすべての記事タグを一覧表示しています。気になるテーマのタグをクリックして関連記事を探してみましょう。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/tags",
+  },
   openGraph: {
     title: "タグ一覧 | AI News Japan",
     description: "AI News Japan のすべての記事タグを一覧表示",

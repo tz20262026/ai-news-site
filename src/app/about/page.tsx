@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "About — 運営情報・編集方針",
   description:
     "AI News Japan の運営者情報・編集方針・AIによる情報精査プロセスをご紹介します。Kコンサルタント運営・毎日自動更新のAIニュースメディア。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/about",
+  },
   openGraph: {
     title: "About | AI News Japan",
     description: "運営者情報・編集方針・AIによる情報精査プロセス",

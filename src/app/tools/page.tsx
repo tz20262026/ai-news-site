@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   title: "AIツール比較・おすすめ一覧",
   description:
     "AIが自律的に精査したカテゴリー別ベストAIツール一覧。開発・事務効率化・クリエイティブ・推論の4分野で最適ツールを比較。",
+  alternates: {
+    canonical: "https://ai-news-site-wheat.vercel.app/tools",
+  },
   openGraph: {
     title: "AIツール比較・おすすめ一覧 | AI News Japan",
     description:
