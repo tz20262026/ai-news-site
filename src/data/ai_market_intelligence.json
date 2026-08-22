@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T11:09:39.245684+09:00",
-  "aiJudgment": "開発セグメントで「対話によるアプリ生成」競争が激化。Replit Agentが一歩リードか。クリエイティブはMidjourneyが哲学を示し、王者の地位を固める。",
+  "updatedAt": "2026-08-22T10:59:31.116255+09:00",
+  "aiJudgment": "開発セグメントではチャットベースのアプリビルダー競争が激化しReplitがリード。クリエイティブはMidjourneyが安定した強さを見せている。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットでアプリを構築するという革新的なアプローチを提示。コーディング不要でアイデアを形にできる手軽さと、本番環境を見据えた実用性を両立し、開発の未来像を示した。",
+      "reason": "チャットで本番環境対応アプリを構築できる手軽さと、大手企業の利用実績が示す信頼性の高さから。非エンジニアでも開発に参加できる革新性を評価。",
       "tools": [
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "Pricingページあり",
-          "newFeature": "Opus, Sonnet等新モデル展開",
-          "rating": 5,
-          "badge": null,
-          "summary": "Anthropic提供の高性能コーディングAI。多様なモデルで開発を支援。"
-        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "要問い合わせ",
-          "newFeature": "チャットによるアプリ自動構築",
+          "newFeature": "AIコーディングエージェント発表",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットで対話するだけでアプリを構築。コーディング不要のAI開発エージェント。"
+          "summary": "チャットで指示するだけでアプリやWebサイトを構築するAIエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "Pricingページあり",
-          "newFeature": "自然言語によるリアルタイム構築",
+          "price": "要問い合わせ",
+          "newFeature": "豊富なテンプレート機能の紹介",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアを言葉で伝えるだけで、本番グレードのソフトウェアをAIが自動構築。"
+          "summary": "AIとの対話を通じてアプリやWebサイトを構築するツール。テンプレートも豊富。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "Pricingページあり",
-          "newFeature": "競合比較ページ公開(vs Replit等)",
+          "price": "別途料金ページあり",
+          "newFeature": "独立企業として再開の告知",
           "rating": 4,
           "badge": null,
-          "summary": "Webサイト構築からスライド作成までこなす多機能AI。競合を強く意識。"
+          "summary": "Webサイト、スライド、デザインなど多岐にわたる制作が可能な多機能AI。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "要問い合わせ",
+          "newFeature": "情報なし",
+          "rating": 2,
+          "badge": null,
+          "summary": "Anthropic社のコーディング支援AI。現在、詳細情報取得不可。"
         }
       ]
     },
@@ -55,10 +55,10 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "該当なし",
+        "name": "選出なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "今月、このセグメントで注目すべき大きな動きは観測されませんでした。",
+      "reason": "今回の分析対象に、事務効率化を主目的とする有力なツールやアップデート情報が含まれていなかったため、選定を見送る。",
       "tools": []
     },
     {
@@ -69,25 +69,34 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的なクオリティと「美」へのこだわりを改めて提示。研究所としての壮大なビジョンを示し、単なる画像生成ツールを超えた存在感を示した。",
+      "reason": "圧倒的な画像生成品質と、美を追求する明確なビジョンでクリエイティブ分野をリード。安定したサービス提供とブランド力が高く評価される。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要確認",
-          "newFeature": "今後の新プロジェクト構想を発表",
+          "price": "要問い合わせ",
+          "newFeature": "新プロジェクトを今後発表予定",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う画像生成AI。芸術的な表現力に定評。"
+          "summary": "高品質な画像生成で知られるAIモデル。美的な表現を追求。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "別途料金ページあり",
+          "newFeature": "独立企業として再開の告知",
+          "rating": 4,
+          "badge": null,
+          "summary": "デザイン、画像・音楽生成も可能な多機能AI。クリエイティブ制作にも対応。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "不明",
-          "newFeature": "公式サイトアクセス障害",
+          "price": "要問い合わせ",
+          "newFeature": "アクセス障害発生中",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。現在、公式サイトで情報が取得できない状態。"
+          "summary": "OpenAIの動画生成AI。現在、公式サイトがアクセス不可の状態。"
         }
       ]
     }
