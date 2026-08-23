@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-22T10:59:31.116255+09:00",
-  "aiJudgment": "開発セグメントではチャットベースのアプリビルダー競争が激化しReplitがリード。クリエイティブはMidjourneyが安定した強さを見せている。",
+  "updatedAt": "2026-08-23T11:10:38.287236+09:00",
+  "aiJudgment": "開発系はエージェント化が加速。クリエイティブ系はMidjourneyが安定、Soraは停滞。サービス停止ツールもあり、市場の変動が激しい。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,34 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットで本番環境対応アプリを構築できる手軽さと、大手企業の利用実績が示す信頼性の高さから。非エンジニアでも開発に参加できる革新性を評価。",
+      "reason": "チャットベースの対話でアプリを自動構築するエージェント機能が革新的。非エンジニアでも開発が可能になり、市場の裾野を広げる可能性を秘めている。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
-          "newFeature": "AIコーディングエージェント発表",
+          "price": "要問合せ",
+          "newFeature": "チャットでアプリを構築するエージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットで指示するだけでアプリやWebサイトを構築するAIエージェント。"
+          "summary": "チャットでアイデアを伝え、本番環境で使えるアプリを構築。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要問い合わせ",
-          "newFeature": "豊富なテンプレート機能の紹介",
+          "price": "要問合せ",
+          "newFeature": "アイデアから本番用ソフトウェアを構築",
           "rating": 4,
           "badge": null,
-          "summary": "AIとの対話を通じてアプリやWebサイトを構築するツール。テンプレートも豊富。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "別途料金ページあり",
-          "newFeature": "独立企業として再開の告知",
-          "rating": 4,
-          "badge": null,
-          "summary": "Webサイト、スライド、デザインなど多岐にわたる制作が可能な多機能AI。"
+          "summary": "平易な言葉で説明するだけで、本番用ソフトウェアを構築。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要問い合わせ",
-          "newFeature": "情報なし",
-          "rating": 2,
+          "price": "要問合せ",
+          "newFeature": "新モデル群(Opus, Sonnet等)を発表",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropic社のコーディング支援AI。現在、詳細情報取得不可。"
+          "summary": "コーディングに特化したAnthropic社のAIモデル群。"
         }
       ]
     },
@@ -55,11 +46,30 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "選出なし",
+        "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "今回の分析対象に、事務効率化を主目的とする有力なツールやアップデート情報が含まれていなかったため、選定を見送る。",
-      "tools": []
+      "reason": "Microsoft 365連携や@Claude機能により、既存の業務フローにシームレスに統合。文書作成や要約など、日常的な事務作業を大幅に効率化する。",
+      "tools": [
+        {
+          "id": "claude",
+          "name": "Claude",
+          "price": "要問合せ",
+          "newFeature": "Microsoft 365連携、@Claude機能",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "文書作成や要約など日常業務を効率化するAIアシスタント。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "不明",
+          "newFeature": "2026年8月25日までサービス停止",
+          "rating": 1,
+          "badge": null,
+          "summary": "データ規制対応のため、長期サービス停止中のツール。"
+        }
+      ]
     },
     {
       "id": "creative",
@@ -69,34 +79,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な画像生成品質と、美を追求する明確なビジョンでクリエイティブ分野をリード。安定したサービス提供とブランド力が高く評価される。",
+      "reason": "安定した高品質な画像生成能力で市場をリード。公式サイトがアクセス不能なSoraに対し、信頼性と実績で圧倒しているため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要問い合わせ",
-          "newFeature": "新プロジェクトを今後発表予定",
+          "price": "要問合せ",
+          "newFeature": "新規プロジェクト群を近日公開予定",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高品質な画像生成で知られるAIモデル。美的な表現を追求。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "別途料金ページあり",
-          "newFeature": "独立企業として再開の告知",
-          "rating": 4,
-          "badge": null,
-          "summary": "デザイン、画像・音楽生成も可能な多機能AI。クリエイティブ制作にも対応。"
+          "summary": "世界で最も美しいAIモデルと評される画像生成AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "要問い合わせ",
-          "newFeature": "アクセス障害発生中",
-          "rating": 1,
+          "price": "不明",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 2,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。現在、公式サイトがアクセス不可の状態。"
+          "summary": "OpenAIが開発する動画生成AI。現在アクセス不可。"
         }
       ]
     }
