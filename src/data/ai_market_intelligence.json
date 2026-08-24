@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-23T11:10:38.287236+09:00",
-  "aiJudgment": "開発系はエージェント化が加速。クリエイティブ系はMidjourneyが安定、Soraは停滞。サービス停止ツールもあり、市場の変動が激しい。",
+  "updatedAt": "2026-08-24T11:09:29.131314+09:00",
+  "aiJudgment": "開発ツールはチャットベースのアプリビルダーへと進化。Claudeはプラットフォーム化で事務効率化をリード。一方、一部主要ツールのサービス停止が目立ち、市場の不安定さも露呈した。",
   "segments": [
     {
       "id": "development",
@@ -10,7 +10,7 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットベースの対話でアプリを自動構築するエージェント機能が革新的。非エンジニアでも開発が可能になり、市場の裾野を広げる可能性を秘めている。",
+      "reason": "Replit Agentは「チャットでアプリを構築」という具体的なユースケースを提示し、非開発者でも利用可能な手軽さを強調。アイデアから本番環境への迅速な展開力で、今月の開発セグメントをリードする。",
       "tools": [
         {
           "id": "replit-agent",
@@ -19,25 +19,25 @@
           "newFeature": "チャットでアプリを構築するエージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットでアイデアを伝え、本番環境で使えるアプリを構築。"
+          "summary": "チャットでアイデアを伝えるだけで、本番環境で使えるアプリを構築できるAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
           "price": "要問合せ",
-          "newFeature": "アイデアから本番用ソフトウェアを構築",
-          "rating": 4,
+          "newFeature": "エンドツーエンドのインフラを自動管理",
+          "rating": 5,
           "badge": null,
-          "summary": "平易な言葉で説明するだけで、本番用ソフトウェアを構築。"
+          "summary": "平易な言葉で説明するだけで、製品や社内ツールをゼロから構築、実行、管理できるプラットフォーム。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
           "price": "要問合せ",
-          "newFeature": "新モデル群(Opus, Sonnet等)を発表",
-          "rating": 4,
+          "newFeature": "新モデル群(Opus, Sonnet, Haiku)発表",
+          "rating": 5,
           "badge": null,
-          "summary": "コーディングに特化したAnthropic社のAIモデル群。"
+          "summary": "Anthropicが提供するコーディング特化AI。新モデル群により性能が向上し、多様な開発を支援。"
         }
       ]
     },
@@ -49,25 +49,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365連携や@Claude機能により、既存の業務フローにシームレスに統合。文書作成や要約など、日常的な事務作業を大幅に効率化する。",
+      "reason": "Claudeは新製品CoworkやMicrosoft 365連携を発表し、統合的な業務効率化プラットフォームへと進化。Manusが長期停止中のため、今月の事務効率化分野では独走状態。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
           "price": "要問合せ",
-          "newFeature": "Microsoft 365連携、@Claude機能",
+          "newFeature": "Microsoft 365連携、Cowork製品発表",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "文書作成や要約など日常業務を効率化するAIアシスタント。"
+          "summary": "コーディングから事務作業まで幅広く対応する汎用AI。M365連携などで業務効率を大幅に向上させる。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "不明",
-          "newFeature": "2026年8月25日までサービス停止",
+          "price": "要問合せ",
+          "newFeature": "2026年8月25日までサービス一時停止",
           "rating": 1,
           "badge": null,
-          "summary": "データ規制対応のため、長期サービス停止中のツール。"
+          "summary": "データ削除のため2026年8月25日までアクセス不可。独立企業として再開予定だが、現在は利用できない。"
         }
       ]
     },
@@ -79,25 +79,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "安定した高品質な画像生成能力で市場をリード。公式サイトがアクセス不能なSoraに対し、信頼性と実績で圧倒しているため。",
+      "reason": "Midjourneyは「世界で最も美しいAIモデル」という独自の地位を確立し、今後の新プロジェクトへの期待感を高めている。競合のSoraがアクセス不能に陥っており、クリエイティブ分野での優位は揺るがない。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
           "price": "要問合せ",
-          "newFeature": "新規プロジェクト群を近日公開予定",
-          "rating": 5,
+          "newFeature": "想像力や美をテーマにした新プロジェクト予告",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルと評される画像生成AI。"
+          "summary": "世界で最も美しいAIモデルを謳う画像生成AI。人間の精神を増幅させるための新インフラを構築中。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "不明",
-          "newFeature": "公式サイトアクセス不可",
-          "rating": 2,
+          "price": "要問合せ",
+          "newFeature": "公式サイトがエラーでアクセス不能",
+          "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発する動画生成AI。現在アクセス不可。"
+          "summary": "OpenAIが開発するテキストから動画を生成するAI。現在、公式サイトで問題が発生しておりアクセスできない。"
         }
       ]
     }
