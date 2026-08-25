@@ -3,12 +3,42 @@ import { allArticles } from "@/lib/articles";
 
 const BASE_URL = "https://ai-news-site-wheat.vercel.app";
 
+/** Windowsファイルシステムで使用できない文字を含むタグかどうか判定する（src/app/tags/[tag]/page.tsx の generateStaticParams と同じロジック） */
+function isUnsafeForStaticPath(tag: string): boolean {
+  return /[*?<>|:\\]/.test(tag);
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const articleUrls = allArticles.map((article) => ({
     url: `${BASE_URL}/articles/${article.id}`,
     lastModified: new Date(article.publishedAt),
     changeFrequency: "weekly" as const,
     priority: 0.8,
+  }));
+
+  // 2026-08-25 SEO監査で発見：/tags/[tag] の540件超の静的生成ページがサイトマップから漏れていた（過去に何度も発生している再発パターン）
+  const tagLastModified = new Map<string, Date>();
+  allArticles.forEach((article) => {
+    article.tags.forEach((tag) => {
+      if (isUnsafeForStaticPath(tag)) return;
+      let published: Date;
+      try {
+        published = new Date(article.publishedAt);
+        if (Number.isNaN(published.getTime())) published = new Date();
+      } catch {
+        published = new Date();
+      }
+      const existing = tagLastModified.get(tag);
+      if (!existing || published > existing) {
+        tagLastModified.set(tag, published);
+      }
+    });
+  });
+  const tagUrls = Array.from(tagLastModified.entries()).map(([tag, lastModified]) => ({
+    url: `${BASE_URL}/tags/${encodeURIComponent(tag)}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
   }));
 
   return [
@@ -358,6 +388,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
+    ...tagUrls,
     ...articleUrls,
   ];
 }

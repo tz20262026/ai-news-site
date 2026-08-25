@@ -2,6 +2,18 @@
 
 const ALL_ITEMS = [
   {
+    key: "aiagentcamp",
+    tags: ["aiエージェント", "エージェント", "agent", "自律型", "自動化", "オートメーション", "マルチエージェント"],
+    href: "https://px.a8.net/svt/ejp?a8mat=4B82L5+APSWS2+5VRC+5YJRM",
+    badge: "🧠 非エンジニア向け",
+    badgeColor: "#be123c",
+    title: "AI Agent Camp",
+    tagline: "非エンジニアでも学べるAIエージェント開発講座",
+    desc: "プログラミング未経験でもAIエージェントを自作できるようになる実践講座。「使う側」から「作る側」に回りたい人向け。",
+    cta: "無料説明会に申し込む →",
+    color: "#be123c",
+  },
+  {
     key: "english",
     tags: ["英語", "海外メディア", "英語学習", "techcrunch", "venturebeat", "wired", "海外ニュース"],
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS7+1L5MUQ+40GA+61C2P",

@@ -1,9 +1,0 @@
-[    2173ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-    at rX (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:46254)
-    at https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:143231
-    at sh (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:146796)
-    at sd (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:138046)
-    at https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:132871
-    at se (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:132972)
-    at s$ (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:159536)
-    at MessagePort.O (https://ai-news-site-wheat.vercel.app/_next/static/chunks/0a3pg.k92a8rq.js:1:7701)
