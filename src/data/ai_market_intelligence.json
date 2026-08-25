@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T11:09:29.131314+09:00",
-  "aiJudgment": "開発ツールはチャットベースのアプリビルダーへと進化。Claudeはプラットフォーム化で事務効率化をリード。一方、一部主要ツールのサービス停止が目立ち、市場の不安定さも露呈した。",
+  "updatedAt": "2026-08-25T11:04:57.527807+09:00",
+  "aiJudgment": "AIエージェントによるアプリ自動構築が開発市場を席巻。一方、Manusのような多機能ツールが専門ツールに挑戦状を叩きつけ、市場の競争は新たな局面へ。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "Replit Agentは「チャットでアプリを構築」という具体的なユースケースを提示し、非開発者でも利用可能な手軽さを強調。アイデアから本番環境への迅速な展開力で、今月の開発セグメントをリードする。",
+      "reason": "チャットで指示するだけで本番環境対応のアプリを構築できる手軽さと、明確な製品ポジショニングが評価された。非開発者でもアイデアを形にできる点が市場の注目を集めている。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問合せ",
-          "newFeature": "チャットでアプリを構築するエージェント",
+          "price": "要問い合わせ",
+          "newFeature": "チャットによるアプリ自動構築エージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットでアイデアを伝えるだけで、本番環境で使えるアプリを構築できるAIコーディングエージェント。"
+          "summary": "チャットで指示するだけで、本番環境で使えるアプリやウェブサイトを自動で構築するAIエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要問合せ",
-          "newFeature": "エンドツーエンドのインフラを自動管理",
-          "rating": 5,
+          "price": "プランによる",
+          "newFeature": "自然言語からのフルスタックアプリ生成",
+          "rating": 4,
           "badge": null,
-          "summary": "平易な言葉で説明するだけで、製品や社内ツールをゼロから構築、実行、管理できるプラットフォーム。"
+          "summary": "アイデアを言葉で伝えるだけで、インフラ含めフルスタックのソフトウェアを構築・運用できるAIプラットフォーム。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要問合せ",
-          "newFeature": "新モデル群(Opus, Sonnet, Haiku)発表",
-          "rating": 5,
+          "price": "プランによる",
+          "newFeature": "新モデルOpus/Sonnet/Haiku搭載",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropicが提供するコーディング特化AI。新モデル群により性能が向上し、多様な開発を支援。"
+          "summary": "Anthropic社が開発したコーディング支援AI。新モデル群を搭載し、高度な開発タスクに対応。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "プランによる",
+          "newFeature": "ウェブサイト構築、スライド、画像生成等",
+          "rating": 4,
+          "badge": null,
+          "summary": "ウェブサイト構築も可能な多機能AI。幅広いタスクを一つのプラットフォームで完結させることを目指す。"
         }
       ]
     },
@@ -49,25 +58,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claudeは新製品CoworkやMicrosoft 365連携を発表し、統合的な業務効率化プラットフォームへと進化。Manusが長期停止中のため、今月の事務効率化分野では独走状態。",
+      "reason": "Microsoft 365との連携や『Claude Cowork』など、具体的な業務シーンへの導入を想定した機能が充実。汎用性と実用性の高さで、事務効率化セグメントをリードしている。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "要問合せ",
-          "newFeature": "Microsoft 365連携、Cowork製品発表",
+          "price": "プランによる",
+          "newFeature": "Microsoft 365連携、Cowork機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "コーディングから事務作業まで幅広く対応する汎用AI。M365連携などで業務効率を大幅に向上させる。"
+          "summary": "文書作成、要約、分析など、幅広い知的作業を支援する汎用AIアシスタント。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "要問合せ",
-          "newFeature": "2026年8月25日までサービス一時停止",
-          "rating": 1,
+          "price": "プランによる",
+          "newFeature": "スライド作成、メール連携、Slack連携",
+          "rating": 4,
           "badge": null,
-          "summary": "データ削除のため2026年8月25日までアクセス不可。独立企業として再開予定だが、現在は利用できない。"
+          "summary": "スライド作成や各種ツール連携など、多様な事務タスクを自動化する多機能AIアシスタント。"
         }
       ]
     },
@@ -79,29 +88,45 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "Midjourneyは「世界で最も美しいAIモデル」という独自の地位を確立し、今後の新プロジェクトへの期待感を高めている。競合のSoraがアクセス不能に陥っており、クリエイティブ分野での優位は揺るがない。",
+      "reason": "AI画像生成の品質において他を圧倒。芸術性の高いビジュアルを求めるクリエイターからの支持が厚く、この分野の第一人者としての地位を不動のものにしている。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要問合せ",
-          "newFeature": "想像力や美をテーマにした新プロジェクト予告",
-          "rating": 4,
+          "price": "サブスクリプション",
+          "newFeature": "新プロジェクトを複数計画中",
+          "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う画像生成AI。人間の精神を増幅させるための新インフラを構築中。"
+          "summary": "芸術的で高品質なビジュアル作成に特化。世界で最も美しいAIモデルを謳う画像生成AI。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "プランによる",
+          "newFeature": "AIによる画像・音楽生成機能を提供",
+          "rating": 3,
+          "badge": null,
+          "summary": "画像や音楽の生成も可能な多機能AI。手軽に多様なクリエイティブ作業を行えるのが特徴。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "要問合せ",
-          "newFeature": "公式サイトがエラーでアクセス不能",
-          "rating": 1,
+          "price": "不明",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 2,
           "badge": null,
-          "summary": "OpenAIが開発するテキストから動画を生成するAI。現在、公式サイトで問題が発生しておりアクセスできない。"
+          "summary": "OpenAIのテキストtoビデオモデル。期待は高いが、現在公式サイトがアクセス不能となっている。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": []
+  "alerts": [
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：多機能AIのManusが、Lovableの得意とするアプリ構築市場に挑戦状"
+    }
+  ]
 }
