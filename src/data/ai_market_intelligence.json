@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-08-27T19:11:35.670721+09:00",
-  "aiJudgment": "開発分野では自然言語によるアプリ構築競争が激化。クリエイティブは王者が君臨するも、Soraの情報途絶など市場の不確実性も浮き彫りに。",
+  "updatedAt": "2026-08-28T20:42:28.594112+09:00",
+  "aiJudgment": "開発エージェント市場が激化する中、Claude等基盤モデルも影響力を拡大。多機能型Manusも台頭し、市場は多角的に進化中。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャット形式で本番環境対応アプリを構築できる手軽さと強力さを両立。非エンジニアでも利用可能という点で、開発の裾野を大きく広げる可能性を秘めているため。",
+      "reason": "Anthropicの強力な基盤モデルを背景に、コーディングに特化した高い性能を発揮。幅広い開発ユースケースに対応できる汎用性と専門性を両立しているため。",
       "tools": [
-        {
-          "id": "replit-agent",
-          "name": "Replit Agent",
-          "price": "要問合せ",
-          "newFeature": "チャットによるアプリ構築エージェント",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "チャットでアイデアを伝え、本番環境対応アプリを自動構築。"
-        },
-        {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "無料プランあり",
-          "newFeature": "エンドツーエンドのインフラ提供",
-          "rating": 4,
-          "badge": null,
-          "summary": "平易な言葉でWebサイトや内部ツールを構築・運用するAI。"
-        },
-        {
-          "id": "manus-dev",
-          "name": "Manus",
-          "price": "無料プランあり",
-          "newFeature": "競合比較ページを公開（vs Replit, Lovable）",
-          "rating": 4,
-          "badge": null,
-          "summary": "Webサイト、ゲーム、デザイン等を生成する多機能開発AI。"
-        },
         {
           "id": "claude-code",
           "name": "Claude Code",
           "price": "要問合せ",
-          "newFeature": "Anthropicの最新モデル群の一部として紹介",
+          "newFeature": "Anthropicのコーディング特化モデル",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "Anthropicが提供するコーディングに特化したAI。高度なプログラミングタスクをサポートする。"
+        },
+        {
+          "id": "replit-agent",
+          "name": "Replit Agent",
+          "price": "要問合せ",
+          "newFeature": "チャットでアプリを構築するエージェント",
           "rating": 4,
           "badge": null,
-          "summary": "Anthropicが提供するコーディング特化のAIモデル。"
+          "summary": "チャットでの指示で本番用アプリを構築するAIエージェント。コーディング不要でアイデアを形にできる。"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "要問合せ",
+          "newFeature": "アイデアを説明するだけでアプリを構築",
+          "rating": 4,
+          "badge": null,
+          "summary": "平易な言葉で、本番グレードのソフトウェアをリアルタイムで構築・管理できるプラットフォーム。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要問合せ",
+          "newFeature": "Webサイト構築、ゲーム作成機能",
+          "rating": 4,
+          "badge": null,
+          "summary": "Webサイト構築からゲーム作成まで、幅広い開発タスクを実行するインテリジェントなAIアシスタント。"
         }
       ]
     },
@@ -58,25 +58,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Chrome拡張やMicrosoft 365連携により、既存の業務フローにシームレスに統合可能。日常的な事務作業の効率を飛躍的に向上させるポテンシャルが高いため。",
+      "reason": "Microsoft 365連携など、ビジネス現場での実用性が高い機能を展開。文書作成、分析、要約といった中核的な事務作業を広範囲にカバーし、生産性向上に直結するため。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "無料プランあり",
-          "newFeature": "Claude for Microsoft 365連携",
+          "price": "要問合せ",
+          "newFeature": "Microsoft 365連携、新モデル群",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "ChromeやM365と連携し日常業務を効率化するAIアシスタント。"
+          "summary": "Anthropic開発の汎用AI。文書分析や要約など、幅広いビジネス業務を効率化する。"
         },
         {
           "id": "manus-prod",
           "name": "Manus",
-          "price": "無料プランあり",
-          "newFeature": "Slack/メール連携、AIスライド作成機能",
-          "rating": 3,
+          "price": "要問合せ",
+          "newFeature": "AIスライド作成、Slack連携",
+          "rating": 4,
           "badge": null,
-          "summary": "スライド作成や各種連携で事務作業も支援する多機能AI。"
+          "summary": "スライド作成やSlack連携など、日常の事務作業を自動化・効率化する多機能AIツール。"
         }
       ]
     },
@@ -88,34 +88,34 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "生成される画像の芸術性・品質において他を圧倒。クリエイターからの絶大な支持を得ており、クリエイティブ分野におけるデファクトスタンダードとしての地位を確立しているため。",
+      "reason": "「世界で最も美しいAIモデル」と評される卓越した画像生成品質で市場をリード。クリエイターから絶大な支持を得ており、その地位は揺るぎないため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
           "price": "要問合せ",
-          "newFeature": "新規プロジェクト群の計画を発表",
+          "newFeature": "新プロジェクトを複数テーマで準備中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいと評される高品質なAI画像生成モデル。"
+          "summary": "「世界で最も美しい」と評される、高品質な画像生成に特化したAI。圧倒的な表現力が特徴。"
         },
         {
           "id": "manus-creative",
           "name": "Manus",
-          "price": "無料プランあり",
-          "newFeature": "AI音楽・画像ジェネレーター搭載",
+          "price": "要問合せ",
+          "newFeature": "AIデザイン、画像・音楽生成機能",
           "rating": 4,
           "badge": null,
-          "summary": "デザイン、スライド、画像、音楽まで生成する統合クリエイティブAI。"
+          "summary": "デザイン、画像、音楽生成など、多彩なクリエイティブタスクをサポートする統合AIプラットフォーム。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "不明",
-          "newFeature": "公式サイトがアクセス不能状態",
-          "rating": 1,
+          "price": "要問合せ",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 3,
           "badge": null,
-          "summary": "OpenAIが開発するテキストからの動画生成AIモデル。"
+          "summary": "OpenAIのテキストtoビデオ生成AI。現在、公式サイトがアクセス不能な状態にある。"
         }
       ]
     }
@@ -125,8 +125,8 @@
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Replit Agent",
-      "message": "下克上の兆し：多機能AI「Manus」が、比較ページで「Replit Agent」に直接対決を挑む。"
+      "existingTool": "Replit",
+      "message": "下克上の兆し：Manusが公式サイトでReplitとの比較ページを公開。開発エージェント市場での挑戦を表明。"
     }
   ]
 }
