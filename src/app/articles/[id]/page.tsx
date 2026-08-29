@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       url: canonicalUrl,
       publishedTime: article.publishedAt,
-      modifiedTime: article.publishedAt,
+      modifiedTime: article.updatedAt ?? article.publishedAt,
       tags: article.tags,
       images: [{ url: imageUrl, width: 800, height: 420, alt: article.title }],
     },
@@ -167,6 +167,12 @@ export default async function ArticlePage({ params }: Props) {
           {/* メタ情報 */}
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-500 dark:text-gray-300 mb-3">
             <span className="shrink-0">{getRelativeTime(article.publishedAt)}（{article.publishedAt}）</span>
+            {article.updatedAt && article.updatedAt !== article.publishedAt && (
+              <>
+                <span className="shrink-0">·</span>
+                <span className="shrink-0">更新 {article.updatedAt}</span>
+              </>
+            )}
             <span className="shrink-0">·</span>
             <a
               href={article.sourceUrl}
@@ -366,7 +372,9 @@ export default async function ArticlePage({ params }: Props) {
             headline: article.title,
             description: article.summary,
             datePublished: article.publishedAt,
-            dateModified: article.publishedAt,
+            dateModified: article.updatedAt ?? article.publishedAt,
+            inLanguage: "ja",
+            isAccessibleForFree: true,
             url: canonicalUrl,
             image: {
               "@type": "ImageObject",

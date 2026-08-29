@@ -134,6 +134,12 @@ export function adaptMicroCMSArticle(a: MicroCMSArticle) {
     sourceUrl: a.source_url,
     tags: a.tags ? a.tags.split(",").map((t) => t.trim()).filter(Boolean) : [],
     publishedAt: a.publishedAt.slice(0, 10), // "YYYY-MM-DD"
+    // 改稿日（revisedAt 優先、無ければ updatedAt）。公開日と同じなら未設定にして
+    // dateModified を無意味に膨らませない。
+    updatedAt: (() => {
+      const revised = (a.revisedAt ?? a.updatedAt)?.slice(0, 10);
+      return revised && revised !== a.publishedAt.slice(0, 10) ? revised : undefined;
+    })(),
     imageUrl: a.eyecatch?.url,
   };
 }

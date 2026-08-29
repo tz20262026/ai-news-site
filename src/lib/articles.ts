@@ -151,6 +151,12 @@ export type Article = {
   sourceUrl: string;
   tags: string[];
   publishedAt: string;
+  /**
+   * 記事が実際に改稿された日（"YYYY-MM-DD"）。publishedAt と異なる場合のみ設定する。
+   * NewsArticle 構造化データの dateModified・サイトマップの lastModified に使い、
+   * 「公開後に更新された記事」を検索エンジンへ正しく伝える（鮮度シグナル）。
+   */
+  updatedAt?: string;
   imageUrl?: string;
   /**
    * 事前計算済みの読了時間（分）。一覧系コンポーネント（ArticleList等）へ

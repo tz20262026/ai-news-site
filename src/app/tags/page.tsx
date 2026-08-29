@@ -123,34 +123,27 @@ export default function TagsPage() {
         </section>
       )}
 
-      {/* 全タグ一覧 */}
+      {/* 全タグ一覧（人気タグは上部で既出のため、ここでは残りのタグのみ描画して重複を排除） */}
       <section>
         <div className="flex items-center gap-2 mb-4">
           <h2 className="text-sm font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
-            すべてのタグ
+            その他のタグ
           </h2>
-          <span className="text-xs text-gray-500 dark:text-gray-300">（{totalTags}件）</span>
+          <span className="text-xs text-gray-500 dark:text-gray-300">（{regularTags.length}件）</span>
         </div>
         <div className="flex flex-wrap gap-2">
-          {tagCounts.map(({ tag, count }) => (
-            <Link
-              key={tag}
-              href={`/tags/${encodeURIComponent(tag)}`}
-              className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-2 py-0.5 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800/60 hover:-translate-y-0.5 transition-all duration-200"
-            >
+          {regularTags.map(({ tag, count }) => (
+            <Link key={tag} href={`/tags/${encodeURIComponent(tag)}`} className="tag-chip">
               #{tag}
-              <span className="opacity-60 tabular-nums">{count}</span>
+              <span className="tag-chip__count">{count}</span>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* 記事数が少ないタグの補足 */}
-      {regularTags.length > 0 && (
-        <p className="mt-6 text-xs text-gray-500 dark:text-gray-300 text-center">
-          記事数の少ないタグも含むすべての{totalTags}タグを表示しています
-        </p>
-      )}
+      <p className="mt-6 text-xs text-gray-500 dark:text-gray-300 text-center">
+        人気タグ{popularTags.length}件＋その他{regularTags.length}件、合計{totalTags}タグを掲載しています
+      </p>
 
       {/* JSON-LD 構造化データ */}
       <script

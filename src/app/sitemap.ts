@@ -11,7 +11,7 @@ function isUnsafeForStaticPath(tag: string): boolean {
 export default function sitemap(): MetadataRoute.Sitemap {
   const articleUrls = allArticles.map((article) => ({
     url: `${BASE_URL}/articles/${article.id}`,
-    lastModified: new Date(article.publishedAt),
+    lastModified: new Date(article.updatedAt ?? article.publishedAt),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));

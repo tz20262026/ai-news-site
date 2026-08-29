@@ -68,6 +68,37 @@ body {
   background: rgb(96 165 250 / 0.8);
 }
 
+/* タグクラウドのチップ。/tags は 500 個超のタグを描画するため、
+   Tailwind の長いクラス文字列を各要素にインライン展開すると HTML が肥大化する
+   （2026-08 監査で 527KB）。共通クラスに逃がして 1 要素あたりのバイト数を削る。 */
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background-color: rgb(219 234 254);
+  color: rgb(29 78 216);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.tag-chip:hover {
+  background-color: rgb(191 219 254);
+  transform: translateY(-2px);
+}
+.dark .tag-chip {
+  background-color: rgb(30 58 138 / 0.4);
+  color: rgb(96 165 250);
+}
+.dark .tag-chip:hover {
+  background-color: rgb(30 64 175 / 0.6);
+}
+.tag-chip__count {
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+
 /* ヒーロー背景動画：動きを減らす設定の人には再生させず、ポスター画像のみ見せる */
 @media (prefers-reduced-motion: reduce) {
   .hero-video {

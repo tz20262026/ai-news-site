@@ -23,7 +23,8 @@ export default function BackToTop() {
     <button
       onClick={scrollToTop}
       aria-label="トップに戻る"
-      className="fixed bottom-6 right-6 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition-all duration-300 text-xl"
+      // スマホでは画面下部の固定CTAバー（MobileStickyCTA）と重ならないよう一段上げる
+      className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition-all duration-300 text-xl"
     >
       ↑
     </button>
