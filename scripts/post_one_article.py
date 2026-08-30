@@ -32,7 +32,13 @@ POSTED_LOG          = DATA_DIR / "vercel_posted_ids.log"
 GCP_PROJECT    = os.environ.get("GCP_PROJECT", "")
 GCP_LOCATION   = os.environ.get("GCP_LOCATION", "us-central1")
 MODEL_NAME     = "gemini-2.5-pro"
-IMAGE_MODEL    = "imagen-3.0-generate-001"
+# Google が 2026-08 に imagen-3.0-generate-001 を廃止（404 NOT_FOUND）。
+# 複数の現行モデルを順に試し、全滅したら pick_image() のフォールバックに落ちる。
+IMAGE_MODELS   = [
+    "imagen-4.0-fast-generate-001",
+    "imagen-4.0-generate-001",
+    "imagen-3.0-generate-002",
+]
 GCS_BUCKET     = f"{GCP_PROJECT}-news-images" if GCP_PROJECT else ""
 
 logging.basicConfig(
@@ -143,20 +149,24 @@ def generate_and_upload_image(client: genai.Client, image_prompt: str, article_i
     if not image_prompt or not GCS_BUCKET:
         return ""
 
-    # 画像生成
-    try:
-        img_response = client.models.generate_images(
-            model=IMAGE_MODEL,
-            prompt=image_prompt,
-            config=types.GenerateImagesConfig(
-                number_of_images=1,
-                aspect_ratio="16:9",
-            ),
-        )
-        image_bytes = img_response.generated_images[0].image.image_bytes
-        logger.info("画像生成: 成功")
-    except Exception as e:
-        logger.warning(f"画像生成スキップ: {e}")
+    # 画像生成（現行モデルを順に試す）
+    image_bytes = None
+    for model_name in IMAGE_MODELS:
+        try:
+            img_response = client.models.generate_images(
+                model=model_name,
+                prompt=image_prompt,
+                config=types.GenerateImagesConfig(
+                    number_of_images=1,
+                    aspect_ratio="16:9",
+                ),
+            )
+            image_bytes = img_response.generated_images[0].image.image_bytes
+            logger.info(f"画像生成: 成功 ({model_name})")
+            break
+        except Exception as e:
+            logger.warning(f"画像生成スキップ ({model_name}): {e}")
+    if image_bytes is None:
         return ""
 
     # GCS にアップロード

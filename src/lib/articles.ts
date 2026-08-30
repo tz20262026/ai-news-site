@@ -1,9 +1,56 @@
 import extraArticlesData from "@/data/extra_articles.json";
 
+// Imagen 生成失敗時のフォールバック用フォトプール（2026-08-30 時点で全URL 200 を確認）。
+// picsum.photos は毎回無関係な写真で「画像が同じに見える」苦情の原因になったため廃止。
+// scripts/image_utils.py の _FALLBACK_POOL と同一。
+const FALLBACK_IMAGE_POOL: readonly string[] = [
+  "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1561580125-028ee3bd62eb?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&q=80&fit=crop",
+  "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80&fit=crop",
+];
+
+/** 記事ID（なければタグ）を安定ハッシュしてフォトプールから1枚を確定的に選ぶ */
+function fallbackImageFor(seedSource: string): string {
+  const seed = seedSource || "ainews";
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) {
+    h = (h * 31 + seed.charCodeAt(i)) & 0xffffffff;
+  }
+  return FALLBACK_IMAGE_POOL[h % FALLBACK_IMAGE_POOL.length];
+}
+
 export function getArticleImageUrl(article: { id?: string; imageUrl?: string; tags: string[] }): string {
-  if (article.imageUrl) return article.imageUrl;
-  const seed = article.id ?? article.tags.join("");
-  return `https://picsum.photos/seed/${encodeURIComponent(seed)}/800/420`;
+  // 廃止した picsum.photos の残存URLは無視してフォトプールに寄せる
+  if (article.imageUrl && !article.imageUrl.includes("picsum.photos")) return article.imageUrl;
+  return fallbackImageFor(article.id ?? article.tags.join(""));
 }
 
 /** 記事の本文から「何分で読めるか」を計算する（日本語500文字/分） */

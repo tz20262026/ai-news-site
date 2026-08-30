@@ -79,7 +79,30 @@ CATEGORY_IMAGES: dict[str, str] = {
     "Enterprise":    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop",
 }
 
+# Imagen 生成が失敗したときに使う、実在確認済み（2026-08-30時点で全URL 200）の
+# テック/AI系フォトプール。picsum.photos は毎回無関係な写真が出て「同じに見える」
+# 苦情の原因になったため廃止。記事IDのハッシュで分散させ重複を最小化する。
+_FALLBACK_POOL: list[str] = sorted({
+    v for v in CATEGORY_IMAGES.values()
+    # 404 になった1枚を除外
+    if "photo-1549317661-bd32c8ce0729" not in v
+})
+
+
 def pick_image(article_id: str, tags: list[str]) -> str:
-    """記事IDをシードにPicsum Photosの確定的な画像URLを返す。"""
-    seed = article_id or "".join(tags)
-    return f"https://picsum.photos/seed/{seed}/800/420"
+    """記事ID（なければタグ）のハッシュで、確定的にフォトプールから1枚選ぶ。"""
+    # タグがプールの特定カテゴリに一致すればそれを優先しつつ、
+    # 同じタグの記事同士が被らないよう記事IDのハッシュでずらす。
+    seed = article_id or "".join(tags) or "ainews"
+    h = 0
+    for ch in seed:
+        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+
+    base = 0
+    for t in tags:
+        if t in CATEGORY_IMAGES and CATEGORY_IMAGES[t] in _FALLBACK_POOL:
+            base = _FALLBACK_POOL.index(CATEGORY_IMAGES[t])
+            break
+
+    idx = (base + h) % len(_FALLBACK_POOL)
+    return _FALLBACK_POOL[idx]
