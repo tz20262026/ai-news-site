@@ -187,6 +187,16 @@ export default async function Home() {
             <p className="text-xs text-violet-300/70 mt-0.5">部署別事例・導入ステップ・ROI</p>
           </div>
         </Link>
+        <Link
+          href="/ai-work-safety-guide"
+          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-amber-950/60 to-amber-900/30 border border-amber-800/60 hover:border-amber-500 transition-all group"
+        >
+          <span className="text-2xl flex-shrink-0">⚠️</span>
+          <div>
+            <p className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">仕事でAIを使う注意点</p>
+            <p className="text-xs text-amber-300/70 mt-0.5">情報漏洩・著作権・ハルシネーション対策</p>
+          </div>
+        </Link>
       </div>
 
       {/* 今日の注目セクション */}
