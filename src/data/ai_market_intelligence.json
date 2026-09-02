@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T14:31:53.258900+09:00",
-  "aiJudgment": "開発市場ではAIエージェントによる自動構築が主流に。事務効率化は既存業務フローへの統合が鍵。クリエイティブではSoraが足踏みし、Midjourneyが安定感を示す。",
+  "updatedAt": "2026-09-02T13:57:48.576578+09:00",
+  "aiJudgment": "開発分野ではエージェント型ツールが台頭し非技術者の参入を促進。各分野で特化したリーダーが地位を固める一方、Soraのような期待のツールは不安定さも露呈している。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャット形式で本番環境対応アプリを構築できる手軽さと実用性が群を抜く。コーディング不要でアイデアを即座に形にできるため、開発のハードルを劇的に下げている点を高く評価。",
+      "reason": "チャットでアイデアを伝えるだけで本番環境で通用するアプリを構築できるエージェント機能は、非技術者でも開発を可能にし、市場に大きな変革をもたらす可能性を秘めているため。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問合せ",
-          "newFeature": "チャットによる本番アプリ構築",
+          "price": "公式サイト参照",
+          "newFeature": "チャットによるアプリ構築エージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットでアイデアを伝えると、AIが本番環境対応のアプリを構築してくれるエージェント。"
+          "summary": "チャットでアプリやウェブサイトを構築するAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要問合せ",
-          "newFeature": "エンドツーエンドのインフラ管理",
-          "rating": 4,
+          "price": "公式サイト参照",
+          "newFeature": "アイデアからのリアルタイムソフトウェア構築",
+          "rating": 5,
           "badge": null,
-          "summary": "自然言語で指示するだけで、本番グレードのソフトウェアをリアルタイムで構築・運用できるプラットフォーム。"
+          "summary": "アイデアを平易な言葉で記述し、本番品質のソフトウェアを構築する。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要問合せ",
-          "newFeature": "Claude 3.5モデルファミリー搭載",
-          "rating": 4,
+          "price": "公式サイト参照",
+          "newFeature": "新モデル群(Opus等)と多様な機能",
+          "rating": 5,
           "badge": null,
-          "summary": "Anthropic社の強力なAIモデル群を基盤とした、コーディングに特化したAIアシスタント。"
+          "summary": "Anthropic社の新モデル群を搭載した高度なコーディング支援ツール。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "要問合せ",
-          "newFeature": "ウェブサイト、スライド、ゲーム作成",
-          "rating": 3,
+          "price": "公式サイト参照",
+          "newFeature": "スライド、ウェブ、音楽等の多機能生成",
+          "rating": 4,
           "badge": null,
-          "summary": "ウェブサイト構築からデザイン、スライド作成まで、幅広いタスクをこなす多機能AI。"
+          "summary": "ウェブサイト、スライド、デザイン、音楽などを生成する多目的AI。"
         }
       ]
     },
@@ -58,16 +58,16 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365連携やCowork機能など、ビジネス業務への深い統合が強み。幅広い部署や業界での活用事例があり、汎用性と専門性を両立している。",
+      "reason": "Claude CoworkやMicrosoft 365連携など、具体的な業務連携機能が充実。法務やサイバーセキュリティなど専門分野への応用も示唆されており、実用性が高いため。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "要問合せ",
-          "newFeature": "Claude for Microsoft 365連携",
-          "rating": 5,
+          "price": "公式サイト参照",
+          "newFeature": "Claude Cowork, M365連携など",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "Anthropic社が開発した汎用AIアシスタント。ビジネスから日常業務まで幅広くサポート。"
+          "summary": "法務、サイバーセキュリティ等、多様な業務を支援する汎用AIアシスタント。"
         }
       ]
     },
@@ -79,25 +79,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "世界最高峰の画像生成品質を誇り、安定したサービスを提供。期待の競合Soraがアクセス障害で足踏みする中、その信頼性と芸術性で市場をリードしている。",
+      "reason": "世界で最も美しいAIモデルと自負する品質と実績は揺るぎない。公式サイトがダウンしている競合に対し、安定したサービスと今後の野心的なプロジェクト計画が評価できるため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要問合せ",
-          "newFeature": "新プロジェクト構想を発表",
+          "price": "公式サイト参照",
+          "newFeature": "新規プロジェクトを複数計画中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルと評される画像生成AI。芸術的な表現力に定評がある。"
+          "summary": "世界で最も美しいと評されるAIモデルによる画像生成サービス。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "要問合せ",
+          "price": "不明",
           "newFeature": "公式サイトアクセス不可",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発するテキスト動画生成モデル。現在、公式サイトで問題が発生中。"
+          "summary": "OpenAIが開発するテキストから動画を生成するAIモデル。(現在アクセス不可)"
         }
       ]
     }
