@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-02T13:57:48.576578+09:00",
-  "aiJudgment": "開発分野ではエージェント型ツールが台頭し非技術者の参入を促進。各分野で特化したリーダーが地位を固める一方、Soraのような期待のツールは不安定さも露呈している。",
+  "updatedAt": "2026-09-03T13:55:13.236928+09:00",
+  "aiJudgment": "開発系AIエージェントの競争が激化。プラットフォームの生態系構築と安定稼働が勝敗を分ける。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットでアイデアを伝えるだけで本番環境で通用するアプリを構築できるエージェント機能は、非技術者でも開発を可能にし、市場に大きな変革をもたらす可能性を秘めているため。",
+      "reason": "チャットで本番仕様のアプリを構築できる点を強調。非エンジニアでも利用可能な手軽さと、具体的なアウトプットへのフォーカスが強力。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "公式サイト参照",
-          "newFeature": "チャットによるアプリ構築エージェント",
+          "price": "サイト参照",
+          "newFeature": "チャットによるアプリ自動構築",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットでアプリやウェブサイトを構築するAIコーディングエージェント。"
+          "summary": "チャットで指示するだけで、本番仕様のアプリやウェブサイトを構築するAIエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "公式サイト参照",
-          "newFeature": "アイデアからのリアルタイムソフトウェア構築",
-          "rating": 5,
+          "price": "Pricingページあり",
+          "newFeature": "アイデアのリアルタイム具現化",
+          "rating": 4,
           "badge": null,
-          "summary": "アイデアを平易な言葉で記述し、本番品質のソフトウェアを構築する。"
+          "summary": "平易な言葉での指示から、本番グレードのソフトウェアをリアルタイムで構築するプラットフォーム。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "公式サイト参照",
-          "newFeature": "新モデル群(Opus等)と多様な機能",
-          "rating": 5,
+          "price": "要問い合わせ",
+          "newFeature": "Claudeエコシステムの一部",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropic社の新モデル群を搭載した高度なコーディング支援ツール。"
+          "summary": "Anthropicのコーディング特化モデル。Claudeプラットフォーム上で利用可能。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "公式サイト参照",
-          "newFeature": "スライド、ウェブ、音楽等の多機能生成",
+          "price": "Pricingページあり",
+          "newFeature": "Webサイト、スライド、ゲーム等",
           "rating": 4,
           "badge": null,
-          "summary": "ウェブサイト、スライド、デザイン、音楽などを生成する多目的AI。"
+          "summary": "ウェブサイト構築からスライド作成、デザインまでこなす多機能AIアシスタント。"
         }
       ]
     },
@@ -58,16 +58,16 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claude CoworkやMicrosoft 365連携など、具体的な業務連携機能が充実。法務やサイバーセキュリティなど専門分野への応用も示唆されており、実用性が高いため。",
+      "reason": "豊富なモデル群とM365等の連携機能を持ち、多様な業務に対応可能。エンタープライズから個人まで幅広く活用できるプラットフォームとしての完成度が高い。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "公式サイト参照",
-          "newFeature": "Claude Cowork, M365連携など",
-          "rating": 4,
+          "price": "Pricingページあり",
+          "newFeature": "Opus, Sonnet, Haikuモデル群",
+          "rating": 5,
           "badge": "AI's Choice",
-          "summary": "法務、サイバーセキュリティ等、多様な業務を支援する汎用AIアシスタント。"
+          "summary": "Anthropicが開発した大規模言語モデル。APIやWebアプリで利用可能。"
         }
       ]
     },
@@ -79,16 +79,16 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "世界で最も美しいAIモデルと自負する品質と実績は揺るぎない。公式サイトがダウンしている競合に対し、安定したサービスと今後の野心的なプロジェクト計画が評価できるため。",
+      "reason": "世界で最も美しいAIモデルを標榜し、安定したサービスを提供。公式サイトがダウンしているSoraに対し、信頼性と実績で圧倒的に優位。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "公式サイト参照",
-          "newFeature": "新規プロジェクトを複数計画中",
+          "price": "サイト参照",
+          "newFeature": "「最も美しいAIモデル」を標榜",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいと評されるAIモデルによる画像生成サービス。"
+          "summary": "高品質で芸術的な画像生成に特化したAI。世界中に多くのユーザーを持つ。"
         },
         {
           "id": "sora",
@@ -97,7 +97,7 @@
           "newFeature": "公式サイトアクセス不可",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発するテキストから動画を生成するAIモデル。(現在アクセス不可)"
+          "summary": "OpenAIが開発する動画生成AI。現在、公式サイトにアクセスできない状態。"
         }
       ]
     }
