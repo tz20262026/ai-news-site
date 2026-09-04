@@ -402,6 +402,9 @@ export default async function ArticlePage({ params }: Props) {
               "@type": "WebPage",
               "@id": canonicalUrl,
             },
+            isPartOf: { "@id": "https://ai-news-site-wheat.vercel.app/#website" },
+            ...(primaryTag ? { articleSection: primaryTag } : {}),
+            wordCount: article.body.replace(/\s/g, "").length,
             keywords: article.tags.join(", "),
           }),
         }}

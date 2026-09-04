@@ -56,11 +56,26 @@ async function fetchArticles() {
 
 export default async function Home() {
   const rawArticles = await fetchArticles();
-  // 2026-08-18 SEO監査で発見：一覧表示には不要な body（記事本文全文）を
-  // 451記事分そのままクライアントに渡していたため、ホームページのHTMLが
-  // 約2.2MBまで肥大化していた（Core Web Vitals・クロール負荷に悪影響）。
-  // 読了時間だけ事前計算し、body は空にしてから渡すことでペイロードを大幅削減する。
-  const articles = rawArticles.map((a) => ({ ...a, body: "", readTime: getReadTime(a.body) }));
+  // 2026-08-18 SEO監査で発見：一覧表示には不要な body（記事本文全文）を全記事分
+  // そのままクライアントに渡していたため、ホームページのHTMLが約2.2MBまで肥大化していた
+  // （Core Web Vitals・クロール負荷に悪影響）。読了時間だけ事前計算し body は空にする。
+  // 2026-09-04 追加軽量化：一覧・検索・サイドバーで使わない重いフィールド（body / sourceUrl / updatedAt）は
+  // クライアントへ渡さずに落とす。さらにトップに載せるのは新しい方から HOMEPAGE_LIMIT 件に絞る。
+  // （全記事は sitemap.xml・各タグページ・個別静的ルートから引き続きクロール可能なので
+  //  SEO 上の損失はほぼ無く、ホームページの HTML / RSC ペイロードだけが軽くなる）
+  const HOMEPAGE_LIMIT = 300;
+  const totalArticleCount = rawArticles.length;
+  const articles = rawArticles
+    .slice()
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, HOMEPAGE_LIMIT)
+    .map((a) => ({
+      ...a,
+      body: "",
+      sourceUrl: "",
+      updatedAt: undefined,
+      readTime: getReadTime(a.body),
+    }));
   const latestDate = articles.map((a) => a.publishedAt).sort().at(-1) ?? "";
   const todayArticles = articles.filter((a) => a.publishedAt === latestDate).slice(0, 3);
 
@@ -106,7 +121,7 @@ export default async function Home() {
           <p className="text-sm text-blue-100/90 leading-relaxed max-w-lg drop-shadow">
             TechCrunch・VentureBeat など海外100媒体から毎日自動収集。
             AIが自律的に精査した{" "}
-            <strong className="text-white font-semibold">{articles.length}件</strong>
+            <strong className="text-white font-semibold">{totalArticleCount}件</strong>
             {" "}の記事をお届け。
           </p>
           <div className="flex flex-wrap gap-3 mt-4">

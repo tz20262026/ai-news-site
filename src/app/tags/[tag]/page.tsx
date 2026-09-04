@@ -11,6 +11,12 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 
 type Props = { params: Promise<{ tag: string }> };
 
+// 1タグあたりの表示上限。これ以上は「もっと見る」導線（トップ／サイト内検索）へ誘導する。
+// タグ "ai" のように数百件マッチするタグでページ HTML が 500KB を超えていたのを抑える。
+const MAX_ARTICLES_PER_TAG = 48;
+// 掲載記事がこの件数未満のタグページは内容が薄い（thin content）ため noindex にする。
+const MIN_ARTICLES_FOR_INDEX = 3;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { tag } = await params;
   const decoded = decodeURIComponent(tag).normalize("NFC");
@@ -18,10 +24,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     a.tags.some((t) => t.toLowerCase() === decoded.toLowerCase())
   );
   const canonicalUrl = `https://ai-news-site-wheat.vercel.app/tags/${tag}`;
+  const thin = articles.length < MIN_ARTICLES_FOR_INDEX;
   return {
     title: `#${decoded} の記事一覧`,
     description: `「${decoded}」に関するAIニュース記事を${articles.length}件掲載しています。TechCrunch・VentureBeatなど海外メディアから厳選した最新情報をお届け。`,
     alternates: { canonical: canonicalUrl },
+    robots: thin ? { index: false, follow: true } : undefined,
     openGraph: {
       title: `#${decoded} の記事一覧 | AI News Japan`,
       description: `「${decoded}」に関するAIニュースを${articles.length}件掲載`,
@@ -61,21 +69,31 @@ export async function generateStaticParams() {
 export default async function TagPage({ params }: Props) {
   const { tag } = await params;
   const decoded = decodeURIComponent(tag).normalize("NFC");
-  const articles: Article[] = allArticles.filter((a) =>
-    a.tags.some((t) => t.toLowerCase() === decoded.toLowerCase())
-  );
+  const matched: Article[] = allArticles
+    .filter((a) => a.tags.some((t) => t.toLowerCase() === decoded.toLowerCase()))
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
-  if (articles.length === 0) notFound();
+  if (matched.length === 0) notFound();
+
+  const totalMatched = matched.length;
+  const articles = matched.slice(0, MAX_ARTICLES_PER_TAG);
+  const hasMore = totalMatched > MAX_ARTICLES_PER_TAG;
+  const canonicalUrl = `https://ai-news-site-wheat.vercel.app/tags/${tag}`;
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-0">
-      {/* 戻るリンク */}
-      <Link
-        href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-6"
-      >
-        ← 記事一覧に戻る
-      </Link>
+      {/* パンくずリスト（SEO・回遊性向上） */}
+      <nav aria-label="パンくずリスト" className="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-gray-500 dark:text-gray-300">
+        <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          ホーム
+        </Link>
+        <span className="text-gray-300 dark:text-gray-600">/</span>
+        <Link href="/tags" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          タグ一覧
+        </Link>
+        <span className="text-gray-300 dark:text-gray-600">/</span>
+        <span className="text-gray-500 dark:text-gray-300">#{decoded}</span>
+      </nav>
 
       {/* ページヘッダー */}
       <div className="mb-7">
@@ -85,11 +103,11 @@ export default async function TagPage({ params }: Props) {
             {decoded}
           </h1>
           <span className="text-sm font-semibold bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-3 py-1 rounded-full">
-            {articles.length}件
+            {totalMatched}件
           </span>
         </div>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
-          「{decoded}」に関する最新AIニュース
+          「{decoded}」に関する最新AIニュース{hasMore ? `（新しい${articles.length}件を表示中）` : ""}
         </p>
       </div>
 
@@ -158,10 +176,39 @@ export default async function TagPage({ params }: Props) {
         ))}
       </div>
 
+      {/* 表示上限を超えた場合の続き導線 */}
+      {hasMore && (
+        <div className="mt-8 text-center text-sm text-gray-500 dark:text-gray-300">
+          <p>
+            「{decoded}」の記事は全{totalMatched}件。さらに読むには{" "}
+            <Link href="/" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+              トップの検索
+            </Link>
+            {" "}をご利用ください。
+          </p>
+        </div>
+      )}
+
       {/* メール登録導線 */}
       <div className="mt-8 max-w-md mx-auto">
         <NewsletterSignup compact />
       </div>
+
+      {/* JSON-LD 構造化データ（パンくずリスト） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "ホーム", item: "https://ai-news-site-wheat.vercel.app" },
+              { "@type": "ListItem", position: 2, name: "タグ一覧", item: "https://ai-news-site-wheat.vercel.app/tags" },
+              { "@type": "ListItem", position: 3, name: `#${decoded}`, item: canonicalUrl },
+            ],
+          }),
+        }}
+      />
 
       {/* JSON-LD 構造化データ */}
       <script
@@ -171,8 +218,8 @@ export default async function TagPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             name: `#${decoded} の記事一覧`,
-            description: `「${decoded}」に関するAIニュース記事 ${articles.length}件`,
-            url: `https://ai-news-site-wheat.vercel.app/tags/${tag}`,
+            description: `「${decoded}」に関するAIニュース記事 ${totalMatched}件`,
+            url: canonicalUrl,
             publisher: {
               "@type": "Organization",
               name: "AI News Japan",

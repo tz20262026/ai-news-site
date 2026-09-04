@@ -73,13 +73,14 @@ export default function TagsPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-0">
-      {/* 戻るリンク */}
-      <Link
-        href="/"
-        className="inline-flex items-center gap-1 text-sm text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-6"
-      >
-        ← 記事一覧に戻る
-      </Link>
+      {/* パンくずリスト（SEO・回遊性向上） */}
+      <nav aria-label="パンくずリスト" className="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-gray-500 dark:text-gray-300">
+        <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          ホーム
+        </Link>
+        <span className="text-gray-300 dark:text-gray-600">/</span>
+        <span className="text-gray-500 dark:text-gray-300">タグ一覧</span>
+      </nav>
 
       {/* ページヘッダー */}
       <div className="mb-8">
@@ -144,6 +145,21 @@ export default function TagsPage() {
       <p className="mt-6 text-xs text-gray-500 dark:text-gray-300 text-center">
         人気タグ{popularTags.length}件＋その他{regularTags.length}件、合計{totalTags}タグを掲載しています
       </p>
+
+      {/* JSON-LD 構造化データ（パンくずリスト） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "ホーム", item: "https://ai-news-site-wheat.vercel.app" },
+              { "@type": "ListItem", position: 2, name: "タグ一覧", item: "https://ai-news-site-wheat.vercel.app/tags" },
+            ],
+          }),
+        }}
+      />
 
       {/* JSON-LD 構造化データ */}
       <script

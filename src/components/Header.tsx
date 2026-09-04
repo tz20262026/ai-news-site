@@ -55,7 +55,9 @@ export default function Header() {
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className="p-2 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800 transition-colors"
-            aria-label="メニューを開く"
+            aria-label={menuOpen ? "メニューを閉じる" : "メニューを開く"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav-drawer"
           >
             {menuOpen ? (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -72,7 +74,7 @@ export default function Header() {
 
       {/* スマホ ドロワーメニュー */}
       {menuOpen && (
-        <div className="sm:hidden bg-gray-900 border-t border-gray-800 px-4 py-3">
+        <div id="mobile-nav-drawer" className="sm:hidden bg-gray-900 border-t border-gray-800 px-4 py-3">
           <nav className="flex flex-col">
             {NAV_LINKS.map(({ href, label }) => (
               <Link
