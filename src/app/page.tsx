@@ -169,7 +169,7 @@ export default async function Home() {
           <span className="text-2xl flex-shrink-0">🎯</span>
           <div>
             <p className="text-sm font-bold text-white group-hover:text-rose-300 transition-colors">AIツール診断</p>
-            <p className="text-xs text-rose-300/70 mt-0.5">7つの質問で最適な1本がわかる</p>
+            <p className="text-xs text-rose-200 mt-0.5">7つの質問で最適な1本がわかる</p>
           </div>
         </Link>
         <Link
@@ -179,7 +179,7 @@ export default async function Home() {
           <span className="text-2xl flex-shrink-0">🚀</span>
           <div>
             <p className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">AI初心者完全ガイド</p>
-            <p className="text-xs text-blue-300/70 mt-0.5">ChatGPT・Gemini・Claude入門</p>
+            <p className="text-xs text-blue-200 mt-0.5">ChatGPT・Gemini・Claude入門</p>
           </div>
         </Link>
         <Link
@@ -189,7 +189,7 @@ export default async function Home() {
           <span className="text-2xl flex-shrink-0">🤖</span>
           <div>
             <p className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">ChatGPT使い方ガイド</p>
-            <p className="text-xs text-emerald-300/70 mt-0.5">プロンプト・業務活用・無料vs有料</p>
+            <p className="text-xs text-emerald-200 mt-0.5">プロンプト・業務活用・無料vs有料</p>
           </div>
         </Link>
         <Link
@@ -199,7 +199,7 @@ export default async function Home() {
           <span className="text-2xl flex-shrink-0">💼</span>
           <div>
             <p className="text-sm font-bold text-white group-hover:text-violet-300 transition-colors">AI業務活用ガイド</p>
-            <p className="text-xs text-violet-300/70 mt-0.5">部署別事例・導入ステップ・ROI</p>
+            <p className="text-xs text-violet-200 mt-0.5">部署別事例・導入ステップ・ROI</p>
           </div>
         </Link>
         <Link
@@ -209,7 +209,7 @@ export default async function Home() {
           <span className="text-2xl flex-shrink-0">⚠️</span>
           <div>
             <p className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">仕事でAIを使う注意点</p>
-            <p className="text-xs text-amber-300/70 mt-0.5">情報漏洩・著作権・ハルシネーション対策</p>
+            <p className="text-xs text-amber-200 mt-0.5">情報漏洩・著作権・ハルシネーション対策</p>
           </div>
         </Link>
       </div>
