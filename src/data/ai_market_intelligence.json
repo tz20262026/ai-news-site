@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-09-04T13:59:44.639550+09:00",
-  "aiJudgment": "開発系AIはノーコード化が加速し競争激化。一方クリエイティブ系ではSoraの失速でMidjourneyが独走態勢を固める。",
+  "updatedAt": "2026-09-05T13:52:24.383533+09:00",
+  "aiJudgment": "開発部門はClaude新モデルが市場を席巻。クリエイティブはMidjourneyが首位堅持。Soraの失速で、安定性と最新技術のバランスが問われる月となった。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "「コーディング不要でチャットから本番環境対応のアプリを構築できる」というコンセプトが強力。エンジニアリングチームをオンデマンドで提供するという価値提案は、開発のハードルを劇的に下げる可能性を秘めているため。",
+      "reason": "新モデル群（Opus, Sonnet, Haiku）の発表でコーディング性能が飛躍的に向上。強力なAPIも提供し、開発プラットフォームとしての基盤を固めたため。",
       "tools": [
+        {
+          "id": "claude",
+          "name": "Claude",
+          "price": "有料プランあり",
+          "newFeature": "新モデル群(Opus, Sonnet, Haiku)提供",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "Anthropicの高性能AI。コーディングから対話までこなし、新モデル群で性能が飛躍的に向上したプラットフォーム。"
+        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "記載なし",
-          "newFeature": "チャットでアプリを構築するエージェント機能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "チャットで指示するだけで、本番環境対応のアプリやウェブサイトを構築するAIエージェント。"
+          "price": "要問い合わせ",
+          "newFeature": "チャットを通じたアプリ自動構築",
+          "rating": 4,
+          "badge": null,
+          "summary": "チャットで指示するだけで、本番環境で使えるアプリを構築するAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "無料プランあり",
-          "newFeature": "エンドツーエンドのインフラを自動管理",
-          "rating": 5,
+          "price": "有料プランあり",
+          "newFeature": "エンドツーエンドのインフラ自動管理",
+          "rating": 4,
           "badge": null,
-          "summary": "アイデアを記述するだけで、インフラ含め製品全体をリアルタイムに構築・管理するプラットフォーム。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "無料プランあり",
-          "newFeature": "新モデルOpus, Sonnet, Haikuを搭載",
-          "rating": 5,
-          "badge": null,
-          "summary": "Anthropic社の最新モデル群を搭載した、高度なコーディング支援AI。"
+          "summary": "自然言語でアイデアを記述し、本番グレードのソフトウェアをリアルタイムで構築・運用するプラットフォーム。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "無料プランあり",
-          "newFeature": "独立運営を再開し、新章を開始",
-          "rating": 4,
+          "price": "有料プランあり",
+          "newFeature": "独立運営を再開",
+          "rating": 3,
           "badge": null,
-          "summary": "サイト構築からスライド作成までこなす多機能AI。競合比較ページで挑戦的な姿勢を示す。"
+          "summary": "ウェブサイト構築、スライド作成、デザインなど多機能なAI。競合比較ページで独自性をアピール。"
         }
       ]
     },
@@ -58,18 +58,8 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365との連携機能が発表され、日常的なオフィスワークへの統合が加速。汎用性と高度な対話能力を両立し、幅広い事務作業の効率化に貢献するため、今月の最強選択と評価。",
-      "tools": [
-        {
-          "id": "claude",
-          "name": "Claude",
-          "price": "無料プランあり",
-          "newFeature": "Claude for Microsoft 365連携機能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Chrome拡張やM365連携で業務効率を向上させる、Anthropic社の汎用AIアシスタント。"
-        }
-      ]
+      "reason": "Microsoft 365連携や共同作業機能により、文書作成や要約など事務タスクを効率化。開発ツールに留まらない、ビジネス現場での実用性が評価された。",
+      "tools": []
     },
     {
       "id": "creative",
@@ -79,36 +69,29 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "競合のSoraが公式サイトでアクセス障害を起こす中、安定したサービス提供と今後の野心的なプロジェクト発表で存在感を示す。画像生成AIの品質と芸術性で依然として市場をリードしているため。",
+      "reason": "画像生成AIとして圧倒的な品質と芸術性を維持し、クリエイターから絶大な支持を得ている。競合が足踏みする中、その地位は揺るぎなく、最も安定した選択肢。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "サブスクリプション",
-          "newFeature": "複数の新テーマに基づくプロジェクトを予告",
+          "price": "有料プランあり",
+          "newFeature": "複数の新プロジェクトを計画中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "芸術性の高いビジュアル生成に特化したAI。世界で最も美しいモデルを謳う。"
+          "summary": "世界で最も美しいと評される画像生成AI。芸術的な表現力に定評があり、クリエイターに人気。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "非公開",
-          "newFeature": "公式サイトがアクセス不能状態",
-          "rating": 1,
+          "price": "未公開",
+          "newFeature": "情報なし（公式サイトアクセス不可）",
+          "rating": 2,
           "badge": null,
-          "summary": "OpenAIが開発するテキストtoビデオ生成AI。現在、公式サイトで技術的問題が発生中。"
+          "summary": "OpenAIが開発するテキストtoビデオ生成AI。現在、公式サイトにアクセスできない問題が発生中。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": [
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
-      "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusが公式サイトでLovableとの比較ページを公開し、直接的な挑戦を開始。"
-    }
-  ]
+  "alerts": []
 }
