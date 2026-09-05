@@ -164,52 +164,52 @@ export default async function Home() {
       <div className="mb-7 grid grid-cols-2 sm:grid-cols-4 gap-3">
         <Link
           href="/ai-tool-diagnosis"
-          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-rose-950/60 to-rose-900/30 border border-rose-800/60 hover:border-rose-500 transition-all group"
+          className="flex items-center gap-3 p-4 rounded-xl bg-rose-50 dark:bg-rose-950 border border-rose-200 dark:border-rose-800 hover:border-rose-400 dark:hover:border-rose-500 transition-all group"
         >
           <span className="text-2xl flex-shrink-0">🎯</span>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-rose-300 transition-colors">AIツール診断</p>
-            <p className="text-xs text-rose-200 mt-0.5">7つの質問で最適な1本がわかる</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-300 transition-colors">AIツール診断</p>
+            <p className="text-xs text-rose-700 dark:text-rose-200 mt-0.5">7つの質問で最適な1本がわかる</p>
           </div>
         </Link>
         <Link
           href="/ai-beginner-guide"
-          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-blue-950/60 to-blue-900/30 border border-blue-800/60 hover:border-blue-500 transition-all group"
+          className="flex items-center gap-3 p-4 rounded-xl bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all group"
         >
           <span className="text-2xl flex-shrink-0">🚀</span>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">AI初心者完全ガイド</p>
-            <p className="text-xs text-blue-200 mt-0.5">ChatGPT・Gemini・Claude入門</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">AI初心者完全ガイド</p>
+            <p className="text-xs text-blue-700 dark:text-blue-200 mt-0.5">ChatGPT・Gemini・Claude入門</p>
           </div>
         </Link>
         <Link
           href="/chatgpt-guide"
-          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-950/60 to-emerald-900/30 border border-emerald-800/60 hover:border-emerald-500 transition-all group"
+          className="flex items-center gap-3 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 hover:border-emerald-400 dark:hover:border-emerald-500 transition-all group"
         >
           <span className="text-2xl flex-shrink-0">🤖</span>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">ChatGPT使い方ガイド</p>
-            <p className="text-xs text-emerald-200 mt-0.5">プロンプト・業務活用・無料vs有料</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">ChatGPT使い方ガイド</p>
+            <p className="text-xs text-emerald-700 dark:text-emerald-200 mt-0.5">プロンプト・業務活用・無料vs有料</p>
           </div>
         </Link>
         <Link
           href="/ai-business-guide"
-          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-violet-950/60 to-violet-900/30 border border-violet-800/60 hover:border-violet-500 transition-all group"
+          className="flex items-center gap-3 p-4 rounded-xl bg-violet-50 dark:bg-violet-950 border border-violet-200 dark:border-violet-800 hover:border-violet-400 dark:hover:border-violet-500 transition-all group"
         >
           <span className="text-2xl flex-shrink-0">💼</span>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-violet-300 transition-colors">AI業務活用ガイド</p>
-            <p className="text-xs text-violet-200 mt-0.5">部署別事例・導入ステップ・ROI</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-300 transition-colors">AI業務活用ガイド</p>
+            <p className="text-xs text-violet-700 dark:text-violet-200 mt-0.5">部署別事例・導入ステップ・ROI</p>
           </div>
         </Link>
         <Link
           href="/ai-work-safety-guide"
-          className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-amber-950/60 to-amber-900/30 border border-amber-800/60 hover:border-amber-500 transition-all group"
+          className="flex items-center gap-3 p-4 rounded-xl bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 hover:border-amber-400 dark:hover:border-amber-500 transition-all group"
         >
           <span className="text-2xl flex-shrink-0">⚠️</span>
           <div>
-            <p className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors">仕事でAIを使う注意点</p>
-            <p className="text-xs text-amber-200 mt-0.5">情報漏洩・著作権・ハルシネーション対策</p>
+            <p className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">仕事でAIを使う注意点</p>
+            <p className="text-xs text-amber-700 dark:text-amber-200 mt-0.5">情報漏洩・著作権・ハルシネーション対策</p>
           </div>
         </Link>
       </div>
