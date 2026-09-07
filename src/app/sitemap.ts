@@ -394,6 +394,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
+    // 2026-09-04 新規追加：AI旅行の通信手段としてのSaily eSIM活用ガイド
+    {
+      url: `${BASE_URL}/saily-esim-ai-tabi`,
+      lastModified: new Date("2026-09-04"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // 2026-09-04 新規追加：公共Wi-FiでAIツールを安全に使うNordVPN活用ガイド
+    {
+      url: `${BASE_URL}/nordvpn-wifi-anzen`,
+      lastModified: new Date("2026-09-04"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // 2026-09-07 新規追加：AIブログ運用向けWordPress専用サーバー XServer for WordPress ガイド
+    {
+      url: `${BASE_URL}/xserver-wordpress-guide`,
+      lastModified: new Date("2026-09-07"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...tagUrls,
     ...articleUrls,
   ];

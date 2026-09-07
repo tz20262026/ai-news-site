@@ -32,6 +32,7 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["画像", "image", "ai画像"], guide: { href: "/ai-image-generation-guide", label: "AI画像生成ガイド", emoji: "🖼️" } },
   { keywords: ["英語", "英会話", "english", "speak", "elsa", "duolingo"], guide: { href: "/ai-english-guide", label: "AI英会話アプリ比較ガイド", emoji: "🗣️" } },
   { keywords: ["excel", "エクセル", "スプレッドシート", "spreadsheet"], guide: { href: "/ai-excel-guide", label: "Excel×AI活用ガイド", emoji: "📊" } },
+  { keywords: ["wordpress", "ワードプレス", "ブログ", "blog", "レンタルサーバー", "サーバー", "アフィリエイト", "メディア運営"], guide: { href: "/xserver-wordpress-guide", label: "XServer for WordPress 完全ガイド", emoji: "🧱" } },
 ];
 
 const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
