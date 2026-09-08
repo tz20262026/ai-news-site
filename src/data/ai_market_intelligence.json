@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-07T14:07:04.623776+09:00",
-  "aiJudgment": "今月のAIツール市場は開発分野が活況。チャットでアプリを構築するエージェント型が主流になる一方、Manusのような多機能ツールが既存の特化型ツールに挑戦する構図が鮮明に。",
+  "updatedAt": "2026-09-08T14:04:21.123944+09:00",
+  "aiJudgment": "開発系AIはチャットでアプリを完結させるエージェント化が加速。クリエイティブ系は品質向上と新たなビジョン提示で市場をリード。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "「コーディング不要でアプリを構築」という明確な価値提案が強力。アイデアを即座に形にできるエージェント機能は、開発のハードルを劇的に下げる可能性を秘めているため。",
+      "reason": "チャットベースで本番環境対応アプリを構築できる手軽さと強力さが際立つ。コーディング不要でエンジニアチームのように機能する点は、開発のハードルを劇的に下げる。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "公式サイト参照",
-          "newFeature": "チャットでのアプリ・ウェブサイト構築",
+          "price": "要問い合わせ",
+          "newFeature": "チャットでアプリを構築するAIエージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットで指示するだけで、本番環境で使えるアプリを構築するAIエージェント。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "公式サイト参照",
-          "newFeature": "Claude 3モデルファミリー搭載",
-          "rating": 5,
-          "badge": null,
-          "summary": "コーディングに特化したAI。最新モデル群を搭載し、開発のあらゆる場面を支援。"
+          "summary": "チャットでアイデアを伝えるとAIがアプリを構築。コーディング経験不要。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "公式サイト参照",
-          "newFeature": "アイデアからのリアルタイムソフトウェア構築",
+          "price": "無料〜",
+          "newFeature": "エンドツーエンドのインフラを自動管理",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアを言葉で伝えるだけで、インフラ含め製品全体をリアルタイムで構築。"
+          "summary": "自然言語で本番級ソフトを構築・管理できるオールインワンプラットフォーム。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "公式サイト参照",
-          "newFeature": "ウェブサイト、スライド、デザイン等の多目的生成",
+          "price": "要問い合わせ",
+          "newFeature": "サイト、スライド、ゲーム、デザイン等を生成",
           "rating": 4,
           "badge": null,
-          "summary": "ウェブサイト構築からデザインまでこなす多機能AI。競合比較ページで挑戦的な姿勢。"
+          "summary": "開発からデザインまで、多様なタスクをこなすインテリジェントAIアシスタント。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "無料〜",
+          "newFeature": "最新情報なし（サイト読込不可）",
+          "rating": 3,
+          "badge": null,
+          "summary": "Anthropic社のコーディング特化AI。詳細は現在不明。"
         }
       ]
     },
@@ -55,21 +55,11 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude for Microsoft 365",
+        "name": "該当なし",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365との統合により、既存の業務フローにAIを導入できる。ドキュメント作成など日常的な事務作業の効率を大幅に向上させるため。",
-      "tools": [
-        {
-          "id": "claude-m365",
-          "name": "Claude for Microsoft 365",
-          "price": "公式サイト参照",
-          "newFeature": "Microsoft 365とのシームレスな連携",
-          "rating": 4,
-          "badge": "AI's Choice",
-          "summary": "MS 365内でClaudeを活用し、ドキュメント作成や要約などの事務作業を効率化。"
-        }
-      ]
+      "reason": "今月は事務効率化セグメントで特筆すべきアップデートや新ツールは観測されなかったため、選定を見送る。",
+      "tools": []
     },
     {
       "id": "creative",
@@ -79,42 +69,29 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "「世界で最も美しいAIモデル」を標榜し、その生成物の品質は市場で高く評価されている。クリエイティブ分野において、圧倒的な表現力とインスピレーションを提供するため。",
+      "reason": "画像生成AIの品質で他を圧倒し続けている。新たに「想像力、協調」などをテーマにした野心的なプロジェクトを発表し、今後の展開への期待感が非常に高い。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "公式サイト参照",
-          "newFeature": "高品質なAIモデルによる画像生成",
+          "price": "有料プランのみ",
+          "newFeature": "想像力等をテーマにした新プロジェクト発表",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいと評されるAIモデルによる、高品質で芸術的な画像生成AI。"
+          "summary": "世界最高峰の品質を誇る画像生成AI。芸術的な表現力に定評あり。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "不明",
-          "newFeature": "テキストからの動画生成 (現在アクセス不可)",
-          "rating": 3,
+          "price": "未公開",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 2,
           "badge": null,
-          "summary": "OpenAIが開発するテキストtoビデオモデル。現在、公式サイトはアクセス不可の状態。"
+          "summary": "OpenAI製の動画生成AI。現在公式サイトがダウンしており利用不可。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": [
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
-      "existingTool": "Replit",
-      "message": "下克上の兆し：多機能AI「Manus」が、開発特化の「Replit」に比較ページで直接対決を挑む。"
-    },
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
-      "existingTool": "Lovable",
-      "message": "下克上の兆し：「Manus」が公式サイトで「Lovable」との比較を掲載し、市場での競争が激化。"
-    }
-  ]
+  "alerts": []
 }
