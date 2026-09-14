@@ -228,6 +228,11 @@ export default function SailyEsimGuidePage() {
           </h2>
           <p className="text-gray-300 text-sm leading-[1.9]">
             海外渡航の通信はSaily eSIMで「出発前に完結」させるのが2026年のスタンダードです。
+            AI翻訳・地図・チャットを軸にした具体的な使い方は
+            <Link href="/saily-esim-ai-tabi" className="text-blue-400 hover:underline">
+              AI旅行・海外出張の通信をSaily eSIMでまとめる実践ガイド
+            </Link>
+            にまとめました。
             現地でフリーWi-Fiを使う場面に備えて
             <Link href="/nordvpn-guide" className="text-blue-400 hover:underline">NordVPN</Link>
             を、海外から日本の動画サービスを見たい人は

@@ -228,6 +228,11 @@ export default function NordVpnGuidePage() {
           </h2>
           <p className="text-gray-300 text-sm leading-[1.9]">
             AIツールが日常になった今、通信のセキュリティは「あとで」ではなく「最初に」整えるべき土台です。
+            カフェ・空港・ホテルの無料Wi-FiでAIツールを使うときの具体的なリスクと対策は
+            <Link href="/nordvpn-wifi-anzen" className="text-blue-400 hover:underline">
+              公共Wi-FiでAIツールを安全に使うNordVPN活用ガイド
+            </Link>
+            にまとめました。
             バランス重視ならNordVPN、ライブ動画の速度最優先なら
             <Link href="/expressvpn-guide" className="text-blue-400 hover:underline">ExpressVPN</Link>、
             海外から日本のVOD視聴が目的なら

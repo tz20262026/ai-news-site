@@ -56,3 +56,5 @@ public/images/articles/
 
 # ローカルドキュメント
 *.docx
+
+.vercel
