@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_5ec207b746f8_1789696161",
+    "title": "【Stable Diffusion革命】画質が劇的に変わる…？謎のサンプラー「euler_cfg_pp」の正体を暴く！",
+    "summary": "【Stable Diffusion革命】画質が劇的に変わる…？謎のサンプラー「euler_cfg_pp」の正体を暴く！",
+    "body": "Stable Diffusionで理想の一枚を追い求めるクリエイターなら、誰もが一度は「サンプラー」の選択に頭を悩ませたことがあるだろう。数多くの選択肢の中で、定番の「Euler a」と、少し変わった名前の「euler_cfg_pp」。この二つ、一体何が違うのか？些細な違いだと見過ごしてはいないだろうか。実はこの選択が、あなたの作品を凡庸なレベルからプロの領域へと引き上げる、重要な鍵を握っているかもしれないのだ。今、その謎に満ちたベールを剥がし、あなたの画像生成プロセスを根底から変える可能性を探る時が来た。\n\n**Stable Diffusionの画質を左右するサンプラー、Eulerとeuler_cfg_ppの決定的違い**\n\nまず結論から言おう。「euler_cfg_pp」は、単なるEulerの亜種ではない。これは、画像生成のクオリティを劇的に向上させるための、ある「補正機能」を内蔵した特別なサンプラーなのだ。その核心は「CFG Rescale」という概念にある。CFG（Classifier-Free Guidance） Scaleは、生成される画像をどれだけプロンプトに忠実にするかを決める重要なパラメータだ。この値を高く設定すれば、プロンプトの指示が強く反映される一方、色が飽和して極端に鮮やかになったり、コントラストが強すぎて不自然になったりする副作用に悩まされた経験はないだろうか。まさにこの問題を解決するために登場したのが「euler_cfg_pp」なのだ。このサンプラーは、高いCFG値によって生じる色の破綻や過剰なディテールを、生成プロセスの内部で賢く補正してくれる。一方、古くから存在する「Euler」や「Euler a（ancestral）」は、高速でシンプルな動作が特徴だが、このような高度な補正機能は持たない。そのため、高いCFG値では絵が崩壊しやすく、クリエイターの意図とはかけ離れた結果を生むことがあった。つまり、プロンプトの意図を最大限に反映させつつ、画像の破綻を防ぎたいという、高度な要求に応えるために設計された進化形のサンプラーが「euler_cfg_pp」なのである。\n\n**高CFG値でのクオリティ追求！プロンプトに忠実な一枚を生み出す活用術**\n\nでは、この強力なサンプラーは、どのようなシーンで真価を発揮するのだろうか。最も輝くのは、間違いなく「プロンプトに極めて忠実でありながら、アーティスティックな完成度を追求したい」と考える、向上心あふれるAIクリエイターやプロの現場だ。例えば、複雑で詳細な指示が詰め込まれたプロンプトを使い、キャラクターの衣装の細かな装飾や、背景の特定のオブジェクトを正確に描き出したい場合を考えてみよう。通常、CFG値を10以上に設定してディテールを追い込むが、そこで発生するのが色の飽和だ。「euler_cfg_pp」を使えば、このリスクを大幅に低減し、狙い通りのディテールと自然な色彩を両立させることが可能になる。コンセプトアートの制作、広告用のビジュアル開発、あるいは特定の画風を徹底的に再現したいイラストレーターにとって、これはまさに福音と言えるだろう。これまで色の破綻を恐れてCFG値を控えめに設定していたクリエイターこそ、このサンプラーを試すべきだ。創造性のリミッターを外し、表現の限界を押し広げるための強力な武器となるはずだ。\n\n**追加費用なし！今すぐAutomatic1111で試す設定方法**\n\nこれほど魅力的な機能を聞くと、何か特別なモデルや拡張機能が必要で、導入が面倒なのではないか、あるいは有料なのではないかと考えるかもしれない。しかし、心配は一切不要だ。この「euler_cfg_pp」は、多くのStable Diffusion実行環境、特に広く使われている「AUTOMATIC1111 Web UI」に標準で搭載されている機能なのだ。つまり、追加の費用は一切かからず、複雑なインストール作業も必要ない。試す方法は驚くほど簡単だ。Web UIを立ち上げたら、いつも通りプロンプトや各種パラメータを設定し、「Sampling method」のドロップダウンメニューをクリックするだけ。そこに並ぶリストの中から「euler_cfg_pp」を選択し、いつもより少し高めのCFG値（例えば10〜15）を設定して「Generate」ボタンを押してみよう。これだけで、CFG Rescaleの魔法を体験することができる。今すぐ、あなたの環境でその違いを確かめてみてほしい。\n\n**まとめ：CFG Rescaleで画像生成は新たな次元へ**\n\n「euler_cfg_pp」は、単なるサンプラーの一種ではない。それは、高いCFG値における画質の破綻という長年の課題を解決し、クリエイターがプロンプトの持つ力を最大限に引き出すことを可能にする、革新的な技術だ。これまで諦めていた複雑な表現や、より深いディテールの追求が、このサンプラー一つで現実のものとなる。知識は力だ。この新たな武器を手に、あなたのAIアートを次のステージへと進化させよう。さあ、今すぐその実力を自分の目で確かめる時だ！",
+    "source": "Reddit Stablediff",
+    "sourceUrl": "https://www.reddit.com/r/StableDiffusion/comments/1rx9jga/euler_vs_euler_cfg_pp/",
+    "tags": [
+      "StableDiffusion"
+    ],
+    "publishedAt": "2026-09-18",
+    "imagePrompt": "A Japanese digital artist in their late 20s, intensely focused on a complex user interface on a large monitor in a dimly lit studio at night. The screen displays intricate parameter settings for an AI image generator, with the \"euler_cfg_pp\" sampler selected in a dropdown menu. A second monitor beside it shows a stunningly detailed fantasy character portrait, the result of their work. The artist's face is illuminated by the glow of the screens, showing a mix of concentration and creative satisfaction. Photorealistic, Cinematic lighting, High resolution.",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop"
+  },
+  {
     "id": "v_221f16021a6e_1789610520",
     "title": "LoRa学習の面倒なタグ付けはもう終わり！AIが爆速でキャプションを自動生成する神ツール、ついに降臨。",
     "summary": "LoRa学習の面倒なタグ付けはもう終わり！AIが爆速でキャプションを自動生成する神ツール、ついに降臨。",
