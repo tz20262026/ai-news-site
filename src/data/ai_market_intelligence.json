@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-09-17T14:11:01.438199+09:00",
-  "aiJudgment": "開発ツールはエージェント化・統合化が進む。汎用AIは業務連携を強化し、クリエイティブ分野は既存の王者が君臨。",
+  "updatedAt": "2026-09-18T14:04:05.602916+09:00",
+  "aiJudgment": "開発分野ではClaudeの新モデルが性能競争を牽引。クリエイティブ分野では王者Midjourneyが盤石。各ツールは専門特化か多機能化で差別化を図る段階に入った。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "Replit Agentは、アイデアからデプロイまでを単一プラットフォームで完結させる強力なAIコーディングエージェントを提供。チャットベースでアプリを構築できる手軽さと統合開発環境の強みを両立している。",
+      "reason": "Anthropicが最新の高性能モデル群（Opus, Sonnet, Haiku）を発表。コーディングの根幹性能を大幅に向上させ、他の開発支援ツールを技術力でリードしているため。",
       "tools": [
-        {
-          "id": "replit-agent",
-          "name": "Replit Agent",
-          "price": "要確認",
-          "newFeature": "チャットによるアプリ構築エージェント",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "ブラウザ完結型の開発環境。AIエージェントがアプリ開発を自動化。"
-        },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要確認",
-          "newFeature": "Opus, Sonnet, Haikuモデル搭載",
+          "price": "Pricing",
+          "newFeature": "新モデル群(Opus, Sonnet等)発表",
           "rating": 5,
-          "badge": null,
-          "summary": "Anthropic社のコーディング特化AI。高度な推論能力で開発を支援。"
+          "badge": "AI's Choice",
+          "summary": "Anthropicの高性能モデル群を搭載したコーディング支援AI。開発の生産性を飛躍させる。"
         },
         {
-          "id": "manus",
-          "name": "Manus",
-          "price": "要確認",
-          "newFeature": "競合(Lovable, Replit)比較ページ公開",
+          "id": "replit-agent",
+          "name": "Replit Agent",
+          "price": "Pricing",
+          "newFeature": "AIコーディングエージェント機能強化",
           "rating": 4,
           "badge": null,
-          "summary": "Webサイト、スライド、ゲームまで多岐にわたる生成が可能なAI。"
+          "summary": "チャットでアプリを構築できるAIエージェント。IDE統合でシームレスな開発体験を提供。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要確認",
-          "newFeature": "エンドツーエンドのインフラ提供",
+          "price": "Pricing",
+          "newFeature": "エンドツーエンドのインフラ提供を強調",
           "rating": 4,
           "badge": null,
-          "summary": "自然言語で本番環境グレードのソフトウェアを構築するAIアプリビルダー。"
+          "summary": "自然言語からアプリやWebサイトを構築。インフラまで含めたエンドツーエンド開発を実現。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "Pricing",
+          "newFeature": "競合比較ページ(vs Replit等)公開",
+          "rating": 3,
+          "badge": null,
+          "summary": "開発、デザイン、スライド作成までこなす多機能AI。競合を意識した積極的な展開が特徴。"
         }
       ]
     },
@@ -58,16 +58,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365との連携機能を発表し、ビジネス文書作成などの日常業務への統合を強化。幅広い業種・部門での活用が期待され、事務効率化の分野で他の追随を許さない。",
+      "reason": "Microsoft 365連携やCowork機能により、日常の事務作業へシームレスに統合。個別のタスク自動化を超え、チーム全体の生産性向上に貢献するエコシステムを構築しているため。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "要確認",
-          "newFeature": "Microsoft 365連携機能",
+          "price": "Pricing",
+          "newFeature": "Microsoft 365連携、Cowork機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Anthropic社の汎用AI。ビジネス、法務、サイバーセキュリティ等で活用。"
+          "summary": "MS 365連携など業務に密着した機能を持つAI。チームの生産性向上に貢献する。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "Pricing",
+          "newFeature": "Slack連携、スライド・メール作成機能",
+          "rating": 4,
+          "badge": null,
+          "summary": "スライド作成やSlack連携など、多様な事務タスクを自動化する多機能アシスタント。"
         }
       ]
     },
@@ -79,36 +88,38 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な品質と芸術性で画像生成AIの分野をリード。安定したサービス提供と、常にユーザーの想像力を刺激するモデルの進化が評価され、クリエイティブ分野での地位は揺るぎない。",
+      "reason": "競合のSoraがアクセス不能な状況下で、安定した高品質サービスを提供。さらに今後の野心的なプロジェクトを予告し、クリエイティブ分野での圧倒的なリーダーシップを示しているため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要確認",
-          "newFeature": "新規プロジェクトを複数準備中",
+          "price": "プランによる",
+          "newFeature": "複数の新テーマに基づくプロジェクト予告",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいと評される画像生成AI。芸術的な表現が得意。"
+          "summary": "高品質で芸術的な画像生成に特化したAI。世界で最も美しいAIモデルを謳う。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "Pricing",
+          "newFeature": "AIデザイン、画像・音楽生成機能",
+          "rating": 3,
+          "badge": null,
+          "summary": "デザイン、画像、音楽生成など、手軽に利用できるクリエイティブ機能を複数搭載。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "不明",
           "newFeature": "公式サイトアクセス不可",
-          "rating": 3,
+          "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発するテキストtoビデオ生成AI。現在アクセス不可。"
+          "summary": "OpenAIが開発するテキストからの動画生成AI。現在、公式サイトで問題が発生中。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": [
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
-      "existingTool": "Replit Agent",
-      "message": "下克上の兆し：Manusが公式サイトでReplit Agentとの直接比較を公開し、競争姿勢を明確化。"
-    }
-  ]
+  "alerts": []
 }
