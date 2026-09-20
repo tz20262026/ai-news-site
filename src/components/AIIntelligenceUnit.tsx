@@ -92,7 +92,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
         <div className="flex items-center gap-1.5 min-w-0">
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block shrink-0" />
           <span className="text-sm font-bold truncate">AIによる自律判定</span>
-          <span className="text-xs text-blue-200/80 shrink-0">{getTimeAgo(data.updatedAt)}更新</span>
+          <span className="text-xs text-blue-200/80 shrink-0" suppressHydrationWarning>{getTimeAgo(data.updatedAt)}更新</span>
         </div>
         <span className="text-xs font-bold bg-white/20 backdrop-blur-sm px-2.5 py-1 rounded-full shrink-0">
           AI&apos;s Choice
@@ -176,7 +176,7 @@ export default function AIIntelligenceUnit({ compact = false }: { compact?: bool
           </div>
 
           {/* フッター */}
-          <p className="text-[10px] text-gray-500 dark:text-gray-300 mt-3 text-right">
+          <p className="text-[10px] text-gray-500 dark:text-gray-300 mt-3 text-right" suppressHydrationWarning>
             最終分析: {formatDate(data.updatedAt)}
           </p>
         </div>

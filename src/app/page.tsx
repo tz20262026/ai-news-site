@@ -63,7 +63,7 @@ export default async function Home() {
   // クライアントへ渡さずに落とす。さらにトップに載せるのは新しい方から HOMEPAGE_LIMIT 件に絞る。
   // （全記事は sitemap.xml・各タグページ・個別静的ルートから引き続きクロール可能なので
   //  SEO 上の損失はほぼ無く、ホームページの HTML / RSC ペイロードだけが軽くなる）
-  const HOMEPAGE_LIMIT = 300;
+  const HOMEPAGE_LIMIT = 180;
   const totalArticleCount = rawArticles.length;
   const articles = rawArticles
     .slice()

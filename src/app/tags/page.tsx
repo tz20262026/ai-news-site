@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { allArticles } from "@/lib/articles";
+import OtherTagsClient from "./OtherTagsClient";
 
 export const metadata: Metadata = {
   title: "タグ一覧",
@@ -132,14 +133,7 @@ export default function TagsPage() {
           </h2>
           <span className="text-xs text-gray-500 dark:text-gray-300">（{regularTags.length}件）</span>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {regularTags.map(({ tag, count }) => (
-            <Link key={tag} href={`/tags/${encodeURIComponent(tag)}`} className="tag-chip">
-              #{tag}
-              <span className="tag-chip__count">{count}</span>
-            </Link>
-          ))}
-        </div>
+        <OtherTagsClient tagCounts={regularTags} />
       </section>
 
       <p className="mt-6 text-xs text-gray-500 dark:text-gray-300 text-center">

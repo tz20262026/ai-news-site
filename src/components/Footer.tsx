@@ -17,6 +17,11 @@ const GUIDE_LINKS = [
   { href: "/ai-writing-guide", label: "AI文章作成" },
   { href: "/ai-english-guide", label: "AI英会話アプリ比較" },
   { href: "/ai-excel-guide", label: "Excel×AI活用" },
+  { href: "/claude-ai-guide", label: "Claude AI完全ガイド" },
+  { href: "/chatgpt-atlas-guide", label: "ChatGPT Atlas使い方" },
+  { href: "/sora-guide", label: "Sora 2 使い方ガイド" },
+  { href: "/gazou-ai-guide", label: "画像生成AI おすすめ7選" },
+  { href: "/ai-image-guide", label: "AI画像生成完全ガイド" },
 ];
 
 const TOOL_LINKS = [
@@ -29,6 +34,19 @@ const TOOL_LINKS = [
   { href: "/chatgpt-prompt-guide", label: "プロンプト集" },
   { href: "/ai-agent-guide", label: "AIエージェント" },
   { href: "/notebooklm-guide", label: "NotebookLM" },
+  { href: "/ai-shikaku-guide", label: "AI資格・検定比較ガイド" },
+  { href: "/ai-side-job", label: "AIを使った副業5選" },
+  { href: "/ai-job-loss-guide", label: "AIと仕事の将来ガイド" },
+];
+
+const SECURITY_LINKS = [
+  { href: "/nordvpn-guide", label: "NordVPN完全ガイド" },
+  { href: "/nordvpn-wifi-anzen", label: "公共Wi-Fiを安全に使うガイド" },
+  { href: "/suikavpn-guide", label: "スイカVPN完全ガイド" },
+  { href: "/expressvpn-guide", label: "ExpressVPN完全ガイド" },
+  { href: "/saily-esim-guide", label: "Saily eSIM完全ガイド" },
+  { href: "/saily-esim-ai-tabi", label: "AI旅行×eSIM活用ガイド" },
+  { href: "/xserver-wordpress-guide", label: "XServer for WordPress" },
 ];
 
 const SITE_LINKS = [
@@ -51,8 +69,8 @@ export default function Footer() {
           <span className="text-white font-bold text-lg">News Japan</span>
         </div>
 
-        {/* 3カラムリンク */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        {/* 4カラムリンク */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* ガイド */}
           <div>
             <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">AIガイド</p>
@@ -92,6 +110,23 @@ export default function Footer() {
             <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">サイト情報</p>
             <ul className="space-y-2.5">
               {SITE_LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-gray-300 hover:text-white transition-colors block py-0.5"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* セキュリティ・VPN */}
+          <div>
+            <p className="text-xs font-bold text-gray-300 uppercase tracking-widest mb-3">セキュリティ・VPN</p>
+            <ul className="space-y-2.5">
+              {SECURITY_LINKS.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}

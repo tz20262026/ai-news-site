@@ -4,12 +4,15 @@ type Guide = { href: string; label: string; emoji: string };
 
 const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["chatgpt", "gpt", "openai", "gpt-4", "o3", "o1"], guide: { href: "/chatgpt-guide", label: "ChatGPT完全ガイド", emoji: "🤖" } },
+  { keywords: ["atlas", "chatgpt atlas", "aiブラウザ", "ai内蔵ブラウザ", "browser agent"], guide: { href: "/chatgpt-atlas-guide", label: "ChatGPT Atlas使い方ガイド", emoji: "🌐" } },
   { keywords: ["claude", "anthropic"], guide: { href: "/claude-guide", label: "Claude完全ガイド", emoji: "🧠" } },
+  { keywords: ["claude 料金", "claude 有料", "claude chatgpt 違い", "claude 4", "claude 3.5"], guide: { href: "/claude-ai-guide", label: "Claude AI完全ガイド(料金・ChatGPT比較)", emoji: "📘" } },
   { keywords: ["gemini", "google ai", "bard"], guide: { href: "/gemini-guide", label: "Gemini完全ガイド", emoji: "✨" } },
   { keywords: ["midjourney", "画像生成", "image generation", "dalle", "flux"], guide: { href: "/midjourney-guide", label: "Midjourney完全ガイド", emoji: "🎨" } },
   { keywords: ["nano banana", "ナノバナナ", "gemini 3 pro image"], guide: { href: "/nano-banana-guide", label: "Nano Banana Pro使い方ガイド", emoji: "🍌" } },
   { keywords: ["stable diffusion", "stablediffusion"], guide: { href: "/stable-diffusion-guide", label: "Stable Diffusionガイド", emoji: "🖼️" } },
   { keywords: ["動画生成", "video generation", "sora", "runway", "kling"], guide: { href: "/ai-video-guide", label: "AI動画生成ガイド", emoji: "🎬" } },
+  { keywords: ["sora 2", "sora2", "sora プロンプト", "sora 商用利用", "text-to-video"], guide: { href: "/sora-guide", label: "Sora 2 使い方完全ガイド", emoji: "🎥" } },
   { keywords: ["perplexity"], guide: { href: "/perplexity-guide", label: "Perplexityガイド", emoji: "🔍" } },
   { keywords: ["vpn", "expressvpn"], guide: { href: "/expressvpn-guide", label: "ExpressVPN完全ガイド", emoji: "⚡" } },
   { keywords: ["vpn", "nordvpn", "セキュリティ"], guide: { href: "/nordvpn-guide", label: "NordVPN完全ガイド", emoji: "🛡️" } },
@@ -33,9 +36,14 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["プロンプト", "prompt", "プロンプトエンジニアリング"], guide: { href: "/chatgpt-prompt-guide", label: "プロンプトガイド", emoji: "💡" } },
   { keywords: ["エージェント", "agent", "自律", "autonomous"], guide: { href: "/ai-agent-guide", label: "AIエージェントガイド", emoji: "🤖" } },
   { keywords: ["画像", "image", "ai画像"], guide: { href: "/ai-image-generation-guide", label: "AI画像生成ガイド", emoji: "🖼️" } },
+  { keywords: ["画像生成ai おすすめ", "画像生成ai 無料", "画像生成ai ランキング", "画像生成 日本語対応"], guide: { href: "/gazou-ai-guide", label: "画像生成AI おすすめ7選", emoji: "📷" } },
+  { keywords: ["adobe firefly", "画像生成 商用利用", "ai画像 プロンプト コツ", "dall-e 3"], guide: { href: "/ai-image-guide", label: "AI画像生成完全ガイド", emoji: "🖌️" } },
   { keywords: ["英語", "英会話", "english", "speak", "elsa", "duolingo"], guide: { href: "/ai-english-guide", label: "AI英会話アプリ比較ガイド", emoji: "🗣️" } },
   { keywords: ["excel", "エクセル", "スプレッドシート", "spreadsheet"], guide: { href: "/ai-excel-guide", label: "Excel×AI活用ガイド", emoji: "📊" } },
   { keywords: ["wordpress", "ワードプレス", "ブログ", "blog", "レンタルサーバー", "サーバー", "アフィリエイト", "メディア運営"], guide: { href: "/xserver-wordpress-guide", label: "XServer for WordPress 完全ガイド", emoji: "🧱" } },
+  { keywords: ["ai資格", "生成aiパスポート", "g検定", "e資格", "ai検定", "ai-900", "資格 勉強"], guide: { href: "/ai-shikaku-guide", label: "生成AI資格・検定 比較ガイド", emoji: "🎓" } },
+  { keywords: ["ai 副業", "副業 稼ぐ", "在宅 副業", "side job", "ai 副業 始め方"], guide: { href: "/ai-side-job", label: "AIを使った副業5選", emoji: "💰" } },
+  { keywords: ["仕事 奪われる", "ai失業", "リストラ", "job loss", "unemployment", "ai キャリア"], guide: { href: "/ai-job-loss-guide", label: "AIに仕事を奪われる不安への対策ガイド", emoji: "🧭" } },
 ];
 
 const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
