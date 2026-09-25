@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
@@ -10,15 +10,31 @@ declare global {
 
 export default function AdUnit({ slot }: { slot: string }) {
   const clientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  const insRef = useRef<HTMLModElement>(null);
 
+  // 親要素が `hidden lg:flex` 等でCSS非表示（幅0）の状態でpush()すると
+  // AdSense側が "No slot size for availableWidth=0" で失敗し、その広告枠が二度と読み込まれない。
+  // ResizeObserverで実際に幅を持つまで待ってからpushする（レスポンシブでサイドバーが後から出現するケースに対応）。
   useEffect(() => {
-    if (!clientId) return;
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch {
-      // AdSense初期化エラーを無視
-    }
-  }, []);
+    if (!clientId || !insRef.current) return;
+    const el = insRef.current;
+    let pushed = false;
+
+    const tryPush = () => {
+      if (pushed || el.offsetWidth === 0) return;
+      pushed = true;
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch {
+        // AdSense初期化エラーを無視
+      }
+    };
+
+    tryPush();
+    const observer = new ResizeObserver(tryPush);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [clientId]);
 
   if (!clientId) {
     return (
@@ -31,6 +47,7 @@ export default function AdUnit({ slot }: { slot: string }) {
   return (
     <div className="overflow-hidden">
       <ins
+        ref={insRef}
         className="adsbygoogle block"
         data-ad-client={clientId}
         data-ad-slot={slot}

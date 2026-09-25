@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Article } from "@/lib/articles";
 import { getArticleImageUrl, getReadTime, getRelativeTime, isNew } from "@/lib/articles";
 import {
@@ -97,6 +98,7 @@ function matchesCategory(article: Article, categoryId: string): boolean {
 const INITIAL_COUNT = 20;
 
 export default function ArticleList({ articles }: { articles: Article[] }) {
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("latest");
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
@@ -237,15 +239,32 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
             </p>
             <div className="mt-3 flex flex-wrap gap-2 items-center justify-between">
               <div className="flex flex-wrap gap-1.5">
+                {/* 2026-09-26 修正: 親カード自体が next/link の <Link>(=<a>) なので、
+                    ここに <Link> を入れると <a> の中に <a> がネストする不正HTMLになり、
+                    ハイドレーション時にブラウザのDOM補正とReactツリーが食い違って
+                    React #418 (hydration failed) が発生していた。
+                    <a> をやめ、クリックでプログラム的に遷移する <span> に変更して回避。 */}
                 {cleanTags(featured.tags).slice(0, 4).map((tag) => (
-                  <Link
+                  <span
                     key={tag}
-                    href={`/tags/${encodeURIComponent(tag)}`}
-                    onClick={(e) => e.stopPropagation()}
+                    role="link"
+                    tabIndex={0}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      router.push(`/tags/${encodeURIComponent(tag)}`);
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        router.push(`/tags/${encodeURIComponent(tag)}`);
+                      }
+                    }}
                     className={`text-xs px-2 py-0.5 rounded-full font-medium cursor-pointer hover:opacity-80 transition-opacity ${tagColor(tag)}`}
                   >
                     #{tag}
-                  </Link>
+                  </span>
                 ))}
               </div>
               <span className="text-xs text-gray-500 dark:text-gray-300">{featured.readTime ?? getReadTime(featured.body)}分で読める</span>
@@ -280,15 +299,28 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
                 <div className="absolute bottom-3 left-4 right-4">
                   <div className="flex flex-wrap gap-1">
+                    {/* 2026-09-26 修正: 上と同じ理由で <a> in <a> を避けるため <span> + router.push に変更 */}
                     {cleanTags(article.tags).slice(0, 2).map((tag) => (
-                      <Link
+                      <span
                         key={tag}
-                        href={`/tags/${encodeURIComponent(tag)}`}
-                        onClick={(e) => e.stopPropagation()}
+                        role="link"
+                        tabIndex={0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          router.push(`/tags/${encodeURIComponent(tag)}`);
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            router.push(`/tags/${encodeURIComponent(tag)}`);
+                          }
+                        }}
                         className="text-xs bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full font-medium border border-white/30 hover:bg-white/30 transition-colors cursor-pointer"
                       >
                         #{tag}
-                      </Link>
+                      </span>
                     ))}
                   </div>
                 </div>
