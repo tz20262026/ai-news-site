@@ -1,52 +1,43 @@
 {
-  "updatedAt": "2026-09-24T14:14:37.861967+09:00",
-  "aiJudgment": "開発市場では、Manusのような多機能型AIが特化型ツールに挑戦する構図が鮮明に。各ツールは統合的な体験価値の提供へと競争の軸足を移しつつある。",
+  "updatedAt": "2026-09-25T14:16:05.276744+09:00",
+  "aiJudgment": "開発市場ではエージェント型ツールの競争が激化。Claude Codeがリードする一方、Manusが全方位に挑戦。クリエイティブはMidjourneyが安定、Soraは失速。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Manus",
+        "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "ウェブサイト、スライド、デザインまで対応する幅広い生成能力を提示。既存の特化型ツールに対し、多機能性で挑戦状を叩きつけており、市場の勢力図を塗り替える可能性を秘めているため。",
+      "reason": "Anthropicの最新モデルを搭載し、ターミナルやIDEに直接統合できるエージェント機能が強力。開発ワークフローを根底から変える可能性を秘めているため。",
       "tools": [
         {
-          "id": "manus",
-          "name": "Manus",
-          "price": "プランによる",
-          "newFeature": "ウェブ、デザイン、スライド等の多機能生成",
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "$20/month (Proプラン)",
+          "newFeature": "エージェント型コーディングツール",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "ウェブサイト構築からデザイン、スライド作成までこなす多機能AIアシスタント。"
-        },
-        {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "プランによる",
-          "newFeature": "自然言語でのアプリ・ウェブサイト構築",
-          "rating": 4,
-          "badge": null,
-          "summary": "自然言語で説明するだけで、本番環境レベルのソフトウェアを構築できるプラットフォーム。"
+          "summary": "Anthropic提供のエージェント型コーディングツール。ターミナルやIDE、ブラウザで利用可能。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "プランによる",
-          "newFeature": "AIコーディングエージェント機能",
+          "newFeature": "チャットでアプリを構築するAIエージェント",
           "rating": 4,
           "badge": null,
-          "summary": "チャットを通じてアプリやウェブサイトを構築できるAIコーディングエージェント。"
+          "summary": "チャット形式でアプリを構築できるAI。プロトタイピングやWebサイト制作に活用できる。"
         },
         {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "不明",
-          "newFeature": "公式サイトがセキュリティチェックで表示不可",
-          "rating": 1,
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "無料から",
+          "newFeature": "自然言語で本番級ソフトウェアを構築",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropic社のコーディング支援AI。現在、詳細情報は確認不能。"
+          "summary": "アイデアを言葉で伝えるだけで、アプリやWebサイトを構築・運用できる統合プラットフォーム。"
         }
       ]
     },
@@ -58,16 +49,16 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "開発・クリエイティブ領域だけでなく、スライド作成やSlack連携など事務効率化機能も提供。単一ツールで幅広い業務をカバーする統合的なアプローチが評価できるため。",
+      "reason": "開発、デザイン、スライド作成、メール連携など、単一プラットフォームで多様な業務をカバー。その万能性と野心的な機能拡張性が評価された。",
       "tools": [
         {
           "id": "manus",
           "name": "Manus",
           "price": "プランによる",
-          "newFeature": "Slack連携、スライド作成機能など",
-          "rating": 5,
+          "newFeature": "競合ツールとの比較ページを公開",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "スライド作成や各種連携機能も備え、幅広い事務作業を効率化する統合AI。"
+          "summary": "開発からデザイン、スライド作成までこなす万能AI。他ツールへの挑戦的な姿勢が特徴。"
         }
       ]
     },
@@ -79,34 +70,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "AI画像生成の品質において依然として業界最高水準を維持。今後のプロジェクトへの期待感も高く、クリエイティブ分野の牽引役としての地位は揺るがないため。",
+      "reason": "圧倒的な画像生成品質と芸術性で市場をリード。サービスが不安定な競合や多機能だが特化していないツールと比べ、クリエイティブ分野での地位は揺るぎない。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "サブスクリプション",
-          "newFeature": "新テーマ（想像、美など）のプロジェクトを予告",
+          "price": "有料プランのみ",
+          "newFeature": "今後の新プロジェクト群を予告",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う、高品質な画像生成AIサービス。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "プランによる",
-          "newFeature": "AIによるデザイン、画像、音楽生成機能",
-          "rating": 4,
-          "badge": null,
-          "summary": "デザイン、画像、音楽など多様なクリエイティブ生成機能を備える挑戦的ツール。"
+          "summary": "世界で最も美しいAIモデルを謳う画像生成AI。人間性のための新プロジェクトを計画中。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "未公開",
-          "newFeature": "公式サイトがアクセス不能状態",
-          "rating": 2,
+          "price": "不明",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 1,
           "badge": null,
-          "summary": "OpenAI開発の動画生成AI。現在公式サイトはアクセス不可。"
+          "summary": "OpenAIの動画生成AI。現在、公式サイトにアクセスできず、サービス状況は不明。"
         }
       ]
     }
@@ -117,7 +99,13 @@
       "alertType": "challenger",
       "newTool": "Manus",
       "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusが多機能性を武器に、特化型アプリビルダーのLovableの牙城を崩す可能性。"
+      "message": "下克上の兆し：Manusが多機能性を武器に、アプリビルダーのLovableに挑戦状を叩きつけている。"
+    },
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Replit Agent",
+      "message": "下克上の兆し：万能型AIのManusが、開発環境に特化したReplit Agentの領域に攻め込んでいる。"
     }
   ]
 }
