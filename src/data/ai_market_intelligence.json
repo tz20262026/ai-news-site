@@ -1,43 +1,43 @@
 {
-  "updatedAt": "2026-09-25T14:16:05.276744+09:00",
-  "aiJudgment": "開発市場ではエージェント型ツールの競争が激化。Claude Codeがリードする一方、Manusが全方位に挑戦。クリエイティブはMidjourneyが安定、Soraは失速。",
+  "updatedAt": "2026-09-26T14:20:39.290314+09:00",
+  "aiJudgment": "開発分野ではReplit Agentのようなエージェント型が主流に。多機能型Manusも台頭。クリエイティブはMidjourneyが安定、Soraは停滞。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Claude Code",
+        "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "Anthropicの最新モデルを搭載し、ターミナルやIDEに直接統合できるエージェント機能が強力。開発ワークフローを根底から変える可能性を秘めているため。",
+      "reason": "「チャットによるアプリ構築」という具体的なユースケースを提示し、開発の未来像を明確に示している。既存の強力なプラットフォーム基盤も評価。",
       "tools": [
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "$20/month (Proプラン)",
-          "newFeature": "エージェント型コーディングツール",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "Anthropic提供のエージェント型コーディングツール。ターミナルやIDE、ブラウザで利用可能。"
-        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "プランによる",
-          "newFeature": "チャットでアプリを構築するAIエージェント",
-          "rating": 4,
-          "badge": null,
-          "summary": "チャット形式でアプリを構築できるAI。プロトタイピングやWebサイト制作に活用できる。"
+          "price": "要確認",
+          "newFeature": "チャットによるアプリ構築機能",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "チャットを通じてアプリやウェブサイトを構築できるAIコーディングエージェント。開発プロセスを自動化。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "無料から",
-          "newFeature": "自然言語で本番級ソフトウェアを構築",
+          "price": "要確認",
+          "newFeature": "本番環境グレードのソフトウェアを構築",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアを言葉で伝えるだけで、アプリやWebサイトを構築・運用できる統合プラットフォーム。"
+          "summary": "自然言語から本番品質のソフトウェアを構築するプラットフォーム。インフラも自動で管理。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "要確認",
+          "newFeature": "公式サイトアクセス不可",
+          "rating": 3,
+          "badge": null,
+          "summary": "Anthropic社のコーディング支援AI。現在、公式サイトはセキュリティ検証中のため詳細不明。"
         }
       ]
     },
@@ -49,16 +49,16 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "開発、デザイン、スライド作成、メール連携など、単一プラットフォームで多様な業務をカバー。その万能性と野心的な機能拡張性が評価された。",
+      "reason": "開発やデザインに加え、スライド作成など具体的な事務作業を自動化する機能を備え、幅広い業務効率化に貢献する可能性を示しているため。",
       "tools": [
         {
           "id": "manus",
           "name": "Manus",
-          "price": "プランによる",
-          "newFeature": "競合ツールとの比較ページを公開",
-          "rating": 4,
+          "price": "要確認",
+          "newFeature": "競合比較ページを公開 (vs Replit等)",
+          "rating": 5,
           "badge": "AI's Choice",
-          "summary": "開発からデザイン、スライド作成までこなす万能AI。他ツールへの挑戦的な姿勢が特徴。"
+          "summary": "スライド作成、ウェブサイト構築、デザインなど多機能なAIアシスタント。幅広いタスクに対応。"
         }
       ]
     },
@@ -70,25 +70,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な画像生成品質と芸術性で市場をリード。サービスが不安定な競合や多機能だが特化していないツールと比べ、クリエイティブ分野での地位は揺るぎない。",
+      "reason": "画像生成AIの分野で圧倒的な品質とブランドを確立。新プロジェクトの予告もあり、今後の進化にも期待が持てるため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "有料プランのみ",
-          "newFeature": "今後の新プロジェクト群を予告",
+          "price": "要確認",
+          "newFeature": "複数分野での新プロジェクトを予告",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う画像生成AI。人間性のための新プロジェクトを計画中。"
+          "summary": "高品質な画像生成で知られるAI。芸術的な表現力に定評があり、クリエイターに人気。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "不明",
+          "price": "要確認",
           "newFeature": "公式サイトアクセス不可",
-          "rating": 1,
+          "rating": 3,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。現在、公式サイトにアクセスできず、サービス状況は不明。"
+          "summary": "OpenAIが開発するテキスト動画生成AI。現在、公式サイトはエラー表示中で利用不可。"
         }
       ]
     }
@@ -98,14 +98,8 @@
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusが多機能性を武器に、アプリビルダーのLovableに挑戦状を叩きつけている。"
-    },
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
       "existingTool": "Replit Agent",
-      "message": "下克上の兆し：万能型AIのManusが、開発環境に特化したReplit Agentの領域に攻め込んでいる。"
+      "message": "下克上の兆し：多機能AI「Manus」が、開発特化の「Replit Agent」の牙城を崩す可能性あり。"
     }
   ]
 }
