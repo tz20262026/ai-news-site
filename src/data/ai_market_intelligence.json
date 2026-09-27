@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-26T14:20:39.290314+09:00",
-  "aiJudgment": "開発分野ではReplit Agentのようなエージェント型が主流に。多機能型Manusも台頭。クリエイティブはMidjourneyが安定、Soraは停滞。",
+  "updatedAt": "2026-09-27T14:37:37.265142+09:00",
+  "aiJudgment": "「開発」はIDE統合型が優勢。「事務効率化」ではClaude Proが新基準を提示。各分野で専門性と機能統合が進み、競争が激化している。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "「チャットによるアプリ構築」という具体的なユースケースを提示し、開発の未来像を明確に示している。既存の強力なプラットフォーム基盤も評価。",
+      "reason": "統合開発環境(IDE)内で直接動作するエージェントとして、コーディングからデプロイまでシームレスに支援。実践的な開発フローにおける優位性が高い。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要確認",
+          "price": "プラン別 (要確認)",
           "newFeature": "チャットによるアプリ構築機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットを通じてアプリやウェブサイトを構築できるAIコーディングエージェント。開発プロセスを自動化。"
+          "summary": "チャットで対話しアプリを構築・デプロイする統合開発環境内のAIエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要確認",
-          "newFeature": "本番環境グレードのソフトウェアを構築",
+          "price": "プラン別 (要確認)",
+          "newFeature": "本番環境グレードのソフトウェアを自動構築",
           "rating": 4,
           "badge": null,
-          "summary": "自然言語から本番品質のソフトウェアを構築するプラットフォーム。インフラも自動で管理。"
+          "summary": "自然言語の指示から、インフラ含め本番環境で使えるアプリを構築するAI。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要確認",
-          "newFeature": "公式サイトアクセス不可",
+          "price": "$17/月〜 (Proプラン)",
+          "newFeature": "ターミナルやIDEで利用可能なエージェント",
+          "rating": 4,
+          "badge": null,
+          "summary": "思考のパートナーとして、ターミナルやIDEで使えるエージェント型コーディングツール。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "プラン別 (要確認)",
+          "newFeature": "ウェブサイト、ゲーム、スライド等の多様な制作",
           "rating": 3,
           "badge": null,
-          "summary": "Anthropic社のコーディング支援AI。現在、公式サイトはセキュリティ検証中のため詳細不明。"
+          "summary": "ウェブサイトやゲーム等、多様なデジタルコンテンツを生成するインテリジェントAI。"
         }
       ]
     },
@@ -46,19 +55,19 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Manus",
+        "name": "Claude Pro",
         "tagline": "今月の最強選択"
       },
-      "reason": "開発やデザインに加え、スライド作成など具体的な事務作業を自動化する機能を備え、幅広い業務効率化に貢献する可能性を示しているため。",
+      "reason": "日常業務をタスク単位で委任し、資料を完成形で受け取れる。M365連携も視野に入れ、既存のワークフローへの導入が容易な点を高く評価。",
       "tools": [
         {
-          "id": "manus",
-          "name": "Manus",
-          "price": "要確認",
-          "newFeature": "競合比較ページを公開 (vs Replit等)",
+          "id": "claude-pro",
+          "name": "Claude Pro",
+          "price": "$17/月 (年払い)",
+          "newFeature": "ドキュメント、スライド、シート等の自動生成",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "スライド作成、ウェブサイト構築、デザインなど多機能なAIアシスタント。幅広いタスクに対応。"
+          "summary": "日常業務を自動化し、完成したドキュメントを返す高機能アシスタントプラン。"
         }
       ]
     },
@@ -70,36 +79,29 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像生成AIの分野で圧倒的な品質とブランドを確立。新プロジェクトの予告もあり、今後の進化にも期待が持てるため。",
+      "reason": "圧倒的な画質と芸術性で画像生成AI市場をリード。コミュニティも活発で、クリエイターにとって依然として第一選択肢であり続けている。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要確認",
-          "newFeature": "複数分野での新プロジェクトを予告",
+          "price": "プラン別 (要確認)",
+          "newFeature": "想像力や美に関する新プロジェクトを準備中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高品質な画像生成で知られるAI。芸術的な表現力に定評があり、クリエイターに人気。"
+          "summary": "世界で最も美しいと評されるモデルを構築する、高品質な画像生成AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "要確認",
-          "newFeature": "公式サイトアクセス不可",
+          "price": "非公開",
+          "newFeature": "情報なし (公式サイトアクセス不可)",
           "rating": 3,
           "badge": null,
-          "summary": "OpenAIが開発するテキスト動画生成AI。現在、公式サイトはエラー表示中で利用不可。"
+          "summary": "OpenAIが開発するテキストtoビデオモデル。現在はアクセス不可の状態。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": [
-    {
-      "alertType": "challenger",
-      "newTool": "Manus",
-      "existingTool": "Replit Agent",
-      "message": "下克上の兆し：多機能AI「Manus」が、開発特化の「Replit Agent」の牙城を崩す可能性あり。"
-    }
-  ]
+  "alerts": []
 }
