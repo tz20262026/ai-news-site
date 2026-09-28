@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-27T14:37:37.265142+09:00",
-  "aiJudgment": "「開発」はIDE統合型が優勢。「事務効率化」ではClaude Proが新基準を提示。各分野で専門性と機能統合が進み、競争が激化している。",
+  "updatedAt": "2026-09-28T14:45:33.744357+09:00",
+  "aiJudgment": "開発セグメントで「AIエージェント」化が加速。ReplitがリードしManusが追随。クリエイティブはMidjourneyが安定、他は不安定さも。市場は機能特化から多機能統合へ。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "統合開発環境(IDE)内で直接動作するエージェントとして、コーディングからデプロイまでシームレスに支援。実践的な開発フローにおける優位性が高い。",
+      "reason": "チャットベースでアプリを構築できる「AIエージェント」という明確なコンセプトを提示。多様なユースケースに対応し、開発プロセスを根底から変える可能性を秘めているため。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "プラン別 (要確認)",
-          "newFeature": "チャットによるアプリ構築機能",
+          "price": "プラン別",
+          "newFeature": "チャットによるアプリ構築エージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットで対話しアプリを構築・デプロイする統合開発環境内のAIエージェント。"
+          "summary": "チャットでアプリを構築できるAIコーディングエージェント。多様なユースケースに対応。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "プラン別 (要確認)",
-          "newFeature": "本番環境グレードのソフトウェアを自動構築",
+          "price": "プラン別",
+          "newFeature": "平易な言葉で本番仕様のソフトウェアを構築",
           "rating": 4,
           "badge": null,
-          "summary": "自然言語の指示から、インフラ含め本番環境で使えるアプリを構築するAI。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "$17/月〜 (Proプラン)",
-          "newFeature": "ターミナルやIDEで利用可能なエージェント",
-          "rating": 4,
-          "badge": null,
-          "summary": "思考のパートナーとして、ターミナルやIDEで使えるエージェント型コーディングツール。"
+          "summary": "アイデアを言葉で伝えるだけで、本番仕様のソフトウェアをリアルタイムで構築するプラットフォーム。"
         },
         {
           "id": "manus",
           "name": "Manus",
-          "price": "プラン別 (要確認)",
-          "newFeature": "ウェブサイト、ゲーム、スライド等の多様な制作",
-          "rating": 3,
+          "price": "プラン別",
+          "newFeature": "ReplitやLovableとの比較ページを公開",
+          "rating": 4,
           "badge": null,
-          "summary": "ウェブサイトやゲーム等、多様なデジタルコンテンツを生成するインテリジェントAI。"
+          "summary": "Webサイト構築からスライド、デザインまでこなす多機能AI。競合比較で強みをアピール。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "不明",
+          "newFeature": "情報なし（セキュリティチェックページ）",
+          "rating": 1,
+          "badge": null,
+          "summary": "Anthropicのコーディング用AI。現在、ページへのアクセスにセキュリティ認証が必要。"
         }
       ]
     },
@@ -55,19 +55,19 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude Pro",
+        "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "日常業務をタスク単位で委任し、資料を完成形で受け取れる。M365連携も視野に入れ、既存のワークフローへの導入が容易な点を高く評価。",
+      "reason": "開発ツールとしての側面に加え「スライド作成」機能も提供。一つのツールで開発からプレゼン資料作成までカバーできる多機能性が、事務効率化の観点でも評価できるため。",
       "tools": [
         {
-          "id": "claude-pro",
-          "name": "Claude Pro",
-          "price": "$17/月 (年払い)",
-          "newFeature": "ドキュメント、スライド、シート等の自動生成",
-          "rating": 5,
+          "id": "manus",
+          "name": "Manus",
+          "price": "プラン別",
+          "newFeature": "スライド作成、Web構築など多機能",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "日常業務を自動化し、完成したドキュメントを返す高機能アシスタントプラン。"
+          "summary": "Webサイト構築からスライド作成まで、幅広いタスクを単一プラットフォームで実行可能。"
         }
       ]
     },
@@ -79,25 +79,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な画質と芸術性で画像生成AI市場をリード。コミュニティも活発で、クリエイターにとって依然として第一選択肢であり続けている。",
+      "reason": "「世界で最も美しいAIモデル」を標榜し、高品質な画像生成で市場をリード。今後のプロジェクトにも期待が高まり、クリエイティブ分野での地位は揺るぎないため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "プラン別 (要確認)",
-          "newFeature": "想像力や美に関する新プロジェクトを準備中",
+          "price": "プラン別",
+          "newFeature": "人間精神を増幅する新インフラを構築中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいと評されるモデルを構築する、高品質な画像生成AI。"
+          "summary": "世界で最も美しいAIモデルを構築する研究所。高品質な画像生成で知られる。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "非公開",
-          "newFeature": "情報なし (公式サイトアクセス不可)",
-          "rating": 3,
+          "price": "不明",
+          "newFeature": "情報なし（ページダウン）",
+          "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発するテキストtoビデオモデル。現在はアクセス不可の状態。"
+          "summary": "OpenAIの動画生成AI。現在、公式サイトで問題が発生しておりアクセス不可。"
         }
       ]
     }
