@@ -415,6 +415,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // 2026-10-02 自動ブラッシュアップで発見：公開済みだがサイトマップから漏れていたページ（ExpressVPN記事作成ボーナス記事）
+    {
+      url: `${BASE_URL}/expressvpn-travel-guide`,
+      lastModified: new Date("2026-09-28"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...tagUrls,
     ...articleUrls,
   ];

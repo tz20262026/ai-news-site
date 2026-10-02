@@ -44,6 +44,11 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["ai資格", "生成aiパスポート", "g検定", "e資格", "ai検定", "ai-900", "資格 勉強"], guide: { href: "/ai-shikaku-guide", label: "生成AI資格・検定 比較ガイド", emoji: "🎓" } },
   { keywords: ["ai 副業", "副業 稼ぐ", "在宅 副業", "side job", "ai 副業 始め方"], guide: { href: "/ai-side-job", label: "AIを使った副業5選", emoji: "💰" } },
   { keywords: ["仕事 奪われる", "ai失業", "リストラ", "job loss", "unemployment", "ai キャリア"], guide: { href: "/ai-job-loss-guide", label: "AIに仕事を奪われる不安への対策ガイド", emoji: "🧭" } },
+  { keywords: ["文字起こし", "transcription", "議事録", "whisper", "notta", "rimo voice", "tl;dv"], guide: { href: "/ai-transcription-guide", label: "AI文字起こし・議事録ツール比較", emoji: "📝" } },
+  { keywords: ["画像生成 比較", "ideogram", "dall-e 3 比較", "画像生成ツール比較"], guide: { href: "/ai-image-comparison", label: "AI画像生成ツール徹底比較", emoji: "🆚" } },
+  { keywords: ["aiツール比較", "ツール比較", "tool comparison"], guide: { href: "/ai-tools-comparison", label: "AIツール徹底比較", emoji: "⚖️" } },
+  { keywords: ["ブログ運営", "記事自動生成", "ai ブログ", "ブログ自動化"], guide: { href: "/ai-blog-automation", label: "AIで記事を自動生成するブログ運営ツールの選び方", emoji: "📰" } },
+  { keywords: ["tver", "海外出張 動画", "留学 動画", "海外 netflix", "日本のnetflix"], guide: { href: "/expressvpn-travel-guide", label: "海外出張・留学・旅行中にTVer/日本のNetflixを見る方法", emoji: "🧳" } },
 ];
 
 const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
