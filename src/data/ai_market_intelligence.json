@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-01T15:25:43.103453+09:00",
-  "aiJudgment": "開発ツールはアイデアから実装までを担うエージェント化が加速。クリエイティブ市場ではSoraの提供終了が波紋を呼び、既存ツールの地位がより強固になっている。",
+  "updatedAt": "2026-10-02T15:03:24.528982+09:00",
+  "aiJudgment": "開発分野では自然言語からのアプリ生成競争が激化しLovableがリード。クリエイティブはMidjourneyが質で君臨。多機能AIのManusが市場に挑戦状を叩きつけている。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,43 @@
         "name": "Lovable",
         "tagline": "今月の最強選択"
       },
-      "reason": "自然言語によるアイデアの記述から、インフラ構築、デプロイまでを一気通貫でサポート。開発の概念を根底から変える可能性を秘めており、今月の最も注目すべきツールと評価。",
+      "reason": "自然言語からインフラまで一気通貫で本番アプリを構築できる点が強力。アイデアを即座に事業化できる可能性を示しており、開発の概念を覆すポテンシャルを持つため。",
       "tools": [
         {
           "id": "lovable",
           "name": "Lovable",
           "price": "プランによる",
-          "newFeature": "自然言語からの本番環境グレードのソフトウェア生成",
+          "newFeature": "エンドツーエンドのインフラ提供",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "自然言語で本番環境級のソフトを構築・運用できるプラットフォーム。"
+          "summary": "自然言語でアイデアを本番グレードのソフトウェアに変換する開発プラットフォーム。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "要問合せ",
+          "newFeature": "新モデル群(Opus, Sonnet等)発表",
+          "rating": 5,
+          "badge": null,
+          "summary": "Anthropicが提供するコーディング特化の高性能AIモデル群。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "プランによる",
-          "newFeature": "チャットを通じたAIアプリ構築エージェント機能",
+          "newFeature": "チャットによるアプリ/Webサイト構築",
           "rating": 4,
           "badge": null,
-          "summary": "チャットでアプリを構築するAIエージェント。統合開発環境が強み。"
+          "summary": "Replit IDEに統合されたAIエージェント。対話形式で開発を自動化。"
         },
         {
-          "id": "claude-code",
-          "name": "Claude Code",
+          "id": "manus",
+          "name": "Manus",
           "price": "プランによる",
-          "newFeature": "Opus, Sonnet, Haiku等、多様なモデル群を提供",
+          "newFeature": "ゲーム開発、ビデオ生成機能を追加",
           "rating": 4,
           "badge": null,
-          "summary": "Anthropicが提供するコーディング特化AI。多様なモデルを利用可能。"
+          "summary": "Webサイト、ゲーム、ビデオ等を生成する多機能AI。Replit等を競合視。"
         }
       ]
     },
@@ -46,19 +55,19 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Manus",
+        "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "スライド作成、メール、Slack連携など、開発やクリエイティブ以外の事務作業を効率化する機能を複数搭載。一つのプラットフォームで多様な業務をカバーできる点が評価できる。",
+      "reason": "Microsoft 365との連携により、日常的なドキュメント作成やメール業務を効率化。汎用性の高い言語モデルが、幅広い事務作業をサポートするポテンシャルを持つため。",
       "tools": [
         {
-          "id": "manus-productivity",
-          "name": "Manus",
+          "id": "claude",
+          "name": "Claude",
           "price": "プランによる",
-          "newFeature": "Slack連携、メール自動化、スライド生成機能",
+          "newFeature": "Microsoft 365連携機能",
           "rating": 4,
           "badge": "AI's Choice",
-          "summary": "スライド作成からSlack連携まで、多様な事務作業を自動化する機能群。"
+          "summary": "汎用的な対話型AI。Microsoft 365連携で事務作業を強力に支援。"
         }
       ]
     },
@@ -70,38 +79,45 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "圧倒的な画像生成品質でクリエイターから絶大な支持を得ている。Soraのサービス終了が発表される中、安定したサービス提供とブランド力で、クリエイティブ市場での地位をより強固なものにしている。",
+      "reason": "AI画像生成の品質において他の追随を許さない。アートやデザイン分野での圧倒的な評価と、今後の『美』を追求するプロジェクトへの期待感から選出。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "サブスクリプション",
-          "newFeature": "複数の野心的な新プロジェクトを準備中",
+          "price": "プランによる",
+          "newFeature": "新プロジェクトのテーマ発表",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "芸術性の高いビジュアル生成に定評がある、世界最高峰の画像生成AI。"
+          "summary": "世界で最も美しいと評されるAIモデルによる画像生成サービス。"
         },
         {
           "id": "manus-creative",
           "name": "Manus",
           "price": "プランによる",
-          "newFeature": "ゲーム開発機能とビデオ生成機能が新登場",
+          "newFeature": "ゲーム開発、ビデオ生成機能を追加",
           "rating": 4,
           "badge": null,
-          "summary": "ゲーム、動画、音楽、デザインなど多岐にわたる制作が可能な統合AI。"
+          "summary": "画像、音楽、ビデオ、スライドなど多様なクリエイティブ制作が可能な統合AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "提供終了",
-          "newFeature": "2026年にWeb/App/APIの段階的サービス終了",
+          "price": "不明",
+          "newFeature": "情報なし",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。Web/App/APIが2026年に提供終了予定。"
+          "summary": "OpenAIの動画生成モデル。現在公式サイトはアクセス不可の状態。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": []
+  "alerts": [
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：多機能AIのManusがLovableとの比較を公開し、開発プラットフォーム市場での挑戦を表明。"
+    }
+  ]
 }
