@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-10-03T14:38:29.231203+09:00",
-  "aiJudgment": "開発ツールはエージェント化・プラットフォーム化が加速。Manusが多機能性を武器に各市場へ挑戦状を叩きつけ、クリエイティブAIは動画やゲームへと領域を拡大している。",
+  "updatedAt": "2026-10-04T15:13:59.128244+09:00",
+  "aiJudgment": "開発ツール市場ではManusのような多機能AIが専門ツールに挑戦し競争が激化。一方、Sora等の期待のツールがアクセス不能で、市場の不確実性も高まっている。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャット形式でアプリ開発を完結させる革新的なアプローチを提示。創業者からエンジニアまで幅広い層に刺さるユースケースを網羅し、開発の民主化を加速させる可能性を秘めているため。",
+      "reason": "ウェブサイト構築に加え、新たにゲーム開発や動画生成機能を追加。ReplitやLovableといった競合を意識した機能拡張で、開発領域における汎用性と将来性を高く評価した。",
       "tools": [
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要確認",
+          "newFeature": "ゲーム開発、動画生成機能を追加",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "ウェブサイト、ゲーム、スライド等を生成できる多機能AIプラットフォーム。"
+        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "有料プランあり",
-          "newFeature": "AIエージェントによるアプリ構築",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "チャットでアプリやウェブサイトを構築できるAIコーディングエージェント。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "有料プランあり",
-          "newFeature": "Cowork, @Claudeなど機能拡張",
-          "rating": 5,
+          "price": "要確認",
+          "newFeature": "AIコーディングエージェント機能",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropic社の高性能モデルを基盤とした信頼性の高いコーディングAI。"
+          "summary": "チャットでアプリやウェブサイトを構築できるAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "有料プランあり",
-          "newFeature": "エージェント連携、決済機能",
+          "price": "要確認",
+          "newFeature": "エンドツーエンドのインフラ提供",
           "rating": 4,
           "badge": null,
           "summary": "自然言語でアプリやウェブサイトを構築できるノーコードプラットフォーム。"
         },
         {
-          "id": "manus-dev",
-          "name": "Manus",
-          "price": "有料プランあり",
-          "newFeature": "ゲーム開発、ビデオ生成機能",
-          "rating": 4,
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "不明",
+          "newFeature": "情報なし（アクセス不可）",
+          "rating": 1,
           "badge": null,
-          "summary": "ウェブサイトからゲーム開発まで対応する多機能開発・クリエイティブAI。"
+          "summary": "Anthropic社が提供するコーディング支援AI。現在アクセス不可。"
         }
       ]
     },
@@ -55,28 +55,19 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude",
+        "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "Microsoft 365とのネイティブ連携は、既存の膨大なユーザーにリーチ可能。日常業務へのAI導入ハードルを劇的に下げ、生産性向上に大きく貢献するため。",
+      "reason": "Manusはスライド作成やSlack連携など、開発以外の事務作業もカバー。多機能性により、単一ツールで幅広い業務効率化を実現できる点を評価した。",
       "tools": [
         {
-          "id": "claude",
-          "name": "Claude",
-          "price": "有料プランあり",
-          "newFeature": "Microsoft 365との連携機能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "ドキュメント作成、要約、分析などを支援する万能AIアシスタント。"
-        },
-        {
-          "id": "manus-prod",
+          "id": "manus",
           "name": "Manus",
-          "price": "有料プランあり",
-          "newFeature": "スライド自動生成、メール連携",
+          "price": "要確認",
+          "newFeature": "Manus 2.0による機能刷新",
           "rating": 4,
-          "badge": null,
-          "summary": "スライド作成やSlack連携など、日常業務を自動化する多機能ツール。"
+          "badge": "AI's Choice",
+          "summary": "スライド作成、Slack連携など、日常業務を効率化する機能も搭載。"
         }
       ]
     },
@@ -85,37 +76,37 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "Manus",
+        "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像、音楽に加え、ビデオ生成やゲーム開発という新領域にまで進出。クリエイティブ制作の全工程をカバーしようとする野心的な姿勢と実現速度が他を圧倒するため。",
+      "reason": "Midjourneyは、その生成する画像の芸術性と品質において依然として他の追随を許さない。クリエイティブ分野での専門性とブランド力で今月もトップと判断した。",
       "tools": [
-        {
-          "id": "manus-creative",
-          "name": "Manus",
-          "price": "有料プランあり",
-          "newFeature": "ゲーム開発、ビデオ生成機能",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "画像、音楽、動画、ゲームまで生成可能なオールインワンクリエイティブAI。"
-        },
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "有料プランあり",
-          "newFeature": "大規模プロジェクトを複数準備中",
+          "price": "要確認",
+          "newFeature": "新規プロジェクトを複数準備中",
           "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "高品質で芸術的な画像を生成することで世界的に知られるAIモデル。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要確認",
+          "newFeature": "動画生成・編集機能が新登場",
+          "rating": 4,
           "badge": null,
-          "summary": "世界で最も美しいAIモデルと評される、高品質な画像生成AI。"
+          "summary": "デザイン、画像・音楽生成、動画編集までこなす統合クリエイティブツール。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "不明",
-          "newFeature": "不明（アクセス不可）",
+          "newFeature": "情報なし（アクセス不可）",
           "rating": 2,
           "badge": null,
-          "summary": "OpenAI開発の動画生成AI。現在サービスに問題が発生している模様。"
+          "summary": "OpenAIが開発するテキストから動画を生成するAI。現在アクセス不可。"
         }
       ]
     }
@@ -125,14 +116,14 @@
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusが多機能性を武器にLovableの市場を脅かす可能性"
+      "existingTool": "Replit Agent",
+      "message": "下克上の兆し：Manusがゲーム開発等の新機能でReplit Agentの地位を脅かす可能性。"
     },
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Replit Agent",
-      "message": "下克上の兆し：Manusが開発領域にも進出しReplit Agentと競合開始"
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：多機能化を進めるManusが、アプリビルダーLovableの顧客層を奪う可能性。"
     }
   ]
 }
