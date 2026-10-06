@@ -347,6 +347,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    // 2026-10-06 新規追加：全記事一覧ページ（llms.txt に死んだリンクとして存在していたのを新設して解消）
+    {
+      url: `${BASE_URL}/articles`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.7,
+    },
     {
       url: `${BASE_URL}/tags`,
       lastModified: new Date(),

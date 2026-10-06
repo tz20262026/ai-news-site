@@ -354,6 +354,17 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           </span>
         </button>
       )}
+
+      {/* ホームページに渡された全件（HOMEPAGE_LIMIT件）を表示し尽くした時、
+          検索・カテゴリ絞り込みをしていない場合のみ /articles への全件一覧への誘導を出す */}
+      {selectedCategory === "latest" && !search && visibleCount >= articles.length && (
+        <Link
+          href="/articles"
+          className="w-full mt-3 py-3 rounded-2xl border border-gray-200 dark:border-gray-700 text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors flex items-center justify-center"
+        >
+          全ての記事を見る
+        </Link>
+      )}
     </div>
   );
 }
