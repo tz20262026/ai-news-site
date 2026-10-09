@@ -1,5 +1,19 @@
 [
   {
+    "id": "v_a8cbdabfdb2b_1791515993",
+    "title": "脱NVIDIA依存へ！自作PCで最強AI「Qwen3.5-122B」を動かす、禁断のレシピが公開",
+    "summary": "脱NVIDIA依存へ！自作PCで最強AI「Qwen3.5-122B」を動かす、禁断のレシピが公開",
+    "body": "AI開発といえばNVIDIA製GPUが常識。その牙城に風穴を開ける、まさに革命前夜を思わせる衝撃的な報告が技術コミュニティを駆け巡りました。AMDのRadeon GPUを使い、1220億という驚異的なパラメータ数を持つ最新AIモデルを、個人のマシンで実用的な速度で動かすことに成功したのです。AI開発の未来を塗り替えるかもしれない、この挑戦の全貌に今すぐ迫りましょう。\n\n**AMD Radeonで実現する1220億パラメータAI、その技術的ブレークスルーの核心**\n\n今回の主役は、Alibabaが開発した最新鋭の大規模言語モデル「Qwen3.5-122B」です。1220億というパラメータ数は、現在最高峰とされるモデル群に匹敵する、まさにモンスター級の性能を秘めています。しかし、これほどの巨大モデルを動かすには、通常、NVIDIAのハイエンドGPUとその専用ソフトウェア基盤「CUDA」が必須とされてきました。AMDのGPUでこれを動かすことは、これまで非常に困難な道のりだったのです。この常識を覆したのが、海外のローカルAIコミュニティ「LocalLLaMA」の有志たちでした。彼らの成功の鍵は、複数の技術要素の革新的な組み合わせにあります。一つは、推論を高速化するライブラリ「vLLM」がAMDのソフトウェア基盤「ROCm」に正式に対応し始めたこと。そしてもう一つが、「GPTQ Int4」と呼ばれる量子化技術です。これは、AIモデルの品質劣化を最小限に抑えながら、そのサイズ（メモリ使用量）を劇的に圧縮する魔法のような技術。この二つの組み合わせにより、巨大なQwen3.5モデルを、プロ向けとはいえ個人でも手が届きうる「Radeon AI PRO R9700」4枚構成（合計VRAM 192GB）のマシンに収めることに成功したのです。これは単独の天才による偉業ではなく、複数のユーザーが知見を共有し、試行錯誤を重ねたオープンなコミュニティの集合知が生んだ金字塔と言えるでしょう。\n\n**研究者からクリエイターまで、ローカルAIが拓く新たな可能性**\n\nこの技術的達成は、一体誰に、どのような未来をもたらすのでしょうか。まず考えられるのは、AI研究者やデータサイエンティストです。クラウドサービスの利用料や、機密データを外部に送信するリスクを気にすることなく、手元のマシンで心ゆくまで最先端モデルの実験やファインチューニングに没頭できます。これは研究開発のスピードを劇的に加速させるでしょう。また、自社サービスにAIを組み込みたいソフトウェア開発者にとっても朗報です。APIの利用料や通信遅延から解放され、手元の環境で迅速にプロトタイピングを進めることが可能になります。さらに、作家やシナリオライターといったクリエイターも、この恩恵を享受できます。外部に情報が漏れる心配なく、自分専用の超高性能な執筆アシスタントとして、文章生成や校正、アイデア出しに活用できるのです。高価で品薄が続くNVIDIA製GPU以外の選択肢が現実になったことは、AIに関わるすべての人々にとって、計り知れない価値を持ちます。\n\n**必要なハードウェアとセットアップ手順の概要**\n\nこのパワフルな環境は、クリック一つで導入できるような商用ツールではありません。オープンソースのソフトウェアと自前のハードウェアを組み合わせて構築する、いわば技術者の腕の見せ所です。今回の事例で報告された構成は、AMDのプロフェッショナル向けGPU「Radeon AI PRO R9700」を4枚、そしてそれらを搭載できるハイスペックなマザーボードや電源です。ソフトウェア側では、Linux環境をベースに、AMDのROCmドライバ、Python、そしてvLLMやHugging Faceといったライブラリをセットアップする必要があります。具体的な設定ファイルやコマンドラインのレシピは、情報源であるRedditの「LocalLLaMA」コミュニティで公開されています。ただし、これは相応の技術知識と試行錯誤を厭わない探求心を要する挑戦です。しかし、その先には、既製品では味わえない、自分だけの最強AI環境を構築する喜びが待っています。\n\n**まとめ：AI開発の民主化を加速させる一大事件**\n\n今回の成功は、単なる一つの技術報告に留まりません。NVIDIA一強であったAIハードウェア市場に、AMDという強力な対抗馬の可能性を改めて示し、AI開発の選択肢を大きく広げる歴史的な一歩です。オープンなコミュニティの力が、高嶺の花であった最先端AIを、私たちの手元に引き寄せようとしています。さあ、あなたもこの革命の目撃者から、当事者へ。コミュニティの扉を叩き、ローカルAIの最前線に飛び込んでみてはどうでしょうか。",
+    "source": "Reddit Localllama",
+    "sourceUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1rx94ry/qwen35122ba10b_gptq_int4_on_4_radeon_ai_pro_r9700/",
+    "tags": [
+      "LocalLLaMA"
+    ],
+    "publishedAt": "2026-10-09",
+    "imagePrompt": "Photorealistic, close-up shot of the inside of a high-end custom PC workstation. Four powerful AMD Radeon graphics cards are installed, their red logos glowing softly. Intricate wiring and cooling systems are visible. On a monitor in the background, lines of code scroll down a dark terminal, suggesting a complex AI model is running. The scene is illuminated by the PC's internal lighting and the monitor's glow, creating a focused and intense atmosphere. Cinematic lighting, High resolution.",
+    "imageUrl": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80&fit=crop"
+  },
+  {
     "id": "v_8e92f863cb60_1791429222",
     "title": "もはやClaudeは不要か？開発者の常識を覆すローカルAI「GLM 5」の衝撃的なコーディング能力が今、ベールを脱ぐ。",
     "summary": "もはやClaudeは不要か？開発者の常識を覆すローカルAI「GLM 5」の衝撃的なコーディング能力が今、ベールを脱ぐ。",
