@@ -300,7 +300,7 @@ export default function XserverWordPressGuidePage() {
             </a>
             で確認してください。
           </p>
-          <p className="text-xs text-gray-400 mt-4">
+          <p className="text-xs text-gray-300 mt-4">
             ※本ページはプロモーション（アフィリエイト広告）を含みます。掲載内容は公開日時点の情報です。
           </p>
         </section>

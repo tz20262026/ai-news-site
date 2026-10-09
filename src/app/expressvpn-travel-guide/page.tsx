@@ -217,7 +217,7 @@ export default function ExpressVpnTravelGuidePage() {
           </div>
         </section>
 
-        <p className="text-center text-xs text-gray-400">
+        <p className="text-center text-xs text-gray-300">
           ※本記事はExpressVPNのアフィリエイトプログラムに基づくPRを含みます。VPNの利用自体は日本を含むほとんどの国で合法ですが、
           各動画配信サービスの利用規約は事前にご確認ください。
         </p>

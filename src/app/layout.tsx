@@ -73,6 +73,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${notoSansJP.variable} h-full`} suppressHydrationWarning>
+      <head>
+        {/* 記事画像は next/image を使わず素の img で外部CDNから直接配信しているため、
+            LCP候補になりやすいアイキャッチ画像の接続確立を前倒しして表示速度を改善する */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://images.microcms-assets.io" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.microcms-assets.io" />
+        <link rel="dns-prefetch" href="https://storage.googleapis.com" />
+      </head>
       <body className="min-h-full flex flex-col bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased transition-colors">
         {/* ─── Google AdSense ─────────────────────────────── */}
         {ADSENSE_ID && (

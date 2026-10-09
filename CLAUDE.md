@@ -15,4 +15,5 @@
 ## 既知の注意点
 - **画像生成モデル(2026-08-30 修正済み)**: Googleが`imagen-3.0-generate-001`を8月中旬に廃止(404 NOT_FOUND)。8/20以降の全記事がpicsum.photosの仮画像に無言フォールバックして「画像が同じ」状態になっていた。`scripts/post_one_article.py`は`IMAGE_MODELS`(`imagen-4.0-fast-generate-001`→`imagen-4.0-generate-001`→`imagen-3.0-generate-002`の順で自動リトライ)に変更済み。**次のワークフロー実行(翌JST 10:00頃)で本物のAI画像が復活しているかログで必ず確認すること**(`gh run view <id> --log | grep -i "画像生成: 成功"`)。3モデルとも404なら現行のVertex Imagenモデル名をcontext7かGCPドキュメントで再確認して差し替える
 - 画像フォールバックはpicsum.photos廃止 → `scripts/image_utils.py`の`_FALLBACK_POOL`(実在確認済みUnsplash 31枚)+記事IDハッシュ分散。`src/lib/articles.ts`の`FALLBACK_IMAGE_POOL`と同一内容を保つこと。picsum URLはgetArticleImageUrl側で無視してプールに寄せる実装
-- 未着手の宿題: `/tags`ページのHTML容量527KB
+- `/tags`ページのHTML容量527KB問題は解消済み(2026-10-10実測で137KB。タグ一覧はtag名+件数のみをクライアントに渡す実装になっており、記事本文等の重いデータは含まれていない)
+- 2026-10-10 自動ブラッシュアップ: ダーク背景でのコントラスト規定違反(`text-gray-400`)を3箇所修正(`expressvpn-travel-guide` `xserver-wordpress-guide` `ShareButtons`の注意書き・ハッシュタグ)。画像CDN(`images.unsplash.com` `images.microcms-assets.io`)への`preconnect`/`dns-prefetch`をlayout.tsxに追加し、記事サムネイル(素のimgタグ使用)の表示速度を改善
