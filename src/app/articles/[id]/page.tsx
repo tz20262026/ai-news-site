@@ -145,6 +145,8 @@ export default async function ArticlePage({ params }: Props) {
             alt={article.title}
             loading="eager"
             decoding="async"
+            // 2026-10-14 追加: 記事詳細のアイキャッチはLCP候補画像のため優先読込を明示(Core Web Vitals改善)
+            fetchPriority="high"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />

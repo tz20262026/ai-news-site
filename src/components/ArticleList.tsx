@@ -143,6 +143,8 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
           <input
             type="text"
             placeholder="キーワードで検索..."
+            // 2026-10-14 追加: placeholderだけではスクリーンリーダーに読み上げられないことがあるためaria-labelを明示
+            aria-label="記事をキーワードで検索"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-500 bg-white dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 transition-colors"
@@ -155,6 +157,8 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
         {/* すべて（全幅） */}
         <button
           onClick={() => setSelectedCategory("latest")}
+          // 2026-10-14 追加: トグルボタン群の選択状態をスクリーンリーダーに伝える
+          aria-pressed={selectedCategory === "latest"}
           className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-medium text-sm mb-2 transition-colors ${
             selectedCategory === "latest"
               ? "bg-blue-600 text-white shadow-sm"
@@ -176,6 +180,8 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
               <button
                 key={id}
                 onClick={() => setSelectedCategory(id === selectedCategory ? "latest" : id)}
+                // 2026-10-14 追加: トグルボタン群の選択状態をスクリーンリーダーに伝える
+                aria-pressed={selectedCategory === id}
                 className={`flex items-center justify-center gap-2 py-3 px-2 rounded-xl font-medium transition-colors ${
                   selectedCategory === id
                     ? "bg-blue-600 text-white shadow-sm"
@@ -215,6 +221,8 @@ export default function ArticleList({ articles }: { articles: Article[] }) {
               alt={featured.title}
               loading="eager"
               decoding="async"
+              // 2026-10-14 追加: LCP候補画像のためブラウザに優先読込を明示(Core Web Vitals改善)
+              fetchPriority="high"
               className="absolute inset-0 w-full h-full object-cover article-image group-hover:scale-[1.03] transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
