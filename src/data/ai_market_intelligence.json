@@ -1,52 +1,52 @@
 {
-  "updatedAt": "2026-10-13T16:01:31.075660+09:00",
-  "aiJudgment": "開発AIは自然言語でのアプリ構築競争が激化。クリエイティブでは多機能化と専門特化が共存。Soraのサービス終了など、市場の淘汰と再編が加速しています。",
+  "updatedAt": "2026-10-14T14:15:58.594662+09:00",
+  "aiJudgment": "開発分野ではAIエージェント化が加速。Manusのような統合プラットフォームが特化型ツールに挑戦する一方、Midjourneyは品質でクリエイティブ市場を牽引している。",
   "segments": [
     {
       "id": "development",
       "label": "開発",
       "icon": "code",
       "winner": {
-        "name": "Replit Agent",
+        "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "既存の強力な開発環境を基盤とし、チャットベースでのアプリ構築を実現。開発者からの信頼も厚く、具体的なユースケースも豊富なため、今月の最強選択と評価しました。",
+      "reason": "Anthropicの強力な基盤モデルを背景に、IDEやターミナルと連携するエージェント機能を提供。プロ開発者の思考パートナーとして、生産性の飛躍的向上が期待できるため。",
       "tools": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "$20/month (Proプラン)",
+          "newFeature": "エージェント的コーディングツール",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "Anthropic社が提供するエージェント的コーディングツール。Proプランで利用可能。"
+        },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "要確認",
-          "newFeature": "チャットを通じたアプリ構築機能",
-          "rating": 5,
-          "badge": "AI's Choice",
+          "newFeature": "チャットによるアプリ構築",
+          "rating": 4,
+          "badge": null,
           "summary": "チャットを通じてアプリやウェブサイトを構築するAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
           "price": "要確認",
-          "newFeature": "自然言語での本番環境グレードのソフト構築",
+          "newFeature": "自然言語からのリアルタイムビルド",
           "rating": 4,
           "badge": null,
-          "summary": "アイデアを言葉で伝えるだけで、アプリやウェブサイトを構築できるプラットフォーム。"
+          "summary": "自然言語で指示するだけで、本番稼働可能なソフトウェアを構築するプラットフォーム。"
         },
         {
           "id": "manus-dev",
           "name": "Manus",
           "price": "要確認",
-          "newFeature": "Manus 2.0発表、ゲーム開発機能追加",
-          "rating": 4,
+          "newFeature": "ゲーム作成機能（New）",
+          "rating": 3,
           "badge": null,
-          "summary": "開発からデザインまでこなす多機能AI。ウェブサイトやゲームも作成可能。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "不明",
-          "newFeature": "情報なし（セキュリティページのみ）",
-          "rating": 1,
-          "badge": null,
-          "summary": "Anthropicのコーディング特化モデル。現在公式サイトはセキュリティ検証中。"
+          "summary": "ウェブサイトやゲームなど、多様な開発タスクに対応する統合AIプラットフォーム。"
         }
       ]
     },
@@ -58,16 +58,16 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "スライド作成、各種自動化、Slack連携など、事務作業を幅広くカバー。Manus 2.0の発表により、さらなる機能強化が期待されるため、今月の最強選択と評価しました。",
+      "reason": "開発やクリエイティブに加え、スライド作成など事務効率化機能も統合。一つのツールで幅広い業務をカバーできる汎用性の高さを評価。",
       "tools": [
         {
           "id": "manus-prod",
           "name": "Manus",
           "price": "要確認",
-          "newFeature": "Manus 2.0発表、多機能化が加速",
+          "newFeature": "スライド作成機能",
           "rating": 4,
           "badge": "AI's Choice",
-          "summary": "スライド作成、自動化、Slack連携など、多様な業務を効率化するAIアシスタント。"
+          "summary": "スライド作成、リサーチ、Slack連携など、ビジネスの生産性を向上させる機能を提供。"
         }
       ]
     },
@@ -79,34 +79,34 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像生成の分野で圧倒的な品質と評価を確立。専門分野に特化し、常に最高峰のクリエイティブアウトプットを提供し続けている点を高く評価し、今月の最強選択と判断しました。",
+      "reason": "「世界で最も美しいAIモデル」と自負する通り、生成される画像の芸術性と品質において他を圧倒。クリエイティブ分野でのデファクトスタンダードとしての地位を確立しているため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
           "price": "要確認",
-          "newFeature": "今後のプロジェクトテーマを発表",
+          "newFeature": "新規プロジェクトを複数準備中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う、高品質な画像生成に特化したAIツール。"
+          "summary": "世界で最も美しいと評される、高品質・高芸術性の画像生成AIモデル。"
         },
         {
           "id": "manus-creative",
           "name": "Manus",
           "price": "要確認",
-          "newFeature": "ゲーム作成、ビデオ編集の新機能を追加",
+          "newFeature": "ビデオ作成、音楽生成機能（New）",
           "rating": 4,
           "badge": null,
-          "summary": "画像、音楽、ビデオ、ゲームまで。あらゆるクリエイティブ作業を支援する統合AI。"
+          "summary": "デザイン、画像、音楽、ビデオなど多様なクリエイティブ制作が可能な統合AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "サービス終了",
-          "newFeature": "サービス終了を発表 (APIは9月まで)",
-          "rating": 1,
+          "price": "不明",
+          "newFeature": "公式サイトが現在アクセス不可",
+          "rating": 3,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。Web/アプリはサービス終了、APIもまもなく終了予定。"
+          "summary": "OpenAIが開発するテキストから動画を生成するAI。現在公式サイトが利用不可。"
         }
       ]
     }
