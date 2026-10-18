@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-17T13:53:48.428957+09:00",
-  "aiJudgment": "開発市場ではAIエージェント競争が激化。Claudeはビジネス連携を深め、Manusはクリエイティブ分野で多機能化を加速させている。",
+  "updatedAt": "2026-10-18T14:00:50.218278+09:00",
+  "aiJudgment": "開発ツール市場は多機能化・統合化が加速。ManusがReplit等に直接対抗し競争が激化。一方、Soraの障害は大手でも安泰ではないことを示唆。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "統合開発環境としての完成度が高く、AIエージェントによるアプリ構築からデータベース、デプロイまで一気通貫で提供。開発者向けの機能が充実しているため。",
+      "reason": "Replit Agentはチャット形式でアプリを構築するという明確な価値提案が強力。開発環境との統合も深く、アイデアを迅速に形にできる点で他をリードしている。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "Pricingページあり",
-          "newFeature": "チャットによるアプリ構築エージェント",
+          "price": "プランによる",
+          "newFeature": "チャットでのアプリ構築",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットでアプリを構築するAIエージェント。統合開発環境内で完結。"
+          "summary": "チャットでアプリを構築するAIコーディングエージェント。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "Pricingページあり",
-          "newFeature": "エンタープライズ版が登場",
-          "rating": 5,
+          "price": "プランによる",
+          "newFeature": "強力な新モデル群(Opus等)",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropicが提供するコーディング特化AI。エンタープライズ版も提供。"
+          "summary": "Anthropic社のモデル群を基盤としたコーディングAI。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "Pricingページあり",
+          "price": "プランによる",
           "newFeature": "エンドツーエンドのインフラ提供",
           "rating": 4,
           "badge": null,
-          "summary": "自然言語から本番環境で使えるソフトウェアを構築するプラットフォーム。"
+          "summary": "自然言語でWebアプリを構築・運用するプラットフォーム。"
         },
         {
-          "id": "manus-dev",
+          "id": "manus-web",
           "name": "Manus (Web)",
-          "price": "Pricingページあり",
-          "newFeature": "ウェブサイト・ゲーム構築機能",
-          "rating": 3,
+          "price": "プランによる",
+          "newFeature": "ゲーム・ビデオ制作機能追加",
+          "rating": 4,
           "badge": null,
-          "summary": "多機能AIツールの一部としてウェブサイトやゲームの構築機能を提供。"
+          "summary": "ウェブサイトからゲームまで、多岐にわたる制作が可能なAI。"
         }
       ]
     },
@@ -58,25 +58,16 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Google WorkspaceやMicrosoft 365との連携機能を発表し、既存の業務フローへのシームレスな統合を実現。汎用性と拡張性の高さで他を圧倒しているため。",
+      "reason": "Microsoft 365との連携機能が発表され、文書作成やデータ分析など、具体的な業務シーンでの活用が大きく期待されるため、今月の最強選択とした。",
       "tools": [
         {
-          "id": "claude-productivity",
+          "id": "claude",
           "name": "Claude",
-          "price": "Pricingページあり",
-          "newFeature": "Google/MS製品との連携拡張",
+          "price": "プランによる",
+          "newFeature": "Microsoft 365連携機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "文書作成、要約、分析に加え、各種ビジネスツールとの連携で業務を効率化。"
-        },
-        {
-          "id": "manus-productivity",
-          "name": "Manus (Slides)",
-          "price": "Pricingページあり",
-          "newFeature": "スライド作成、Slack連携機能",
-          "rating": 4,
-          "badge": null,
-          "summary": "スライド作成やSlack連携など、プレゼンやチーム連携を支援する機能を提供。"
+          "summary": "高度な対話能力を持つ汎用AIアシスタント。"
         }
       ]
     },
@@ -88,38 +79,45 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像、音楽、動画、デザインと多岐にわたる生成AI機能を統合。一つのツールで様々なクリエイティブ制作が可能であり、新機能の追加も活発なため。",
+      "reason": "スライド、デザインに加え、新たにビデオやゲーム生成機能を追加。一つのプラットフォームで多様なクリエイティブ作業を完結できる統合力で他を圧倒している。",
       "tools": [
         {
-          "id": "manus-creative",
+          "id": "manus",
           "name": "Manus",
-          "price": "Pricingページあり",
-          "newFeature": "動画・ゲーム生成機能が新登場",
+          "price": "プランによる",
+          "newFeature": "ビデオ・ゲーム生成機能 (New)",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "画像、音楽、動画、デザイン、ゲームまで生成可能な統合クリエイティブAI。"
+          "summary": "スライドからゲームまで生成する統合クリエイティブAI。"
         },
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "不明",
-          "newFeature": "複数の新規プロジェクトを計画中",
+          "price": "プランによる",
+          "newFeature": "複数の新プロジェクトを準備中",
           "rating": 4,
           "badge": null,
-          "summary": "世界で最も美しいAIモデルと評される高クオリティな画像生成AI。"
+          "summary": "高品質な画像生成で知られるAIアートツール。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "不明",
-          "newFeature": "公式サイトがアクセス不能状態",
-          "rating": 1,
+          "newFeature": "公式サイトがアクセス不能に",
+          "rating": 2,
           "badge": null,
-          "summary": "OpenAIが開発する動画生成AI。現在、公式サイトにアクセスできない問題あり。"
+          "summary": "OpenAI開発の動画生成AI。現在サイトに問題発生中。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": []
+  "alerts": [
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Replit",
+      "message": "下克上の兆し：Manusが「VS Replit」比較ページを公開し、ウェブサイトやゲーム制作機能で直接的に挑戦状を叩きつけている。"
+    }
+  ]
 }
