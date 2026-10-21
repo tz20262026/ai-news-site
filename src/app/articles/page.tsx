@@ -205,7 +205,7 @@ export default async function ArticlesIndexPage({ searchParams }: Props) {
 
           {pageNumbers.map((p, i) =>
             p === "ellipsis" ? (
-              <span key={`ellipsis-${i}`} className="px-2 text-sm text-gray-400 dark:text-gray-500">
+              <span key={`ellipsis-${i}`} className="px-2 text-sm text-gray-600 dark:text-gray-300">
                 …
               </span>
             ) : (

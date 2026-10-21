@@ -188,7 +188,7 @@ export default function AiToolDiagnosisPage() {
               >
                 <summary className="cursor-pointer text-sm font-bold text-gray-900 dark:text-white list-none flex items-center justify-between gap-2">
                   {faq.question}
-                  <span className="text-gray-400 group-open:rotate-45 transition-transform shrink-0">＋</span>
+                  <span className="text-gray-600 dark:text-gray-300 group-open:rotate-45 transition-transform shrink-0">＋</span>
                 </summary>
                 <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mt-3">
                   {faq.answer}
