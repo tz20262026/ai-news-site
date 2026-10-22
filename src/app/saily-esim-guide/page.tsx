@@ -236,8 +236,6 @@ export default function SailyEsimGuidePage() {
             現地でフリーWi-Fiを使う場面に備えて
             <Link href="/nordvpn-guide" className="text-blue-400 hover:underline">NordVPN</Link>
             を、海外から日本の動画サービスを見たい人は
-            <Link href="/expressvpn-guide" className="text-blue-400 hover:underline">ExpressVPN</Link>
-            や
             <Link href="/suikavpn-guide" className="text-blue-400 hover:underline">スイカVPN</Link>
             を組み合わせると、海外でも日本と同じデジタル環境が完成します。
           </p>

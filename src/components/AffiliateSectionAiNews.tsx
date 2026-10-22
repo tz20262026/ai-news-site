@@ -66,16 +66,6 @@ const items = [
     color: "#4f46e5",
   },
   {
-    href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G6VE0I+5JSS+5YRHE",
-    badge: "⚡ 高速接続",
-    badgeColor: "#0891b2",
-    title: "ExpressVPN",
-    tagline: "高速VPN ｜ 海外AI・テックサービス制限突破",
-    desc: "ChatGPTや海外AIツールへの制限なしアクセス。業界最速の接続速度で大容量AIファイル転送もストレスなし。",
-    cta: "公式サイトで詳細を見る →",
-    color: "#0891b2",
-  },
-  {
     // 2026-08-01追加・成果報酬15,000円・リモートワーク特化VPN
     href: "https://px.a8.net/svt/ejp?a8mat=4B5RS6+G4HQOI+50C8+15QP81",
     badge: "🏢 リモートワーク特化",

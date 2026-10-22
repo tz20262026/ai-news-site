@@ -43,7 +43,6 @@ const SECURITY_LINKS = [
   { href: "/nordvpn-guide", label: "NordVPN完全ガイド" },
   { href: "/nordvpn-wifi-anzen", label: "公共Wi-Fiを安全に使うガイド" },
   { href: "/suikavpn-guide", label: "スイカVPN完全ガイド" },
-  { href: "/expressvpn-guide", label: "ExpressVPN完全ガイド" },
   { href: "/saily-esim-guide", label: "Saily eSIM完全ガイド" },
   { href: "/saily-esim-ai-tabi", label: "AI旅行×eSIM活用ガイド" },
   { href: "/xserver-wordpress-guide", label: "XServer for WordPress" },

@@ -145,12 +145,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/expressvpn-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
       url: `${BASE_URL}/nordvpn-guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -419,13 +413,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${BASE_URL}/xserver-wordpress-guide`,
       lastModified: new Date("2026-09-07"),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    // 2026-10-02 自動ブラッシュアップで発見：公開済みだがサイトマップから漏れていたページ（ExpressVPN記事作成ボーナス記事）
-    {
-      url: `${BASE_URL}/expressvpn-travel-guide`,
-      lastModified: new Date("2026-09-28"),
       changeFrequency: "monthly",
       priority: 0.9,
     },

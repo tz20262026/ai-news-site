@@ -280,8 +280,8 @@ export default function SailyEsimAiTabiPage() {
               公共Wi-FiでAIツールを安全に使うNordVPN活用ガイド
             </Link>
             を、海外から日本の動画サービスを見たい人は
-            <Link href="/expressvpn-guide" className="text-blue-400 hover:underline">
-              ExpressVPN
+            <Link href="/suikavpn-guide" className="text-blue-400 hover:underline">
+              スイカVPN
             </Link>
             もあわせてチェックしておくと、海外でも日本と同じデジタル環境がそろいます。
             もとの

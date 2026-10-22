@@ -231,8 +231,6 @@ export default function SuikaVpnGuidePage() {
           </h2>
           <p className="text-gray-300 text-sm leading-[1.9]">
             海外から日本の動画サイトを楽しむなら、日本語で完結する国産のスイカVPNが最有力候補です。
-            ライブスポーツ中心で速度最優先なら
-            <Link href="/expressvpn-guide" className="text-blue-400 hover:underline">ExpressVPN</Link>、
             セキュリティ重視のオールラウンダーなら
             <Link href="/nordvpn-guide" className="text-blue-400 hover:underline">NordVPN</Link>、
             渡航時の通信は

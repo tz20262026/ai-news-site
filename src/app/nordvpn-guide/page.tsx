@@ -233,9 +233,7 @@ export default function NordVpnGuidePage() {
               公共Wi-FiでAIツールを安全に使うNordVPN活用ガイド
             </Link>
             にまとめました。
-            バランス重視ならNordVPN、ライブ動画の速度最優先なら
-            <Link href="/expressvpn-guide" className="text-blue-400 hover:underline">ExpressVPN</Link>、
-            海外から日本のVOD視聴が目的なら
+            バランス重視ならNordVPN、海外から日本のVOD視聴が目的なら
             <Link href="/suikavpn-guide" className="text-blue-400 hover:underline">スイカVPN</Link>
             もチェックしてみてください。
           </p>

@@ -14,7 +14,6 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["動画生成", "video generation", "sora", "runway", "kling"], guide: { href: "/ai-video-guide", label: "AI動画生成ガイド", emoji: "🎬" } },
   { keywords: ["sora 2", "sora2", "sora プロンプト", "sora 商用利用", "text-to-video"], guide: { href: "/sora-guide", label: "Sora 2 使い方完全ガイド", emoji: "🎥" } },
   { keywords: ["perplexity"], guide: { href: "/perplexity-guide", label: "Perplexityガイド", emoji: "🔍" } },
-  { keywords: ["vpn", "expressvpn"], guide: { href: "/expressvpn-guide", label: "ExpressVPN完全ガイド", emoji: "⚡" } },
   { keywords: ["vpn", "nordvpn", "セキュリティ"], guide: { href: "/nordvpn-guide", label: "NordVPN完全ガイド", emoji: "🛡️" } },
   { keywords: ["vpn", "スイカ", "suikavpn"], guide: { href: "/suikavpn-guide", label: "スイカVPN完全ガイド", emoji: "🍉" } },
   { keywords: ["wi-fi", "wifi", "公衆無線lan", "フリーwi-fi"], guide: { href: "/nordvpn-wifi-anzen", label: "公共Wi-FiでAIツールを安全に使うガイド", emoji: "📡" } },
@@ -48,7 +47,6 @@ const TAG_GUIDES: { keywords: string[]; guide: Guide }[] = [
   { keywords: ["画像生成 比較", "ideogram", "dall-e 3 比較", "画像生成ツール比較"], guide: { href: "/ai-image-comparison", label: "AI画像生成ツール徹底比較", emoji: "🆚" } },
   { keywords: ["aiツール比較", "ツール比較", "tool comparison"], guide: { href: "/ai-tools-comparison", label: "AIツール徹底比較", emoji: "⚖️" } },
   { keywords: ["ブログ運営", "記事自動生成", "ai ブログ", "ブログ自動化"], guide: { href: "/ai-blog-automation", label: "AIで記事を自動生成するブログ運営ツールの選び方", emoji: "📰" } },
-  { keywords: ["tver", "海外出張 動画", "留学 動画", "海外 netflix", "日本のnetflix"], guide: { href: "/expressvpn-travel-guide", label: "海外出張・留学・旅行中にTVer/日本のNetflixを見る方法", emoji: "🧳" } },
 ];
 
 const DIAGNOSIS_GUIDE: Guide = { href: "/ai-tool-diagnosis", label: "AIツール診断（7つの質問で最適な1本がわかる）", emoji: "🎯" };
