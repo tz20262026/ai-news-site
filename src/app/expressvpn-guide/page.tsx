@@ -164,7 +164,7 @@ export default function ExpressVpnGuidePage() {
               VPN接続中でも速度低下が小さいのが最大の強み。ライブ中継・高画質ストリーミング・大容量AIファイルの転送も快適です。
             </p>
             <p>
-              <strong className="text-white">② 世界100カ国前後のサーバー網</strong>——日本サーバーはもちろん、
+              <strong className="text-white">② 世界113カ国のサーバー網</strong>——日本サーバーはもちろん、
               出張先・旅行先のどこからでも接続先を選べます。当サイトのようにChatGPTなど海外AIツールを使う人にも便利です。
             </p>
             <p>
