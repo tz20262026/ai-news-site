@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-29T15:18:16.673699+09:00",
-  "aiJudgment": "開発分野ではReplitが安定。クリエイティブ分野ではManusが新機能で躍進し、Soraのサービス終了という大きな変動があった月。",
+  "updatedAt": "2026-10-30T15:18:35.739836+09:00",
+  "aiJudgment": "開発はエージェント化、クリエイティブは多メディア化が進む。Soraの終了はAIツールの商用化の難しさも浮き彫りにした。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,34 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャット形式でアプリ構築まで完結できる具体的な機能が提示されており、開発者にとっての価値が明確。他のツールは情報が不足しているため、Replit Agentが優位。",
+      "reason": "対話形式でアプリを構築するエージェント機能が、開発プロセスを根本から変える可能性を秘めている。アイデアから実装までの速度と手軽さで他を圧倒。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要確認",
-          "newFeature": "チャットでアプリを構築するAIエージェント",
+          "price": "プラン別",
+          "newFeature": "チャットを通じたアプリ構築エージェント",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットを通じてアプリやウェブサイトを構築できるAIコーディングエージェント。"
+          "summary": "対話形式でアプリを構築する統合開発環境。プロトタイピングからデプロイまで一貫してサポート。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要確認",
-          "newFeature": "情報なし",
-          "rating": 3,
+          "price": "プラン別",
+          "newFeature": "新モデル群(Mythos, Fable)の追加",
+          "rating": 5,
           "badge": null,
-          "summary": "Anthropic社が提供するコーディング支援AI。セキュリティ検証ページのため詳細不明。"
+          "summary": "Anthropic社の高性能モデル群。コーディングからエージェント開発まで幅広く対応する。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "要確認",
-          "newFeature": "情報なし",
-          "rating": 2,
+          "price": "プラン別",
+          "newFeature": "エンドツーエンドのインフラ提供を強化",
+          "rating": 4,
           "badge": null,
-          "summary": "開発者向けツールと思われるが、キャッシュされたページのため詳細不明。"
+          "summary": "自然言語で本番品質のソフトウェアをリアルタイムで構築するプラットフォーム。"
         }
       ]
     },
@@ -49,16 +49,16 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "このセグメントには競合情報が少ないが、汎用性と対話性能の高さで知られるClaudeが、基本的な事務効率化タスクにおいて安定した選択肢となる。",
+      "reason": "Microsoft 365連携により、既存の業務フローにAIをシームレスに統合。文書作成やデータ分析など、日常的な事務作業の生産性を飛躍的に向上させる。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "要確認",
-          "newFeature": "情報なし",
-          "rating": 4,
+          "price": "プラン別",
+          "newFeature": "Claude for Microsoft 365連携",
+          "rating": 5,
           "badge": "AI's Choice",
-          "summary": "Anthropic社が開発した汎用大規模言語モデル。対話や文章生成に優れる。"
+          "summary": "M365と連携し、文書作成やデータ分析など日常業務の生産性を向上させるAIアシスタント。"
         }
       ]
     },
@@ -67,37 +67,28 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "Manus",
+        "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "既存の画像生成やスライド作成に加え、新たにゲームとビデオ生成機能を追加。一つのツールで多岐にわたるクリエイティブ作業をカバーできる点が評価された。",
+      "reason": "画像生成の品質において、他の追随を許さない圧倒的なクオリティを維持している。クリエイティブ分野における「美」の基準を再定義し続けている。",
       "tools": [
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "要確認",
-          "newFeature": "ゲーム・ビデオ生成機能が新登場 (New)",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "スライド、ウェブサイト、ゲーム、ビデオなど多岐にわたる制作が可能なAI。"
-        },
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要確認",
-          "newFeature": "新プロジェクトを複数準備中",
-          "rating": 4,
-          "badge": null,
-          "summary": "世界で最も美しいAIモデルを構築するとされる、高品質な画像生成AI。"
+          "price": "サブスクリプション",
+          "newFeature": "複数の野心的な新プロジェクトを予告",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "世界最高峰の品質を誇る画像生成AI。芸術的な表現力と美しいビジュアルが特徴。"
         },
         {
-          "id": "sora",
-          "name": "Sora",
-          "price": "サービス終了",
-          "newFeature": "Web/アプリ/APIがサービス終了",
-          "rating": 1,
+          "id": "manus",
+          "name": "Manus",
+          "price": "プラン別",
+          "newFeature": "ゲーム作成、ビデオ作成機能を追加",
+          "rating": 4,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。2026年にサービスが終了し、データエクスポートを推奨。"
+          "summary": "スライド、ウェブ、ゲーム、ビデオなど多様なコンテンツを生成する統合AIプラットフォーム。"
         }
       ]
     }
@@ -107,8 +98,8 @@
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Replit",
-      "message": "下克上の兆し：ManusがReplitの牙城を崩す可能性。多機能性で開発領域にも進出。"
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：Manusがゲーム・動画生成など多機能性でLovableに挑戦状。"
     }
   ]
 }
