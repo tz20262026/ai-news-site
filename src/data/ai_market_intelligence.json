@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-31T15:10:14.021765+09:00",
-  "aiJudgment": "Claudeが開発・業務効率化で存在感を示す一方、Soraのサービス終了告知でMidjourneyの独走が確定的になった。",
+  "updatedAt": "2026-11-01T15:40:09.348597+09:00",
+  "aiJudgment": "Soraの撤退は動画生成市場に衝撃を与えた。一方、ClaudeとManusが機能拡張で競争をリードし、市場の再編が加速している。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,25 @@
         "name": "Claude Code",
         "tagline": "今月の最強選択"
       },
-      "reason": "Proプランで利用可能なエージェント型コーディングツールとして明確な価値を提示。ターミナルやIDEとの連携も示唆され、開発ワークフローへの深い統合が期待できるため。",
+      "reason": "豊富なモデル群とエンタープライズ向けソリューションが充実。基盤モデルとしての安定性と将来性が高く、単なるIDE統合ツールを超える開発プラットフォームとしての価値を評価。",
       "tools": [
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "$17/mo (annual)",
-          "newFeature": "エージェント型コーディングツール",
+          "price": "プラン別",
+          "newFeature": "新モデル群(Opus, Sonnet, Haiku)搭載",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "ターミナル、IDE、ブラウザで利用可能なAIコーディングエージェント。"
+          "summary": "Anthropic提供の強力なコーディング支援AI。多様なモデルで開発を加速。"
         },
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
-          "newFeature": "チャットによるアプリ構築",
+          "price": "プラン別",
+          "newFeature": "チャットを通じたアプリ自動構築機能",
           "rating": 4,
           "badge": null,
-          "summary": "チャット形式で対話しながらアプリやウェブサイトを構築するAIエージェント。"
-        },
-        {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "不明",
-          "newFeature": "アクセス不可",
-          "rating": 1,
-          "badge": null,
-          "summary": "ページがトラッカーにリダイレクトされ、現在サービス内容を確認できない。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "不明",
-          "newFeature": "アクセス不可",
-          "rating": 1,
-          "badge": null,
-          "summary": "サーバーエラー（403 Forbidden）により、現在アクセスできない状態。"
+          "summary": "Replit IDEに完全統合されたAIコーディングエージェント。"
         }
       ]
     },
@@ -58,16 +40,25 @@
         "name": "Claude",
         "tagline": "今月の最強選択"
       },
-      "reason": "Proプランではドキュメントやスライド等の作成をAIに一任でき、日常業務の生産性を大幅に向上させる具体的な機能を提供しているため、今月の最強選択と評価。",
+      "reason": "Microsoft 365連携が発表され、既存の業務フローへの統合力が飛躍的に向上。具体的なビジネスシーンでの活用が期待でき、生産性向上への貢献度が最も高いと判断。",
       "tools": [
         {
           "id": "claude",
           "name": "Claude",
-          "price": "$17/mo (annual)",
-          "newFeature": "ドキュメント、スライド等の自動生成",
+          "price": "プラン別",
+          "newFeature": "Microsoft 365連携、@Claude機能",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "日常業務を支援。チャットやファイル操作、アプリ連携など多機能。"
+          "summary": "チャット、要約、分析など汎用的な業務を支援するAIアシスタント。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "プラン別",
+          "newFeature": "ゲーム・ビデオ作成機能を追加",
+          "rating": 4,
+          "badge": null,
+          "summary": "スライド、Webサイト、デザイン等を生成する多機能AIプラットフォーム。"
         }
       ]
     },
@@ -79,25 +70,34 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "競合のSoraがサービス終了を告知する中、Midjourneyは新たなプロジェクト展開を予告し、市場でのリーダーシップを強化。その芸術性の高さも評価され、今月の最強と判断。",
+      "reason": "競合のSoraがサービス終了を告知し、市場での地位がより盤石に。画像生成の品質とブランド力で依然として圧倒的優位を保っており、クリエイティブ分野の王座は揺るがない。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "要確認",
-          "newFeature": "新規プロジェクトを順次公開予定",
+          "price": "プラン別",
+          "newFeature": "新規プロジェクトを複数計画中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "高品質で芸術的な画像を生成するAI。人間精神の増幅を探求する。"
+          "summary": "世界最高峰の品質を誇る画像生成AI。芸術的な表現力に定評。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "プラン別",
+          "newFeature": "ゲーム・ビデオ作成機能を追加",
+          "rating": 4,
+          "badge": null,
+          "summary": "デザイン、音楽、ビデオなど多様なクリエイティブを生成する統合AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "サービス終了",
-          "newFeature": "2026年にサービス終了予定",
+          "price": "N/A",
+          "newFeature": "2026年のサービス終了を告知",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。2026年にWeb、アプリ、APIの提供を終了。"
+          "summary": "OpenAIの動画生成AI。2026年にサービス終了予定。"
         }
       ]
     }
