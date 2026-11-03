@@ -85,11 +85,24 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased transition-colors">
         {/* ─── Google AdSense ─────────────────────────────── */}
         {ADSENSE_ID && (
-          <Script
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
-            strategy="afterInteractive"
-            crossOrigin="anonymous"
-          />
+          <>
+            <Script
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+              strategy="afterInteractive"
+              crossOrigin="anonymous"
+            />
+            {/* 2026-11-03追加: 自動広告(Auto ads)を有効化。
+                手動広告ユニット(AdUnit.tsx)は仮のプレースホルダーslot IDのまま機能していなかったが、
+                これはAdSenseダッシュボード側でのログインなしでも設定できるページレベル広告の有効化フラグで、
+                Googleが自動でページ内の適切な位置に広告を配置する。手動ユニットとは独立して動作するため、
+                既存のAdUnit.tsx配置(将来slot IDが設定され次第機能する)と併存させて問題ない。 */}
+            <Script id="adsense-auto-ads" strategy="afterInteractive">
+              {`(adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "${ADSENSE_ID}",
+                enable_page_level_ads: true
+              });`}
+            </Script>
+          </>
         )}
 
         {/* ─── Google Analytics 4 ─────────────────────────── */}
