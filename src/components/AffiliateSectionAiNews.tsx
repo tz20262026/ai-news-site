@@ -227,6 +227,23 @@ export default function AffiliateSectionAiNews() {
           <p className="text-slate-400 text-sm">海外AIサービスを安全に使うためのツールを厳選</p>
         </div>
 
+        {/* 2026-11-08追加: ブラックフライデー2026(11/27)に向けた期間限定フォーカス企画。既存承認済みリンクを再利用し新規ASP申請なし */}
+        <div className="mb-10 p-6 rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-500/10 via-slate-900 to-slate-900">
+          <p className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">🖤 Black Friday 2026・11月27日まで</p>
+          <h3 className="text-white font-black text-lg mb-3">年末の業務効率化・副業ツール、今のうちに無料登録しておく</h3>
+          <p className="text-slate-400 text-xs mb-4">ブラックフライデー商戦の時期は各SaaSの新規特典・キャンペーンが動きやすいタイミング。無料登録だけで使えるツールは先に押さえておくのがおすすめです。</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a href="https://px.a8.net/svt/ejp?a8mat=4BA9H7+8Y3M4Y+3VAG+5YRHE" rel="nofollow sponsored noopener" target="_blank"
+               className="flex-1 text-center text-xs font-bold py-3 px-4 rounded-xl bg-amber-500 text-slate-900 hover:bg-amber-400 transition-colors">
+              📈 SocialDogを無料で使ってみる →
+            </a>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4BA9H7+8YP1QQ+5L4K+5Z6WY" rel="nofollow sponsored noopener" target="_blank"
+               className="flex-1 text-center text-xs font-bold py-3 px-4 rounded-xl border border-amber-500/50 text-amber-400 hover:bg-amber-500/10 transition-colors">
+              📄 Languiseを無料で試す →
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((item) => (
             <a
