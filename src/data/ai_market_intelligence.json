@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-09T16:02:55.226089+09:00",
-  "aiJudgment": "Soraのサービス終了で市場に衝撃が走る一方、Manusが機能拡充で攻勢を強める。ツールの栄枯盛衰が激しい月となった。",
+  "updatedAt": "2026-11-10T16:40:04.206562+09:00",
+  "aiJudgment": "専門特化型ツールが依然強力な一方、Manusのような統合プラットフォームが各領域に挑戦を開始。市場の再編が予見される。",
   "segments": [
     {
       "id": "development",
@@ -10,25 +10,25 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "Claude Codeがアクセス障害を起こす中、Replit Agentはチャットによるアプリ構築という明確なビジョンを提示。開発の未来像を示し、市場の期待を集めているため。",
+      "reason": "明確な製品ページとチャットによるアプリ構築という強力な機能を提供。アクセスが制限されているClaude Codeに対し優位性が高い。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "要問い合わせ",
-          "newFeature": "チャットによるアプリ構築",
-          "rating": 4,
+          "price": "Pricing",
+          "newFeature": "AIエージェントによるアプリ構築",
+          "rating": 5,
           "badge": "AI's Choice",
-          "summary": "対話形式でアプリやウェブサイトを構築できるAIコーディングエージェント。"
+          "summary": "チャットを通じてアプリケーションを構築できるAIコーディングエージェント。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
           "price": "不明",
-          "newFeature": "アクセス障害の可能性",
-          "rating": 1,
+          "newFeature": "セキュリティ検証の強化",
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropic社のコーディング支援AI。現在アクセスに問題が発生中。"
+          "summary": "Anthropic社が提供するコーディング支援AI。現在はセキュリティ検証ページが表示される。"
         }
       ]
     },
@@ -40,16 +40,16 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "Manus 2.0の発表により、対応領域をゲームやビデオにまで拡大。既存の生産性向上機能に加え、クリエイティブな業務もカバーし、総合的な価値で他を圧倒しているため。",
+      "reason": "スライド作成やウェブサイト構築など、多岐にわたる事務効率化タスクを単一のプラットフォームで実現。汎用性の高さが魅力。",
       "tools": [
         {
-          "id": "manus",
+          "id": "manus-productivity",
           "name": "Manus",
-          "price": "プランによる",
-          "newFeature": "Manus 2.0: ゲーム・ビデオ作成機能追加",
-          "rating": 5,
+          "price": "Pricing",
+          "newFeature": "Manus 2.0発表、多機能化",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "スライド、ウェブサイト、デザイン等を生成する多機能AI。新機能も追加。"
+          "summary": "スライド、ウェブサイト、デザイン等を生成可能な統合AIプラットフォーム。"
         }
       ]
     },
@@ -58,37 +58,46 @@
       "label": "クリエイティブ",
       "icon": "palette",
       "winner": {
-        "name": "Manus",
+        "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "OpenAIのSoraがサービス終了を発表し市場に衝撃が走る中、Manusは新たにビデオ作成機能を追加。クリエイティブ領域での機能拡充を積極的に進める姿勢が評価された。",
+      "reason": "画像生成分野で圧倒的な品質とブランドを確立。サービス終了や機能不全のツールとは比較にならず、多機能なManusに対しても専門性で勝る。",
       "tools": [
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "プランによる",
-          "newFeature": "Manus 2.0: ゲーム・ビデオ作成機能追加",
-          "rating": 5,
-          "badge": "AI's Choice",
-          "summary": "スライド、ウェブサイト、デザイン等を生成する多機能AI。新機能も追加。"
-        },
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "サブスクリプション",
-          "newFeature": "今後の大型プロジェクトを示唆",
+          "price": "要登録",
+          "newFeature": "新規プロジェクトを複数テーマで準備中",
+          "rating": 5,
+          "badge": "AI's Choice",
+          "summary": "世界で最も美しいAIモデルを標榜する、高品質な画像生成AIのリーダー。"
+        },
+        {
+          "id": "manus-creative",
+          "name": "Manus",
+          "price": "Pricing",
+          "newFeature": "ゲーム・動画生成機能を追加",
           "rating": 4,
           "badge": null,
-          "summary": "高品質な画像生成AI。人間の想像力を増幅させるための研究開発を推進。"
+          "summary": "ゲーム、動画、デザイン、音楽など多岐にわたるクリエイティブ生成に対応。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "サービス終了",
-          "newFeature": "サービス終了のお知らせ",
+          "newFeature": "サービス終了に関する告知",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIのビデオ生成AI。Web/App/APIのサービス終了が告知された。"
+          "summary": "OpenAIが提供していた動画生成AI。2026年にサービスが終了した。"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "不明",
+          "newFeature": "サービスアクセス不可、トラッカーに転送",
+          "rating": 1,
+          "badge": null,
+          "summary": "詳細不明。トラッカーに転送され、サービスは機能不全の可能性が高い。"
         }
       ]
     }
@@ -99,7 +108,7 @@
       "alertType": "challenger",
       "newTool": "Manus",
       "existingTool": "Replit Agent",
-      "message": "下克上の兆し：多機能化を進めるManusが、開発特化のReplit Agentに挑戦状"
+      "message": "下克上の兆し：Manusが多機能性を武器に、開発特化のReplit Agentの領域に挑戦。"
     }
   ]
 }
