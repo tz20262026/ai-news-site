@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title:
@@ -509,7 +510,8 @@ export default function AINocodeGuidePage() {
         </section>
 
         {/* ── アフィリエイトセクション ── */}
-        <AffiliateSectionAiNews />
+        <RelatedGuides currentHref="/ai-nocode-guide" />
+      <AffiliateSectionAiNews />
       </main>
     </>
   );

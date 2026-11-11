@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "2026年版 無料で使えるAIツール完全ガイド【最新15選】",
@@ -360,6 +361,8 @@ export default function AIToolsGuidePage() {
           最新AI記事をチェック →
         </Link>
       </section>
+
+      <RelatedGuides currentHref="/ai-tools-guide" />
 
       {/* アフィリエイト */}
       <AffiliateSectionAiNews />

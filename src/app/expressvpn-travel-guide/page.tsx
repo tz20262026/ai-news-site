@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import Image from "next/image";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "海外出張・留学・旅行中にTVerや日本のNetflixを見る方法【ExpressVPN】2026年版",
@@ -221,6 +222,10 @@ export default function ExpressVpnTravelGuidePage() {
           ※本記事はExpressVPNのアフィリエイトプログラムに基づくPRを含みます。VPNの利用自体は日本を含むほとんどの国で合法ですが、
           各動画配信サービスの利用規約は事前にご確認ください。
         </p>
+
+        <div className="mt-10">
+          <RelatedGuides currentHref="/expressvpn-travel-guide" />
+        </div>
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title:
@@ -433,7 +434,8 @@ export default function ChatGPTBusinessGuidePage() {
         </section>
 
         {/* ── アフィリエイトセクション ── */}
-        <AffiliateSectionAiNews />
+        <RelatedGuides currentHref="/chatgpt-business-guide" />
+      <AffiliateSectionAiNews />
       </main>
     </>
   );
