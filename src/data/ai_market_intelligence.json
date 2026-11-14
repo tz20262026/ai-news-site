@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T16:06:13.792443+09:00",
-  "aiJudgment": "AIエージェントによる開発自動化が進む一方、Soraのサービス終了は市場の厳しさも示す。多機能型と特化型の競争が激化。",
+  "updatedAt": "2026-11-14T15:55:40.145183+09:00",
+  "aiJudgment": "開発ツール市場は競争激化、万能型Manusも参戦。一方クリエイティブ市場ではSoraが撤退し、Midjourneyの独走が強まる。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,43 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットベースでのアプリ構築という革新的なアプローチを提示。開発のあり方を大きく変える可能性を秘めており、今月の注目度No.1。",
+      "reason": "確立された開発プラットフォーム上で動作する特化型AIコーディングエージェントであり、アプリ構築から統合まで一貫した体験を提供する。競合も強力だが、そのエコシステムの強みが勝る。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
-          "price": "プラン別",
-          "newFeature": "AIコーディングエージェント発表",
+          "price": "要問合せ",
+          "newFeature": "チャットによるアプリ構築",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "チャットで対話しながらアプリやウェブサイトを構築するAIエージェント。"
-        },
-        {
-          "id": "claude-code",
-          "name": "Claude Code",
-          "price": "要問合せ/プラン別",
-          "newFeature": "新モデルファミリー(Opus等)発表",
-          "rating": 5,
-          "badge": null,
-          "summary": "Anthropic社が提供する、高性能なコーディング支援AI。"
+          "summary": "チャットでアプリを構築できるAIコーディングエージェント。Replitエコシステムに統合。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
-          "price": "プラン別",
-          "newFeature": "AI App Builder機能強化",
+          "price": "要問合せ",
+          "newFeature": "エンドツーエンドのインフラ提供",
           "rating": 4,
           "badge": null,
-          "summary": "AIを活用し、アプリやウェブサイトを数分で構築できるノーコードツール。"
+          "summary": "自然言語から本番環境グレードのソフトウェアを構築。インフラも自動で管理。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要問合せ",
+          "newFeature": "Manus 2.0発表、ウェブサイト構築機能",
+          "rating": 4,
+          "badge": null,
+          "summary": "ウェブサイト、ゲーム、動画など多機能をこなす万能型AI。ReplitやLovableに対抗。"
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "price": "不明",
+          "newFeature": "アクセス不可（セキュリティ検証）",
+          "rating": 1,
+          "badge": null,
+          "summary": "Anthropicのコーディング特化AI。現在、公式サイトへのアクセスに問題あり。"
         }
       ]
     },
@@ -49,16 +58,16 @@
         "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "スライド作成から各種ツール連携まで、ビジネスシーンの多様なニーズに1つで応える統合力が魅力。Manus 2.0への進化も期待大。",
+      "reason": "競合情報が不足しているが、Manusはスライド作成機能を提供しており、事務効率化分野での活用が期待される。多機能性の一環として独自の地位を築いている。",
       "tools": [
         {
           "id": "manus",
           "name": "Manus",
-          "price": "プラン別",
-          "newFeature": "Manus 2.0発表、ビデオ・ゲーム作成機能追加",
+          "price": "要問合せ",
+          "newFeature": "Manus 2.0発表、スライド作成機能",
           "rating": 4,
           "badge": "AI's Choice",
-          "summary": "開発からデザイン、動画作成までこなす多機能統合AIプラットフォーム。"
+          "summary": "スライド作成、デザイン、動画生成など、ビジネスの生産性を向上させる多機能AI。"
         }
       ]
     },
@@ -70,25 +79,34 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像生成の品質において他を圧倒。クリエイターからの絶大な支持を維持し、美しさの追求という明確なビジョンで市場をリードしている。",
+      "reason": "Midjourneyは「世界で最も美しいAIモデル」を標榜し、高品質な画像生成で市場をリード。競合のSoraがサービス終了となり、その地位はより盤石になった。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
-          "price": "サブスクリプション",
-          "newFeature": "新プロジェクトを複数準備中",
+          "price": "要問合せ",
+          "newFeature": "新規プロジェクトを順次公開予定",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを謳う、高品質な画像生成AI。"
+          "summary": "高品質な画像生成で知られるAI。人間精神を増幅するインフラ構築を目指す。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要問合せ",
+          "newFeature": "ゲーム・動画・音楽生成機能を追加",
+          "rating": 4,
+          "badge": null,
+          "summary": "画像、音楽、動画、ゲームなど幅広いクリエイティブ制作が可能な万能型AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
-          "price": "提供終了",
-          "newFeature": "サービス終了を発表",
+          "price": "サービス終了",
+          "newFeature": "サービス終了（Web/App/API）",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIが開発した動画生成AI。2026年にサービス終了予定。"
+          "summary": "OpenAIの動画生成AI。Web、アプリ、APIの全サービスが提供終了となった。"
         }
       ]
     }
@@ -99,7 +117,13 @@
       "alertType": "challenger",
       "newTool": "Manus",
       "existingTool": "Replit Agent",
-      "message": "下克上の兆し：多機能型「Manus」が、AIコーディングの雄「Replit Agent」の牙城を脅かす。"
+      "message": "下克上の兆し：万能型AIのManusが、特化型開発ツールReplit Agentの牙城を崩す可能性。"
+    },
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：Manusがウェブサイト構築機能でLovableに挑戦。多機能性で差別化を図る。"
     }
   ]
 }
