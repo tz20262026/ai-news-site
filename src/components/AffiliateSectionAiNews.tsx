@@ -275,14 +275,7 @@ export default function AffiliateSectionAiNews() {
             </a>
           ))}
         </div>
-        {/* 新規A8アフィリエイト（2026-06-30追加） */}
-        <div className="mt-6 space-y-2">
-          <a href="https://px.a8.net/svt/ejp?a8mat=4B5RS7+1MCI2A+29JU+BWVTE" rel="nofollow" target="_blank"
-             className="block p-3 bg-gradient-to-r from-teal-600 to-green-500 text-white font-bold text-sm rounded-xl text-center no-underline my-2">
-            🤖 AIツールで仕事を効率化
-          </a>
-          <img width={1} height={1} src="https://www15.a8.net/0.gif?a8mat=4B5RS7+1MCI2A+29JU+BWVTE" alt="" className="hidden" />
-        </div>
+        {/* 2026-11-17: イングリッシュベル英会話(a8mat=4B5RS7+1MCI2A+...)はA8で2026-08-31終了済み・無効クリック発生のため削除 */}
         <p className="text-center text-xs text-slate-600 mt-6">※ 本コンテンツはPR・広告を含みます</p>
       </div>
     </section>
