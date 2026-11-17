@@ -19,6 +19,7 @@ const ALL_GUIDES: Guide[] = [
   { href: "/ai-tool-diagnosis", label: "AIツール診断", emoji: "🎯" },
   { href: "/ai-work-safety-guide", label: "仕事でAIを使う注意点", emoji: "⚠️" },
   { href: "/nordvpn-guide", label: "NordVPN完全ガイド", emoji: "🛡️" },
+  { href: "/expressvpn-blackfriday2026", label: "ExpressVPN BF2026セール解説", emoji: "🔒" },
 ];
 
 function pickRelated(currentHref: string, count = 4): Guide[] {
