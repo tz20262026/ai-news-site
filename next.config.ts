@@ -34,6 +34,15 @@ const nextConfig: NextConfig = {
           { key: "X-DNS-Prefetch-Control", value: "on" },
         ],
       },
+      {
+        // hero.mp4 は更新されない静的アセットのため長期キャッシュを許可。
+        // デフォルトの max-age=0 だと動画ループ再生中のRangeリクエストが
+        // 毎回再検証され、ChromeのERR_CACHE_OPERATION_NOT_SUPPORTEDを誘発する。
+        source: "/hero.mp4",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
     ];
   },
 };
