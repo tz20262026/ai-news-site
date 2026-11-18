@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getAllArticles } from "@/lib/microcms";
+import { allArticles as localArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: "About — 運営情報・編集方針",
@@ -30,7 +32,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AboutPage() {
+async function fetchArticleCount() {
+  try {
+    const remote = await getAllArticles();
+    if (remote.length > 0) return remote.length;
+  } catch (e) {
+    console.warn("[about] microCMS 取得失敗、ローカルデータを使用:", e);
+  }
+  return localArticles.length;
+}
+
+export default async function AboutPage() {
+  const articleCount = await fetchArticleCount();
   return (
     <div className="max-w-2xl mx-auto">
       <div className="mb-6">
@@ -71,7 +84,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-3 gap-3 mt-4">
             {[
               { num: "100+", label: "情報源媒体数" },
-              { num: "339+", label: "掲載記事数" },
+              { num: `${articleCount}+`, label: "掲載記事数" },
               { num: "毎日", label: "自動更新" },
             ].map((stat) => (
               <div key={stat.label} className="text-center bg-blue-50 dark:bg-blue-950/30 rounded-xl py-3">

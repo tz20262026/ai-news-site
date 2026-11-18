@@ -14,6 +14,7 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 
 - [ChatGPT完全ガイド](https://ai-news-site-wheat.vercel.app/chatgpt-guide): 始め方・使い方・無料版と有料版（Plus）の違い・プロンプトの書き方。
 - [Claude完全ガイド](https://ai-news-site-wheat.vercel.app/claude-guide): Anthropic製AIの使い方、ChatGPTとの違い、無料プランで使える機能。
+- [Claude AI完全ガイド](https://ai-news-site-wheat.vercel.app/claude-ai-guide): Claude 3.5・Claude 4シリーズの特徴、ChatGPTとの違い・比較、無料版と有料版の料金・機能差、ビジネス活用法。
 - [Gemini完全ガイド](https://ai-news-site-wheat.vercel.app/gemini-guide): Google製AIの使い方、ChatGPT・Claudeとの比較、無料機能。
 - [Perplexity AI完全ガイド](https://ai-news-site-wheat.vercel.app/perplexity-guide): 出典付きAI検索の使い方、無料版とProの違い。
 - [Microsoft Copilot完全ガイド](https://ai-news-site-wheat.vercel.app/copilot-guide): 無料で使えるGPT-4系機能、Office連携、ChatGPTとの違い。
@@ -29,6 +30,8 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [AI文章生成ガイド](https://ai-news-site-wheat.vercel.app/ai-writing-guide): ChatGPT・Claude・Geminiで記事を作成する方法。
 - [AIコーディングツール比較](https://ai-news-site-wheat.vercel.app/ai-coding-guide): GitHub Copilot・Cursor・Claude Codeの比較と使い方。
 - [AI画像生成ツール比較](https://ai-news-site-wheat.vercel.app/ai-image-comparison): Midjourney・DALL-E 3・Stable Diffusion・Ideogramを比較。
+- [AI画像生成完全ガイド](https://ai-news-site-wheat.vercel.app/ai-image-guide): Midjourney・DALL-E 3・Adobe Firefly・Stable Diffusionの選び方・使い方・プロンプトのコツ・活用事例。
+- [AI画像生成の始め方](https://ai-news-site-wheat.vercel.app/ai-image-generation-guide): Midjourney・DALL-E 3・Stable Diffusion・Adobe Fireflyの特徴・価格・プロンプトの書き方・商用利用可否・副業活用法。
 - [動画生成AI完全ガイド](https://ai-news-site-wheat.vercel.app/ai-video-guide): Sora・RunwayML・Pikaの比較と無料ツール。
 - [AI音楽生成ガイド](https://ai-news-site-wheat.vercel.app/ai-music-guide): Suno・Udio・Stable Audioで曲を作る方法。
 - [AI翻訳ツール比較](https://ai-news-site-wheat.vercel.app/ai-translation-guide): DeepL・ChatGPT・Google翻訳の精度比較。
@@ -43,10 +46,13 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [Stable Diffusion完全ガイド](https://ai-news-site-wheat.vercel.app/stable-diffusion-guide): オープンソース画像生成AIの導入・使い方。
 - [Canva AI活用ガイド](https://ai-news-site-wheat.vercel.app/canva-ai-guide): Canva内のAI機能（Magic Studio等）の使い方。
 - [Nano Banana Pro完全ガイド](https://ai-news-site-wheat.vercel.app/nano-banana-guide): Google製画像生成AI（Gemini 3 Pro Image）の使い方・無料枠・商用利用の注意点。
-- [ExpressVPN完全ガイド](https://ai-news-site-wheat.vercel.app/expressvpn-guide): 海外VPNの使い方・料金・選び方。
+- [ExpressVPN完全ガイド](https://ai-news-site-wheat.vercel.app/expressvpn-travel-guide): 海外出張・留学・旅行中にTVerや日本のNetflix・DAZNを見る方法と公共Wi-Fiのセキュリティ対策。
 - [NordVPN完全ガイド](https://ai-news-site-wheat.vercel.app/nordvpn-guide): 海外VPNの使い方・料金・選び方。
+- [公共Wi-FiでAIツールを安全に使うNordVPN活用ガイド](https://ai-news-site-wheat.vercel.app/nordvpn-wifi-anzen): カフェ・空港・ホテルの無料Wi-FiでChatGPTやGeminiを使うリスクと、NordVPNの導入・自動接続・脅威対策。
 - [Saily eSIM完全ガイド](https://ai-news-site-wheat.vercel.app/saily-esim-guide): 海外旅行向けeSIMの使い方・料金。
+- [Saily eSIMの使い方【AI旅行実践ガイド】](https://ai-news-site-wheat.vercel.app/saily-esim-ai-tabi): 海外でAI翻訳・地図・ChatGPTを使い倒すための通信手段としてのSaily eSIM活用術。出発前の開通から複数国周遊でのテザリング活用まで。
 - [スイカVPN完全ガイド](https://ai-news-site-wheat.vercel.app/suikavpn-guide): 日本向けVPNサービスの使い方・料金。
+- [AIツール診断](https://ai-news-site-wheat.vercel.app/ai-tool-diagnosis): 7つの質問に答えるだけでChatGPT・Claude・Gemini・Perplexity・GitHub Copilotの中から最適な1本がわかる無料診断コンテンツ。
 
 ## AI×ビジネス・副業
 
@@ -55,6 +61,8 @@ AI News Japan は、海外AI媒体のニュースを日本語で毎日配信し�
 - [ChatGPTプロンプト集](https://ai-news-site-wheat.vercel.app/chatgpt-prompt-guide): コピペで使える例文50選。
 - [AI副業完全ガイド](https://ai-news-site-wheat.vercel.app/ai-fukugyou): AIを使った副業の始め方。
 - [AIブログ自動化ツール](https://ai-news-site-wheat.vercel.app/ai-blog-automation): AI記事生成ツールの選び方。
+- [XServer for WordPress 完全ガイド](https://ai-news-site-wheat.vercel.app/xserver-wordpress-guide): AIで記事を量産するブログ運用者向けのWordPress専用レンタルサーバーの料金・表示速度・始め方。
+- [生成AIを仕事で使うときの注意点](https://ai-news-site-wheat.vercel.app/ai-work-safety-guide): 情報漏洩・著作権・ハルシネーション対策、オプトアウト方法、社内チェックリストまで網羅。
 - [AI英語学習ガイド](https://ai-news-site-wheat.vercel.app/ai-english-guide): AIを使った英語学習法・おすすめツール。
 - [AI Excel活用ガイド](https://ai-news-site-wheat.vercel.app/ai-excel-guide): ExcelでのAI機能・自動化の使い方。
 - [AIによる仕事への影響ガイド](https://ai-news-site-wheat.vercel.app/ai-job-loss-guide): AIで仕事はなくなるのか・今後の対策。
