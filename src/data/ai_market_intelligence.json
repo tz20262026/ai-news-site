@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-21T16:37:56.738205+09:00",
-  "aiJudgment": "開発分野ではエージェント型が主流に。クリエイティブ分野ではSoraの終了が市場再編を促し、既存強者の地位を固めている。",
+  "updatedAt": "2026-11-22T16:19:11.330598+09:00",
+  "aiJudgment": "開発市場ではエージェント化が加速。クリエイティブ市場は王者Midjourneyに対しManusが多機能化で挑み、Soraは撤退と、動きが活発化。",
   "segments": [
     {
       "id": "development",
@@ -10,43 +10,34 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャット形式でアプリを構築できるAIコーディングエージェントとして、アイデアから実装までの速度を劇的に向上させる。開発環境への統合も強力で、即戦力として最も評価が高い。",
+      "reason": "チャットベースでのアプリ開発という具体的なエージェント機能を提供。既存の強力な開発環境と統合されており、即戦力が期待できるため。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "要確認",
-          "newFeature": "AIコーディングエージェント",
-          "rating": 5,
+          "newFeature": "チャットによるアプリ構築",
+          "rating": 4,
           "badge": "AI's Choice",
-          "summary": "チャットを通じてアプリを構築するAIコーディングエージェント。"
+          "summary": "チャットを通じてアプリケーションを構築できるAIコーディングエージェント。"
         },
         {
           "id": "lovable",
           "name": "Lovable",
           "price": "要確認",
-          "newFeature": "自然言語でのアプリ構築",
+          "newFeature": "AIアプリビルダー機能",
           "rating": 4,
           "badge": null,
-          "summary": "自然言語で説明するだけで本番環境用のソフトウェアを構築。"
+          "summary": "新しい製品や社内ツールを数分で構築できるAIアプリ＆ウェブサイトビルダー。"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "要確認",
-          "newFeature": "Claude 3.5モデル群活用",
-          "rating": 4,
-          "badge": null,
-          "summary": "Anthropic社の最新モデルを活用したコーディング支援ツール。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
           "price": "不明",
-          "newFeature": "アクセス不可(403エラー)",
-          "rating": 1,
+          "newFeature": "情報なし",
+          "rating": 2,
           "badge": null,
-          "summary": "現在サイトにアクセスできず、詳細不明な開発ツール。"
+          "summary": "Anthropicが提供するコーディング支援AI。詳細は要ログイン。"
         }
       ]
     },
@@ -58,18 +49,8 @@
         "name": "Claude Cowork",
         "tagline": "今月の最強選択"
       },
-      "reason": "情報は限定的だが、Anthropicの強力なモデルを基盤とした共同作業支援ツールとして、今後の事務作業のあり方を大きく変えるポテンシャルを秘めているため選出。",
-      "tools": [
-        {
-          "id": "claude-cowork",
-          "name": "Claude Cowork",
-          "price": "要確認",
-          "newFeature": "チーム向け共同作業AI",
-          "rating": 3,
-          "badge": "AI's Choice",
-          "summary": "Anthropic社が提供するチームでの共同作業を支援するAI。"
-        }
-      ]
+      "reason": "情報不足だが、名前から協業と生産性向上に特化していると推測される。この分野でのポテンシャルを評価し、暫定的に選出。",
+      "tools": []
     },
     {
       "id": "creative",
@@ -79,29 +60,45 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "競合のSoraがサービス終了を発表したことで、高品質な画像生成AI市場におけるMidjourneyの優位性がさらに強固になった。安定したサービス提供と今後の展開への期待が高い。",
+      "reason": "画像生成の品質で他の追随を許さず、クリエイティブ分野のリーダーとして君臨。今後のプロジェクト展開にも大きな期待が寄せられているため。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
           "price": "要確認",
-          "newFeature": "新規プロジェクトを複数計画中",
+          "newFeature": "新規プロジェクトを順次公開予定",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "美しいAIモデルで知られる、世界トップクラスの画像生成AI。"
+          "summary": "世界で最も美しいAIモデルを構築するとされる、画像生成に特化した研究所。"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要確認",
+          "newFeature": "ゲーム＆ビデオ生成機能追加",
+          "rating": 4,
+          "badge": null,
+          "summary": "スライド、ウェブサイト、ゲーム、ビデオなど多岐にわたる制作が可能なAI。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "サービス終了",
-          "newFeature": "2026年にサービス終了予定",
+          "newFeature": "サービス終了",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIが提供していた動画生成AI。サービスは終了予定。"
+          "summary": "OpenAIの動画生成AI。2026年にWeb/App/APIが順次サービス終了。"
         }
       ]
     }
   ],
   "newToolsToday": [],
-  "alerts": []
+  "alerts": [
+    {
+      "alertType": "challenger",
+      "newTool": "Manus",
+      "existingTool": "Lovable",
+      "message": "下克上の兆し：Manusがゲーム・動画の新機能で、ウェブ構築ツールLovableの市場に挑戦。"
+    }
+  ]
 }
