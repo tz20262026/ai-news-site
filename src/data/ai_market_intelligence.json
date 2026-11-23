@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-22T16:19:11.330598+09:00",
-  "aiJudgment": "開発市場ではエージェント化が加速。クリエイティブ市場は王者Midjourneyに対しManusが多機能化で挑み、Soraは撤退と、動きが活発化。",
+  "updatedAt": "2026-11-23T17:03:00.121553+09:00",
+  "aiJudgment": "開発ではReplitが先行、クリエイティブはMidjourneyが独走。Soraは終了。Manusが機能拡充で複数領域に挑戦する構図。",
   "segments": [
     {
       "id": "development",
@@ -10,34 +10,25 @@
         "name": "Replit Agent",
         "tagline": "今月の最強選択"
       },
-      "reason": "チャットベースでのアプリ開発という具体的なエージェント機能を提供。既存の強力な開発環境と統合されており、即戦力が期待できるため。",
+      "reason": "チャットベースでアプリを構築できるエージェント機能は、開発の概念を覆す可能性を秘めている。具体的な製品として提示されており、期待値が高い。",
       "tools": [
         {
           "id": "replit-agent",
           "name": "Replit Agent",
           "price": "要確認",
-          "newFeature": "チャットによるアプリ構築",
-          "rating": 4,
+          "newFeature": "チャットによるアプリ構築エージェント",
+          "rating": 5,
           "badge": "AI's Choice",
           "summary": "チャットを通じてアプリケーションを構築できるAIコーディングエージェント。"
         },
         {
-          "id": "lovable",
-          "name": "Lovable",
-          "price": "要確認",
-          "newFeature": "AIアプリビルダー機能",
-          "rating": 4,
-          "badge": null,
-          "summary": "新しい製品や社内ツールを数分で構築できるAIアプリ＆ウェブサイトビルダー。"
-        },
-        {
           "id": "claude-code",
           "name": "Claude Code",
-          "price": "不明",
+          "price": "要確認",
           "newFeature": "情報なし",
-          "rating": 2,
+          "rating": 4,
           "badge": null,
-          "summary": "Anthropicが提供するコーディング支援AI。詳細は要ログイン。"
+          "summary": "コーディングに特化したAIモデル。詳細情報は今回提供されていない。"
         }
       ]
     },
@@ -46,11 +37,30 @@
       "label": "事務効率化",
       "icon": "briefcase",
       "winner": {
-        "name": "Claude Cowork",
+        "name": "Manus",
         "tagline": "今月の最強選択"
       },
-      "reason": "情報不足だが、名前から協業と生産性向上に特化していると推測される。この分野でのポテンシャルを評価し、暫定的に選出。",
-      "tools": []
+      "reason": "Manus 2.0へのアップデートでゲームや動画生成機能を追加し、対応範囲を大幅に拡大。競合のLovableがアクセス不能な中、一強状態。",
+      "tools": [
+        {
+          "id": "manus",
+          "name": "Manus",
+          "price": "要確認",
+          "newFeature": "Manus 2.0発表、ゲーム・動画生成追加",
+          "rating": 4,
+          "badge": "AI's Choice",
+          "summary": "スライド、ウェブサイト、ゲーム、動画など多岐にわたる生成AIプラットフォーム。"
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "price": "要確認",
+          "newFeature": "サイトアクセス不可",
+          "rating": 1,
+          "badge": null,
+          "summary": "現在サイトアクセス不可。詳細不明のAIツール。"
+        }
+      ]
     },
     {
       "id": "creative",
@@ -60,34 +70,25 @@
         "name": "Midjourney",
         "tagline": "今月の最強選択"
       },
-      "reason": "画像生成の品質で他の追随を許さず、クリエイティブ分野のリーダーとして君臨。今後のプロジェクト展開にも大きな期待が寄せられているため。",
+      "reason": "画像生成の品質で他の追随を許さず、新たなプロジェクトも計画中。競合と目されたSoraがサービス終了となり、その地位はより盤石になった。",
       "tools": [
         {
           "id": "midjourney",
           "name": "Midjourney",
           "price": "要確認",
-          "newFeature": "新規プロジェクトを順次公開予定",
+          "newFeature": "新規プロジェクトを複数計画中",
           "rating": 5,
           "badge": "AI's Choice",
-          "summary": "世界で最も美しいAIモデルを構築するとされる、画像生成に特化した研究所。"
-        },
-        {
-          "id": "manus",
-          "name": "Manus",
-          "price": "要確認",
-          "newFeature": "ゲーム＆ビデオ生成機能追加",
-          "rating": 4,
-          "badge": null,
-          "summary": "スライド、ウェブサイト、ゲーム、ビデオなど多岐にわたる制作が可能なAI。"
+          "summary": "世界で最も美しいAIモデルを構築するとされる、高品質な画像生成AI。"
         },
         {
           "id": "sora",
           "name": "Sora",
           "price": "サービス終了",
-          "newFeature": "サービス終了",
+          "newFeature": "サービス終了のお知らせ",
           "rating": 1,
           "badge": null,
-          "summary": "OpenAIの動画生成AI。2026年にWeb/App/APIが順次サービス終了。"
+          "summary": "OpenAIによる動画生成AI。2026年にサービス終了が告知された。"
         }
       ]
     }
@@ -97,8 +98,8 @@
     {
       "alertType": "challenger",
       "newTool": "Manus",
-      "existingTool": "Lovable",
-      "message": "下克上の兆し：Manusがゲーム・動画の新機能で、ウェブ構築ツールLovableの市場に挑戦。"
+      "existingTool": "Replit",
+      "message": "下克上の兆し：ManusがWebサイト構築やゲーム開発機能でReplitの領域に挑戦。"
     }
   ]
 }
