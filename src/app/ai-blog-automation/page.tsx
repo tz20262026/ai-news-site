@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AIで記事を自動生成するブログ運営ツールの選び方【2026年最新・正直レビュー】",
@@ -426,6 +427,8 @@ export default function AiBlogAutomationPage() {
             もどうぞ。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/ai-blog-automation" />
 
         <AffiliateSectionAiNews />
       </div>

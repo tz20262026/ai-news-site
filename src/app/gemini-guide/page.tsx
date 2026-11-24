@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Gemini（ジェミニ）完全ガイド2026年版【使い方・ChatGPT・Claudeとの比較・無料機能】",
@@ -281,6 +282,8 @@ export default function GeminiGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/gemini-guide" />
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />

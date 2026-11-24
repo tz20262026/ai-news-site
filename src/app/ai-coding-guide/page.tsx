@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -205,6 +206,8 @@ export default function AiCodingGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-coding-guide" />
 
         <AffiliateSectionAiNews />
         {/* もしもアフィリエイト枠（2026-07-13追加） */}

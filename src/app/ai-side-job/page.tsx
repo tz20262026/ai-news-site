@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AIを使った副業5選【2026年版・初心者でも月10万円可能】| AI最新情報",
@@ -345,6 +346,8 @@ export default function AiSideJobPage() {
             </Link>
           ))}
         </div>
+
+        <RelatedGuides currentHref="/ai-side-job" />
       </div>
       <AffiliateSectionAiNews />
     </div>

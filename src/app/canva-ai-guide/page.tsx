@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title:
@@ -586,6 +587,8 @@ export default function CanvaAiGuidePage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides currentHref="/canva-ai-guide" />
 
         {/* ── アフィリエイトセクション ── */}
         <AffiliateSectionAiNews />

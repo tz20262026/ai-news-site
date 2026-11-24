@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "NordVPN活用ガイド2026【AIツール利用者のセキュリティ対策・使い方・料金】",
@@ -238,6 +239,8 @@ export default function NordVpnGuidePage() {
             もチェックしてみてください。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/nordvpn-guide" />
 
         <AffiliateSectionAiNews />
       </div>

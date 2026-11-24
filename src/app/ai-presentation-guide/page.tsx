@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -206,6 +207,8 @@ export default function AiPresentationGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-presentation-guide" />
 
         <AffiliateSectionAiNews />
       </div>

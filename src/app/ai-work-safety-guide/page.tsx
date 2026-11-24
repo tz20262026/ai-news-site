@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "生成AIを仕事で使うときの注意点2026【情報漏洩・著作権・ハルシネーション対策】",
@@ -294,6 +295,8 @@ export default function AIWorkSafetyGuidePage() {
             </Link>
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-work-safety-guide" />
 
         <AffiliateSectionAiNews />
       </div>

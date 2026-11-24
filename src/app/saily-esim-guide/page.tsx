@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Saily eSIM活用ガイド2026【海外テックイベント・出張の通信手段はこれ1つ】",
@@ -240,6 +241,8 @@ export default function SailyEsimGuidePage() {
             を組み合わせると、海外でも日本と同じデジタル環境が完成します。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/saily-esim-guide" />
 
         <AffiliateSectionAiNews />
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import MoshimoSectionAiNews from "@/components/MoshimoSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AI文章生成完全ガイド2026年版【ChatGPT・Claude・Geminiで記事を自動作成する方法】",
@@ -213,6 +214,8 @@ export default function AiWritingGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-writing-guide" />
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AI画像生成完全ガイド2026【Midjourney・DALL-E・Stable Diffusion比較】",
@@ -565,6 +566,8 @@ export default function AiImageGuidePage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-image-guide" />
 
         {/* ── アフィリエイト ── */}
         <AffiliateSectionAiNews />

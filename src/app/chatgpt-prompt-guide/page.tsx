@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "ChatGPTプロンプト集2026年版【コピペで使える例文50選・仕事・副業・学習に活用】",
@@ -189,6 +190,8 @@ export default function ChatGptPromptGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/chatgpt-prompt-guide" />
 
         <AffiliateSectionAiNews />
       </div>

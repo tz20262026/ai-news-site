@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "画像生成AI おすすめ7選2026年版【無料・日本語対応・副業に使える】",
@@ -283,6 +284,8 @@ export default function GazouAiGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/gazou-ai-guide" />
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />

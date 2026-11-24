@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AtSectionAiNews from "@/components/AtSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AIに仕事を奪われる不安、どう備える？【2026年版・職種別リスクと対策】| AI最新情報",
@@ -197,6 +198,8 @@ export default function AiJobLossGuidePage() {
             </Link>
           </div>
         </div>
+
+        <RelatedGuides currentHref="/ai-job-loss-guide" />
       </div>
       <AtSectionAiNews />
     </div>

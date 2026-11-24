@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 const URL = "https://ai-news-site-wheat.vercel.app/saily-esim-ai-tabi";
 
@@ -291,6 +292,8 @@ export default function SailyEsimAiTabiPage() {
             も参考にどうぞ。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/saily-esim-ai-tabi" />
 
         <AffiliateSectionAiNews />
       </div>

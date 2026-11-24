@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Claude（クロード）完全ガイド2026年版【使い方・ChatGPTとの違い・無料プランで使える機能】",
@@ -265,6 +266,8 @@ export default function ClaudeGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/claude-guide" />
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />

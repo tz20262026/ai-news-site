@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import ArticleAffiliateBanner from "@/components/ArticleAffiliateBanner";
+import RelatedGuides from "@/components/RelatedGuides";
 
 const PAGE_URL = "https://ai-news-site-wheat.vercel.app/ai-excel-guide";
 const PUBLISHED_AT = "2026-07-20";
@@ -435,6 +436,8 @@ export default function AiExcelGuidePage() {
             もどうぞ。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/ai-excel-guide" />
 
         <AffiliateSectionAiNews />
       </div>

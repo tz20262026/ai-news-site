@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -166,6 +167,8 @@ export default function GrokGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/grok-guide" />
 
         <AffiliateSectionAiNews />
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import ArticleAffiliateBanner from "@/components/ArticleAffiliateBanner";
+import RelatedGuides from "@/components/RelatedGuides";
 
 const PAGE_URL = "https://ai-news-site-wheat.vercel.app/sora-guide";
 const PUBLISHED_AT = "2026-07-23";
@@ -367,6 +368,8 @@ export default function SoraGuidePage() {
             もチェックしてみてください。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/sora-guide" />
 
         <AffiliateSectionAiNews />
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AI初心者完全ガイド2026【ChatGPT・Gemini・Claude使い方】",
@@ -415,6 +416,8 @@ export default function AIBeginnerGuidePage() {
             </Link>
           </div>
         </section>
+
+        <RelatedGuides currentHref="/ai-beginner-guide" />
 
         {/* アフィリエイト */}
         <AffiliateSectionAiNews />

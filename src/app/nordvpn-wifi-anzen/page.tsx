@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 const URL = "https://ai-news-site-wheat.vercel.app/nordvpn-wifi-anzen";
 
@@ -278,6 +279,8 @@ export default function NordvpnWifiAnzenPage() {
             もあわせてどうぞ。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/nordvpn-wifi-anzen" />
 
         <AffiliateSectionAiNews />
       </div>

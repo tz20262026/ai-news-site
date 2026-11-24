@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Microsoft Copilot（コパイロット）完全ガイド2026年版【使い方・無料機能・ChatGPTとの違い】",
@@ -224,6 +225,8 @@ export default function CopilotGuidePage() {
             ))}
           </div>
         </section>
+
+        <RelatedGuides currentHref="/copilot-guide" />
 
         <AffiliateSectionAiNews />
       </div>

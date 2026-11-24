@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AiToolDiagnosisClient from "./AiToolDiagnosisClient";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "AIツール診断【7つの質問であなたに最適なAIがわかる】",
@@ -207,6 +208,8 @@ export default function AiToolDiagnosisPage() {
             AIツール比較一覧を見る
           </Link>
         </div>
+
+        <RelatedGuides currentHref="/ai-tool-diagnosis" />
       </div>
     </>
   );

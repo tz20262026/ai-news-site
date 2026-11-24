@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
+import RelatedGuides from "@/components/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "XServer for WordPress 完全ガイド2026【AIブログ運用に最適なWordPress専用サーバーの選び方】",
@@ -304,6 +305,8 @@ export default function XserverWordPressGuidePage() {
             ※本ページはプロモーション（アフィリエイト広告）を含みます。掲載内容は公開日時点の情報です。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/xserver-wordpress-guide" />
 
         <AffiliateSectionAiNews />
       </div>

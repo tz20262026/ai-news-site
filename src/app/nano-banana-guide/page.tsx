@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateSectionAiNews from "@/components/AffiliateSectionAiNews";
 import ArticleAffiliateBanner from "@/components/ArticleAffiliateBanner";
+import RelatedGuides from "@/components/RelatedGuides";
 
 const PAGE_URL = "https://ai-news-site-wheat.vercel.app/nano-banana-guide";
 const PUBLISHED_AT = "2026-08-13";
@@ -330,6 +331,8 @@ export default function NanoBananaGuidePage() {
             もチェックしてみてください。
           </p>
         </section>
+
+        <RelatedGuides currentHref="/nano-banana-guide" />
 
         <AffiliateSectionAiNews />
       </div>
